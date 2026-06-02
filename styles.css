@@ -474,10 +474,38 @@ summary {
   font-size: 17px;
 }
 
+.app-spotlight {
+  border-left: 4px solid var(--blue);
+  padding: 2px 0 2px 16px;
+}
+
+.app-spotlight span {
+  display: block;
+  color: var(--blue-deep);
+  font-size: 12px;
+  font-weight: 820;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.app-spotlight strong {
+  display: block;
+  margin-top: 6px;
+  color: var(--ink);
+  font-size: clamp(20px, 2vw, 26px);
+  line-height: 1.12;
+}
+
+.app-spotlight p {
+  margin: 8px 0 0;
+  color: var(--ink-soft);
+  font-size: 14px;
+}
+
 .feature-list {
   display: grid;
   gap: 10px;
-  margin: 0;
+  margin: 18px 0 0;
   padding: 0;
   list-style: none;
   color: var(--ink);
