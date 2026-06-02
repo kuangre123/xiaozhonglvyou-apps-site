@@ -834,6 +834,52 @@ summary {
   box-shadow: var(--shadow-md);
 }
 
+.region-section {
+  background: #fff;
+}
+
+.region-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.region-card {
+  min-height: 178px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  padding: 22px;
+  background:
+    linear-gradient(145deg, rgba(242, 248, 255, 0.82), rgba(255, 255, 255, 0.98)),
+    #fff;
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.region-card span {
+  display: block;
+  color: var(--blue-deep);
+  font-size: 13px;
+  font-weight: 820;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.region-card strong {
+  display: block;
+  margin-top: 18px;
+  font-size: 21px;
+  line-height: 1.16;
+}
+
+.region-card:hover,
+.region-card:focus-visible {
+  transform: translateY(-2px);
+  border-color: rgba(20, 120, 212, 0.34);
+  box-shadow: var(--shadow-md);
+  outline: none;
+}
+
 .privacy-band {
   color: #fff;
   background:
@@ -1029,6 +1075,7 @@ summary {
   }
 
   .use-case-grid,
+  .region-grid,
   .support-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1170,6 +1217,7 @@ summary {
   }
 
   .use-case-grid,
+  .region-grid,
   .support-grid {
     grid-template-columns: 1fr;
   }
