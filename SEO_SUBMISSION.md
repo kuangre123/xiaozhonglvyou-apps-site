@@ -1,0 +1,46 @@
+# SEO Submission Checklist
+
+Production domain: https://www.xiaozhonglvyou.com/
+
+Sitemap: https://www.xiaozhonglvyou.com/sitemap.xml
+
+## Completed On Site
+
+- `robots.txt` allows crawling and points to the sitemap.
+- `sitemap.xml` includes the home page, AI photo classification page, privacy page, and support page.
+- Pages include canonical URLs, indexable robots meta, Open Graph tags, and structured data where useful.
+- Root IndexNow key file is present: `https://www.xiaozhonglvyou.com/a6013cad6cead8e0.txt`.
+
+## Google Search Console
+
+Google requires account access and site verification.
+
+1. Open Google Search Console.
+2. Add property: `https://www.xiaozhonglvyou.com/`.
+3. Verify ownership using either DNS TXT or HTML meta tag.
+4. Submit sitemap: `https://www.xiaozhonglvyou.com/sitemap.xml`.
+5. Use URL Inspection for:
+   - `https://www.xiaozhonglvyou.com/`
+   - `https://www.xiaozhonglvyou.com/ai-photo-classification.html`
+
+## Bing Webmaster Tools
+
+1. Add site: `https://www.xiaozhonglvyou.com/`.
+2. Submit sitemap: `https://www.xiaozhonglvyou.com/sitemap.xml`.
+3. Use URL Submission if needed.
+4. IndexNow can notify Bing-compatible engines after deployment.
+
+## Baidu Search Resource Platform
+
+Baidu requires account access and site verification.
+
+1. Add site: `https://www.xiaozhonglvyou.com/`.
+2. Verify ownership using DNS or file verification.
+3. Submit sitemap: `https://www.xiaozhonglvyou.com/sitemap.xml`.
+
+## Ongoing SEO
+
+- Keep `lastmod` current after major content changes.
+- Add focused content pages for specific app search intents.
+- Keep privacy and support pages reachable from the footer.
+- Build real backlinks from App Store support URLs, developer profiles, product pages, and trusted app directories.

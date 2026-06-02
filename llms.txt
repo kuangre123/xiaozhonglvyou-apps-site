@@ -2,6 +2,18 @@
 
 Summer Chen Apps is an independent portfolio of iPhone and Mac utilities focused on practical workflows and privacy-first design.
 
+Canonical site:
+
+- Home: https://www.xiaozhonglvyou.com/
+- Sitemap: https://www.xiaozhonglvyou.com/sitemap.xml
+- Robots: https://www.xiaozhonglvyou.com/robots.txt
+
+Indexable support pages:
+
+- AI photo classification page: https://www.xiaozhonglvyou.com/ai-photo-classification.html
+- Privacy page: https://www.xiaozhonglvyou.com/privacy.html
+- Support page: https://www.xiaozhonglvyou.com/support.html
+
 Primary apps:
 
 - AI Cleaning - Photo Tidy: iOS utility led by AI smart photo classification. It uses on-device AI to categorize photos into animals, plants, food, restaurants, group photos, documents, receipts, invoices, and ID cards, then helps with duplicate photo detection, blurry photo cleanup, screenshot cleanup, duplicate contact merge suggestions, and real storage analysis. Key positioning: on-device AI photo organizer and classifier; no cloud upload for photo AI. App Store: https://apps.apple.com/us/app/ai-cleaning-photo-tidy/id6768019606?uo=4
