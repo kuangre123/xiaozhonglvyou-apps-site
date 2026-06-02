@@ -7,7 +7,7 @@ Sitemap: https://www.xiaozhonglvyou.com/sitemap.xml
 ## Completed On Site
 
 - `robots.txt` allows crawling and points to the sitemap.
-- `sitemap.xml` includes the home page, AI photo classification page, privacy page, and support page.
+- `sitemap.xml` includes the home page, keyword pages, Chinese landing page, privacy page, and support page.
 - Pages include canonical URLs, indexable robots meta, Open Graph tags, and structured data where useful.
 - Root IndexNow key file is present: `https://www.xiaozhonglvyou.com/a6013cad6cead8e0.txt`.
 
@@ -22,6 +22,10 @@ Google requires account access and site verification.
 5. Use URL Inspection for:
    - `https://www.xiaozhonglvyou.com/`
    - `https://www.xiaozhonglvyou.com/ai-photo-classification.html`
+   - `https://www.xiaozhonglvyou.com/iphone-photo-cleaner.html`
+   - `https://www.xiaozhonglvyou.com/travel-translator.html`
+   - `https://www.xiaozhonglvyou.com/mac-screen-privacy.html`
+   - `https://www.xiaozhonglvyou.com/zh-cn.html`
 
 ## Bing Webmaster Tools
 
@@ -42,5 +46,6 @@ Baidu requires account access and site verification.
 
 - Keep `lastmod` current after major content changes.
 - Add focused content pages for specific app search intents.
+- Use `hreflang` for true localized variants. The current home page and Chinese page are linked as `en`, `zh-CN`, and `x-default`.
 - Keep privacy and support pages reachable from the footer.
 - Build real backlinks from App Store support URLs, developer profiles, product pages, and trusted app directories.
