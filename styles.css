@@ -417,6 +417,24 @@ summary {
   font-size: 18px;
 }
 
+.content-grid a,
+.content-list a {
+  color: var(--blue-deep);
+  font-weight: 760;
+  text-decoration: underline;
+  text-decoration-color: rgba(13, 78, 148, 0.34);
+  text-underline-offset: 4px;
+}
+
+.content-grid a:hover,
+.content-grid a:focus-visible,
+.content-list a:hover,
+.content-list a:focus-visible {
+  color: var(--blue);
+  text-decoration-color: currentColor;
+  outline: none;
+}
+
 .content-list {
   display: grid;
   gap: 1px;
@@ -696,6 +714,16 @@ summary {
 .store-link:hover {
   transform: translateY(-2px);
   box-shadow: 0 18px 34px rgba(20, 120, 212, 0.26);
+}
+
+.store-link-secondary {
+  color: var(--blue-deep);
+  background: #fff;
+  box-shadow: none;
+}
+
+.store-link-secondary:hover {
+  box-shadow: 0 12px 24px rgba(20, 120, 212, 0.12);
 }
 
 .store-link:focus-visible {

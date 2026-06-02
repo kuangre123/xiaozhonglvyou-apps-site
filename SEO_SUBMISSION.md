@@ -26,6 +26,8 @@ Google requires account access and site verification.
    - `https://www.xiaozhonglvyou.com/travel-translator.html`
    - `https://www.xiaozhonglvyou.com/mac-screen-privacy.html`
    - `https://www.xiaozhonglvyou.com/zh-cn.html`
+   - `https://www.xiaozhonglvyou.com/privacy.html`
+   - `https://www.xiaozhonglvyou.com/support.html`
 
 ## Bing Webmaster Tools
 
