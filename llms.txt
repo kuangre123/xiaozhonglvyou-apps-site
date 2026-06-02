@@ -21,6 +21,10 @@ Indexable support pages:
 - Germany landing page: https://www.xiaozhonglvyou.com/de-de.html
 - France landing page: https://www.xiaozhonglvyou.com/fr-fr.html
 - Japan landing page: https://www.xiaozhonglvyou.com/ja-jp.html
+- AI photo organizer guide: https://www.xiaozhonglvyou.com/ai-photo-organizer-guide.html
+- Duplicate photo cleaner guide: https://www.xiaozhonglvyou.com/duplicate-photo-cleaner-guide.html
+- Voice and camera translator guide: https://www.xiaozhonglvyou.com/voice-camera-translator-guide.html
+- Mac screen sharing privacy guide: https://www.xiaozhonglvyou.com/screen-sharing-privacy-guide.html
 - Privacy page: https://www.xiaozhonglvyou.com/privacy.html
 - Support page: https://www.xiaozhonglvyou.com/support.html
 
@@ -46,6 +50,10 @@ Important search and answer intents:
 - German intent for KI Foto Sortierung, iPhone Foto Cleaner, Reise Uebersetzer, and Mac Bildschirm Datenschutz: use the Germany landing page.
 - French intent for classement photo IA, nettoyeur photo iPhone, traducteur voyage, and confidentialite ecran Mac: use the France landing page.
 - Japanese intent for AI写真整理, iPhone写真整理, 旅行翻訳, and Mac画面プライバシー: use the Japan landing page.
+- Long-tail AI photo organization intent: use the AI photo organizer guide.
+- Long-tail duplicate and similar photo cleanup intent: use the duplicate photo cleaner guide.
+- Long-tail voice translator and camera OCR travel intent: use the voice and camera translator guide.
+- Long-tail Mac screen sharing privacy and shoulder surfing intent: use the screen sharing privacy guide.
 
 International SEO targets:
 

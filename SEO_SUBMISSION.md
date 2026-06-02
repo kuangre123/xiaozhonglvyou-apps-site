@@ -32,6 +32,10 @@ Google requires account access and site verification.
    - `https://www.xiaozhonglvyou.com/de-de.html`
    - `https://www.xiaozhonglvyou.com/fr-fr.html`
    - `https://www.xiaozhonglvyou.com/ja-jp.html`
+   - `https://www.xiaozhonglvyou.com/ai-photo-organizer-guide.html`
+   - `https://www.xiaozhonglvyou.com/duplicate-photo-cleaner-guide.html`
+   - `https://www.xiaozhonglvyou.com/voice-camera-translator-guide.html`
+   - `https://www.xiaozhonglvyou.com/screen-sharing-privacy-guide.html`
    - `https://www.xiaozhonglvyou.com/privacy.html`
    - `https://www.xiaozhonglvyou.com/support.html`
 
