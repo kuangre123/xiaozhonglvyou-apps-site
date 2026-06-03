@@ -45,6 +45,31 @@
         ]
       }
     </script>
+    <script type="application/ld+json">
+      {
+              "@context": "https://schema.org",
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                      {
+                              "@type": "ListItem",
+                              "position": 1,
+                              "name": "Home",
+                              "item": "https://www.xiaozhonglvyou.com/"
+                      },
+                      {
+                              "@type": "ListItem",
+                              "position": 2,
+                              "name": "Regions",
+                              "item": "https://www.xiaozhonglvyou.com/regions.html"
+                      },
+                      {
+                              "@type": "ListItem",
+                              "position": 3,
+                              "name": "United Kingdom"
+                      }
+              ]
+      }
+    </script>
   </head>
   <body>
     <header class="site-header" data-elevate>
@@ -67,6 +92,13 @@
     <main class="page-main">
       <section class="page-hero page-hero-simple">
         <div class="page-hero-copy">
+          <nav class="breadcrumb" aria-label="Breadcrumb">
+            <ol>
+              <li><a href="/">Home</a></li>
+              <li><a href="regions.html">Regions</a></li>
+              <li aria-current="page">United Kingdom</li>
+            </ol>
+          </nav>
           <p class="eyebrow">United Kingdom</p>
           <h1>Practical iPhone and Mac utilities for UK searches.</h1>
           <p>

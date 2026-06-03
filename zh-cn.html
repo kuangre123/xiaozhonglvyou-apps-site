@@ -51,6 +51,31 @@
         ]
       }
     </script>
+    <script type="application/ld+json">
+      {
+              "@context": "https://schema.org",
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                      {
+                              "@type": "ListItem",
+                              "position": 1,
+                              "name": "首页",
+                              "item": "https://www.xiaozhonglvyou.com/"
+                      },
+                      {
+                              "@type": "ListItem",
+                              "position": 2,
+                              "name": "地区",
+                              "item": "https://www.xiaozhonglvyou.com/regions.html"
+                      },
+                      {
+                              "@type": "ListItem",
+                              "position": 3,
+                              "name": "中文应用"
+                      }
+              ]
+      }
+    </script>
   </head>
   <body>
     <header class="site-header" data-elevate>
@@ -75,6 +100,13 @@
     <main class="page-main">
       <section class="page-hero page-hero-simple">
         <div class="page-hero-copy">
+          <nav class="breadcrumb" aria-label="Breadcrumb">
+            <ol>
+              <li><a href="/">首页</a></li>
+              <li><a href="regions.html">地区</a></li>
+              <li aria-current="page">中文应用</li>
+            </ol>
+          </nav>
           <p class="eyebrow">中文入口</p>
           <h1>AI照片分类、照片清理、出国翻译和Mac屏幕隐私工具。</h1>
           <p>

@@ -10,6 +10,9 @@ Canonical site:
 
 Indexable support pages:
 
+- Apps hub: https://www.xiaozhonglvyou.com/apps.html
+- Guides hub: https://www.xiaozhonglvyou.com/guides.html
+- Regions hub: https://www.xiaozhonglvyou.com/regions.html
 - AI photo classification page: https://www.xiaozhonglvyou.com/ai-photo-classification.html
 - iPhone photo cleaner page: https://www.xiaozhonglvyou.com/iphone-photo-cleaner.html
 - Travel translator page: https://www.xiaozhonglvyou.com/travel-translator.html
@@ -58,6 +61,9 @@ Important search and answer intents:
 International SEO targets:
 
 - English global fallback: https://www.xiaozhonglvyou.com/
+- Product portfolio hub: https://www.xiaozhonglvyou.com/apps.html
+- Guide hub for long-tail decisions: https://www.xiaozhonglvyou.com/guides.html
+- Regional landing page hub: https://www.xiaozhonglvyou.com/regions.html
 - Chinese simplified content: https://www.xiaozhonglvyou.com/zh-cn.html
 - United States: https://www.xiaozhonglvyou.com/us-apps.html
 - United Kingdom: https://www.xiaozhonglvyou.com/uk-apps.html

@@ -7,8 +7,8 @@ Sitemap: https://www.xiaozhonglvyou.com/sitemap.xml
 ## Completed On Site
 
 - `robots.txt` allows crawling and points to the sitemap.
-- `sitemap.xml` includes the home page, keyword pages, Chinese landing page, privacy page, and support page.
-- Pages include canonical URLs, indexable robots meta, Open Graph tags, and structured data where useful.
+- `sitemap.xml` includes the home page, apps hub, guides hub, regions hub, keyword pages, localized landing pages, privacy page, and support page.
+- Pages include canonical URLs, indexable robots meta, Open Graph tags, visible breadcrumbs, and structured data where useful.
 - Root IndexNow key file is present: `https://www.xiaozhonglvyou.com/a6013cad6cead8e0.txt`.
 
 ## Google Search Console
@@ -21,6 +21,9 @@ Google requires account access and site verification.
 4. Submit sitemap: `https://www.xiaozhonglvyou.com/sitemap.xml`.
 5. Use URL Inspection for:
    - `https://www.xiaozhonglvyou.com/`
+   - `https://www.xiaozhonglvyou.com/apps.html`
+   - `https://www.xiaozhonglvyou.com/guides.html`
+   - `https://www.xiaozhonglvyou.com/regions.html`
    - `https://www.xiaozhonglvyou.com/ai-photo-classification.html`
    - `https://www.xiaozhonglvyou.com/iphone-photo-cleaner.html`
    - `https://www.xiaozhonglvyou.com/travel-translator.html`

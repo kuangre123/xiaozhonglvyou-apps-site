@@ -48,6 +48,31 @@
         }
       }
     </script>
+    <script type="application/ld+json">
+      {
+              "@context": "https://schema.org",
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                      {
+                              "@type": "ListItem",
+                              "position": 1,
+                              "name": "Home",
+                              "item": "https://www.xiaozhonglvyou.com/"
+                      },
+                      {
+                              "@type": "ListItem",
+                              "position": 2,
+                              "name": "Apps",
+                              "item": "https://www.xiaozhonglvyou.com/apps.html"
+                      },
+                      {
+                              "@type": "ListItem",
+                              "position": 3,
+                              "name": "Travel Translator"
+                      }
+              ]
+      }
+    </script>
   </head>
   <body>
     <header class="site-header" data-elevate>
@@ -71,6 +96,13 @@
     <main class="page-main">
       <section class="page-hero">
         <div class="page-hero-copy">
+          <nav class="breadcrumb" aria-label="Breadcrumb">
+            <ol>
+              <li><a href="/">Home</a></li>
+              <li><a href="apps.html">Apps</a></li>
+              <li aria-current="page">Travel Translator</li>
+            </ol>
+          </nav>
           <p class="eyebrow">Travel translator</p>
           <h1>Voice and camera translation for international trips.</h1>
           <p>
