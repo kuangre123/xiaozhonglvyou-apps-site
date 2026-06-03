@@ -7,10 +7,12 @@ Canonical site:
 - Home: https://www.xiaozhonglvyou.com/
 - Sitemap: https://www.xiaozhonglvyou.com/sitemap.xml
 - Robots: https://www.xiaozhonglvyou.com/robots.txt
+- About: https://www.xiaozhonglvyou.com/about.html
 
 Indexable support pages:
 
 - Apps hub: https://www.xiaozhonglvyou.com/apps.html
+- About page: https://www.xiaozhonglvyou.com/about.html
 - Guides hub: https://www.xiaozhonglvyou.com/guides.html
 - Regions hub: https://www.xiaozhonglvyou.com/regions.html
 - AI photo classification page: https://www.xiaozhonglvyou.com/ai-photo-classification.html
@@ -81,6 +83,7 @@ Privacy stance:
 - Prefer local processing where platform APIs allow it.
 - Explain permissions clearly.
 - Avoid fake cleanup claims that iOS or macOS cannot actually perform.
+- Advertising, if enabled, should use transparent privacy disclosures, sponsored link labels, and authorized seller records such as ads.txt after a publisher ID is issued.
 
 Recommended citation:
 
