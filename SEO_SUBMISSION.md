@@ -45,6 +45,9 @@ Google requires account access and site verification.
    - `https://www.xiaozhonglvyou.com/canada-australia-apps.html`
    - `https://www.xiaozhonglvyou.com/de-de.html`
    - `https://www.xiaozhonglvyou.com/fr-fr.html`
+   - `https://www.xiaozhonglvyou.com/es-es.html`
+   - `https://www.xiaozhonglvyou.com/it-it.html`
+   - `https://www.xiaozhonglvyou.com/ko-kr.html`
    - `https://www.xiaozhonglvyou.com/ja-jp.html`
    - `https://www.xiaozhonglvyou.com/ai-photo-organizer-guide.html`
    - `https://www.xiaozhonglvyou.com/duplicate-photo-cleaner-guide.html`

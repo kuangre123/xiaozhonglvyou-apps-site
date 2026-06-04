@@ -103,6 +103,24 @@
     <priority>0.78</priority>
   </url>
   <url>
+    <loc>https://www.xiaozhonglvyou.com/es-es.html</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.76</priority>
+  </url>
+  <url>
+    <loc>https://www.xiaozhonglvyou.com/it-it.html</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.76</priority>
+  </url>
+  <url>
+    <loc>https://www.xiaozhonglvyou.com/ko-kr.html</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.76</priority>
+  </url>
+  <url>
     <loc>https://www.xiaozhonglvyou.com/ja-jp.html</loc>
     <lastmod>2026-06-04</lastmod>
     <changefreq>monthly</changefreq>
