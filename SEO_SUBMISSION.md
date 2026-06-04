@@ -35,6 +35,8 @@ Google requires account access and site verification.
    - `https://www.xiaozhonglvyou.com/regions.html`
    - `https://www.xiaozhonglvyou.com/ai-photo-classification.html`
    - `https://www.xiaozhonglvyou.com/iphone-photo-cleaner.html`
+   - `https://www.xiaozhonglvyou.com/private-ai-photo-cleaner.html`
+   - `https://www.xiaozhonglvyou.com/iphone-storage-cleanup-guide.html`
    - `https://www.xiaozhonglvyou.com/travel-translator.html`
    - `https://www.xiaozhonglvyou.com/mac-screen-privacy.html`
    - `https://www.xiaozhonglvyou.com/zh-cn.html`
