@@ -7,7 +7,7 @@ Sitemap: https://www.xiaozhonglvyou.com/sitemap.xml
 ## Completed On Site
 
 - `robots.txt` allows crawling and points to the sitemap.
-- `sitemap.xml` includes the home page, about page, apps hub, guides hub, regions hub, keyword pages, localized landing pages, privacy page, and support page.
+- `sitemap.xml` includes the home page, about page, app search map, apps hub, guides hub, regions hub, keyword pages, localized landing pages, privacy page, and support page.
 - Pages include canonical URLs, indexable robots meta, Open Graph tags, visible breadcrumbs, and structured data where useful.
 - Root IndexNow key file is present: `https://www.xiaozhonglvyou.com/a6013cad6cead8e0.txt`.
 - Privacy page includes advertising and cookie disclosure for future AdSense or sponsored placements.
@@ -30,6 +30,7 @@ Google requires account access and site verification.
 5. Use URL Inspection for:
    - `https://www.xiaozhonglvyou.com/`
    - `https://www.xiaozhonglvyou.com/about.html`
+   - `https://www.xiaozhonglvyou.com/app-search-map.html`
    - `https://www.xiaozhonglvyou.com/apps.html`
    - `https://www.xiaozhonglvyou.com/guides.html`
    - `https://www.xiaozhonglvyou.com/regions.html`
@@ -74,7 +75,7 @@ Baidu requires account access and site verification.
 ## Ongoing SEO
 
 - Keep `lastmod` current after major content changes.
-- Add focused content pages for specific app search intents.
+- Add focused content pages for specific app search intents, then connect them through `app-search-map.html`.
 - Use `hreflang` for true localized variants. The home, US, UK, Canada/Australia, Germany, France, Japan, and Chinese pages are linked as a regional cluster.
 - Keep privacy and support pages reachable from the footer.
 - Build real backlinks from App Store support URLs, developer profiles, product pages, and trusted app directories.
