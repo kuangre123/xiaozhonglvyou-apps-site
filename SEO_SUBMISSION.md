@@ -31,6 +31,7 @@ Google requires account access and site verification.
    - `https://www.xiaozhonglvyou.com/`
    - `https://www.xiaozhonglvyou.com/about.html`
    - `https://www.xiaozhonglvyou.com/app-search-map.html`
+   - `https://www.xiaozhonglvyou.com/best-iphone-photo-cleaner-app.html`
    - `https://www.xiaozhonglvyou.com/apps.html`
    - `https://www.xiaozhonglvyou.com/guides.html`
    - `https://www.xiaozhonglvyou.com/regions.html`
