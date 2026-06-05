@@ -13,6 +13,7 @@
   --coral: #e46f4f;
   --amber: #c9821a;
   --violet: #6f5bd6;
+  --focus-ring: rgba(20, 120, 212, 0.34);
   --shadow-sm: 0 8px 24px rgba(22, 34, 51, 0.08);
   --shadow-md: 0 18px 48px rgba(22, 34, 51, 0.12);
   --shadow-lg: 0 28px 72px rgba(22, 34, 51, 0.16);
@@ -28,6 +29,10 @@
 
 html {
   scroll-behavior: smooth;
+}
+
+[id] {
+  scroll-margin-top: 96px;
 }
 
 body {
@@ -80,7 +85,15 @@ summary {
   z-index: 20;
   background: rgba(251, 253, 255, 0.82);
   border-bottom: 1px solid rgba(220, 227, 238, 0.75);
+  -webkit-backdrop-filter: blur(18px);
   backdrop-filter: blur(18px);
+  transition: background 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.site-header[data-scrolled] {
+  background: rgba(251, 253, 255, 0.96);
+  border-bottom-color: rgba(180, 194, 214, 0.9);
+  box-shadow: 0 10px 28px rgba(22, 34, 51, 0.1);
 }
 
 .nav {
@@ -182,6 +195,7 @@ summary {
     linear-gradient(rgba(18, 21, 28, 0.045) 1px, transparent 1px),
     linear-gradient(90deg, rgba(18, 21, 28, 0.04) 1px, transparent 1px);
   background-size: 44px 44px;
+  -webkit-mask-image: linear-gradient(90deg, #000 0%, transparent 82%);
   mask-image: linear-gradient(90deg, #000 0%, transparent 82%);
   pointer-events: none;
 }
@@ -282,34 +296,19 @@ summary {
   transform: rotate(-8deg);
 }
 
-.hero-icon-translate {
-  width: clamp(86px, 10vw, 144px);
-  right: clamp(18px, 6vw, 130px);
-  top: 300px;
-  transform: rotate(10deg);
-}
-
 .hero-icon-privacy {
   width: clamp(90px, 11vw, 158px);
-  right: clamp(212px, 26vw, 420px);
-  top: 392px;
+  right: clamp(210px, 26vw, 430px);
+  top: 352px;
   transform: rotate(4deg);
 }
 
-.hero-screen-mobile {
-  width: min(290px, 25vw);
-  right: clamp(190px, 30vw, 510px);
-  bottom: -62px;
-  border-radius: 34px;
-  opacity: 0.72;
-}
-
 .hero-screen-mac {
-  width: min(660px, 46vw);
+  width: min(700px, 48vw);
   right: -80px;
-  bottom: 34px;
+  bottom: 28px;
   border-radius: 22px;
-  opacity: 0.66;
+  opacity: 0.72;
 }
 
 .hero-facts {
@@ -426,6 +425,13 @@ summary {
   box-shadow: var(--shadow-lg);
 }
 
+.page-hero-mark {
+  width: min(256px, 100%);
+  aspect-ratio: 1;
+  border-radius: 23%;
+  box-shadow: var(--shadow-lg);
+}
+
 .content-section {
   background: #fff;
 }
@@ -526,6 +532,13 @@ summary {
   width: 64px;
   height: 64px;
   border-radius: 23%;
+  box-shadow: var(--shadow-sm);
+}
+
+.support-mark {
+  width: 64px;
+  height: 64px;
+  font-size: 20px;
   box-shadow: var(--shadow-sm);
 }
 
@@ -653,6 +666,18 @@ summary {
   border-radius: 23%;
   object-fit: cover;
   box-shadow: 0 14px 30px rgba(22, 34, 51, 0.14);
+}
+
+.app-icon-travel {
+  display: grid;
+  place-items: center;
+  color: #fff;
+  font-size: 26px;
+  font-weight: 900;
+  letter-spacing: 0.03em;
+  background:
+    linear-gradient(145deg, #51a8ff, #2366d1),
+    #2366d1;
 }
 
 .app-card h3 {
@@ -803,17 +828,17 @@ summary {
   min-height: 480px;
 }
 
-.phone-shot,
+.product-icon-shot,
 .mac-shot {
   position: absolute;
   box-shadow: var(--shadow-lg);
 }
 
-.phone-shot {
+.product-icon-shot {
   left: 0;
-  bottom: 0;
-  width: min(250px, 36%);
-  border-radius: 32px;
+  bottom: 58px;
+  width: min(190px, 30%);
+  border-radius: 24%;
   z-index: 2;
 }
 
@@ -875,7 +900,7 @@ summary {
 
 .region-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 14px;
 }
 
@@ -1071,6 +1096,20 @@ summary {
   outline: none;
 }
 
+.nav-links a:focus-visible,
+.nav-cta:focus-visible,
+.button:focus-visible,
+.content-grid a:focus-visible,
+.content-list a:focus-visible,
+.support-item:focus-visible,
+.store-link:focus-visible,
+.use-case:focus-visible,
+.region-card:focus-visible,
+.footer a:focus-visible {
+  outline: 3px solid var(--focus-ring);
+  outline-offset: 4px;
+}
+
 @media (max-width: 980px) {
   .nav-links {
     display: none;
@@ -1092,10 +1131,6 @@ summary {
   .hero-screen-mac {
     width: 680px;
     right: -300px;
-  }
-
-  .hero-screen-mobile {
-    display: none;
   }
 
   .hero-facts,
@@ -1137,6 +1172,10 @@ summary {
 }
 
 @media (max-width: 640px) {
+  [id] {
+    scroll-margin-top: 82px;
+  }
+
   .nav {
     width: min(100% - 28px, var(--max));
     min-height: 64px;
@@ -1201,14 +1240,9 @@ summary {
     top: 96px;
   }
 
-  .hero-icon-translate {
-    right: -22px;
-    top: 250px;
-  }
-
   .hero-icon-privacy {
-    right: 78px;
-    top: 332px;
+    right: 72px;
+    top: 286px;
   }
 
   .hero-facts {
@@ -1261,8 +1295,8 @@ summary {
     min-height: 310px;
   }
 
-  .phone-shot {
-    width: 42%;
+  .product-icon-shot {
+    width: 34%;
   }
 
   .mac-shot {

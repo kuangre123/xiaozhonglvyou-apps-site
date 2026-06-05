@@ -1,0 +1,7 @@
+include:
+  - _headers
+
+exclude:
+  - README.md
+  - DEPLOYMENT.md
+  - SEO_SUBMISSION.md

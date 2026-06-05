@@ -2,15 +2,23 @@
   "name": "Summer Chen Apps",
   "short_name": "SC Apps",
   "description": "Independent privacy-first iPhone and Mac utility apps.",
-  "start_url": "./",
+  "id": "/",
+  "start_url": "/",
+  "scope": "/",
   "display": "standalone",
+  "categories": [
+    "utilities",
+    "productivity",
+    "travel"
+  ],
   "background_color": "#f7f8fb",
   "theme_color": "#121417",
   "icons": [
     {
       "src": "./assets/ai-cleaning-icon.png",
-      "sizes": "1024x1024",
-      "type": "image/png"
+      "sizes": "256x256",
+      "type": "image/png",
+      "purpose": "any"
     }
   ]
 }

@@ -1,4 +1,7 @@
 User-agent: *
+Disallow: /DEPLOYMENT.md
+Disallow: /README.md
+Disallow: /SEO_SUBMISSION.md
 Allow: /
 
 Sitemap: https://www.xiaozhonglvyou.com/sitemap.xml
