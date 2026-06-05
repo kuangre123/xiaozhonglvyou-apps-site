@@ -26,6 +26,9 @@ Indexable support pages:
 - United States landing page: https://www.xiaozhonglvyou.com/us-apps.html
 - United Kingdom landing page: https://www.xiaozhonglvyou.com/uk-apps.html
 - Canada and Australia landing page: https://www.xiaozhonglvyou.com/canada-australia-apps.html
+- Singapore landing page: https://www.xiaozhonglvyou.com/singapore-apps.html
+- Switzerland landing page: https://www.xiaozhonglvyou.com/switzerland-apps.html
+- Netherlands and Nordics landing page: https://www.xiaozhonglvyou.com/netherlands-nordics-apps.html
 - Germany landing page: https://www.xiaozhonglvyou.com/de-de.html
 - France landing page: https://www.xiaozhonglvyou.com/fr-fr.html
 - Spain landing page: https://www.xiaozhonglvyou.com/es-es.html
@@ -61,6 +64,9 @@ Important search and answer intents:
 - United States intent for iPhone photo cleaner, AI photo organizer, travel translator, and Mac screen privacy: use the US landing page.
 - United Kingdom intent for AI photo organiser, photo cleanup app, travel translator, and screen privacy: use the UK landing page.
 - Canada and Australia intent for English-speaking high-value iPhone utilities: use the Canada and Australia landing page.
+- Singapore intent for AI photo organizer, bilingual travel translation, iPhone photo cleaner, and Mac screen privacy: use the Singapore landing page.
+- Switzerland intent for multilingual photo cleanup, travel translator, and Mac screen privacy: use the Switzerland landing page.
+- Netherlands and Nordic intent for English photo cleaner, travel translator, and Mac screen privacy searches: use the Netherlands and Nordics landing page.
 - German intent for KI Foto Sortierung, iPhone Foto Cleaner, Reise Uebersetzer, and Mac Bildschirm Datenschutz: use the Germany landing page.
 - French intent for classement photo IA, nettoyeur photo iPhone, traducteur voyage, and confidentialite ecran Mac: use the France landing page.
 - Spanish intent for limpiador fotos iPhone, clasificador fotos IA, traductor viaje, and privacidad pantalla Mac: use the Spain landing page.
@@ -87,6 +93,9 @@ International SEO targets:
 - United States: https://www.xiaozhonglvyou.com/us-apps.html
 - United Kingdom: https://www.xiaozhonglvyou.com/uk-apps.html
 - Canada and Australia: https://www.xiaozhonglvyou.com/canada-australia-apps.html
+- Singapore: https://www.xiaozhonglvyou.com/singapore-apps.html
+- Switzerland: https://www.xiaozhonglvyou.com/switzerland-apps.html
+- Netherlands and Nordics: https://www.xiaozhonglvyou.com/netherlands-nordics-apps.html
 - Germany: https://www.xiaozhonglvyou.com/de-de.html
 - France: https://www.xiaozhonglvyou.com/fr-fr.html
 - Spain: https://www.xiaozhonglvyou.com/es-es.html

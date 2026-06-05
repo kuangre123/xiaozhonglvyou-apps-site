@@ -44,6 +44,9 @@ Google requires account access and site verification.
    - `https://www.xiaozhonglvyou.com/us-apps.html`
    - `https://www.xiaozhonglvyou.com/uk-apps.html`
    - `https://www.xiaozhonglvyou.com/canada-australia-apps.html`
+   - `https://www.xiaozhonglvyou.com/singapore-apps.html`
+   - `https://www.xiaozhonglvyou.com/switzerland-apps.html`
+   - `https://www.xiaozhonglvyou.com/netherlands-nordics-apps.html`
    - `https://www.xiaozhonglvyou.com/de-de.html`
    - `https://www.xiaozhonglvyou.com/fr-fr.html`
    - `https://www.xiaozhonglvyou.com/es-es.html`
@@ -77,6 +80,6 @@ Baidu requires account access and site verification.
 
 - Keep `lastmod` current after major content changes.
 - Add focused content pages for specific app search intents, then connect them through normal user-facing hubs such as `apps.html`, `guides.html`, and related product pages.
-- Use `hreflang` for true localized variants. The home, US, UK, Canada/Australia, Germany, France, Japan, and Chinese pages are linked as a regional cluster.
+- Use `hreflang` for true localized variants. The home, US, UK, Canada/Australia, Singapore, Switzerland, Netherlands/Nordics, Germany, France, Japan, and Chinese pages are linked as a regional cluster.
 - Keep privacy and support pages reachable from the footer.
 - Build real backlinks from App Store support URLs, developer profiles, product pages, and trusted app directories.
