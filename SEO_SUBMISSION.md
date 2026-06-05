@@ -51,6 +51,7 @@ Google requires account access and site verification.
    - `https://www.xiaozhonglvyou.com/ko-kr.html`
    - `https://www.xiaozhonglvyou.com/ja-jp.html`
    - `https://www.xiaozhonglvyou.com/ai-photo-organizer-guide.html`
+   - `https://www.xiaozhonglvyou.com/ai-photo-classification-cn.html`
    - `https://www.xiaozhonglvyou.com/duplicate-photo-cleaner-guide.html`
    - `https://www.xiaozhonglvyou.com/voice-camera-translator-guide.html`
    - `https://www.xiaozhonglvyou.com/screen-sharing-privacy-guide.html`
