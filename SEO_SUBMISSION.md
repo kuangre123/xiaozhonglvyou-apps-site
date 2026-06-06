@@ -56,6 +56,8 @@ Google requires account access and site verification.
    - `https://www.xiaozhonglvyou.com/ja-jp.html`
    - `https://www.xiaozhonglvyou.com/ai-photo-organizer-guide.html`
    - `https://www.xiaozhonglvyou.com/ai-photo-classification-cn.html`
+   - `https://www.xiaozhonglvyou.com/iphone-photo-cleaner-cn.html`
+   - `https://www.xiaozhonglvyou.com/duplicate-photo-cleaner-cn.html`
    - `https://www.xiaozhonglvyou.com/duplicate-photo-cleaner-guide.html`
    - `https://www.xiaozhonglvyou.com/voice-camera-translator-guide.html`
    - `https://www.xiaozhonglvyou.com/screen-sharing-privacy-guide.html`
@@ -81,6 +83,7 @@ Baidu requires account access and site verification.
 
 - Keep `lastmod` current after major content changes.
 - Add focused content pages for specific app search intents, then connect them through normal user-facing hubs such as `apps.html`, `guides.html`, and related product pages.
+- For Chinese traffic, keep the sequence clear: `zh-cn.html` -> `ai-photo-classification-cn.html` -> `iphone-photo-cleaner-cn.html` -> `duplicate-photo-cleaner-cn.html`.
 - Use `hreflang` for true localized variants. The home, US, UK, Canada/Australia, Singapore, Switzerland, Netherlands/Nordics, Germany, France, Japan, Simplified Chinese, and Traditional Chinese pages are linked as a regional cluster.
 - Keep privacy and support pages reachable from the footer.
 - Build real backlinks from App Store support URLs, developer profiles, product pages, and trusted app directories.

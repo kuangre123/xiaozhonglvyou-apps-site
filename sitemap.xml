@@ -26,7 +26,7 @@
   </url>
   <url>
     <loc>https://www.xiaozhonglvyou.com/guides.html</loc>
-    <lastmod>2026-06-05</lastmod>
+    <lastmod>2026-06-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.86</priority>
   </url>
@@ -74,7 +74,7 @@
   </url>
   <url>
     <loc>https://www.xiaozhonglvyou.com/zh-cn.html</loc>
-    <lastmod>2026-06-05</lastmod>
+    <lastmod>2026-06-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.84</priority>
   </url>
@@ -164,9 +164,21 @@
   </url>
   <url>
     <loc>https://www.xiaozhonglvyou.com/ai-photo-classification-cn.html</loc>
-    <lastmod>2026-06-05</lastmod>
+    <lastmod>2026-06-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
+  </url>
+  <url>
+    <loc>https://www.xiaozhonglvyou.com/iphone-photo-cleaner-cn.html</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.82</priority>
+  </url>
+  <url>
+    <loc>https://www.xiaozhonglvyou.com/duplicate-photo-cleaner-cn.html</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.xiaozhonglvyou.com/duplicate-photo-cleaner-guide.html</loc>
