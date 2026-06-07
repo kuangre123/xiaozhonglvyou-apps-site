@@ -12,21 +12,30 @@ const localeHomes = {
   "zh-cn": {
     path: "zh-cn.html",
     label: "中文首页",
-    aria: "Summer Chen Apps 中文首页"
+    aria: "Summer Chen Apps 中文首页",
+    pages: new Set([
+      "zh-cn.html",
+      "ai-photo-classification-cn.html",
+      "iphone-photo-cleaner-cn.html",
+      "duplicate-photo-cleaner-cn.html",
+      "travel-translator-cn.html",
+      "mac-screen-privacy-cn.html"
+    ])
   },
   "zh-hant": {
     path: "zh-hant.html",
     label: "繁體中文首頁",
-    aria: "Summer Chen Apps 繁體中文首頁"
+    aria: "Summer Chen Apps 繁體中文首頁",
+    pages: new Set(["zh-hant.html"])
   }
 };
 
 const currentPage = window.location.pathname.split("/").pop() || "index.html";
-const localePage = currentPage === "zh-cn.html" ? "zh-cn" : currentPage === "zh-hant.html" ? "zh-hant" : "";
+const currentLocale = Object.entries(localeHomes).find(([, locale]) => locale.pages.has(currentPage))?.[0] || "";
 
 try {
-  if (localePage) {
-    localStorage.setItem("scPreferredHome", localePage);
+  if (currentLocale) {
+    localStorage.setItem("scPreferredHome", currentLocale);
   } else if (document.referrer.includes("/zh-cn.html")) {
     localStorage.setItem("scPreferredHome", "zh-cn");
   } else if (document.referrer.includes("/zh-hant.html")) {
@@ -36,7 +45,7 @@ try {
   const preferredLocale = localStorage.getItem("scPreferredHome");
   const preferredHome = localeHomes[preferredLocale];
   const isGlobalHome = currentPage === "index.html" || currentPage === "";
-  const isLocaleHome = currentPage === "zh-cn.html" || currentPage === "zh-hant.html";
+  const isLocaleHome = Object.values(localeHomes).some((locale) => locale.path === currentPage);
 
   if (preferredHome && !isGlobalHome && !isLocaleHome) {
     const homeHrefs = new Set([
