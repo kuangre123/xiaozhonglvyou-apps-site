@@ -26,15 +26,15 @@
   </url>
   <url>
     <loc>https://www.xiaozhonglvyou.com/guides.html</loc>
-    <lastmod>2026-06-06</lastmod>
+    <lastmod>2026-06-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.86</priority>
   </url>
   <url>
     <loc>https://www.xiaozhonglvyou.com/regions.html</loc>
-    <lastmod>2026-06-05</lastmod>
+    <lastmod>2026-06-08</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.86</priority>
+    <priority>0.58</priority>
   </url>
   <url>
     <loc>https://www.xiaozhonglvyou.com/ai-photo-classification.html</loc>
@@ -134,15 +134,27 @@
   </url>
   <url>
     <loc>https://www.xiaozhonglvyou.com/de-de.html</loc>
-    <lastmod>2026-06-05</lastmod>
+    <lastmod>2026-06-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.78</priority>
   </url>
   <url>
+    <loc>https://www.xiaozhonglvyou.com/iphone-foto-cleaner-de.html</loc>
+    <lastmod>2026-06-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://www.xiaozhonglvyou.com/fr-fr.html</loc>
-    <lastmod>2026-06-05</lastmod>
+    <lastmod>2026-06-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.78</priority>
+  </url>
+  <url>
+    <loc>https://www.xiaozhonglvyou.com/nettoyeur-photo-iphone-fr.html</loc>
+    <lastmod>2026-06-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.xiaozhonglvyou.com/es-es.html</loc>

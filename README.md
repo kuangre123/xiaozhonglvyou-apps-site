@@ -24,5 +24,13 @@ Public URLs:
 DNS:
 
 ```text
+@ A 185.199.108.153
+@ A 185.199.109.153
+@ A 185.199.110.153
+@ A 185.199.111.153
 www CNAME kuangre123.github.io
 ```
+
+The apex `@` records are required for Google Search Console checks against
+`https://xiaozhonglvyou.com/robots.txt`. The canonical customer URL remains
+`https://www.xiaozhonglvyou.com/`.

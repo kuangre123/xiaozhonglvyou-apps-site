@@ -23,11 +23,46 @@ Sitemap: https://www.xiaozhonglvyou.com/sitemap.xml
 
 Google requires account access and site verification.
 
+Before submitting URLs, confirm Aliyun DNS has the GitHub Pages apex records:
+
+```text
+@ A 185.199.108.153
+@ A 185.199.109.153
+@ A 185.199.110.153
+@ A 185.199.111.153
+www CNAME kuangre123.github.io
+```
+
+Then run:
+
+```sh
+node scripts/audit-search-console-robots.mjs
+```
+
+If Search Console shows `https://xiaozhonglvyou.com/robots.txt` as unavailable,
+remove any stale `@` A record such as `28.0.0.7`, wait for DNS propagation, then
+test HTTPS directly:
+
+```sh
+curl -I https://xiaozhonglvyou.com/robots.txt
+```
+
+If that command fails with a certificate name mismatch such as `CN=*.github.io`,
+GitHub Pages has not finished issuing the HTTPS certificate for the apex domain.
+Do not keep retrying Search Console until GitHub Pages shows the custom domain
+DNS check as successful and HTTPS enforcement is available.
+
 1. Open Google Search Console.
 2. Add property: `https://www.xiaozhonglvyou.com/`.
 3. Verify ownership using either DNS TXT or HTML meta tag.
 4. Submit sitemap: `https://www.xiaozhonglvyou.com/sitemap.xml`.
-5. Use URL Inspection for:
+5. Generate the local indexing request plan:
+
+   ```sh
+   node scripts/prepare-search-console-indexing-plan.mjs
+   ```
+
+6. Use URL Inspection for:
    - `https://www.xiaozhonglvyou.com/`
    - `https://www.xiaozhonglvyou.com/about.html`
    - `https://www.xiaozhonglvyou.com/best-iphone-photo-cleaner-app.html`
@@ -60,11 +95,31 @@ Google requires account access and site verification.
    - `https://www.xiaozhonglvyou.com/duplicate-photo-cleaner-cn.html`
    - `https://www.xiaozhonglvyou.com/travel-translator-cn.html`
    - `https://www.xiaozhonglvyou.com/mac-screen-privacy-cn.html`
+   - `https://www.xiaozhonglvyou.com/iphone-foto-cleaner-de.html`
+   - `https://www.xiaozhonglvyou.com/nettoyeur-photo-iphone-fr.html`
    - `https://www.xiaozhonglvyou.com/duplicate-photo-cleaner-guide.html`
    - `https://www.xiaozhonglvyou.com/voice-camera-translator-guide.html`
    - `https://www.xiaozhonglvyou.com/screen-sharing-privacy-guide.html`
    - `https://www.xiaozhonglvyou.com/privacy.html`
    - `https://www.xiaozhonglvyou.com/support.html`
+
+For each priority URL, first click `TEST LIVE URL`. Only click
+`REQUEST INDEXING` after the live test says the page is available to Google.
+
+If Search Console says `Crawled - currently not indexed`, treat it as an
+indexing decision or processing delay, not a crawl block, when these are true:
+
+- Live test passes.
+- `robots.txt` is fetched.
+- Sitemap is submitted.
+- The page has `index,follow` robots meta.
+- The canonical URL matches the inspected `https://www.xiaozhonglvyou.com/...`
+  URL.
+
+For that status, keep the URL in the manual request queue, add real external
+links from published articles and product profiles, then wait for Google to
+reprocess it. Do not repeatedly change DNS, robots, or canonicals unless a live
+test reports a specific technical failure.
 
 ## Bing Webmaster Tools
 
@@ -87,5 +142,6 @@ Baidu requires account access and site verification.
 - Add focused content pages for specific app search intents, then connect them through normal user-facing hubs such as `apps.html`, `guides.html`, and related product pages.
 - For Chinese traffic, keep the sequence clear: `zh-cn.html` -> `ai-photo-classification-cn.html` -> `iphone-photo-cleaner-cn.html` -> `duplicate-photo-cleaner-cn.html`; translation and Mac privacy searches route to `travel-translator-cn.html` and `mac-screen-privacy-cn.html`.
 - Use `hreflang` for true localized variants. The home, US, UK, Canada/Australia, Singapore, Switzerland, Netherlands/Nordics, Germany, France, Japan, Simplified Chinese, and Traditional Chinese pages are linked as a regional cluster.
+- For high-purchase European traffic, route German photo-cleaner searches to `iphone-foto-cleaner-de.html` and French photo-cleaner searches to `nettoyeur-photo-iphone-fr.html`.
 - Keep privacy and support pages reachable from the footer.
 - Build real backlinks from App Store support URLs, developer profiles, product pages, and trusted app directories.
