@@ -282,6 +282,7 @@ summary {
 .hero-icon,
 .hero-screen {
   position: absolute;
+  height: auto;
   filter: drop-shadow(0 26px 56px rgba(22, 34, 51, 0.18));
 }
 
