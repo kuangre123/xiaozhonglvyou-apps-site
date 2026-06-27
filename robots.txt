@@ -5,3 +5,8 @@ Disallow: /SEO_SUBMISSION.md
 Allow: /
 
 Sitemap: https://www.xiaozhonglvyou.com/sitemap.xml
+Host: www.xiaozhonglvyou.com
+# Search index: https://www.xiaozhonglvyou.com/search-index.json
+# RSS feed: https://www.xiaozhonglvyou.com/feed.xml
+# Web app manifest: https://www.xiaozhonglvyou.com/manifest.webmanifest
+# IndexNow key: https://www.xiaozhonglvyou.com/a6013cad6cead8e0.txt

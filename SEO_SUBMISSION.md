@@ -4,9 +4,13 @@ Production domain: https://www.xiaozhonglvyou.com/
 
 Sitemap: https://www.xiaozhonglvyou.com/sitemap.xml
 
+RSS feed: https://www.xiaozhonglvyou.com/feed.xml
+
+Search index: https://www.xiaozhonglvyou.com/search-index.json
+
 ## Completed On Site
 
-- `robots.txt` allows crawling and points to the sitemap.
+- `robots.txt` allows crawling and points to the sitemap, RSS feed, search index, web app manifest, and IndexNow key file.
 - `sitemap.xml` includes the home page, about page, apps hub, guides hub, regions hub, keyword pages, localized landing pages, privacy page, and support page.
 - Pages include canonical URLs, indexable robots meta, Open Graph tags, visible breadcrumbs, and structured data where useful.
 - Root IndexNow key file is present: `https://www.xiaozhonglvyou.com/a6013cad6cead8e0.txt`.
@@ -127,6 +131,11 @@ test reports a specific technical failure.
 2. Submit sitemap: `https://www.xiaozhonglvyou.com/sitemap.xml`.
 3. Use URL Submission if needed.
 4. IndexNow can notify Bing-compatible engines after deployment.
+5. After the deployed sitemap is live, submit it from a checkout of this site:
+
+   ```sh
+   node /Users/sirchen/pc-app-app-app-app/scripts/submit-indexnow.mjs --sitemap-path sitemap.xml --key-file-path a6013cad6cead8e0.txt --submit
+   ```
 
 ## Baidu Search Resource Platform
 

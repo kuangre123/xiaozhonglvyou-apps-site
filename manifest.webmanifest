@@ -1,7 +1,7 @@
 {
-  "name": "Summer Chen Apps",
-  "short_name": "SC Apps",
-  "description": "Independent privacy-first iPhone and Mac utility apps.",
+  "name": "CrazyAIAgent",
+  "short_name": "CrazyAI",
+  "description": "Independent privacy-first iPhone and Mac utility apps for AI photo organization, travel translation, and screen privacy.",
   "id": "/",
   "start_url": "/",
   "scope": "/",

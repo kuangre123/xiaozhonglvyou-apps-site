@@ -1,25 +1,21 @@
-# Summer Chen Apps site
+# CrazyAIAgent site
 
 Static international portfolio site for `www.xiaozhonglvyou.com`.
 
 Hosted with GitHub Pages from the `main` branch root.
 
-Local verification from the workspace root:
-
-```sh
-bash scripts/verify-site.sh
-```
-
-Supabase Edge deployment from the workspace root:
-
-```sh
-scripts/deploy-supabase-site.sh <supabase-project-ref>
-```
-
 Public URLs:
 
 - https://www.xiaozhonglvyou.com/
 - https://kuangre123.github.io/xiaozhonglvyou-apps-site/
+
+Important crawl resources:
+
+- Sitemap: https://www.xiaozhonglvyou.com/sitemap.xml
+- Robots: https://www.xiaozhonglvyou.com/robots.txt
+- RSS feed: https://www.xiaozhonglvyou.com/feed.xml
+- Search index: https://www.xiaozhonglvyou.com/search-index.json
+- IndexNow key: https://www.xiaozhonglvyou.com/a6013cad6cead8e0.txt
 
 DNS:
 
@@ -31,6 +27,6 @@ DNS:
 www CNAME kuangre123.github.io
 ```
 
-The apex `@` records are required for Google Search Console checks against
+The apex `@` records are required for verification checks against
 `https://xiaozhonglvyou.com/robots.txt`. The canonical customer URL remains
 `https://www.xiaozhonglvyou.com/`.
