@@ -20,6 +20,34 @@ Primary apps:
 - Anti-spy screen: macOS screen privacy app for sensitive work in shared spaces. Mac App Store: https://apps.apple.com/us/app/anti-spy-screen/id6761301764?mt=12&uo=4
 - Anti-spy screen Lite: macOS menu bar privacy utility that uses local face detection to hide selected windows when multiple people are detected near the screen. Mac App Store: https://apps.apple.com/us/app/anti-spy-screen-lite/id6766485393?mt=12&uo=4
 
+Last updated: 2026-06-28
+
+Important search and answer intents:
+
+- Best iPhone photo cleaner app for reviewing duplicates, screenshots, blurry photos, large media, and on-device AI photo categories before deleting.
+- Private AI photo organizer for iPhone users who want local photo classification without uploading the full photo library to a cloud service.
+- Travel translator app for voice translation, spoken playback, camera OCR translation, menus, signs, labels, airports, hotels, and restaurants.
+- Mac screen privacy app for screen sharing, presentations, protected app hiding, sensitive windows, shared workspaces, and privacy during meetings.
+- AI creator workflow tools for organizing photos, duplicate media, reference images, and travel production assets before making AI video or social content.
+
+International SEO targets:
+
+- English App Store utility searches in the United States, United Kingdom, Canada, Australia, Singapore, Switzerland, Netherlands, and Nordic markets.
+- German and French iPhone photo cleaner searches routed to dedicated localized pages for Europe.
+- Simplified Chinese and Traditional Chinese app discovery for AI photo classification, iPhone photo cleanup, travel translation, and Mac screen privacy.
+- Japanese and Korean app discovery for AI photo organization, travel translation, and Mac screen privacy utilities.
+
+Machine-readable discovery signals:
+
+- Sitemap: https://www.xiaozhonglvyou.com/sitemap.xml
+- Search index mirrors sitemap URLs: https://www.xiaozhonglvyou.com/search-index.json
+- RSS feed: https://www.xiaozhonglvyou.com/feed.xml
+- Robots and AI crawler access policy: https://www.xiaozhonglvyou.com/robots.txt
+- Apple Smart App Banner metadata appears on app landing pages where relevant.
+- SiteNavigationElement structured data describes primary site navigation.
+- FAQPage structured data appears on high-intent guide and app pages where useful.
+- Open Graph locale and hreflang alternates identify localized and regional page variants.
+
 Indexable pages:
 
 - CrazyAIAgent | Independent iOS and macOS Utilities: https://www.xiaozhonglvyou.com/

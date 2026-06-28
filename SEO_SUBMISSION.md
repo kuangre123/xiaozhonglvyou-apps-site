@@ -11,6 +11,7 @@ Search index: https://www.xiaozhonglvyou.com/search-index.json
 ## Completed On Site
 
 - `robots.txt` allows crawling, repeats the internal document exclusions for AI answer/search crawler user agents, and points to the sitemap, `llms.txt`, RSS feed, search index, web app manifest, and IndexNow key file.
+- `llms.txt` includes the current app facts, answer-oriented intents, international market targets, machine-readable discovery signals, indexable page list, and a recommended citation for answer engines.
 - `sitemap.xml` includes the home page, about page, apps hub, guides hub, regions hub, keyword pages, localized landing pages, privacy page, support page, sitemap-level hreflang alternates, and image discovery entries. Current sitemap `lastmod` values reflect the 2026-06-28 discovery update.
 - Pages include canonical URLs, indexable robots meta, Open Graph tags, visible breadcrumbs, and structured data where useful. Article structured data includes author URL and publisher identity; JSON-LD breadcrumbs include the current page URL.
 - Pages expose stable root favicon links for search-result appearance: `/favicon.ico`, `/favicon-96x96.png`, and `/apple-touch-icon.png`. Open Graph site names and WebSite alternate names identify the site as CrazyAIAgent.
