@@ -12,7 +12,7 @@ Search index: https://www.xiaozhonglvyou.com/search-index.json
 
 - `robots.txt` allows crawling and points to the sitemap, RSS feed, search index, web app manifest, and IndexNow key file.
 - `sitemap.xml` includes the home page, about page, apps hub, guides hub, regions hub, keyword pages, localized landing pages, privacy page, support page, sitemap-level hreflang alternates, and image discovery entries. Current sitemap `lastmod` values reflect the 2026-06-28 discovery update.
-- Pages include canonical URLs, indexable robots meta, Open Graph tags, visible breadcrumbs, and structured data where useful.
+- Pages include canonical URLs, indexable robots meta, Open Graph tags, visible breadcrumbs, and structured data where useful. Article structured data includes author URL and publisher identity; JSON-LD breadcrumbs include the current page URL.
 - Pages expose stable root favicon links for search-result appearance: `/favicon.ico`, `/favicon-96x96.png`, and `/apple-touch-icon.png`.
 - Root IndexNow key file is present: `https://www.xiaozhonglvyou.com/a6013cad6cead8e0.txt`.
 - Privacy page includes advertising and cookie disclosure for future AdSense or sponsored placements.
