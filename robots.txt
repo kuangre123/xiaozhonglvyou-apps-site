@@ -4,8 +4,23 @@ Disallow: /README.md
 Disallow: /SEO_SUBMISSION.md
 Allow: /
 
+# AI answer and search crawlers
+User-agent: GPTBot
+User-agent: OAI-SearchBot
+User-agent: ChatGPT-User
+User-agent: ClaudeBot
+User-agent: Claude-SearchBot
+User-agent: Claude-User
+User-agent: PerplexityBot
+User-agent: Perplexity-User
+Disallow: /DEPLOYMENT.md
+Disallow: /README.md
+Disallow: /SEO_SUBMISSION.md
+Allow: /
+
 Sitemap: https://www.xiaozhonglvyou.com/sitemap.xml
 Host: www.xiaozhonglvyou.com
+# LLM discovery: https://www.xiaozhonglvyou.com/llms.txt
 # Search index: https://www.xiaozhonglvyou.com/search-index.json
 # RSS feed: https://www.xiaozhonglvyou.com/feed.xml
 # Web app manifest: https://www.xiaozhonglvyou.com/manifest.webmanifest
