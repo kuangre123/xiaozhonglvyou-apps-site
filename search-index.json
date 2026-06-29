@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "generatedAt": "2026-06-29",
   "origin": "https://www.xiaozhonglvyou.com",
-  "pageCount": 41,
+  "pageCount": 42,
   "pages": [
     {
       "url": "https://www.xiaozhonglvyou.com/",
@@ -844,6 +844,29 @@
         "A creator's asset management pipeline.",
         "Seedance 2.5 key facts.",
         "Seedance 2.5 and creator tools FAQ"
+      ]
+    },
+    {
+      "url": "https://www.xiaozhonglvyou.com/iphone-photo-cleaner-comparison.html",
+      "path": "/iphone-photo-cleaner-comparison.html",
+      "title": "Best iPhone Photo Cleaner Apps Compared 2026 | AI Cleaning vs Google Photos vs Gemini",
+      "description": "Compare the top iPhone photo cleaner apps in 2026. AI Cleaning vs Google Photos vs Gemini Photos — side-by-side on AI classification, duplicate cleanup, privacy, and storage analysis.",
+      "h1": "Best iPhone photo cleaner apps compared: AI Cleaning vs Google Photos vs Gemini Photos.",
+      "lang": "en",
+      "category": "comparison-guide",
+      "canonical": "https://www.xiaozhonglvyou.com/iphone-photo-cleaner-comparison.html",
+      "lastmod": "2026-06-29",
+      "changefreq": "monthly",
+      "priority": 0.88,
+      "images": [
+        "https://www.xiaozhonglvyou.com/assets/ai-cleaning-icon.png"
+      ],
+      "headings": [
+        "AI Cleaning is the best free iPhone photo cleaner for classification-first cleanup.",
+        "Side-by-side: AI Cleaning vs Google Photos vs Gemini Photos.",
+        "Why classification-first cleanup gives better results.",
+        "On-device AI vs cloud-based photo analysis.",
+        "Common questions about iPhone photo cleaner apps in 2026."
       ]
     }
   ]
