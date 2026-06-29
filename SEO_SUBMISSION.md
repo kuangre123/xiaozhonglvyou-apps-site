@@ -15,6 +15,7 @@ Search index: https://www.xiaozhonglvyou.com/search-index.json
 - `sitemap.xml` includes the home page, about page, apps hub, guides hub, regions hub, keyword pages, localized landing pages, privacy page, support page, sitemap-level hreflang alternates, and image discovery entries. Current sitemap, search index, RSS build date, llms.txt, and Article dateModified values reflect the 2026-06-29 discovery update.
 - Pages include canonical URLs, indexable robots meta, Open Graph tags, visible breadcrumbs, and structured data where useful. Article structured data includes author URL and publisher identity; JSON-LD breadcrumbs include the current page URL.
 - Homepage and About structured data define the CrazyAIAgent publisher/brand entity; Article nodes link back to the WebSite entity with `isPartOf`.
+- Home, privacy, and support pages expose page-level `WebPage` or `ContactPage` structured data linked to the WebSite and publisher entities.
 - SoftwareApplication structured data includes App Store `sameAs` URLs and Apple App Store ID identifiers for app entity matching.
 - Hub pages expose `ItemList` JSON-LD for the apps, guides, and regional page directories so crawlers can read the internal URL groups directly.
 - Visible FAQ sections are mirrored with matching `FAQPage` JSON-LD across the site, covering 19 FAQ pages and 67 question-answer pairs.
