@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-06-28",
+  "generatedAt": "2026-06-29",
   "origin": "https://www.xiaozhonglvyou.com",
   "pageCount": 41,
   "pages": [
@@ -13,7 +13,7 @@
       "lang": "en",
       "category": "home",
       "canonical": "https://www.xiaozhonglvyou.com/",
-      "lastmod": "2026-06-28",
+      "lastmod": "2026-06-29",
       "changefreq": "weekly",
       "priority": 1,
       "images": [
@@ -41,7 +41,7 @@
       "lang": "en",
       "category": "hub",
       "canonical": "https://www.xiaozhonglvyou.com/apps.html",
-      "lastmod": "2026-06-28",
+      "lastmod": "2026-06-29",
       "changefreq": "monthly",
       "priority": 0.9,
       "images": [
@@ -60,7 +60,7 @@
       "lang": "en",
       "category": "support",
       "canonical": "https://www.xiaozhonglvyou.com/about.html",
-      "lastmod": "2026-06-28",
+      "lastmod": "2026-06-29",
       "changefreq": "yearly",
       "priority": 0.72,
       "images": [
@@ -80,7 +80,7 @@
       "lang": "en",
       "category": "guide",
       "canonical": "https://www.xiaozhonglvyou.com/best-iphone-photo-cleaner-app.html",
-      "lastmod": "2026-06-28",
+      "lastmod": "2026-06-29",
       "changefreq": "monthly",
       "priority": 0.86,
       "images": [
@@ -102,7 +102,7 @@
       "lang": "en",
       "category": "hub",
       "canonical": "https://www.xiaozhonglvyou.com/guides.html",
-      "lastmod": "2026-06-28",
+      "lastmod": "2026-06-29",
       "changefreq": "monthly",
       "priority": 0.86,
       "images": [
@@ -122,7 +122,7 @@
       "lang": "en",
       "category": "hub",
       "canonical": "https://www.xiaozhonglvyou.com/regions.html",
-      "lastmod": "2026-06-28",
+      "lastmod": "2026-06-29",
       "changefreq": "monthly",
       "priority": 0.58,
       "images": [
@@ -141,7 +141,7 @@
       "lang": "en",
       "category": "guide",
       "canonical": "https://www.xiaozhonglvyou.com/ai-photo-classification.html",
-      "lastmod": "2026-06-28",
+      "lastmod": "2026-06-29",
       "changefreq": "monthly",
       "priority": 0.9,
       "images": [
@@ -161,7 +161,7 @@
       "lang": "en",
       "category": "guide",
       "canonical": "https://www.xiaozhonglvyou.com/iphone-photo-cleaner.html",
-      "lastmod": "2026-06-28",
+      "lastmod": "2026-06-29",
       "changefreq": "monthly",
       "priority": 0.86,
       "images": [
@@ -181,7 +181,7 @@
       "lang": "en",
       "category": "guide",
       "canonical": "https://www.xiaozhonglvyou.com/private-ai-photo-cleaner.html",
-      "lastmod": "2026-06-28",
+      "lastmod": "2026-06-29",
       "changefreq": "monthly",
       "priority": 0.82,
       "images": [
@@ -202,7 +202,7 @@
       "lang": "en",
       "category": "guide",
       "canonical": "https://www.xiaozhonglvyou.com/iphone-storage-cleanup-guide.html",
-      "lastmod": "2026-06-28",
+      "lastmod": "2026-06-29",
       "changefreq": "monthly",
       "priority": 0.82,
       "images": [
@@ -223,7 +223,7 @@
       "lang": "en",
       "category": "guide",
       "canonical": "https://www.xiaozhonglvyou.com/travel-translator.html",
-      "lastmod": "2026-06-28",
+      "lastmod": "2026-06-29",
       "changefreq": "monthly",
       "priority": 0.82,
       "images": [
@@ -243,7 +243,7 @@
       "lang": "zh-Hans",
       "category": "regional",
       "canonical": "https://www.xiaozhonglvyou.com/travel-translator-cn.html",
-      "lastmod": "2026-06-28",
+      "lastmod": "2026-06-29",
       "changefreq": "monthly",
       "priority": 0.78,
       "images": [
@@ -264,7 +264,7 @@
       "lang": "en",
       "category": "guide",
       "canonical": "https://www.xiaozhonglvyou.com/mac-screen-privacy.html",
-      "lastmod": "2026-06-28",
+      "lastmod": "2026-06-29",
       "changefreq": "monthly",
       "priority": 0.82,
       "images": [
@@ -284,7 +284,7 @@
       "lang": "zh-Hans",
       "category": "regional",
       "canonical": "https://www.xiaozhonglvyou.com/mac-screen-privacy-cn.html",
-      "lastmod": "2026-06-28",
+      "lastmod": "2026-06-29",
       "changefreq": "monthly",
       "priority": 0.78,
       "images": [
@@ -305,7 +305,7 @@
       "lang": "zh-Hans",
       "category": "regional",
       "canonical": "https://www.xiaozhonglvyou.com/zh-cn.html",
-      "lastmod": "2026-06-28",
+      "lastmod": "2026-06-29",
       "changefreq": "monthly",
       "priority": 0.84,
       "images": [
@@ -325,7 +325,7 @@
       "lang": "zh-Hant",
       "category": "regional",
       "canonical": "https://www.xiaozhonglvyou.com/zh-hant.html",
-      "lastmod": "2026-06-28",
+      "lastmod": "2026-06-29",
       "changefreq": "monthly",
       "priority": 0.84,
       "images": [
@@ -345,7 +345,7 @@
       "lang": "en-US",
       "category": "regional",
       "canonical": "https://www.xiaozhonglvyou.com/us-apps.html",
-      "lastmod": "2026-06-28",
+      "lastmod": "2026-06-29",
       "changefreq": "monthly",
       "priority": 0.83,
       "images": [
@@ -365,7 +365,7 @@
       "lang": "en-GB",
       "category": "regional",
       "canonical": "https://www.xiaozhonglvyou.com/uk-apps.html",
-      "lastmod": "2026-06-28",
+      "lastmod": "2026-06-29",
       "changefreq": "monthly",
       "priority": 0.8,
       "images": [
@@ -385,7 +385,7 @@
       "lang": "en-CA",
       "category": "regional",
       "canonical": "https://www.xiaozhonglvyou.com/canada-australia-apps.html",
-      "lastmod": "2026-06-28",
+      "lastmod": "2026-06-29",
       "changefreq": "monthly",
       "priority": 0.78,
       "images": [
@@ -405,7 +405,7 @@
       "lang": "en-SG",
       "category": "regional",
       "canonical": "https://www.xiaozhonglvyou.com/singapore-apps.html",
-      "lastmod": "2026-06-28",
+      "lastmod": "2026-06-29",
       "changefreq": "monthly",
       "priority": 0.77,
       "images": [
@@ -425,7 +425,7 @@
       "lang": "en-CH",
       "category": "regional",
       "canonical": "https://www.xiaozhonglvyou.com/switzerland-apps.html",
-      "lastmod": "2026-06-28",
+      "lastmod": "2026-06-29",
       "changefreq": "monthly",
       "priority": 0.77,
       "images": [
@@ -445,7 +445,7 @@
       "lang": "en-NL",
       "category": "regional",
       "canonical": "https://www.xiaozhonglvyou.com/netherlands-nordics-apps.html",
-      "lastmod": "2026-06-28",
+      "lastmod": "2026-06-29",
       "changefreq": "monthly",
       "priority": 0.75,
       "images": [
@@ -465,7 +465,7 @@
       "lang": "de-DE",
       "category": "regional",
       "canonical": "https://www.xiaozhonglvyou.com/de-de.html",
-      "lastmod": "2026-06-28",
+      "lastmod": "2026-06-29",
       "changefreq": "monthly",
       "priority": 0.78,
       "images": [
@@ -485,7 +485,7 @@
       "lang": "de-DE",
       "category": "regional",
       "canonical": "https://www.xiaozhonglvyou.com/iphone-foto-cleaner-de.html",
-      "lastmod": "2026-06-28",
+      "lastmod": "2026-06-29",
       "changefreq": "monthly",
       "priority": 0.8,
       "images": [
@@ -505,7 +505,7 @@
       "lang": "fr-FR",
       "category": "regional",
       "canonical": "https://www.xiaozhonglvyou.com/fr-fr.html",
-      "lastmod": "2026-06-28",
+      "lastmod": "2026-06-29",
       "changefreq": "monthly",
       "priority": 0.78,
       "images": [
@@ -525,7 +525,7 @@
       "lang": "fr-FR",
       "category": "regional",
       "canonical": "https://www.xiaozhonglvyou.com/nettoyeur-photo-iphone-fr.html",
-      "lastmod": "2026-06-28",
+      "lastmod": "2026-06-29",
       "changefreq": "monthly",
       "priority": 0.8,
       "images": [
@@ -545,7 +545,7 @@
       "lang": "es-ES",
       "category": "regional",
       "canonical": "https://www.xiaozhonglvyou.com/es-es.html",
-      "lastmod": "2026-06-28",
+      "lastmod": "2026-06-29",
       "changefreq": "monthly",
       "priority": 0.76,
       "images": [
@@ -565,7 +565,7 @@
       "lang": "it-IT",
       "category": "regional",
       "canonical": "https://www.xiaozhonglvyou.com/it-it.html",
-      "lastmod": "2026-06-28",
+      "lastmod": "2026-06-29",
       "changefreq": "monthly",
       "priority": 0.76,
       "images": [
@@ -585,7 +585,7 @@
       "lang": "ko-KR",
       "category": "regional",
       "canonical": "https://www.xiaozhonglvyou.com/ko-kr.html",
-      "lastmod": "2026-06-28",
+      "lastmod": "2026-06-29",
       "changefreq": "monthly",
       "priority": 0.76,
       "images": [
@@ -605,7 +605,7 @@
       "lang": "ja-JP",
       "category": "regional",
       "canonical": "https://www.xiaozhonglvyou.com/ja-jp.html",
-      "lastmod": "2026-06-28",
+      "lastmod": "2026-06-29",
       "changefreq": "monthly",
       "priority": 0.78,
       "images": [
@@ -625,7 +625,7 @@
       "lang": "en",
       "category": "guide",
       "canonical": "https://www.xiaozhonglvyou.com/ai-photo-organizer-guide.html",
-      "lastmod": "2026-06-28",
+      "lastmod": "2026-06-29",
       "changefreq": "monthly",
       "priority": 0.8,
       "images": [
@@ -645,7 +645,7 @@
       "lang": "zh-Hans",
       "category": "regional",
       "canonical": "https://www.xiaozhonglvyou.com/ai-photo-classification-cn.html",
-      "lastmod": "2026-06-28",
+      "lastmod": "2026-06-29",
       "changefreq": "monthly",
       "priority": 0.82,
       "images": [
@@ -666,7 +666,7 @@
       "lang": "zh-Hans",
       "category": "regional",
       "canonical": "https://www.xiaozhonglvyou.com/iphone-photo-cleaner-cn.html",
-      "lastmod": "2026-06-28",
+      "lastmod": "2026-06-29",
       "changefreq": "monthly",
       "priority": 0.82,
       "images": [
@@ -687,7 +687,7 @@
       "lang": "zh-Hans",
       "category": "regional",
       "canonical": "https://www.xiaozhonglvyou.com/duplicate-photo-cleaner-cn.html",
-      "lastmod": "2026-06-28",
+      "lastmod": "2026-06-29",
       "changefreq": "monthly",
       "priority": 0.8,
       "images": [
@@ -708,7 +708,7 @@
       "lang": "en",
       "category": "guide",
       "canonical": "https://www.xiaozhonglvyou.com/duplicate-photo-cleaner-guide.html",
-      "lastmod": "2026-06-28",
+      "lastmod": "2026-06-29",
       "changefreq": "monthly",
       "priority": 0.78,
       "images": [
@@ -728,7 +728,7 @@
       "lang": "en",
       "category": "guide",
       "canonical": "https://www.xiaozhonglvyou.com/voice-camera-translator-guide.html",
-      "lastmod": "2026-06-28",
+      "lastmod": "2026-06-29",
       "changefreq": "monthly",
       "priority": 0.76,
       "images": [
@@ -748,7 +748,7 @@
       "lang": "en",
       "category": "guide",
       "canonical": "https://www.xiaozhonglvyou.com/screen-sharing-privacy-guide.html",
-      "lastmod": "2026-06-28",
+      "lastmod": "2026-06-29",
       "changefreq": "monthly",
       "priority": 0.76,
       "images": [
@@ -768,7 +768,7 @@
       "lang": "en",
       "category": "support",
       "canonical": "https://www.xiaozhonglvyou.com/privacy.html",
-      "lastmod": "2026-06-28",
+      "lastmod": "2026-06-29",
       "changefreq": "yearly",
       "priority": 0.5,
       "images": [
@@ -789,7 +789,7 @@
       "lang": "en",
       "category": "support",
       "canonical": "https://www.xiaozhonglvyou.com/support.html",
-      "lastmod": "2026-06-28",
+      "lastmod": "2026-06-29",
       "changefreq": "monthly",
       "priority": 0.6,
       "images": [
@@ -809,7 +809,7 @@
       "lang": "zh-Hans",
       "category": "creator-guide",
       "canonical": "https://www.xiaozhonglvyou.com/seedance-ai-tools-cn.html",
-      "lastmod": "2026-06-28",
+      "lastmod": "2026-06-29",
       "changefreq": "monthly",
       "priority": 0.8,
       "images": [
@@ -832,7 +832,7 @@
       "lang": "en",
       "category": "creator-guide",
       "canonical": "https://www.xiaozhonglvyou.com/seedance-ai-tools.html",
-      "lastmod": "2026-06-28",
+      "lastmod": "2026-06-29",
       "changefreq": "monthly",
       "priority": 0.8,
       "images": [

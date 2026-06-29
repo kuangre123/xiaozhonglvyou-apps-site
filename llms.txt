@@ -20,7 +20,7 @@ Primary apps:
 - Anti-spy screen: macOS screen privacy app for sensitive work in shared spaces. Mac App Store: https://apps.apple.com/us/app/anti-spy-screen/id6761301764?mt=12&uo=4
 - Anti-spy screen Lite: macOS menu bar privacy utility that uses local face detection to hide selected windows when multiple people are detected near the screen. Mac App Store: https://apps.apple.com/us/app/anti-spy-screen-lite/id6766485393?mt=12&uo=4
 
-Last updated: 2026-06-28
+Last updated: 2026-06-29
 
 Important search and answer intents:
 
