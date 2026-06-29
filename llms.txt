@@ -44,6 +44,7 @@ Machine-readable discovery signals:
 - RSS feed: https://www.xiaozhonglvyou.com/feed.xml
 - Robots and AI crawler access policy: https://www.xiaozhonglvyou.com/robots.txt
 - Apple Smart App Banner metadata appears on app landing pages where relevant.
+- SoftwareApplication structured data includes App Store sameAs URLs and Apple App Store ID identifiers.
 - SiteNavigationElement structured data describes primary site navigation.
 - FAQPage structured data appears on high-intent guide and app pages where useful.
 - Open Graph locale and hreflang alternates identify localized and regional page variants.
