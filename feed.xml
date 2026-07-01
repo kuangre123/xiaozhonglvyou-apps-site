@@ -3,73 +3,9 @@
   <channel>
     <title>CrazyAIAgent</title>
     <link>https://www.xiaozhonglvyou.com/</link>
-    <description>Independent iPhone and Mac apps for AI photo organization, travel translation, Mac screen privacy, and AI creator workflows.</description>
+    <description>Independent iPhone and Mac apps for photo cleanup, travel translation, screen privacy, and focused work.</description>
     <language>en</language>
-    <lastBuildDate>Mon, 29 Jun 2026 00:00:00 GMT</lastBuildDate>
-    <item>
-      <title>重复照片清理指南：相似照片整理和 iPhone 相册复查</title>
-      <link>https://www.xiaozhonglvyou.com/duplicate-photo-cleaner-cn.html</link>
-      <description>中文重复照片清理指南：介绍如何成组复查重复照片、相似照片、连拍、截图和模糊照片，再决定保留和清理，避免一键误删照片。</description>
-      <guid isPermaLink="true">https://www.xiaozhonglvyou.com/duplicate-photo-cleaner-cn.html</guid>
-      <pubDate>Sat, 06 Jun 2026 00:00:00 GMT</pubDate>
-      <enclosure url="https://www.xiaozhonglvyou.com/assets/ai-cleaning-screen.png" type="image/png" />
-    </item>
-    <item>
-      <title>Nettoyeur photo iPhone : classement photo IA et verification des doublons</title>
-      <link>https://www.xiaozhonglvyou.com/nettoyeur-photo-iphone-fr.html</link>
-      <description>Guide francais pour nettoyer les photos iPhone avec IA : classement, doublons, photos similaires, captures, flous et gros medias avant suppression.</description>
-      <guid isPermaLink="true">https://www.xiaozhonglvyou.com/nettoyeur-photo-iphone-fr.html</guid>
-      <pubDate>Sun, 07 Jun 2026 00:00:00 GMT</pubDate>
-      <enclosure url="https://www.xiaozhonglvyou.com/assets/ai-cleaning-screen.png" type="image/png" />
-    </item>
-    <item>
-      <title>出国翻译通：旅行语音翻译和拍照翻译指南</title>
-      <link>https://www.xiaozhonglvyou.com/travel-translator-cn.html</link>
-      <description>中文出国翻译指南：介绍旅行中如何使用语音翻译、朗读播放、拍照 OCR 翻译、菜单路牌翻译和快速语言切换。</description>
-      <guid isPermaLink="true">https://www.xiaozhonglvyou.com/travel-translator-cn.html</guid>
-      <pubDate>Sat, 06 Jun 2026 00:00:00 GMT</pubDate>
-      <enclosure url="https://www.xiaozhonglvyou.com/assets/travel-translator-icon.png" type="image/png" />
-    </item>
-    <item>
-      <title>Seedance 2.5 AI视频创作者工具推荐：素材整理和照片管理</title>
-      <link>https://www.xiaozhonglvyou.com/seedance-ai-tools-cn.html</link>
-      <description>Seedance 2.5 是字节跳动 2026 年发布的 AI 视频生成模型。本文面向 AI 内容创作者，推荐配合 AI 视频工作流的素材整理工具。</description>
-      <guid isPermaLink="true">https://www.xiaozhonglvyou.com/seedance-ai-tools-cn.html</guid>
-      <pubDate>Sat, 20 Jun 2026 00:00:00 GMT</pubDate>
-      <enclosure url="https://www.xiaozhonglvyou.com/assets/ai-cleaning-screen.png" type="image/png" />
-    </item>
-    <item>
-      <title>Seedance 2.5: Essential Tools for AI Video Content Creators</title>
-      <link>https://www.xiaozhonglvyou.com/seedance-ai-tools.html</link>
-      <description>ByteDance's Seedance 2.5 generates 30-second 4K AI videos. This guide covers tools for managing the growing volume of AI-generated assets.</description>
-      <guid isPermaLink="true">https://www.xiaozhonglvyou.com/seedance-ai-tools.html</guid>
-      <pubDate>Sat, 20 Jun 2026 00:00:00 GMT</pubDate>
-      <enclosure url="https://www.xiaozhonglvyou.com/assets/ai-cleaning-screen.png" type="image/png" />
-    </item>
-    <item>
-      <title>iPhone Foto Cleaner: KI Fotos sortieren und Duplikate pruefen</title>
-      <link>https://www.xiaozhonglvyou.com/iphone-foto-cleaner-de.html</link>
-      <description>Deutschsprachiger Leitfaden fuer iPhone Foto Cleaner, KI Foto Sortierung, doppelte Fotos, Screenshots, unscharfe Fotos und Speicherpruefung.</description>
-      <guid isPermaLink="true">https://www.xiaozhonglvyou.com/iphone-foto-cleaner-de.html</guid>
-      <pubDate>Sun, 07 Jun 2026 00:00:00 GMT</pubDate>
-      <enclosure url="https://www.xiaozhonglvyou.com/assets/ai-cleaning-screen.png" type="image/png" />
-    </item>
-    <item>
-      <title>iPhone照片清理指南：苹果手机相册整理和安全清理</title>
-      <link>https://www.xiaozhonglvyou.com/iphone-photo-cleaner-cn.html</link>
-      <description>中文 iPhone 照片清理指南，介绍如何先用 AI 照片智能分类看清相册，再复查重复照片、截图、模糊照片和大文件。</description>
-      <guid isPermaLink="true">https://www.xiaozhonglvyou.com/iphone-photo-cleaner-cn.html</guid>
-      <pubDate>Sat, 06 Jun 2026 00:00:00 GMT</pubDate>
-      <enclosure url="https://www.xiaozhonglvyou.com/assets/ai-cleaning-screen.png" type="image/png" />
-    </item>
-    <item>
-      <title>Mac防窥和屏幕隐私指南：共享屏幕和演示保护</title>
-      <link>https://www.xiaozhonglvyou.com/mac-screen-privacy-cn.html</link>
-      <description>中文 Mac 屏幕隐私指南，介绍共享屏幕、远程会议、演示模式、保护敏感窗口和办公防窥场景。</description>
-      <guid isPermaLink="true">https://www.xiaozhonglvyou.com/mac-screen-privacy-cn.html</guid>
-      <pubDate>Sat, 06 Jun 2026 00:00:00 GMT</pubDate>
-      <enclosure url="https://www.xiaozhonglvyou.com/assets/anti-spy-screen.png" type="image/png" />
-    </item>
+    <lastBuildDate>Wed, 01 Jul 2026 06:06:08 GMT</lastBuildDate>
     <item>
       <title>AI照片分类指南：智能相册整理和 iPhone 照片清理</title>
       <link>https://www.xiaozhonglvyou.com/ai-photo-classification-cn.html</link>
@@ -95,7 +31,7 @@
       <enclosure url="https://www.xiaozhonglvyou.com/assets/ai-cleaning-icon.png" type="image/png" />
     </item>
     <item>
-      <title>Best iPhone Photo Cleaner App for AI Cleanup</title>
+      <title>Best iPhone Photo Cleaner App 2026</title>
       <link>https://www.xiaozhonglvyou.com/best-iphone-photo-cleaner-app.html</link>
       <description>A decision guide for choosing an iPhone photo cleaner app with AI classification, duplicate review, storage cleanup, and privacy-first on-device processing.</description>
       <guid isPermaLink="true">https://www.xiaozhonglvyou.com/best-iphone-photo-cleaner-app.html</guid>
@@ -103,11 +39,43 @@
       <enclosure url="https://www.xiaozhonglvyou.com/assets/ai-cleaning-icon.png" type="image/png" />
     </item>
     <item>
+      <title>重复照片清理指南：相似照片整理和 iPhone 相册复查</title>
+      <link>https://www.xiaozhonglvyou.com/duplicate-photo-cleaner-cn.html</link>
+      <description>中文重复照片清理指南：介绍如何成组复查重复照片、相似照片、连拍、截图和模糊照片，再决定保留和清理，避免一键误删照片。</description>
+      <guid isPermaLink="true">https://www.xiaozhonglvyou.com/duplicate-photo-cleaner-cn.html</guid>
+      <pubDate>Sat, 06 Jun 2026 00:00:00 GMT</pubDate>
+      <enclosure url="https://www.xiaozhonglvyou.com/assets/ai-cleaning-screen.png" type="image/png" />
+    </item>
+    <item>
       <title>Duplicate Photo Cleaner Guide for iPhone</title>
       <link>https://www.xiaozhonglvyou.com/duplicate-photo-cleaner-guide.html</link>
       <description>A practical duplicate photo cleanup workflow for iPhone users.</description>
       <guid isPermaLink="true">https://www.xiaozhonglvyou.com/duplicate-photo-cleaner-guide.html</guid>
       <pubDate>Wed, 03 Jun 2026 00:00:00 GMT</pubDate>
+      <enclosure url="https://www.xiaozhonglvyou.com/assets/ai-cleaning-icon.png" type="image/png" />
+    </item>
+    <item>
+      <title>iPhone Foto Cleaner: KI Fotos sortieren und Duplikate pruefen</title>
+      <link>https://www.xiaozhonglvyou.com/iphone-foto-cleaner-de.html</link>
+      <description>Deutschsprachiger Leitfaden fuer iPhone Foto Cleaner, KI Foto Sortierung, doppelte Fotos, Screenshots, unscharfe Fotos und Speicherpruefung.</description>
+      <guid isPermaLink="true">https://www.xiaozhonglvyou.com/iphone-foto-cleaner-de.html</guid>
+      <pubDate>Sun, 07 Jun 2026 00:00:00 GMT</pubDate>
+      <enclosure url="https://www.xiaozhonglvyou.com/assets/ai-cleaning-screen.png" type="image/png" />
+    </item>
+    <item>
+      <title>iPhone照片清理指南：苹果手机相册整理和安全清理</title>
+      <link>https://www.xiaozhonglvyou.com/iphone-photo-cleaner-cn.html</link>
+      <description>中文 iPhone 照片清理指南，介绍如何先用 AI 照片智能分类看清相册，再复查重复照片、截图、模糊照片和大文件。</description>
+      <guid isPermaLink="true">https://www.xiaozhonglvyou.com/iphone-photo-cleaner-cn.html</guid>
+      <pubDate>Sat, 06 Jun 2026 00:00:00 GMT</pubDate>
+      <enclosure url="https://www.xiaozhonglvyou.com/assets/ai-cleaning-screen.png" type="image/png" />
+    </item>
+    <item>
+      <title>Best iPhone Photo Cleaner Apps Compared 2026</title>
+      <link>https://www.xiaozhonglvyou.com/iphone-photo-cleaner-comparison.html</link>
+      <description>Side-by-side comparison of iPhone photo cleaner apps: AI Cleaning vs Google Photos vs Gemini Photos on AI classification, duplicate cleanup, privacy, and storage analysis.</description>
+      <guid isPermaLink="true">https://www.xiaozhonglvyou.com/iphone-photo-cleaner-comparison.html</guid>
+      <pubDate>Mon, 29 Jun 2026 00:00:00 GMT</pubDate>
       <enclosure url="https://www.xiaozhonglvyou.com/assets/ai-cleaning-icon.png" type="image/png" />
     </item>
     <item>
@@ -127,12 +95,28 @@
       <enclosure url="https://www.xiaozhonglvyou.com/assets/ai-cleaning-icon.png" type="image/png" />
     </item>
     <item>
+      <title>Mac防窥和屏幕隐私指南：共享屏幕和演示保护</title>
+      <link>https://www.xiaozhonglvyou.com/mac-screen-privacy-cn.html</link>
+      <description>中文 Mac 屏幕隐私指南，介绍共享屏幕、远程会议、演示模式、保护敏感窗口和办公防窥场景。</description>
+      <guid isPermaLink="true">https://www.xiaozhonglvyou.com/mac-screen-privacy-cn.html</guid>
+      <pubDate>Sat, 06 Jun 2026 00:00:00 GMT</pubDate>
+      <enclosure url="https://www.xiaozhonglvyou.com/assets/anti-spy-screen.png" type="image/png" />
+    </item>
+    <item>
       <title>Mac Screen Privacy App</title>
       <link>https://www.xiaozhonglvyou.com/mac-screen-privacy.html</link>
       <description>Anti-spy screen and Anti-spy screen Lite help protect sensitive Mac work during nearby privacy events and presentation contexts.</description>
       <guid isPermaLink="true">https://www.xiaozhonglvyou.com/mac-screen-privacy.html</guid>
       <pubDate>Wed, 03 Jun 2026 00:00:00 GMT</pubDate>
-      <enclosure url="https://www.xiaozhonglvyou.com/assets/ai-cleaning-icon.png" type="image/png" />
+      <enclosure url="https://www.xiaozhonglvyou.com/assets/anti-spy-screen.png" type="image/png" />
+    </item>
+    <item>
+      <title>Nettoyeur photo iPhone : classement photo IA et verification des doublons</title>
+      <link>https://www.xiaozhonglvyou.com/nettoyeur-photo-iphone-fr.html</link>
+      <description>Guide francais pour nettoyer les photos iPhone avec IA : classement, doublons, photos similaires, captures, flous et gros medias avant suppression.</description>
+      <guid isPermaLink="true">https://www.xiaozhonglvyou.com/nettoyeur-photo-iphone-fr.html</guid>
+      <pubDate>Sun, 07 Jun 2026 00:00:00 GMT</pubDate>
+      <enclosure url="https://www.xiaozhonglvyou.com/assets/ai-cleaning-screen.png" type="image/png" />
     </item>
     <item>
       <title>Private AI Photo Cleaner for iPhone</title>
@@ -148,7 +132,15 @@
       <description>A practical guide to Mac screen privacy for shared workspaces and screen sharing.</description>
       <guid isPermaLink="true">https://www.xiaozhonglvyou.com/screen-sharing-privacy-guide.html</guid>
       <pubDate>Wed, 03 Jun 2026 00:00:00 GMT</pubDate>
-      <enclosure url="https://www.xiaozhonglvyou.com/assets/ai-cleaning-icon.png" type="image/png" />
+      <enclosure url="https://www.xiaozhonglvyou.com/assets/anti-spy-screen.png" type="image/png" />
+    </item>
+    <item>
+      <title>出国翻译通：旅行语音翻译和拍照翻译指南</title>
+      <link>https://www.xiaozhonglvyou.com/travel-translator-cn.html</link>
+      <description>中文出国翻译指南：介绍旅行中如何使用语音翻译、朗读播放、拍照 OCR 翻译、菜单路牌翻译和快速语言切换。</description>
+      <guid isPermaLink="true">https://www.xiaozhonglvyou.com/travel-translator-cn.html</guid>
+      <pubDate>Sat, 06 Jun 2026 00:00:00 GMT</pubDate>
+      <enclosure url="https://www.xiaozhonglvyou.com/assets/travel-translator-icon.png" type="image/png" />
     </item>
     <item>
       <title>Travel Translator App for Voice and Camera Translation</title>

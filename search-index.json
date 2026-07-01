@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-06-29",
+  "generatedAt": "2026-06-13",
   "origin": "https://www.xiaozhonglvyou.com",
   "pageCount": 42,
   "pages": [
@@ -27,16 +27,14 @@
         "Privacy is written as a product boundary, not a slogan.",
         "Find the right app for the job.",
         "Choose the page that matches your market.",
-        "Helpful pages for specific app decisions",
-        "Answers before installing",
-        "One clear portfolio page for every product surface."
+        "Helpful pages for specific app decisions"
       ]
     },
     {
       "url": "https://www.xiaozhonglvyou.com/apps.html",
       "path": "/apps.html",
       "title": "App Store Utility Apps | Photo Cleaner, Translator, Mac Privacy",
-      "description": "A focused App Store utility portfolio from Summer Chen: AI Cleaning for AI smart photo classification, Travel Translator, Anti-spy screen, and Anti-spy screen Lite.",
+      "description": "CrazyAIAgent's App Store utility portfolio: AI Cleaning for smart photo classification, Travel Translator, Anti-spy screen, and Anti-spy screen Lite.",
       "h1": "Utility apps for photo cleanup, travel, and Mac privacy.",
       "lang": "en",
       "category": "hub",
@@ -55,7 +53,7 @@
       "url": "https://www.xiaozhonglvyou.com/about.html",
       "path": "/about.html",
       "title": "About CrazyAIAgent | Independent iOS and macOS Developer",
-      "description": "About CrazyAIAgent, an independent iOS and macOS utility portfolio focused on AI photo classification, photo cleanup, travel translation, and Mac screen privacy.",
+      "description": "About CrazyAIAgent — independent iOS and macOS utilities for AI photo classification, photo cleanup, travel translation, and Mac screen privacy.",
       "h1": "Useful iPhone and Mac tools from an independent developer.",
       "lang": "en",
       "category": "support",
@@ -74,7 +72,7 @@
     {
       "url": "https://www.xiaozhonglvyou.com/best-iphone-photo-cleaner-app.html",
       "path": "/best-iphone-photo-cleaner-app.html",
-      "title": "Best iPhone Photo Cleaner App for AI Cleanup | AI Cleaning",
+      "title": "Best iPhone Photo Cleaner App 2026 | Free AI Photo Cleanup Guide",
       "description": "Choose an iPhone photo cleaner with AI classification, duplicate review, blurry-shot cleanup, screenshot cleanup, storage analysis, and on-device privacy.",
       "h1": "The best iPhone photo cleaner should classify before it deletes.",
       "lang": "en",
@@ -97,7 +95,7 @@
       "url": "https://www.xiaozhonglvyou.com/guides.html",
       "path": "/guides.html",
       "title": "App Guides | Photo Organizer, iPhone Cleaner, Translator, Mac Privacy",
-      "description": "Practical guides for AI photo organization, iPhone photo cleanup, duplicate photo cleanup, voice and camera translation, and Mac screen sharing privacy from CrazyAIAgent.",
+      "description": "Practical CrazyAIAgent guides: AI photo organization, iPhone and duplicate photo cleanup, voice/camera translation, and Mac screen sharing privacy.",
       "h1": "Understand the workflow before installing.",
       "lang": "en",
       "category": "hub",
@@ -117,7 +115,7 @@
       "url": "https://www.xiaozhonglvyou.com/regions.html",
       "path": "/regions.html",
       "title": "English Market App Pages | CrazyAIAgent",
-      "description": "English market entry pages for CrazyAIAgent, including the United States, United Kingdom, Canada, Australia, Singapore, Switzerland, Netherlands, and Nordic App Store contexts.",
+      "description": "English market entry pages for CrazyAIAgent: US, UK, Canada, Australia, Singapore, Switzerland, Netherlands, and Nordic App Store contexts.",
       "h1": "Choose the English page for your App Store market.",
       "lang": "en",
       "category": "hub",
@@ -135,7 +133,7 @@
     {
       "url": "https://www.xiaozhonglvyou.com/ai-photo-classification.html",
       "path": "/ai-photo-classification.html",
-      "title": "AI Photo Classification for iPhone | AI Cleaning - Photo Cleaner",
+      "title": "AI Photo Classification for iPhone 2026 | Best Smart Photo Organizer",
       "description": "AI Cleaning - Photo Cleaner classifies iPhone photos on-device into documents, receipts, ID cards, food, plants, animals, and group photos.",
       "h1": "AI photo classification for iPhone photo libraries.",
       "lang": "en",
@@ -155,7 +153,7 @@
     {
       "url": "https://www.xiaozhonglvyou.com/iphone-photo-cleaner.html",
       "path": "/iphone-photo-cleaner.html",
-      "title": "iPhone Photo Cleaner with AI Classification | AI Cleaning",
+      "title": "Best Free iPhone Photo Cleaner 2026 | AI Classification App",
       "description": "AI Cleaning - Photo Cleaner helps classify iPhone photos, review duplicates, clean screenshots, find blurry shots, and analyze real storage.",
       "h1": "Clean iPhone photos after AI understands the library.",
       "lang": "en",
@@ -175,7 +173,7 @@
     {
       "url": "https://www.xiaozhonglvyou.com/private-ai-photo-cleaner.html",
       "path": "/private-ai-photo-cleaner.html",
-      "title": "Private AI Photo Cleaner | On-Device iPhone Cleanup",
+      "title": "Best Private AI Photo Cleaner 2026 | Free On-Device iPhone Cleanup",
       "description": "Private AI photo cleaner guide for iPhone users who want smart classification, duplicate review, and cleanup without cloud photo-library uploads.",
       "h1": "Private AI photo cleanup should start on the iPhone.",
       "lang": "en",
@@ -196,7 +194,7 @@
     {
       "url": "https://www.xiaozhonglvyou.com/iphone-storage-cleanup-guide.html",
       "path": "/iphone-storage-cleanup-guide.html",
-      "title": "iPhone Storage Cleanup Guide | Photos, Screenshots, Large Media",
+      "title": "iPhone Storage Cleanup Guide 2026 | Free Photo Storage Tips",
       "description": "Practical iPhone storage cleanup guide for photos: classify the library, then review large media, screenshots, blurry shots, duplicates, and similar photos.",
       "h1": "Clean iPhone storage by reviewing the photo library first.",
       "lang": "en",
@@ -217,7 +215,7 @@
     {
       "url": "https://www.xiaozhonglvyou.com/travel-translator.html",
       "path": "/travel-translator.html",
-      "title": "Travel Translator App | Voice and Camera Translation",
+      "title": "Best Free Travel Translator App 2026 | Voice and Camera Translation",
       "description": "Travel Translator helps travelers use voice input, translated speech playback, camera OCR translation, and fast language switching for international trips.",
       "h1": "Voice and camera translation for international trips.",
       "lang": "en",
@@ -238,7 +236,7 @@
       "url": "https://www.xiaozhonglvyou.com/travel-translator-cn.html",
       "path": "/travel-translator-cn.html",
       "title": "出国翻译通 | 旅行语音翻译和拍照翻译指南",
-      "description": "出国翻译通中文说明：面向旅行、学习和跨语言沟通，覆盖语音翻译、朗读播放、拍照 OCR 翻译、菜单和路牌翻译、机场酒店餐厅等常见出国场景。",
+      "description": "出国翻译通中文说明：面向旅行、学习和跨语言沟通，覆盖语音翻译、朗读播放、拍照 OCR 翻译、菜单和路牌翻译、机场酒店餐厅等常见出国场景，支持多语种离线翻译。",
       "h1": "出国沟通时，语音、拍照和朗读要放在一起。",
       "lang": "zh-Hans",
       "category": "regional",
@@ -258,7 +256,7 @@
     {
       "url": "https://www.xiaozhonglvyou.com/mac-screen-privacy.html",
       "path": "/mac-screen-privacy.html",
-      "title": "Mac Screen Privacy App | Anti-spy screen",
+      "title": "Best Mac Screen Privacy App 2026 | Free Anti-Spy Screen Protection",
       "description": "Anti-spy screen and Anti-spy screen Lite are Mac utilities for screen privacy, protected app hiding, presentation mode, and sensitive work in shared spaces.",
       "h1": "Protect sensitive Mac work in shared spaces.",
       "lang": "en",
@@ -380,7 +378,7 @@
       "url": "https://www.xiaozhonglvyou.com/canada-australia-apps.html",
       "path": "/canada-australia-apps.html",
       "title": "Canada Australia Apps | AI Photo Cleaner and Translator",
-      "description": "Canada and Australia entry for CrazyAIAgent: AI photo cleaner, iPhone photo organizer, travel translator, and Mac privacy utilities for high-value English markets.",
+      "description": "Canada and Australia entry for CrazyAIAgent: AI photo cleaner, iPhone photo organizer, travel translator, and Mac privacy for English markets.",
       "h1": "iPhone utility apps for English-speaking high-value markets.",
       "lang": "en-CA",
       "category": "regional",
@@ -420,7 +418,7 @@
       "url": "https://www.xiaozhonglvyou.com/switzerland-apps.html",
       "path": "/switzerland-apps.html",
       "title": "Switzerland Utility Apps | Photo Cleaner, Translator, Privacy",
-      "description": "Switzerland entry for CrazyAIAgent: AI photo cleaner, iPhone photo organizer, travel translator, and Mac screen privacy utilities for multilingual Swiss workflows.",
+      "description": "Switzerland entry for CrazyAIAgent: AI photo cleaner, iPhone photo organizer, travel translator, and Mac screen privacy for multilingual workflows.",
       "h1": "Clean iPhone photos, translate across languages, and protect Mac screens.",
       "lang": "en-CH",
       "category": "regional",
@@ -480,7 +478,7 @@
       "url": "https://www.xiaozhonglvyou.com/iphone-foto-cleaner-de.html",
       "path": "/iphone-foto-cleaner-de.html",
       "title": "iPhone Foto Cleaner | KI Fotos sortieren und Duplikate pruefen",
-      "description": "Deutschsprachiger iPhone Foto Cleaner Leitfaden: erst Fotos mit KI sortieren, dann doppelte Fotos, aehnliche Bilder, Screenshots, unscharfe Fotos und grosse Medien sicher pruefen.",
+      "description": "iPhone Foto Cleaner Leitfaden: Fotos mit KI sortieren, dann Duplikate, aehnliche Bilder, Screenshots und unscharfe Fotos vor der Loeschung pruefen.",
       "h1": "Fotos zuerst mit KI sortieren, dann sicher bereinigen.",
       "lang": "de-DE",
       "category": "regional",
@@ -520,7 +518,7 @@
       "url": "https://www.xiaozhonglvyou.com/nettoyeur-photo-iphone-fr.html",
       "path": "/nettoyeur-photo-iphone-fr.html",
       "title": "Nettoyeur photo iPhone | Classement photo IA et doublons",
-      "description": "Guide francais pour nettoyer les photos iPhone avec IA : classer la phototheque, verifier doublons, photos similaires, captures, flous et gros medias avant suppression.",
+      "description": "Guide pour nettoyer les photos iPhone avec IA : classer la phototheque, verifier doublons, photos similaires, captures et flous avant suppression.",
       "h1": "Classer les photos avec l'IA avant de nettoyer.",
       "lang": "fr-FR",
       "category": "regional",
@@ -619,7 +617,7 @@
     {
       "url": "https://www.xiaozhonglvyou.com/ai-photo-organizer-guide.html",
       "path": "/ai-photo-organizer-guide.html",
-      "title": "AI Photo Organizer Guide for iPhone | Smart Photo Classification",
+      "title": "Best AI Photo Organizer Guide 2026 | iPhone Smart Classification",
       "description": "Guide to organizing iPhone photos with AI categories before reviewing duplicates, screenshots, blurry shots, documents, receipts, and large media.",
       "h1": "Classify an iPhone photo library before deciding what to clean.",
       "lang": "en",
@@ -702,7 +700,7 @@
     {
       "url": "https://www.xiaozhonglvyou.com/duplicate-photo-cleaner-guide.html",
       "path": "/duplicate-photo-cleaner-guide.html",
-      "title": "Duplicate Photo Cleaner Guide | iPhone Similar Photos",
+      "title": "Duplicate Photo Cleaner Guide 2026 | Best iPhone Similar Photo Cleanup",
       "description": "How to review duplicate and similar iPhone photos safely: compare context, screenshots, blurry photos, large media, and storage impact before deleting.",
       "h1": "Clean duplicate iPhone photos without deleting the wrong memory.",
       "lang": "en",
@@ -722,7 +720,7 @@
     {
       "url": "https://www.xiaozhonglvyou.com/voice-camera-translator-guide.html",
       "path": "/voice-camera-translator-guide.html",
-      "title": "Voice and Camera Translator Guide for Travel | Travel Translator",
+      "title": "Voice and Camera Translator Guide 2026 | Best Travel Translation App",
       "description": "A travel translation guide for voice input, translated audio playback, camera OCR translation, menus, signs, labels, receipts, and fast language switching.",
       "h1": "Use voice translation for conversations and camera OCR for the world around you.",
       "lang": "en",
@@ -742,7 +740,7 @@
     {
       "url": "https://www.xiaozhonglvyou.com/screen-sharing-privacy-guide.html",
       "path": "/screen-sharing-privacy-guide.html",
-      "title": "Mac Screen Sharing Privacy Guide | Anti-spy screen",
+      "title": "Mac Screen Sharing Privacy Guide 2026 | Best Anti-Spy App",
       "description": "A Mac screen privacy guide for presentations, shared workspaces, shoulder surfing, screen sharing, protected apps, and sensitive-window workflows.",
       "h1": "Protect sensitive Mac windows before a meeting or nearby glance exposes them.",
       "lang": "en",
@@ -801,13 +799,36 @@
       ]
     },
     {
+      "url": "https://www.xiaozhonglvyou.com/iphone-photo-cleaner-comparison.html",
+      "path": "/iphone-photo-cleaner-comparison.html",
+      "title": "Best iPhone Photo Cleaner 2026 | AI Cleaning vs Google Photos",
+      "description": "Compare top iPhone photo cleaner apps in 2026: AI Cleaning vs Google Photos vs Gemini on AI classification, duplicate cleanup, privacy, and storage.",
+      "h1": "Best iPhone photo cleaner apps compared: AI Cleaning vs Google Photos vs Gemini Photos.",
+      "lang": "en",
+      "category": "guide",
+      "canonical": "https://www.xiaozhonglvyou.com/iphone-photo-cleaner-comparison.html",
+      "lastmod": "2026-06-29",
+      "changefreq": "monthly",
+      "priority": 0.88,
+      "images": [
+        "https://www.xiaozhonglvyou.com/assets/ai-cleaning-icon.png"
+      ],
+      "headings": [
+        "AI Cleaning is the best free iPhone photo cleaner for classification-first cleanup.",
+        "Side-by-side: AI Cleaning vs Google Photos vs Gemini Photos.",
+        "Why classification-first cleanup gives better results.",
+        "On-device AI vs cloud-based photo analysis.",
+        "Common questions about iPhone photo cleaner apps in 2026."
+      ]
+    },
+    {
       "url": "https://www.xiaozhonglvyou.com/seedance-ai-tools-cn.html",
       "path": "/seedance-ai-tools-cn.html",
       "title": "Seedance 2.5 AI视频创作者工具推荐 | AI素材整理和照片管理",
       "description": "Seedance 2.5 是字节跳动最新 AI 视频生成模型，支持 30 秒 4K 原生视频。本文推荐 AI 内容创作者必备的素材整理工具：AI 照片分类、重复素材清理、出国拍摄翻译。",
       "h1": "Seedance 2.5 来了，AI 创作者的素材管理跟上了吗？",
       "lang": "zh-Hans",
-      "category": "creator-guide",
+      "category": "regional",
       "canonical": "https://www.xiaozhonglvyou.com/seedance-ai-tools-cn.html",
       "lastmod": "2026-06-29",
       "changefreq": "monthly",
@@ -826,11 +847,11 @@
     {
       "url": "https://www.xiaozhonglvyou.com/seedance-ai-tools.html",
       "path": "/seedance-ai-tools.html",
-      "title": "Seedance 2.5 AI Video Creator Tools | Photo Management for Content Creators",
-      "description": "Seedance 2.5 by ByteDance generates 30-second 4K AI videos. Discover essential tools for AI content creators: AI photo classification, duplicate cleanup, and travel translation.",
+      "title": "Seedance 2.5 AI Video Creator Tools 2026 | Free Photo Management Guide",
+      "description": "Seedance 2.5 by ByteDance makes 30-second 4K AI videos. Pair it with AI photo classification, duplicate cleanup, and travel translation for creators.",
       "h1": "Seedance 2.5 is here. Is your asset management keeping up?",
       "lang": "en",
-      "category": "creator-guide",
+      "category": "page",
       "canonical": "https://www.xiaozhonglvyou.com/seedance-ai-tools.html",
       "lastmod": "2026-06-29",
       "changefreq": "monthly",
@@ -844,29 +865,6 @@
         "A creator's asset management pipeline.",
         "Seedance 2.5 key facts.",
         "Seedance 2.5 and creator tools FAQ"
-      ]
-    },
-    {
-      "url": "https://www.xiaozhonglvyou.com/iphone-photo-cleaner-comparison.html",
-      "path": "/iphone-photo-cleaner-comparison.html",
-      "title": "Best iPhone Photo Cleaner Apps Compared 2026 | AI Cleaning vs Google Photos vs Gemini",
-      "description": "Compare the top iPhone photo cleaner apps in 2026. AI Cleaning vs Google Photos vs Gemini Photos — side-by-side on AI classification, duplicate cleanup, privacy, and storage analysis.",
-      "h1": "Best iPhone photo cleaner apps compared: AI Cleaning vs Google Photos vs Gemini Photos.",
-      "lang": "en",
-      "category": "comparison-guide",
-      "canonical": "https://www.xiaozhonglvyou.com/iphone-photo-cleaner-comparison.html",
-      "lastmod": "2026-06-29",
-      "changefreq": "monthly",
-      "priority": 0.88,
-      "images": [
-        "https://www.xiaozhonglvyou.com/assets/ai-cleaning-icon.png"
-      ],
-      "headings": [
-        "AI Cleaning is the best free iPhone photo cleaner for classification-first cleanup.",
-        "Side-by-side: AI Cleaning vs Google Photos vs Gemini Photos.",
-        "Why classification-first cleanup gives better results.",
-        "On-device AI vs cloud-based photo analysis.",
-        "Common questions about iPhone photo cleaner apps in 2026."
       ]
     }
   ]
