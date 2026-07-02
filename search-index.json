@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-02",
+  "generatedAt": "2026-07-03",
   "origin": "https://www.xiaozhonglvyou.com",
   "pageCount": 42,
   "pages": [
@@ -13,7 +13,7 @@
       "lang": "en",
       "category": "home",
       "canonical": "https://www.xiaozhonglvyou.com/",
-      "lastmod": "2026-07-02",
+      "lastmod": "2026-07-03",
       "changefreq": "weekly",
       "priority": 1,
       "images": [
@@ -114,20 +114,21 @@
     {
       "url": "https://www.xiaozhonglvyou.com/regions.html",
       "path": "/regions.html",
-      "title": "English Market App Pages | CrazyAIAgent",
-      "description": "English market entry pages for CrazyAIAgent: US, UK, Canada, Australia, Singapore, Switzerland, Netherlands, and Nordic App Store contexts.",
-      "h1": "Choose the English page for your App Store market.",
+      "title": "Market and Localized App Pages | CrazyAIAgent",
+      "description": "Market and localized app pages for CrazyAIAgent across English, Chinese, Japanese, Korean, Spanish, Italian, German, and French audiences.",
+      "h1": "Choose the page for your App Store market or language.",
       "lang": "en",
       "category": "hub",
       "canonical": "https://www.xiaozhonglvyou.com/regions.html",
-      "lastmod": "2026-06-29",
+      "lastmod": "2026-07-03",
       "changefreq": "monthly",
       "priority": 0.58,
       "images": [
         "https://www.xiaozhonglvyou.com/assets/ai-cleaning-icon.png"
       ],
       "headings": [
-        "Pick the closest English market page."
+        "Pick the closest English market page.",
+        "Open the app page in the closest language."
       ]
     },
     {

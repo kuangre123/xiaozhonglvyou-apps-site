@@ -19,6 +19,7 @@ Search index: https://www.xiaozhonglvyou.com/search-index.json
 - Homepage structured data exposes a `SiteNavigationElement` node for the primary navigation so crawlers can read the main internal URL groups directly.
 - SoftwareApplication structured data includes App Store `sameAs` URLs and Apple App Store ID identifiers for app entity matching.
 - Hub pages expose `ItemList` JSON-LD for the apps, guides, and regional page directories so crawlers can read the internal URL groups directly.
+- The home page links to the market directory, and the market directory links to English, Chinese, Japanese, Korean, Spanish, Italian, German, and French page variants to avoid isolated localized URLs.
 - Visible FAQ sections are mirrored with matching `FAQPage` JSON-LD across the site, covering 19 FAQ pages and 67 question-answer pairs.
 - Pages expose stable root favicon links for search-result appearance: `/favicon.ico`, `/favicon-96x96.png`, and `/apple-touch-icon.png`. Open Graph site names and WebSite alternate names identify the site as CrazyAIAgent.
 - Root IndexNow key file is present: `https://www.xiaozhonglvyou.com/a6013cad6cead8e0.txt`.
