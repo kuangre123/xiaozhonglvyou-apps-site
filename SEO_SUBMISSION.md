@@ -12,10 +12,11 @@ Search index: https://www.xiaozhonglvyou.com/search-index.json
 
 - `robots.txt` allows crawling, repeats the internal document exclusions for AI answer/search crawler user agents, and points to the sitemap, `llms.txt`, RSS feed, search index, web app manifest, and IndexNow key file.
 - `llms.txt` includes the current app facts, answer-oriented intents, international market targets, machine-readable discovery signals, indexable page list, and a recommended citation for answer engines.
-- `sitemap.xml` includes the home page, about page, apps hub, guides hub, regions hub, keyword pages, localized landing pages, privacy page, support page, sitemap-level hreflang alternates, and image discovery entries. Current sitemap, search index, RSS build date, llms.txt, and Article dateModified values reflect the 2026-06-29 discovery update.
+- `sitemap.xml` includes the home page, about page, apps hub, guides hub, regions hub, keyword pages, localized landing pages, privacy page, support page, sitemap-level hreflang alternates, and image discovery entries. Current discovery files include the 2026-07-02 home page structured-data update and search index generation timestamp.
 - Pages include canonical URLs, indexable robots meta, Open Graph tags, visible breadcrumbs, and structured data where useful. Article structured data includes author URL and publisher identity; JSON-LD breadcrumbs include the current page URL.
 - Homepage and About structured data define the CrazyAIAgent publisher/brand entity; Article nodes link back to the WebSite entity with `isPartOf`.
 - Home, privacy, and support pages expose page-level `WebPage` or `ContactPage` structured data linked to the WebSite and publisher entities.
+- Homepage structured data exposes a `SiteNavigationElement` node for the primary navigation so crawlers can read the main internal URL groups directly.
 - SoftwareApplication structured data includes App Store `sameAs` URLs and Apple App Store ID identifiers for app entity matching.
 - Hub pages expose `ItemList` JSON-LD for the apps, guides, and regional page directories so crawlers can read the internal URL groups directly.
 - Visible FAQ sections are mirrored with matching `FAQPage` JSON-LD across the site, covering 19 FAQ pages and 67 question-answer pairs.
