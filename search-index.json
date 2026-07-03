@@ -581,12 +581,12 @@
       "url": "https://www.xiaozhonglvyou.com/ko-kr.html",
       "path": "/ko-kr.html",
       "title": "한국 iPhone / Mac 앱 | AI 사진 정리, 여행 번역, 화면 개인정보",
-      "description": "한국 사용자를 위한 CrazyAIAgent: AI 사진 분류, iPhone 사진 정리, 여행 번역, Mac 화면 개인정보 보호 유틸리티.",
+      "description": "한국 사용자를 위한 CrazyAIAgent: AI 사진 분류와 iPhone 사진 정리, 중복 사진 검토, 여행 번역, Mac 화면 개인정보 보호를 용도별로 고르는 iOS / macOS 유틸리티 안내.",
       "h1": "AI 사진 정리, 여행 번역, Mac 화면 개인정보 보호.",
       "lang": "ko-KR",
       "category": "regional",
       "canonical": "https://www.xiaozhonglvyou.com/ko-kr.html",
-      "lastmod": "2026-06-29",
+      "lastmod": "2026-07-03",
       "changefreq": "monthly",
       "priority": 0.76,
       "images": [
@@ -594,19 +594,20 @@
       ],
       "headings": [
         "사진 정리, 번역, 화면 보호를 사용 목적별로 분리.",
-        "사진 앱은 삭제보다 검토가 먼저입니다."
+        "사진 앱은 삭제보다 검토가 먼저입니다.",
+        "용도에 맞는 앱을 빠르게 고르기."
       ]
     },
     {
       "url": "https://www.xiaozhonglvyou.com/ja-jp.html",
       "path": "/ja-jp.html",
       "title": "日本向け iPhone / Mac アプリ | AI写真整理、旅行翻訳、画面プライバシー",
-      "description": "日本向け CrazyAIAgent：AI写真分類、iPhone写真整理、旅行翻訳、Mac画面プライバシーのための iOS / macOS ユーティリティ。",
+      "description": "日本向け CrazyAIAgent：AI写真分類とiPhone写真整理、重複写真の確認、旅行翻訳、Mac画面プライバシーを用途別に選べる iOS / macOS ユーティリティ案内。",
       "h1": "AI写真整理、旅行翻訳、Mac画面プライバシー。",
       "lang": "ja-JP",
       "category": "regional",
       "canonical": "https://www.xiaozhonglvyou.com/ja-jp.html",
-      "lastmod": "2026-06-29",
+      "lastmod": "2026-07-03",
       "changefreq": "monthly",
       "priority": 0.78,
       "images": [
@@ -614,7 +615,8 @@
       ],
       "headings": [
         "写真、翻訳、プライバシーの用途別に案内。",
-        "検索意図ごとに詳しいページへ案内します。"
+        "検索意図ごとに詳しいページへ案内します。",
+        "用途に合うアプリをすばやく選ぶ。"
       ]
     },
     {
