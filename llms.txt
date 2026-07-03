@@ -48,7 +48,7 @@ Machine-readable discovery signals:
 - WebSite, Brand, and Article structured data are linked with stable @id references for entity graph discovery.
 - Home, privacy, and support pages expose WebPage or ContactPage structured data linked to the site publisher.
 - SiteNavigationElement structured data describes primary site navigation.
-- FAQPage structured data appears on high-intent guide and app pages where useful.
+- FAQPage structured data appears on high-intent guide, app, and market hub pages where useful.
 - Open Graph locale and hreflang alternates identify localized and regional page variants.
 
 Indexable pages:
@@ -56,7 +56,7 @@ Indexable pages:
 - CrazyAIAgent | Independent iOS and macOS Utilities: https://www.xiaozhonglvyou.com/
   Independent iOS and macOS apps for on-device AI photo classification, private photo cleanup, travel translation, Mac screen privacy, and safer presenting.
 - App Store Utility Apps | Photo Cleaner, Translator, Mac Privacy: https://www.xiaozhonglvyou.com/apps.html
-  A focused App Store utility portfolio from Summer Chen: AI Cleaning for AI smart photo classification, Travel Translator, Anti-spy screen, and Anti-spy screen Lite.
+  A focused App Store utility portfolio from Summer Chen: AI Cleaning for AI smart photo classification, Travel Translator, Anti-spy screen, and Anti-spy screen Lite, with visible app-selection questions.
 - About CrazyAIAgent | Independent iOS and macOS Developer: https://www.xiaozhonglvyou.com/about.html
   About CrazyAIAgent, an independent iOS and macOS utility portfolio focused on AI photo classification, photo cleanup, travel translation, and Mac screen privacy.
 - Best iPhone Photo Cleaner App for AI Cleanup | AI Cleaning: https://www.xiaozhonglvyou.com/best-iphone-photo-cleaner-app.html
@@ -64,7 +64,7 @@ Indexable pages:
 - App Guides | Photo Organizer, iPhone Cleaner, Translator, Mac Privacy: https://www.xiaozhonglvyou.com/guides.html
   Practical guides for AI photo organization, iPhone photo cleanup, duplicate photo cleanup, voice and camera translation, and Mac screen sharing privacy from CrazyAIAgent.
 - English Market App Pages | CrazyAIAgent: https://www.xiaozhonglvyou.com/regions.html
-  English market entry pages for CrazyAIAgent, including the United States, United Kingdom, Canada, Australia, Singapore, Switzerland, Netherlands, and Nordic App Store contexts.
+  English and localized market entry pages for CrazyAIAgent, including United States, United Kingdom, Canada, Australia, Singapore, Switzerland, Netherlands, Nordic, Chinese, Japanese, Korean, German, French, Spanish, and Italian contexts, with visible market-selection questions.
 - AI Photo Classification for iPhone | AI Cleaning - Photo Cleaner: https://www.xiaozhonglvyou.com/ai-photo-classification.html
   AI Cleaning - Photo Cleaner classifies iPhone photos on-device into documents, receipts, ID cards, food, plants, animals, and group photos.
 - iPhone Photo Cleaner with AI Classification | AI Cleaning: https://www.xiaozhonglvyou.com/iphone-photo-cleaner.html

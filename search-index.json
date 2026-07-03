@@ -39,14 +39,15 @@
       "lang": "en",
       "category": "hub",
       "canonical": "https://www.xiaozhonglvyou.com/apps.html",
-      "lastmod": "2026-06-29",
+      "lastmod": "2026-07-03",
       "changefreq": "monthly",
       "priority": 0.9,
       "images": [
         "https://www.xiaozhonglvyou.com/assets/ai-cleaning-icon.png"
       ],
       "headings": [
-        "Choose the app by job to be done."
+        "Choose the app by job to be done.",
+        "Pick the right utility before opening the App Store."
       ]
     },
     {
@@ -128,7 +129,8 @@
       ],
       "headings": [
         "Pick the closest English market page.",
-        "Open the app page in the closest language."
+        "Open the app page in the closest language.",
+        "Use the closest regional or language entry."
       ]
     },
     {
