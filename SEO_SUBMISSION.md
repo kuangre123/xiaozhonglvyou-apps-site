@@ -11,8 +11,11 @@ Search index: https://www.xiaozhonglvyou.com/search-index.json
 ## Completed On Site
 
 - `robots.txt` allows crawling, repeats the internal document exclusions for AI answer/search crawler user agents, and points to the sitemap, `llms.txt`, RSS feed, search index, web app manifest, and IndexNow key file.
+- `robots.txt` explicitly allows mainstream global and China search crawlers including Googlebot, Bingbot, DuckDuckBot, Slurp, Applebot, YandexBot, Baiduspider, Sogou web spider, 360Spider, YisouSpider, Bytespider, and PetalBot while keeping internal deployment notes excluded.
+- `robots.txt` advertises both the full XML sitemap and RSS feed so Google, Bing, and compatible crawlers can use the XML sitemap for full URL discovery and the RSS feed for recently updated URLs.
 - `llms.txt` includes the current app facts, answer-oriented intents, international market targets, machine-readable discovery signals, indexable page list, and a recommended citation for answer engines.
-- `sitemap.xml` includes the home page, about page, apps hub, guides hub, regions hub, keyword pages, localized landing pages, privacy page, support page, sitemap-level hreflang alternates, and image discovery entries. Current discovery files include the 2026-07-02 home page structured-data update and search index generation timestamp.
+- `sitemap.xml` includes the home page, about page, apps hub, guides hub, regions hub, keyword pages, localized landing pages, privacy page, support page, sitemap-level hreflang alternates, and image discovery entries. Current discovery files include the 2026-07-08 localized Chinese entry updates and search index generation timestamp.
+- `feed.xml` includes the 2026-07-08 Simplified Chinese and Traditional Chinese entry-page updates near the top of the feed for faster update discovery.
 - Pages include canonical URLs, indexable robots meta, Open Graph tags, visible breadcrumbs, and structured data where useful. Article structured data includes author URL and publisher identity; JSON-LD breadcrumbs include the current page URL.
 - Seedance creator-tool pages expose Article structured data linked to the WebSite entity, with publisher, author, image, and current dateModified fields.
 - Homepage and About structured data define the CrazyAIAgent publisher/brand entity; Article nodes link back to the WebSite entity with `isPartOf`.
@@ -139,20 +142,41 @@ test reports a specific technical failure.
 
 1. Add site: `https://www.xiaozhonglvyou.com/`.
 2. Submit sitemap: `https://www.xiaozhonglvyou.com/sitemap.xml`.
-3. Use URL Submission if needed.
-4. IndexNow can notify Bing-compatible engines after deployment.
-5. After the deployed sitemap is live, submit it from a checkout of this site:
+3. Submit RSS feed: `https://www.xiaozhonglvyou.com/feed.xml`.
+4. Use URL Submission if needed.
+5. IndexNow can notify Bing-compatible engines after deployment.
+6. After the deployed sitemap is live, submit it from a checkout of this site:
 
    ```sh
    node /Users/sirchen/pc-app-app-app-app/scripts/submit-indexnow.mjs --sitemap-path sitemap.xml --key-file-path a6013cad6cead8e0.txt --submit
    ```
 
-## Baidu Search Resource Platform
+## China Search Platforms
 
-Baidu requires account access and site verification.
+These platforms require account access and site verification. Do not create guessed verification files or meta tags.
+
+### Baidu Search Resource Platform
 
 1. Add site: `https://www.xiaozhonglvyou.com/`.
 2. Verify ownership using DNS or file verification.
+3. Submit sitemap: `https://www.xiaozhonglvyou.com/sitemap.xml`.
+
+### 360 Search Resource Platform
+
+1. Add site: `https://www.xiaozhonglvyou.com/`.
+2. Verify ownership using DNS, HTML file, or meta tag from the 360 platform.
+3. Submit sitemap: `https://www.xiaozhonglvyou.com/sitemap.xml`.
+
+### Sogou Webmaster Platform
+
+1. Add site: `https://www.xiaozhonglvyou.com/`.
+2. Verify ownership using the verification method generated in Sogou Webmaster Tools.
+3. Submit sitemap: `https://www.xiaozhonglvyou.com/sitemap.xml`.
+
+### Shenma / Yisou
+
+1. Add or claim the site from the Shenma/Yisou webmaster entry available to the site owner account.
+2. Verify ownership using the platform-generated verification token.
 3. Submit sitemap: `https://www.xiaozhonglvyou.com/sitemap.xml`.
 
 ## Ongoing SEO

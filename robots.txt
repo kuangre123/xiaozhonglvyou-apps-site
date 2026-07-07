@@ -4,6 +4,30 @@ Disallow: /README.md
 Disallow: /SEO_SUBMISSION.md
 Allow: /
 
+# Main global and China search crawlers
+User-agent: Googlebot
+User-agent: Googlebot-Image
+User-agent: Bingbot
+User-agent: BingPreview
+User-agent: DuckDuckBot
+User-agent: Slurp
+User-agent: Applebot
+User-agent: YandexBot
+User-agent: Baiduspider
+User-agent: Sogou web spider
+User-agent: Sogou inst spider
+User-agent: Sogou spider
+User-agent: 360Spider
+User-agent: 360Spider-Image
+User-agent: 360Spider-Video
+User-agent: YisouSpider
+User-agent: Bytespider
+User-agent: PetalBot
+Disallow: /DEPLOYMENT.md
+Disallow: /README.md
+Disallow: /SEO_SUBMISSION.md
+Allow: /
+
 # AI answer and search crawlers
 User-agent: GPTBot
 User-agent: OAI-SearchBot
@@ -19,6 +43,7 @@ Disallow: /SEO_SUBMISSION.md
 Allow: /
 
 Sitemap: https://www.xiaozhonglvyou.com/sitemap.xml
+Sitemap: https://www.xiaozhonglvyou.com/feed.xml
 Host: www.xiaozhonglvyou.com
 # LLM discovery: https://www.xiaozhonglvyou.com/llms.txt
 # Search index: https://www.xiaozhonglvyou.com/search-index.json
