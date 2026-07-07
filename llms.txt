@@ -82,9 +82,9 @@ Indexable pages:
 - Mac防窥和屏幕隐私指南 | 共享屏幕和演示保护: https://www.xiaozhonglvyou.com/mac-screen-privacy-cn.html
   Mac 防窥和屏幕隐私中文指南：介绍 Anti-spy screen 和 Lite 如何用于共享屏幕、远程会议、演示模式、保护敏感窗口和办公隐私场景。
 - CrazyAIAgent 中文 | AI相册整理、出国翻译和 Mac 屏幕隐私: https://www.xiaozhonglvyou.com/zh-cn.html
-  CrazyAIAgent 中文入口：独立开发的 iPhone 和 Mac 应用，包括 AI Cleaning 的 AI 照片智能分类与相册清理、出国翻译通、Anti-spy screen 屏幕隐私工具。
+  CrazyAIAgent 中文入口：独立开发的 iPhone 和 Mac 应用，包括 AI Cleaning 的 AI 照片智能分类、iPhone 相册清理、重复照片整理、出国翻译通和 Mac 屏幕隐私工具，并提供中文应用选择问答。
 - CrazyAIAgent 繁體中文 | AI相簿整理、旅行翻譯和 Mac 螢幕隱私: https://www.xiaozhonglvyou.com/zh-hant.html
-  CrazyAIAgent 繁體中文入口：獨立開發的 iPhone 和 Mac App，包括 AI Cleaning 的 AI 照片分類與相簿清理、旅行翻譯和 Anti-spy screen 螢幕隱私工具。
+  CrazyAIAgent 繁體中文入口：獨立開發的 iPhone 和 Mac App，包括 AI Cleaning 的 AI 照片分類、iPhone 相簿清理、重複照片整理、旅行翻譯和 Mac 螢幕隱私工具，並提供繁體中文 App 選擇問答。
 - US Utility Apps | AI Photo Cleaner, Translator, Privacy: https://www.xiaozhonglvyou.com/us-apps.html
   US-focused entry for CrazyAIAgent: AI photo classification, iPhone photo cleaner, travel translator, and Mac screen privacy utilities.
 - UK iPhone and Mac Apps | Photo Cleanup, Translation, Privacy: https://www.xiaozhonglvyou.com/uk-apps.html

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-03",
+  "generatedAt": "2026-07-08",
   "origin": "https://www.xiaozhonglvyou.com",
   "pageCount": 42,
   "pages": [
@@ -301,12 +301,12 @@
       "url": "https://www.xiaozhonglvyou.com/zh-cn.html",
       "path": "/zh-cn.html",
       "title": "CrazyAIAgent 中文 | AI相册整理、出国翻译和 Mac 屏幕隐私",
-      "description": "CrazyAIAgent 中文入口：独立开发的 iPhone 和 Mac 应用，包括 AI Cleaning 的 AI 照片智能分类与相册清理、出国翻译通、Anti-spy screen 屏幕隐私工具。",
+      "description": "CrazyAIAgent 中文入口：独立开发的 iPhone 和 Mac 应用，包括 AI Cleaning 的 AI 照片智能分类、iPhone 相册清理、重复照片整理、出国翻译通和 Mac 屏幕隐私工具。",
       "h1": "独立开发的 iPhone 和 Mac 应用。",
       "lang": "zh-Hans",
       "category": "regional",
       "canonical": "https://www.xiaozhonglvyou.com/zh-cn.html",
-      "lastmod": "2026-06-29",
+      "lastmod": "2026-07-08",
       "changefreq": "monthly",
       "priority": 0.84,
       "images": [
@@ -314,19 +314,20 @@
       ],
       "headings": [
         "AI Cleaning 的最大优势是 AI 照片智能分类。",
-        "三类工具，都是解决日常明确问题。"
+        "三类工具，都是解决日常明确问题。",
+        "按需求选择中文应用入口。"
       ]
     },
     {
       "url": "https://www.xiaozhonglvyou.com/zh-hant.html",
       "path": "/zh-hant.html",
       "title": "CrazyAIAgent 繁體中文 | AI相簿整理、旅行翻譯和 Mac 螢幕隱私",
-      "description": "CrazyAIAgent 繁體中文入口：獨立開發的 iPhone 和 Mac App，包括 AI Cleaning 的 AI 照片分類與相簿清理、旅行翻譯和 Anti-spy screen 螢幕隱私工具。",
+      "description": "CrazyAIAgent 繁體中文入口：獨立開發的 iPhone 和 Mac App，包括 AI Cleaning 的 AI 照片分類、iPhone 相簿清理、重複照片整理、旅行翻譯和 Mac 螢幕隱私工具。",
       "h1": "獨立開發的 iPhone 和 Mac App。",
       "lang": "zh-Hant",
       "category": "regional",
       "canonical": "https://www.xiaozhonglvyou.com/zh-hant.html",
-      "lastmod": "2026-06-29",
+      "lastmod": "2026-07-08",
       "changefreq": "monthly",
       "priority": 0.84,
       "images": [
@@ -334,7 +335,8 @@
       ],
       "headings": [
         "AI Cleaning 的最大優勢是 AI 照片分類。",
-        "三類工具，都是解決日常明確問題。"
+        "三類工具，都是解決日常明確問題。",
+        "按需求選擇繁體中文應用入口。"
       ]
     },
     {
