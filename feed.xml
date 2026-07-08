@@ -5,31 +5,7 @@
     <link>https://www.xiaozhonglvyou.com/</link>
     <description>Independent iPhone and Mac apps for photo cleanup, travel translation, screen privacy, and focused work.</description>
     <language>en</language>
-    <lastBuildDate>Wed, 08 Jul 2026 00:00:00 GMT</lastBuildDate>
-    <item>
-      <title>Page Directory | CrazyAIAgent Apps, Guides, and Markets</title>
-      <link>https://www.xiaozhonglvyou.com/directory.html</link>
-      <description>Browse every CrazyAIAgent app page, product guide, market entry, privacy page, and support page from one clear directory.</description>
-      <guid isPermaLink="true">https://www.xiaozhonglvyou.com/directory.html</guid>
-      <pubDate>Wed, 08 Jul 2026 00:00:00 GMT</pubDate>
-      <enclosure url="https://www.xiaozhonglvyou.com/assets/ai-cleaning-icon.png" type="image/png" />
-    </item>
-    <item>
-      <title>CrazyAIAgent 中文：AI相册整理、出国翻译和 Mac 屏幕隐私</title>
-      <link>https://www.xiaozhonglvyou.com/zh-cn.html</link>
-      <description>CrazyAIAgent 中文入口，汇总 AI Cleaning 的 AI 照片智能分类、iPhone 相册清理、重复照片整理、出国翻译通和 Mac 屏幕隐私工具。</description>
-      <guid isPermaLink="true">https://www.xiaozhonglvyou.com/zh-cn.html</guid>
-      <pubDate>Wed, 08 Jul 2026 00:00:00 GMT</pubDate>
-      <enclosure url="https://www.xiaozhonglvyou.com/assets/ai-cleaning-icon.png" type="image/png" />
-    </item>
-    <item>
-      <title>CrazyAIAgent 繁體中文：AI相簿整理、旅行翻譯和 Mac 螢幕隱私</title>
-      <link>https://www.xiaozhonglvyou.com/zh-hant.html</link>
-      <description>CrazyAIAgent 繁體中文入口，整理 AI Cleaning 的 AI 照片分類、iPhone 相簿清理、重複照片整理、旅行翻譯和 Mac 螢幕隱私工具。</description>
-      <guid isPermaLink="true">https://www.xiaozhonglvyou.com/zh-hant.html</guid>
-      <pubDate>Wed, 08 Jul 2026 00:00:00 GMT</pubDate>
-      <enclosure url="https://www.xiaozhonglvyou.com/assets/ai-cleaning-icon.png" type="image/png" />
-    </item>
+    <lastBuildDate>Wed, 08 Jul 2026 06:22:46 GMT</lastBuildDate>
     <item>
       <title>AI照片分类指南：智能相册整理和 iPhone 照片清理</title>
       <link>https://www.xiaozhonglvyou.com/ai-photo-classification-cn.html</link>
@@ -181,6 +157,22 @@
       <guid isPermaLink="true">https://www.xiaozhonglvyou.com/voice-camera-translator-guide.html</guid>
       <pubDate>Wed, 03 Jun 2026 00:00:00 GMT</pubDate>
       <enclosure url="https://www.xiaozhonglvyou.com/assets/ai-cleaning-icon.png" type="image/png" />
+    </item>
+    <item>
+      <title>Seedance 2.5 AI视频创作者工具推荐</title>
+      <link>https://www.xiaozhonglvyou.com/seedance-ai-tools-cn.html</link>
+      <description>Seedance 2.5 是字节跳动最新 AI 视频生成模型，支持 30 秒 4K 原生视频。本文推荐 AI 内容创作者必备的素材整理工具：AI 照片分类、重复素材清理、出国拍摄翻译。</description>
+      <guid isPermaLink="true">https://www.xiaozhonglvyou.com/seedance-ai-tools-cn.html</guid>
+      <pubDate>Mon, 29 Jun 2026 00:00:00 GMT</pubDate>
+      <enclosure url="https://www.xiaozhonglvyou.com/assets/ai-cleaning-screen.png" type="image/png" />
+    </item>
+    <item>
+      <title>Seedance 2.5 AI Video Creator Tools 2026</title>
+      <link>https://www.xiaozhonglvyou.com/seedance-ai-tools.html</link>
+      <description>Seedance 2.5 by ByteDance makes 30-second 4K AI videos. Pair it with AI photo classification, duplicate cleanup, and travel translation for creators.</description>
+      <guid isPermaLink="true">https://www.xiaozhonglvyou.com/seedance-ai-tools.html</guid>
+      <pubDate>Mon, 29 Jun 2026 00:00:00 GMT</pubDate>
+      <enclosure url="https://www.xiaozhonglvyou.com/assets/ai-cleaning-screen.png" type="image/png" />
     </item>
   </channel>
 </rss>
