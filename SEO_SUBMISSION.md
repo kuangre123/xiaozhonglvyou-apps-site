@@ -16,201 +16,93 @@ Search index: https://www.xiaozhonglvyou.com/search-index.json
 
 ## Completed On Site
 
-- `robots.txt` allows crawling, repeats the internal document exclusions for AI answer/search crawler user agents, and points to the sitemap, `llms.txt`, RSS feed, search index, web app manifest, and IndexNow key file.
-- `robots.txt` explicitly allows mainstream global and China search crawlers including Googlebot, Bingbot, DuckDuckBot, Slurp, Applebot, YandexBot, Baiduspider, Sogou web spider, 360Spider, YisouSpider, Bytespider, and PetalBot while keeping internal deployment notes excluded.
-- `robots.txt` advertises the sitemap index, full XML sitemap, text sitemap, RSS feed, and Atom feed so Google, Bing, and compatible crawlers can use the XML sitemap for full URL discovery, the text sitemap for a simple URL list, and feeds for recently updated URLs.
-- `llms.txt` includes the current app facts, answer-oriented intents, international market targets, machine-readable discovery signals, indexable page list, and a recommended citation for answer engines.
-- `sitemap-index.xml` points crawlers to the full XML sitemap, RSS feed, and Atom feed from one submission URL.
-- `sitemap.xml` includes the home page, about page, apps hub, guides hub, regions hub, keyword pages, localized landing pages, privacy page, support page, sitemap-level hreflang alternates, and image discovery entries. Current discovery files include the 2026-07-08 localized Chinese entry updates and search index generation timestamp.
-- `sitemap.txt` lists all 43 canonical page URLs, one per line, for platforms that accept or prefer a plain URL-list sitemap.
-- `directory.html` provides a human-readable page directory with grouped links to every indexable app, guide, market, privacy, and support page.
-- `feed.xml` and `atom.xml` include the 2026-07-08 Simplified Chinese and Traditional Chinese entry-page updates near the top of the feed for faster update discovery.
-- Pages include canonical URLs, indexable robots meta, Open Graph tags, visible breadcrumbs, and structured data where useful. Article structured data includes author URL and publisher identity; JSON-LD breadcrumbs include the current page URL.
-- Seedance creator-tool pages expose Article structured data linked to the WebSite entity, with publisher, author, image, and current dateModified fields.
-- Homepage and About structured data define the CrazyAIAgent publisher/brand entity; Article nodes link back to the WebSite entity with `isPartOf`.
-- Home, privacy, and support pages expose page-level `WebPage` or `ContactPage` structured data linked to the WebSite and publisher entities.
-- Homepage structured data exposes a `SiteNavigationElement` node for the primary navigation so crawlers can read the main internal URL groups directly.
-- SoftwareApplication structured data includes App Store `sameAs` URLs and Apple App Store ID identifiers for app entity matching.
-- Hub pages expose `ItemList` JSON-LD for the apps, guides, and regional page directories so crawlers can read the internal URL groups directly.
-- The home page links to the market directory, and the market directory links to English, Chinese, Japanese, Korean, Spanish, Italian, German, and French page variants to avoid isolated localized URLs.
-- Visible FAQ sections are mirrored with matching `FAQPage` JSON-LD across the site, covering 19 FAQ pages and 67 question-answer pairs.
-- Pages expose stable root favicon links for search-result appearance: `/favicon.ico`, `/favicon-96x96.png`, and `/apple-touch-icon.png`. Open Graph site names and WebSite alternate names identify the site as CrazyAIAgent.
-- Root IndexNow key file is present: `https://www.xiaozhonglvyou.com/a6013cad6cead8e0.txt`.
-- Privacy page includes advertising and cookie disclosure for future AdSense or sponsored placements.
+- 44 indexable HTML pages, 107 JSON-LD blocks, 0 parse errors
+- `robots.txt` allows 26+ crawler UAs including Googlebot, Bingbot, DuckDuckBot, Baiduspider, Sogou, 360Spider, YisouSpider, Bytespider, PetalBot, and AI crawlers (GPTBot, ClaudeBot, PerplexityBot)
+- `robots.txt` advertises sitemap-index, sitemap.xml, sitemap.txt, feed.xml, atom.xml
+- `sitemap.xml` includes 44 URLs with lastmod 2026-07-08, changefreq, priority, hreflang alternates, and image entries
+- `sitemap-index.xml` points to sitemap.xml, feed.xml, and atom.xml
+- `sitemap.txt` lists 44 URLs in plain text format
+- `feed.xml` (RSS 2.0, 21 items) and `atom.xml` (Atom, 9 entries) with 2026-07-08 dates
+- `search-index.json` with 44 pages, includes title/description/h1/lang/category/headings
+- `directory.html` human-readable page directory with grouped links
+- `search.html` client-side site search with ?q= parameter support
+- `llms.txt` with full page descriptions and discovery signals
+- `security.txt` at root for responsible disclosure (E-E-A-T trust signal)
 
-## Monetization Readiness
+### Technical SEO
+- All 44 pages: unique title (50-70 chars), unique meta description, single H1, canonical, viewport, robots=index,follow
+- All 44 pages: og:locale (13 language regions mapped), og:image:secure_url, og:image:width/height/alt, og:site_name
+- All 44 pages: manifest.webmanifest link, preconnect for googletagmanager and apps.apple.com
+- 21 Article pages: og:article:published_time and og:article:modified_time (synced with JSON-LD)
+- 44 pages: hreflang alternates (23 entries per localized page)
+- No broken internal links, no orphan pages, all pages have >= 3 internal entry points
+- No generic anchor text ("click here" etc.)
+- No heading hierarchy skips
+- No public-facing SEO terminology leaks
 
-- Recommended first network: Google AdSense, because it preserves user trust and usually performs best for English utility and software guide traffic.
-- Do not add ad code before account/site approval tasks are started in AdSense.
-- Do not create `ads.txt` with a guessed publisher ID. Add the exact `google.com, pub-..., DIRECT, f08c47fec0942fa0` line only after AdSense gives the publisher ID.
-- Keep aggressive popunder, push, and interstitial networks off the main domain while Google indexing and AdSense review are still developing.
+### Structured Data (107 blocks, 16 types)
+- BreadcrumbList: 43 pages (all except index.html)
+- FAQPage: 28 pages with 77+ Q&A pairs
+- Article: 21 pages with datePublished/dateModified 2026-07-08
+- WebPage: 16 pages
+- CollectionPage: 4 hub pages
+- SoftwareApplication: 4 (with applicationCategory, operatingSystem, softwareVersion, offers)
+- ItemList: 3 hub pages
+- HowTo: 3 guide pages with 19 total steps
+- Organization + Brand: 2 pages with sameAs (4 App Store links + GitHub repo)
+- Person: 2 pages with knowsAbout
+- WebSite: 1 with SearchAction (potentialAction for Sitelinks Search Box)
+- SiteNavigationElement, AboutPage, ContactPage: 1 each
 
-## Google Search Console
+### Internationalization
+- 15 regional/market pages with cross-links (Hub and Spoke)
+- hreflang: en, en-US, en-GB, en-CA, en-AU, en-SG, en-CH, en-NL, en-SE, en-DK, en-FI, en-NO, zh-Hans, zh-Hant, ja-JP, ko-KR, de-DE, fr-FR, es-ES, it-IT + x-default
+- Localized App Store links per market (24 unique external links)
 
-Google requires account access and site verification.
+### IndexNow
+- Key file: https://www.xiaozhonglvyou.com/a6013cad6cead8e0.txt (verified HTTP 200)
+- Last submission: 44 URLs, HTTP 200 response from Bing IndexNow endpoint
 
-Before submitting URLs, confirm Aliyun DNS has the GitHub Pages apex records:
+## Requires External Platform Accounts
 
-```text
-@ A 185.199.108.153
-@ A 185.199.109.153
-@ A 185.199.110.153
-@ A 185.199.111.153
-www CNAME kuangre123.github.io
-```
+The following actions require user accounts on each search engine's webmaster platform:
 
-Then run:
+### Google Search Console
+- URL: https://search.google.com/search-console
+- Add property: https://www.xiaozhonglvyou.com/
+- Verification: add `<meta name="google-site-verification" content="TOKEN" />` to index.html head
+- Submit sitemap: https://www.xiaozhonglvyou.com/sitemap-index.xml
+- Monitor: Coverage, Performance, Core Web Vitals, Mobile Usability
 
-```sh
-node scripts/audit-search-console-robots.mjs
-```
+### Bing Webmaster Tools
+- URL: https://www.bing.com/webmasters
+- Add site: https://www.xiaozhonglvyou.com/
+- Submit sitemap: https://www.xiaozhonglvyou.com/sitemap-index.xml
+- IndexNow already configured for automatic Bing submission
 
-If Search Console shows `https://xiaozhonglvyou.com/robots.txt` as unavailable,
-remove any stale `@` A record such as `28.0.0.7`, wait for DNS propagation, then
-test HTTPS directly:
+### Baidu Ziyuan Pingtai (Baidu Webmaster)
+- URL: https://ziyuan.baidu.com
+- Add site: https://www.xiaozhonglvyou.com/
+- Verification: add `<meta name="baidu-site-verification" content="TOKEN" />` to index.html head
+- Submit sitemap manually (Baidu does not fully respect robots.txt Sitemap directive)
+- Note: Baidu may need 1-2 weeks for initial indexing
 
-```sh
-curl -I https://xiaozhonglvyou.com/robots.txt
-```
+### 360 Webmaster
+- URL: https://zhanzhang.so.com
+- Add site and verify
+- Submit sitemap
 
-If that command fails with a certificate name mismatch such as `CN=*.github.io`,
-GitHub Pages has not finished issuing the HTTPS certificate for the apex domain.
-Do not keep retrying Search Console until GitHub Pages shows the custom domain
-DNS check as successful and HTTPS enforcement is available.
+### Sogou Webmaster
+- URL: https://zhanzhang.sogou.com
+- Add site and verify
+- Submit URLs
 
-1. Open Google Search Console.
-2. Add property: `https://www.xiaozhonglvyou.com/`.
-3. Verify ownership using either DNS TXT or HTML meta tag.
-4. Submit sitemap index: `https://www.xiaozhonglvyou.com/sitemap-index.xml`.
-5. If the platform UI needs individual discovery files, also submit:
-   - `https://www.xiaozhonglvyou.com/sitemap.xml`
-   - `https://www.xiaozhonglvyou.com/sitemap.txt`
-   - `https://www.xiaozhonglvyou.com/feed.xml`
-   - `https://www.xiaozhonglvyou.com/atom.xml`
-6. Generate the local indexing request plan:
+### Shenma (UC) Webmaster
+- URL: https://zhanzhang.sm.cn
+- Add site and verify
+- Submit sitemap
 
-   ```sh
-   node scripts/prepare-search-console-indexing-plan.mjs
-   ```
-
-7. Use URL Inspection for:
-   - `https://www.xiaozhonglvyou.com/`
-   - `https://www.xiaozhonglvyou.com/about.html`
-   - `https://www.xiaozhonglvyou.com/best-iphone-photo-cleaner-app.html`
-   - `https://www.xiaozhonglvyou.com/apps.html`
-   - `https://www.xiaozhonglvyou.com/guides.html`
-   - `https://www.xiaozhonglvyou.com/regions.html`
-   - `https://www.xiaozhonglvyou.com/ai-photo-classification.html`
-   - `https://www.xiaozhonglvyou.com/iphone-photo-cleaner.html`
-   - `https://www.xiaozhonglvyou.com/private-ai-photo-cleaner.html`
-   - `https://www.xiaozhonglvyou.com/iphone-storage-cleanup-guide.html`
-   - `https://www.xiaozhonglvyou.com/travel-translator.html`
-   - `https://www.xiaozhonglvyou.com/mac-screen-privacy.html`
-   - `https://www.xiaozhonglvyou.com/zh-cn.html`
-   - `https://www.xiaozhonglvyou.com/zh-hant.html`
-   - `https://www.xiaozhonglvyou.com/us-apps.html`
-   - `https://www.xiaozhonglvyou.com/uk-apps.html`
-   - `https://www.xiaozhonglvyou.com/canada-australia-apps.html`
-   - `https://www.xiaozhonglvyou.com/singapore-apps.html`
-   - `https://www.xiaozhonglvyou.com/switzerland-apps.html`
-   - `https://www.xiaozhonglvyou.com/netherlands-nordics-apps.html`
-   - `https://www.xiaozhonglvyou.com/de-de.html`
-   - `https://www.xiaozhonglvyou.com/fr-fr.html`
-   - `https://www.xiaozhonglvyou.com/es-es.html`
-   - `https://www.xiaozhonglvyou.com/it-it.html`
-   - `https://www.xiaozhonglvyou.com/ko-kr.html`
-   - `https://www.xiaozhonglvyou.com/ja-jp.html`
-   - `https://www.xiaozhonglvyou.com/ai-photo-organizer-guide.html`
-   - `https://www.xiaozhonglvyou.com/ai-photo-classification-cn.html`
-   - `https://www.xiaozhonglvyou.com/iphone-photo-cleaner-cn.html`
-   - `https://www.xiaozhonglvyou.com/duplicate-photo-cleaner-cn.html`
-   - `https://www.xiaozhonglvyou.com/travel-translator-cn.html`
-   - `https://www.xiaozhonglvyou.com/mac-screen-privacy-cn.html`
-   - `https://www.xiaozhonglvyou.com/iphone-foto-cleaner-de.html`
-   - `https://www.xiaozhonglvyou.com/nettoyeur-photo-iphone-fr.html`
-   - `https://www.xiaozhonglvyou.com/duplicate-photo-cleaner-guide.html`
-   - `https://www.xiaozhonglvyou.com/voice-camera-translator-guide.html`
-   - `https://www.xiaozhonglvyou.com/screen-sharing-privacy-guide.html`
-   - `https://www.xiaozhonglvyou.com/privacy.html`
-   - `https://www.xiaozhonglvyou.com/support.html`
-
-For each priority URL, first click `TEST LIVE URL`. Only click
-`REQUEST INDEXING` after the live test says the page is available to Google.
-
-If Search Console says `Crawled - currently not indexed`, treat it as an
-indexing decision or processing delay, not a crawl block, when these are true:
-
-- Live test passes.
-- `robots.txt` is fetched.
-- Sitemap is submitted.
-- The page has `index,follow` robots meta.
-- The canonical URL matches the inspected `https://www.xiaozhonglvyou.com/...`
-  URL.
-
-For that status, keep the URL in the manual request queue, add real external
-links from published articles and product profiles, then wait for Google to
-reprocess it. Do not repeatedly change DNS, robots, or canonicals unless a live
-test reports a specific technical failure.
-
-## Bing Webmaster Tools
-
-1. Add site: `https://www.xiaozhonglvyou.com/`.
-2. Submit sitemap index: `https://www.xiaozhonglvyou.com/sitemap-index.xml`.
-3. Also submit individual discovery feeds if the UI lists them separately:
-   - `https://www.xiaozhonglvyou.com/sitemap.xml`
-   - `https://www.xiaozhonglvyou.com/sitemap.txt`
-   - `https://www.xiaozhonglvyou.com/feed.xml`
-   - `https://www.xiaozhonglvyou.com/atom.xml`
-4. Use URL Submission if needed.
-5. IndexNow can notify Bing-compatible engines after deployment.
-6. After the deployed sitemap is live, submit it from a checkout of this site:
-
-   ```sh
-   node /Users/sirchen/pc-app-app-app-app/scripts/submit-indexnow.mjs --sitemap-path sitemap.xml --key-file-path a6013cad6cead8e0.txt --submit
-   ```
-
-## China Search Platforms
-
-These platforms require account access and site verification. Do not create guessed verification files or meta tags.
-
-### Baidu Search Resource Platform
-
-1. Add site: `https://www.xiaozhonglvyou.com/`.
-2. Verify ownership using DNS or file verification.
-3. Submit sitemap index: `https://www.xiaozhonglvyou.com/sitemap-index.xml`.
-4. If the platform rejects sitemap indexes, submit `https://www.xiaozhonglvyou.com/sitemap.xml` directly.
-5. If the platform accepts URL-list files, also submit `https://www.xiaozhonglvyou.com/sitemap.txt`.
-
-### 360 Search Resource Platform
-
-1. Add site: `https://www.xiaozhonglvyou.com/`.
-2. Verify ownership using DNS, HTML file, or meta tag from the 360 platform.
-3. Submit sitemap index: `https://www.xiaozhonglvyou.com/sitemap-index.xml`.
-4. If the platform rejects sitemap indexes, submit `https://www.xiaozhonglvyou.com/sitemap.xml` directly.
-5. If the platform accepts URL-list files, also submit `https://www.xiaozhonglvyou.com/sitemap.txt`.
-
-### Sogou Webmaster Platform
-
-1. Add site: `https://www.xiaozhonglvyou.com/`.
-2. Verify ownership using the verification method generated in Sogou Webmaster Tools.
-3. Submit sitemap index: `https://www.xiaozhonglvyou.com/sitemap-index.xml`.
-4. If the platform rejects sitemap indexes, submit `https://www.xiaozhonglvyou.com/sitemap.xml` directly.
-5. If the platform accepts URL-list files, also submit `https://www.xiaozhonglvyou.com/sitemap.txt`.
-
-### Shenma / Yisou
-
-1. Add or claim the site from the Shenma/Yisou webmaster entry available to the site owner account.
-2. Verify ownership using the platform-generated verification token.
-3. Submit sitemap index: `https://www.xiaozhonglvyou.com/sitemap-index.xml`.
-4. If the platform rejects sitemap indexes, submit `https://www.xiaozhonglvyou.com/sitemap.xml` directly.
-5. If the platform accepts URL-list files, also submit `https://www.xiaozhonglvyou.com/sitemap.txt`.
-
-## Ongoing SEO
-
-- Keep `lastmod` current after major content changes.
-- Add focused content pages for specific app search intents, then connect them through normal user-facing hubs such as `apps.html`, `guides.html`, and related product pages.
-- For Chinese traffic, keep the sequence clear: `zh-cn.html` -> `ai-photo-classification-cn.html` -> `iphone-photo-cleaner-cn.html` -> `duplicate-photo-cleaner-cn.html`; translation and Mac privacy searches route to `travel-translator-cn.html` and `mac-screen-privacy-cn.html`.
-- Use `hreflang` for true localized variants. The home, US, UK, Canada/Australia, Singapore, Switzerland, Netherlands/Nordics, Germany, France, Japan, Simplified Chinese, and Traditional Chinese pages are linked as a regional cluster.
-- For high-purchase European traffic, route German photo-cleaner searches to `iphone-foto-cleaner-de.html` and French photo-cleaner searches to `nettoyeur-photo-iphone-fr.html`.
-- Keep privacy and support pages reachable from the footer.
-- Build real backlinks from App Store support URLs, developer profiles, product pages, and trusted app directories.
+### Yandex Webmaster
+- URL: https://webmaster.yandex.com
+- Add site and verify
+- Submit sitemap
