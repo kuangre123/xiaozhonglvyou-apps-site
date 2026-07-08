@@ -6,6 +6,8 @@ Sitemap index: https://www.xiaozhonglvyou.com/sitemap-index.xml
 
 Sitemap: https://www.xiaozhonglvyou.com/sitemap.xml
 
+Text sitemap: https://www.xiaozhonglvyou.com/sitemap.txt
+
 RSS feed: https://www.xiaozhonglvyou.com/feed.xml
 
 Atom feed: https://www.xiaozhonglvyou.com/atom.xml
@@ -16,10 +18,11 @@ Search index: https://www.xiaozhonglvyou.com/search-index.json
 
 - `robots.txt` allows crawling, repeats the internal document exclusions for AI answer/search crawler user agents, and points to the sitemap, `llms.txt`, RSS feed, search index, web app manifest, and IndexNow key file.
 - `robots.txt` explicitly allows mainstream global and China search crawlers including Googlebot, Bingbot, DuckDuckBot, Slurp, Applebot, YandexBot, Baiduspider, Sogou web spider, 360Spider, YisouSpider, Bytespider, and PetalBot while keeping internal deployment notes excluded.
-- `robots.txt` advertises the sitemap index, full XML sitemap, RSS feed, and Atom feed so Google, Bing, and compatible crawlers can use the XML sitemap for full URL discovery and feeds for recently updated URLs.
+- `robots.txt` advertises the sitemap index, full XML sitemap, text sitemap, RSS feed, and Atom feed so Google, Bing, and compatible crawlers can use the XML sitemap for full URL discovery, the text sitemap for a simple URL list, and feeds for recently updated URLs.
 - `llms.txt` includes the current app facts, answer-oriented intents, international market targets, machine-readable discovery signals, indexable page list, and a recommended citation for answer engines.
 - `sitemap-index.xml` points crawlers to the full XML sitemap, RSS feed, and Atom feed from one submission URL.
 - `sitemap.xml` includes the home page, about page, apps hub, guides hub, regions hub, keyword pages, localized landing pages, privacy page, support page, sitemap-level hreflang alternates, and image discovery entries. Current discovery files include the 2026-07-08 localized Chinese entry updates and search index generation timestamp.
+- `sitemap.txt` lists all 42 canonical page URLs, one per line, for platforms that accept or prefer a plain URL-list sitemap.
 - `feed.xml` and `atom.xml` include the 2026-07-08 Simplified Chinese and Traditional Chinese entry-page updates near the top of the feed for faster update discovery.
 - Pages include canonical URLs, indexable robots meta, Open Graph tags, visible breadcrumbs, and structured data where useful. Article structured data includes author URL and publisher identity; JSON-LD breadcrumbs include the current page URL.
 - Seedance creator-tool pages expose Article structured data linked to the WebSite entity, with publisher, author, image, and current dateModified fields.
@@ -80,6 +83,7 @@ DNS check as successful and HTTPS enforcement is available.
 4. Submit sitemap index: `https://www.xiaozhonglvyou.com/sitemap-index.xml`.
 5. If the platform UI needs individual discovery files, also submit:
    - `https://www.xiaozhonglvyou.com/sitemap.xml`
+   - `https://www.xiaozhonglvyou.com/sitemap.txt`
    - `https://www.xiaozhonglvyou.com/feed.xml`
    - `https://www.xiaozhonglvyou.com/atom.xml`
 6. Generate the local indexing request plan:
@@ -153,6 +157,7 @@ test reports a specific technical failure.
 2. Submit sitemap index: `https://www.xiaozhonglvyou.com/sitemap-index.xml`.
 3. Also submit individual discovery feeds if the UI lists them separately:
    - `https://www.xiaozhonglvyou.com/sitemap.xml`
+   - `https://www.xiaozhonglvyou.com/sitemap.txt`
    - `https://www.xiaozhonglvyou.com/feed.xml`
    - `https://www.xiaozhonglvyou.com/atom.xml`
 4. Use URL Submission if needed.
@@ -173,6 +178,7 @@ These platforms require account access and site verification. Do not create gues
 2. Verify ownership using DNS or file verification.
 3. Submit sitemap index: `https://www.xiaozhonglvyou.com/sitemap-index.xml`.
 4. If the platform rejects sitemap indexes, submit `https://www.xiaozhonglvyou.com/sitemap.xml` directly.
+5. If the platform accepts URL-list files, also submit `https://www.xiaozhonglvyou.com/sitemap.txt`.
 
 ### 360 Search Resource Platform
 
@@ -180,6 +186,7 @@ These platforms require account access and site verification. Do not create gues
 2. Verify ownership using DNS, HTML file, or meta tag from the 360 platform.
 3. Submit sitemap index: `https://www.xiaozhonglvyou.com/sitemap-index.xml`.
 4. If the platform rejects sitemap indexes, submit `https://www.xiaozhonglvyou.com/sitemap.xml` directly.
+5. If the platform accepts URL-list files, also submit `https://www.xiaozhonglvyou.com/sitemap.txt`.
 
 ### Sogou Webmaster Platform
 
@@ -187,6 +194,7 @@ These platforms require account access and site verification. Do not create gues
 2. Verify ownership using the verification method generated in Sogou Webmaster Tools.
 3. Submit sitemap index: `https://www.xiaozhonglvyou.com/sitemap-index.xml`.
 4. If the platform rejects sitemap indexes, submit `https://www.xiaozhonglvyou.com/sitemap.xml` directly.
+5. If the platform accepts URL-list files, also submit `https://www.xiaozhonglvyou.com/sitemap.txt`.
 
 ### Shenma / Yisou
 
@@ -194,6 +202,7 @@ These platforms require account access and site verification. Do not create gues
 2. Verify ownership using the platform-generated verification token.
 3. Submit sitemap index: `https://www.xiaozhonglvyou.com/sitemap-index.xml`.
 4. If the platform rejects sitemap indexes, submit `https://www.xiaozhonglvyou.com/sitemap.xml` directly.
+5. If the platform accepts URL-list files, also submit `https://www.xiaozhonglvyou.com/sitemap.txt`.
 
 ## Ongoing SEO
 

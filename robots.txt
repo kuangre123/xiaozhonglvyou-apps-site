@@ -44,11 +44,13 @@ Allow: /
 
 Sitemap: https://www.xiaozhonglvyou.com/sitemap-index.xml
 Sitemap: https://www.xiaozhonglvyou.com/sitemap.xml
+Sitemap: https://www.xiaozhonglvyou.com/sitemap.txt
 Sitemap: https://www.xiaozhonglvyou.com/feed.xml
 Sitemap: https://www.xiaozhonglvyou.com/atom.xml
 Host: www.xiaozhonglvyou.com
 # LLM discovery: https://www.xiaozhonglvyou.com/llms.txt
 # Search index: https://www.xiaozhonglvyou.com/search-index.json
+# Text sitemap: https://www.xiaozhonglvyou.com/sitemap.txt
 # RSS feed: https://www.xiaozhonglvyou.com/feed.xml
 # Atom feed: https://www.xiaozhonglvyou.com/atom.xml
 # Web app manifest: https://www.xiaozhonglvyou.com/manifest.webmanifest

@@ -7,6 +7,7 @@ Canonical resources:
 - Home: https://www.xiaozhonglvyou.com/
 - Sitemap index: https://www.xiaozhonglvyou.com/sitemap-index.xml
 - Sitemap: https://www.xiaozhonglvyou.com/sitemap.xml
+- Text sitemap: https://www.xiaozhonglvyou.com/sitemap.txt
 - RSS feed: https://www.xiaozhonglvyou.com/feed.xml
 - Atom feed: https://www.xiaozhonglvyou.com/atom.xml
 - Search index: https://www.xiaozhonglvyou.com/search-index.json
@@ -43,6 +44,7 @@ Machine-readable discovery signals:
 
 - Sitemap: https://www.xiaozhonglvyou.com/sitemap.xml
 - Sitemap index: https://www.xiaozhonglvyou.com/sitemap-index.xml
+- Text sitemap lists every canonical page URL: https://www.xiaozhonglvyou.com/sitemap.txt
 - Search index mirrors sitemap URLs: https://www.xiaozhonglvyou.com/search-index.json
 - RSS feed: https://www.xiaozhonglvyou.com/feed.xml
 - Atom feed: https://www.xiaozhonglvyou.com/atom.xml
