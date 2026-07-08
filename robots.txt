@@ -55,3 +55,4 @@ Host: www.xiaozhonglvyou.com
 # Atom feed: https://www.xiaozhonglvyou.com/atom.xml
 # Web app manifest: https://www.xiaozhonglvyou.com/manifest.webmanifest
 # IndexNow key: https://www.xiaozhonglvyou.com/a6013cad6cead8e0.txt
+# Security: https://www.xiaozhonglvyou.com/security.txt

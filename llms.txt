@@ -16,6 +16,7 @@ Canonical resources:
 - Apps hub: https://www.xiaozhonglvyou.com/apps.html
 - Guides hub: https://www.xiaozhonglvyou.com/guides.html
 - Support: https://www.xiaozhonglvyou.com/support.html
+- Security: https://www.xiaozhonglvyou.com/security.txt
 
 Primary apps:
 
