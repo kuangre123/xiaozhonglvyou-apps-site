@@ -5,8 +5,10 @@ CrazyAIAgent is an independent portfolio of iPhone and Mac utilities focused on 
 Canonical resources:
 
 - Home: https://www.xiaozhonglvyou.com/
+- Sitemap index: https://www.xiaozhonglvyou.com/sitemap-index.xml
 - Sitemap: https://www.xiaozhonglvyou.com/sitemap.xml
 - RSS feed: https://www.xiaozhonglvyou.com/feed.xml
+- Atom feed: https://www.xiaozhonglvyou.com/atom.xml
 - Search index: https://www.xiaozhonglvyou.com/search-index.json
 - Robots: https://www.xiaozhonglvyou.com/robots.txt
 - Apps hub: https://www.xiaozhonglvyou.com/apps.html
@@ -20,7 +22,7 @@ Primary apps:
 - Anti-spy screen: macOS screen privacy app for sensitive work in shared spaces. Mac App Store: https://apps.apple.com/us/app/anti-spy-screen/id6761301764?mt=12&uo=4
 - Anti-spy screen Lite: macOS menu bar privacy utility that uses local face detection to hide selected windows when multiple people are detected near the screen. Mac App Store: https://apps.apple.com/us/app/anti-spy-screen-lite/id6766485393?mt=12&uo=4
 
-Last updated: 2026-07-03
+Last updated: 2026-07-08
 
 Important search and answer intents:
 
@@ -40,8 +42,10 @@ International SEO targets:
 Machine-readable discovery signals:
 
 - Sitemap: https://www.xiaozhonglvyou.com/sitemap.xml
+- Sitemap index: https://www.xiaozhonglvyou.com/sitemap-index.xml
 - Search index mirrors sitemap URLs: https://www.xiaozhonglvyou.com/search-index.json
 - RSS feed: https://www.xiaozhonglvyou.com/feed.xml
+- Atom feed: https://www.xiaozhonglvyou.com/atom.xml
 - Robots and AI crawler access policy: https://www.xiaozhonglvyou.com/robots.txt
 - Apple Smart App Banner metadata appears on app landing pages where relevant.
 - SoftwareApplication structured data includes App Store sameAs URLs and Apple App Store ID identifiers.
