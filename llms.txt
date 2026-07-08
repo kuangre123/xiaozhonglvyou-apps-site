@@ -89,7 +89,7 @@ Indexable pages:
 - Mac Screen Privacy App | Anti-spy screen: https://www.xiaozhonglvyou.com/mac-screen-privacy.html
   Anti-spy screen and Anti-spy screen Lite are Mac utilities for screen privacy, protected app hiding, presentation mode, and sensitive work in shared spaces.
 - Mac防窥和屏幕隐私指南 | 共享屏幕和演示保护: https://www.xiaozhonglvyou.com/mac-screen-privacy-cn.html
-  Mac 防窥和屏幕隐私中文指南：介绍 Anti-spy screen 和 Lite 如何用于共享屏幕、远程会议、演示模式、保护敏感窗口和办公隐私场景。
+  Mac 防窥和屏幕隐私中文指南：介绍 Anti-spy screen 和 Lite 如何在共享屏幕、远程会议、演示模式和开放式办公场景中保护敏感窗口、防止肩窥和意外信息泄露。
 - CrazyAIAgent 中文 | AI相册整理、出国翻译和 Mac 屏幕隐私: https://www.xiaozhonglvyou.com/zh-cn.html
   CrazyAIAgent 中文入口：独立开发的 iPhone 和 Mac 应用，包括 AI Cleaning 的 AI 照片智能分类、iPhone 相册清理、重复照片整理、出国翻译通和 Mac 屏幕隐私工具，并提供中文应用选择问答。
 - CrazyAIAgent 繁體中文 | AI相簿整理、旅行翻譯和 Mac 螢幕隱私: https://www.xiaozhonglvyou.com/zh-hant.html
@@ -125,11 +125,11 @@ Indexable pages:
 - AI Photo Organizer Guide for iPhone | Smart Photo Classification: https://www.xiaozhonglvyou.com/ai-photo-organizer-guide.html
   Guide to organizing iPhone photos with AI categories before reviewing duplicates, screenshots, blurry shots, documents, receipts, and large media.
 - AI照片分类指南 | 智能相册整理和 iPhone 照片清理: https://www.xiaozhonglvyou.com/ai-photo-classification-cn.html
-  中文 AI 照片分类指南：了解如何先用智能分类整理 iPhone 相册，再检查重复照片、相似照片、截图、模糊照片、票据、证件、文档、大文件和真实存储空间，再决定安全清理。
+  中文 AI 照片分类指南：先用智能分类整理 iPhone 相册，再逐组复查重复照片、相似照片、截图、模糊照片、票据、证件、文档和大文件，看清真实存储空间后决定安全清理，降低误删风险。
 - iPhone照片清理指南 | 苹果手机相册整理和安全清理: https://www.xiaozhonglvyou.com/iphone-photo-cleaner-cn.html
-  中文 iPhone 照片清理指南：先用 AI 照片智能分类看清相册，再复查重复照片、相似照片、截图、模糊照片、大文件和真实存储空间，降低误删风险。
+  中文 iPhone 照片清理指南：先用 AI 照片智能分类看清整个相册，再逐组复查重复照片、相似照片、截图、模糊照片和大文件，确认真实存储空间后安全清理，降低误删风险。
 - 重复照片清理指南 | 相似照片整理和 iPhone 相册复查: https://www.xiaozhonglvyou.com/duplicate-photo-cleaner-cn.html
-  中文重复照片清理指南：解释 iPhone 相册里重复照片、相似照片、连拍、截图和模糊照片该如何成组复查，再决定保留和清理，避免一键误删。
+  中文重复照片清理指南：讲解 iPhone 相册里重复照片、相似照片、连拍、截图和模糊照片如何成组复查、对比场景和内容后再决定保留或清理，避免一键误删珍贵回忆和重要记录。
 - Duplicate Photo Cleaner Guide | iPhone Similar Photos: https://www.xiaozhonglvyou.com/duplicate-photo-cleaner-guide.html
   How to review duplicate and similar iPhone photos safely: compare context, screenshots, blurry photos, large media, and storage impact before deleting.
 - Voice and Camera Translator Guide for Travel | Travel Translator: https://www.xiaozhonglvyou.com/voice-camera-translator-guide.html
