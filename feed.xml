@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0">
   <channel>
-    <title>CrazyAIAgent</title>
+    <title>Summer Chen Apps</title>
     <link>https://www.xiaozhonglvyou.com/</link>
     <description>Independent iPhone and Mac apps for photo cleanup, travel translation, screen privacy, and focused work.</description>
     <language>en</language>
-    <lastBuildDate>Wed, 08 Jul 2026 08:21:14 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 08 Jul 2026 16:19:25 GMT</lastBuildDate>
     <item>
       <title>AI照片分类指南：智能相册整理和 iPhone 照片清理</title>
       <link>https://www.xiaozhonglvyou.com/ai-photo-classification-cn.html</link>
@@ -172,6 +172,14 @@
       <description>How travelers can choose between voice translation, audio playback, and camera OCR translation.</description>
       <guid isPermaLink="true">https://www.xiaozhonglvyou.com/voice-camera-translator-guide.html</guid>
       <pubDate>Wed, 03 Jun 2026 00:00:00 GMT</pubDate>
+      <enclosure url="https://www.xiaozhonglvyou.com/assets/ai-cleaning-icon.png" type="image/png" />
+    </item>
+    <item>
+      <title>iPad Photo Organizer Guide 2026</title>
+      <link>https://www.xiaozhonglvyou.com/ipad-photo-organizer-guide.html</link>
+      <description>How to organize an iPad photo library with AI categories, duplicate review, screenshot cleanup, document review, imported media checks, and iCloud-aware decisions.</description>
+      <guid isPermaLink="true">https://www.xiaozhonglvyou.com/ipad-photo-organizer-guide.html</guid>
+      <pubDate>Thu, 09 Jul 2026 00:00:00 GMT</pubDate>
       <enclosure url="https://www.xiaozhonglvyou.com/assets/ai-cleaning-icon.png" type="image/png" />
     </item>
   </channel>
