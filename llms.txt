@@ -5,6 +5,7 @@ CrazyAIAgent is an independent portfolio of iPhone and Mac utilities focused on 
 Canonical resources:
 
 - Home: https://www.xiaozhonglvyou.com/
+- Directory: https://www.xiaozhonglvyou.com/directory.html
 - Sitemap index: https://www.xiaozhonglvyou.com/sitemap-index.xml
 - Sitemap: https://www.xiaozhonglvyou.com/sitemap.xml
 - Text sitemap: https://www.xiaozhonglvyou.com/sitemap.txt
@@ -71,6 +72,8 @@ Indexable pages:
   Practical guides for AI photo organization, iPhone photo cleanup, duplicate photo cleanup, voice and camera translation, and Mac screen sharing privacy from CrazyAIAgent.
 - English Market App Pages | CrazyAIAgent: https://www.xiaozhonglvyou.com/regions.html
   English and localized market entry pages for CrazyAIAgent, including United States, United Kingdom, Canada, Australia, Singapore, Switzerland, Netherlands, Nordic, Chinese, Japanese, Korean, German, French, Spanish, and Italian contexts, with visible market-selection questions.
+- Page Directory | CrazyAIAgent Apps, Guides, and Markets: https://www.xiaozhonglvyou.com/directory.html
+  Browse every CrazyAIAgent app page, product guide, market entry, privacy page, and support page from one clear directory.
 - AI Photo Classification for iPhone | AI Cleaning - Photo Cleaner: https://www.xiaozhonglvyou.com/ai-photo-classification.html
   AI Cleaning - Photo Cleaner classifies iPhone photos on-device into documents, receipts, ID cards, food, plants, animals, and group photos.
 - iPhone Photo Cleaner with AI Classification | AI Cleaning: https://www.xiaozhonglvyou.com/iphone-photo-cleaner.html

@@ -78,6 +78,15 @@
     </image:image>
   </url>
   <url>
+    <loc>https://www.xiaozhonglvyou.com/directory.html</loc>
+    <lastmod>2026-07-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.74</priority>
+    <image:image>
+      <image:loc>https://www.xiaozhonglvyou.com/assets/ai-cleaning-icon.png</image:loc>
+    </image:image>
+  </url>
+  <url>
     <loc>https://www.xiaozhonglvyou.com/ai-photo-classification.html</loc>
     <lastmod>2026-06-29</lastmod>
     <changefreq>monthly</changefreq>

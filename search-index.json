@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "generatedAt": "2026-07-08",
   "origin": "https://www.xiaozhonglvyou.com",
-  "pageCount": 42,
+  "pageCount": 43,
   "pages": [
     {
       "url": "https://www.xiaozhonglvyou.com/",
@@ -132,6 +132,23 @@
         "Open the app page in the closest language.",
         "Use the closest regional or language entry."
       ]
+    },
+    {
+      "url": "https://www.xiaozhonglvyou.com/directory.html",
+      "path": "/directory.html",
+      "title": "Page Directory | CrazyAIAgent Apps, Guides, and Markets",
+      "description": "Browse every CrazyAIAgent app page, product guide, market entry, privacy page, and support page from one clear directory.",
+      "h1": "Every CrazyAIAgent app page and guide.",
+      "lang": "en",
+      "category": "hub",
+      "canonical": "https://www.xiaozhonglvyou.com/directory.html",
+      "lastmod": "2026-07-08",
+      "changefreq": "monthly",
+      "priority": 0.74,
+      "images": [
+        "https://www.xiaozhonglvyou.com/assets/ai-cleaning-icon.png"
+      ],
+      "headings": []
     },
     {
       "url": "https://www.xiaozhonglvyou.com/ai-photo-classification.html",

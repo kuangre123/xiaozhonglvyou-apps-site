@@ -22,7 +22,8 @@ Search index: https://www.xiaozhonglvyou.com/search-index.json
 - `llms.txt` includes the current app facts, answer-oriented intents, international market targets, machine-readable discovery signals, indexable page list, and a recommended citation for answer engines.
 - `sitemap-index.xml` points crawlers to the full XML sitemap, RSS feed, and Atom feed from one submission URL.
 - `sitemap.xml` includes the home page, about page, apps hub, guides hub, regions hub, keyword pages, localized landing pages, privacy page, support page, sitemap-level hreflang alternates, and image discovery entries. Current discovery files include the 2026-07-08 localized Chinese entry updates and search index generation timestamp.
-- `sitemap.txt` lists all 42 canonical page URLs, one per line, for platforms that accept or prefer a plain URL-list sitemap.
+- `sitemap.txt` lists all 43 canonical page URLs, one per line, for platforms that accept or prefer a plain URL-list sitemap.
+- `directory.html` provides a human-readable page directory with grouped links to every indexable app, guide, market, privacy, and support page.
 - `feed.xml` and `atom.xml` include the 2026-07-08 Simplified Chinese and Traditional Chinese entry-page updates near the top of the feed for faster update discovery.
 - Pages include canonical URLs, indexable robots meta, Open Graph tags, visible breadcrumbs, and structured data where useful. Article structured data includes author URL and publisher identity; JSON-LD breadcrumbs include the current page URL.
 - Seedance creator-tool pages expose Article structured data linked to the WebSite entity, with publisher, author, image, and current dateModified fields.
