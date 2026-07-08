@@ -6,6 +6,7 @@ Canonical resources:
 
 - Home: https://www.xiaozhonglvyou.com/
 - Directory: https://www.xiaozhonglvyou.com/directory.html
+- Search: https://www.xiaozhonglvyou.com/search.html
 - Sitemap index: https://www.xiaozhonglvyou.com/sitemap-index.xml
 - Sitemap: https://www.xiaozhonglvyou.com/sitemap.xml
 - Text sitemap: https://www.xiaozhonglvyou.com/sitemap.txt
