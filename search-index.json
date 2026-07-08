@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "generatedAt": "2026-06-13",
   "origin": "https://www.xiaozhonglvyou.com",
-  "pageCount": 43,
+  "pageCount": 44,
   "pages": [
     {
       "url": "https://www.xiaozhonglvyou.com/about.html",
@@ -600,6 +600,21 @@
         "Focus on moments when private windows become visible by accident.",
         "Common Mac privacy questions."
       ]
+    },
+    {
+      "url": "https://www.xiaozhonglvyou.com/search.html",
+      "path": "/search.html",
+      "title": "Search | CrazyAIAgent Apps, Guides, and Markets",
+      "description": "Search across all CrazyAIAgent app pages, product guides, and localized market entries. Find photo cleaning, travel translation, and Mac privacy content by keyword.",
+      "h1": "Find pages across all apps and guides.",
+      "lang": "en",
+      "category": "regional",
+      "canonical": "https://www.xiaozhonglvyou.com/search.html",
+      "lastmod": "2026-07-08",
+      "changefreq": "weekly",
+      "priority": 1,
+      "images": [],
+      "headings": []
     },
     {
       "url": "https://www.xiaozhonglvyou.com/seedance-ai-tools-cn.html",
