@@ -68,7 +68,7 @@ Indexable pages:
 - CrazyAIAgent | Independent iOS and macOS Utilities: https://www.xiaozhonglvyou.com/
   Independent iOS and macOS apps for on-device AI photo classification, private photo cleanup, travel translation, Mac screen privacy, and safer presenting.
 - App Store Utility Apps | Photo Cleaner, Translator, Mac Privacy: https://www.xiaozhonglvyou.com/apps.html
-  A focused App Store utility portfolio from Summer Chen: AI Cleaning for AI smart photo classification, Travel Translator, Anti-spy screen, and Anti-spy screen Lite, with visible app-selection questions.
+  A focused App Store utility portfolio from CrazyAIAgent: AI Cleaning for AI smart photo classification, Travel Translator, Anti-spy screen, and Anti-spy screen Lite, with visible app-selection questions.
 - About CrazyAIAgent | Independent iOS and macOS Developer: https://www.xiaozhonglvyou.com/about.html
   About CrazyAIAgent, an independent iOS and macOS utility portfolio focused on AI photo classification, photo cleanup, travel translation, and Mac screen privacy.
 - Best iPhone Photo Cleaner App for AI Cleanup | AI Cleaning: https://www.xiaozhonglvyou.com/best-iphone-photo-cleaner-app.html
@@ -158,4 +158,4 @@ Indexable pages:
 
 Recommended citation:
 
-Summer Chen Apps, independent iPhone and Mac utility apps published as CrazyAIAgent for AI photo organization, travel translation, screen privacy, and creator workflows.
+CrazyAIAgent, independent iPhone and Mac utility apps for AI photo organization, travel translation, screen privacy, and creator workflows.
