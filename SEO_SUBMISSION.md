@@ -19,7 +19,7 @@ Search index: https://www.xiaozhonglvyou.com/search-index.json
 - 46 indexable HTML pages, 109 JSON-LD blocks, 0 parse errors
 - `robots.txt` allows 26+ crawler UAs including Googlebot, Bingbot, DuckDuckBot, Baiduspider, Sogou, 360Spider, YisouSpider, Bytespider, PetalBot, and AI crawlers (GPTBot, ClaudeBot, PerplexityBot)
 - `robots.txt` advertises sitemap-index, sitemap.xml, sitemap.txt, feed.xml, atom.xml
-- `sitemap.xml` includes 46 URLs with lastmod 2026-07-13, changefreq, priority, hreflang alternates, and image entries
+- `sitemap.xml` includes 46 URLs with lastmod 2026-07-13, changefreq, priority, 401 hreflang alternate links, and image entries
 - `sitemap-index.xml` points to sitemap.xml, feed.xml, and atom.xml
 - `sitemap.txt` lists 46 URLs in plain text format
 - `feed.xml` (RSS 2.0, 23 items) and `atom.xml` (Atom, 11 entries) with 2026-07-13 dates
@@ -34,7 +34,7 @@ Search index: https://www.xiaozhonglvyou.com/search-index.json
 - All 46 indexable pages: og:locale, og:image:secure_url, og:image:width/height/alt, og:site_name
 - All 46 indexable pages: manifest.webmanifest link, preconnect for googletagmanager and apps.apple.com
 - 23 Article pages: og:article:published_time and og:article:modified_time (synced with JSON-LD)
-- Localized and regional cluster pages: hreflang alternates (23 entries)
+- Localized, regional, and paired content pages: hreflang alternates (15 regional pages + 16 paired content pages)
 - No broken internal links, no orphan pages, all pages have >= 3 internal entry points
 - No generic anchor text ("click here" etc.)
 - No heading hierarchy skips
@@ -64,6 +64,7 @@ Search index: https://www.xiaozhonglvyou.com/search-index.json
 - Submit command: `node scripts/submit-indexnow.mjs --submit`
 - Last submission: 46 URLs on 2026-07-13; Bing 200, Yandex 202, Seznam 200, Naver 200
 - Latest deployment validation: commit `7613956`; added reciprocal hreflang and visible cross-links for the English and Simplified Chinese iPad photo organizer guides.
+- Latest sitemap validation: 401 hreflang alternate links, including paired English/Simplified Chinese guide and app pages, are present in sitemap.xml.
 
 ## Requires External Platform Accounts
 
