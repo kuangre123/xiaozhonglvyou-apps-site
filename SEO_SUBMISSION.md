@@ -63,6 +63,7 @@ Search index: https://www.xiaozhonglvyou.com/search-index.json
 - Key file: https://www.xiaozhonglvyou.com/a6013cad6cead8e0.txt (verified HTTP 200)
 - Submit command: `node scripts/submit-indexnow.mjs --submit`
 - Last submission: 46 URLs on 2026-07-13; Bing 200, Yandex 202, Seznam 200, Naver 200
+- Latest deployment validation: commit `7613956`; added reciprocal hreflang and visible cross-links for the English and Simplified Chinese iPad photo organizer guides.
 
 ## Requires External Platform Accounts
 
