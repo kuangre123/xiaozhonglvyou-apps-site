@@ -4,11 +4,18 @@
   <id>https://www.xiaozhonglvyou.com/atom.xml</id>
   <link href="https://www.xiaozhonglvyou.com/" rel="alternate" />
   <link href="https://www.xiaozhonglvyou.com/atom.xml" rel="self" />
-  <updated>2026-07-09T00:00:00Z</updated>
+  <updated>2026-07-13T00:00:00Z</updated>
   <author>
     <name>CrazyAIAgent</name>
     <uri>https://www.xiaozhonglvyou.com/</uri>
   </author>
+  <entry>
+    <title>iPad照片整理指南：平板相册清理和 AI 分类</title>
+    <link href="https://www.xiaozhonglvyou.com/ipad-photo-organizer-cn.html" />
+    <id>https://www.xiaozhonglvyou.com/ipad-photo-organizer-cn.html</id>
+    <updated>2026-07-13T00:00:00Z</updated>
+    <summary>中文 iPad 照片整理指南：先确认 iCloud 同步，再整理截图、文档、票据、导入照片、重复照片和大视频。</summary>
+  </entry>
   <entry>
     <title>iPad Photo Organizer Guide 2026</title>
     <link href="https://www.xiaozhonglvyou.com/ipad-photo-organizer-guide.html" />

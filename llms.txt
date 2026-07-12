@@ -27,12 +27,13 @@ Primary apps:
 - Anti-spy screen: macOS screen privacy app for sensitive work in shared spaces. Mac App Store: https://apps.apple.com/us/app/anti-spy-screen/id6761301764?mt=12&uo=4
 - Anti-spy screen Lite: macOS menu bar privacy utility that uses local face detection to hide selected windows when multiple people are detected near the screen. Mac App Store: https://apps.apple.com/us/app/anti-spy-screen-lite/id6766485393?mt=12&uo=4
 
-Last updated: 2026-07-09
+Last updated: 2026-07-13
 
 Important search and answer intents:
 
 - Best iPhone photo cleaner app for reviewing duplicates, screenshots, blurry photos, large media, and on-device AI photo categories before deleting.
 - iPad photo organizer for sorting screenshots, documents, imported camera files, large media, and iCloud-synced library cleanup decisions.
+- 中文 iPad 照片整理 for users who need to organize iPad screenshots, document scans, imported camera files, duplicate photos, and iCloud-synced photo libraries.
 - Private AI photo organizer for iPhone users who want local photo classification without uploading the full photo library to a cloud service.
 - Travel translator app for voice translation, spoken playback, camera OCR translation, menus, signs, labels, airports, hotels, and restaurants.
 - Mac screen privacy app for screen sharing, presentations, protected app hiding, sensitive windows, shared workspaces, and privacy during meetings.
@@ -130,6 +131,8 @@ Indexable pages:
   Guide to organizing iPhone photos with AI categories before reviewing duplicates, screenshots, blurry shots, documents, receipts, and large media.
 - iPad Photo Organizer Guide 2026 | AI Photo Sorting for iPad: https://www.xiaozhonglvyou.com/ipad-photo-organizer-guide.html
   iPad photo organizer guide for sorting screenshots, document scans, receipts, imported camera media, large videos, duplicates, and iCloud-sensitive cleanup choices.
+- iPad照片整理指南 | 平板相册清理和 AI 分类: https://www.xiaozhonglvyou.com/ipad-photo-organizer-cn.html
+  中文 iPad 照片整理指南：先确认 iCloud 照片同步，再整理阅读截图、文档扫描、票据、导入照片、重复照片、相似照片和大视频，降低误删风险。
 - AI照片分类指南 | 智能相册整理和 iPhone 照片清理: https://www.xiaozhonglvyou.com/ai-photo-classification-cn.html
   中文 AI 照片分类指南：先用智能分类整理 iPhone 相册，再逐组复查重复照片、相似照片、截图、模糊照片、票据、证件、文档和大文件，看清真实存储空间后决定安全清理，降低误删风险。
 - iPhone照片清理指南 | 苹果手机相册整理和安全清理: https://www.xiaozhonglvyou.com/iphone-photo-cleaner-cn.html

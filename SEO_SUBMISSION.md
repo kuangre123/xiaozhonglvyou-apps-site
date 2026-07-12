@@ -16,39 +16,39 @@ Search index: https://www.xiaozhonglvyou.com/search-index.json
 
 ## Completed On Site
 
-- 45 indexable HTML pages, 108 JSON-LD blocks, 0 parse errors
+- 46 indexable HTML pages, 109 JSON-LD blocks, 0 parse errors
 - `robots.txt` allows 26+ crawler UAs including Googlebot, Bingbot, DuckDuckBot, Baiduspider, Sogou, 360Spider, YisouSpider, Bytespider, PetalBot, and AI crawlers (GPTBot, ClaudeBot, PerplexityBot)
 - `robots.txt` advertises sitemap-index, sitemap.xml, sitemap.txt, feed.xml, atom.xml
-- `sitemap.xml` includes 45 URLs with lastmod 2026-07-09, changefreq, priority, hreflang alternates, and image entries
+- `sitemap.xml` includes 46 URLs with lastmod 2026-07-13, changefreq, priority, hreflang alternates, and image entries
 - `sitemap-index.xml` points to sitemap.xml, feed.xml, and atom.xml
-- `sitemap.txt` lists 45 URLs in plain text format
-- `feed.xml` (RSS 2.0, 22 items) and `atom.xml` (Atom, 10 entries) with 2026-07-09 dates
-- `search-index.json` with 45 pages, includes title/description/h1/lang/category/headings
+- `sitemap.txt` lists 46 URLs in plain text format
+- `feed.xml` (RSS 2.0, 23 items) and `atom.xml` (Atom, 11 entries) with 2026-07-13 dates
+- `search-index.json` with 46 pages, includes title/description/h1/lang/category/headings
 - `directory.html` human-readable page directory with grouped links
 - `search.html` client-side site search with ?q= parameter support
 - `llms.txt` with full page descriptions and discovery signals
 - `security.txt` at root for responsible disclosure (E-E-A-T trust signal)
 
 ### Technical SEO
-- All 45 indexable pages: unique title, unique meta description, single H1, canonical, viewport, robots=index,follow
-- All 45 indexable pages: og:locale, og:image:secure_url, og:image:width/height/alt, og:site_name
-- All 45 indexable pages: manifest.webmanifest link, preconnect for googletagmanager and apps.apple.com
-- 22 Article pages: og:article:published_time and og:article:modified_time (synced with JSON-LD)
+- All 46 indexable pages: unique title, unique meta description, single H1, canonical, viewport, robots=index,follow
+- All 46 indexable pages: og:locale, og:image:secure_url, og:image:width/height/alt, og:site_name
+- All 46 indexable pages: manifest.webmanifest link, preconnect for googletagmanager and apps.apple.com
+- 23 Article pages: og:article:published_time and og:article:modified_time (synced with JSON-LD)
 - Localized and regional cluster pages: hreflang alternates (23 entries)
 - No broken internal links, no orphan pages, all pages have >= 3 internal entry points
 - No generic anchor text ("click here" etc.)
 - No heading hierarchy skips
 - No public-facing SEO terminology leaks
 
-### Structured Data (108 blocks, 15 top-level types)
-- BreadcrumbList: 44 pages (all indexable pages except index.html)
-- FAQPage: 29 pages with 81+ Q&A pairs
-- Article: 22 pages with datePublished/dateModified synced per page
+### Structured Data (109 blocks, 15 top-level types)
+- BreadcrumbList: 45 pages (all indexable pages except index.html)
+- FAQPage: 30 pages with 85+ Q&A pairs
+- Article: 23 pages with datePublished/dateModified synced per page
 - WebPage: 17 pages
 - CollectionPage: 4 hub pages
 - SoftwareApplication: 4 (with applicationCategory, operatingSystem, softwareVersion, offers)
 - ItemList: 3 hub pages
-- HowTo: 4 guide pages with 24 total steps
+- HowTo: 5 guide pages with 29 total steps
 - Organization + Brand: 2 pages with sameAs (4 App Store links + GitHub repo)
 - Person: 2 pages with knowsAbout
 - WebSite: 1 with SearchAction (potentialAction for Sitelinks Search Box)
@@ -62,7 +62,7 @@ Search index: https://www.xiaozhonglvyou.com/search-index.json
 ### IndexNow
 - Key file: https://www.xiaozhonglvyou.com/a6013cad6cead8e0.txt (verified HTTP 200)
 - Submit command: `node scripts/submit-indexnow.mjs --submit`
-- Last submission: 45 URLs on 2026-07-09; Bing 200, Yandex 202, Seznam 200, Naver 200
+- Last submission: 46 URLs pending after current deployment
 
 ## Requires External Platform Accounts
 

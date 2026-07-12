@@ -5,15 +5,7 @@
     <link>https://www.xiaozhonglvyou.com/</link>
     <description>Independent iPhone and Mac apps for photo cleanup, travel translation, screen privacy, and focused work.</description>
     <language>en</language>
-    <lastBuildDate>Wed, 08 Jul 2026 16:19:25 GMT</lastBuildDate>
-    <item>
-      <title>AI照片分类指南：智能相册整理和 iPhone 照片清理</title>
-      <link>https://www.xiaozhonglvyou.com/ai-photo-classification-cn.html</link>
-      <description>面向中文用户的 AI 照片分类说明，介绍如何先整理相册，再检查重复照片、截图、模糊照片和大文件。</description>
-      <guid isPermaLink="true">https://www.xiaozhonglvyou.com/ai-photo-classification-cn.html</guid>
-      <pubDate>Fri, 05 Jun 2026 00:00:00 GMT</pubDate>
-      <enclosure url="https://www.xiaozhonglvyou.com/assets/ai-cleaning-screen.png" type="image/png" />
-    </item>
+    <lastBuildDate>Sun, 12 Jul 2026 16:12:37 GMT</lastBuildDate>
     <item>
       <title>AI Photo Classification for iPhone</title>
       <link>https://www.xiaozhonglvyou.com/ai-photo-classification.html</link>
@@ -39,14 +31,6 @@
       <enclosure url="https://www.xiaozhonglvyou.com/assets/ai-cleaning-icon.png" type="image/png" />
     </item>
     <item>
-      <title>重复照片清理指南：相似照片整理和 iPhone 相册复查</title>
-      <link>https://www.xiaozhonglvyou.com/duplicate-photo-cleaner-cn.html</link>
-      <description>中文重复照片清理指南：介绍如何成组复查重复照片、相似照片、连拍、截图和模糊照片，再决定保留和清理，避免一键误删照片。</description>
-      <guid isPermaLink="true">https://www.xiaozhonglvyou.com/duplicate-photo-cleaner-cn.html</guid>
-      <pubDate>Sat, 06 Jun 2026 00:00:00 GMT</pubDate>
-      <enclosure url="https://www.xiaozhonglvyou.com/assets/ai-cleaning-screen.png" type="image/png" />
-    </item>
-    <item>
       <title>Duplicate Photo Cleaner Guide for iPhone</title>
       <link>https://www.xiaozhonglvyou.com/duplicate-photo-cleaner-guide.html</link>
       <description>A practical duplicate photo cleanup workflow for iPhone users.</description>
@@ -60,14 +44,6 @@
       <description>Deutschsprachiger Leitfaden fuer iPhone Foto Cleaner, KI Foto Sortierung, doppelte Fotos, Screenshots, unscharfe Fotos und Speicherpruefung.</description>
       <guid isPermaLink="true">https://www.xiaozhonglvyou.com/iphone-foto-cleaner-de.html</guid>
       <pubDate>Sun, 07 Jun 2026 00:00:00 GMT</pubDate>
-      <enclosure url="https://www.xiaozhonglvyou.com/assets/ai-cleaning-screen.png" type="image/png" />
-    </item>
-    <item>
-      <title>iPhone照片清理指南：苹果手机相册整理和安全清理</title>
-      <link>https://www.xiaozhonglvyou.com/iphone-photo-cleaner-cn.html</link>
-      <description>中文 iPhone 照片清理指南，介绍如何先用 AI 照片智能分类看清相册，再复查重复照片、截图、模糊照片和大文件。</description>
-      <guid isPermaLink="true">https://www.xiaozhonglvyou.com/iphone-photo-cleaner-cn.html</guid>
-      <pubDate>Sat, 06 Jun 2026 00:00:00 GMT</pubDate>
       <enclosure url="https://www.xiaozhonglvyou.com/assets/ai-cleaning-screen.png" type="image/png" />
     </item>
     <item>
@@ -181,6 +157,38 @@
       <guid isPermaLink="true">https://www.xiaozhonglvyou.com/ipad-photo-organizer-guide.html</guid>
       <pubDate>Thu, 09 Jul 2026 00:00:00 GMT</pubDate>
       <enclosure url="https://www.xiaozhonglvyou.com/assets/ai-cleaning-icon.png" type="image/png" />
+    </item>
+    <item>
+      <title>AI照片分类指南：智能相册整理和 iPhone 照片清理</title>
+      <link>https://www.xiaozhonglvyou.com/ai-photo-classification-cn.html</link>
+      <description>面向中文用户的 AI 照片分类说明，介绍如何先整理相册，再检查重复照片、截图、模糊照片和大文件。</description>
+      <guid isPermaLink="true">https://www.xiaozhonglvyou.com/ai-photo-classification-cn.html</guid>
+      <pubDate>Fri, 05 Jun 2026 00:00:00 GMT</pubDate>
+      <enclosure url="https://www.xiaozhonglvyou.com/assets/ai-cleaning-screen.png" type="image/png" />
+    </item>
+    <item>
+      <title>重复照片清理指南：相似照片整理和 iPhone 相册复查</title>
+      <link>https://www.xiaozhonglvyou.com/duplicate-photo-cleaner-cn.html</link>
+      <description>中文重复照片清理指南：介绍如何成组复查重复照片、相似照片、连拍、截图和模糊照片，再决定保留和清理，避免一键误删照片。</description>
+      <guid isPermaLink="true">https://www.xiaozhonglvyou.com/duplicate-photo-cleaner-cn.html</guid>
+      <pubDate>Sat, 06 Jun 2026 00:00:00 GMT</pubDate>
+      <enclosure url="https://www.xiaozhonglvyou.com/assets/ai-cleaning-screen.png" type="image/png" />
+    </item>
+    <item>
+      <title>iPad照片整理指南：平板相册清理和 AI 分类</title>
+      <link>https://www.xiaozhonglvyou.com/ipad-photo-organizer-cn.html</link>
+      <description>中文 iPad 照片整理指南，介绍如何先确认 iCloud 同步，再整理截图、文档、票据、导入照片、重复照片和大视频。</description>
+      <guid isPermaLink="true">https://www.xiaozhonglvyou.com/ipad-photo-organizer-cn.html</guid>
+      <pubDate>Mon, 13 Jul 2026 00:00:00 GMT</pubDate>
+      <enclosure url="https://www.xiaozhonglvyou.com/assets/ai-cleaning-screen.png" type="image/png" />
+    </item>
+    <item>
+      <title>iPhone照片清理指南：苹果手机相册整理和安全清理</title>
+      <link>https://www.xiaozhonglvyou.com/iphone-photo-cleaner-cn.html</link>
+      <description>中文 iPhone 照片清理指南，介绍如何先用 AI 照片智能分类看清相册，再复查重复照片、截图、模糊照片和大文件。</description>
+      <guid isPermaLink="true">https://www.xiaozhonglvyou.com/iphone-photo-cleaner-cn.html</guid>
+      <pubDate>Sat, 06 Jun 2026 00:00:00 GMT</pubDate>
+      <enclosure url="https://www.xiaozhonglvyou.com/assets/ai-cleaning-screen.png" type="image/png" />
     </item>
   </channel>
 </rss>
