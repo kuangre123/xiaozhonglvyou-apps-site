@@ -62,7 +62,7 @@ Search index: https://www.xiaozhonglvyou.com/search-index.json
 ### IndexNow
 - Key file: https://www.xiaozhonglvyou.com/a6013cad6cead8e0.txt (verified HTTP 200)
 - Submit command: `node scripts/submit-indexnow.mjs --submit`
-- Last submission: 46 URLs pending after current deployment
+- Last submission: 46 URLs on 2026-07-13; Bing 200, Yandex 202, Seznam 200, Naver 200
 
 ## Requires External Platform Accounts
 
