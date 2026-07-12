@@ -8,9 +8,13 @@ Sitemap: https://www.xiaozhonglvyou.com/sitemap.xml
 
 Global-focused sitemap: https://www.xiaozhonglvyou.com/sitemap-global.xml
 
+Article sitemap: https://www.xiaozhonglvyou.com/sitemap-articles.xml
+
 Text sitemap: https://www.xiaozhonglvyou.com/sitemap.txt
 
 Global-focused text sitemap: https://www.xiaozhonglvyou.com/sitemap-global.txt
+
+Article text sitemap: https://www.xiaozhonglvyou.com/sitemap-articles.txt
 
 China-focused sitemap: https://www.xiaozhonglvyou.com/sitemap-cn.xml
 
@@ -26,13 +30,15 @@ Search index: https://www.xiaozhonglvyou.com/search-index.json
 
 - 46 indexable HTML pages, 109 JSON-LD blocks, 0 parse errors
 - `robots.txt` allows 26+ crawler UAs including Googlebot, Bingbot, DuckDuckBot, Baiduspider, Sogou, 360Spider, YisouSpider, Bytespider, PetalBot, and AI crawlers (GPTBot, ClaudeBot, PerplexityBot)
-- `robots.txt` advertises sitemap-index, sitemap.xml, sitemap-global.xml, sitemap-cn.xml, sitemap.txt, sitemap-global.txt, sitemap-cn.txt, feed.xml, atom.xml
+- `robots.txt` advertises sitemap-index, sitemap.xml, sitemap-global.xml, sitemap-articles.xml, sitemap-cn.xml, sitemap.txt, sitemap-global.txt, sitemap-articles.txt, sitemap-cn.txt, feed.xml, atom.xml
 - `sitemap.xml` includes 46 URLs with lastmod 2026-07-13, changefreq, priority, 401 hreflang alternate links, and image entries
-- `sitemap-index.xml` points to sitemap.xml, sitemap-global.xml, sitemap-cn.xml, feed.xml, and atom.xml
+- `sitemap-index.xml` points to sitemap.xml, sitemap-global.xml, sitemap-articles.xml, sitemap-cn.xml, feed.xml, and atom.xml
 - `sitemap-global.xml` lists 37 global, English, and localized non-Chinese landing pages for Google, Bing, Yandex, DuckDuckGo, and other international search platform submissions
+- `sitemap-articles.xml` lists 23 Article/guide pages with per-page dateModified values from JSON-LD
 - `sitemap-cn.xml` lists 9 Simplified and Traditional Chinese landing pages for Baidu, 360, Sogou, Shenma, and other Chinese search platform submissions
 - `sitemap.txt` lists 46 URLs in plain text format
 - `sitemap-global.txt` lists the same 37 global and international URLs in plain text format
+- `sitemap-articles.txt` lists the same 23 Article/guide URLs in plain text format
 - `sitemap-cn.txt` lists the same 9 Chinese-language URLs in plain text format
 - `feed.xml` (RSS 2.0, 23 items) and `atom.xml` (Atom, 11 entries) with 2026-07-13 dates
 - `search-index.json` with 46 pages, includes title/description/h1/lang/category/headings
