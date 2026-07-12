@@ -68,10 +68,11 @@ Search index: https://www.xiaozhonglvyou.com/search-index.json
 ### IndexNow
 - Key file: https://www.xiaozhonglvyou.com/a6013cad6cead8e0.txt (verified HTTP 200)
 - Submit command: `node scripts/submit-indexnow.mjs --submit`
-- Last submission: 46 URLs on 2026-07-13; Bing 200, Yandex 200, Seznam 200, Naver 200
+- Last submission: 46 URLs on 2026-07-13; Bing 200, Yandex 202, Seznam 200, Naver 200
 - Latest deployment validation: commit `7613956`; added reciprocal hreflang and visible cross-links for the English and Simplified Chinese iPad photo organizer guides.
 - Latest sitemap validation: commit `e5f2264`; 401 hreflang alternate links, including paired English/Simplified Chinese guide and app pages, are present in sitemap.xml.
 - Latest China-focused sitemap validation: commit `4f82978`; sitemap-cn.xml is live with 9 Chinese-language URLs and is advertised from robots.txt and sitemap-index.xml.
+- Latest China-focused text sitemap validation: commit `014bda0`; sitemap-cn.txt is live with the same 9 Chinese-language URLs and is advertised from robots.txt.
 
 ## Requires External Platform Accounts
 
