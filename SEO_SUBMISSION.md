@@ -60,7 +60,7 @@ Search index: https://www.xiaozhonglvyou.com/search-index.json
 
 ### Structured Data (110 blocks, 15 top-level types)
 - BreadcrumbList: 45 pages (all indexable pages except index.html)
-- FAQPage: 31 pages with 117 visible and structured Q&A pairs
+- FAQPage: 31 pages with 127 visible and structured Q&A pairs
 - Article: 23 pages with datePublished/dateModified synced per page
 - WebPage: 17 pages
 - CollectionPage: 4 hub pages
@@ -91,6 +91,18 @@ Search index: https://www.xiaozhonglvyou.com/search-index.json
 - Latest article sitemap validation: commit `9c7afab`; sitemap-articles.xml and sitemap-articles.txt are live with 23 Article/guide URLs and are advertised from robots.txt and sitemap-index.xml.
 - Latest China-focused sitemap validation: commit `4f82978`; sitemap-cn.xml is live with 9 Chinese-language URLs and is advertised from robots.txt and sitemap-index.xml.
 - Latest China-focused text sitemap validation: commit `014bda0`; sitemap-cn.txt is live with the same 9 Chinese-language URLs and is advertised from robots.txt.
+
+## Public Indexing Baseline (2026-07-13)
+
+Public `site:` and exact-domain searches provide a directional baseline, not the authoritative index coverage available inside webmaster accounts.
+
+- Google displayed 30 unique site pages across three result pages. It included the homepage, core app pages, Simplified Chinese product pages, and several regional pages.
+- Bing displayed the homepage in an exact-domain query; its result-count estimate was not consistent with the visible result page.
+- Baidu reported approximately 1 indexed page and displayed the homepage.
+- 360 Search reported approximately 1 indexed page and displayed the homepage.
+- Sogou reported 0 matching pages.
+- High-value pages not visible in the Google public result set included the best photo cleaner guide, both iPad organizer guides, the voice/camera translator guide, and the German and French photo-cleaner guides. These pages now receive a dedicated content-strengthening pass before the next submission.
+- Recheck the same public queries after crawler processing, then use Google Search Console, Bing Webmaster Tools, Baidu, 360, and Sogou webmaster accounts for authoritative coverage and exclusion reasons.
 
 ## Requires External Platform Accounts
 
