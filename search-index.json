@@ -145,9 +145,9 @@
     {
       "url": "https://www.xiaozhonglvyou.com/de-de.html",
       "path": "/de-de.html",
-      "title": "iPhone Foto Cleaner und Mac Datenschutz Apps | CrazyAIAgent",
-      "description": "Deutschsprachige Uebersicht fuer CrazyAIAgent: KI Foto Sortierung, iPhone Foto Cleaner, Reise Uebersetzer und Mac Bildschirm Datenschutz.",
-      "h1": "KI Foto Sortierung, iPhone Foto Cleaner und Mac Datenschutz.",
+      "title": "iPhone Foto Cleaner und Mac-Datenschutz-Apps | CrazyAIAgent",
+      "description": "Deutschsprachige Übersicht für CrazyAIAgent: KI-Fotosortierung, iPhone Foto Cleaner, Reiseübersetzer und Datenschutz für den Mac-Bildschirm.",
+      "h1": "KI-Fotosortierung, iPhone Foto Cleaner und Mac-Datenschutz.",
       "lang": "de-DE",
       "category": "regional",
       "canonical": "https://www.xiaozhonglvyou.com/de-de.html",
@@ -156,8 +156,9 @@
       "priority": 1,
       "images": [],
       "headings": [
-        "Direkte App-Antworten fuer konkrete Aufgaben.",
-        "Suchbegriffe nach Aufgabe statt nach App-Name ordnen."
+        "Direkte App-Antworten für konkrete Aufgaben.",
+        "Nach Aufgabe statt nach App-Name auswählen.",
+        "Die passende App für Fotos, Reisen und Mac-Datenschutz."
       ]
     },
     {
@@ -230,15 +231,16 @@
       "images": [],
       "headings": [
         "Separar limpieza, clasificación y traducción.",
-        "Usar una ruta de revisión antes de borrar fotos."
+        "Usar una ruta de revisión antes de borrar fotos.",
+        "Elegir una app para fotos, viajes o privacidad en Mac."
       ]
     },
     {
       "url": "https://www.xiaozhonglvyou.com/fr-fr.html",
       "path": "/fr-fr.html",
-      "title": "Apps iPhone et Mac | Photo IA, Traduction, Confidentialite",
-      "description": "Page France pour CrazyAIAgent : classement photo IA, nettoyeur photo iPhone, traducteur de voyage et confidentialite d'ecran Mac.",
-      "h1": "Nettoyage photo iPhone, traduction voyage et confidentialite Mac.",
+      "title": "Apps iPhone et Mac | Photo IA, traduction, confidentialité",
+      "description": "Page France pour CrazyAIAgent : classement photo IA, nettoyeur photo iPhone, traducteur de voyage et confidentialité d'écran Mac.",
+      "h1": "Nettoyage photo iPhone, traduction voyage et confidentialité Mac.",
       "lang": "fr-FR",
       "category": "regional",
       "canonical": "https://www.xiaozhonglvyou.com/fr-fr.html",
@@ -248,7 +250,8 @@
       "images": [],
       "headings": [
         "Des pages claires pour choisir le bon outil.",
-        "Trouver rapidement la page utile."
+        "Trouver rapidement la page utile.",
+        "Choisir une app pour les photos, le voyage ou la confidentialité Mac."
       ]
     },
     {
@@ -473,7 +476,7 @@
       "images": [],
       "headings": [
         "写真、翻訳、プライバシーの用途別に案内。",
-        "検索意図ごとに詳しいページへ案内します。",
+        "目的ごとに詳しいページへ案内します。",
         "用途に合うアプリをすばやく選ぶ。"
       ]
     },

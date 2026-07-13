@@ -28,7 +28,7 @@ Search index: https://www.xiaozhonglvyou.com/search-index.json
 
 ## Completed On Site
 
-- 46 indexable HTML pages, 110 JSON-LD blocks, 0 parse errors
+- 46 indexable HTML pages, 113 JSON-LD blocks, 0 parse errors
 - `robots.txt` allows 26+ crawler UAs including Googlebot, Bingbot, DuckDuckBot, Baiduspider, Sogou, 360Spider, YisouSpider, Bytespider, PetalBot, and AI crawlers (GPTBot, ClaudeBot, PerplexityBot)
 - `robots.txt` advertises sitemap-index, sitemap.xml, sitemap-global.xml, sitemap-articles.xml, sitemap-cn.xml, sitemap.txt, sitemap-global.txt, sitemap-articles.txt, sitemap-cn.txt, feed.xml, atom.xml
 - `sitemap.xml` includes 46 URLs with lastmod 2026-07-13, changefreq, priority, 401 hreflang alternate links, and image entries
@@ -58,9 +58,9 @@ Search index: https://www.xiaozhonglvyou.com/search-index.json
 - No heading hierarchy skips
 - No public-facing SEO terminology leaks
 
-### Structured Data (110 blocks, 15 top-level types)
+### Structured Data (113 blocks, 15 top-level types)
 - BreadcrumbList: 45 pages (all indexable pages except index.html)
-- FAQPage: 31 pages with 127 visible and structured Q&A pairs
+- FAQPage: 34 pages with 146 visible and structured Q&A pairs
 - Article: 23 pages with datePublished/dateModified synced per page
 - WebPage: 17 pages
 - CollectionPage: 4 hub pages
@@ -101,7 +101,8 @@ Public `site:` and exact-domain searches provide a directional baseline, not the
 - Baidu reported approximately 1 indexed page and displayed the homepage.
 - 360 Search reported approximately 1 indexed page and displayed the homepage.
 - Sogou reported 0 matching pages.
-- High-value pages not visible in the Google public result set included the best photo cleaner guide, both iPad organizer guides, the voice/camera translator guide, and the German and French photo-cleaner guides. These pages now receive a dedicated content-strengthening pass before the next submission.
+- High-value pages not visible in the Google public result set included the best photo cleaner guide, both iPad organizer guides, the voice/camera translator guide, and the German and French photo-cleaner guides. The first content-strengthening pass expanded those six guides to five user questions each.
+- The second pass added five localized questions to the German, French, and Spanish market pages, expanded the Japanese and Traditional Chinese pages to five questions, and corrected visible localized wording that exposed internal search-planning language.
 - Recheck the same public queries after crawler processing, then use Google Search Console, Bing Webmaster Tools, Baidu, 360, and Sogou webmaster accounts for authoritative coverage and exclusion reasons.
 
 ## Requires External Platform Accounts
