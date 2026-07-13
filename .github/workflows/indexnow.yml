@@ -1,0 +1,54 @@
+name: Submit updated URLs
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "*.html"
+      - "sitemap*.xml"
+      - "sitemap*.txt"
+      - "feed.xml"
+      - "atom.xml"
+      - "robots.txt"
+      - "llms.txt"
+      - "scripts/submit-indexnow.mjs"
+      - ".github/workflows/indexnow.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: submit-updated-urls-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  submit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Check out site
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Submit sitemap URLs
+        run: >-
+          node scripts/submit-indexnow.mjs
+          --sitemap-path sitemap.xml
+          --key-file-path a6013cad6cead8e0.txt
+          --submit
+          --output-json-path indexnow-report.json
+
+      - name: Save submission report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: indexnow-report-${{ github.run_id }}
+          path: indexnow-report.json
+          if-no-files-found: ignore
+          retention-days: 30

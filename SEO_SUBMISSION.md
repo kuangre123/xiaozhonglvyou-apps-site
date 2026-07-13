@@ -79,7 +79,11 @@ Search index: https://www.xiaozhonglvyou.com/search-index.json
 
 ### IndexNow
 - Key file: https://www.xiaozhonglvyou.com/a6013cad6cead8e0.txt (verified HTTP 200)
-- Submit command: `node scripts/submit-indexnow.mjs --submit`
+- Automatic workflow: `.github/workflows/indexnow.yml`
+- Trigger: every `main` push that changes public HTML or discovery files, plus manual `workflow_dispatch`
+- Submit command: `node scripts/submit-indexnow.mjs --submit --output-json-path indexnow-report.json`
+- Validation: rejects empty, duplicate, over-limit, and off-domain sitemap URL lists before submission
+- Evidence: each workflow run saves `indexnow-report.json` as a 30-day GitHub Actions artifact
 - Last submission: 46 URLs on 2026-07-13; Bing 200, Yandex 202, Seznam 200, Naver 200
 - Latest deployment validation: commit `7613956`; added reciprocal hreflang and visible cross-links for the English and Simplified Chinese iPad photo organizer guides.
 - Latest sitemap validation: commit `e5f2264`; 401 hreflang alternate links, including paired English/Simplified Chinese guide and app pages, are present in sitemap.xml.
