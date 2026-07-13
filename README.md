@@ -1,13 +1,23 @@
-# CrazyAIAgent site
+# CrazyAIAgent apps
 
-Static international portfolio site for `www.xiaozhonglvyou.com`.
+Official website for [CrazyAIAgent iPhone and Mac apps](https://www.xiaozhonglvyou.com/),
+an independent portfolio focused on AI photo organization, travel translation, and screen privacy.
+
+## Products
+
+- [AI Cleaning - Photo Cleaner](https://www.xiaozhonglvyou.com/iphone-photo-cleaner.html) - classify and review iPhone photos before cleanup.
+- [Travel Translator](https://www.xiaozhonglvyou.com/travel-translator.html) - voice, camera, and phrase translation for travel.
+- [Anti-spy screen for Mac](https://www.xiaozhonglvyou.com/mac-screen-privacy.html) - reduce accidental screen exposure while working or presenting.
+
+Guides are available in English, Simplified Chinese, Traditional Chinese, French, German, Japanese,
+Korean, Spanish, Italian, and regional English editions.
 
 Hosted with GitHub Pages from the `main` branch root.
 
 Public URLs:
 
-- https://www.xiaozhonglvyou.com/
-- https://kuangre123.github.io/xiaozhonglvyou-apps-site/
+- [Official CrazyAIAgent website](https://www.xiaozhonglvyou.com/)
+- [GitHub Pages address](https://kuangre123.github.io/xiaozhonglvyou-apps-site/)
 
 Important crawl resources:
 
