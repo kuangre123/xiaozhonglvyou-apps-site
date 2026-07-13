@@ -60,7 +60,7 @@ Search index: https://www.xiaozhonglvyou.com/search-index.json
 
 ### Structured Data (110 blocks, 15 top-level types)
 - BreadcrumbList: 45 pages (all indexable pages except index.html)
-- FAQPage: 31 pages with 112 visible and structured Q&A pairs
+- FAQPage: 31 pages with 117 visible and structured Q&A pairs
 - Article: 23 pages with datePublished/dateModified synced per page
 - WebPage: 17 pages
 - CollectionPage: 4 hub pages
