@@ -28,7 +28,7 @@ Search index: https://www.xiaozhonglvyou.com/search-index.json
 
 ## Completed On Site
 
-- 46 indexable HTML pages, 109 JSON-LD blocks, 0 parse errors
+- 46 indexable HTML pages, 110 JSON-LD blocks, 0 parse errors
 - `robots.txt` allows 26+ crawler UAs including Googlebot, Bingbot, DuckDuckBot, Baiduspider, Sogou, 360Spider, YisouSpider, Bytespider, PetalBot, and AI crawlers (GPTBot, ClaudeBot, PerplexityBot)
 - `robots.txt` advertises sitemap-index, sitemap.xml, sitemap-global.xml, sitemap-articles.xml, sitemap-cn.xml, sitemap.txt, sitemap-global.txt, sitemap-articles.txt, sitemap-cn.txt, feed.xml, atom.xml
 - `sitemap.xml` includes 46 URLs with lastmod 2026-07-13, changefreq, priority, 401 hreflang alternate links, and image entries
@@ -58,9 +58,9 @@ Search index: https://www.xiaozhonglvyou.com/search-index.json
 - No heading hierarchy skips
 - No public-facing SEO terminology leaks
 
-### Structured Data (109 blocks, 15 top-level types)
+### Structured Data (110 blocks, 15 top-level types)
 - BreadcrumbList: 45 pages (all indexable pages except index.html)
-- FAQPage: 30 pages with 85+ Q&A pairs
+- FAQPage: 31 pages with 112 visible and structured Q&A pairs
 - Article: 23 pages with datePublished/dateModified synced per page
 - WebPage: 17 pages
 - CollectionPage: 4 hub pages
