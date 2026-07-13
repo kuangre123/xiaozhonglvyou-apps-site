@@ -420,6 +420,20 @@ summary {
   font-size: clamp(18px, 2vw, 22px);
 }
 
+.page-hero-copy .article-meta {
+  margin-top: 16px;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.article-meta a {
+  color: inherit;
+  font-weight: 700;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
 .breadcrumb {
   margin-bottom: 18px;
   color: var(--muted);
