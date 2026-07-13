@@ -480,6 +480,24 @@ summary {
   box-shadow: var(--shadow-lg);
 }
 
+.product-screen-media img {
+  width: min(240px, 100%);
+  border-radius: 26px;
+}
+
+.release-product-shot {
+  display: none;
+  margin: 28px 0 0;
+}
+
+.release-product-shot img {
+  display: block;
+  width: min(220px, 100%);
+  height: auto;
+  border-radius: 24px;
+  box-shadow: var(--shadow-md);
+}
+
 .page-hero-mark {
   width: min(256px, 100%);
   aspect-ratio: 1;
@@ -1277,6 +1295,19 @@ summary {
     width: min(100% - 28px, var(--max));
     padding: 96px 0 48px;
     gap: 36px;
+  }
+
+  .product-page-hero {
+    padding-top: 88px;
+    padding-bottom: 24px;
+  }
+
+  .product-screen-media {
+    display: none;
+  }
+
+  .release-product-shot {
+    display: block;
   }
 
   .hero-copy,

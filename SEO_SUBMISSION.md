@@ -31,7 +31,7 @@ Search index: https://www.xiaozhonglvyou.com/search-index.json
 - 46 indexable HTML pages, 113 JSON-LD blocks, 0 parse errors
 - `robots.txt` allows 26+ crawler UAs including Googlebot, Bingbot, DuckDuckBot, Baiduspider, Sogou, 360Spider, YisouSpider, Bytespider, PetalBot, and AI crawlers (GPTBot, ClaudeBot, PerplexityBot)
 - `robots.txt` advertises sitemap-index, sitemap.xml, sitemap-global.xml, sitemap-articles.xml, sitemap-cn.xml, sitemap.txt, sitemap-global.txt, sitemap-articles.txt, sitemap-cn.txt, feed.xml, atom.xml
-- `sitemap.xml` includes 46 URLs with lastmod 2026-07-13, changefreq, priority, 401 hreflang alternate links, and image entries
+- `sitemap.xml` includes 46 URLs with lastmod 2026-07-13, changefreq, priority, 401 hreflang alternate links, and 18 image entries
 - `sitemap-index.xml` points to sitemap.xml, sitemap-global.xml, sitemap-articles.xml, sitemap-cn.xml, feed.xml, and atom.xml
 - `sitemap-global.xml` lists 37 global, English, and localized non-Chinese landing pages for Google, Bing, Yandex, DuckDuckGo, and other international search platform submissions
 - `sitemap-articles.xml` lists 23 Article/guide pages with per-page dateModified values from JSON-LD
@@ -60,7 +60,7 @@ Search index: https://www.xiaozhonglvyou.com/search-index.json
 
 ### Structured Data (113 blocks, 15 top-level types)
 - BreadcrumbList: 45 pages (all indexable pages except index.html)
-- FAQPage: 34 pages with 146 visible and structured Q&A pairs
+- FAQPage: 34 pages with 148 visible and structured Q&A pairs
 - Article: 23 pages with datePublished/dateModified synced per page
 - WebPage: 17 pages
 - CollectionPage: 4 hub pages
@@ -91,6 +91,7 @@ Search index: https://www.xiaozhonglvyou.com/search-index.json
 - Latest article sitemap validation: commit `9c7afab`; sitemap-articles.xml and sitemap-articles.txt are live with 23 Article/guide URLs and are advertised from robots.txt and sitemap-index.xml.
 - Latest China-focused sitemap validation: commit `4f82978`; sitemap-cn.xml is live with 9 Chinese-language URLs and is advertised from robots.txt and sitemap-index.xml.
 - Latest China-focused text sitemap validation: commit `014bda0`; sitemap-cn.txt is live with the same 9 Chinese-language URLs and is advertised from robots.txt.
+- Latest people-first content pass: the English and Simplified Chinese iPhone photo-cleaner pages now use the real product screen and document version 1.1.3, iOS 16 compatibility, nine explicit categories, on-device processing, and review-before-delete behavior checked against the current App Store listing on 2026-07-13. Regional and guide copy that addressed search traffic instead of readers was rewritten around practical user tasks.
 
 ## Public Indexing Baseline (2026-07-13)
 

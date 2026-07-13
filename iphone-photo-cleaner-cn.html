@@ -77,6 +77,15 @@
           "url": "https://apps.apple.com/us/app/ai-cleaning-photo-cleaner/id6768019606?uo=4",
           "downloadUrl": "https://apps.apple.com/us/app/ai-cleaning-photo-cleaner/id6768019606?uo=4",
           "softwareVersion": "1.1.3",
+          "softwareRequirements": "iOS 16.0 或更高版本",
+          "featureList": [
+            "设备端照片分析",
+            "完全重复和视觉相似照片复查",
+            "九类照片智能分类",
+            "截图、模糊照片和大文件复查",
+            "每天 30 张卡片式整理",
+            "重复联系人复查"
+          ],
           "offers": {
             "@type": "Offer",
             "price": "0.00",
@@ -125,10 +134,10 @@
           },
           {
             "@type": "Question",
-            "name": "AI Cleaning 更适合什么场景？",
+            "name": "AI Cleaning 会把照片上传到服务器吗？",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "更适合相册长期没有整理、截图很多、重复照片多、或者想先看懂相册内容再清理的 iPhone 用户。"
+              "text": "不会。当前 App Store 页面说明照片分析在 iPhone 设备端完成，核心功能不需要联网，照片库不会上传。"
             }
           },
           {
@@ -141,10 +150,10 @@
           },
           {
             "@type": "Question",
-            "name": "AI Cleaning 会清理系统垃圾吗？",
+            "name": "AI Cleaning 支持哪些 iPhone 系统版本？",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "不会。AI Cleaning 的产品定位是设备端 AI 分类和相册整理，核心围绕照片库本身：重复照片、相似照片、截图、模糊照片和大文件。不把系统垃圾清理当成卖点。"
+              "text": "当前版本为 1.1.3，需要 iOS 16.0 或更高版本。"
             }
           }
         ]
@@ -190,7 +199,7 @@
     </header>
 
     <main class="page-main">
-      <section class="page-hero">
+      <section class="page-hero product-page-hero">
         <div class="page-hero-copy">
           <nav class="breadcrumb" aria-label="Breadcrumb">
             <ol>
@@ -209,11 +218,10 @@
           <div class="hero-actions" aria-label="iPhone照片清理操作">
             <a class="button button-primary" href="https://apps.apple.com/us/app/ai-cleaning-photo-cleaner/id6768019606?uo=4">在 App Store 查看</a>
             <a class="button button-secondary" href="ai-photo-classification-cn.html">AI 分类说明</a>
-            <a class="button button-secondary" href="ipad-photo-organizer-cn.html">iPad 照片整理</a>
             <a class="button button-secondary" href="duplicate-photo-cleaner-cn.html">重复照片复查</a>
           </div>
         </div>
-        <div class="page-hero-media">
+        <div class="page-hero-media product-screen-media">
           <img src="assets/ai-cleaning-screen.png" width="331" height="720" decoding="async" alt="AI Cleaning iPhone 照片清理和 AI 照片分类界面" />
         </div>
       </section>
@@ -253,6 +261,41 @@
       <section class="section content-section alt-section">
         <div class="section-inner content-grid">
           <div>
+            <p class="section-kicker">当前版本信息</p>
+            <h2>功能边界可以从公开产品信息核对。</h2>
+            <p>
+              以下信息对应 1.1.3 版本，并于 2026 年 7 月 13 日根据
+              <a href="https://apps.apple.com/us/app/ai-cleaning-photo-cleaner/id6768019606?uo=4">当前 App Store 页面</a>
+              完成核对。这里说明具体实现和使用边界，不用模糊的清理口号代替产品事实。
+            </p>
+            <figure class="release-product-shot">
+              <img src="assets/ai-cleaning-screen.png" width="331" height="720" loading="lazy" decoding="async" alt="AI Cleaning iPhone 照片分类和清理界面" />
+            </figure>
+          </div>
+          <div class="content-list">
+            <div>
+              <strong>照片分析在设备端完成</strong>
+              <p>视觉相似度比较和照片分类都在 iPhone 上处理。当前产品说明明确表示照片库不会上传，核心功能不依赖网络。</p>
+            </div>
+            <div>
+              <strong>九类照片分类</strong>
+              <p>动物、植物、食物、餐厅、合照、文档、发票、票据和证件，类别和产品能力一一对应。</p>
+            </div>
+            <div>
+              <strong>所有删除都需要确认</strong>
+              <p>完全重复、视觉相似、截图、模糊照片和大文件只是复查候选；每天整理一次展示 30 张卡片，不会自动删除照片。</p>
+            </div>
+            <div>
+              <strong>版本与系统要求</strong>
+              <p>当前版本为 1.1.3，需要 iOS 16.0 或更高版本。</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section content-section">
+        <div class="section-inner content-grid">
+          <div>
             <p class="section-kicker">适合人群</p>
             <h2>相册越大，越需要先分类再清理。</h2>
             <p>
@@ -278,7 +321,7 @@
       </section>
 
 
-      <section class="section content-section">
+      <section class="section content-section alt-section">
         <div class="section-inner content-grid">
           <div>
             <p class="section-kicker">存储空间分析</p>
@@ -322,16 +365,16 @@
               <p>因为相册里可能有证件、票据、文档和合照。先分类能帮你先排除重要照片，再处理更适合清理的候选内容。</p>
             </details>
             <details>
-              <summary>AI Cleaning 更适合什么场景？</summary>
-              <p>更适合相册长期没有整理、截图很多、重复照片多、或者想先看懂相册内容再清理的 iPhone 用户。</p>
+              <summary>AI Cleaning 会把照片上传到服务器吗？</summary>
+              <p>不会。当前 App Store 页面说明照片分析在 iPhone 设备端完成，核心功能不需要联网，照片库不会上传。</p>
             </details>
             <details>
               <summary>清理后 iPhone 存储空间没有变化怎么办？</summary>
               <p>删除照片后，iOS 会在最近删除相簿里保留 30 天。如果需要立即释放空间，可以手动清空最近删除相簿。清空后空间会在几分钟内更新。</p>
             </details>
             <details>
-              <summary>AI Cleaning 会清理系统垃圾吗？</summary>
-              <p>不会。AI Cleaning 的产品定位是设备端 AI 分类和相册整理，核心围绕照片库本身：重复照片、相似照片、截图、模糊照片和大文件。不把系统垃圾清理当成卖点。</p>
+              <summary>AI Cleaning 支持哪些 iPhone 系统版本？</summary>
+              <p>当前版本为 1.1.3，需要 iOS 16.0 或更高版本。</p>
             </details>
           </div>
         </div>

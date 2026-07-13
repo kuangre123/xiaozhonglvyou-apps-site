@@ -377,9 +377,12 @@
       "lastmod": "2026-07-13",
       "changefreq": "weekly",
       "priority": 1,
-      "images": [],
+      "images": [
+        "https://www.xiaozhonglvyou.com/assets/ai-cleaning-screen.png"
+      ],
       "headings": [
         "不要从“一键删除”开始。",
+        "功能边界可以从公开产品信息核对。",
         "相册越大，越需要先分类再清理。",
         "空间不够，先看是什么在占。",
         "安装前先确认清理边界。"
@@ -411,16 +414,19 @@
       "path": "/iphone-photo-cleaner.html",
       "title": "AI Cleaning: iPhone Photo Cleaner with On-Device AI Classification",
       "description": "AI Cleaning - Photo Cleaner helps classify iPhone photos, review duplicates, clean screenshots, find blurry shots, and analyze real storage.",
-      "h1": "Clean iPhone photos after AI understands the library.",
+      "h1": "Sort and clean iPhone photos with on-device AI.",
       "lang": "en",
       "category": "guide",
       "canonical": "https://www.xiaozhonglvyou.com/iphone-photo-cleaner.html",
       "lastmod": "2026-07-13",
       "changefreq": "weekly",
       "priority": 1,
-      "images": [],
+      "images": [
+        "https://www.xiaozhonglvyou.com/assets/ai-cleaning-screen.png"
+      ],
       "headings": [
         "Photo cleanup is more useful after classification.",
+        "Specific product facts, checked against the App Store.",
         "Direct answers for photo cleaner questions."
       ]
     },
@@ -545,8 +551,8 @@
       "url": "https://www.xiaozhonglvyou.com/netherlands-nordics-apps.html",
       "path": "/netherlands-nordics-apps.html",
       "title": "Netherlands Nordics Apps | Photo Cleaner, Translator, Privacy",
-      "description": "Netherlands and Nordics entry for AI photo cleaner, iPhone photo organizer, travel translator, and Mac screen privacy searches.",
-      "h1": "Utility apps for English searches in privacy-aware European markets.",
+      "description": "Compare AI photo cleaning, iPhone photo organization, travel translation, and Mac screen privacy apps for the Netherlands and Nordic countries.",
+      "h1": "Utility apps for privacy-aware European markets.",
       "lang": "en-NL",
       "category": "regional",
       "canonical": "https://www.xiaozhonglvyou.com/netherlands-nordics-apps.html",
@@ -556,7 +562,7 @@
       "images": [],
       "headings": [
         "Photo cleanup, translation, and privacy for practical app buyers.",
-        "Route broad English searches to the right utility page."
+        "Choose the right utility by the task you need to complete."
       ]
     },
     {
@@ -820,7 +826,7 @@
       "images": [],
       "headings": [
         "Photo organisation, translation, and privacy without inflated claims.",
-        "Route organiser and privacy searches to the right page."
+        "Choose a focused app for organisation, travel, or privacy."
       ]
     },
     {
@@ -838,7 +844,7 @@
       "images": [],
       "headings": [
         "Match each everyday problem to one app.",
-        "Give searchers a clear next step before the App Store."
+        "Choose the right workflow before opening the App Store."
       ]
     },
     {
