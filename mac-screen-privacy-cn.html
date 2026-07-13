@@ -10,7 +10,7 @@
     <title>Mac防窥和屏幕隐私指南 | 共享屏幕和演示保护</title>
     <meta
       name="description"
-      content="Mac 防窥和屏幕隐私中文指南：介绍 Anti-spy screen 和 Lite 如何在共享屏幕、远程会议、演示模式和开放式办公场景中保护敏感窗口、防止肩窥和意外信息泄露。"
+      content="Mac 防窥和屏幕隐私中文指南：介绍 Anti-spy screen 和 Lite 的本地人脸检测、受保护应用隐藏、演示模式、可调触发阈值和系统要求。"
     />
     <meta
       name="keywords"
@@ -27,7 +27,7 @@
     <meta property="og:type" content="article" />
     <meta property="og:locale" content="zh_CN" />
     <meta property="article:published_time" content="2026-06-06" />
-    <meta property="article:modified_time" content="2026-07-13" />
+    <meta property="article:modified_time" content="2026-07-14" />
     <meta property="og:url" content="https://www.xiaozhonglvyou.com/mac-screen-privacy-cn.html" />
     <meta property="og:title" content="Mac防窥和屏幕隐私指南" />
     <meta property="og:site_name" content="CrazyAIAgent" />
@@ -58,7 +58,7 @@
         "image": "https://www.xiaozhonglvyou.com/assets/anti-spy-screen.png",
         "mainEntityOfPage": "https://www.xiaozhonglvyou.com/mac-screen-privacy-cn.html",
         "datePublished": "2026-06-06",
-        "dateModified": "2026-07-13",
+        "dateModified": "2026-07-14",
         "inLanguage": "zh-Hans",
         "author": {
           "@type": "Person",
@@ -75,9 +75,19 @@
             "url": "https://apps.apple.com/us/app/anti-spy-screen/id6761301764?mt=12&uo=4",
             "downloadUrl": "https://apps.apple.com/us/app/anti-spy-screen/id6761301764?mt=12&uo=4",
             "softwareVersion": "1.5.0",
+            "softwareRequirements": "macOS 13.0 或更高版本",
+            "featureList": [
+              "设备端实时人脸检测",
+              "达到设定人数阈值后隐藏选定应用",
+              "多余人员离开后自动恢复应用",
+              "可调检测间隔、触发阈值和恢复延迟",
+              "Privacy Block 隐私遮挡块",
+              "Presenting Mode 演示模式",
+              "Stand-Up Coach 久坐提醒"
+            ],
             "offers": {
               "@type": "Offer",
-              "price": "6.99",
+              "price": "2.99",
               "priceCurrency": "USD"
             },
             "sameAs": [
@@ -97,6 +107,16 @@
             "url": "https://apps.apple.com/us/app/anti-spy-screen-lite/id6766485393?mt=12&uo=4",
             "downloadUrl": "https://apps.apple.com/us/app/anti-spy-screen-lite/id6766485393?mt=12&uo=4",
             "softwareVersion": "1.3.0",
+            "softwareRequirements": "macOS 13.0 或更高版本",
+            "featureList": [
+              "设备端实时人脸检测",
+              "达到设定人数阈值后隐藏选定应用",
+              "多余人员离开后自动恢复应用",
+              "可调检测间隔、触发阈值和恢复延迟",
+              "Privacy Block 隐私遮挡块",
+              "Presenting Mode 演示模式",
+              "Stand-Up Coach 久坐提醒"
+            ],
             "offers": {
               "@type": "Offer",
               "price": "0.00",
@@ -128,44 +148,44 @@
         "@context": "https://schema.org",
         "@type": "FAQPage",
         "mainEntity": [
-{
+          {
             "@type": "Question",
-            "name": "Mac 防窥 App 适合谁？",
+            "name": "Anti-spy screen 在哪里处理人脸检测？",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "适合经常共享屏幕、远程会议、演示、开放办公或处理敏感信息的 Mac 用户。"
+              "text": "人脸检测在 Mac 本机运行。当前 App Store 页面说明它不需要网络连接，检测数据不会离开设备。"
             }
           },
           {
             "@type": "Question",
-            "name": "它和普通隐私膜有什么区别？",
+            "name": "超过设定的人脸数量阈值时会怎样？",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "隐私膜偏物理视角保护；Anti-spy screen 偏软件流程，关注受保护窗口、演示和屏幕共享时的暴露风险。"
+              "text": "应用会隐藏用户选定的应用窗口。多余人员离开后，窗口会按照设置的恢复延迟重新出现。"
             }
           },
           {
             "@type": "Question",
-            "name": "Lite 版本适合什么情况？",
+            "name": "用户可以调整哪些隐私参数？",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "适合想先尝试轻量菜单栏隐私工具、演示保护和基础遮挡的用户。"
+              "text": "可以调整检测间隔、人脸数量触发阈值和恢复延迟，以适配咖啡店、办公室和会议室等环境。"
             }
           },
           {
             "@type": "Question",
-            "name": "Anti-spy screen 会记录屏幕内容吗？",
+            "name": "当前版本新增了哪些功能？",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "不会。Anti-spy screen 使用 Mac 本地的摄像头进行人脸检测，检测数据不会保存或上传。遮挡动作在本地完成，不涉及屏幕内容录制。"
+              "text": "当前版本增加了 Stand-Up Coach 久坐提醒、可拖动和调整透明度的 Privacy Block 隐私遮挡块，以及在会议和共享屏幕时收起后台弹窗的 Presenting Mode。"
             }
           },
           {
             "@type": "Question",
-            "name": "Lite 版本和主版本有什么区别？",
+            "name": "当前系统要求和美国区价格是多少？",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Lite 版本是菜单栏轻量工具，使用本地人脸检测在多人靠近时自动遮挡窗口。主版本额外支持受保护应用列表、多窗口管理和屏幕共享时的自动隐藏。如果只需要基础遮挡，Lite 版本足够；如果经常演示或处理敏感信息，建议使用主版本。"
+              "text": "两款应用都需要 macOS 13.0 或更高版本。2026 年 7 月 14 日，美国区 App Store 中 Anti-spy screen 1.5.0 标价 2.99 美元并注明一次购买，Lite 1.3.0 当前标价免费；不同地区价格可能不同。"
             }
           }
         ]
@@ -224,7 +244,7 @@
             Anti-spy screen 和 Anti-spy screen Lite 面向 Mac 屏幕隐私：共享屏幕、远程会议、
             演示模式、开放办公区和咖啡店办公时，帮助用户减少敏感窗口被误看到的风险。
           </p>
-          <p class="article-meta"><time datetime="2026-07-13">2026年7月13日更新</time> · 作者 <a href="about.html" rel="author">CrazyAIAgent</a></p>
+          <p class="article-meta"><time datetime="2026-07-14">2026年7月14日更新</time> · 作者 <a href="about.html" rel="author">CrazyAIAgent</a></p>
           <div class="hero-actions" aria-label="Mac防窥操作">
             <a class="button button-primary" href="https://apps.apple.com/us/app/anti-spy-screen/id6761301764?mt=12&uo=4">Anti-spy screen</a>
             <a class="button button-secondary" href="https://apps.apple.com/us/app/anti-spy-screen-lite/id6766485393?mt=12&uo=4">Lite 版本</a>
@@ -265,25 +285,31 @@
       <section class="section content-section alt-section">
         <div class="section-inner content-grid">
           <div>
-            <p class="section-kicker">两个版本</p>
-            <h2>主版本偏完整保护，Lite 偏轻量常驻。</h2>
+            <p class="section-kicker">当前版本信息</p>
+            <h2>隐私处理边界和触发流程都有明确说明。</h2>
             <p>
-              如果你经常处理敏感信息，可以从 Anti-spy screen 主版本开始；如果只是想要更轻量的
-              菜单栏隐私工具，可以先看 Lite 版本。
+              以下信息于 2026 年 7 月 14 日根据
+              <a href="https://apps.apple.com/us/app/anti-spy-screen/id6761301764?mt=12&uo=4">Anti-spy screen</a>
+              和 <a href="https://apps.apple.com/us/app/anti-spy-screen-lite/id6766485393?mt=12&uo=4">Lite</a>
+              的美国区 App Store 页面完成核对；其他地区的价格可能不同。
             </p>
           </div>
           <div class="content-list">
             <div>
-              <strong>Anti-spy screen</strong>
-              <p>面向更完整的 Mac 屏幕隐私和受保护应用流程。</p>
+              <strong>本机人脸检测</strong>
+              <p>检测在 Mac 本机运行，不需要网络连接；当前产品说明明确写明检测数据不会离开设备。</p>
             </div>
             <div>
-              <strong>Anti-spy screen Lite</strong>
-              <p>面向菜单栏轻量使用、演示保护和基础隐私遮挡场景。</p>
+              <strong>按阈值隐藏应用</strong>
+              <p>超过设定的人脸数量时隐藏选定应用窗口，多余人员离开后再按照恢复延迟重新显示。</p>
             </div>
             <div>
-              <strong>和其他 App 的关系</strong>
-              <p>相册整理看 <a href="ai-photo-classification-cn.html">AI 照片分类</a>；出国沟通看 <a href="travel-translator-cn.html">出国翻译通</a>。</p>
+              <strong>可调检测行为</strong>
+              <p>检测间隔、触发阈值和恢复延迟都可以按咖啡店、办公室或会议室环境调整。</p>
+            </div>
+            <div>
+              <strong>版本、价格与兼容性</strong>
+              <p>主应用 1.5.0 在美国区标价 2.99 美元并注明一次购买；Lite 1.3.0 当前标价免费。两者都需要 macOS 13.0 或更高版本。</p>
             </div>
           </div>
         </div>
@@ -293,26 +319,26 @@
       <section class="section content-section">
         <div class="section-inner content-grid">
           <div>
-            <p class="section-kicker">版本对比</p>
-            <h2>Anti-spy screen 和 Lite 该选哪个？</h2>
+            <p class="section-kicker">当前功能</p>
+            <h2>两个商店页面列出的核心工作方式基本一致。</h2>
             <p>
-              两个版本面向不同使用场景。主版本 Anti-spy screen 适合需要完整隐私保护的用户：
-              支持多窗口管理、受保护应用列表和屏幕共享时的自动遮挡。Lite 版本更轻量，
-              面向只需要基础遮挡和菜单栏快速操作的用户。
+              当前公开页面都列出了本地人脸检测、选定应用隐藏、可调参数和菜单栏后台运行，
+              也都在版本记录中列出 Privacy Block、Presenting Mode 和 Stand-Up Coach。
+              本页只陈述能从当前商店页面直接核对的差别：版本号和当前购买方式。
             </p>
           </div>
           <div class="content-list">
             <div>
-              <strong>Anti-spy screen 主版本</strong>
-              <p>支持受保护应用、多窗口管理和共享屏幕时的自动隐藏。适合经常演示或处理客户资料的 Mac 用户。</p>
+              <strong>Privacy Block</strong>
+              <p>可拖动、调整大小和透明度的遮挡块，用于临时覆盖屏幕上的敏感内容。</p>
             </div>
             <div>
-              <strong>Anti-spy screen Lite</strong>
-              <p>菜单栏轻量工具，使用本地人脸检测在多人靠近时自动遮挡窗口。适合开放办公区和咖啡店临时使用。</p>
+              <strong>Presenting Mode</strong>
+              <p>会议和共享屏幕时自动收起后台弹窗，降低无关窗口出现在投影或共享画面中的风险。</p>
             </div>
             <div>
-              <strong>隐私膜 vs 软件</strong>
-              <p>隐私膜是物理遮挡，视角外的人看到的是黑色屏幕；Anti-spy screen 是软件流程，关注受保护窗口和屏幕共享时的暴露管理。</p>
+              <strong>和其他 App 的关系</strong>
+              <p>相册整理看 <a href="ai-photo-classification-cn.html">AI 照片分类</a>；出国沟通看 <a href="travel-translator-cn.html">出国翻译通</a>。</p>
             </div>
           </div>
         </div>
@@ -326,24 +352,24 @@
           </div>
           <div class="faq-list">
             <details open>
-              <summary>Mac 防窥 App 适合谁？</summary>
-              <p>适合经常共享屏幕、远程会议、演示、开放办公或处理敏感信息的 Mac 用户。</p>
+              <summary>Anti-spy screen 在哪里处理人脸检测？</summary>
+              <p>人脸检测在 Mac 本机运行。当前 App Store 页面说明它不需要网络连接，检测数据不会离开设备。</p>
             </details>
             <details>
-              <summary>它和普通隐私膜有什么区别？</summary>
-              <p>隐私膜偏物理视角保护；Anti-spy screen 偏软件流程，关注受保护窗口、演示和屏幕共享时的暴露风险。</p>
+              <summary>超过设定的人脸数量阈值时会怎样？</summary>
+              <p>应用会隐藏用户选定的应用窗口。多余人员离开后，窗口会按照设置的恢复延迟重新出现。</p>
             </details>
             <details>
-              <summary>Lite 版本适合什么情况？</summary>
-              <p>适合想先尝试轻量菜单栏隐私工具、演示保护和基础遮挡的用户。</p>
+              <summary>用户可以调整哪些隐私参数？</summary>
+              <p>可以调整检测间隔、人脸数量触发阈值和恢复延迟，以适配咖啡店、办公室和会议室等环境。</p>
             </details>
             <details>
-              <summary>Anti-spy screen 会记录屏幕内容吗？</summary>
-              <p>不会。Anti-spy screen 使用 Mac 本地的摄像头进行人脸检测，检测数据不会保存或上传。遮挡动作在本地完成，不涉及屏幕内容录制。</p>
+              <summary>当前版本新增了哪些功能？</summary>
+              <p>当前版本增加了 Stand-Up Coach 久坐提醒、可拖动和调整透明度的 Privacy Block 隐私遮挡块，以及在会议和共享屏幕时收起后台弹窗的 Presenting Mode。</p>
             </details>
             <details>
-              <summary>Lite 版本和主版本有什么区别？</summary>
-              <p>Lite 版本是菜单栏轻量工具，使用本地人脸检测在多人靠近时自动遮挡窗口。主版本额外支持受保护应用列表、多窗口管理和屏幕共享时的自动隐藏。如果只需要基础遮挡，Lite 版本足够；如果经常演示或处理敏感信息，建议使用主版本。</p>
+              <summary>当前系统要求和美国区价格是多少？</summary>
+              <p>两款应用都需要 macOS 13.0 或更高版本。2026 年 7 月 14 日，美国区 App Store 中 Anti-spy screen 1.5.0 标价 2.99 美元并注明一次购买，Lite 1.3.0 当前标价免费；不同地区价格可能不同。</p>
             </details>
           </div>
         </div>

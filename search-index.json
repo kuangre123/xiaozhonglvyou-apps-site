@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-13",
+  "generatedAt": "2026-07-14",
   "origin": "https://www.xiaozhonglvyou.com",
   "pageCount": 46,
   "pages": [
@@ -281,7 +281,7 @@
       "lang": "en",
       "category": "home",
       "canonical": "https://www.xiaozhonglvyou.com/",
-      "lastmod": "2026-07-13",
+      "lastmod": "2026-07-14",
       "changefreq": "weekly",
       "priority": 1,
       "images": [
@@ -509,32 +509,34 @@
       "url": "https://www.xiaozhonglvyou.com/mac-screen-privacy-cn.html",
       "path": "/mac-screen-privacy-cn.html",
       "title": "Mac防窥和屏幕隐私指南 | 共享屏幕和演示保护",
-      "description": "Mac 防窥和屏幕隐私中文指南：介绍 Anti-spy screen 和 Lite 如何在共享屏幕、远程会议、演示模式和开放式办公场景中保护敏感窗口、防止肩窥和意外信息泄露。",
+      "description": "Mac 防窥和屏幕隐私中文指南：介绍 Anti-spy screen 和 Lite 的本地人脸检测、受保护应用隐藏、演示模式、可调触发阈值和系统要求。",
       "h1": "共享屏幕和办公场景里，敏感窗口不该一直暴露。",
       "lang": "zh-Hans",
       "category": "regional",
       "canonical": "https://www.xiaozhonglvyou.com/mac-screen-privacy-cn.html",
-      "lastmod": "2026-07-13",
+      "lastmod": "2026-07-14",
       "changefreq": "weekly",
       "priority": 1,
-      "images": [],
+      "images": [
+        "https://www.xiaozhonglvyou.com/assets/anti-spy-screen.png"
+      ],
       "headings": [
         "防窥不是装饰，是办公和演示流程的一部分。",
-        "主版本偏完整保护，Lite 偏轻量常驻。",
-        "Anti-spy screen 和 Lite 该选哪个？",
+        "隐私处理边界和触发流程都有明确说明。",
+        "两个商店页面列出的核心工作方式基本一致。",
         "安装前先确认它解决什么问题。"
       ]
     },
     {
       "url": "https://www.xiaozhonglvyou.com/mac-screen-privacy.html",
       "path": "/mac-screen-privacy.html",
-      "title": "Best Mac Screen Privacy App 2026 | Free Anti-Spy Screen Protection",
+      "title": "Mac Screen Privacy App 2026 | Anti-Spy Protection",
       "description": "Anti-spy screen and Anti-spy screen Lite are Mac utilities for screen privacy, protected app hiding, presentation mode, and sensitive work in shared spaces.",
       "h1": "Protect sensitive Mac work in shared spaces.",
       "lang": "en",
       "category": "guide",
       "canonical": "https://www.xiaozhonglvyou.com/mac-screen-privacy.html",
-      "lastmod": "2026-07-13",
+      "lastmod": "2026-07-14",
       "changefreq": "weekly",
       "priority": 1,
       "images": [
@@ -544,6 +546,7 @@
       ],
       "headings": [
         "For work where screen exposure has a real cost.",
+        "The privacy workflow and device boundary are documented.",
         "Direct answers about Mac screen privacy."
       ]
     },
@@ -643,13 +646,13 @@
     {
       "url": "https://www.xiaozhonglvyou.com/screen-sharing-privacy-guide.html",
       "path": "/screen-sharing-privacy-guide.html",
-      "title": "Mac Screen Sharing Privacy Guide 2026 | Best Anti-Spy App",
+      "title": "Mac Screen Sharing Privacy Guide 2026 | Safer Presentations",
       "description": "A Mac screen privacy guide for presentations, shared workspaces, shoulder surfing, screen sharing, protected apps, and sensitive-window workflows.",
       "h1": "Protect sensitive Mac windows before a meeting or nearby glance exposes them.",
       "lang": "en",
       "category": "guide",
       "canonical": "https://www.xiaozhonglvyou.com/screen-sharing-privacy-guide.html",
-      "lastmod": "2026-07-13",
+      "lastmod": "2026-07-14",
       "changefreq": "weekly",
       "priority": 1,
       "images": [],
@@ -775,32 +778,35 @@
       "url": "https://www.xiaozhonglvyou.com/travel-translator-cn.html",
       "path": "/travel-translator-cn.html",
       "title": "出国翻译通 | 旅行语音翻译和拍照翻译指南",
-      "description": "出国翻译通中文说明：面向旅行、学习和跨语言沟通，覆盖语音翻译、朗读播放、拍照 OCR 翻译、菜单和路牌翻译，适用于机场、酒店、餐厅和景点等常见出国场景，支持多语种离线翻译。",
+      "description": "出国翻译通中文说明：覆盖双向语音、连续传译、拍照 OCR 和文字翻译，适用于机场、酒店、餐厅、菜单、路牌和旅行文件等出国场景，核心语言对支持离线使用。",
       "h1": "出国沟通时，语音、拍照和朗读要放在一起。",
       "lang": "zh-Hans",
       "category": "regional",
       "canonical": "https://www.xiaozhonglvyou.com/travel-translator-cn.html",
-      "lastmod": "2026-07-13",
+      "lastmod": "2026-07-14",
       "changefreq": "weekly",
       "priority": 1,
-      "images": [],
+      "images": [
+        "https://www.xiaozhonglvyou.com/assets/travel-translator-icon.png"
+      ],
       "headings": [
         "先判断场景，再选择输入方式。",
+        "2.1.0 版本的语音流程和使用范围可以核对。",
         "适合经常出国、跨语言沟通和临时查文本的人。",
-        "网络不稳定时，翻译还能用。",
+        "离线范围要按具体语言对确认。",
         "安装前先看清使用边界。"
       ]
     },
     {
       "url": "https://www.xiaozhonglvyou.com/travel-translator.html",
       "path": "/travel-translator.html",
-      "title": "Best Free Travel Translator App 2026 | Voice and Camera Translation",
+      "title": "Travel Translator App 2026 | Voice and Camera Translation",
       "description": "Travel Translator helps travelers use voice input, translated speech playback, camera OCR translation, and fast language switching for international trips.",
       "h1": "Voice and camera translation for international trips.",
       "lang": "en",
       "category": "guide",
       "canonical": "https://www.xiaozhonglvyou.com/travel-translator.html",
-      "lastmod": "2026-07-13",
+      "lastmod": "2026-07-14",
       "changefreq": "weekly",
       "priority": 1,
       "images": [
@@ -808,6 +814,7 @@
       ],
       "headings": [
         "For moments when typing is too slow.",
+        "Version 2.1.0 has a defined translation workflow.",
         "Direct answers for travel translator questions."
       ]
     },

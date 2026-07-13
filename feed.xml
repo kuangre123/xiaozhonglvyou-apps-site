@@ -5,7 +5,47 @@
     <link>https://www.xiaozhonglvyou.com/</link>
     <description>Independent iPhone and Mac apps for photo cleanup, travel translation, screen privacy, and focused work.</description>
     <language>en</language>
-    <lastBuildDate>Mon, 13 Jul 2026 15:56:55 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 13 Jul 2026 16:21:22 GMT</lastBuildDate>
+    <item>
+      <title>Mac防窥和屏幕隐私指南：共享屏幕和演示保护</title>
+      <link>https://www.xiaozhonglvyou.com/mac-screen-privacy-cn.html</link>
+      <description>中文 Mac 屏幕隐私指南，介绍共享屏幕、远程会议、演示模式、保护敏感窗口和办公防窥场景。</description>
+      <guid isPermaLink="true">https://www.xiaozhonglvyou.com/mac-screen-privacy-cn.html</guid>
+      <pubDate>Sat, 06 Jun 2026 00:00:00 GMT</pubDate>
+      <enclosure url="https://www.xiaozhonglvyou.com/assets/anti-spy-screen.png" type="image/png" />
+    </item>
+    <item>
+      <title>Mac Screen Privacy App</title>
+      <link>https://www.xiaozhonglvyou.com/mac-screen-privacy.html</link>
+      <description>Anti-spy screen and Anti-spy screen Lite help protect sensitive Mac work during nearby privacy events and presentation contexts.</description>
+      <guid isPermaLink="true">https://www.xiaozhonglvyou.com/mac-screen-privacy.html</guid>
+      <pubDate>Wed, 03 Jun 2026 00:00:00 GMT</pubDate>
+      <enclosure url="https://www.xiaozhonglvyou.com/assets/anti-spy-screen.png" type="image/png" />
+    </item>
+    <item>
+      <title>Mac Screen Sharing Privacy Guide</title>
+      <link>https://www.xiaozhonglvyou.com/screen-sharing-privacy-guide.html</link>
+      <description>A practical guide to Mac screen privacy for shared workspaces and screen sharing.</description>
+      <guid isPermaLink="true">https://www.xiaozhonglvyou.com/screen-sharing-privacy-guide.html</guid>
+      <pubDate>Wed, 03 Jun 2026 00:00:00 GMT</pubDate>
+      <enclosure url="https://www.xiaozhonglvyou.com/assets/anti-spy-screen.png" type="image/png" />
+    </item>
+    <item>
+      <title>出国翻译通：旅行语音翻译和拍照翻译指南</title>
+      <link>https://www.xiaozhonglvyou.com/travel-translator-cn.html</link>
+      <description>中文出国翻译指南：介绍旅行中如何使用语音翻译、朗读播放、拍照 OCR 翻译、菜单路牌翻译和快速语言切换。</description>
+      <guid isPermaLink="true">https://www.xiaozhonglvyou.com/travel-translator-cn.html</guid>
+      <pubDate>Sat, 06 Jun 2026 00:00:00 GMT</pubDate>
+      <enclosure url="https://www.xiaozhonglvyou.com/assets/travel-translator-icon.png" type="image/png" />
+    </item>
+    <item>
+      <title>Travel Translator App for Voice and Camera Translation</title>
+      <link>https://www.xiaozhonglvyou.com/travel-translator.html</link>
+      <description>A focused guide to Travel Translator for international trips, voice translation, and camera text translation.</description>
+      <guid isPermaLink="true">https://www.xiaozhonglvyou.com/travel-translator.html</guid>
+      <pubDate>Wed, 03 Jun 2026 00:00:00 GMT</pubDate>
+      <enclosure url="https://www.xiaozhonglvyou.com/assets/travel-translator-icon.png" type="image/png" />
+    </item>
     <item>
       <title>AI照片分类指南：智能相册整理和 iPhone 照片清理</title>
       <link>https://www.xiaozhonglvyou.com/ai-photo-classification-cn.html</link>
@@ -111,22 +151,6 @@
       <enclosure url="https://www.xiaozhonglvyou.com/assets/ai-cleaning-icon.png" type="image/png" />
     </item>
     <item>
-      <title>Mac防窥和屏幕隐私指南：共享屏幕和演示保护</title>
-      <link>https://www.xiaozhonglvyou.com/mac-screen-privacy-cn.html</link>
-      <description>中文 Mac 屏幕隐私指南，介绍共享屏幕、远程会议、演示模式、保护敏感窗口和办公防窥场景。</description>
-      <guid isPermaLink="true">https://www.xiaozhonglvyou.com/mac-screen-privacy-cn.html</guid>
-      <pubDate>Sat, 06 Jun 2026 00:00:00 GMT</pubDate>
-      <enclosure url="https://www.xiaozhonglvyou.com/assets/anti-spy-screen.png" type="image/png" />
-    </item>
-    <item>
-      <title>Mac Screen Privacy App</title>
-      <link>https://www.xiaozhonglvyou.com/mac-screen-privacy.html</link>
-      <description>Anti-spy screen and Anti-spy screen Lite help protect sensitive Mac work during nearby privacy events and presentation contexts.</description>
-      <guid isPermaLink="true">https://www.xiaozhonglvyou.com/mac-screen-privacy.html</guid>
-      <pubDate>Wed, 03 Jun 2026 00:00:00 GMT</pubDate>
-      <enclosure url="https://www.xiaozhonglvyou.com/assets/anti-spy-screen.png" type="image/png" />
-    </item>
-    <item>
       <title>Nettoyeur photo iPhone : classement photo IA et vérification des doublons</title>
       <link>https://www.xiaozhonglvyou.com/nettoyeur-photo-iphone-fr.html</link>
       <description>Guide français pour nettoyer les photos iPhone avec IA : classement, doublons, photos similaires, captures, flous et gros médias avant suppression.</description>
@@ -143,14 +167,6 @@
       <enclosure url="https://www.xiaozhonglvyou.com/assets/ai-cleaning-icon.png" type="image/png" />
     </item>
     <item>
-      <title>Mac Screen Sharing Privacy Guide</title>
-      <link>https://www.xiaozhonglvyou.com/screen-sharing-privacy-guide.html</link>
-      <description>A practical guide to Mac screen privacy for shared workspaces and screen sharing.</description>
-      <guid isPermaLink="true">https://www.xiaozhonglvyou.com/screen-sharing-privacy-guide.html</guid>
-      <pubDate>Wed, 03 Jun 2026 00:00:00 GMT</pubDate>
-      <enclosure url="https://www.xiaozhonglvyou.com/assets/anti-spy-screen.png" type="image/png" />
-    </item>
-    <item>
       <title>Seedance 2.5 AI视频创作者工具推荐</title>
       <link>https://www.xiaozhonglvyou.com/seedance-ai-tools-cn.html</link>
       <description>Seedance 2.5 是字节跳动最新 AI 视频生成模型，支持 30 秒 4K 原生视频。本文推荐 AI 内容创作者必备的素材整理工具：AI 照片分类、重复素材清理、出国拍摄翻译。</description>
@@ -165,22 +181,6 @@
       <guid isPermaLink="true">https://www.xiaozhonglvyou.com/seedance-ai-tools.html</guid>
       <pubDate>Mon, 29 Jun 2026 00:00:00 GMT</pubDate>
       <enclosure url="https://www.xiaozhonglvyou.com/assets/ai-cleaning-screen.png" type="image/png" />
-    </item>
-    <item>
-      <title>出国翻译通：旅行语音翻译和拍照翻译指南</title>
-      <link>https://www.xiaozhonglvyou.com/travel-translator-cn.html</link>
-      <description>中文出国翻译指南：介绍旅行中如何使用语音翻译、朗读播放、拍照 OCR 翻译、菜单路牌翻译和快速语言切换。</description>
-      <guid isPermaLink="true">https://www.xiaozhonglvyou.com/travel-translator-cn.html</guid>
-      <pubDate>Sat, 06 Jun 2026 00:00:00 GMT</pubDate>
-      <enclosure url="https://www.xiaozhonglvyou.com/assets/travel-translator-icon.png" type="image/png" />
-    </item>
-    <item>
-      <title>Travel Translator App for Voice and Camera Translation</title>
-      <link>https://www.xiaozhonglvyou.com/travel-translator.html</link>
-      <description>A focused guide to Travel Translator for international trips, voice translation, and camera text translation.</description>
-      <guid isPermaLink="true">https://www.xiaozhonglvyou.com/travel-translator.html</guid>
-      <pubDate>Wed, 03 Jun 2026 00:00:00 GMT</pubDate>
-      <enclosure url="https://www.xiaozhonglvyou.com/assets/ai-cleaning-icon.png" type="image/png" />
     </item>
     <item>
       <title>Voice and Camera Translator Guide for Travel</title>

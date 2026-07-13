@@ -226,7 +226,7 @@
   </url>
   <url>
     <loc>https://www.xiaozhonglvyou.com/</loc>
-    <lastmod>2026-07-13</lastmod>
+    <lastmod>2026-07-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
@@ -437,17 +437,19 @@
   </url>
   <url>
     <loc>https://www.xiaozhonglvyou.com/mac-screen-privacy-cn.html</loc>
-    <lastmod>2026-07-13</lastmod>
+    <lastmod>2026-07-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-
+    <image:image>
+      <image:loc>https://www.xiaozhonglvyou.com/assets/anti-spy-screen.png</image:loc>
+    </image:image>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.xiaozhonglvyou.com/mac-screen-privacy.html" />
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.xiaozhonglvyou.com/mac-screen-privacy-cn.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.xiaozhonglvyou.com/mac-screen-privacy.html" />
   </url>
   <url>
     <loc>https://www.xiaozhonglvyou.com/mac-screen-privacy.html</loc>
-    <lastmod>2026-07-13</lastmod>
+    <lastmod>2026-07-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
@@ -531,7 +533,7 @@
   </url>
   <url>
     <loc>https://www.xiaozhonglvyou.com/screen-sharing-privacy-guide.html</loc>
-    <lastmod>2026-07-13</lastmod>
+    <lastmod>2026-07-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
 
@@ -635,17 +637,19 @@
   </url>
   <url>
     <loc>https://www.xiaozhonglvyou.com/travel-translator-cn.html</loc>
-    <lastmod>2026-07-13</lastmod>
+    <lastmod>2026-07-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-
+    <image:image>
+      <image:loc>https://www.xiaozhonglvyou.com/assets/travel-translator-icon.png</image:loc>
+    </image:image>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.xiaozhonglvyou.com/travel-translator.html" />
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.xiaozhonglvyou.com/travel-translator-cn.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.xiaozhonglvyou.com/travel-translator.html" />
   </url>
   <url>
     <loc>https://www.xiaozhonglvyou.com/travel-translator.html</loc>
-    <lastmod>2026-07-13</lastmod>
+    <lastmod>2026-07-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
