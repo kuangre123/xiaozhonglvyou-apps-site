@@ -5,6 +5,7 @@ const root = process.cwd();
 const origin = "https://www.xiaozhonglvyou.com";
 const defaultEndpoints = [
   "https://www.bing.com/indexnow",
+  "https://api.indexnow.org/IndexNow",
   "https://yandex.com/indexnow",
   "https://search.seznam.cz/indexnow",
   "https://searchadvisor.naver.com/indexnow"

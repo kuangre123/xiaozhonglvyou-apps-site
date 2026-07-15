@@ -82,9 +82,16 @@ Search index: https://www.xiaozhonglvyou.com/search-index.json
 - Automatic workflow: `.github/workflows/indexnow.yml`
 - Trigger: every `main` push that changes public HTML or discovery files, plus manual `workflow_dispatch`
 - Submit command: `node scripts/submit-indexnow.mjs --submit --output-json-path indexnow-report.json`
+- Endpoints: `www.bing.com/indexnow`, `api.indexnow.org/IndexNow`, `yandex.com/indexnow`, `search.seznam.cz/indexnow`, `searchadvisor.naver.com/indexnow`
 - Validation: rejects empty, duplicate, over-limit, and off-domain sitemap URL lists before submission
 - Evidence: each workflow run saves `indexnow-report.json` as a 30-day GitHub Actions artifact
-- Last submission: 46 URLs on 2026-07-13; Bing 200, Yandex 202, Seznam 200, Naver 200
+- Last submission: 46 URLs on 2026-07-15; Bing 200, api.indexnow.org 200, Yandex 202, Seznam 200, Naver 200
+
+### Bing Readiness Audit
+- Script: `node scripts/audit-bing-readiness.mjs`
+- Checks: Bingbot/BingPreview allowed in robots.txt, sitemap advertised, IndexNow key valid, all indexable pages have meta keywords (Bing values these), meta description, canonical, and JSON-LD structured data
+- Status: PASS (42 indexable pages, all with keywords/description/canonical/JSON-LD)
+- Missing: Bing Webmaster Tools verification (`msvalidate.01` meta tag) - requires user registration at https://www.bing.com/webmasters
 - Latest deployment validation: commit `7613956`; added reciprocal hreflang and visible cross-links for the English and Simplified Chinese iPad photo organizer guides.
 - Latest sitemap validation: commit `e5f2264`; 401 hreflang alternate links, including paired English/Simplified Chinese guide and app pages, are present in sitemap.xml.
 - Latest global-focused sitemap validation: commit `ea1dec9`; sitemap-global.xml and sitemap-global.txt are live with 37 non-Chinese global and localized URLs and are advertised from robots.txt and sitemap-index.xml.
