@@ -1,7 +1,7 @@
 {
   "name": "CrazyAIAgent",
   "short_name": "CrazyAI",
-  "description": "Independent privacy-first iPhone and Mac utility apps for AI photo organization, travel translation, and screen privacy.",
+  "description": "Independent iPhone, Apple Watch, and Mac apps for photo organization, GIF creation, activity tracking, travel translation, and screen privacy.",
   "id": "/",
   "start_url": "/",
   "scope": "/",
@@ -9,7 +9,9 @@
   "categories": [
     "utilities",
     "productivity",
-    "travel"
+    "travel",
+    "photo",
+    "health"
   ],
   "background_color": "#f7f8fb",
   "theme_color": "#121417",

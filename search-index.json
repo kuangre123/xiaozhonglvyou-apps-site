@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-14",
+  "generatedAt": "2026-07-17",
   "origin": "https://www.xiaozhonglvyou.com",
-  "pageCount": 46,
+  "pageCount": 51,
   "pages": [
     {
       "url": "https://www.xiaozhonglvyou.com/about.html",
       "path": "/about.html",
       "title": "About CrazyAIAgent | Independent iOS and macOS Developer",
-      "description": "About CrazyAIAgent — independent iOS and macOS utilities for AI photo classification, photo cleanup, travel translation, and Mac screen privacy.",
-      "h1": "Useful iPhone and Mac tools from an independent developer.",
+      "description": "About CrazyAIAgent — independent iOS, watchOS, and macOS utilities for photo cleanup, GIF creation, ride tracking, travel translation, and screen privacy.",
+      "h1": "Useful iPhone, Apple Watch, and Mac tools from an independent developer.",
       "lang": "en",
       "category": "support",
       "canonical": "https://www.xiaozhonglvyou.com/about.html",
-      "lastmod": "2026-07-13",
+      "lastmod": "2026-07-17",
       "changefreq": "weekly",
       "priority": 1,
       "images": [],
@@ -84,20 +84,22 @@
     {
       "url": "https://www.xiaozhonglvyou.com/apps.html",
       "path": "/apps.html",
-      "title": "App Store Utility Apps | Photo Cleaner, Translator, Mac Privacy",
-      "description": "CrazyAIAgent's App Store utility portfolio: AI Cleaning for smart photo classification, Travel Translator, Anti-spy screen, and Anti-spy screen Lite.",
-      "h1": "Utility apps for photo cleanup, travel, and Mac privacy.",
+      "title": "App Store Utility Apps | GIF Maker, Ride Tracker & Privacy",
+      "description": "Explore CrazyAIAgent apps for AI photo cleanup, GIF creation, automatic ride tracking, travel translation, and Mac screen privacy.",
+      "h1": "Utility apps for creating, moving, traveling, and staying private.",
       "lang": "en",
       "category": "hub",
       "canonical": "https://www.xiaozhonglvyou.com/apps.html",
-      "lastmod": "2026-07-13",
+      "lastmod": "2026-07-17",
       "changefreq": "weekly",
       "priority": 1,
       "images": [
         "https://www.xiaozhonglvyou.com/assets/ai-cleaning-icon.png",
         "https://www.xiaozhonglvyou.com/assets/travel-translator-icon.png",
         "https://www.xiaozhonglvyou.com/assets/anti-spy-icon.png",
-        "https://www.xiaozhonglvyou.com/assets/anti-spy-lite-icon.png"
+        "https://www.xiaozhonglvyou.com/assets/anti-spy-lite-icon.png",
+        "https://www.xiaozhonglvyou.com/assets/gifmaker-icon.png",
+        "https://www.xiaozhonglvyou.com/assets/happyride-icon.png"
       ],
       "headings": [
         "Choose the app by job to be done.",
@@ -170,7 +172,7 @@
       "lang": "en",
       "category": "regional",
       "canonical": "https://www.xiaozhonglvyou.com/directory.html",
-      "lastmod": "2026-07-13",
+      "lastmod": "2026-07-17",
       "changefreq": "weekly",
       "priority": 1,
       "images": [],
@@ -255,6 +257,50 @@
       ]
     },
     {
+      "url": "https://www.xiaozhonglvyou.com/gif-maker-cn.html",
+      "path": "/gif-maker-cn.html",
+      "title": "iPhone GIF 制作器｜照片、视频和 Live Photo 转 GIF",
+      "description": "GIFmaker 可在 iPhone 本机把照片、视频和 Live Photo 制作成 GIF，支持逐帧调速、文字、倒放、回旋循环和多种画布比例。",
+      "h1": "把照片、视频或 Live Photo 做成 GIF。",
+      "lang": "zh-CN",
+      "category": "regional",
+      "canonical": "https://www.xiaozhonglvyou.com/gif-maker-cn.html",
+      "lastmod": "2026-07-17",
+      "changefreq": "weekly",
+      "priority": 1,
+      "images": [
+        "https://www.xiaozhonglvyou.com/assets/gifmaker-icon.png"
+      ],
+      "headings": [
+        "用已有的内容直接制作。",
+        "不只是套用模板，而是把循环节奏调对。",
+        "原始素材留在你的设备上。",
+        "关于 GIFmaker 的直接答案。"
+      ]
+    },
+    {
+      "url": "https://www.xiaozhonglvyou.com/gif-maker.html",
+      "path": "/gif-maker.html",
+      "title": "GIF Maker for iPhone | Photos, Video & Live Photos",
+      "description": "GIFmaker turns photos, videos, and Live Photos into GIFs on iPhone, with frame timing, captions, boomerang, canvas presets, and on-device editing.",
+      "h1": "Turn photos, video, or Live Photos into a GIF.",
+      "lang": "en",
+      "category": "page",
+      "canonical": "https://www.xiaozhonglvyou.com/gif-maker.html",
+      "lastmod": "2026-07-17",
+      "changefreq": "weekly",
+      "priority": 1,
+      "images": [
+        "https://www.xiaozhonglvyou.com/assets/gifmaker-icon.png"
+      ],
+      "headings": [
+        "Use the media you already have.",
+        "Fine-tune the loop instead of accepting a preset.",
+        "Your source media stays on your device.",
+        "GIFmaker answers, without the guesswork."
+      ]
+    },
+    {
       "url": "https://www.xiaozhonglvyou.com/guides.html",
       "path": "/guides.html",
       "title": "App Guides | Photo Organizer, iPhone Cleaner, Translator, Mac Privacy",
@@ -263,7 +309,7 @@
       "lang": "en",
       "category": "hub",
       "canonical": "https://www.xiaozhonglvyou.com/guides.html",
-      "lastmod": "2026-07-13",
+      "lastmod": "2026-07-17",
       "changefreq": "weekly",
       "priority": 1,
       "images": [],
@@ -273,22 +319,70 @@
       ]
     },
     {
+      "url": "https://www.xiaozhonglvyou.com/happyride-auto-ride-tracker-cn.html",
+      "path": "/happyride-auto-ride-tracker-cn.html",
+      "title": "自动骑行记录 App｜iPhone 与 Apple Watch - HappyRide",
+      "description": "HappyRide 自动识别骑行、步行和跑步，结合 Apple Watch 心率，把路线、卡路里和锻炼记录写入 Apple 健康，并提供可选路线规划。",
+      "h1": "忘记点开始，HappyRide 也能记录骑行。",
+      "lang": "zh-CN",
+      "category": "regional",
+      "canonical": "https://www.xiaozhonglvyou.com/happyride-auto-ride-tracker-cn.html",
+      "lastmod": "2026-07-17",
+      "changefreq": "weekly",
+      "priority": 1,
+      "images": [
+        "https://www.xiaozhonglvyou.com/assets/happyride-icon.png"
+      ],
+      "headings": [
+        "先出发，之后再查看活动。",
+        "路线、心率、卡路里和锻炼记录互相连通。",
+        "选择路线风格、往返距离或附近目的地。",
+        "自动记录需要权限，但决定权仍在你。",
+        "下一次骑行前需要知道的事。"
+      ]
+    },
+    {
+      "url": "https://www.xiaozhonglvyou.com/happyride-auto-ride-tracker.html",
+      "path": "/happyride-auto-ride-tracker.html",
+      "title": "Automatic Ride Tracker for iPhone & Apple Watch | HappyRide",
+      "description": "HappyRide automatically detects cycling, walking, and running, then records routes, heart rate, calories, and workouts to Apple Health.",
+      "h1": "HappyRide records the ride you forgot to start.",
+      "lang": "en",
+      "category": "page",
+      "canonical": "https://www.xiaozhonglvyou.com/happyride-auto-ride-tracker.html",
+      "lastmod": "2026-07-17",
+      "changefreq": "weekly",
+      "priority": 1,
+      "images": [
+        "https://www.xiaozhonglvyou.com/assets/happyride-icon.png"
+      ],
+      "headings": [
+        "Move first. Review the activity later.",
+        "Routes, heart rate, calories, and workouts stay connected.",
+        "Choose a route style, distance, or nearby destination.",
+        "Know the current boundaries before installing.",
+        "What to know before the next ride."
+      ]
+    },
+    {
       "url": "https://www.xiaozhonglvyou.com/",
       "path": "/",
       "title": "CrazyAIAgent | Independent iOS and macOS Utilities",
-      "description": "Independent iOS and macOS apps for on-device AI photo classification, private photo cleanup, travel translation, Mac screen privacy, and safer presenting.",
-      "h1": "Focused tools for privacy, travel, and everyday cleanup.",
+      "description": "Independent iOS and macOS apps for on-device photo cleanup, GIF creation, automatic ride tracking, travel translation, and Mac screen privacy.",
+      "h1": "Focused tools for creating, moving, traveling, and staying private.",
       "lang": "en",
       "category": "home",
       "canonical": "https://www.xiaozhonglvyou.com/",
-      "lastmod": "2026-07-14",
+      "lastmod": "2026-07-17",
       "changefreq": "weekly",
       "priority": 1,
       "images": [
         "https://www.xiaozhonglvyou.com/assets/ai-cleaning-icon.png",
         "https://www.xiaozhonglvyou.com/assets/ai-cleaning-screen.png",
         "https://www.xiaozhonglvyou.com/assets/travel-translator-icon.png",
-        "https://www.xiaozhonglvyou.com/assets/anti-spy-screen.png"
+        "https://www.xiaozhonglvyou.com/assets/anti-spy-screen.png",
+        "https://www.xiaozhonglvyou.com/assets/gifmaker-icon.png",
+        "https://www.xiaozhonglvyou.com/assets/happyride-icon.png"
       ],
       "headings": [
         "Each app does one thing, and does it well.",
@@ -514,7 +608,7 @@
       "lang": "zh-Hans",
       "category": "regional",
       "canonical": "https://www.xiaozhonglvyou.com/mac-screen-privacy-cn.html",
-      "lastmod": "2026-07-14",
+      "lastmod": "2026-07-17",
       "changefreq": "weekly",
       "priority": 1,
       "images": [
@@ -536,7 +630,7 @@
       "lang": "en",
       "category": "guide",
       "canonical": "https://www.xiaozhonglvyou.com/mac-screen-privacy.html",
-      "lastmod": "2026-07-14",
+      "lastmod": "2026-07-17",
       "changefreq": "weekly",
       "priority": 1,
       "images": [
@@ -548,6 +642,32 @@
         "For work where screen exposure has a real cost.",
         "The privacy workflow and device boundary are documented.",
         "Direct answers about Mac screen privacy."
+      ]
+    },
+    {
+      "url": "https://www.xiaozhonglvyou.com/media-kit.html",
+      "path": "/media-kit.html",
+      "title": "App Review & Media Kit | CrazyAIAgent",
+      "description": "Review-ready facts, canonical links, App Store sources, product images, and contact details for CrazyAIAgent iPhone and Mac utility apps.",
+      "h1": "Verified app facts, clean links, and a direct contact.",
+      "lang": "en",
+      "category": "page",
+      "canonical": "https://www.xiaozhonglvyou.com/media-kit.html",
+      "lastmod": "2026-07-17",
+      "changefreq": "weekly",
+      "priority": 1,
+      "images": [
+        "https://www.xiaozhonglvyou.com/assets/ai-cleaning-icon.png",
+        "https://www.xiaozhonglvyou.com/assets/travel-translator-icon.png",
+        "https://www.xiaozhonglvyou.com/assets/anti-spy-screen.png",
+        "https://www.xiaozhonglvyou.com/assets/gifmaker-icon.png",
+        "https://www.xiaozhonglvyou.com/assets/happyride-icon.png"
+      ],
+      "headings": [
+        "Six apps, each tied to its Apple source.",
+        "Link readers to the page that matches the app.",
+        "Preview the current first-party images.",
+        "First-party facts are clearly separated from independent opinion."
       ]
     },
     {
@@ -590,17 +710,20 @@
       "url": "https://www.xiaozhonglvyou.com/privacy.html",
       "path": "/privacy.html",
       "title": "Privacy | CrazyAIAgent",
-      "description": "Privacy position for CrazyAIAgent apps: on-device processing, data minimization, user control, photo cleanup, travel translation, and Mac screen privacy.",
+      "description": "Privacy and permission notes for CrazyAIAgent apps, including GIFmaker on-device media editing and HappyRide motion, location, and Apple Health access.",
       "h1": "Privacy is treated as a product boundary.",
       "lang": "en",
       "category": "support",
       "canonical": "https://www.xiaozhonglvyou.com/privacy.html",
-      "lastmod": "2026-07-13",
+      "lastmod": "2026-07-17",
       "changefreq": "weekly",
       "priority": 1,
       "images": [],
       "headings": [
         "Photo analysis stays framed around the device.",
+        "Translation permissions follow the mode the user chooses.",
+        "GIF editing stays on the iPhone.",
+        "Automatic tracking requires explicit motion, location, and Health permissions.",
         "Screen privacy utilities should not create new privacy surprises.",
         "Advertising partners may use cookies and similar technologies."
       ]
@@ -742,12 +865,12 @@
       "url": "https://www.xiaozhonglvyou.com/support.html",
       "path": "/support.html",
       "title": "Support | CrazyAIAgent",
-      "description": "Support page for CrazyAIAgent: AI Cleaning - Photo Cleaner, Travel Translator, Anti-spy screen, and Anti-spy screen Lite.",
+      "description": "Support for CrazyAIAgent apps including GIFmaker, HappyRide, AI Cleaning, Travel Translator, Anti-spy screen, and Anti-spy screen Lite.",
       "h1": "Help for CrazyAIAgent.",
       "lang": "en",
       "category": "support",
       "canonical": "https://www.xiaozhonglvyou.com/support.html",
-      "lastmod": "2026-07-13",
+      "lastmod": "2026-07-17",
       "changefreq": "weekly",
       "priority": 1,
       "images": [],
@@ -875,19 +998,23 @@
     {
       "url": "https://www.xiaozhonglvyou.com/zh-cn.html",
       "path": "/zh-cn.html",
-      "title": "CrazyAIAgent 中文 | AI相册整理、出国翻译和 Mac 屏幕隐私",
-      "description": "CrazyAIAgent 中文入口：独立开发的 iPhone 和 Mac 应用，涵盖 AI Cleaning 的 AI 照片智能分类、iPhone 相册清理、重复照片整理、出国翻译通和 Mac 屏幕隐私工具，专注隐私优先的日常效率。",
-      "h1": "独立开发的 iPhone 和 Mac 应用。",
+      "title": "CrazyAIAgent 中文 | GIF 制作、自动骑行、照片与翻译工具",
+      "description": "CrazyAIAgent 中文入口：GIFmaker 动图制作、HappyRide 自动骑行记录、AI 照片整理、出国翻译和 Mac 屏幕隐私工具。",
+      "h1": "独立开发的 iPhone、Apple Watch 和 Mac 应用。",
       "lang": "zh-Hans",
       "category": "regional",
       "canonical": "https://www.xiaozhonglvyou.com/zh-cn.html",
-      "lastmod": "2026-07-13",
+      "lastmod": "2026-07-17",
       "changefreq": "weekly",
       "priority": 1,
-      "images": [],
+      "images": [
+        "https://www.xiaozhonglvyou.com/assets/ai-cleaning-screen.png",
+        "https://www.xiaozhonglvyou.com/assets/gifmaker-icon.png",
+        "https://www.xiaozhonglvyou.com/assets/happyride-icon.png"
+      ],
       "headings": [
         "AI Cleaning 的最大优势是 AI 照片智能分类。",
-        "三类工具，都是解决日常明确问题。",
+        "五类工具，都是解决日常明确问题。",
         "按需求选择中文应用入口。"
       ]
     },

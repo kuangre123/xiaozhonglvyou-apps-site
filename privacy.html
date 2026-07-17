@@ -10,7 +10,7 @@
     <title>Privacy | CrazyAIAgent</title>
     <meta
       name="description"
-      content="Privacy position for CrazyAIAgent apps: on-device processing, data minimization, user control, photo cleanup, travel translation, and Mac screen privacy."
+      content="Privacy and permission notes for CrazyAIAgent apps, including GIFmaker on-device media editing and HappyRide motion, location, and Apple Health access."
     />
     <meta name="robots" content="index,follow,max-image-preview:large" />
     <meta name="theme-color" content="#4338ca" />
@@ -50,7 +50,7 @@
             "name": "Privacy | CrazyAIAgent",
             "url": "https://www.xiaozhonglvyou.com/privacy.html",
             "inLanguage": "en",
-            "description": "Privacy position for CrazyAIAgent iPhone and Mac utility apps.",
+            "description": "Privacy and permission position for CrazyAIAgent iPhone, Apple Watch, and Mac utility apps.",
             "isPartOf": {
               "@id": "https://www.xiaozhonglvyou.com/#website"
             },
@@ -63,6 +63,12 @@
               },
               {
                 "@id": "https://www.xiaozhonglvyou.com/#ai-cleaning"
+              },
+              {
+                "@id": "https://www.xiaozhonglvyou.com/#gifmaker"
+              },
+              {
+                "@id": "https://www.xiaozhonglvyou.com/#happyride"
               },
               {
                 "@id": "https://www.xiaozhonglvyou.com/#anti-spy-screen"
@@ -124,14 +130,14 @@
           <p class="eyebrow">Privacy position</p>
           <h1>Privacy is treated as a product boundary.</h1>
           <p>
-            CrazyAIAgent builds focused utilities for iPhone and Mac. The privacy posture is simple:
+            CrazyAIAgent builds focused utilities for iPhone, Apple Watch, and Mac. The privacy posture is simple:
             describe permissions clearly, avoid impossible cleanup claims, and keep sensitive analysis
             local when the app's job allows it.
           </p>
         </div>
       </section>
 
-      <section class="section content-section">
+      <section class="section content-section" id="ai-cleaning">
         <div class="section-inner content-grid">
           <div>
             <p class="section-kicker">AI Cleaning</p>
@@ -159,7 +165,95 @@
         </div>
       </section>
 
-      <section class="section content-section alt-section">
+      <section class="section content-section alt-section" id="travel-translator">
+        <div class="section-inner content-grid">
+          <div>
+            <p class="section-kicker">Travel Translator</p>
+            <h2>Translation permissions follow the mode the user chooses.</h2>
+            <p>
+              Translation Specialist can use microphone input for voice conversations and the camera or a
+              selected image for text recognition. Its US App Store privacy label stated “Data Not Collected”
+              when checked on July 17, 2026; users should review the current label before installing.
+            </p>
+          </div>
+          <div class="content-list">
+            <div>
+              <strong>Microphone</strong>
+              <p>Used when the user starts voice translation or live interpretation.</p>
+            </div>
+            <div>
+              <strong>Camera and selected images</strong>
+              <p>Used when the user chooses camera or photo text translation for menus, signs, or documents.</p>
+            </div>
+            <div>
+              <strong>Current Apple disclosure</strong>
+              <p>Check the <a href="https://apps.apple.com/us/app/translation-specialist/id6755734543?uo=4">US App Store privacy label</a> for the current developer disclosure.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section content-section" id="gifmaker">
+        <div class="section-inner content-grid">
+          <div>
+            <p class="section-kicker">GIFmaker</p>
+            <h2>GIF editing stays on the iPhone.</h2>
+            <p>
+              The current GIFmaker-Gif Studio listing states that the core workflow runs entirely on
+              the device with no account and no uploads. Apple's public product page displayed the
+              developer privacy label “Data Not Collected” when checked on July 17, 2026.
+            </p>
+          </div>
+          <div class="content-list">
+            <div>
+              <strong>Photo library access</strong>
+              <p>Used when you choose photos, videos, or Live Photos and when you save an exported GIF.</p>
+            </div>
+            <div>
+              <strong>On-device processing</strong>
+              <p>Frame extraction, timing, text, canvas, and loop editing happen locally for the core workflow.</p>
+            </div>
+            <div>
+              <strong>Current Apple disclosure</strong>
+              <p>Check the <a href="https://apps.apple.com/us/app/gifmaker-gif-studio/id6783559364?uo=4">App Store privacy label</a> for the latest developer disclosure.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section content-section alt-section" id="happyride">
+        <div class="section-inner content-grid">
+          <div>
+            <p class="section-kicker">HappyRide</p>
+            <h2>Automatic tracking requires explicit motion, location, and Health permissions.</h2>
+            <p>
+              HappyRide uses on-device motion signals and background location to identify and record
+              qualifying activities. The core tracker is designed to work offline; optional route
+              planning uses a network connection. Apple Health access remains subject to your permission.
+            </p>
+          </div>
+          <div class="content-list">
+            <div>
+              <strong>Motion &amp; Fitness</strong>
+              <p>Used to distinguish cycling, walking, and running patterns for automatic detection.</p>
+            </div>
+            <div>
+              <strong>Background location</strong>
+              <p>Used to record the route of a qualifying activity even when the app is not on screen.</p>
+            </div>
+            <div>
+              <strong>Apple Health</strong>
+              <p>Used with permission for supported signals and to save route, heart rate, calories, and workout details.</p>
+            </div>
+            <div>
+              <strong>Optional route planning</strong>
+              <p>Quiet, scenic, balanced, shortest, and nearby-destination routes require network access.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section content-section" id="anti-spy-screen">
         <div class="section-inner content-grid">
           <div>
             <p class="section-kicker">Mac privacy apps</p>
@@ -186,7 +280,7 @@
         </div>
       </section>
 
-      <section class="section content-section">
+      <section class="section content-section alt-section">
         <div class="section-inner content-grid">
           <div>
             <p class="section-kicker">Advertising disclosure</p>
@@ -226,6 +320,8 @@
           <a href="ai-photo-classification.html">AI photo classification</a>
           <a href="iphone-photo-cleaner.html">iPhone photo cleaner</a>
           <a href="travel-translator.html">Travel translator</a>
+          <a href="gif-maker.html">GIF maker</a>
+          <a href="happyride-auto-ride-tracker.html">Ride tracker</a>
           <a href="mac-screen-privacy.html">Mac screen privacy</a>
           <a href="about.html">About</a>
           <a href="directory.html">Directory</a>

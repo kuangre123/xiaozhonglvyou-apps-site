@@ -5,23 +5,7 @@
     <link>https://www.xiaozhonglvyou.com/</link>
     <description>Independent iPhone and Mac apps for photo cleanup, travel translation, screen privacy, and focused work.</description>
     <language>en</language>
-    <lastBuildDate>Mon, 13 Jul 2026 16:21:22 GMT</lastBuildDate>
-    <item>
-      <title>Mac防窥和屏幕隐私指南：共享屏幕和演示保护</title>
-      <link>https://www.xiaozhonglvyou.com/mac-screen-privacy-cn.html</link>
-      <description>中文 Mac 屏幕隐私指南，介绍共享屏幕、远程会议、演示模式、保护敏感窗口和办公防窥场景。</description>
-      <guid isPermaLink="true">https://www.xiaozhonglvyou.com/mac-screen-privacy-cn.html</guid>
-      <pubDate>Sat, 06 Jun 2026 00:00:00 GMT</pubDate>
-      <enclosure url="https://www.xiaozhonglvyou.com/assets/anti-spy-screen.png" type="image/png" />
-    </item>
-    <item>
-      <title>Mac Screen Privacy App</title>
-      <link>https://www.xiaozhonglvyou.com/mac-screen-privacy.html</link>
-      <description>Anti-spy screen and Anti-spy screen Lite help protect sensitive Mac work during nearby privacy events and presentation contexts.</description>
-      <guid isPermaLink="true">https://www.xiaozhonglvyou.com/mac-screen-privacy.html</guid>
-      <pubDate>Wed, 03 Jun 2026 00:00:00 GMT</pubDate>
-      <enclosure url="https://www.xiaozhonglvyou.com/assets/anti-spy-screen.png" type="image/png" />
-    </item>
+    <lastBuildDate>Fri, 17 Jul 2026 16:21:23 GMT</lastBuildDate>
     <item>
       <title>Mac Screen Sharing Privacy Guide</title>
       <link>https://www.xiaozhonglvyou.com/screen-sharing-privacy-guide.html</link>
@@ -189,6 +173,22 @@
       <guid isPermaLink="true">https://www.xiaozhonglvyou.com/voice-camera-translator-guide.html</guid>
       <pubDate>Wed, 03 Jun 2026 00:00:00 GMT</pubDate>
       <enclosure url="https://www.xiaozhonglvyou.com/assets/ai-cleaning-icon.png" type="image/png" />
+    </item>
+    <item>
+      <title>Mac防窥和屏幕隐私指南：共享屏幕和演示保护</title>
+      <link>https://www.xiaozhonglvyou.com/mac-screen-privacy-cn.html</link>
+      <description>中文 Mac 屏幕隐私指南，介绍共享屏幕、远程会议、演示模式、保护敏感窗口和办公防窥场景。</description>
+      <guid isPermaLink="true">https://www.xiaozhonglvyou.com/mac-screen-privacy-cn.html</guid>
+      <pubDate>Sat, 06 Jun 2026 00:00:00 GMT</pubDate>
+      <enclosure url="https://www.xiaozhonglvyou.com/assets/anti-spy-screen.png" type="image/png" />
+    </item>
+    <item>
+      <title>Mac Screen Privacy App</title>
+      <link>https://www.xiaozhonglvyou.com/mac-screen-privacy.html</link>
+      <description>Anti-spy screen and Anti-spy screen Lite help protect sensitive Mac work during nearby privacy events and presentation contexts.</description>
+      <guid isPermaLink="true">https://www.xiaozhonglvyou.com/mac-screen-privacy.html</guid>
+      <pubDate>Wed, 03 Jun 2026 00:00:00 GMT</pubDate>
+      <enclosure url="https://www.xiaozhonglvyou.com/assets/anti-spy-screen.png" type="image/png" />
     </item>
   </channel>
 </rss>

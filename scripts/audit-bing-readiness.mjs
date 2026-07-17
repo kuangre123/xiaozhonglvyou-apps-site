@@ -144,9 +144,9 @@ function summarize(results) {
       failures: failures.length
     },
     informational: {
-      bingWebmasterVerification: bingVerified > 0 ? "present" : "missing - add <meta name=\"msvalidate.01\" content=\"TOKEN\" /> after registering at https://www.bing.com/webmasters",
-      indexNowNote: "IndexNow notifies Bing of changes but does not guarantee indexing. Bing Webmaster Tools registration is required for authoritative status.",
-      bingbotNote: "Bingbot can fetch the site (verified). Lack of indexing is likely due to no Bing Webmaster Tools verification and/or insufficient external backlinks."
+      bingWebmasterVerification: bingVerified > 0 ? "msvalidate.01 meta tag present" : "msvalidate.01 meta tag absent; Bing may instead verify the active property through DNS or Google Search Console import",
+      indexNowNote: "IndexNow notifies Bing of changes but does not guarantee indexing. An active Bing Webmaster Tools property is required for authoritative reporting.",
+      bingbotNote: "Bingbot can fetch the site. Remaining authority recommendations require crawlable links from relevant external domains."
     },
     failures
   };
@@ -165,7 +165,7 @@ function renderMarkdown(report) {
     `- Pages with meta description: ${report.summary.pagesWithDescription}`,
     `- Pages with canonical: ${report.summary.pagesWithCanonical}`,
     `- Pages with JSON-LD: ${report.summary.pagesWithJsonLd}`,
-    `- Pages with Bing Webmaster verification: ${report.summary.pagesWithBingVerification}`,
+    `- Pages with msvalidate.01 meta tag: ${report.summary.pagesWithBingVerification}`,
     `- Bingbot allowed in robots.txt: ${report.summary.bingbotAllowed}`,
     `- BingPreview allowed in robots.txt: ${report.summary.bingPreviewAllowed}`,
     `- Sitemap advertised in robots.txt: ${report.summary.sitemapAdvertised}`,
@@ -175,7 +175,7 @@ function renderMarkdown(report) {
     "",
     "## Informational",
     "",
-    `- Bing Webmaster verification: ${report.informational.bingWebmasterVerification}`,
+    `- Bing Webmaster verification signal: ${report.informational.bingWebmasterVerification}`,
     `- IndexNow: ${report.informational.indexNowNote}`,
     `- Bingbot: ${report.informational.bingbotNote}`
   ];

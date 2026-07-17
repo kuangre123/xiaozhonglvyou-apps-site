@@ -1380,6 +1380,18 @@ summary {
     width: min(100% - 28px, var(--max));
   }
 
+  .section-heading,
+  .section-heading > * {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .section-heading h2,
+  .section-heading p {
+    max-width: 100%;
+    overflow-wrap: anywhere;
+  }
+
   .app-card {
     min-height: auto;
   }
