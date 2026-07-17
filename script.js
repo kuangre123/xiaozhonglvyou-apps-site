@@ -31,3 +31,15 @@ document.querySelectorAll('a[href^="#"]').forEach((link) => {
     history.pushState(null, "", targetId);
   });
 });
+
+document.querySelectorAll('[data-analytics-event="app_store_click"]').forEach((link) => {
+  link.addEventListener("click", () => {
+    if (typeof window.gtag !== "function") return;
+    window.gtag("event", "app_store_click", {
+      store_product: link.dataset.storeProduct || "unknown",
+      storefront: link.dataset.storefront || "unknown",
+      link_url: link.href,
+      link_text: link.textContent.trim()
+    });
+  });
+});

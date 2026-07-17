@@ -73,7 +73,7 @@
         "@graph": [
           {
             "@type": "WebPage",
-            "@id": "https://www.xiaozhonglvyou.com/#webpage",
+            "@id": "https://www.xiaozhonglvyou.com/#page",
             "name": "CrazyAIAgent",
             "url": "https://www.xiaozhonglvyou.com/",
             "inLanguage": "en",
@@ -108,16 +108,27 @@
               {
                 "@id": "https://www.xiaozhonglvyou.com/#happyride"
               }
-            ]
+            ],
+            "author": {
+              "@id": "https://www.xiaozhonglvyou.com/#developer"
+            }
           },
           {
             "@type": "Person",
             "@id": "https://www.xiaozhonglvyou.com/#developer",
-            "name": "CrazyAIAgent",
+            "name": "Bo Chen",
+            "alternateName": "bo chen",
             "jobTitle": "Independent iOS and macOS Developer",
-            "description": "Developer of focused privacy-first apps for iPhone and Mac.",
+            "description": "Independent developer of focused iPhone, iPad, Apple Watch, and Mac apps.",
+            "url": "https://www.xiaozhonglvyou.com/about.html",
+            "email": "mailto:cb123428316@gmail.com",
+            "sameAs": [
+              "https://apps.apple.com/us/developer/bo-chen/id1321915789?uo=4"
+            ],
             "knowsAbout": [
               "iOS apps",
+              "iPadOS apps",
+              "watchOS apps",
               "macOS apps",
               "on-device AI",
               "AI photo classification",
@@ -126,8 +137,7 @@
               "cycling and activity tracking",
               "travel translation",
               "screen privacy"
-            ],
-            "url": "https://www.xiaozhonglvyou.com/about.html"
+            ]
           },
           {
             "@type": [
@@ -137,9 +147,15 @@
             "@id": "https://www.xiaozhonglvyou.com/#publisher",
             "name": "CrazyAIAgent",
             "url": "https://www.xiaozhonglvyou.com/",
-            "logo": "https://www.xiaozhonglvyou.com/apple-touch-icon.png",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://www.xiaozhonglvyou.com/apple-touch-icon.png"
+            },
             "image": "https://www.xiaozhonglvyou.com/assets/anti-spy-screen.png",
-            "description": "Independent iPhone and Mac utility app portfolio for photo organization, GIF creation, activity tracking, travel translation, and screen privacy.",
+            "description": "Independent App Store utility portfolio for photo organization, GIF creation, activity tracking, travel translation, and screen privacy.",
+            "founder": {
+              "@id": "https://www.xiaozhonglvyou.com/#developer"
+            },
             "contactPoint": {
               "@type": "ContactPoint",
               "email": "mailto:cb123428316@gmail.com",
@@ -151,6 +167,7 @@
               ]
             },
             "sameAs": [
+              "https://apps.apple.com/us/developer/bo-chen/id1321915789?uo=4",
               "https://apps.apple.com/us/app/ai-cleaning-photo-cleaner/id6768019606?uo=4",
               "https://apps.apple.com/us/app/translation-specialist/id6755734543?uo=4",
               "https://apps.apple.com/us/app/anti-spy-screen/id6761301764?mt=12&uo=4",
@@ -167,16 +184,16 @@
                 "@id": "https://www.xiaozhonglvyou.com/#travel-translator"
               },
               {
-                "@id": "https://www.xiaozhonglvyou.com/#anti-spy-screen"
-              },
-              {
-                "@id": "https://www.xiaozhonglvyou.com/#anti-spy-lite"
-              },
-              {
                 "@id": "https://www.xiaozhonglvyou.com/#gifmaker"
               },
               {
                 "@id": "https://www.xiaozhonglvyou.com/#happyride"
+              },
+              {
+                "@id": "https://www.xiaozhonglvyou.com/#anti-spy-screen"
+              },
+              {
+                "@id": "https://www.xiaozhonglvyou.com/#anti-spy-lite"
               }
             ]
           },
@@ -223,6 +240,9 @@
             },
             "hasPart": {
               "@id": "https://www.xiaozhonglvyou.com/#navigation"
+            },
+            "creator": {
+              "@id": "https://www.xiaozhonglvyou.com/#developer"
             }
           },
           {
@@ -340,6 +360,13 @@
               "@type": "PropertyValue",
               "propertyID": "Apple App Store ID",
               "value": "6768019606"
+            },
+            "image": "https://www.xiaozhonglvyou.com/assets/ai-cleaning-icon.png",
+            "provider": {
+              "@id": "https://www.xiaozhonglvyou.com/#publisher"
+            },
+            "publisher": {
+              "@id": "https://www.xiaozhonglvyou.com/#publisher"
             }
           },
           {
@@ -380,6 +407,13 @@
               "@type": "PropertyValue",
               "propertyID": "Apple App Store ID",
               "value": "6755734543"
+            },
+            "image": "https://www.xiaozhonglvyou.com/assets/travel-translator-icon.png",
+            "provider": {
+              "@id": "https://www.xiaozhonglvyou.com/#publisher"
+            },
+            "publisher": {
+              "@id": "https://www.xiaozhonglvyou.com/#publisher"
             }
           },
           {
@@ -402,11 +436,29 @@
               "Reverse and boomerang playback",
               "On-device processing without an account or uploads"
             ],
-            "author": { "@id": "https://www.xiaozhonglvyou.com/#developer" },
-            "publisher": { "@id": "https://www.xiaozhonglvyou.com/#publisher" },
-            "offers": { "@type": "Offer", "price": "0.00", "priceCurrency": "USD", "availability": "https://schema.org/InStock" },
-            "sameAs": ["https://apps.apple.com/us/app/gifmaker-gif-studio/id6783559364?uo=4"],
-            "identifier": { "@type": "PropertyValue", "propertyID": "Apple App Store ID", "value": "6783559364" }
+            "author": {
+              "@id": "https://www.xiaozhonglvyou.com/#developer"
+            },
+            "publisher": {
+              "@id": "https://www.xiaozhonglvyou.com/#publisher"
+            },
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "USD",
+              "availability": "https://schema.org/InStock"
+            },
+            "sameAs": [
+              "https://apps.apple.com/us/app/gifmaker-gif-studio/id6783559364?uo=4"
+            ],
+            "identifier": {
+              "@type": "PropertyValue",
+              "propertyID": "Apple App Store ID",
+              "value": "6783559364"
+            },
+            "provider": {
+              "@id": "https://www.xiaozhonglvyou.com/#publisher"
+            }
           },
           {
             "@type": "SoftwareApplication",
@@ -428,11 +480,30 @@
               "Apple Health workout records",
               "Optional quiet and scenic route planning"
             ],
-            "author": { "@id": "https://www.xiaozhonglvyou.com/#developer" },
-            "publisher": { "@id": "https://www.xiaozhonglvyou.com/#publisher" },
-            "offers": { "@type": "Offer", "price": "0.00", "priceCurrency": "USD", "availability": "https://schema.org/InStock", "description": "Free download; optional route-planning subscription." },
-            "sameAs": ["https://apps.apple.com/us/app/happyride-auto-ride-tracker/id6786365305?uo=4"],
-            "identifier": { "@type": "PropertyValue", "propertyID": "Apple App Store ID", "value": "6786365305" }
+            "author": {
+              "@id": "https://www.xiaozhonglvyou.com/#developer"
+            },
+            "publisher": {
+              "@id": "https://www.xiaozhonglvyou.com/#publisher"
+            },
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "USD",
+              "availability": "https://schema.org/InStock",
+              "description": "Free download; optional route-planning subscription."
+            },
+            "sameAs": [
+              "https://apps.apple.com/us/app/happyride-auto-ride-tracker/id6786365305?uo=4"
+            ],
+            "identifier": {
+              "@type": "PropertyValue",
+              "propertyID": "Apple App Store ID",
+              "value": "6786365305"
+            },
+            "provider": {
+              "@id": "https://www.xiaozhonglvyou.com/#publisher"
+            }
           },
           {
             "@type": "SoftwareApplication",
@@ -470,6 +541,13 @@
               "@type": "PropertyValue",
               "propertyID": "Apple App Store ID",
               "value": "6761301764"
+            },
+            "image": "https://www.xiaozhonglvyou.com/assets/anti-spy-icon.png",
+            "provider": {
+              "@id": "https://www.xiaozhonglvyou.com/#publisher"
+            },
+            "publisher": {
+              "@id": "https://www.xiaozhonglvyou.com/#publisher"
             }
           },
           {
@@ -508,6 +586,13 @@
               "@type": "PropertyValue",
               "propertyID": "Apple App Store ID",
               "value": "6766485393"
+            },
+            "image": "https://www.xiaozhonglvyou.com/assets/anti-spy-lite-icon.png",
+            "provider": {
+              "@id": "https://www.xiaozhonglvyou.com/#publisher"
+            },
+            "publisher": {
+              "@id": "https://www.xiaozhonglvyou.com/#publisher"
             }
           }
         ]
@@ -686,11 +771,8 @@
               <div class="app-actions">
                 <a
                   class="store-link"
-                  href="https://apps.apple.com/us/app/ai-cleaning-photo-cleaner/id6768019606?uo=4"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Open AI Cleaning - Photo Cleaner on the App Store"
-                >
+                  href="https://apps.apple.com/us/app/ai-cleaning-photo-cleaner/id6768019606?uo=4" target="_blank" rel="noopener noreferrer"
+                  aria-label="Open AI Cleaning - Photo Cleaner on the App Store" data-analytics-event="app_store_click" data-store-product="ai-cleaning-photo-cleaner" data-storefront="ios-app-store">
                   View on App Store
                 </a>
                 <a class="store-link store-link-secondary" href="ai-photo-classification.html">
@@ -720,11 +802,8 @@
               <div class="app-actions">
                 <a
                   class="store-link"
-                  href="https://apps.apple.com/us/app/translation-specialist/id6755734543?uo=4"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Open Travel Translator on the App Store"
-                >
+                  href="https://apps.apple.com/us/app/translation-specialist/id6755734543?uo=4" target="_blank" rel="noopener noreferrer"
+                  aria-label="Open Travel Translator on the App Store" data-analytics-event="app_store_click" data-store-product="translation-specialist" data-storefront="ios-app-store">
                   View on App Store
                 </a>
                 <a class="store-link store-link-secondary" href="travel-translator.html">
@@ -752,7 +831,7 @@
                 <li>Edit on device with no account and no uploads</li>
               </ul>
               <div class="app-actions">
-                <a class="store-link" href="https://apps.apple.com/us/app/gifmaker-gif-studio/id6783559364?uo=4" target="_blank" rel="noopener noreferrer" aria-label="Open GIFmaker-Gif Studio on the App Store">View on App Store</a>
+                <a class="store-link" href="https://apps.apple.com/us/app/gifmaker-gif-studio/id6783559364?uo=4" target="_blank" rel="noopener noreferrer" aria-label="Open GIFmaker-Gif Studio on the App Store" data-analytics-event="app_store_click" data-store-product="gifmaker-gif-studio" data-storefront="ios-app-store">View on App Store</a>
                 <a class="store-link store-link-secondary" href="gif-maker.html">GIFmaker details</a>
               </div>
             </article>
@@ -776,7 +855,7 @@
                 <li>Current on-screen interface is Simplified Chinese</li>
               </ul>
               <div class="app-actions">
-                <a class="store-link" href="https://apps.apple.com/us/app/happyride-auto-ride-tracker/id6786365305?uo=4" target="_blank" rel="noopener noreferrer" aria-label="Open HappyRide on the App Store">View on App Store</a>
+                <a class="store-link" href="https://apps.apple.com/us/app/happyride-auto-ride-tracker/id6786365305?uo=4" target="_blank" rel="noopener noreferrer" aria-label="Open HappyRide on the App Store" data-analytics-event="app_store_click" data-store-product="happyride-auto-ride-tracker" data-storefront="ios-app-store">View on App Store</a>
                 <a class="store-link store-link-secondary" href="happyride-auto-ride-tracker.html">HappyRide details</a>
               </div>
             </article>
@@ -801,11 +880,8 @@
               <div class="app-actions">
                 <a
                   class="store-link"
-                  href="https://apps.apple.com/us/app/anti-spy-screen/id6761301764?mt=12&uo=4"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Open Anti-spy screen on the Mac App Store"
-                >
+                  href="https://apps.apple.com/us/app/anti-spy-screen/id6761301764?mt=12&uo=4" target="_blank" rel="noopener noreferrer"
+                  aria-label="Open Anti-spy screen on the Mac App Store" data-analytics-event="app_store_click" data-store-product="anti-spy-screen" data-storefront="mac-app-store">
                   View on Mac App Store
                 </a>
                 <a class="store-link store-link-secondary" href="mac-screen-privacy.html">
@@ -835,11 +911,8 @@
               <div class="app-actions">
                 <a
                   class="store-link"
-                  href="https://apps.apple.com/us/app/anti-spy-screen-lite/id6766485393?mt=12&uo=4"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Open Anti-spy screen Lite on the Mac App Store"
-                >
+                  href="https://apps.apple.com/us/app/anti-spy-screen-lite/id6766485393?mt=12&uo=4" target="_blank" rel="noopener noreferrer"
+                  aria-label="Open Anti-spy screen Lite on the Mac App Store" data-analytics-event="app_store_click" data-store-product="anti-spy-screen-lite" data-storefront="mac-app-store">
                   View on Mac App Store
                 </a>
                 <a class="store-link store-link-secondary" href="mac-screen-privacy.html">
@@ -1166,6 +1239,6 @@
       </div>
     </footer>
 
-    <script src="script.js?v=20260606-locale-nav" defer></script>
+    <script src="script.js?v=20260718-conversion" defer></script>
   </body>
 </html>

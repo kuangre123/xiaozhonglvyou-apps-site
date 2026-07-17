@@ -28,10 +28,10 @@ Search index: https://www.xiaozhonglvyou.com/search-index.json
 
 ## Completed On Site
 
-- 51 indexable HTML pages, 118 JSON-LD blocks, 0 parse errors
+- 51 indexable HTML pages, 118 JSON-LD blocks, 168 top-level structured-data nodes, 0 parse errors
 - `robots.txt` allows 26+ crawler UAs including Googlebot, Bingbot, DuckDuckBot, Baiduspider, Sogou, 360Spider, YisouSpider, Bytespider, PetalBot, and AI crawlers (GPTBot, ClaudeBot, PerplexityBot)
 - `robots.txt` advertises sitemap-index, sitemap.xml, sitemap-global.xml, sitemap-articles.xml, sitemap-cn.xml, sitemap.txt, sitemap-global.txt, sitemap-articles.txt, sitemap-cn.txt, feed.xml, atom.xml
-- `sitemap.xml` includes 51 URLs with per-page lastmod values through 2026-07-17, changefreq, priority, 413 hreflang alternate links, and 36 image entries
+- `sitemap.xml` includes 51 URLs with per-page lastmod values through 2026-07-18, changefreq, priority, 413 hreflang alternate links, and 36 image entries
 - `sitemap-index.xml` points to sitemap.xml, sitemap-global.xml, sitemap-articles.xml, sitemap-cn.xml, feed.xml, and atom.xml
 - `sitemap-global.xml` lists 40 global, English, and localized non-Chinese landing pages for Google, Bing, Yandex, DuckDuckGo, and other international search platform submissions
 - `sitemap-articles.xml` lists 23 Article/guide pages with per-page dateModified values from JSON-LD
@@ -51,7 +51,9 @@ Search index: https://www.xiaozhonglvyou.com/search-index.json
 - All 51 indexable pages: unique title, unique meta description, single H1, canonical, viewport, robots=index,follow
 - All 51 indexable pages: og:locale, og:image:secure_url, og:image:width/height/alt, og:site_name
 - 32 single-product iOS pages expose validated Smart App Banner metadata with the correct app ID and canonical app argument
-- All 47 indexable pages: manifest.webmanifest link, preconnect for googletagmanager and apps.apple.com
+- All 51 indexable pages: manifest.webmanifest link, preconnect for googletagmanager and apps.apple.com
+- `manifest.webmanifest`: 3 validated icons, 2 screenshots, 4 app shortcuts, explicit language, and standalone display metadata
+- All 119 visible App Store links: GA4 `app_store_click` event metadata, product/storefront identifiers, accessible labels, and safe new-tab attributes
 - 23 Article pages: og:article:published_time and og:article:modified_time (synced with JSON-LD)
 - Localized, regional, and paired content pages: hreflang alternates (15 regional pages + 20 paired content pages)
 - No broken internal links, no orphan pages, all pages have >= 3 internal entry points
@@ -59,7 +61,7 @@ Search index: https://www.xiaozhonglvyou.com/search-index.json
 - No heading hierarchy skips
 - No public-facing SEO terminology leaks
 
-### Structured Data (118 blocks, 15 top-level types)
+### Structured Data (118 blocks, 15 top-level types, 168 nodes)
 - BreadcrumbList: 50 pages (all indexable pages except index.html)
 - FAQPage: 38 pages with 172 visible and structured Q&A pairs
 - Article: 23 pages with datePublished/dateModified synced per page
@@ -67,9 +69,9 @@ Search index: https://www.xiaozhonglvyou.com/search-index.json
 - CollectionPage: 5 pages
 - SoftwareApplication: 10 entities covering six products (with applicationCategory, operatingSystem, softwareVersion, software requirements, feature lists, and offers)
 - ItemList: 4 pages
-- HowTo: 5 guide pages with 29 total steps
-- Organization + Brand: 2 pages with sameAs (6 App Store links + GitHub repo)
-- Person: 2 pages with knowsAbout
+- HowTo: 9 pages with 45 total steps, including matched English and Simplified Chinese GIF creation and automatic cycling setup instructions
+- Organization + Brand: 2 pages with sameAs (App Store developer page, 6 product pages, and GitHub repo)
+- Person: 2 pages identifying Bo Chen with the current public App Store developer page and knowsAbout topics
 - WebSite: 1 with SearchAction (potentialAction for Sitelinks Search Box)
 - SiteNavigationElement, AboutPage, ContactPage: 1 each
 
@@ -86,7 +88,7 @@ Search index: https://www.xiaozhonglvyou.com/search-index.json
 - Endpoints: `www.bing.com/indexnow`, `api.indexnow.org/IndexNow`, `yandex.com/indexnow`, `search.seznam.cz/indexnow`, `searchadvisor.naver.com/indexnow`
 - Validation: rejects empty, duplicate, over-limit, and off-domain sitemap URL lists before submission
 - Evidence: each workflow run saves `indexnow-report.json` as a 30-day GitHub Actions artifact
-- Last submission: 46 URLs on 2026-07-15; Bing 200, api.indexnow.org 200, Yandex 202, Seznam 200, Naver 200
+- Latest verified automated run: the 2026-07-17 workflow completed successfully after deployment of the 51-URL sitemap; each run preserves endpoint-level evidence in `indexnow-report.json`.
 
 ### Bing Readiness Audit
 - Script: `node scripts/audit-bing-readiness.mjs`
@@ -102,7 +104,8 @@ Search index: https://www.xiaozhonglvyou.com/search-index.json
 - Latest people-first content pass: the English and Simplified Chinese iPhone photo-cleaner pages now use the real product screen and document version 1.1.3, iOS 16 compatibility, nine explicit categories, on-device processing, and review-before-delete behavior checked against the current App Store listing on 2026-07-13. Regional and guide copy that addressed search traffic instead of readers was rewritten around practical user tasks.
 - Latest product evidence pass: Anti-spy screen Lite was refreshed to version 1.4.1, including hidden-app reminders, and the English and Simplified Chinese Mac privacy facts were rechecked against Apple's public records on 2026-07-17.
 - Latest app portfolio pass: GIFmaker 1.1.1 and HappyRide 1.2 now have English and Simplified Chinese product pages, App Store IDs, official icons, verified compatibility, SoftwareApplication entities, FAQs, hreflang pairs, Smart App Banners, support/privacy anchors, and sitemap/search discovery.
-- Latest ASO pass: `ASO_ACTIONS.md` contains length-checked names, subtitles, 100-byte keyword fields, promotional text, screenshot order, and product-specific App Store Connect URLs for GIFmaker and HappyRide. `scripts/audit-aso-readiness.mjs` reports PASS.
+- Latest entity pass: the site now separates the verified developer entity (`Bo Chen`) from the `CrazyAIAgent` publisher brand; page ownership, Article authorship, all six SoftwareApplication entities, and hub ItemLists use stable linked IDs.
+- Latest ASO pass: `ASO_ACTIONS.md` contains length-checked names, subtitles, 100-byte keyword fields, promotional text, screenshot order, product-specific App Store Connect URLs, and GA4 outbound-click measurement for GIFmaker and HappyRide. `scripts/audit-aso-readiness.mjs` reports PASS.
 
 ### High-quality inbound link readiness
 - `media-kit.html` provides review-ready product facts, clean canonical links, first-party images, an editorial disclosure, and a correction contact.

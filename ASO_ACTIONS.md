@@ -1,6 +1,6 @@
 # App Store optimization actions for GIFmaker and HappyRide
 
-Last verified: 2026-07-17
+Last verified: 2026-07-18
 
 This document separates public App Store facts from proposed metadata. Nothing below is represented as live until it is saved in App Store Connect and visible on the public product page.
 
@@ -111,5 +111,16 @@ Replace the current generic homepage Marketing URL with the product-specific can
 4. Annotate the change date in App Store Connect analytics.
 5. Compare product-page views, conversion rate, first-time downloads, keyword impressions, and retained users for at least two comparable weekly periods.
 6. Test one high-impact element at a time. Start with screenshot order once each app has enough product-page traffic for a meaningful Product Page Optimization test.
+
+### Website-to-App-Store conversion event
+
+Every public App Store link now emits the GA4 event `app_store_click` with these parameters:
+
+- `store_product`: one of the six stable product slugs, including `gifmaker-gif-studio` and `happyride-auto-ride-tracker`.
+- `storefront`: `ios-app-store` or `mac-app-store`.
+- `link_url`: the localized App Store destination.
+- `link_text`: the visible CTA text.
+
+Use this event to compare landing-page CTA demand before and after an ASO release. Treat it as an outbound-click metric, not an install or purchase: App Store Connect remains authoritative for product-page views, downloads, conversion rate, retention, and proceeds.
 
 Avoid changing name, subtitle, keywords, and every screenshot concept simultaneously if the goal is to learn which change improved conversion. URL corrections can ship immediately because they fix attribution and authority rather than creative positioning.

@@ -1,7 +1,7 @@
 # CrazyAIAgent apps
 
-Official website for [CrazyAIAgent iPhone, Apple Watch, and Mac apps](https://www.xiaozhonglvyou.com/),
-an independent portfolio focused on photo organization, GIF creation, activity tracking, travel translation, and screen privacy.
+Official website for [CrazyAIAgent iPhone, iPad, Apple Watch, and Mac apps](https://www.xiaozhonglvyou.com/),
+the independent portfolio of [App Store developer Bo Chen](https://apps.apple.com/us/developer/bo-chen/id1321915789?uo=4), focused on photo organization, GIF creation, activity tracking, travel translation, and screen privacy.
 
 ## Products
 
@@ -37,6 +37,8 @@ Growth operations:
 
 - `ASO_ACTIONS.md` - byte-checked App Store metadata, screenshot order, and URL updates for GIFmaker and HappyRide.
 - `BACKLINK_ACTIONS.md` - controlled Apple, GitHub, profile, and editorial-link actions for Bing's inbound-link recommendation.
+- `scripts/normalize-schema-entities.mjs` - keeps developer, publisher, app, page, article, and hub entities consistent.
+- `scripts/normalize-app-store-links.mjs` - adds safe App Store targets and the GA4 `app_store_click` conversion event metadata.
 
 DNS:
 

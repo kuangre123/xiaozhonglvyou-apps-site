@@ -50,7 +50,7 @@
         "@graph": [
           {
             "@type": "AboutPage",
-            "@id": "https://www.xiaozhonglvyou.com/about.html#about",
+            "@id": "https://www.xiaozhonglvyou.com/about.html#page",
             "name": "About CrazyAIAgent",
             "url": "https://www.xiaozhonglvyou.com/about.html",
             "inLanguage": "en",
@@ -65,18 +65,35 @@
               {
                 "@id": "https://www.xiaozhonglvyou.com/#developer"
               }
-            ]
+            ],
+            "isPartOf": {
+              "@id": "https://www.xiaozhonglvyou.com/#website"
+            },
+            "publisher": {
+              "@id": "https://www.xiaozhonglvyou.com/#publisher"
+            },
+            "author": {
+              "@id": "https://www.xiaozhonglvyou.com/#developer"
+            }
           },
           {
             "@type": "Person",
             "@id": "https://www.xiaozhonglvyou.com/#developer",
-            "name": "CrazyAIAgent",
+            "name": "Bo Chen",
+            "alternateName": "bo chen",
             "jobTitle": "Independent iOS and macOS Developer",
-            "email": "mailto:cb123428316@gmail.com",
+            "description": "Independent developer of focused iPhone, iPad, Apple Watch, and Mac apps.",
             "url": "https://www.xiaozhonglvyou.com/about.html",
+            "email": "mailto:cb123428316@gmail.com",
+            "sameAs": [
+              "https://apps.apple.com/us/developer/bo-chen/id1321915789?uo=4"
+            ],
             "knowsAbout": [
               "iOS apps",
+              "iPadOS apps",
+              "watchOS apps",
               "macOS apps",
+              "on-device AI",
               "AI photo classification",
               "photo cleanup",
               "GIF creation",
@@ -93,9 +110,15 @@
             "@id": "https://www.xiaozhonglvyou.com/#publisher",
             "name": "CrazyAIAgent",
             "url": "https://www.xiaozhonglvyou.com/",
-            "logo": "https://www.xiaozhonglvyou.com/apple-touch-icon.png",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://www.xiaozhonglvyou.com/apple-touch-icon.png"
+            },
             "image": "https://www.xiaozhonglvyou.com/assets/anti-spy-screen.png",
-            "description": "Independent iPhone, Apple Watch, and Mac utility app portfolio for photo organization, GIF creation, activity tracking, travel translation, and screen privacy.",
+            "description": "Independent App Store utility portfolio for photo organization, GIF creation, activity tracking, travel translation, and screen privacy.",
+            "founder": {
+              "@id": "https://www.xiaozhonglvyou.com/#developer"
+            },
             "contactPoint": {
               "@type": "ContactPoint",
               "email": "mailto:cb123428316@gmail.com",
@@ -107,6 +130,7 @@
               ]
             },
             "sameAs": [
+              "https://apps.apple.com/us/developer/bo-chen/id1321915789?uo=4",
               "https://apps.apple.com/us/app/ai-cleaning-photo-cleaner/id6768019606?uo=4",
               "https://apps.apple.com/us/app/translation-specialist/id6755734543?uo=4",
               "https://apps.apple.com/us/app/anti-spy-screen/id6761301764?mt=12&uo=4",
@@ -123,16 +147,16 @@
                 "@id": "https://www.xiaozhonglvyou.com/#travel-translator"
               },
               {
-                "@id": "https://www.xiaozhonglvyou.com/#anti-spy-screen"
-              },
-              {
-                "@id": "https://www.xiaozhonglvyou.com/#anti-spy-lite"
-              },
-              {
                 "@id": "https://www.xiaozhonglvyou.com/#gifmaker"
               },
               {
                 "@id": "https://www.xiaozhonglvyou.com/#happyride"
+              },
+              {
+                "@id": "https://www.xiaozhonglvyou.com/#anti-spy-screen"
+              },
+              {
+                "@id": "https://www.xiaozhonglvyou.com/#anti-spy-lite"
               }
             ]
           },
@@ -186,7 +210,8 @@
           <p class="eyebrow">Independent app portfolio</p>
           <h1>Useful iPhone, Apple Watch, and Mac tools from an independent developer.</h1>
           <p>
-            CrazyAIAgent is a small portfolio of App Store utilities focused on practical jobs:
+            CrazyAIAgent is the independent app portfolio of Bo Chen, listed as “bo chen” on the App Store.
+            The apps focus on practical jobs:
             classifying photos, creating GIFs, recording rides, translating while traveling, and protecting
             Mac screens during work and presentations.
           </p>
@@ -280,6 +305,6 @@
         </div>
       </div>
     </footer>
-    <script src="script.js?v=20260606-locale-nav" defer></script>
+    <script src="script.js?v=20260718-conversion" defer></script>
   </body>
 </html>

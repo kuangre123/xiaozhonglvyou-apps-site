@@ -5,6 +5,7 @@
   "id": "/",
   "start_url": "/",
   "scope": "/",
+  "lang": "en",
   "display": "standalone",
   "categories": [
     "utilities",
@@ -33,6 +34,44 @@
       "sizes": "96x96",
       "type": "image/png",
       "purpose": "any"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/assets/anti-spy-screen.png",
+      "sizes": "900x562",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Anti-spy screen privacy controls on Mac"
+    },
+    {
+      "src": "/assets/ai-cleaning-screen.png",
+      "sizes": "331x720",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "AI Cleaning photo organization on iPhone"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "All Apps",
+      "short_name": "Apps",
+      "url": "/apps.html"
+    },
+    {
+      "name": "GIF Maker",
+      "short_name": "GIF Maker",
+      "url": "/gif-maker.html"
+    },
+    {
+      "name": "HappyRide",
+      "short_name": "HappyRide",
+      "url": "/happyride-auto-ride-tracker.html"
+    },
+    {
+      "name": "Support",
+      "short_name": "Support",
+      "url": "/support.html"
     }
   ]
 }
