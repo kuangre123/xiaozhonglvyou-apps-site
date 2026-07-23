@@ -21,7 +21,7 @@ Official references:
 
 ## GIFmaker-Gif Studio
 
-Current public facts: version 1.1.1, iOS 17.0+, free, Photo & Video, English + Simplified Chinese + Traditional Chinese. Public App Store subtitle: `GIF maker: photos & video`. The listing states that editing happens on device with no account and no uploads; the public privacy label says Data Not Collected.
+Current public facts: version 1.1.2, iOS 17.0+, free, Photo & Video, English + Simplified Chinese + Traditional Chinese. Public App Store subtitle: `GIF maker: photos & video`. The listing states that editing happens on device with no account and no uploads; the public privacy label says Data Not Collected.
 
 ### English (US)
 

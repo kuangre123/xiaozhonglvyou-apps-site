@@ -71,7 +71,7 @@ const products = new Map([
       image: `${origin}/assets/gifmaker-icon.png`,
       applicationCategory: "MultimediaApplication",
       operatingSystem: "iOS",
-      softwareVersion: "1.1.1",
+      softwareVersion: "1.1.2",
       price: "0.00",
       priceCurrency: "USD"
     }

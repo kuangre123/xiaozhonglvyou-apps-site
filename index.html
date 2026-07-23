@@ -10,11 +10,11 @@
     <title>CrazyAIAgent | Independent iOS and macOS Utilities</title>
     <meta
       name="description"
-      content="Independent iOS and macOS apps for on-device AI photo classification, private photo cleanup, travel translation, Mac screen privacy, and safer presenting."
+      content="Independent iOS and macOS apps for on-device photo cleanup, GIF creation, automatic ride tracking, travel translation, and Mac screen privacy."
     />
     <meta
       name="keywords"
-      content="AI photo classification, smart photo categorization, photo cleaner, duplicate photos, iPhone storage cleaner, on-device AI, travel translator, voice translator, screen privacy, Mac privacy app, screen sharing privacy, anti spy screen"
+      content="GIF maker for iPhone, automatic ride tracker, cycling tracker, AI photo classification, photo cleaner, travel translator, screen privacy, Mac privacy app"
     />
     <meta name="robots" content="index,follow,max-image-preview:large" />
     <meta name="theme-color" content="#111827" />
@@ -51,7 +51,7 @@
     <meta property="og:site_name" content="CrazyAIAgent" />
     <meta
       property="og:description"
-      content="Privacy-first iOS and macOS apps for photo cleanup, translation, screen privacy, and focused work."
+      content="Privacy-first apps for photo cleanup, GIF creation, ride tracking, translation, screen privacy, and focused work."
     />
     <meta property="og:image" content="https://www.xiaozhonglvyou.com/assets/og-default.png" />
     <meta property="og:image:secure_url" content="https://www.xiaozhonglvyou.com/assets/og-default.png" />
@@ -60,14 +60,14 @@
     <meta property="og:image:alt" content="CrazyAIAgent — Privacy-first iOS and macOS apps" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="CrazyAIAgent" />
-    <meta name="twitter:description" content="Privacy-first iOS and macOS apps for photo cleanup, translation, screen privacy, and focused work." />
+    <meta name="twitter:description" content="Privacy-first apps for photo cleanup, GIF creation, ride tracking, translation, screen privacy, and focused work." />
     <meta name="twitter:image" content="https://www.xiaozhonglvyou.com/assets/og-default.png" />
     <link rel="icon" href="/favicon.ico" sizes="any" />
     <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="manifest" href="manifest.webmanifest" />
     <link rel="preload" href="assets/ai-cleaning-icon.webp" as="image" type="image/webp" fetchpriority="high">
-    <style>:root{color-scheme:light;--ink:#1a1d26;--ink-soft:#4a4f63;--muted:#6b7280;--line:#e5e7eb;--paper:#f8f9fc;--paper-strong:#fff;--mist:#eef2ff;--blue:#10b981;--blue-deep:#059669;--mint:#22c55e;--coral:#f97316;--amber:#eab308;--violet:#34d399;--focus-ring:rgba(16,185,129,.34);--shadow-sm:0 4px 16px rgba(0,0,0,.06);--shadow-md:0 12px 32px rgba(0,0,0,.1);--shadow-lg:0 24px 56px rgba(0,0,0,.14);--radius-sm:12px;--radius-md:18px;--radius-lg:28px;--max:1200px}*{box-sizing:border-box}html{scroll-behavior:smooth}[id]{scroll-margin-top:96px}body{margin:0;color:var(--ink);background:var(--paper);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.6;letter-spacing:-.01em;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;overflow-x:hidden}img{display:block;max-width:100%;height:auto}a{color:inherit;text-decoration:none}.site-header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.72);border-bottom:1px solid rgba(0,0,0,.06);-webkit-backdrop-filter:blur(20px) saturate(180%);backdrop-filter:blur(20px) saturate(180%)}.nav{width:min(var(--max),calc(100% - 40px));min-height:72px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{display:inline-flex;align-items:center;gap:12px;font-weight:800;font-size:17px;letter-spacing:-.02em}.brand-mark{width:40px;height:40px;display:grid;place-items:center;flex:0 0 auto;border-radius:12px;color:#fff;background:linear-gradient(135deg,#10b981,#059669);box-shadow:0 4px 12px rgba(16,185,129,.3);font-size:14px;font-weight:900}.nav-links{display:flex;align-items:center;gap:28px;color:var(--ink-soft);font-size:15px;font-weight:500}.nav-cta,.button{display:inline-flex;align-items:center;justify-content:center;min-height:46px;border-radius:999px;font-weight:700;white-space:nowrap}.nav-cta{padding:0 22px;color:#fff;background:var(--ink);border-radius:12px;font-size:15px}.hero{position:relative;min-height:min(820px,calc(100vh - 10px));overflow:hidden;display:grid;align-items:center;padding:130px max(28px,calc((100vw - var(--max))/2)) 64px;background:linear-gradient(135deg,#0a0f0d 0%,#111827 40%,#0d1f17 100%);color:#fff}.hero-copy{position:relative;z-index:3;width:min(640px,100%);padding-top:22px}.hero h1{width:min(600px,100%);margin:18px 0 24px;font-size:clamp(52px,7.5vw,86px);line-height:1.02;letter-spacing:-.03em;font-weight:900;color:#fff}.hero-lede{max-width:520px;margin:0;color:rgba(255,255,255,.82);font-size:clamp(18px,2vw,21px);line-height:1.5}.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}.button{padding:0 28px;font-size:16px}.button-primary{color:var(--ink);background:var(--mint);box-shadow:0 8px 24px rgba(34,197,94,.3);font-weight:800}.hero .button-primary{color:#1a1d26;background:#fff;box-shadow:0 8px 24px rgba(0,0,0,.15)}.button-secondary{color:var(--ink);border:1.5px solid rgba(0,0,0,.12);background:rgba(255,255,255,.9)}.hero .button-secondary{color:#fff;border-color:rgba(255,255,255,.3);background:rgba(255,255,255,.12)}.eyebrow,.section-kicker{margin:0;color:var(--blue);font-size:13px;font-weight:700;letter-spacing:.06em;text-transform:uppercase}.hero .eyebrow{color:rgba(255,255,255,.8);font-size:14px;letter-spacing:.08em}.page-main{background:var(--paper)}.page-hero{width:min(var(--max),calc(100% - 40px));margin:0 auto;min-height:620px;display:grid;grid-template-columns:minmax(0,.95fr) minmax(280px,.72fr);gap:56px;align-items:center;padding:126px 0 64px}.page-hero-copy h1{margin:14px 0 22px;font-size:clamp(44px,6vw,72px);line-height:1.04;letter-spacing:-.02em;font-weight:900}.page-hero-copy p{margin:0;color:var(--ink-soft);font-size:clamp(18px,2vw,22px)}.breadcrumb{margin-bottom:18px;color:var(--muted);font-size:14px}.breadcrumb ol{display:flex;flex-wrap:wrap;gap:8px;margin:0;padding:0;list-style:none}.breadcrumb li{display:inline-flex;align-items:center}.breadcrumb li:not(:last-child)::after{content:"/";margin-left:8px;color:rgba(102,112,133,.72)}.breadcrumb a{color:var(--blue);font-weight:700}.skip-link{position:fixed;left:16px;top:-80px;z-index:30;padding:10px 14px;border-radius:var(--radius-sm);background:var(--ink);color:#fff}.skip-link:focus{top:16px}</style>
+    <style>:root{color-scheme:light;--ink:#1a1d26;--ink-soft:#4a4f63;--muted:#6b7280;--line:#e5e7eb;--paper:#f8f9fc;--paper-strong:#fff;--mist:#ecfdf5;--blue:#10b981;--blue-deep:#059669;--mint:#22c55e;--coral:#f97316;--amber:#eab308;--violet:#34d399;--focus-ring:rgba(16,185,129,.34);--shadow-sm:0 4px 16px rgba(0,0,0,.06);--shadow-md:0 12px 32px rgba(0,0,0,.1);--shadow-lg:0 24px 56px rgba(0,0,0,.14);--radius-sm:12px;--radius-md:18px;--radius-lg:28px;--max:1200px}*{box-sizing:border-box}html{scroll-behavior:smooth}[id]{scroll-margin-top:96px}body{margin:0;color:var(--ink);background:var(--paper);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.6;letter-spacing:-.01em;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;overflow-x:hidden}img{display:block;max-width:100%;height:auto}a{color:inherit;text-decoration:none}.site-header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.72);border-bottom:1px solid rgba(0,0,0,.06);-webkit-backdrop-filter:blur(20px) saturate(180%);backdrop-filter:blur(20px) saturate(180%)}.nav{width:min(var(--max),calc(100% - 40px));min-height:72px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{display:inline-flex;align-items:center;gap:12px;font-weight:800;font-size:17px;letter-spacing:-.02em}.brand-mark{width:40px;height:40px;display:grid;place-items:center;flex:0 0 auto;border-radius:12px;color:#fff;background:linear-gradient(135deg,#10b981,#059669);box-shadow:0 4px 12px rgba(16,185,129,.3);font-size:14px;font-weight:900}.nav-links{display:flex;align-items:center;gap:28px;color:var(--ink-soft);font-size:15px;font-weight:500}.nav-cta,.button{display:inline-flex;align-items:center;justify-content:center;min-height:46px;border-radius:999px;font-weight:700;white-space:nowrap}.nav-cta{padding:0 22px;color:#fff;background:var(--ink);border-radius:12px;font-size:15px}.hero{position:relative;min-height:min(820px,calc(100vh - 10px));overflow:hidden;display:grid;align-items:center;padding:130px max(28px,calc((100vw - var(--max))/2)) 64px;background:linear-gradient(135deg,#0a0f0d 0%,#111827 40%,#0d1f17 100%);color:#fff}.hero-copy{position:relative;z-index:3;width:min(640px,100%);padding-top:22px}.hero h1{width:min(600px,100%);margin:18px 0 24px;font-size:clamp(52px,7.5vw,86px);line-height:1.02;letter-spacing:-.03em;font-weight:900;color:#fff}.hero-lede{max-width:520px;margin:0;color:rgba(255,255,255,.82);font-size:clamp(18px,2vw,21px);line-height:1.5}.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}.button{padding:0 28px;font-size:16px}.button-primary{color:var(--ink);background:var(--mint);box-shadow:0 8px 24px rgba(34,197,94,.3);font-weight:800}.hero .button-primary{color:#0a0f0d;background:#10b981;box-shadow:0 8px 24px rgba(16,185,129,.3)}.button-secondary{color:var(--ink);border:1.5px solid rgba(0,0,0,.12);background:rgba(255,255,255,.9)}.hero .button-secondary{color:#fff;border-color:rgba(255,255,255,.3);background:rgba(255,255,255,.12)}.eyebrow,.section-kicker{margin:0;color:var(--blue);font-size:13px;font-weight:700;letter-spacing:.06em;text-transform:uppercase}.hero .eyebrow{color:rgba(255,255,255,.8);font-size:14px;letter-spacing:.08em}.page-main{background:var(--paper)}.page-hero{width:min(var(--max),calc(100% - 40px));margin:0 auto;min-height:620px;display:grid;grid-template-columns:minmax(0,.95fr) minmax(280px,.72fr);gap:56px;align-items:center;padding:126px 0 64px}.page-hero-copy h1{margin:14px 0 22px;font-size:clamp(44px,6vw,72px);line-height:1.04;letter-spacing:-.02em;font-weight:900}.page-hero-copy p{margin:0;color:var(--ink-soft);font-size:clamp(18px,2vw,22px)}.breadcrumb{margin-bottom:18px;color:var(--muted);font-size:14px}.breadcrumb ol{display:flex;flex-wrap:wrap;gap:8px;margin:0;padding:0;list-style:none}.breadcrumb li{display:inline-flex;align-items:center}.breadcrumb li:not(:last-child)::after{content:"/";margin-left:8px;color:rgba(102,112,133,.72)}.breadcrumb a{color:var(--blue);font-weight:700}.skip-link{position:fixed;left:16px;top:-80px;z-index:30;padding:10px 14px;border-radius:var(--radius-sm);background:var(--ink);color:#fff}.skip-link:focus{top:16px}</style>
     <link rel="preload" href="styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="styles.css"></noscript>
     <script type="application/ld+json">
@@ -76,7 +76,7 @@
         "@graph": [
           {
             "@type": "WebPage",
-            "@id": "https://www.xiaozhonglvyou.com/#webpage",
+            "@id": "https://www.xiaozhonglvyou.com/#page",
             "name": "CrazyAIAgent",
             "url": "https://www.xiaozhonglvyou.com/",
             "inLanguage": "en",
@@ -104,25 +104,43 @@
               },
               {
                 "@id": "https://www.xiaozhonglvyou.com/#anti-spy-lite"
+              },
+              {
+                "@id": "https://www.xiaozhonglvyou.com/#gifmaker"
+              },
+              {
+                "@id": "https://www.xiaozhonglvyou.com/#happyride"
               }
-            ]
+            ],
+            "author": {
+              "@id": "https://www.xiaozhonglvyou.com/#developer"
+            }
           },
           {
             "@type": "Person",
             "@id": "https://www.xiaozhonglvyou.com/#developer",
-            "name": "CrazyAIAgent",
+            "name": "Bo Chen",
+            "alternateName": "bo chen",
             "jobTitle": "Independent iOS and macOS Developer",
-            "description": "Developer of focused privacy-first apps for iPhone and Mac.",
+            "description": "Independent developer of focused iPhone, iPad, Apple Watch, and Mac apps.",
+            "url": "https://www.xiaozhonglvyou.com/about.html",
+            "email": "mailto:cb123428316@gmail.com",
+            "sameAs": [
+              "https://apps.apple.com/us/developer/bo-chen/id1321915789?uo=4"
+            ],
             "knowsAbout": [
               "iOS apps",
+              "iPadOS apps",
+              "watchOS apps",
               "macOS apps",
               "on-device AI",
               "AI photo classification",
               "photo cleanup",
+              "GIF creation",
+              "cycling and activity tracking",
               "travel translation",
               "screen privacy"
-            ],
-            "url": "https://www.xiaozhonglvyou.com/about.html"
+            ]
           },
           {
             "@type": [
@@ -132,9 +150,15 @@
             "@id": "https://www.xiaozhonglvyou.com/#publisher",
             "name": "CrazyAIAgent",
             "url": "https://www.xiaozhonglvyou.com/",
-            "logo": "https://www.xiaozhonglvyou.com/apple-touch-icon.png",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://www.xiaozhonglvyou.com/apple-touch-icon.png"
+            },
             "image": "https://www.xiaozhonglvyou.com/assets/anti-spy-screen.png",
-            "description": "Independent iPhone and Mac utility app portfolio for AI photo organization, travel translation, and screen privacy.",
+            "description": "Independent App Store utility portfolio for photo organization, GIF creation, activity tracking, travel translation, and screen privacy.",
+            "founder": {
+              "@id": "https://www.xiaozhonglvyou.com/#developer"
+            },
             "contactPoint": {
               "@type": "ContactPoint",
               "email": "mailto:cb123428316@gmail.com",
@@ -146,10 +170,13 @@
               ]
             },
             "sameAs": [
+              "https://apps.apple.com/us/developer/bo-chen/id1321915789?uo=4",
               "https://apps.apple.com/us/app/ai-cleaning-photo-cleaner/id6768019606?uo=4",
               "https://apps.apple.com/us/app/translation-specialist/id6755734543?uo=4",
               "https://apps.apple.com/us/app/anti-spy-screen/id6761301764?mt=12&uo=4",
               "https://apps.apple.com/us/app/anti-spy-screen-lite/id6766485393?mt=12&uo=4",
+              "https://apps.apple.com/us/app/gifmaker-gif-studio/id6783559364?uo=4",
+              "https://apps.apple.com/us/app/happyride-auto-ride-tracker/id6786365305?uo=4",
               "https://github.com/kuangre123/xiaozhonglvyou-apps-site"
             ],
             "owns": [
@@ -158,6 +185,12 @@
               },
               {
                 "@id": "https://www.xiaozhonglvyou.com/#travel-translator"
+              },
+              {
+                "@id": "https://www.xiaozhonglvyou.com/#gifmaker"
+              },
+              {
+                "@id": "https://www.xiaozhonglvyou.com/#happyride"
               },
               {
                 "@id": "https://www.xiaozhonglvyou.com/#anti-spy-screen"
@@ -188,6 +221,12 @@
               },
               {
                 "@id": "https://www.xiaozhonglvyou.com/#anti-spy-lite"
+              },
+              {
+                "@id": "https://www.xiaozhonglvyou.com/#gifmaker"
+              },
+              {
+                "@id": "https://www.xiaozhonglvyou.com/#happyride"
               }
             ],
             "alternateName": [
@@ -204,6 +243,9 @@
             },
             "hasPart": {
               "@id": "https://www.xiaozhonglvyou.com/#navigation"
+            },
+            "creator": {
+              "@id": "https://www.xiaozhonglvyou.com/#developer"
             }
           },
           {
@@ -271,6 +313,18 @@
                 "position": 10,
                 "name": "Best iPhone Photo Cleaner Guide",
                 "url": "https://www.xiaozhonglvyou.com/best-iphone-photo-cleaner-app.html"
+              },
+              {
+                "@type": "ListItem",
+                "position": 11,
+                "name": "GIF Maker",
+                "url": "https://www.xiaozhonglvyou.com/gif-maker.html"
+              },
+              {
+                "@type": "ListItem",
+                "position": 12,
+                "name": "Automatic Ride Tracker",
+                "url": "https://www.xiaozhonglvyou.com/happyride-auto-ride-tracker.html"
               }
             ]
           },
@@ -302,13 +356,6 @@
               "priceCurrency": "USD",
               "availability": "https://schema.org/InStock"
             },
-            "aggregateRating": {
-              "@type": "AggregateRating",
-              "ratingValue": "4.6",
-              "ratingCount": "85",
-              "bestRating": "5",
-              "worstRating": "1"
-            },
             "sameAs": [
               "https://apps.apple.com/us/app/ai-cleaning-photo-cleaner/id6768019606?uo=4"
             ],
@@ -316,6 +363,13 @@
               "@type": "PropertyValue",
               "propertyID": "Apple App Store ID",
               "value": "6768019606"
+            },
+            "image": "https://www.xiaozhonglvyou.com/assets/ai-cleaning-icon.png",
+            "provider": {
+              "@id": "https://www.xiaozhonglvyou.com/#publisher"
+            },
+            "publisher": {
+              "@id": "https://www.xiaozhonglvyou.com/#publisher"
             }
           },
           {
@@ -349,13 +403,6 @@
               "priceCurrency": "USD",
               "availability": "https://schema.org/InStock"
             },
-            "aggregateRating": {
-              "@type": "AggregateRating",
-              "ratingValue": "4.6",
-              "ratingCount": "85",
-              "bestRating": "5",
-              "worstRating": "1"
-            },
             "sameAs": [
               "https://apps.apple.com/us/app/translation-specialist/id6755734543?uo=4"
             ],
@@ -363,6 +410,102 @@
               "@type": "PropertyValue",
               "propertyID": "Apple App Store ID",
               "value": "6755734543"
+            },
+            "image": "https://www.xiaozhonglvyou.com/assets/travel-translator-icon.png",
+            "provider": {
+              "@id": "https://www.xiaozhonglvyou.com/#publisher"
+            },
+            "publisher": {
+              "@id": "https://www.xiaozhonglvyou.com/#publisher"
+            }
+          },
+          {
+            "@type": "SoftwareApplication",
+            "@id": "https://www.xiaozhonglvyou.com/#gifmaker",
+            "name": "GIFmaker-Gif Studio",
+            "alternateName": "GIFmaker",
+            "applicationCategory": "MultimediaApplication",
+            "operatingSystem": "iOS",
+            "softwareVersion": "1.1.2",
+            "softwareRequirements": "iOS 17.0 or later",
+            "url": "https://apps.apple.com/us/app/gifmaker-gif-studio/id6783559364?uo=4",
+            "downloadUrl": "https://apps.apple.com/us/app/gifmaker-gif-studio/id6783559364?uo=4",
+            "image": "https://www.xiaozhonglvyou.com/assets/gifmaker-icon.png",
+            "description": "An on-device iPhone GIF maker for photos, videos, and Live Photos with timing, captions, frame ordering, canvas controls, and quick sharing.",
+            "featureList": [
+              "Photos, video, and Live Photos to GIF",
+              "Live preview and per-frame timing",
+              "Text overlays",
+              "Reverse and boomerang playback",
+              "On-device processing without an account or uploads"
+            ],
+            "author": {
+              "@id": "https://www.xiaozhonglvyou.com/#developer"
+            },
+            "publisher": {
+              "@id": "https://www.xiaozhonglvyou.com/#publisher"
+            },
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "USD",
+              "availability": "https://schema.org/InStock"
+            },
+            "sameAs": [
+              "https://apps.apple.com/us/app/gifmaker-gif-studio/id6783559364?uo=4"
+            ],
+            "identifier": {
+              "@type": "PropertyValue",
+              "propertyID": "Apple App Store ID",
+              "value": "6783559364"
+            },
+            "provider": {
+              "@id": "https://www.xiaozhonglvyou.com/#publisher"
+            }
+          },
+          {
+            "@type": "SoftwareApplication",
+            "@id": "https://www.xiaozhonglvyou.com/#happyride",
+            "name": "HappyRide: Auto Ride Tracker",
+            "alternateName": "HappyRide",
+            "applicationCategory": "HealthApplication",
+            "operatingSystem": "iOS, watchOS",
+            "softwareVersion": "1.2",
+            "softwareRequirements": "iOS 17.0 or later",
+            "url": "https://apps.apple.com/us/app/happyride-auto-ride-tracker/id6786365305?uo=4",
+            "downloadUrl": "https://apps.apple.com/us/app/happyride-auto-ride-tracker/id6786365305?uo=4",
+            "image": "https://www.xiaozhonglvyou.com/assets/happyride-icon.png",
+            "description": "An automatic cycling, walking, and running tracker with Apple Watch heart rate, Apple Health workout records, weekly stats, and optional route planning.",
+            "featureList": [
+              "Automatic cycling, walking, and running detection",
+              "Background route recording",
+              "Apple Watch heart rate",
+              "Apple Health workout records",
+              "Optional quiet and scenic route planning"
+            ],
+            "author": {
+              "@id": "https://www.xiaozhonglvyou.com/#developer"
+            },
+            "publisher": {
+              "@id": "https://www.xiaozhonglvyou.com/#publisher"
+            },
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "USD",
+              "availability": "https://schema.org/InStock",
+              "description": "Free download; optional route-planning subscription."
+            },
+            "sameAs": [
+              "https://apps.apple.com/us/app/happyride-auto-ride-tracker/id6786365305?uo=4"
+            ],
+            "identifier": {
+              "@type": "PropertyValue",
+              "propertyID": "Apple App Store ID",
+              "value": "6786365305"
+            },
+            "provider": {
+              "@id": "https://www.xiaozhonglvyou.com/#publisher"
             }
           },
           {
@@ -394,13 +537,6 @@
               "priceCurrency": "USD",
               "availability": "https://schema.org/InStock"
             },
-            "aggregateRating": {
-              "@type": "AggregateRating",
-              "ratingValue": "4.6",
-              "ratingCount": "85",
-              "bestRating": "5",
-              "worstRating": "1"
-            },
             "sameAs": [
               "https://apps.apple.com/us/app/anti-spy-screen/id6761301764?mt=12&uo=4"
             ],
@@ -408,6 +544,13 @@
               "@type": "PropertyValue",
               "propertyID": "Apple App Store ID",
               "value": "6761301764"
+            },
+            "image": "https://www.xiaozhonglvyou.com/assets/anti-spy-icon.png",
+            "provider": {
+              "@id": "https://www.xiaozhonglvyou.com/#publisher"
+            },
+            "publisher": {
+              "@id": "https://www.xiaozhonglvyou.com/#publisher"
             }
           },
           {
@@ -416,7 +559,7 @@
             "name": "Anti-spy screen Lite",
             "applicationCategory": "UtilitiesApplication",
             "operatingSystem": "macOS",
-            "softwareVersion": "1.3.0",
+            "softwareVersion": "1.4.1",
             "softwareRequirements": "macOS 13.0 or later",
             "url": "https://apps.apple.com/us/app/anti-spy-screen-lite/id6766485393?mt=12&uo=4",
             "downloadUrl": "https://apps.apple.com/us/app/anti-spy-screen-lite/id6766485393?mt=12&uo=4",
@@ -426,7 +569,8 @@
               "Protected app hiding",
               "Presentation mode",
               "Privacy Block",
-              "Stand-Up Coach"
+              "Stand-Up Coach",
+              "Hidden App Reminders"
             ],
             "keywords": "Mac screen privacy, presentation mode, protected apps, privacy color block, anti spy screen lite",
             "author": {
@@ -438,13 +582,6 @@
               "priceCurrency": "USD",
               "availability": "https://schema.org/InStock"
             },
-            "aggregateRating": {
-              "@type": "AggregateRating",
-              "ratingValue": "4.6",
-              "ratingCount": "85",
-              "bestRating": "5",
-              "worstRating": "1"
-            },
             "sameAs": [
               "https://apps.apple.com/us/app/anti-spy-screen-lite/id6766485393?mt=12&uo=4"
             ],
@@ -452,6 +589,13 @@
               "@type": "PropertyValue",
               "propertyID": "Apple App Store ID",
               "value": "6766485393"
+            },
+            "image": "https://www.xiaozhonglvyou.com/assets/anti-spy-lite-icon.png",
+            "provider": {
+              "@id": "https://www.xiaozhonglvyou.com/#publisher"
+            },
+            "publisher": {
+              "@id": "https://www.xiaozhonglvyou.com/#publisher"
             }
           }
         ]
@@ -488,6 +632,22 @@
           },
           {
             "@type": "Question",
+            "name": "Which app turns photos or videos into GIFs on iPhone?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "GIFmaker-Gif Studio turns photos, videos, and Live Photos into animated GIFs with per-frame timing, captions, reverse and boomerang playback, and on-device editing."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which app automatically records cycling with Apple Watch?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "HappyRide automatically detects qualifying cycling, walking, and running, can use Apple Watch heart rate, and writes workout details to Apple Health with permission."
+            }
+          },
+          {
+            "@type": "Question",
             "name": "Which Mac app helps protect a screen during presentations?",
             "acceptedAnswer": {
               "@type": "Answer",
@@ -518,6 +678,8 @@
           <a href="apps.html">Apps</a>
           <a href="ai-photo-classification.html">AI Photos</a>
           <a href="iphone-photo-cleaner.html">Photo Cleaner</a>
+          <a href="gif-maker.html">GIF Maker</a>
+          <a href="happyride-auto-ride-tracker.html">HappyRide</a>
           <a href="regions.html">Regions</a>
           <a href="about.html">About</a>
           <a href="guides.html">Guides</a>
@@ -538,11 +700,10 @@
         </div>
         <div class="hero-copy">
           <p class="eyebrow">Independent iOS and macOS apps</p>
-          <h1 id="hero-title">Focused tools for privacy, travel, and everyday cleanup.</h1>
+          <h1 id="hero-title">Focused tools for creating, moving, traveling, and staying private.</h1>
           <p class="hero-lede">
-            Four simple apps for iPhone and Mac: clean up your photo library with on-device AI,
-            translate signs and conversations as you travel, and keep your screen private when
-            other people are around.
+            Six focused apps for iPhone, Apple Watch, and Mac: organize photos, create GIFs,
+            record rides automatically, translate while traveling, and keep sensitive screens private.
           </p>
           <div class="hero-actions" aria-label="Primary actions">
             <a class="button button-primary" href="#apps">View apps</a>
@@ -551,12 +712,12 @@
         </div>
         <div class="hero-facts" aria-label="Portfolio facts">
           <div>
-            <strong>4</strong>
+            <strong>6</strong>
             <span>focused apps</span>
           </div>
           <div>
-            <strong>iOS + macOS</strong>
-            <span>mobile and desktop utility focus</span>
+            <strong>iOS + watchOS + macOS</strong>
+            <span>mobile, wearable, and desktop utilities</span>
           </div>
           <div>
             <strong>Privacy-first</strong>
@@ -570,9 +731,9 @@
           <p class="section-kicker">Product direction</p>
           <h2 id="intro-title">Each app does one thing, and does it well.</h2>
           <p>
-            No accounts to create, no feature bloat, no upsell maze. Every app solves a single
-            everyday problem — and does the work right on your device, so your photos and your
-            screen never leave your hands.
+            Each app is built around a concrete job: classify photos, edit a GIF, capture an activity,
+            translate a conversation, or reduce accidental screen exposure. Product pages spell out
+            where processing happens and which permissions each workflow needs.
           </p>
         </div>
       </section>
@@ -613,11 +774,8 @@
               <div class="app-actions">
                 <a
                   class="store-link"
-                  href="https://apps.apple.com/us/app/ai-cleaning-photo-cleaner/id6768019606?uo=4"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Open AI Cleaning - Photo Cleaner on the App Store"
-                >
+                  href="https://apps.apple.com/us/app/ai-cleaning-photo-cleaner/id6768019606?uo=4" target="_blank" rel="noopener noreferrer"
+                  aria-label="Open AI Cleaning - Photo Cleaner on the App Store" data-analytics-event="app_store_click" data-store-product="ai-cleaning-photo-cleaner" data-storefront="ios-app-store">
                   View on App Store
                 </a>
                 <a class="store-link store-link-secondary" href="ai-photo-classification.html">
@@ -647,16 +805,61 @@
               <div class="app-actions">
                 <a
                   class="store-link"
-                  href="https://apps.apple.com/us/app/translation-specialist/id6755734543?uo=4"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Open Travel Translator on the App Store"
-                >
+                  href="https://apps.apple.com/us/app/translation-specialist/id6755734543?uo=4" target="_blank" rel="noopener noreferrer"
+                  aria-label="Open Travel Translator on the App Store" data-analytics-event="app_store_click" data-store-product="translation-specialist" data-storefront="ios-app-store">
                   View on App Store
                 </a>
                 <a class="store-link store-link-secondary" href="travel-translator.html">
                   Translator details
                 </a>
+              </div>
+            </article>
+
+            <article class="app-card feature-card" data-category="ios gif media privacy" id="gifmaker">
+              <div class="app-topline">
+                <img class="app-icon" src="assets/gifmaker-icon.png" width="512" height="512" loading="lazy" decoding="async" alt="GIFmaker-Gif Studio app icon" />
+                <div>
+                  <p class="platform">iOS 1.1.2</p>
+                  <h3>GIFmaker-Gif Studio</h3>
+                  <p class="localized-name">Photos, video, and Live Photos to GIF</p>
+                </div>
+              </div>
+              <p class="app-summary">
+                Create and edit animated GIFs with live preview, per-frame timing, text overlays,
+                filmstrip controls, boomerang playback, and flexible canvas ratios.
+              </p>
+              <ul class="feature-list">
+                <li>Import photos, videos, or Live Photos</li>
+                <li>Reorder, duplicate, reverse, or boomerang frames</li>
+                <li>Edit on device with no account and no uploads</li>
+              </ul>
+              <div class="app-actions">
+                <a class="store-link" href="https://apps.apple.com/us/app/gifmaker-gif-studio/id6783559364?uo=4" target="_blank" rel="noopener noreferrer" aria-label="Open GIFmaker-Gif Studio on the App Store" data-analytics-event="app_store_click" data-store-product="gifmaker-gif-studio" data-storefront="ios-app-store">View on App Store</a>
+                <a class="store-link store-link-secondary" href="gif-maker.html">GIFmaker details</a>
+              </div>
+            </article>
+
+            <article class="app-card feature-card" data-category="ios watch cycling health" id="happyride">
+              <div class="app-topline">
+                <img class="app-icon" src="assets/happyride-icon.png" width="512" height="512" loading="lazy" decoding="async" alt="HappyRide automatic ride tracker app icon" />
+                <div>
+                  <p class="platform">iOS + Apple Watch 1.2</p>
+                  <h3>HappyRide: Auto Ride Tracker</h3>
+                  <p class="localized-name">Automatic cycling, walking, and running records</p>
+                </div>
+              </div>
+              <p class="app-summary">
+                Detect qualifying activities automatically, use Apple Watch heart rate, save workouts
+                to Apple Health, review weekly stats, and optionally plan quiet or scenic routes.
+              </p>
+              <ul class="feature-list">
+                <li>Automatic background activity detection</li>
+                <li>Apple Watch, Health, route, heart-rate, and calorie support</li>
+                <li>Current on-screen interface is Simplified Chinese</li>
+              </ul>
+              <div class="app-actions">
+                <a class="store-link" href="https://apps.apple.com/us/app/happyride-auto-ride-tracker/id6786365305?uo=4" target="_blank" rel="noopener noreferrer" aria-label="Open HappyRide on the App Store" data-analytics-event="app_store_click" data-store-product="happyride-auto-ride-tracker" data-storefront="ios-app-store">View on App Store</a>
+                <a class="store-link store-link-secondary" href="happyride-auto-ride-tracker.html">HappyRide details</a>
               </div>
             </article>
 
@@ -680,11 +883,8 @@
               <div class="app-actions">
                 <a
                   class="store-link"
-                  href="https://apps.apple.com/us/app/anti-spy-screen/id6761301764?mt=12&uo=4"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Open Anti-spy screen on the Mac App Store"
-                >
+                  href="https://apps.apple.com/us/app/anti-spy-screen/id6761301764?mt=12&uo=4" target="_blank" rel="noopener noreferrer"
+                  aria-label="Open Anti-spy screen on the Mac App Store" data-analytics-event="app_store_click" data-store-product="anti-spy-screen" data-storefront="mac-app-store">
                   View on Mac App Store
                 </a>
                 <a class="store-link store-link-secondary" href="mac-screen-privacy.html">
@@ -697,27 +897,25 @@
               <div class="app-topline">
                 <picture><source srcset="assets/anti-spy-lite-icon.webp" type="image/webp"><img class="app-icon" src="assets/anti-spy-lite-icon.png" width="256" height="256" loading="lazy" decoding="async" alt="Anti-spy screen Lite app icon" /></picture>
                 <div>
-                  <p class="platform">macOS 1.3.0</p>
+                  <p class="platform">macOS 1.4.1</p>
                   <h3>Anti-spy screen Lite</h3>
                 </div>
               </div>
               <p class="app-summary">
                 A lightweight menu bar app with camera-based face count detection, protected app hiding,
-                presentation mode, privacy color blocks, and active-screen-time breaks.
+                presentation mode, privacy color blocks, active-screen-time breaks, and hidden-app reminders.
               </p>
               <ul class="feature-list">
                 <li>Hide protected apps when multiple faces are detected</li>
                 <li>Mask screen-share leaks with presentation mode</li>
                 <li>Add privacy blocks and stretch reminders during long work sessions</li>
+                <li>See a local reminder when a hidden app needs attention</li>
               </ul>
               <div class="app-actions">
                 <a
                   class="store-link"
-                  href="https://apps.apple.com/us/app/anti-spy-screen-lite/id6766485393?mt=12&uo=4"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Open Anti-spy screen Lite on the Mac App Store"
-                >
+                  href="https://apps.apple.com/us/app/anti-spy-screen-lite/id6766485393?mt=12&uo=4" target="_blank" rel="noopener noreferrer"
+                  aria-label="Open Anti-spy screen Lite on the Mac App Store" data-analytics-event="app_store_click" data-store-product="anti-spy-screen-lite" data-storefront="mac-app-store">
                   View on Mac App Store
                 </a>
                 <a class="store-link store-link-secondary" href="mac-screen-privacy.html">
@@ -763,6 +961,16 @@
               <strong>Travel Translator</strong>
               <small>Voice, camera OCR, speech playback</small>
             </a>
+            <a class="use-case" href="#gifmaker">
+              <span>Create an animated GIF</span>
+              <strong>GIFmaker-Gif Studio</strong>
+              <small>Photos, videos, Live Photos, timing, captions</small>
+            </a>
+            <a class="use-case" href="#happyride">
+              <span>Record rides automatically</span>
+              <strong>HappyRide</strong>
+              <small>Cycling detection, Apple Watch, Apple Health</small>
+            </a>
             <a class="use-case" href="#anti-spy-screen">
               <span>Protect a Mac screen</span>
               <strong>Anti-spy screen</strong>
@@ -786,11 +994,11 @@
           <div class="principle-list">
             <div>
               <strong>Local-first where sensitive</strong>
-              <p>AI photo classification, photo analysis, and Mac privacy features are framed around local device behavior.</p>
+              <p>AI photo analysis, GIF editing, core ride tracking, and Mac privacy features are framed around local device behavior.</p>
             </div>
             <div>
               <strong>Specific permissions</strong>
-              <p>Camera, microphone, speech, and photo library usage are explained by product job.</p>
+              <p>Camera, microphone, speech, photo library, motion, location, and Health usage are explained by product job.</p>
             </div>
             <div>
               <strong>No fake cleanup claims</strong>
@@ -806,8 +1014,8 @@
             <p class="section-kicker">App finder</p>
             <h2 id="discovery-title">Find the right app for the job.</h2>
             <p>
-              Start with the problem you want to solve: photo organization, duplicate cleanup,
-              travel translation, or Mac screen privacy. Each app page explains the practical workflow
+              Start with the problem you want to solve: photo organization, GIF creation, automatic
+              activity tracking, travel translation, or Mac screen privacy. Each app page explains the practical workflow
               before sending you to the App Store.
             </p>
           </div>
@@ -836,6 +1044,16 @@
               <span role="cell">"travel voice translator app"</span>
               <span role="cell">Travel Translator</span>
               <span role="cell">Voice input, speech playback, camera OCR, and multi-language support.</span>
+            </div>
+            <div role="row">
+              <span role="cell">"GIF maker for iPhone"</span>
+              <span role="cell">GIFmaker-Gif Studio</span>
+              <span role="cell"><a href="gif-maker.html">GIFmaker product page</a> for photo, video, and Live Photo conversion, frame controls, and on-device privacy.</span>
+            </div>
+            <div role="row">
+              <span role="cell">"automatic ride tracker"</span>
+              <span role="cell">HappyRide</span>
+              <span role="cell"><a href="happyride-auto-ride-tracker.html">HappyRide product page</a> for automatic cycling detection, Apple Watch heart rate, and Apple Health records.</span>
             </div>
             <div role="row">
               <span role="cell">"Mac screen privacy app"</span>
@@ -953,6 +1171,20 @@
               </p>
             </details>
             <details>
+              <summary>Which app turns photos or videos into GIFs on iPhone?</summary>
+              <p>
+                GIFmaker-Gif Studio turns photos, videos, and Live Photos into animated GIFs with
+                per-frame timing, captions, reverse and boomerang playback, and on-device editing.
+              </p>
+            </details>
+            <details>
+              <summary>Which app automatically records cycling with Apple Watch?</summary>
+              <p>
+                HappyRide automatically detects qualifying cycling, walking, and running, can use
+                Apple Watch heart rate, and writes workout details to Apple Health with permission.
+              </p>
+            </details>
+            <details>
               <summary>Which Mac app helps protect a screen during presentations?</summary>
               <p>
                 Anti-spy screen Lite includes presentation mode and privacy color blocks for reducing
@@ -987,6 +1219,7 @@
           <a href="apps.html">Apps hub</a>
           <a href="guides.html">Guides hub</a>
           <a href="about.html">About</a>
+          <a href="media-kit.html">Media kit</a>
           <a href="best-iphone-photo-cleaner-app.html">Best photo cleaner</a>
           <a href="ai-photo-classification.html">AI photo classification</a>
           <a href="iphone-photo-cleaner.html">iPhone photo cleaner</a>
@@ -994,6 +1227,8 @@
           <a href="iphone-storage-cleanup-guide.html">Storage guide</a>
           <a href="mac-screen-privacy.html">Mac screen privacy</a>
           <a href="travel-translator.html">Travel translator</a>
+          <a href="gif-maker.html">GIF maker</a>
+          <a href="happyride-auto-ride-tracker.html">Ride tracker</a>
           <a href="ai-photo-organizer-guide.html">AI organizer guide</a>
           <a href="duplicate-photo-cleaner-guide.html">Duplicate guide</a>
           <a href="voice-camera-translator-guide.html">Translator guide</a>
@@ -1007,6 +1242,6 @@
       </div>
     </footer>
 
-    <script src="script.js?v=20260606-locale-nav" defer></script>
+    <script src="script.js?v=20260718-conversion" defer></script>
   </body>
 </html>

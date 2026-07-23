@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-18",
+  "generatedAt": "2026-07-23",
   "origin": "https://www.xiaozhonglvyou.com",
   "pageCount": 51,
   "pages": [
@@ -13,7 +13,7 @@
       "lang": "en",
       "category": "support",
       "canonical": "https://www.xiaozhonglvyou.com/about.html",
-      "lastmod": "2026-07-18",
+      "lastmod": "2026-07-23",
       "changefreq": "weekly",
       "priority": 1,
       "images": [],
@@ -72,13 +72,15 @@
       "lang": "en",
       "category": "guide",
       "canonical": "https://www.xiaozhonglvyou.com/ai-photo-organizer-guide.html",
-      "lastmod": "2026-07-13",
+      "lastmod": "2026-07-23",
       "changefreq": "weekly",
       "priority": 1,
       "images": [],
       "headings": [
+        "How to Classify iPhone Photos with AI Before Cleanup",
         "Useful categories make review faster and less risky.",
-        "What to check before deleting photos."
+        "What to check before deleting photos.",
+        "Related guides and resources"
       ]
     },
     {
@@ -90,7 +92,7 @@
       "lang": "en",
       "category": "hub",
       "canonical": "https://www.xiaozhonglvyou.com/apps.html",
-      "lastmod": "2026-07-18",
+      "lastmod": "2026-07-23",
       "changefreq": "weekly",
       "priority": 1,
       "images": [
@@ -115,7 +117,7 @@
       "lang": "en",
       "category": "guide",
       "canonical": "https://www.xiaozhonglvyou.com/best-iphone-photo-cleaner-app.html",
-      "lastmod": "2026-07-13",
+      "lastmod": "2026-07-23",
       "changefreq": "weekly",
       "priority": 1,
       "images": [],
@@ -123,7 +125,8 @@
         "What to check before installing a photo cleaner app.",
         "Match your cleanup problem to the right guide.",
         "AI Cleaning is strongest when your library needs organization before cleanup.",
-        "Questions people ask before installing."
+        "Questions people ask before installing.",
+        "Related guides and resources"
       ]
     },
     {
@@ -135,7 +138,7 @@
       "lang": "en-CA",
       "category": "regional",
       "canonical": "https://www.xiaozhonglvyou.com/canada-australia-apps.html",
-      "lastmod": "2026-07-18",
+      "lastmod": "2026-07-23",
       "changefreq": "weekly",
       "priority": 1,
       "images": [],
@@ -153,7 +156,7 @@
       "lang": "de-DE",
       "category": "regional",
       "canonical": "https://www.xiaozhonglvyou.com/de-de.html",
-      "lastmod": "2026-07-18",
+      "lastmod": "2026-07-23",
       "changefreq": "weekly",
       "priority": 1,
       "images": [],
@@ -172,7 +175,7 @@
       "lang": "en",
       "category": "regional",
       "canonical": "https://www.xiaozhonglvyou.com/directory.html",
-      "lastmod": "2026-07-18",
+      "lastmod": "2026-07-23",
       "changefreq": "weekly",
       "priority": 1,
       "images": [],
@@ -209,13 +212,15 @@
       "lang": "en",
       "category": "guide",
       "canonical": "https://www.xiaozhonglvyou.com/duplicate-photo-cleaner-guide.html",
-      "lastmod": "2026-07-13",
+      "lastmod": "2026-07-23",
       "changefreq": "weekly",
       "priority": 1,
       "images": [],
       "headings": [
+        "How to Find and Clean Duplicate Photos on iPhone",
         "Review exact duplicates, similar shots, and low-quality media separately.",
-        "Duplicate photo cleanup questions."
+        "Duplicate photo cleanup questions.",
+        "Related guides and resources"
       ]
     },
     {
@@ -227,7 +232,7 @@
       "lang": "es-ES",
       "category": "regional",
       "canonical": "https://www.xiaozhonglvyou.com/es-es.html",
-      "lastmod": "2026-07-18",
+      "lastmod": "2026-07-23",
       "changefreq": "weekly",
       "priority": 1,
       "images": [],
@@ -246,7 +251,7 @@
       "lang": "fr-FR",
       "category": "regional",
       "canonical": "https://www.xiaozhonglvyou.com/fr-fr.html",
-      "lastmod": "2026-07-18",
+      "lastmod": "2026-07-23",
       "changefreq": "weekly",
       "priority": 1,
       "images": [],
@@ -265,7 +270,7 @@
       "lang": "zh-CN",
       "category": "regional",
       "canonical": "https://www.xiaozhonglvyou.com/gif-maker-cn.html",
-      "lastmod": "2026-07-18",
+      "lastmod": "2026-07-23",
       "changefreq": "weekly",
       "priority": 1,
       "images": [
@@ -288,7 +293,7 @@
       "lang": "en",
       "category": "page",
       "canonical": "https://www.xiaozhonglvyou.com/gif-maker.html",
-      "lastmod": "2026-07-18",
+      "lastmod": "2026-07-23",
       "changefreq": "weekly",
       "priority": 1,
       "images": [
@@ -311,7 +316,7 @@
       "lang": "en",
       "category": "hub",
       "canonical": "https://www.xiaozhonglvyou.com/guides.html",
-      "lastmod": "2026-07-18",
+      "lastmod": "2026-07-23",
       "changefreq": "weekly",
       "priority": 1,
       "images": [],
@@ -329,7 +334,7 @@
       "lang": "zh-CN",
       "category": "regional",
       "canonical": "https://www.xiaozhonglvyou.com/happyride-auto-ride-tracker-cn.html",
-      "lastmod": "2026-07-18",
+      "lastmod": "2026-07-23",
       "changefreq": "weekly",
       "priority": 1,
       "images": [
@@ -353,7 +358,7 @@
       "lang": "en",
       "category": "page",
       "canonical": "https://www.xiaozhonglvyou.com/happyride-auto-ride-tracker.html",
-      "lastmod": "2026-07-18",
+      "lastmod": "2026-07-23",
       "changefreq": "weekly",
       "priority": 1,
       "images": [
@@ -377,7 +382,7 @@
       "lang": "en",
       "category": "home",
       "canonical": "https://www.xiaozhonglvyou.com/",
-      "lastmod": "2026-07-18",
+      "lastmod": "2026-07-23",
       "changefreq": "weekly",
       "priority": 1,
       "images": [
@@ -537,14 +542,15 @@
       "lang": "en",
       "category": "guide",
       "canonical": "https://www.xiaozhonglvyou.com/iphone-storage-cleanup-guide.html",
-      "lastmod": "2026-07-13",
+      "lastmod": "2026-07-23",
       "changefreq": "weekly",
       "priority": 1,
       "images": [],
       "headings": [
         "Start with content you can actually review.",
         "Classification makes cleanup safer.",
-        "iPhone storage cleanup questions."
+        "iPhone storage cleanup questions.",
+        "Related guides and resources"
       ]
     },
     {
@@ -556,7 +562,7 @@
       "lang": "it-IT",
       "category": "regional",
       "canonical": "https://www.xiaozhonglvyou.com/it-it.html",
-      "lastmod": "2026-07-18",
+      "lastmod": "2026-07-23",
       "changefreq": "weekly",
       "priority": 1,
       "images": [],
@@ -574,7 +580,7 @@
       "lang": "ja-JP",
       "category": "regional",
       "canonical": "https://www.xiaozhonglvyou.com/ja-jp.html",
-      "lastmod": "2026-07-18",
+      "lastmod": "2026-07-23",
       "changefreq": "weekly",
       "priority": 1,
       "images": [],
@@ -593,7 +599,7 @@
       "lang": "ko-KR",
       "category": "regional",
       "canonical": "https://www.xiaozhonglvyou.com/ko-kr.html",
-      "lastmod": "2026-07-18",
+      "lastmod": "2026-07-23",
       "changefreq": "weekly",
       "priority": 1,
       "images": [],
@@ -657,7 +663,7 @@
       "lang": "en",
       "category": "page",
       "canonical": "https://www.xiaozhonglvyou.com/media-kit.html",
-      "lastmod": "2026-07-18",
+      "lastmod": "2026-07-23",
       "changefreq": "weekly",
       "priority": 1,
       "images": [
@@ -683,7 +689,7 @@
       "lang": "en-NL",
       "category": "regional",
       "canonical": "https://www.xiaozhonglvyou.com/netherlands-nordics-apps.html",
-      "lastmod": "2026-07-18",
+      "lastmod": "2026-07-23",
       "changefreq": "weekly",
       "priority": 1,
       "images": [],
@@ -719,7 +725,7 @@
       "lang": "en",
       "category": "support",
       "canonical": "https://www.xiaozhonglvyou.com/privacy.html",
-      "lastmod": "2026-07-18",
+      "lastmod": "2026-07-23",
       "changefreq": "weekly",
       "priority": 1,
       "images": [],
@@ -760,7 +766,7 @@
       "lang": "en",
       "category": "hub",
       "canonical": "https://www.xiaozhonglvyou.com/regions.html",
-      "lastmod": "2026-07-18",
+      "lastmod": "2026-07-23",
       "changefreq": "weekly",
       "priority": 1,
       "images": [],
@@ -779,13 +785,15 @@
       "lang": "en",
       "category": "guide",
       "canonical": "https://www.xiaozhonglvyou.com/screen-sharing-privacy-guide.html",
-      "lastmod": "2026-07-14",
+      "lastmod": "2026-07-23",
       "changefreq": "weekly",
       "priority": 1,
       "images": [],
       "headings": [
+        "How to Protect Your Mac Screen During Presentations and Screen Sharing",
         "Focus on moments when private windows become visible by accident.",
-        "Common Mac privacy questions."
+        "Common Mac privacy questions.",
+        "Related guides and resources"
       ]
     },
     {
@@ -797,7 +805,7 @@
       "lang": "en",
       "category": "regional",
       "canonical": "https://www.xiaozhonglvyou.com/search.html",
-      "lastmod": "2026-07-18",
+      "lastmod": "2026-07-23",
       "changefreq": "weekly",
       "priority": 1,
       "images": [],
@@ -856,7 +864,7 @@
       "lang": "en-SG",
       "category": "regional",
       "canonical": "https://www.xiaozhonglvyou.com/singapore-apps.html",
-      "lastmod": "2026-07-18",
+      "lastmod": "2026-07-23",
       "changefreq": "weekly",
       "priority": 1,
       "images": [],
@@ -874,7 +882,7 @@
       "lang": "en",
       "category": "support",
       "canonical": "https://www.xiaozhonglvyou.com/support.html",
-      "lastmod": "2026-07-18",
+      "lastmod": "2026-07-23",
       "changefreq": "weekly",
       "priority": 1,
       "images": [],
@@ -892,7 +900,7 @@
       "lang": "en-CH",
       "category": "regional",
       "canonical": "https://www.xiaozhonglvyou.com/switzerland-apps.html",
-      "lastmod": "2026-07-18",
+      "lastmod": "2026-07-23",
       "changefreq": "weekly",
       "priority": 1,
       "images": [],
@@ -954,7 +962,7 @@
       "lang": "en-GB",
       "category": "regional",
       "canonical": "https://www.xiaozhonglvyou.com/uk-apps.html",
-      "lastmod": "2026-07-18",
+      "lastmod": "2026-07-23",
       "changefreq": "weekly",
       "priority": 1,
       "images": [],
@@ -972,7 +980,7 @@
       "lang": "en-US",
       "category": "regional",
       "canonical": "https://www.xiaozhonglvyou.com/us-apps.html",
-      "lastmod": "2026-07-18",
+      "lastmod": "2026-07-23",
       "changefreq": "weekly",
       "priority": 1,
       "images": [],
@@ -990,13 +998,15 @@
       "lang": "en",
       "category": "guide",
       "canonical": "https://www.xiaozhonglvyou.com/voice-camera-translator-guide.html",
-      "lastmod": "2026-07-13",
+      "lastmod": "2026-07-23",
       "changefreq": "weekly",
       "priority": 1,
       "images": [],
       "headings": [
+        "How to Use Voice and Camera Translation While Traveling",
         "Different translation modes solve different moments.",
-        "Common travel translation questions."
+        "Common travel translation questions.",
+        "Related guides and resources"
       ]
     },
     {
@@ -1008,7 +1018,7 @@
       "lang": "zh-Hans",
       "category": "regional",
       "canonical": "https://www.xiaozhonglvyou.com/zh-cn.html",
-      "lastmod": "2026-07-18",
+      "lastmod": "2026-07-23",
       "changefreq": "weekly",
       "priority": 1,
       "images": [
@@ -1031,7 +1041,7 @@
       "lang": "zh-Hant",
       "category": "regional",
       "canonical": "https://www.xiaozhonglvyou.com/zh-hant.html",
-      "lastmod": "2026-07-18",
+      "lastmod": "2026-07-23",
       "changefreq": "weekly",
       "priority": 1,
       "images": [],
