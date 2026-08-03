@@ -88,7 +88,7 @@ Search index: https://www.xiaozhonglvyou.com/search-index.json
 - Endpoints: `www.bing.com/indexnow`, `api.indexnow.org/IndexNow`, `yandex.com/indexnow`, `search.seznam.cz/indexnow`, `searchadvisor.naver.com/indexnow`
 - Validation: rejects empty, duplicate, over-limit, and off-domain sitemap URL lists before submission
 - Evidence: each workflow run saves `indexnow-report.json` as a 30-day GitHub Actions artifact
-- Latest verified automated run: the 2026-07-17 workflow completed successfully after deployment of the 51-URL sitemap; each run preserves endpoint-level evidence in `indexnow-report.json`.
+- Latest verified automated run: the 2026-08-03 workflow completed successfully after deployment of the 51-URL sitemap; each run preserves endpoint-level evidence in `indexnow-report.json`.
 
 ### Bing Readiness Audit
 - Script: `node scripts/audit-bing-readiness.mjs`
