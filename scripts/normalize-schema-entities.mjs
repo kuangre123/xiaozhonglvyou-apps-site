@@ -45,7 +45,7 @@ const products = new Map([
       image: `${origin}/assets/anti-spy-icon.png`,
       applicationCategory: "UtilitiesApplication",
       operatingSystem: "macOS",
-      softwareVersion: "1.5.0",
+      softwareVersion: "1.5.1",
       price: "2.99",
       priceCurrency: "USD"
     }

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-23",
+  "generatedAt": "2026-08-03",
   "origin": "https://www.xiaozhonglvyou.com",
   "pageCount": 51,
   "pages": [
@@ -382,7 +382,7 @@
       "lang": "en",
       "category": "home",
       "canonical": "https://www.xiaozhonglvyou.com/",
-      "lastmod": "2026-07-23",
+      "lastmod": "2026-08-03",
       "changefreq": "weekly",
       "priority": 1,
       "images": [
@@ -618,7 +618,7 @@
       "lang": "zh-Hans",
       "category": "regional",
       "canonical": "https://www.xiaozhonglvyou.com/mac-screen-privacy-cn.html",
-      "lastmod": "2026-07-17",
+      "lastmod": "2026-08-03",
       "changefreq": "weekly",
       "priority": 1,
       "images": [
@@ -640,7 +640,7 @@
       "lang": "en",
       "category": "guide",
       "canonical": "https://www.xiaozhonglvyou.com/mac-screen-privacy.html",
-      "lastmod": "2026-07-17",
+      "lastmod": "2026-08-03",
       "changefreq": "weekly",
       "priority": 1,
       "images": [
@@ -663,7 +663,7 @@
       "lang": "en",
       "category": "page",
       "canonical": "https://www.xiaozhonglvyou.com/media-kit.html",
-      "lastmod": "2026-07-23",
+      "lastmod": "2026-08-03",
       "changefreq": "weekly",
       "priority": 1,
       "images": [
@@ -785,7 +785,7 @@
       "lang": "en",
       "category": "guide",
       "canonical": "https://www.xiaozhonglvyou.com/screen-sharing-privacy-guide.html",
-      "lastmod": "2026-07-23",
+      "lastmod": "2026-08-03",
       "changefreq": "weekly",
       "priority": 1,
       "images": [],

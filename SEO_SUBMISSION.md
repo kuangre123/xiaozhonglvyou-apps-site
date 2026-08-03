@@ -40,7 +40,7 @@ Search index: https://www.xiaozhonglvyou.com/search-index.json
 - `sitemap-global.txt` lists the same 40 global and international URLs in plain text format
 - `sitemap-articles.txt` lists the same 23 Article/guide URLs in plain text format
 - `sitemap-cn.txt` lists the same 11 Chinese-language URLs in plain text format
-- `feed.xml` (RSS 2.0, 23 items) reflects Article updates through 2026-07-17; `atom.xml` remains a curated Atom feed with 11 entries
+- `feed.xml` (RSS 2.0, 23 items) reflects Article updates through 2026-08-03; `atom.xml` remains a curated Atom feed with 11 entries
 - `search-index.json` with 51 pages, includes title/description/h1/lang/category/headings
 - `directory.html` human-readable page directory with grouped links
 - `search.html` client-side site search with ?q= parameter support
@@ -102,7 +102,7 @@ Search index: https://www.xiaozhonglvyou.com/search-index.json
 - Latest China-focused sitemap validation: sitemap-cn.xml contains 11 Chinese-language URLs and is advertised from robots.txt and sitemap-index.xml.
 - Latest China-focused text sitemap validation: sitemap-cn.txt contains the same 11 Chinese-language URLs and is advertised from robots.txt.
 - Latest people-first content pass: the English and Simplified Chinese iPhone photo-cleaner pages now use the real product screen and document version 1.1.3, iOS 16 compatibility, nine explicit categories, on-device processing, and review-before-delete behavior checked against the current App Store listing on 2026-07-13. Regional and guide copy that addressed search traffic instead of readers was rewritten around practical user tasks.
-- Latest product evidence pass: Anti-spy screen Lite was refreshed to version 1.4.1, including hidden-app reminders, and the English and Simplified Chinese Mac privacy facts were rechecked against Apple's public records on 2026-07-17.
+- Latest product evidence pass: Anti-spy screen was refreshed to version 1.5.1 and Anti-spy screen Lite remains version 1.4.1; English and Simplified Chinese Mac privacy facts were rechecked against Apple's public records on 2026-08-03.
 - Latest app portfolio pass: GIFmaker 1.1.2 and HappyRide 1.2 now have English and Simplified Chinese product pages, App Store IDs, official icons, verified compatibility, SoftwareApplication entities, FAQs, hreflang pairs, Smart App Banners, support/privacy anchors, and sitemap/search discovery.
 - Latest entity pass: the site now separates the verified developer entity (`Bo Chen`) from the `CrazyAIAgent` publisher brand; page ownership, Article authorship, all six SoftwareApplication entities, and hub ItemLists use stable linked IDs.
 - Latest ASO pass: `ASO_ACTIONS.md` contains length-checked names, subtitles, 100-byte keyword fields, promotional text, screenshot order, product-specific App Store Connect URLs, and GA4 outbound-click measurement for GIFmaker and HappyRide. `scripts/audit-aso-readiness.mjs` reports PASS.
