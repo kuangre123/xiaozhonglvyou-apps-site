@@ -110,6 +110,10 @@ const pages = [
     ]
   },
   {
+    file: "automatic-bike-ride-tracker-iphone.html",
+    title: "Automatic Bike Ride Tracker for iPhone (2026 Guide)"
+  },
+  {
     file: "travel-translator.html",
     title: "Travel Translator for iPhone | Voice, Camera &amp; Offline",
     headline: [

@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "generatedAt": "2026-08-10",
   "origin": "https://www.xiaozhonglvyou.com",
-  "pageCount": 52,
+  "pageCount": 53,
   "pages": [
     {
       "url": "https://www.xiaozhonglvyou.com/about.html",
@@ -106,6 +106,29 @@
       "headings": [
         "Choose the app by job to be done.",
         "Pick the right utility before opening the App Store."
+      ]
+    },
+    {
+      "url": "https://www.xiaozhonglvyou.com/automatic-bike-ride-tracker-iphone.html",
+      "path": "/automatic-bike-ride-tracker-iphone.html",
+      "title": "Automatic Bike Ride Tracker for iPhone (2026 Guide)",
+      "description": "Track bike rides without pressing Start. Compare Apple Watch workout reminders with HappyRide automatic detection, permissions, Health sync, and limits.",
+      "h1": "Track a bike ride without pressing Start.",
+      "lang": "en",
+      "category": "page",
+      "canonical": "https://www.xiaozhonglvyou.com/automatic-bike-ride-tracker-iphone.html",
+      "lastmod": "2026-08-10",
+      "changefreq": "weekly",
+      "priority": 1,
+      "images": [],
+      "headings": [
+        "Use a reminder when you want control. Use detection when you forget.",
+        "Apple Workout reminder vs HappyRide automatic detection.",
+        "How to set up automatic bike ride tracking.",
+        "Automatic detection is convenient, not infallible.",
+        "Check the current behavior before choosing.",
+        "Automatic cycling questions answered.",
+        "HappyRide details and support"
       ]
     },
     {
@@ -322,7 +345,8 @@
       "images": [],
       "headings": [
         "Lead with AI smart photo classification.",
-        "Answer specific creation and privacy questions."
+        "Answer specific creation and privacy questions.",
+        "Understand automatic cycling before the next ride."
       ]
     },
     {
