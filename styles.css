@@ -1088,6 +1088,10 @@ summary {
   background: var(--line);
 }
 
+.intent-table.comparison-four [role="row"] {
+  grid-template-columns: minmax(150px, 0.82fr) repeat(3, minmax(210px, 1fr));
+}
+
 .intent-table span {
   padding: 18px;
   background: #fff;
@@ -1263,6 +1267,10 @@ summary {
 
   .intent-table [role="row"] {
     min-width: 820px;
+  }
+
+  .intent-table.comparison-four [role="row"] {
+    min-width: 1080px;
   }
 }
 

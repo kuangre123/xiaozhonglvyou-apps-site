@@ -51,10 +51,10 @@ const pages = [
   },
   {
     file: "best-iphone-photo-cleaner-app.html",
-    title: "Best Free iPhone Photo Cleaner App (2026 Guide)",
+    title: "How to Choose an iPhone Photo Cleaner (2026 Guide)",
     headline: [
-      "Best Photo Cleaner App for iPhone 2026",
-      "Best Free iPhone Photo Cleaner App (2026 Guide)"
+      "Best Free iPhone Photo Cleaner App (2026 Guide)",
+      "How to Choose an iPhone Photo Cleaner (2026 Guide)"
     ]
   },
   {
@@ -67,14 +67,14 @@ const pages = [
   },
   {
     file: "iphone-photo-cleaner-comparison.html",
-    title: "Best iPhone Photo Cleaner Apps (2026 Comparison)",
+    title: "Best iPhone Photo Cleaner Apps: 3 Compared (2026)",
     headline: [
-      "iPhone Photo Cleaner Apps Compared 2026",
-      "Best iPhone Photo Cleaner Apps: 2026 Comparison"
+      "Best iPhone Photo Cleaner Apps: 2026 Comparison",
+      "Best iPhone Photo Cleaner Apps: 3 Compared (2026)"
     ],
     h1: [
-      "Best iPhone photo cleaner apps compared: AI Cleaning vs Google Photos vs Gemini Photos.",
-      "Compare the best iPhone photo cleaner apps for 2026."
+      "Compare the best iPhone photo cleaner apps for 2026.",
+      "AI Cleaning vs Cleanup vs Cleaner Kit."
     ]
   },
   {
