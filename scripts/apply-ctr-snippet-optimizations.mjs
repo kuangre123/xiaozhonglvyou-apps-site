@@ -31,10 +31,15 @@ const pages = [
   },
   {
     file: "ai-photo-classification.html",
-    title: "AI Photo Classification for iPhone | On-Device Organizer",
+    title: "AI Photo Classification App for iPhone | 9 Smart Categories",
+    description: "Classify iPhone photos privately on-device into 9 useful categories, then review duplicates, screenshots, blurry shots, and large media before deleting.",
     headline: [
       "AI Photo Classification for iPhone",
-      "AI Photo Classification for iPhone"
+      "AI Photo Classification App for iPhone: 9 Smart Categories"
+    ],
+    h1: [
+      "AI photo classification for iPhone photo libraries.",
+      "Classify iPhone photos into 9 useful categories."
     ]
   },
   {
