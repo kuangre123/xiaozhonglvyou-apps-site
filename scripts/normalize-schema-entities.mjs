@@ -134,7 +134,8 @@ const hubLists = new Map([
         ["German iPhone Foto Cleaner Guide", `${origin}/iphone-foto-cleaner-de.html`],
         ["French Nettoyeur Photo iPhone Guide", `${origin}/nettoyeur-photo-iphone-fr.html`],
         ["Voice and Camera Translator Guide", `${origin}/voice-camera-translator-guide.html`],
-        ["Mac Screen Sharing Privacy Guide", `${origin}/screen-sharing-privacy-guide.html`]
+        ["Mac Screen Sharing Privacy Guide", `${origin}/screen-sharing-privacy-guide.html`],
+        ["Make a GIF on iPhone Guide", `${origin}/make-gif-on-iphone-guide.html`]
       ]
     }
   ],

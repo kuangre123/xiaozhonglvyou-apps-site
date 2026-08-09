@@ -103,10 +103,10 @@ const pages = [
   },
   {
     file: "happyride-auto-ride-tracker.html",
-    title: "Automatic Bike Ride Tracker | iPhone &amp; Apple Watch",
+    title: "Automatic Cycling Workout Tracker | iPhone &amp; Apple Watch",
     h1: [
       "HappyRide records the ride you forgot to start.",
-      "Automatic bike ride tracking, even when you forget to start."
+      "Automatic cycling workout tracking, even when you forget to start."
     ]
   },
   {

@@ -28,33 +28,33 @@ Search index: https://www.xiaozhonglvyou.com/search-index.json
 
 ## Completed On Site
 
-- 51 indexable HTML pages, 118 JSON-LD blocks, 168 top-level structured-data nodes, 0 parse errors
+- 52 indexable HTML pages, 126 JSON-LD blocks, 176 top-level structured-data nodes, 0 parse errors
 - `robots.txt` allows 26+ crawler UAs including Googlebot, Bingbot, DuckDuckBot, Baiduspider, Sogou, 360Spider, YisouSpider, Bytespider, PetalBot, and AI crawlers (GPTBot, ClaudeBot, PerplexityBot)
 - `robots.txt` advertises sitemap-index, sitemap.xml, sitemap-global.xml, sitemap-articles.xml, sitemap-cn.xml, sitemap.txt, sitemap-global.txt, sitemap-articles.txt, sitemap-cn.txt, feed.xml, atom.xml
-- `sitemap.xml` includes 51 URLs with per-page lastmod values through 2026-07-18, changefreq, priority, 413 hreflang alternate links, and 36 image entries
+- `sitemap.xml` includes 52 URLs with per-page lastmod values through 2026-08-10, changefreq, priority, 413 hreflang alternate links, and 37 image entries
 - `sitemap-index.xml` points to sitemap.xml, sitemap-global.xml, sitemap-articles.xml, sitemap-cn.xml, feed.xml, and atom.xml
 - `sitemap-global.xml` lists 40 global, English, and localized non-Chinese landing pages for Google, Bing, Yandex, DuckDuckGo, and other international search platform submissions
-- `sitemap-articles.xml` lists 23 Article/guide pages with per-page dateModified values from JSON-LD
+- `sitemap-articles.xml` lists 24 Article/guide pages with per-page dateModified values from JSON-LD
 - `sitemap-cn.xml` lists 11 Simplified and Traditional Chinese landing pages for Baidu, 360, Sogou, Shenma, and other Chinese search platform submissions
-- `sitemap.txt` lists 51 URLs in plain text format
+- `sitemap.txt` lists 52 URLs in plain text format
 - `sitemap-global.txt` lists the same 40 global and international URLs in plain text format
-- `sitemap-articles.txt` lists the same 23 Article/guide URLs in plain text format
+- `sitemap-articles.txt` lists the same 24 Article/guide URLs in plain text format
 - `sitemap-cn.txt` lists the same 11 Chinese-language URLs in plain text format
-- `feed.xml` (RSS 2.0, 23 items) reflects Article updates through 2026-08-03; `atom.xml` remains a curated Atom feed with 11 entries
-- `search-index.json` with 51 pages, includes title/description/h1/lang/category/headings
+- `feed.xml` and `atom.xml` each expose 24 Article entries with updates through 2026-08-10
+- `search-index.json` with 52 pages, includes title/description/h1/lang/category/headings
 - `directory.html` human-readable page directory with grouped links
 - `search.html` client-side site search with ?q= parameter support
 - `llms.txt` with full page descriptions and discovery signals
 - `security.txt` at root for responsible disclosure (E-E-A-T trust signal)
 
 ### Technical SEO
-- All 51 indexable pages: unique title, unique meta description, single H1, canonical, viewport, robots=index,follow
-- All 51 indexable pages: og:locale, og:image:secure_url, og:image:width/height/alt, og:site_name
+- All 52 indexable pages: unique title, unique meta description, single H1, canonical, viewport, robots=index,follow
+- All 52 indexable pages: og:locale, og:image:secure_url, og:image:width/height/alt, og:site_name
 - 32 single-product iOS pages expose validated Smart App Banner metadata with the correct app ID and canonical app argument
-- All 51 indexable pages: manifest.webmanifest link, preconnect for googletagmanager and apps.apple.com
+- All 52 indexable pages: manifest.webmanifest link, preconnect for googletagmanager and apps.apple.com
 - `manifest.webmanifest`: 3 validated icons, 2 screenshots, 4 app shortcuts, explicit language, and standalone display metadata
 - All 119 visible App Store links: GA4 `app_store_click` event metadata, product/storefront identifiers, accessible labels, and safe new-tab attributes
-- 23 Article pages: og:article:published_time and og:article:modified_time (synced with JSON-LD)
+- 24 Article pages: og:article:published_time and og:article:modified_time (synced with JSON-LD)
 - Localized, regional, and paired content pages: hreflang alternates (15 regional pages + 20 paired content pages)
 - No broken internal links, no orphan pages, all pages have >= 3 internal entry points
 - No generic anchor text ("click here" etc.)
@@ -64,7 +64,7 @@ Search index: https://www.xiaozhonglvyou.com/search-index.json
 ### Structured Data (118 blocks, 15 top-level types, 168 nodes)
 - BreadcrumbList: 50 pages (all indexable pages except index.html)
 - FAQPage: 38 pages with 172 visible and structured Q&A pairs
-- Article: 23 pages with datePublished/dateModified synced per page
+- Article: 24 pages with datePublished/dateModified synced per page
 - WebPage: 21 pages
 - CollectionPage: 5 pages
 - SoftwareApplication: 10 entities covering six products (with applicationCategory, operatingSystem, softwareVersion, software requirements, feature lists, and offers)
@@ -88,7 +88,7 @@ Search index: https://www.xiaozhonglvyou.com/search-index.json
 - Endpoints: `www.bing.com/indexnow`, `api.indexnow.org/IndexNow`, `yandex.com/indexnow`, `search.seznam.cz/indexnow`, `searchadvisor.naver.com/indexnow`
 - Validation: rejects empty, duplicate, over-limit, and off-domain sitemap URL lists before submission
 - Evidence: each workflow run saves `indexnow-report.json` as a 30-day GitHub Actions artifact
-- Latest verified automated run: the 2026-08-03 workflow completed successfully after deployment of the 51-URL sitemap; each run preserves endpoint-level evidence in `indexnow-report.json`.
+- Latest verified automated run: the 2026-08-10 workflow completed successfully after deployment of the 52-URL sitemap; each run preserves endpoint-level evidence in `indexnow-report.json`.
 
 ### Bing Readiness Audit
 - Script: `node scripts/audit-bing-readiness.mjs`
@@ -98,7 +98,7 @@ Search index: https://www.xiaozhonglvyou.com/search-index.json
 - Latest deployment validation: commit `7613956`; added reciprocal hreflang and visible cross-links for the English and Simplified Chinese iPad photo organizer guides.
 - Latest sitemap validation: commit `e5f2264`; 401 hreflang alternate links, including paired English/Simplified Chinese guide and app pages, are present in sitemap.xml.
 - Latest global-focused sitemap validation: sitemap-global.xml and sitemap-global.txt contain 40 non-Chinese global and localized URLs and are advertised from robots.txt and sitemap-index.xml.
-- Latest article sitemap validation: commit `9c7afab`; sitemap-articles.xml and sitemap-articles.txt are live with 23 Article/guide URLs and are advertised from robots.txt and sitemap-index.xml.
+- Latest article sitemap validation: 2026-08-10; sitemap-articles.xml and sitemap-articles.txt contain 24 Article/guide URLs and are advertised from robots.txt and sitemap-index.xml.
 - Latest China-focused sitemap validation: sitemap-cn.xml contains 11 Chinese-language URLs and is advertised from robots.txt and sitemap-index.xml.
 - Latest China-focused text sitemap validation: sitemap-cn.txt contains the same 11 Chinese-language URLs and is advertised from robots.txt.
 - Latest people-first content pass: the English and Simplified Chinese iPhone photo-cleaner pages now use the real product screen and document version 1.1.3, iOS 16 compatibility, nine explicit categories, on-device processing, and review-before-delete behavior checked against the current App Store listing on 2026-07-13. Regional and guide copy that addressed search traffic instead of readers was rewritten around practical user tasks.

@@ -526,6 +526,16 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.xiaozhonglvyou.com/mac-screen-privacy.html" />
   </url>
   <url>
+    <loc>https://www.xiaozhonglvyou.com/make-gif-on-iphone-guide.html</loc>
+    <lastmod>2026-08-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://www.xiaozhonglvyou.com/assets/gifmaker-icon.png</image:loc>
+    </image:image>
+
+  </url>
+  <url>
     <loc>https://www.xiaozhonglvyou.com/media-kit.html</loc>
     <lastmod>2026-08-03</lastmod>
     <changefreq>weekly</changefreq>
@@ -623,7 +633,7 @@
   </url>
   <url>
     <loc>https://www.xiaozhonglvyou.com/search.html</loc>
-    <lastmod>2026-07-23</lastmod>
+    <lastmod>2026-08-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
 

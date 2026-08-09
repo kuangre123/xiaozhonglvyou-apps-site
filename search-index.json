@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "generatedAt": "2026-08-10",
   "origin": "https://www.xiaozhonglvyou.com",
-  "pageCount": 51,
+  "pageCount": 52,
   "pages": [
     {
       "url": "https://www.xiaozhonglvyou.com/about.html",
@@ -322,7 +322,7 @@
       "images": [],
       "headings": [
         "Lead with AI smart photo classification.",
-        "Support the secondary app clusters."
+        "Answer specific creation and privacy questions."
       ]
     },
     {
@@ -352,9 +352,9 @@
     {
       "url": "https://www.xiaozhonglvyou.com/happyride-auto-ride-tracker.html",
       "path": "/happyride-auto-ride-tracker.html",
-      "title": "Automatic Bike Ride Tracker | iPhone & Apple Watch",
+      "title": "Automatic Cycling Workout Tracker | iPhone & Apple Watch",
       "description": "HappyRide automatically detects cycling, walking, and running, then records routes, heart rate, calories, and workouts to Apple Health.",
-      "h1": "Automatic bike ride tracking, even when you forget to start.",
+      "h1": "Automatic cycling workout tracking, even when you forget to start.",
       "lang": "en",
       "category": "page",
       "canonical": "https://www.xiaozhonglvyou.com/happyride-auto-ride-tracker.html",
@@ -655,6 +655,31 @@
       ]
     },
     {
+      "url": "https://www.xiaozhonglvyou.com/make-gif-on-iphone-guide.html",
+      "path": "/make-gif-on-iphone-guide.html",
+      "title": "How to Make a GIF on iPhone from Video or Live Photos",
+      "description": "Turn a video or Live Photo into a GIF on iPhone. Compare Loop and Bounce with a real GIF export, then control timing, captions, canvas, and file size.",
+      "h1": "Make a GIF on iPhone from video or Live Photos.",
+      "lang": "en",
+      "category": "guide",
+      "canonical": "https://www.xiaozhonglvyou.com/make-gif-on-iphone-guide.html",
+      "lastmod": "2026-08-10",
+      "changefreq": "weekly",
+      "priority": 1,
+      "images": [
+        "https://www.xiaozhonglvyou.com/assets/gifmaker-icon.png"
+      ],
+      "headings": [
+        "Choose the output before choosing the method.",
+        "Photos effect or GIF export?",
+        "How to make a real GIF on iPhone.",
+        "Keep the loop clear, short, and intentional.",
+        "Check privacy before importing personal media.",
+        "Making GIFs on iPhone.",
+        "GIFmaker resources."
+      ]
+    },
+    {
       "url": "https://www.xiaozhonglvyou.com/media-kit.html",
       "path": "/media-kit.html",
       "title": "App Review & Media Kit | CrazyAIAgent",
@@ -805,7 +830,7 @@
       "lang": "en",
       "category": "regional",
       "canonical": "https://www.xiaozhonglvyou.com/search.html",
-      "lastmod": "2026-07-23",
+      "lastmod": "2026-08-10",
       "changefreq": "weekly",
       "priority": 1,
       "images": [],
