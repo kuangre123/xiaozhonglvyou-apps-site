@@ -139,14 +139,15 @@ const pages = [
   },
   {
     file: "mac-screen-privacy.html",
-    title: "Mac Screen Privacy App | Hide Sensitive Windows",
+    title: "Best Mac Screen Privacy App? Free vs Full (2026)",
+    description: "Compare free Anti-spy screen Lite vs the $2.99 full Mac app for local face detection, sensitive-window hiding, presentation mode, and screen-share privacy.",
     headline: [
       "Mac Screen Privacy App",
-      "Mac Screen Privacy App"
+      "Best Mac Screen Privacy App? Free vs Full (2026)"
     ],
     h1: [
-      "Protect sensitive Mac work in shared spaces.",
-      "Hide sensitive Mac windows in shared spaces."
+      "Hide sensitive Mac windows in shared spaces.",
+      "Choose the right Mac screen privacy app."
     ]
   },
   {
