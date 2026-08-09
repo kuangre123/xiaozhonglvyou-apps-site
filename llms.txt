@@ -101,6 +101,8 @@ Indexable pages:
   Practical iPhone storage cleanup guide for photos: classify the library, then review large media, screenshots, blurry shots, duplicates, and similar photos.
 - Travel Translator App | Voice and Camera Translation: https://www.xiaozhonglvyou.com/travel-translator.html
   Travel Translator helps travelers use voice input, translated speech playback, camera OCR translation, and fast language switching for international trips.
+- Best Travel Translator Apps for iPhone: 3 Compared (2026): https://www.xiaozhonglvyou.com/best-travel-translator-apps-iphone.html
+  Source-based comparison of Apple Translate, Google Translate, and Translation Specialist for voice, camera, offline use, language coverage, privacy, cost, and trip readiness.
 - 出国翻译通 | 旅行语音翻译和拍照翻译指南: https://www.xiaozhonglvyou.com/travel-translator-cn.html
   出国翻译通中文说明：面向旅行、学习和跨语言沟通，覆盖语音翻译、朗读播放、拍照 OCR 翻译、菜单和路牌翻译、机场酒店餐厅等出国场景。
 - GIF Maker for iPhone | Photos, Video & Live Photos: https://www.xiaozhonglvyou.com/gif-maker.html

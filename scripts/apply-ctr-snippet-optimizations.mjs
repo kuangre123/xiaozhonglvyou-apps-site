@@ -114,6 +114,10 @@ const pages = [
     title: "Automatic Bike Ride Tracker for iPhone (2026 Guide)"
   },
   {
+    file: "best-travel-translator-apps-iphone.html",
+    title: "Best Travel Translator Apps for iPhone: 3 Compared (2026)"
+  },
+  {
     file: "travel-translator.html",
     title: "Travel Translator for iPhone | Voice, Camera &amp; Offline",
     headline: [

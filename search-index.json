@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "generatedAt": "2026-08-10",
   "origin": "https://www.xiaozhonglvyou.com",
-  "pageCount": 53,
+  "pageCount": 54,
   "pages": [
     {
       "url": "https://www.xiaozhonglvyou.com/about.html",
@@ -153,6 +153,30 @@
       ]
     },
     {
+      "url": "https://www.xiaozhonglvyou.com/best-travel-translator-apps-iphone.html",
+      "path": "/best-travel-translator-apps-iphone.html",
+      "title": "Best Travel Translator Apps for iPhone: 3 Compared (2026)",
+      "description": "Compare Apple Translate, Google Translate, and Translation Specialist for voice, camera, offline use, language coverage, privacy, and trip readiness.",
+      "h1": "The best travel translator depends on how you communicate.",
+      "lang": "en",
+      "category": "guide",
+      "canonical": "https://www.xiaozhonglvyou.com/best-travel-translator-apps-iphone.html",
+      "lastmod": "2026-08-10",
+      "changefreq": "weekly",
+      "priority": 1,
+      "images": [],
+      "headings": [
+        "Choose Apple for integration, Google for breadth, or Translation Specialist for a focused travel workflow.",
+        "This comparison uses current first-party documentation.",
+        "Apple Translate vs Google Translate vs Translation Specialist.",
+        "The destination matters more than the feature count.",
+        "Download, test, and keep a fallback before departure.",
+        "Offline processing and App Store labels answer different questions.",
+        "Travel translator questions answered.",
+        "Prepare your translator before the trip"
+      ]
+    },
+    {
       "url": "https://www.xiaozhonglvyou.com/canada-australia-apps.html",
       "path": "/canada-australia-apps.html",
       "title": "Canada Australia Apps | AI Photo Cleaner and Translator",
@@ -198,7 +222,7 @@
       "lang": "en",
       "category": "regional",
       "canonical": "https://www.xiaozhonglvyou.com/directory.html",
-      "lastmod": "2026-07-23",
+      "lastmod": "2026-08-10",
       "changefreq": "weekly",
       "priority": 1,
       "images": [],
