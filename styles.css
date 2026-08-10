@@ -1342,6 +1342,15 @@ summary {
     width: min(150px, 38vw);
   }
 
+  .translator-guide-hero {
+    padding-top: 48px;
+    gap: 8px;
+  }
+
+  .translator-guide-hero .hero-actions {
+    margin-top: 24px;
+  }
+
   .release-product-shot {
     display: block;
   }

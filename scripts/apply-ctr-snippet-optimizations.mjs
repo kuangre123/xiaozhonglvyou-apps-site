@@ -160,10 +160,16 @@ const pages = [
   },
   {
     file: "voice-camera-translator-guide.html",
-    title: "Voice &amp; Camera Translator for Travel (2026 Guide)",
+    title: "Voice &amp; Camera Translator for Travel: 6 Steps (2026)",
+    description: "Translate travel conversations, menus, and signs on iPhone in 6 steps. Use voice, camera OCR, live interpretation, and offline core language pairs.",
     headline: [
       "Voice and Camera Translator Guide for Travel",
-      "Voice and Camera Translator for Travel"
+      "Voice and Camera Translator for Travel",
+      "Voice & Camera Translator for Travel: 6 Steps (2026)"
+    ],
+    h1: [
+      "Use voice translation for conversations and camera OCR for the world around you.",
+      "Use a voice and camera translator for travel in 6 steps."
     ]
   },
   {

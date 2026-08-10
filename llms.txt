@@ -167,8 +167,8 @@ Indexable pages:
   中文重复照片清理指南：讲解 iPhone 相册里重复照片、相似照片、连拍、截图和模糊照片如何成组复查、对比场景和内容后再决定保留或清理，避免一键误删珍贵回忆和重要记录。
 - Duplicate Photo Cleaner Guide | iPhone Similar Photos: https://www.xiaozhonglvyou.com/duplicate-photo-cleaner-guide.html
   How to review duplicate and similar iPhone photos safely: compare context, screenshots, blurry photos, large media, and storage impact before deleting.
-- Voice and Camera Translator Guide for Travel | Travel Translator: https://www.xiaozhonglvyou.com/voice-camera-translator-guide.html
-  A travel translation guide for voice input, translated audio playback, camera OCR translation, menus, signs, labels, receipts, and fast language switching.
+- Voice & Camera Translator for Travel: 6 Steps (2026): https://www.xiaozhonglvyou.com/voice-camera-translator-guide.html
+  Six-step iPhone travel workflow for two-way voice translation, translated speech, camera OCR for menus and signs, continuous live interpretation, and tested offline support for core language pairs.
 - Mac Screen Sharing Privacy Guide | Anti-spy screen: https://www.xiaozhonglvyou.com/screen-sharing-privacy-guide.html
   A Mac screen privacy guide for presentations, shared workspaces, shoulder surfing, screen sharing, protected apps, and sensitive-window workflows.
 - Privacy | CrazyAIAgent: https://www.xiaozhonglvyou.com/privacy.html

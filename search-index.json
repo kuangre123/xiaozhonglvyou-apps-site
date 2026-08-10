@@ -1078,19 +1078,23 @@
     {
       "url": "https://www.xiaozhonglvyou.com/voice-camera-translator-guide.html",
       "path": "/voice-camera-translator-guide.html",
-      "title": "Voice & Camera Translator for Travel (2026 Guide)",
-      "description": "A travel translation guide for voice input, translated audio playback, camera OCR translation, menus, signs, labels, receipts, and fast language switching.",
-      "h1": "Use voice translation for conversations and camera OCR for the world around you.",
+      "title": "Voice & Camera Translator for Travel: 6 Steps (2026)",
+      "description": "Translate travel conversations, menus, and signs on iPhone in 6 steps. Use voice, camera OCR, live interpretation, and offline core language pairs.",
+      "h1": "Use a voice and camera translator for travel in 6 steps.",
       "lang": "en",
       "category": "guide",
       "canonical": "https://www.xiaozhonglvyou.com/voice-camera-translator-guide.html",
       "lastmod": "2026-08-10",
       "changefreq": "weekly",
       "priority": 1,
-      "images": [],
+      "images": [
+        "https://www.xiaozhonglvyou.com/assets/translator-live-screen.webp",
+        "https://www.xiaozhonglvyou.com/assets/translator-camera-screen.webp"
+      ],
       "headings": [
-        "How to Use Voice and Camera Translation While Traveling",
+        "How to use voice and camera translation while traveling.",
         "Different translation modes solve different moments.",
+        "Know what is included before installing.",
         "Common travel translation questions.",
         "Related guides and resources"
       ]
