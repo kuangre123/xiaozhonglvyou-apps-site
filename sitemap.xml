@@ -5,6 +5,8 @@
     <lastmod>2026-07-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+
+
   </url>
   <url>
     <loc>https://www.xiaozhonglvyou.com/ai-photo-classification-cn.html</loc>
@@ -69,7 +71,12 @@
     <lastmod>2026-08-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-
+    <image:image>
+      <image:loc>https://www.xiaozhonglvyou.com/assets/happyride-home-screen.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.xiaozhonglvyou.com/assets/happyride-ride-detail-screen.webp</image:loc>
+    </image:image>
 
   </url>
   <url>
@@ -287,6 +294,9 @@
     <priority>1.0</priority>
     <image:image>
       <image:loc>https://www.xiaozhonglvyou.com/assets/happyride-icon.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.xiaozhonglvyou.com/assets/happyride-route-screen.webp</image:loc>
     </image:image>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.xiaozhonglvyou.com/happyride-auto-ride-tracker.html" />
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.xiaozhonglvyou.com/happyride-auto-ride-tracker-cn.html" />
@@ -652,7 +662,6 @@
       <image:loc>https://www.xiaozhonglvyou.com/assets/anti-spy-mirroring-screen.webp</image:loc>
     </image:image>
 
-
   </url>
   <url>
     <loc>https://www.xiaozhonglvyou.com/search.html</loc>
@@ -845,7 +854,6 @@
     <image:image>
       <image:loc>https://www.xiaozhonglvyou.com/assets/translator-camera-screen.webp</image:loc>
     </image:image>
-
 
   </url>
   <url>

@@ -114,16 +114,19 @@
     {
       "url": "https://www.xiaozhonglvyou.com/automatic-bike-ride-tracker-iphone.html",
       "path": "/automatic-bike-ride-tracker-iphone.html",
-      "title": "Automatic Bike Ride Tracker for iPhone (2026 Guide)",
-      "description": "Track bike rides without pressing Start. Compare Apple Watch workout reminders with HappyRide automatic detection, permissions, Health sync, and limits.",
-      "h1": "Track a bike ride without pressing Start.",
+      "title": "Automatic Bike Ride Tracking on iPhone: 4 Steps (2026)",
+      "description": "Set up automatic bike ride tracking on iPhone in 4 steps. Compare no-Start detection, Apple Watch, permissions, Apple Health, and short-ride limits.",
+      "h1": "Set up automatic bike ride tracking in 4 steps.",
       "lang": "en",
       "category": "page",
       "canonical": "https://www.xiaozhonglvyou.com/automatic-bike-ride-tracker-iphone.html",
       "lastmod": "2026-08-10",
       "changefreq": "weekly",
       "priority": 1,
-      "images": [],
+      "images": [
+        "https://www.xiaozhonglvyou.com/assets/happyride-home-screen.webp",
+        "https://www.xiaozhonglvyou.com/assets/happyride-ride-detail-screen.webp"
+      ],
       "headings": [
         "Use a reminder when you want control. Use detection when you forget.",
         "Apple Workout reminder vs HappyRide automatic detection.",
@@ -404,9 +407,9 @@
     {
       "url": "https://www.xiaozhonglvyou.com/happyride-auto-ride-tracker.html",
       "path": "/happyride-auto-ride-tracker.html",
-      "title": "Automatic Cycling Workout Tracker | iPhone & Apple Watch",
+      "title": "HappyRide Auto Ride Tracker | iPhone & Apple Watch",
       "description": "HappyRide automatically detects cycling, walking, and running, then records routes, heart rate, calories, and workouts to Apple Health.",
-      "h1": "Automatic cycling workout tracking, even when you forget to start.",
+      "h1": "HappyRide records the rides you forget to start.",
       "lang": "en",
       "category": "page",
       "canonical": "https://www.xiaozhonglvyou.com/happyride-auto-ride-tracker.html",
@@ -414,14 +417,14 @@
       "changefreq": "weekly",
       "priority": 1,
       "images": [
-        "https://www.xiaozhonglvyou.com/assets/happyride-icon.png"
+        "https://www.xiaozhonglvyou.com/assets/happyride-icon.png",
+        "https://www.xiaozhonglvyou.com/assets/happyride-route-screen.webp"
       ],
       "headings": [
         "Move first. Review the activity later.",
         "Routes, heart rate, calories, and workouts stay connected.",
         "Choose a route style, distance, or nearby destination.",
         "Know the current boundaries before installing.",
-        "How to set up automatic cycling tracking.",
         "What to know before the next ride."
       ]
     },

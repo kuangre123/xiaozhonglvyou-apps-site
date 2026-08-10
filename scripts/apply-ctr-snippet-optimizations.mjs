@@ -132,15 +132,24 @@ const pages = [
   },
   {
     file: "happyride-auto-ride-tracker.html",
-    title: "Automatic Cycling Workout Tracker | iPhone &amp; Apple Watch",
+    title: "HappyRide Auto Ride Tracker | iPhone &amp; Apple Watch",
     h1: [
-      "HappyRide records the ride you forgot to start.",
-      "Automatic cycling workout tracking, even when you forget to start."
+      "Automatic cycling workout tracking, even when you forget to start.",
+      "HappyRide records the rides you forget to start."
     ]
   },
   {
     file: "automatic-bike-ride-tracker-iphone.html",
-    title: "Automatic Bike Ride Tracker for iPhone (2026 Guide)"
+    title: "Automatic Bike Ride Tracking on iPhone: 4 Steps (2026)",
+    description: "Set up automatic bike ride tracking on iPhone in 4 steps. Compare no-Start detection, Apple Watch, permissions, Apple Health, and short-ride limits.",
+    headline: [
+      "Automatic Bike Ride Tracker for iPhone (2026 Guide)",
+      "Automatic Bike Ride Tracking on iPhone: 4 Steps (2026)"
+    ],
+    h1: [
+      "Track a bike ride without pressing Start.",
+      "Set up automatic bike ride tracking in 4 steps."
+    ]
   },
   {
     file: "best-travel-translator-apps-iphone.html",
@@ -165,7 +174,7 @@ const pages = [
     headline: [
       "Voice and Camera Translator Guide for Travel",
       "Voice and Camera Translator for Travel",
-      "Voice & Camera Translator for Travel: 6 Steps (2026)"
+      "Voice and Camera Translator for Travel: 6 Steps (2026)"
     ],
     h1: [
       "Use voice translation for conversations and camera OCR for the world around you.",
@@ -259,6 +268,21 @@ function replaceExactlyOnce(html, search, replacement, label) {
   return html.replace(search, replacement);
 }
 
+function replaceFromCandidates(html, candidates, wrap, label) {
+  const target = wrap(candidates.at(-1));
+
+  if (html.includes(target)) return html;
+
+  for (const candidate of candidates.slice(0, -1)) {
+    const search = wrap(candidate);
+    if (html.includes(search)) {
+      return replaceExactlyOnce(html, search, target, label);
+    }
+  }
+
+  throw new Error(`Missing ${label}`);
+}
+
 function replaceMeta(html, attribute, name, value, label) {
   const pattern = new RegExp(`<meta\\b(?=[^>]*${attribute}=["']${name}["'])[^>]*>`, "i");
   const match = html.match(pattern)?.[0];
@@ -284,11 +308,11 @@ async function updatePage(siteDir, page) {
     html = replaceMeta(html, "name", "twitter:description", page.description, `${page.file} twitter:description`);
   }
 
-  if (page.headline && page.headline[0] !== page.headline[1]) {
-    html = replaceExactlyOnce(
+  if (page.headline) {
+    html = replaceFromCandidates(
       html,
-      `"headline": "${page.headline[0]}"`,
-      `"headline": "${page.headline[1]}"`,
+      page.headline,
+      (value) => `"headline": "${value}"`,
       `${page.file} Article headline`
     );
   }
@@ -312,10 +336,10 @@ async function updatePage(siteDir, page) {
   }
 
   if (page.h1) {
-    html = replaceExactlyOnce(
+    html = replaceFromCandidates(
       html,
-      `>${page.h1[0]}</h1>`,
-      `>${page.h1[1]}</h1>`,
+      page.h1,
+      (value) => `>${value}</h1>`,
       `${page.file} H1`
     );
   }
