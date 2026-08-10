@@ -824,9 +824,9 @@
     {
       "url": "https://www.xiaozhonglvyou.com/private-ai-photo-cleaner.html",
       "path": "/private-ai-photo-cleaner.html",
-      "title": "Private AI Photo Cleaner for iPhone | On-Device Cleanup",
-      "description": "Private AI photo cleaner guide for iPhone users who want smart classification, duplicate review, and cleanup without cloud photo-library uploads.",
-      "h1": "Private AI photo cleanup should start on the iPhone.",
+      "title": "Private AI Photo Cleaner for iPhone | No Uploads (2026)",
+      "description": "On-device AI finds duplicates and 9 photo categories with no photo uploads. App Store says Data Not Collected. Free download; optional Pro subscription.",
+      "h1": "Clean iPhone photos with on-device AI and no uploads.",
       "lang": "en",
       "category": "guide",
       "canonical": "https://www.xiaozhonglvyou.com/private-ai-photo-cleaner.html",
@@ -835,6 +835,7 @@
       "priority": 1,
       "images": [],
       "headings": [
+        "Five disclosures to check before granting photo access.",
         "Your photo library includes more than casual pictures.",
         "What to check before using any AI photo cleaner.",
         "Private AI photo cleaner questions."

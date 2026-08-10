@@ -98,10 +98,15 @@ const pages = [
   },
   {
     file: "private-ai-photo-cleaner.html",
-    title: "Private AI Photo Cleaner for iPhone | On-Device Cleanup",
+    title: "Private AI Photo Cleaner for iPhone | No Uploads (2026)",
+    description: "On-device AI finds duplicates and 9 photo categories with no photo uploads. App Store says Data Not Collected. Free download; optional Pro subscription.",
     headline: [
       "Private AI Photo Cleaner for iPhone",
-      "Private AI Photo Cleaner for iPhone"
+      "Private AI Photo Cleaner for iPhone | No Uploads (2026)"
+    ],
+    h1: [
+      "Private AI photo cleanup should start on the iPhone.",
+      "Clean iPhone photos with on-device AI and no uploads."
     ]
   },
   {

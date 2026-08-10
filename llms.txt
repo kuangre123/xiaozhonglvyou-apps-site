@@ -32,7 +32,7 @@ Primary apps:
 - Anti-spy screen: version 1.5.1 for macOS 13.0 or later, with local face detection, selected app hiding, adjustable detection parameters, Privacy Block, Presenting Mode, and Stand-Up Coach. The US storefront listed a $2.99 one-time purchase on 2026-08-03. Mac App Store: https://apps.apple.com/us/app/anti-spy-screen/id6761301764?mt=12&uo=4
 - Anti-spy screen Lite: version 1.4.1 for macOS 13.0 or later, with local face detection, selected app hiding, Privacy Block, Presenting Mode, Stand-Up Coach, and hidden-app reminders. The US storefront listed it as free on 2026-08-03. Mac App Store: https://apps.apple.com/us/app/anti-spy-screen-lite/id6766485393?mt=12&uo=4
 
-Last updated: 2026-07-18
+Last updated: 2026-08-10
 
 Important search and answer intents:
 
@@ -95,8 +95,8 @@ Indexable pages:
   AI Cleaning - Photo Cleaner classifies iPhone photos on-device into documents, receipts, ID cards, food, plants, animals, and group photos.
 - iPhone Photo Cleaner with AI Classification | AI Cleaning: https://www.xiaozhonglvyou.com/iphone-photo-cleaner.html
   AI Cleaning - Photo Cleaner helps classify iPhone photos, review duplicates, clean screenshots, find blurry shots, and analyze real storage.
-- Private AI Photo Cleaner | On-Device iPhone Cleanup: https://www.xiaozhonglvyou.com/private-ai-photo-cleaner.html
-  Private AI photo cleaner guide for iPhone users who want smart classification, duplicate review, and cleanup without cloud photo-library uploads.
+- Private AI Photo Cleaner for iPhone | No Uploads (2026): https://www.xiaozhonglvyou.com/private-ai-photo-cleaner.html
+  On-device AI finds duplicates and nine optional Pro photo categories without photo uploads. The current US App Store listing says Data Not Collected, no analytics or advertising SDKs, and no account or internet connection for core features.
 - iPhone Storage Cleanup Guide | Photos, Screenshots, Large Media: https://www.xiaozhonglvyou.com/iphone-storage-cleanup-guide.html
   Practical iPhone storage cleanup guide for photos: classify the library, then review large media, screenshots, blurry shots, duplicates, and similar photos.
 - Travel Translator App | Voice and Camera Translation: https://www.xiaozhonglvyou.com/travel-translator.html
