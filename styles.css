@@ -499,6 +499,20 @@ summary {
   border-radius: 26px;
 }
 
+.photo-cleaner-decision-page .page-hero {
+  padding-top: 92px;
+}
+
+.photo-cleaner-decision-page .page-hero-copy h1 {
+  max-width: 650px;
+  letter-spacing: 0;
+}
+
+.photo-cleaner-decision-page .page-hero-media img {
+  width: min(222px, 100%);
+  border-radius: 24px;
+}
+
 .ctr-screen-pair {
   grid-template-columns: repeat(2, minmax(0, 1fr));
   align-items: center;
@@ -1378,6 +1392,63 @@ summary {
 
   .photo-cleaner-comparison-page .article-meta {
     order: 7;
+  }
+
+  .photo-cleaner-decision-page .page-hero {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    padding-top: 36px;
+    padding-bottom: 36px;
+  }
+
+  .photo-cleaner-decision-page .page-hero-copy {
+    display: contents;
+  }
+
+  .photo-cleaner-decision-page .breadcrumb {
+    order: 1;
+    margin-bottom: 12px;
+  }
+
+  .photo-cleaner-decision-page .eyebrow {
+    order: 2;
+  }
+
+  .photo-cleaner-decision-page .page-hero-copy h1 {
+    order: 3;
+    margin: 8px 0 12px;
+    font-size: 38px;
+    line-height: 1.04;
+    letter-spacing: 0;
+  }
+
+  .photo-cleaner-decision-page .page-hero-media {
+    order: 4;
+    margin: 0 0 12px;
+  }
+
+  .photo-cleaner-decision-page .product-screen-media.ctr-product-screen img {
+    width: 120px;
+    border-radius: 14px;
+  }
+
+  .photo-cleaner-decision-page .hero-summary {
+    order: 5;
+    font-size: 16px;
+    line-height: 1.45;
+  }
+
+  .photo-cleaner-decision-page .hero-actions {
+    order: 6;
+    margin-top: 16px;
+    gap: 8px;
+  }
+
+  .photo-cleaner-decision-page .article-meta {
+    order: 7;
+    margin-top: 14px;
   }
 
   .product-screen-media {

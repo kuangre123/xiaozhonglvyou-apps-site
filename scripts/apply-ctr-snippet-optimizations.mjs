@@ -65,7 +65,8 @@ const pages = [
     ],
     h1: [
       "The best iPhone photo cleaner should classify before it deletes.",
-      "Is AI Cleaning the best iPhone photo cleaner for you?"
+      "Is AI Cleaning the best iPhone photo cleaner for you?",
+      "Best iPhone photo cleaner for you?"
     ]
   },
   {
