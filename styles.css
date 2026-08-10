@@ -1351,6 +1351,15 @@ summary {
     margin-top: 24px;
   }
 
+  .screen-share-guide-hero {
+    padding-top: 48px;
+    gap: 8px;
+  }
+
+  .screen-share-guide-hero .hero-actions {
+    margin-top: 24px;
+  }
+
   .release-product-shot {
     display: block;
   }

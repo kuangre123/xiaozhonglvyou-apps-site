@@ -865,19 +865,22 @@
     {
       "url": "https://www.xiaozhonglvyou.com/screen-sharing-privacy-guide.html",
       "path": "/screen-sharing-privacy-guide.html",
-      "title": "How to Protect Mac Privacy During Screen Sharing",
-      "description": "A Mac screen privacy guide for presentations, shared workspaces, shoulder surfing, screen sharing, protected apps, and sensitive-window workflows.",
-      "h1": "Protect Mac privacy before screen sharing.",
+      "title": "Mac Screen Sharing Privacy Checklist: 6 Steps (2026)",
+      "description": "Protect private windows and notifications before sharing your Mac screen. Follow 6 steps for permissions, protected apps, Presenting Mode, and a test.",
+      "h1": "Protect Mac screen sharing privacy in 6 steps.",
       "lang": "en",
       "category": "guide",
       "canonical": "https://www.xiaozhonglvyou.com/screen-sharing-privacy-guide.html",
       "lastmod": "2026-08-10",
       "changefreq": "weekly",
       "priority": 1,
-      "images": [],
+      "images": [
+        "https://www.xiaozhonglvyou.com/assets/anti-spy-mirroring-screen.webp"
+      ],
       "headings": [
-        "How to Protect Your Mac Screen During Presentations and Screen Sharing",
-        "Focus on moments when private windows become visible by accident.",
+        "Run this checklist before sharing your Mac screen.",
+        "Know which control addresses each privacy risk.",
+        "Start with the free version before a real meeting.",
         "Common Mac privacy questions.",
         "Related guides and resources"
       ]

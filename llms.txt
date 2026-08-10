@@ -169,8 +169,8 @@ Indexable pages:
   How to review duplicate and similar iPhone photos safely: compare context, screenshots, blurry photos, large media, and storage impact before deleting.
 - Voice & Camera Translator for Travel: 6 Steps (2026): https://www.xiaozhonglvyou.com/voice-camera-translator-guide.html
   Six-step iPhone travel workflow for two-way voice translation, translated speech, camera OCR for menus and signs, continuous live interpretation, and tested offline support for core language pairs.
-- Mac Screen Sharing Privacy Guide | Anti-spy screen: https://www.xiaozhonglvyou.com/screen-sharing-privacy-guide.html
-  A Mac screen privacy guide for presentations, shared workspaces, shoulder surfing, screen sharing, protected apps, and sensitive-window workflows.
+- Mac Screen Sharing Privacy Checklist: 6 Steps (2026): https://www.xiaozhonglvyou.com/screen-sharing-privacy-guide.html
+  Six-step pre-meeting checklist for Mac screen recording permission, the narrowest shared source, private-window cleanup, protected apps, Presenting Mode, a test share, and deliberate post-meeting restoration.
 - Privacy | CrazyAIAgent: https://www.xiaozhonglvyou.com/privacy.html
   Privacy and permission notes for all six apps, including GIFmaker on-device media editing and HappyRide motion, location, and Apple Health access.
 - Support | CrazyAIAgent: https://www.xiaozhonglvyou.com/support.html

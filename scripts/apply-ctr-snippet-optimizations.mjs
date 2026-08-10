@@ -187,14 +187,17 @@ const pages = [
   },
   {
     file: "screen-sharing-privacy-guide.html",
-    title: "How to Protect Mac Privacy During Screen Sharing",
+    title: "Mac Screen Sharing Privacy Checklist: 6 Steps (2026)",
+    description: "Protect private windows and notifications before sharing your Mac screen. Follow 6 steps for permissions, protected apps, Presenting Mode, and a test.",
     headline: [
       "Mac Screen Sharing Privacy Guide",
-      "How to Protect Mac Privacy During Screen Sharing"
+      "How to Protect Mac Privacy During Screen Sharing",
+      "Mac Screen Sharing Privacy Checklist: 6 Steps (2026)"
     ],
     h1: [
       "Protect sensitive Mac windows before a meeting or nearby glance exposes them.",
-      "Protect Mac privacy before screen sharing."
+      "Protect Mac privacy before screen sharing.",
+      "Protect Mac screen sharing privacy in 6 steps."
     ]
   },
   {
