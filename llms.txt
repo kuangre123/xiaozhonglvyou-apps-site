@@ -151,8 +151,8 @@ Indexable pages:
   한국 사용자를 위한 CrazyAIAgent: AI 사진 분류와 iPhone 사진 정리, 중복 사진 검토, 여행 번역, Mac 화면 개인정보 보호를 용도별로 고르는 iOS / macOS 유틸리티 안내와 한국어 질문 답변.
 - 日本向け iPhone / Mac アプリ | AI写真整理、旅行翻訳、画面プライバシー: https://www.xiaozhonglvyou.com/ja-jp.html
   日本向け CrazyAIAgent：AI写真分類とiPhone写真整理、重複写真の確認、旅行翻訳、Mac画面プライバシーを用途別に選べる iOS / macOS ユーティリティ案内と日本語の質問回答。
-- AI Photo Organizer Guide for iPhone | Smart Photo Classification: https://www.xiaozhonglvyou.com/ai-photo-organizer-guide.html
-  Guide to organizing iPhone photos with AI categories before reviewing duplicates, screenshots, blurry shots, documents, receipts, and large media.
+- AI Photo Organizer for iPhone: 5 Steps, 9 Categories (2026): https://www.xiaozhonglvyou.com/ai-photo-organizer-guide.html
+  Five-step guide to using nine optional on-device AI categories before reviewing duplicates, screenshots, blurry shots, and large media.
 - iPad Photo Organizer Guide 2026 | AI Photo Sorting for iPad: https://www.xiaozhonglvyou.com/ipad-photo-organizer-guide.html
   iPad photo organizer guide for sorting screenshots, document scans, receipts, imported camera media, large videos, duplicates, and iCloud-sensitive cleanup choices.
 - iPad照片整理指南 | 平板相册清理和 AI 分类: https://www.xiaozhonglvyou.com/ipad-photo-organizer-cn.html

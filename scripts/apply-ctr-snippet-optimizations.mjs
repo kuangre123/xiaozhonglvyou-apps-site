@@ -44,14 +44,15 @@ const pages = [
   },
   {
     file: "ai-photo-organizer-guide.html",
-    title: "How to Organize iPhone Photos with AI (2026 Guide)",
+    title: "AI Photo Organizer for iPhone: 5 Steps, 9 Categories (2026)",
+    description: "Organize iPhone photos in 5 steps with 9 on-device AI categories. Review duplicates and screenshots. Free download; optional Pro subscription.",
     headline: [
-      "AI Photo Organizer Guide for iPhone",
-      "How to Organize iPhone Photos with AI"
+      "How to Organize iPhone Photos with AI",
+      "AI Photo Organizer for iPhone: 5 Steps, 9 Categories (2026)"
     ],
     h1: [
-      "Classify an iPhone photo library before deciding what to clean.",
-      "Organize iPhone photos with AI before deciding what to clean."
+      "Organize iPhone photos with AI before deciding what to clean.",
+      "Organize iPhone photos in 5 steps with 9 AI categories."
     ]
   },
   {
