@@ -1314,6 +1314,15 @@ summary {
     display: none;
   }
 
+  .product-screen-media.ctr-product-screen {
+    display: grid;
+    justify-items: center;
+  }
+
+  .product-screen-media.ctr-product-screen img {
+    width: min(190px, 56vw);
+  }
+
   .release-product-shot {
     display: block;
   }

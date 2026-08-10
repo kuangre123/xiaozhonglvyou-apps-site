@@ -56,10 +56,15 @@ const pages = [
   },
   {
     file: "best-iphone-photo-cleaner-app.html",
-    title: "How to Choose an iPhone Photo Cleaner (2026 Guide)",
+    title: "Best iPhone Photo Cleaner App? 9 AI Categories (2026)",
+    description: "Try AI Cleaning free: review duplicates or sort iPhone photos into 9 on-device AI categories. Optional subscriptions; App Store says no data collected.",
     headline: [
-      "Best Free iPhone Photo Cleaner App (2026 Guide)",
-      "How to Choose an iPhone Photo Cleaner (2026 Guide)"
+      "How to Choose an iPhone Photo Cleaner (2026 Guide)",
+      "Best iPhone Photo Cleaner App? 9 AI Categories (2026)"
+    ],
+    h1: [
+      "The best iPhone photo cleaner should classify before it deletes.",
+      "Is AI Cleaning the best iPhone photo cleaner for you?"
     ]
   },
   {
