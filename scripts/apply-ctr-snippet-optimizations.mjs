@@ -157,7 +157,11 @@ const pages = [
   },
   {
     file: "best-travel-translator-apps-iphone.html",
-    title: "Best Travel Translator Apps for iPhone: 3 Compared (2026)"
+    title: "Best Travel Translator Apps for iPhone: 3 Compared (2026)",
+    h1: [
+      "The best travel translator depends on how you communicate.",
+      "3 travel translator apps compared."
+    ]
   },
   {
     file: "travel-translator.html",

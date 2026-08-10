@@ -97,7 +97,15 @@
     <lastmod>2026-08-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-
+    <image:image>
+      <image:loc>https://www.xiaozhonglvyou.com/assets/og-travel-translator-comparison.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.xiaozhonglvyou.com/assets/translator-live-screen.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.xiaozhonglvyou.com/assets/translator-camera-screen.webp</image:loc>
+    </image:image>
 
   </url>
   <url>

@@ -167,14 +167,18 @@
       "path": "/best-travel-translator-apps-iphone.html",
       "title": "Best Travel Translator Apps for iPhone: 3 Compared (2026)",
       "description": "Compare Apple Translate, Google Translate, and Translation Specialist for voice, camera, offline use, language coverage, privacy, and trip readiness.",
-      "h1": "The best travel translator depends on how you communicate.",
+      "h1": "3 travel translator apps compared.",
       "lang": "en",
       "category": "guide",
       "canonical": "https://www.xiaozhonglvyou.com/best-travel-translator-apps-iphone.html",
       "lastmod": "2026-08-10",
       "changefreq": "weekly",
       "priority": 1,
-      "images": [],
+      "images": [
+        "https://www.xiaozhonglvyou.com/assets/og-travel-translator-comparison.png",
+        "https://www.xiaozhonglvyou.com/assets/translator-live-screen.webp",
+        "https://www.xiaozhonglvyou.com/assets/translator-camera-screen.webp"
+      ],
       "headings": [
         "Choose Apple for integration, Google for breadth, or Translation Specialist for a focused travel workflow.",
         "This comparison uses current first-party documentation.",
