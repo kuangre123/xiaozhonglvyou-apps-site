@@ -715,9 +715,9 @@
     {
       "url": "https://www.xiaozhonglvyou.com/make-gif-on-iphone-guide.html",
       "path": "/make-gif-on-iphone-guide.html",
-      "title": "How to Make a GIF on iPhone from Video or Live Photos",
-      "description": "Turn a video or Live Photo into a GIF on iPhone. Compare Loop and Bounce with a real GIF export, then control timing, captions, canvas, and file size.",
-      "h1": "Make a GIF on iPhone from video or Live Photos.",
+      "title": "How to Make a Real GIF on iPhone in 5 Steps (2026)",
+      "description": "Turn video or a Live Photo into a real GIF on iPhone in 5 steps. Edit timing and playback, then export up to 1080px on-device. Free app; no uploads.",
+      "h1": "Make a real GIF on iPhone in 5 steps.",
       "lang": "en",
       "category": "guide",
       "canonical": "https://www.xiaozhonglvyou.com/make-gif-on-iphone-guide.html",
@@ -725,7 +725,9 @@
       "changefreq": "weekly",
       "priority": 1,
       "images": [
-        "https://www.xiaozhonglvyou.com/assets/gifmaker-icon.png"
+        "https://www.xiaozhonglvyou.com/assets/gifmaker-icon.png",
+        "https://www.xiaozhonglvyou.com/assets/gifmaker-editor-screen.webp",
+        "https://www.xiaozhonglvyou.com/assets/gifmaker-export-screen.webp"
       ],
       "headings": [
         "Choose the output before choosing the method.",

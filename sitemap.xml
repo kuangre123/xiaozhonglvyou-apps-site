@@ -549,6 +549,12 @@
     <image:image>
       <image:loc>https://www.xiaozhonglvyou.com/assets/gifmaker-icon.png</image:loc>
     </image:image>
+    <image:image>
+      <image:loc>https://www.xiaozhonglvyou.com/assets/gifmaker-editor-screen.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.xiaozhonglvyou.com/assets/gifmaker-export-screen.webp</image:loc>
+    </image:image>
 
   </url>
   <url>

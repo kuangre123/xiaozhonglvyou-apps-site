@@ -118,6 +118,19 @@ const pages = [
     ]
   },
   {
+    file: "make-gif-on-iphone-guide.html",
+    title: "How to Make a Real GIF on iPhone in 5 Steps (2026)",
+    description: "Turn video or a Live Photo into a real GIF on iPhone in 5 steps. Edit timing and playback, then export up to 1080px on-device. Free app; no uploads.",
+    headline: [
+      "How to Make a GIF on iPhone from Video or Live Photos",
+      "How to Make a Real GIF on iPhone in 5 Steps (2026)"
+    ],
+    h1: [
+      "Make a GIF on iPhone from video or Live Photos.",
+      "Make a real GIF on iPhone in 5 steps."
+    ]
+  },
+  {
     file: "happyride-auto-ride-tracker.html",
     title: "Automatic Cycling Workout Tracker | iPhone &amp; Apple Watch",
     h1: [

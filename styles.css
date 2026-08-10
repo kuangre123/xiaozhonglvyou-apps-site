@@ -485,6 +485,16 @@ summary {
   border-radius: 26px;
 }
 
+.ctr-screen-pair {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: center;
+  gap: 16px;
+}
+
+.ctr-screen-pair img {
+  width: min(220px, 100%);
+}
+
 .release-product-shot {
   display: none;
   margin: 28px 0 0;
@@ -1321,6 +1331,15 @@ summary {
 
   .product-screen-media.ctr-product-screen img {
     width: min(190px, 56vw);
+  }
+
+  .product-screen-media.ctr-screen-pair {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
+
+  .product-screen-media.ctr-screen-pair img {
+    width: min(150px, 38vw);
   }
 
   .release-product-shot {

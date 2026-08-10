@@ -107,6 +107,8 @@ Indexable pages:
   出国翻译通中文说明：面向旅行、学习和跨语言沟通，覆盖语音翻译、朗读播放、拍照 OCR 翻译、菜单和路牌翻译、机场酒店餐厅等出国场景。
 - GIF Maker for iPhone | Photos, Video & Live Photos: https://www.xiaozhonglvyou.com/gif-maker.html
   GIFmaker turns photos, videos, and Live Photos into GIFs with live preview, frame timing, text overlays, boomerang playback, and on-device editing.
+- How to Make a Real GIF on iPhone in 5 Steps (2026): https://www.xiaozhonglvyou.com/make-gif-on-iphone-guide.html
+  Five-step guide to turning video or a Live Photo into a portable GIF with frame timing, captions, playback controls, up to 1080px export, and on-device editing without an account or media uploads.
 - iPhone GIF 制作器｜照片、视频和 Live Photo 转 GIF: https://www.xiaozhonglvyou.com/gif-maker-cn.html
   GIFmaker 中文产品页：照片、视频和 Live Photo 转 GIF，支持逐帧调速、文字、倒放、回旋循环和本机处理。
 - Automatic Ride Tracker for iPhone & Apple Watch | HappyRide: https://www.xiaozhonglvyou.com/happyride-auto-ride-tracker.html
