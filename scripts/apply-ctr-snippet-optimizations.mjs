@@ -85,7 +85,10 @@ const pages = [
     ],
     h1: [
       "Compare the best iPhone photo cleaner apps for 2026.",
-      "AI Cleaning vs Cleanup vs Cleaner Kit."
+      "AI Cleaning vs Cleanup vs Cleaner Kit.",
+      "Compare 3 iPhone photo cleaner apps.",
+      "Compare AI Cleaning, Cleanup, and Cleaner Kit.",
+      "3 iPhone photo cleaner apps compared."
     ]
   },
   {

@@ -175,8 +175,8 @@ Indexable pages:
   Privacy and permission notes for all six apps, including GIFmaker on-device media editing and HappyRide motion, location, and Apple Health access.
 - Support | CrazyAIAgent: https://www.xiaozhonglvyou.com/support.html
   Support page for CrazyAIAgent: AI Cleaning - Photo Cleaner, Travel Translator, Anti-spy screen, and Anti-spy screen Lite.
-- Best iPhone Photo Cleaner Apps Compared 2026 | AI Cleaning vs Google Photos vs Gemini: https://www.xiaozhonglvyou.com/iphone-photo-cleaner-comparison.html
-  Side-by-side comparison of iPhone photo cleaner apps in 2026: AI Cleaning vs Google Photos vs Gemini Photos on AI classification, duplicate cleanup, privacy model, and storage analysis.
+- Best iPhone Photo Cleaner Apps: 3 Compared (2026): https://www.xiaozhonglvyou.com/iphone-photo-cleaner-comparison.html
+  Side-by-side comparison of AI Cleaning, Cleanup, and Cleaner Kit using current official App Store listings for AI classification, duplicate cleanup, subscriptions, privacy labels, and deletion controls.
 - Seedance 2.5 AI视频创作者工具推荐 | AI素材整理和照片管理: https://www.xiaozhonglvyou.com/seedance-ai-tools-cn.html
   Seedance 2.5 是字节跳动最新 AI 视频生成模型，支持 30 秒 4K 原生视频。本文推荐 AI 内容创作者必备的素材整理工具：AI 照片分类、重复素材清理、出国拍摄翻译。
 - Seedance 2.5 AI Video Creator Tools | Photo Management for Content Creators: https://www.xiaozhonglvyou.com/seedance-ai-tools.html

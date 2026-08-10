@@ -480,6 +480,20 @@ summary {
   box-shadow: var(--shadow-lg);
 }
 
+.comparison-hero-media img {
+  width: min(222px, 100%);
+  border-radius: 24px;
+}
+
+.media-caption {
+  max-width: 240px;
+  margin: 14px 0 0;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.4;
+  text-align: center;
+}
+
 .product-screen-media img {
   width: min(240px, 100%);
   border-radius: 26px;
@@ -1318,6 +1332,52 @@ summary {
   .product-page-hero {
     padding-top: 88px;
     padding-bottom: 24px;
+  }
+
+  .photo-cleaner-comparison-page .page-hero {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+  }
+
+  .photo-cleaner-comparison-page .page-hero-copy {
+    display: contents;
+  }
+
+  .photo-cleaner-comparison-page .breadcrumb {
+    order: 1;
+  }
+
+  .photo-cleaner-comparison-page .eyebrow {
+    order: 2;
+  }
+
+  .photo-cleaner-comparison-page .page-hero-copy h1 {
+    order: 3;
+    letter-spacing: 0;
+  }
+
+  .photo-cleaner-comparison-page .comparison-hero-media {
+    order: 4;
+    margin: 6px 0 16px;
+  }
+
+  .photo-cleaner-comparison-page .comparison-hero-media img {
+    width: 135px;
+  }
+
+  .photo-cleaner-comparison-page .hero-actions {
+    order: 5;
+    margin: 0 0 28px;
+  }
+
+  .photo-cleaner-comparison-page .hero-summary {
+    order: 6;
+  }
+
+  .photo-cleaner-comparison-page .article-meta {
+    order: 7;
   }
 
   .product-screen-media {
