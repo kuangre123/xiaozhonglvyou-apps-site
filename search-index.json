@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-10",
+  "generatedAt": "2026-08-11",
   "origin": "https://www.xiaozhonglvyou.com",
   "pageCount": 54,
   "pages": [
@@ -841,14 +841,17 @@
       "path": "/private-ai-photo-cleaner.html",
       "title": "Private AI Photo Cleaner for iPhone | No Uploads (2026)",
       "description": "On-device AI finds duplicates and 9 photo categories with no photo uploads. App Store says Data Not Collected. Free download; optional Pro subscription.",
-      "h1": "Clean iPhone photos with on-device AI and no uploads.",
+      "h1": "Private iPhone photo cleaning. No uploads.",
       "lang": "en",
       "category": "guide",
       "canonical": "https://www.xiaozhonglvyou.com/private-ai-photo-cleaner.html",
-      "lastmod": "2026-08-10",
+      "lastmod": "2026-08-11",
       "changefreq": "weekly",
       "priority": 1,
-      "images": [],
+      "images": [
+        "https://www.xiaozhonglvyou.com/assets/og-private-ai-photo-cleaner.png",
+        "https://www.xiaozhonglvyou.com/assets/ai-cleaning-home-en.jpg"
+      ],
       "headings": [
         "Five disclosures to check before granting photo access.",
         "Your photo library includes more than casual pictures.",

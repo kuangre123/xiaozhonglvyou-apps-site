@@ -110,7 +110,8 @@ const pages = [
     ],
     h1: [
       "Private AI photo cleanup should start on the iPhone.",
-      "Clean iPhone photos with on-device AI and no uploads."
+      "Clean iPhone photos with on-device AI and no uploads.",
+      "Private iPhone photo cleaning. No uploads."
     ]
   },
   {
