@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-11",
+  "generatedAt": "2026-08-12",
   "origin": "https://www.xiaozhonglvyou.com",
   "pageCount": 54,
   "pages": [
@@ -269,14 +269,17 @@
       "path": "/duplicate-photo-cleaner-guide.html",
       "title": "Duplicate Photo Cleaner for iPhone | Safe Review Guide",
       "description": "How to review duplicate and similar iPhone photos safely: compare context, screenshots, blurry photos, large media, and storage impact before deleting.",
-      "h1": "Clean duplicate iPhone photos without deleting the wrong memory.",
+      "h1": "Find duplicate iPhone photos. Review first.",
       "lang": "en",
       "category": "guide",
       "canonical": "https://www.xiaozhonglvyou.com/duplicate-photo-cleaner-guide.html",
-      "lastmod": "2026-08-10",
+      "lastmod": "2026-08-12",
       "changefreq": "weekly",
       "priority": 1,
-      "images": [],
+      "images": [
+        "https://www.xiaozhonglvyou.com/assets/og-duplicate-photo-cleaner.png",
+        "https://www.xiaozhonglvyou.com/assets/ai-cleaning-home-en.jpg"
+      ],
       "headings": [
         "How to Find and Clean Duplicate Photos on iPhone",
         "Review exact duplicates, similar shots, and low-quality media separately.",

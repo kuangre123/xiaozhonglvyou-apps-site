@@ -188,10 +188,15 @@
   </url>
   <url>
     <loc>https://www.xiaozhonglvyou.com/duplicate-photo-cleaner-guide.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-
+    <image:image>
+      <image:loc>https://www.xiaozhonglvyou.com/assets/og-duplicate-photo-cleaner.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.xiaozhonglvyou.com/assets/ai-cleaning-home-en.jpg</image:loc>
+    </image:image>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.xiaozhonglvyou.com/duplicate-photo-cleaner-guide.html" />
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.xiaozhonglvyou.com/duplicate-photo-cleaner-cn.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.xiaozhonglvyou.com/duplicate-photo-cleaner-guide.html" />

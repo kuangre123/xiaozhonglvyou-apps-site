@@ -75,6 +75,11 @@ const pages = [
     headline: [
       "Duplicate Photo Cleaner Guide for iPhone",
       "Duplicate Photo Cleaner for iPhone: Safe Review Guide"
+    ],
+    h1: [
+      "Clean duplicate iPhone photos without deleting the wrong memory.",
+      "Find duplicate iPhone photos. Review before deleting.",
+      "Find duplicate iPhone photos. Review first."
     ]
   },
   {
