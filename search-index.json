@@ -606,14 +606,17 @@
       "path": "/iphone-storage-cleanup-guide.html",
       "title": "How to Clean Up iPhone Photo Storage for Free | 2026 Guide",
       "description": "Practical iPhone storage cleanup guide for photos: classify the library, then review large media, screenshots, blurry shots, duplicates, and similar photos.",
-      "h1": "Clean iPhone storage by reviewing the photo library first.",
+      "h1": "Free up iPhone photo storage. Review first.",
       "lang": "en",
       "category": "guide",
       "canonical": "https://www.xiaozhonglvyou.com/iphone-storage-cleanup-guide.html",
-      "lastmod": "2026-07-23",
+      "lastmod": "2026-08-11",
       "changefreq": "weekly",
       "priority": 1,
-      "images": [],
+      "images": [
+        "https://www.xiaozhonglvyou.com/assets/og-iphone-storage-cleanup.png",
+        "https://www.xiaozhonglvyou.com/assets/ai-cleaning-home-en.jpg"
+      ],
       "headings": [
         "Start with content you can actually review.",
         "Classification makes cleanup safer.",

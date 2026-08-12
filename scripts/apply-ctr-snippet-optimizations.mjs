@@ -78,6 +78,15 @@ const pages = [
     ]
   },
   {
+    file: "iphone-storage-cleanup-guide.html",
+    title: "How to Clean Up iPhone Photo Storage for Free | 2026 Guide",
+    description: "Practical iPhone storage cleanup guide for photos: classify the library, then review large media, screenshots, blurry shots, duplicates, and similar photos.",
+    h1: [
+      "Clean iPhone storage by reviewing the photo library first.",
+      "Free up iPhone photo storage. Review first."
+    ]
+  },
+  {
     file: "iphone-photo-cleaner-comparison.html",
     title: "Best iPhone Photo Cleaner Apps: 3 Compared (2026)",
     headline: [
