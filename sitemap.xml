@@ -386,11 +386,14 @@
   </url>
   <url>
     <loc>https://www.xiaozhonglvyou.com/ipad-photo-organizer-guide.html</loc>
-    <lastmod>2026-07-13</lastmod>
+    <lastmod>2026-08-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
-      <image:loc>https://www.xiaozhonglvyou.com/assets/ai-cleaning-icon.png</image:loc>
+      <image:loc>https://www.xiaozhonglvyou.com/assets/og-ipad-photo-organizer-guide.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.xiaozhonglvyou.com/assets/ai-cleaning-home-en.jpg</image:loc>
     </image:image>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.xiaozhonglvyou.com/ipad-photo-organizer-guide.html" />
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.xiaozhonglvyou.com/ipad-photo-organizer-cn.html" />
