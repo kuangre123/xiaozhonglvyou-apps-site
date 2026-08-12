@@ -35,10 +35,15 @@
   </url>
   <url>
     <loc>https://www.xiaozhonglvyou.com/ai-photo-organizer-guide.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-
+    <image:image>
+      <image:loc>https://www.xiaozhonglvyou.com/assets/og-ai-photo-organizer-guide.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.xiaozhonglvyou.com/assets/ai-cleaning-home-en.jpg</image:loc>
+    </image:image>
 
   </url>
   <url>

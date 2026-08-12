@@ -70,14 +70,17 @@
       "path": "/ai-photo-organizer-guide.html",
       "title": "AI Photo Organizer for iPhone: 5 Steps, 9 Categories (2026)",
       "description": "Organize iPhone photos in 5 steps with 9 on-device AI categories. Review duplicates and screenshots. Free download; optional Pro subscription.",
-      "h1": "Organize iPhone photos in 5 steps with 9 AI categories.",
+      "h1": "Organize iPhone photos in 5 steps.",
       "lang": "en",
       "category": "guide",
       "canonical": "https://www.xiaozhonglvyou.com/ai-photo-organizer-guide.html",
-      "lastmod": "2026-08-10",
+      "lastmod": "2026-08-12",
       "changefreq": "weekly",
       "priority": 1,
-      "images": [],
+      "images": [
+        "https://www.xiaozhonglvyou.com/assets/og-ai-photo-organizer-guide.png",
+        "https://www.xiaozhonglvyou.com/assets/ai-cleaning-home-en.jpg"
+      ],
       "headings": [
         "How to Organize iPhone Photos with AI in 5 Steps",
         "Use Apple Photos first; add AI Cleaning for a cleanup workflow.",
