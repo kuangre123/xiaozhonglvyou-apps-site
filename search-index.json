@@ -47,16 +47,16 @@
       "path": "/ai-photo-classification.html",
       "title": "AI Photo Classification App for iPhone | 9 Smart Categories",
       "description": "Classify iPhone photos privately on-device into 9 useful categories, then review duplicates, screenshots, blurry shots, and large media before deleting.",
-      "h1": "Classify iPhone photos into 9 useful categories.",
+      "h1": "Sort iPhone photos into 9 useful categories.",
       "lang": "en",
       "category": "guide",
       "canonical": "https://www.xiaozhonglvyou.com/ai-photo-classification.html",
-      "lastmod": "2026-08-10",
+      "lastmod": "2026-08-12",
       "changefreq": "weekly",
       "priority": 1,
       "images": [
-        "https://www.xiaozhonglvyou.com/assets/ai-cleaning-icon.png",
-        "https://www.xiaozhonglvyou.com/assets/ai-cleaning-screen.png"
+        "https://www.xiaozhonglvyou.com/assets/og-ai-photo-classification.png",
+        "https://www.xiaozhonglvyou.com/assets/ai-cleaning-home-en.jpg"
       ],
       "headings": [
         "Use AI Cleaning when categories should lead into a review workflow.",
