@@ -112,6 +112,10 @@ const pages = [
     headline: [
       "iPhone Photo Cleaner with AI Classification",
       "AI Photo Cleaner for iPhone"
+    ],
+    h1: [
+      "Sort and clean iPhone photos with on-device AI.",
+      "Sort iPhone photos before you delete."
     ]
   },
   {

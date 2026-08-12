@@ -588,15 +588,16 @@
       "path": "/iphone-photo-cleaner.html",
       "title": "AI Photo Cleaner for iPhone | Sort Before You Delete",
       "description": "AI Cleaning - Photo Cleaner helps classify iPhone photos, review duplicates, clean screenshots, find blurry shots, and analyze real storage.",
-      "h1": "Sort and clean iPhone photos with on-device AI.",
+      "h1": "Sort iPhone photos before you delete.",
       "lang": "en",
       "category": "guide",
       "canonical": "https://www.xiaozhonglvyou.com/iphone-photo-cleaner.html",
-      "lastmod": "2026-08-10",
+      "lastmod": "2026-08-12",
       "changefreq": "weekly",
       "priority": 1,
       "images": [
-        "https://www.xiaozhonglvyou.com/assets/ai-cleaning-screen.png"
+        "https://www.xiaozhonglvyou.com/assets/og-ai-photo-cleaner-iphone.png",
+        "https://www.xiaozhonglvyou.com/assets/ai-cleaning-home-en.jpg"
       ],
       "headings": [
         "Photo cleanup is more useful after classification.",
