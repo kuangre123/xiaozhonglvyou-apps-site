@@ -1834,12 +1834,59 @@ summary {
   }
 
   .translator-guide-hero {
-    padding-top: 48px;
-    gap: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding-top: 36px;
+    padding-bottom: 36px;
+    gap: 0;
+  }
+
+  .translator-guide-hero .page-hero-copy {
+    display: contents;
+  }
+
+  .translator-guide-hero .breadcrumb {
+    order: 1;
+    margin-bottom: 12px;
+  }
+
+  .translator-guide-hero .eyebrow {
+    order: 2;
+  }
+
+  .translator-guide-hero .page-hero-copy h1 {
+    order: 3;
+    margin: 8px 0 12px;
+    font-size: 38px;
+    line-height: 1.04;
+    letter-spacing: 0;
+  }
+
+  .translator-guide-hero .page-hero-media {
+    order: 4;
+    margin: 0 0 12px;
+  }
+
+  .translator-guide-hero .hero-summary {
+    order: 5;
+    font-size: 16px;
+    line-height: 1.45;
   }
 
   .translator-guide-hero .hero-actions {
-    margin-top: 24px;
+    order: 6;
+    margin-top: 16px;
+    gap: 8px;
+  }
+
+  .translator-guide-hero .hero-actions .button-secondary {
+    display: none;
+  }
+
+  .translator-guide-hero .article-meta {
+    order: 7;
+    margin-top: 14px;
   }
 
   .screen-share-guide-hero {

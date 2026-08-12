@@ -892,9 +892,12 @@
   </url>
   <url>
     <loc>https://www.xiaozhonglvyou.com/voice-camera-translator-guide.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://www.xiaozhonglvyou.com/assets/og-voice-camera-translator.png</image:loc>
+    </image:image>
     <image:image>
       <image:loc>https://www.xiaozhonglvyou.com/assets/translator-live-screen.webp</image:loc>
     </image:image>

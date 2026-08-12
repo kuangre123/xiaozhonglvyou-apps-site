@@ -1111,14 +1111,15 @@
       "path": "/voice-camera-translator-guide.html",
       "title": "Voice & Camera Translator for Travel: 6 Steps (2026)",
       "description": "Translate travel conversations, menus, and signs on iPhone in 6 steps. Use voice, camera OCR, live interpretation, and offline core language pairs.",
-      "h1": "Use a voice and camera translator for travel in 6 steps.",
+      "h1": "Use voice and camera translation on iPhone.",
       "lang": "en",
       "category": "guide",
       "canonical": "https://www.xiaozhonglvyou.com/voice-camera-translator-guide.html",
-      "lastmod": "2026-08-10",
+      "lastmod": "2026-08-12",
       "changefreq": "weekly",
       "priority": 1,
       "images": [
+        "https://www.xiaozhonglvyou.com/assets/og-voice-camera-translator.png",
         "https://www.xiaozhonglvyou.com/assets/translator-live-screen.webp",
         "https://www.xiaozhonglvyou.com/assets/translator-camera-screen.webp"
       ],
