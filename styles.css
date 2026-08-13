@@ -1520,6 +1520,10 @@ summary {
     gap: 8px;
   }
 
+  .photo-cleaner-decision-page .hero-actions .button-secondary {
+    display: none;
+  }
+
   .photo-cleaner-decision-page .article-meta {
     order: 7;
     margin-top: 14px;
