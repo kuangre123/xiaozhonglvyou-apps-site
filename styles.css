@@ -1897,6 +1897,67 @@ summary {
     margin-top: 14px;
   }
 
+  .gif-guide-hero {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding-top: 36px;
+    padding-bottom: 36px;
+    gap: 0;
+  }
+
+  .gif-guide-hero .page-hero-copy {
+    display: contents;
+  }
+
+  .gif-guide-hero .breadcrumb {
+    order: 1;
+    margin-bottom: 12px;
+  }
+
+  .gif-guide-hero .eyebrow {
+    order: 2;
+  }
+
+  .gif-guide-hero .page-hero-copy h1 {
+    order: 3;
+    margin: 8px 0 12px;
+    font-size: 38px;
+    line-height: 1.04;
+    letter-spacing: 0;
+  }
+
+  .gif-guide-hero .page-hero-media {
+    order: 4;
+    margin: 0 0 12px;
+  }
+
+  .gif-guide-hero .product-screen-media.ctr-screen-pair img {
+    width: min(120px, 32vw);
+    border-radius: 12px;
+  }
+
+  .gif-guide-hero .hero-summary {
+    order: 5;
+    font-size: 16px;
+    line-height: 1.45;
+  }
+
+  .gif-guide-hero .hero-actions {
+    order: 6;
+    margin-top: 16px;
+    gap: 8px;
+  }
+
+  .gif-guide-hero .hero-actions .button-secondary {
+    display: none;
+  }
+
+  .gif-guide-hero .article-meta {
+    order: 7;
+    margin-top: 14px;
+  }
+
   .screen-share-guide-hero {
     padding-top: 48px;
     gap: 8px;
