@@ -1055,17 +1055,20 @@
     {
       "url": "https://www.xiaozhonglvyou.com/travel-translator.html",
       "path": "/travel-translator.html",
-      "title": "Travel Translator for iPhone | Voice, Camera & Offline",
-      "description": "Travel Translator helps travelers use voice input, translated speech playback, camera OCR translation, and fast language switching for international trips.",
-      "h1": "An iPhone travel translator for voice, camera, and offline use.",
+      "title": "iPhone Travel Translator App: Voice, Camera & Offline (2026)",
+      "description": "Translate conversations, menus, and signs on iPhone with voice, camera OCR, live interpretation, and core offline language pairs. Free to download.",
+      "h1": "Translate voices, menus, and signs on iPhone.",
       "lang": "en",
       "category": "guide",
       "canonical": "https://www.xiaozhonglvyou.com/travel-translator.html",
-      "lastmod": "2026-08-10",
+      "lastmod": "2026-08-13",
       "changefreq": "weekly",
       "priority": 1,
       "images": [
-        "https://www.xiaozhonglvyou.com/assets/travel-translator-icon.png"
+        "https://www.xiaozhonglvyou.com/assets/og-travel-translator-app.png",
+        "https://www.xiaozhonglvyou.com/assets/travel-translator-icon.png",
+        "https://www.xiaozhonglvyou.com/assets/translator-live-screen.webp",
+        "https://www.xiaozhonglvyou.com/assets/translator-camera-screen.webp"
       ],
       "headings": [
         "For moments when typing is too slow.",
