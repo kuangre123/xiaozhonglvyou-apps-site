@@ -751,6 +751,7 @@
       "changefreq": "weekly",
       "priority": 1,
       "images": [
+        "https://www.xiaozhonglvyou.com/assets/og-make-gif-on-iphone.png",
         "https://www.xiaozhonglvyou.com/assets/gifmaker-icon.png",
         "https://www.xiaozhonglvyou.com/assets/gifmaker-editor-screen.webp",
         "https://www.xiaozhonglvyou.com/assets/gifmaker-export-screen.webp"
@@ -894,16 +895,17 @@
     {
       "url": "https://www.xiaozhonglvyou.com/screen-sharing-privacy-guide.html",
       "path": "/screen-sharing-privacy-guide.html",
-      "title": "Mac Screen Sharing Privacy Checklist: 6 Steps (2026)",
-      "description": "Protect private windows and notifications before sharing your Mac screen. Follow 6 steps for permissions, protected apps, Presenting Mode, and a test.",
-      "h1": "Protect Mac screen sharing privacy in 6 steps.",
+      "title": "How to Hide Notifications When Screen Sharing on Mac (2026)",
+      "description": "Hide notifications and private windows before sharing your Mac screen. Follow 6 steps for Focus, permissions, protected apps, Presenting Mode, and a test.",
+      "h1": "Hide notifications and private windows before screen sharing.",
       "lang": "en",
       "category": "guide",
       "canonical": "https://www.xiaozhonglvyou.com/screen-sharing-privacy-guide.html",
-      "lastmod": "2026-08-10",
+      "lastmod": "2026-08-13",
       "changefreq": "weekly",
       "priority": 1,
       "images": [
+        "https://www.xiaozhonglvyou.com/assets/og-screen-sharing-privacy-guide.png",
         "https://www.xiaozhonglvyou.com/assets/anti-spy-mirroring-screen.webp"
       ],
       "headings": [

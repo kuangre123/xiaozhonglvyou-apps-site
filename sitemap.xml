@@ -600,6 +600,9 @@
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
+      <image:loc>https://www.xiaozhonglvyou.com/assets/og-make-gif-on-iphone.png</image:loc>
+    </image:image>
+    <image:image>
       <image:loc>https://www.xiaozhonglvyou.com/assets/gifmaker-icon.png</image:loc>
     </image:image>
     <image:image>
@@ -705,9 +708,12 @@
   </url>
   <url>
     <loc>https://www.xiaozhonglvyou.com/screen-sharing-privacy-guide.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://www.xiaozhonglvyou.com/assets/og-screen-sharing-privacy-guide.png</image:loc>
+    </image:image>
     <image:image>
       <image:loc>https://www.xiaozhonglvyou.com/assets/anti-spy-mirroring-screen.webp</image:loc>
     </image:image>

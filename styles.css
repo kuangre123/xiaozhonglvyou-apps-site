@@ -438,6 +438,38 @@ summary {
   margin-top: 24px;
 }
 
+.screen-share-guide-hero .hero-actions {
+  margin-top: 24px;
+}
+
+@media (min-width: 641px) {
+  .screen-share-guide-hero {
+    min-height: 600px;
+    padding-top: 88px;
+    padding-bottom: 48px;
+  }
+
+  .screen-share-guide-hero .breadcrumb {
+    margin-bottom: 14px;
+  }
+
+  .screen-share-guide-hero .page-hero-copy h1 {
+    margin: 10px 0 16px;
+    font-size: clamp(44px, 4.8vw, 60px);
+    line-height: 1.05;
+    letter-spacing: 0;
+  }
+
+  .screen-share-guide-hero .hero-summary {
+    font-size: clamp(17px, 1.6vw, 20px);
+    line-height: 1.45;
+  }
+
+  .screen-share-guide-hero .hero-actions {
+    margin-top: 20px;
+  }
+}
+
 .breadcrumb {
   margin-bottom: 18px;
   color: var(--muted);
@@ -1963,12 +1995,63 @@ summary {
   }
 
   .screen-share-guide-hero {
-    padding-top: 48px;
-    gap: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding-top: 36px;
+    padding-bottom: 36px;
+    gap: 0;
+  }
+
+  .screen-share-guide-hero .page-hero-copy {
+    display: contents;
+  }
+
+  .screen-share-guide-hero .breadcrumb {
+    order: 1;
+    margin-bottom: 12px;
+  }
+
+  .screen-share-guide-hero .eyebrow {
+    order: 2;
+  }
+
+  .screen-share-guide-hero .page-hero-copy h1 {
+    order: 3;
+    margin: 8px 0 12px;
+    font-size: 38px;
+    line-height: 1.04;
+    letter-spacing: 0;
+  }
+
+  .screen-share-guide-hero .page-hero-media {
+    order: 4;
+    margin: 0 0 12px;
+  }
+
+  .screen-share-guide-hero .page-hero-media img {
+    border-radius: 8px;
+  }
+
+  .screen-share-guide-hero .hero-summary {
+    order: 5;
+    font-size: 16px;
+    line-height: 1.45;
   }
 
   .screen-share-guide-hero .hero-actions {
-    margin-top: 24px;
+    order: 6;
+    margin-top: 16px;
+    gap: 8px;
+  }
+
+  .screen-share-guide-hero .hero-actions .button-secondary {
+    display: none;
+  }
+
+  .screen-share-guide-hero .article-meta {
+    order: 7;
+    margin-top: 14px;
   }
 
   .ride-guide-hero {

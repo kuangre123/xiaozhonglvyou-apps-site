@@ -5,7 +5,7 @@
     <link>https://www.xiaozhonglvyou.com/</link>
     <description>Independent iPhone and Mac apps for photo cleanup, travel translation, screen privacy, and focused work.</description>
     <language>en</language>
-    <lastBuildDate>Thu, 13 Aug 2026 02:31:30 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 13 Aug 2026 02:44:53 GMT</lastBuildDate>
     <item>
       <title>Automatic iPhone Bike Tracker: No Start Button (2026)</title>
       <link>https://www.xiaozhonglvyou.com/automatic-bike-ride-tracker-iphone.html</link>
@@ -36,7 +36,15 @@
       <description>Make a real GIF from video or a Live Photo on iPhone in five steps, with frame timing, canvas, captions, playback controls, 1080px export, and on-device editing.</description>
       <guid isPermaLink="true">https://www.xiaozhonglvyou.com/make-gif-on-iphone-guide.html</guid>
       <pubDate>Mon, 10 Aug 2026 00:00:00 GMT</pubDate>
-      <enclosure url="https://www.xiaozhonglvyou.com/assets/gifmaker-editor-screen.webp" type="image/webp" />
+      <enclosure url="https://www.xiaozhonglvyou.com/assets/og-make-gif-on-iphone.png" type="image/png" />
+    </item>
+    <item>
+      <title>How to Hide Notifications When Screen Sharing on Mac (2026)</title>
+      <link>https://www.xiaozhonglvyou.com/screen-sharing-privacy-guide.html</link>
+      <description>Hide notifications and private windows before sharing a Mac screen with a six-step checklist for Focus, permissions, the shared source, protected apps, Presenting Mode, and a test call.</description>
+      <guid isPermaLink="true">https://www.xiaozhonglvyou.com/screen-sharing-privacy-guide.html</guid>
+      <pubDate>Wed, 03 Jun 2026 00:00:00 GMT</pubDate>
+      <enclosure url="https://www.xiaozhonglvyou.com/assets/og-screen-sharing-privacy-guide.png" type="image/png" />
     </item>
     <item>
       <title>AI Photo Classification App for iPhone: 9 Smart Categories</title>
@@ -117,14 +125,6 @@
       <guid isPermaLink="true">https://www.xiaozhonglvyou.com/iphone-photo-cleaner-comparison.html</guid>
       <pubDate>Mon, 29 Jun 2026 00:00:00 GMT</pubDate>
       <enclosure url="https://www.xiaozhonglvyou.com/assets/ai-cleaning-home-en.jpg" type="image/jpeg" />
-    </item>
-    <item>
-      <title>Mac Screen Sharing Privacy Checklist: 6 Steps (2026)</title>
-      <link>https://www.xiaozhonglvyou.com/screen-sharing-privacy-guide.html</link>
-      <description>Protect private windows and notifications before sharing a Mac screen with a six-step checklist for permissions, the shared source, protected apps, Presenting Mode, and a test call.</description>
-      <guid isPermaLink="true">https://www.xiaozhonglvyou.com/screen-sharing-privacy-guide.html</guid>
-      <pubDate>Wed, 03 Jun 2026 00:00:00 GMT</pubDate>
-      <enclosure url="https://www.xiaozhonglvyou.com/assets/anti-spy-mirroring-screen.webp" type="image/webp" />
     </item>
     <item>
       <title>Seedance 2.5 Creator Tools for AI Photo Management</title>
