@@ -434,6 +434,10 @@ summary {
   text-underline-offset: 3px;
 }
 
+.ride-guide-hero .hero-actions {
+  margin-top: 24px;
+}
+
 .breadcrumb {
   margin-bottom: 18px;
   color: var(--muted);
@@ -1968,12 +1972,64 @@ summary {
   }
 
   .ride-guide-hero {
-    padding-top: 48px;
-    gap: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding-top: 36px;
+    padding-bottom: 36px;
+    gap: 0;
+  }
+
+  .ride-guide-hero .page-hero-copy {
+    display: contents;
+  }
+
+  .ride-guide-hero .breadcrumb {
+    order: 1;
+    margin-bottom: 12px;
+  }
+
+  .ride-guide-hero .eyebrow {
+    order: 2;
+  }
+
+  .ride-guide-hero .page-hero-copy h1 {
+    order: 3;
+    margin: 8px 0 12px;
+    font-size: 38px;
+    line-height: 1.04;
+    letter-spacing: 0;
+  }
+
+  .ride-guide-hero .page-hero-media {
+    order: 4;
+    margin: 0 0 12px;
+  }
+
+  .ride-guide-hero .product-screen-media.ctr-screen-pair img {
+    width: min(120px, 32vw);
+    border-radius: 12px;
+  }
+
+  .ride-guide-hero .hero-summary {
+    order: 5;
+    font-size: 16px;
+    line-height: 1.45;
   }
 
   .ride-guide-hero .hero-actions {
-    margin-top: 24px;
+    order: 6;
+    margin-top: 16px;
+    gap: 8px;
+  }
+
+  .ride-guide-hero .hero-actions .button-secondary {
+    display: none;
+  }
+
+  .ride-guide-hero .article-meta {
+    order: 7;
+    margin-top: 14px;
   }
 
   .happyride-product-hero {

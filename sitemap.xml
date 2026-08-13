@@ -73,9 +73,12 @@
   </url>
   <url>
     <loc>https://www.xiaozhonglvyou.com/automatic-bike-ride-tracker-iphone.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://www.xiaozhonglvyou.com/assets/og-automatic-bike-ride-tracker.png</image:loc>
+    </image:image>
     <image:image>
       <image:loc>https://www.xiaozhonglvyou.com/assets/happyride-home-screen.webp</image:loc>
     </image:image>
