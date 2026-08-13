@@ -1805,6 +1805,10 @@ summary {
     gap: 8px;
   }
 
+  .translator-comparison-page .hero-actions .button-secondary {
+    display: none;
+  }
+
   .translator-comparison-page .article-meta {
     order: 7;
     margin-top: 14px;
