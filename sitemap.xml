@@ -440,9 +440,12 @@
   </url>
   <url>
     <loc>https://www.xiaozhonglvyou.com/iphone-photo-cleaner-cn.html</loc>
-    <lastmod>2026-07-13</lastmod>
+    <lastmod>2026-08-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://www.xiaozhonglvyou.com/assets/og-ai-photo-cleaner-iphone.png</image:loc>
+    </image:image>
     <image:image>
       <image:loc>https://www.xiaozhonglvyou.com/assets/ai-cleaning-screen.png</image:loc>
     </image:image>
@@ -467,7 +470,7 @@
   </url>
   <url>
     <loc>https://www.xiaozhonglvyou.com/iphone-photo-cleaner.html</loc>
-    <lastmod>2026-08-12</lastmod>
+    <lastmod>2026-08-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>

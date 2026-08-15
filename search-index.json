@@ -549,16 +549,17 @@
     {
       "url": "https://www.xiaozhonglvyou.com/iphone-photo-cleaner-cn.html",
       "path": "/iphone-photo-cleaner-cn.html",
-      "title": "iPhone照片清理指南 | 苹果手机相册整理和安全清理",
-      "description": "中文 iPhone 照片清理指南：先用 AI 照片智能分类看清整个相册，再逐组复查重复照片、相似照片、截图、模糊照片和大文件，确认真实存储空间后安全清理，降低误删风险。",
-      "h1": "清理相册之前，先把照片分清楚。",
+      "title": "iPhone 照片清理 App｜重复照片与相册整理 - AI Cleaning",
+      "description": "AI Cleaning 在 iPhone 本机查找重复和相似照片，集中复查截图、模糊照片和大文件；先确认再删除，核心功能免费，无需登录，照片不上传。",
+      "h1": "查找重复照片，释放 iPhone 相册空间。",
       "lang": "zh-Hans",
       "category": "regional",
       "canonical": "https://www.xiaozhonglvyou.com/iphone-photo-cleaner-cn.html",
-      "lastmod": "2026-07-13",
+      "lastmod": "2026-08-15",
       "changefreq": "weekly",
       "priority": 1,
       "images": [
+        "https://www.xiaozhonglvyou.com/assets/og-ai-photo-cleaner-iphone.png",
         "https://www.xiaozhonglvyou.com/assets/ai-cleaning-screen.png"
       ],
       "headings": [
@@ -599,13 +600,13 @@
     {
       "url": "https://www.xiaozhonglvyou.com/iphone-photo-cleaner.html",
       "path": "/iphone-photo-cleaner.html",
-      "title": "AI Photo Cleaner for iPhone | Sort Before You Delete",
-      "description": "AI Cleaning - Photo Cleaner helps classify iPhone photos, review duplicates, clean screenshots, find blurry shots, and analyze real storage.",
-      "h1": "Sort iPhone photos before you delete.",
+      "title": "iPhone Photo Cleaner for Duplicates & Storage | AI Cleaning",
+      "description": "Find duplicate and similar photos, screenshots, blurry shots, and large files on iPhone. Review before deleting; on-device analysis, free download.",
+      "h1": "Find duplicates. Free up iPhone photo storage.",
       "lang": "en",
       "category": "guide",
       "canonical": "https://www.xiaozhonglvyou.com/iphone-photo-cleaner.html",
-      "lastmod": "2026-08-12",
+      "lastmod": "2026-08-15",
       "changefreq": "weekly",
       "priority": 1,
       "images": [

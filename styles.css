@@ -592,7 +592,7 @@ summary {
 }
 
 .core-photo-cleaner-page .page-hero {
-  padding-top: 92px;
+  padding-top: 60px;
 }
 
 .core-photo-cleaner-page .page-hero-copy h1 {
@@ -1870,6 +1870,10 @@ summary {
     order: 6;
     margin-top: 16px;
     gap: 8px;
+  }
+
+  .core-photo-cleaner-page .hero-actions .button-secondary {
+    display: none;
   }
 
   .core-photo-cleaner-page .article-meta {
