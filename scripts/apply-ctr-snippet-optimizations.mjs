@@ -196,10 +196,33 @@ const pages = [
   },
   {
     file: "best-travel-translator-apps-iphone.html",
-    title: "Best Travel Translator Apps for iPhone: 3 Compared (2026)",
+    title: "Best Translator Apps for Travel: 3 Compared (2026)",
+    description: "Compare the best translator apps for travel on iPhone: Apple Translate, Google Translate, and Translation Specialist for voice, camera, and offline use.",
+    keywords: "best translator apps for travel, best translator app for travel, translation apps for travelers, offline translator app, voice translator app, camera translator app",
+    article: {
+      description: "Compare the best translator apps for travel on iPhone: Apple Translate, Google Translate, and Translation Specialist for voice, camera, and offline use.",
+      keywords: [
+        "best translator apps for travel",
+        "best translator app for travel",
+        "translation apps for travelers",
+        "Apple Translate vs Google Translate",
+        "offline translator app",
+        "camera translator app",
+        "voice translator app"
+      ],
+      wordCount: 1478
+    },
+    modifiedDate: "2026-08-15",
+    modifiedDateLabel: "August 15, 2026",
+    headline: [
+      "Best Travel Translator Apps for iPhone: 3 Compared (2026)",
+      "Best Translator Apps for Travel: 3 Compared (2026)"
+    ],
     h1: [
       "The best travel translator depends on how you communicate.",
-      "3 travel translator apps compared."
+      "3 travel translator apps compared.",
+      "3 best travel translator apps for iPhone, compared.",
+      "3 best translator apps for travel, compared."
     ]
   },
   {
@@ -347,6 +370,61 @@ function replaceMeta(html, attribute, name, value, label) {
   return html.replace(match, updated);
 }
 
+function updateArticleJsonLd(html, page) {
+  if (!page.article) return html;
+
+  let articleCount = 0;
+
+  const updatedHtml = html.replace(
+    /(<script\b[^>]*type=["']application\/ld\+json["'][^>]*>)([\s\S]*?)(<\/script>)/gi,
+    (full, open, content, close) => {
+      const parsed = JSON.parse(content);
+      let changed = false;
+
+      const visit = (value) => {
+        if (Array.isArray(value)) {
+          value.forEach(visit);
+          return;
+        }
+
+        if (!value || typeof value !== "object") return;
+
+        const types = Array.isArray(value["@type"]) ? value["@type"] : [value["@type"]];
+
+        if (types.includes("Article")) {
+          articleCount += 1;
+
+          for (const [key, expected] of Object.entries(page.article)) {
+            if (JSON.stringify(value[key]) !== JSON.stringify(expected)) {
+              value[key] = expected;
+              changed = true;
+            }
+          }
+        }
+
+        Object.values(value).forEach(visit);
+      };
+
+      visit(parsed);
+      if (!changed) return full;
+
+      const indent = content.match(/^\s*\n([ \t]+)/)?.[1] ?? "      ";
+      const formatted = JSON.stringify(parsed, null, 2)
+        .split("\n")
+        .map((line) => `${indent}${line}`)
+        .join("\n");
+
+      return `${open}\n${formatted}\n    ${close}`;
+    }
+  );
+
+  if (articleCount !== 1) {
+    throw new Error(`Expected one ${page.file} Article node, found ${articleCount}`);
+  }
+
+  return updatedHtml;
+}
+
 async function updatePage(siteDir, page) {
   const filePath = path.join(siteDir, page.file);
   let html = await readFile(filePath, "utf8");
@@ -374,6 +452,8 @@ async function updatePage(siteDir, page) {
       `${page.file} Article headline`
     );
   }
+
+  html = updateArticleJsonLd(html, page);
 
   if (page.headline) {
     const pageModifiedDate = page.modifiedDate ?? modifiedDate;
