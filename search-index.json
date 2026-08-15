@@ -400,17 +400,20 @@
     {
       "url": "https://www.xiaozhonglvyou.com/happyride-auto-ride-tracker-cn.html",
       "path": "/happyride-auto-ride-tracker-cn.html",
-      "title": "自动骑行记录 App｜iPhone 与 Apple Watch - HappyRide",
-      "description": "HappyRide 自动识别骑行、步行和跑步，结合 Apple Watch 心率，把路线、卡路里和锻炼记录写入 Apple 健康，并提供可选路线规划。",
+      "title": "iPhone 自动骑行记录 App｜无需手动开始 - HappyRide",
+      "description": "HappyRide 可在 iPhone 后台自动识别骑行、步行和跑步，无需每次手动开始；记录路线并写入 Apple 健康，支持 Apple Watch，核心追踪免费。",
       "h1": "忘记点开始，HappyRide 也能记录骑行。",
       "lang": "zh-CN",
       "category": "regional",
       "canonical": "https://www.xiaozhonglvyou.com/happyride-auto-ride-tracker-cn.html",
-      "lastmod": "2026-07-23",
+      "lastmod": "2026-08-15",
       "changefreq": "weekly",
       "priority": 1,
       "images": [
-        "https://www.xiaozhonglvyou.com/assets/happyride-icon.png"
+        "https://www.xiaozhonglvyou.com/assets/og-automatic-bike-ride-tracker.png",
+        "https://www.xiaozhonglvyou.com/assets/happyride-icon.png",
+        "https://www.xiaozhonglvyou.com/assets/happyride-home-screen.webp",
+        "https://www.xiaozhonglvyou.com/assets/happyride-ride-detail-screen.webp"
       ],
       "headings": [
         "先出发，之后再查看活动。",
@@ -424,18 +427,20 @@
     {
       "url": "https://www.xiaozhonglvyou.com/happyride-auto-ride-tracker.html",
       "path": "/happyride-auto-ride-tracker.html",
-      "title": "HappyRide Auto Ride Tracker | iPhone & Apple Watch",
-      "description": "HappyRide automatically detects cycling, walking, and running, then records routes, heart rate, calories, and workouts to Apple Health.",
+      "title": "Automatic Ride Tracker for iPhone & Apple Watch | HappyRide",
+      "description": "Automatically record bike rides, walks, and runs on iPhone with no Start button. Save routes and Apple Health workouts; core tracking is free.",
       "h1": "HappyRide records the rides you forget to start.",
       "lang": "en",
       "category": "page",
       "canonical": "https://www.xiaozhonglvyou.com/happyride-auto-ride-tracker.html",
-      "lastmod": "2026-08-10",
+      "lastmod": "2026-08-15",
       "changefreq": "weekly",
       "priority": 1,
       "images": [
+        "https://www.xiaozhonglvyou.com/assets/og-automatic-bike-ride-tracker.png",
         "https://www.xiaozhonglvyou.com/assets/happyride-icon.png",
-        "https://www.xiaozhonglvyou.com/assets/happyride-route-screen.webp"
+        "https://www.xiaozhonglvyou.com/assets/happyride-home-screen.webp",
+        "https://www.xiaozhonglvyou.com/assets/happyride-ride-detail-screen.webp"
       ],
       "headings": [
         "Move first. Review the activity later.",
