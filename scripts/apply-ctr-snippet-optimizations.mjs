@@ -57,16 +57,23 @@ const pages = [
   },
   {
     file: "best-iphone-photo-cleaner-app.html",
-    title: "Best iPhone Photo Cleaner App? 9 AI Categories (2026)",
-    description: "Try AI Cleaning free: review duplicates or sort iPhone photos into 9 on-device AI categories. Optional subscriptions; App Store says no data collected.",
+    title: "Free Photo Cleaner App for iPhone | Free vs Pro (2026)",
+    description: "Free photo cleaner app for iPhone: review duplicate and similar photos before deleting. AI Cleaning is free to download; optional Pro adds 9 AI categories.",
+    keywords: "free photo cleaner app, free photo cleaner app for iPhone, iPhone photo cleaner app, duplicate photo cleaner, similar photo cleaner, free up iPhone storage",
+    modifiedDate: "2026-08-15",
+    modifiedDateLabel: "August 15, 2026",
     headline: [
       "How to Choose an iPhone Photo Cleaner (2026 Guide)",
-      "Best iPhone Photo Cleaner App? 9 AI Categories (2026)"
+      "Best iPhone Photo Cleaner App? 9 AI Categories (2026)",
+      "iPhone Photo Cleaner: Free Download and Optional AI (2026)",
+      "Free Photo Cleaner App for iPhone: Free vs Pro (2026)"
     ],
     h1: [
       "The best iPhone photo cleaner should classify before it deletes.",
       "Is AI Cleaning the best iPhone photo cleaner for you?",
-      "Best iPhone photo cleaner for you?"
+      "Best iPhone photo cleaner for you?",
+      "Start free. Review duplicates before upgrading.",
+      "Free photo cleaner app for iPhone. Review first."
     ]
   },
   {
@@ -279,15 +286,22 @@ const modifiedDate = "2026-08-10";
 const modifiedDateLabel = "August 10, 2026";
 
 function parseArgs(argv) {
-  const args = { siteDir: process.cwd() };
+  const args = { siteDir: process.cwd(), files: new Set() };
 
   for (let index = 0; index < argv.length; index += 1) {
-    if (argv[index] !== "--site-dir" || !argv[index + 1]) {
-      throw new Error(`Unknown or incomplete argument: ${argv[index]}`);
+    if (argv[index] === "--site-dir" && argv[index + 1]) {
+      args.siteDir = path.resolve(argv[index + 1]);
+      index += 1;
+      continue;
     }
 
-    args.siteDir = path.resolve(argv[index + 1]);
-    index += 1;
+    if (argv[index] === "--file" && argv[index + 1]) {
+      args.files.add(argv[index + 1]);
+      index += 1;
+      continue;
+    }
+
+    throw new Error(`Unknown or incomplete argument: ${argv[index]}`);
   }
 
   return args;
@@ -348,6 +362,10 @@ async function updatePage(siteDir, page) {
     html = replaceMeta(html, "name", "twitter:description", page.description, `${page.file} twitter:description`);
   }
 
+  if (page.keywords) {
+    html = replaceMeta(html, "name", "keywords", page.keywords, `${page.file} keywords`);
+  }
+
   if (page.headline) {
     html = replaceFromCandidates(
       html,
@@ -390,10 +408,18 @@ async function updatePage(siteDir, page) {
   return html !== original;
 }
 
-const { siteDir } = parseArgs(process.argv.slice(2));
+const { siteDir, files } = parseArgs(process.argv.slice(2));
+const selectedPages = files.size > 0 ? pages.filter((page) => files.has(page.file)) : pages;
+
+if (selectedPages.length !== (files.size || pages.length)) {
+  const knownFiles = new Set(selectedPages.map((page) => page.file));
+  const unknownFiles = [...files].filter((file) => !knownFiles.has(file));
+  throw new Error(`Unknown page file: ${unknownFiles.join(", ")}`);
+}
+
 const changed = [];
 
-for (const page of pages) {
+for (const page of selectedPages) {
   if (await updatePage(siteDir, page)) changed.push(page.file);
 }
 
