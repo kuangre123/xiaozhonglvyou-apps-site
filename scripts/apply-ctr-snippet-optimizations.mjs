@@ -71,15 +71,20 @@ const pages = [
   },
   {
     file: "duplicate-photo-cleaner-guide.html",
-    title: "Duplicate Photo Cleaner for iPhone | Safe Review Guide",
+    title: "Duplicate Photo Cleaner for iPhone | Find &amp; Delete Safely",
+    description: "Use a duplicate photo cleaner on iPhone to find exact and similar photos, compare the best copy, and delete safely without losing important memories.",
+    modifiedDate: "2026-08-15",
+    modifiedDateLabel: "August 15, 2026",
     headline: [
       "Duplicate Photo Cleaner Guide for iPhone",
-      "Duplicate Photo Cleaner for iPhone: Safe Review Guide"
+      "Duplicate Photo Cleaner for iPhone: Safe Review Guide",
+      "Duplicate Photo Cleaner for iPhone: Find and Delete Safely"
     ],
     h1: [
       "Clean duplicate iPhone photos without deleting the wrong memory.",
       "Find duplicate iPhone photos. Review before deleting.",
-      "Find duplicate iPhone photos. Review first."
+      "Find duplicate iPhone photos. Review first.",
+      "Duplicate photo cleaner for iPhone. Find and delete safely."
     ]
   },
   {
@@ -108,14 +113,19 @@ const pages = [
   },
   {
     file: "iphone-photo-cleaner.html",
-    title: "AI Photo Cleaner for iPhone | Sort Before You Delete",
+    title: "Photo Cleaner for iPhone | Find Duplicates &amp; Free Space",
+    description: "Photo cleaner for iPhone that finds duplicate and similar photos, screenshots, blurry shots, and large files. Review first, then free up space safely.",
+    modifiedDate: "2026-08-15",
+    modifiedDateLabel: "August 15, 2026",
     headline: [
       "iPhone Photo Cleaner with AI Classification",
-      "AI Photo Cleaner for iPhone"
+      "AI Photo Cleaner for iPhone",
+      "Photo Cleaner for iPhone: Find Duplicates and Free Space"
     ],
     h1: [
       "Sort and clean iPhone photos with on-device AI.",
-      "Sort iPhone photos before you delete."
+      "Sort iPhone photos before you delete.",
+      "Photo cleaner for iPhone. Find clutter, review, free space."
     ]
   },
   {
@@ -345,20 +355,22 @@ async function updatePage(siteDir, page) {
   }
 
   if (page.headline) {
+    const pageModifiedDate = page.modifiedDate ?? modifiedDate;
+    const pageModifiedDateLabel = page.modifiedDateLabel ?? modifiedDateLabel;
     html = replaceMeta(
       html,
       "property",
       "article:modified_time",
-      modifiedDate,
+      pageModifiedDate,
       `${page.file} article:modified_time`
     );
     html = html.replace(
       /"dateModified": "\d{4}-\d{2}-\d{2}"/,
-      `"dateModified": "${modifiedDate}"`
+      `"dateModified": "${pageModifiedDate}"`
     );
     html = html.replace(
       /Updated <time datetime="\d{4}-\d{2}-\d{2}">[^<]+<\/time>/,
-      `Updated <time datetime="${modifiedDate}">${modifiedDateLabel}</time>`
+      `Updated <time datetime="${pageModifiedDate}">${pageModifiedDateLabel}</time>`
     );
   }
 
