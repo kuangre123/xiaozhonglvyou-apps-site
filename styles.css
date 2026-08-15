@@ -611,7 +611,8 @@ summary {
 }
 
 .translator-comparison-page .page-hero {
-  padding-top: 92px;
+  padding-top: 60px;
+  padding-bottom: 48px;
 }
 
 .translator-comparison-page .page-hero-copy h1 {
@@ -625,6 +626,34 @@ summary {
 
 .translator-comparison-page .page-hero-media img {
   width: min(190px, 100%);
+  border-radius: 22px;
+}
+
+.translator-guide-hero {
+  min-height: 600px;
+  padding-top: 60px;
+  padding-bottom: 48px;
+}
+
+.translator-guide-hero .page-hero-copy h1 {
+  max-width: 650px;
+  margin: 10px 0 16px;
+  font-size: clamp(44px, 5vw, 60px);
+  line-height: 1.04;
+  letter-spacing: 0;
+}
+
+.translator-guide-hero .hero-summary {
+  font-size: clamp(17px, 1.6vw, 20px);
+  line-height: 1.45;
+}
+
+.translator-guide-hero .hero-actions {
+  margin-top: 20px;
+}
+
+.translator-guide-hero .product-screen-media img {
+  width: min(180px, 100%);
   border-radius: 22px;
 }
 
