@@ -71,20 +71,23 @@ const pages = [
   },
   {
     file: "duplicate-photo-cleaner-guide.html",
-    title: "Duplicate Photo Cleaner for iPhone | Find &amp; Delete Safely",
-    description: "Use a duplicate photo cleaner on iPhone to find exact and similar photos, compare the best copy, and delete safely without losing important memories.",
+    title: "Duplicate Photo Cleaner for iPhone | Free &amp; Similar Photos",
+    description: "Start with iPhone's free Duplicates tool, then use a duplicate photo cleaner for similar photos. Compare the best copy and review before deleting.",
     modifiedDate: "2026-08-15",
     modifiedDateLabel: "August 15, 2026",
     headline: [
       "Duplicate Photo Cleaner Guide for iPhone",
       "Duplicate Photo Cleaner for iPhone: Safe Review Guide",
-      "Duplicate Photo Cleaner for iPhone: Find and Delete Safely"
+      "Duplicate Photo Cleaner for iPhone: Find and Delete Safely",
+      "Duplicate Photo Cleaner for iPhone: Free and Similar Photo Options"
     ],
     h1: [
       "Clean duplicate iPhone photos without deleting the wrong memory.",
       "Find duplicate iPhone photos. Review before deleting.",
       "Find duplicate iPhone photos. Review first.",
-      "Duplicate photo cleaner for iPhone. Find and delete safely."
+      "Duplicate photo cleaner for iPhone. Find and delete safely.",
+      "Duplicate photo cleaner for iPhone. Start free, then find similar shots.",
+      "Duplicate photo cleaner for iPhone: start free, then find similar shots."
     ]
   },
   {
