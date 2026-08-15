@@ -4,6 +4,7 @@ import { fileURLToPath } from "node:url";
 
 const scriptDir = path.dirname(fileURLToPath(import.meta.url));
 const siteDir = path.resolve(scriptDir, "..");
+const breadcrumbsOnly = process.argv.includes("--breadcrumbs-only");
 const origin = "https://www.xiaozhonglvyou.com";
 const developerId = `${origin}/#developer`;
 const publisherId = `${origin}/#publisher`;
@@ -369,6 +370,20 @@ function normalizeItemList(node, fileName) {
   };
 }
 
+function normalizeBreadcrumbList(node, canonical) {
+  const items = Array.isArray(node.itemListElement) ? node.itemListElement : [];
+  const terminalName = items.at(-1)?.name?.trim() || "Page";
+  const { itemListElement, ...rest } = node;
+
+  return {
+    ...rest,
+    "@id": `${canonical}#breadcrumb`,
+    name: terminalName,
+    numberOfItems: items.length,
+    itemListElement: items
+  };
+}
+
 function normalizeNode(value, fileName, canonical) {
   if (Array.isArray(value)) return value.map((item) => normalizeNode(item, fileName, canonical));
   if (!value || typeof value !== "object") return value;
@@ -376,6 +391,10 @@ function normalizeNode(value, fileName, canonical) {
   let node = Object.fromEntries(
     Object.entries(value).map(([key, child]) => [key, normalizeNode(child, fileName, canonical)])
   );
+
+  if (breadcrumbsOnly) {
+    return hasType(node, "BreadcrumbList") ? normalizeBreadcrumbList(node, canonical) : node;
+  }
 
   if (hasType(node, "Person") && (node["@id"] === developerId || ["CrazyAIAgent", "Summer Chen", "Bo Chen", "bo chen"].includes(node.name))) {
     node = developerEntity();
@@ -399,6 +418,7 @@ function normalizeNode(value, fileName, canonical) {
     };
   }
   if (hasType(node, "ItemList")) node = normalizeItemList(node, fileName);
+  if (hasType(node, "BreadcrumbList")) node = normalizeBreadcrumbList(node, canonical);
 
   return node;
 }
@@ -420,10 +440,12 @@ function normalizeHtml(html, fileName) {
     }
   );
 
-  updated = updated.replace(
-    /(<a\b[^>]*\brel=["'][^"']*\bauthor\b[^"']*["'][^>]*>)(?:CrazyAIAgent|Summer Chen)(<\/a>)/gi,
-    "$1Bo Chen$2"
-  );
+  if (!breadcrumbsOnly) {
+    updated = updated.replace(
+      /(<a\b[^>]*\brel=["'][^"']*\bauthor\b[^"']*["'][^>]*>)(?:CrazyAIAgent|Summer Chen)(<\/a>)/gi,
+      "$1Bo Chen$2"
+    );
+  }
 
   return updated;
 }

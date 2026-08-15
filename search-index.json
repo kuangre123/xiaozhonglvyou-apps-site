@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-13",
+  "generatedAt": "2026-08-15",
   "origin": "https://www.xiaozhonglvyou.com",
   "pageCount": 54,
   "pages": [
@@ -92,13 +92,13 @@
     {
       "url": "https://www.xiaozhonglvyou.com/apps.html",
       "path": "/apps.html",
-      "title": "All CrazyAIAgent Apps | iPhone, Apple Watch & Mac",
-      "description": "Explore CrazyAIAgent apps for AI photo cleanup, GIF creation, automatic ride tracking, travel translation, and Mac screen privacy.",
-      "h1": "All CrazyAIAgent apps for iPhone, Apple Watch, and Mac.",
+      "title": "iPhone & Mac Utility Apps | Photo Cleaner, GIF Maker & Ride",
+      "description": "Compare privacy-first apps for AI photo cleanup, GIF creation, automatic ride tracking, travel translation, and Mac screen privacy, with direct App Store links.",
+      "h1": "iPhone and Mac utility apps for photos, GIFs, rides, travel, and privacy.",
       "lang": "en",
       "category": "hub",
       "canonical": "https://www.xiaozhonglvyou.com/apps.html",
-      "lastmod": "2026-08-10",
+      "lastmod": "2026-08-15",
       "changefreq": "weekly",
       "priority": 1,
       "images": [
@@ -355,17 +355,20 @@
     {
       "url": "https://www.xiaozhonglvyou.com/gif-maker.html",
       "path": "/gif-maker.html",
-      "title": "GIF Maker for iPhone: Video & Live Photos to GIF",
-      "description": "GIFmaker turns photos, videos, and Live Photos into GIFs on iPhone, with frame timing, captions, boomerang, canvas presets, and on-device editing.",
-      "h1": "Make GIFs from video and Live Photos on iPhone.",
+      "title": "Free GIF Maker for iPhone: Video & Live Photo to GIF",
+      "description": "Make GIFs from video, Live Photos, or photos on iPhone. Edit timing, captions, canvas, reverse, and boomerang entirely on-device. Free download.",
+      "h1": "Turn videos and Live Photos into GIFs on iPhone.",
       "lang": "en",
       "category": "page",
       "canonical": "https://www.xiaozhonglvyou.com/gif-maker.html",
-      "lastmod": "2026-08-10",
+      "lastmod": "2026-08-15",
       "changefreq": "weekly",
       "priority": 1,
       "images": [
-        "https://www.xiaozhonglvyou.com/assets/gifmaker-icon.png"
+        "https://www.xiaozhonglvyou.com/assets/og-gif-maker-app.png",
+        "https://www.xiaozhonglvyou.com/assets/gifmaker-icon.png",
+        "https://www.xiaozhonglvyou.com/assets/gifmaker-editor-screen.webp",
+        "https://www.xiaozhonglvyou.com/assets/gifmaker-export-screen.webp"
       ],
       "headings": [
         "Use the media you already have.",
@@ -445,13 +448,13 @@
     {
       "url": "https://www.xiaozhonglvyou.com/",
       "path": "/",
-      "title": "iPhone & Mac Apps: Photo Cleaner, GIF Maker & Privacy",
-      "description": "Independent iOS and macOS apps for on-device photo cleanup, GIF creation, automatic ride tracking, travel translation, and Mac screen privacy.",
-      "h1": "iPhone and Mac apps for photos, travel, fitness, and privacy.",
+      "title": "Privacy-First iPhone & Mac Apps | Photo Cleaner & GIF Maker",
+      "description": "Explore privacy-first iPhone and Mac apps for on-device photo cleanup, GIF creation, automatic ride tracking, travel translation, and screen privacy.",
+      "h1": "Privacy-first iPhone and Mac apps for photos, GIFs, travel, fitness, and work.",
       "lang": "en",
       "category": "home",
       "canonical": "https://www.xiaozhonglvyou.com/",
-      "lastmod": "2026-08-10",
+      "lastmod": "2026-08-15",
       "changefreq": "weekly",
       "priority": 1,
       "images": [
@@ -831,13 +834,13 @@
     {
       "url": "https://www.xiaozhonglvyou.com/privacy.html",
       "path": "/privacy.html",
-      "title": "Privacy | CrazyAIAgent",
-      "description": "Privacy and permission notes for CrazyAIAgent apps, including GIFmaker on-device media editing and HappyRide motion, location, and Apple Health access.",
-      "h1": "Privacy is treated as a product boundary.",
+      "title": "App Privacy & Permissions | CrazyAIAgent",
+      "description": "See how CrazyAIAgent apps handle photos, media, motion, location, Apple Health, and screen access, including on-device processing and required permissions.",
+      "h1": "App privacy and permissions, explained product by product.",
       "lang": "en",
       "category": "support",
       "canonical": "https://www.xiaozhonglvyou.com/privacy.html",
-      "lastmod": "2026-07-23",
+      "lastmod": "2026-08-15",
       "changefreq": "weekly",
       "priority": 1,
       "images": [],

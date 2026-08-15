@@ -651,6 +651,34 @@ summary {
   border-radius: 22px;
 }
 
+.gif-maker-product-hero {
+  min-height: 600px;
+  padding-top: 88px;
+  padding-bottom: 48px;
+}
+
+.gif-maker-product-hero .page-hero-copy h1 {
+  max-width: 650px;
+  margin: 10px 0 16px;
+  font-size: clamp(46px, 5.2vw, 64px);
+  line-height: 1.04;
+  letter-spacing: 0;
+}
+
+.gif-maker-product-hero .hero-summary {
+  font-size: clamp(17px, 1.6vw, 20px);
+  line-height: 1.45;
+}
+
+.gif-maker-product-hero .hero-actions {
+  margin-top: 20px;
+}
+
+.gif-maker-product-hero .product-screen-media img {
+  width: min(190px, 100%);
+  border-radius: 22px;
+}
+
 .ctr-screen-pair {
   grid-template-columns: repeat(2, minmax(0, 1fr));
   align-items: center;
@@ -2019,6 +2047,68 @@ summary {
   }
 
   .travel-translator-product-hero .article-meta {
+    order: 7;
+    margin-top: 14px;
+  }
+
+  .gif-maker-product-hero {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    min-height: auto;
+    padding-top: 36px;
+    padding-bottom: 36px;
+    gap: 0;
+  }
+
+  .gif-maker-product-hero .page-hero-copy {
+    display: contents;
+  }
+
+  .gif-maker-product-hero .breadcrumb {
+    order: 1;
+    margin-bottom: 12px;
+  }
+
+  .gif-maker-product-hero .eyebrow {
+    order: 2;
+  }
+
+  .gif-maker-product-hero .page-hero-copy h1 {
+    order: 3;
+    margin: 8px 0 12px;
+    font-size: 38px;
+    line-height: 1.04;
+    letter-spacing: 0;
+  }
+
+  .gif-maker-product-hero .page-hero-media {
+    order: 4;
+    margin: 0 0 12px;
+  }
+
+  .gif-maker-product-hero .product-screen-media.ctr-screen-pair img {
+    width: min(130px, 34vw);
+    border-radius: 12px;
+  }
+
+  .gif-maker-product-hero .hero-summary {
+    order: 5;
+    font-size: 16px;
+    line-height: 1.45;
+  }
+
+  .gif-maker-product-hero .hero-actions {
+    order: 6;
+    margin-top: 16px;
+    gap: 8px;
+  }
+
+  .gif-maker-product-hero .hero-actions .button-secondary {
+    display: none;
+  }
+
+  .gif-maker-product-hero .article-meta {
     order: 7;
     margin-top: 14px;
   }
