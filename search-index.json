@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-15",
+  "generatedAt": "2026-08-16",
   "origin": "https://www.xiaozhonglvyou.com",
   "pageCount": 54,
   "pages": [
@@ -93,12 +93,12 @@
       "url": "https://www.xiaozhonglvyou.com/apps.html",
       "path": "/apps.html",
       "title": "iPhone & Mac Utility Apps | Photo Cleaner, GIF Maker & Ride",
-      "description": "Compare privacy-first apps for AI photo cleanup, GIF creation, automatic ride tracking, travel translation, and Mac screen privacy, with direct App Store links.",
+      "description": "Compare privacy-first apps for AI photo cleanup, GIF creation, bike ride tracking, travel translation, and Mac screen privacy, with direct App Store links.",
       "h1": "iPhone and Mac utility apps for photos, GIFs, rides, travel, and privacy.",
       "lang": "en",
       "category": "hub",
       "canonical": "https://www.xiaozhonglvyou.com/apps.html",
-      "lastmod": "2026-08-15",
+      "lastmod": "2026-08-16",
       "changefreq": "weekly",
       "priority": 1,
       "images": [
@@ -117,13 +117,13 @@
     {
       "url": "https://www.xiaozhonglvyou.com/automatic-bike-ride-tracker-iphone.html",
       "path": "/automatic-bike-ride-tracker-iphone.html",
-      "title": "Automatic iPhone Bike Tracker: No Start Button (2026)",
-      "description": "Automatically track qualifying bike rides on iPhone without pressing Start. HappyRide records routes and Apple Health workouts; core tracking is free.",
-      "h1": "Automatic bike ride tracking. No Start button.",
+      "title": "How to Track a Bike Ride on iPhone Automatically (2026)",
+      "description": "Track a bike ride on iPhone automatically without tapping Start. Set up Motion &amp; Fitness, background location, Apple Health, Apple Watch, and a test ride.",
+      "h1": "Track a bike ride on iPhone automatically in 4 steps.",
       "lang": "en",
       "category": "page",
       "canonical": "https://www.xiaozhonglvyou.com/automatic-bike-ride-tracker-iphone.html",
-      "lastmod": "2026-08-13",
+      "lastmod": "2026-08-16",
       "changefreq": "weekly",
       "priority": 1,
       "images": [
@@ -132,12 +132,12 @@
         "https://www.xiaozhonglvyou.com/assets/happyride-ride-detail-screen.webp"
       ],
       "headings": [
-        "Use a reminder when you want control. Use detection when you forget.",
+        "Use the iPhone for automatic rides or Apple Workout for manual control.",
         "Apple Workout reminder vs HappyRide automatic detection.",
-        "How to set up automatic bike ride tracking.",
+        "How to track a bike ride on iPhone in 4 steps.",
         "Automatic detection is convenient, not infallible.",
         "Check the current behavior before choosing.",
-        "Automatic cycling questions answered.",
+        "iPhone bike ride tracking questions answered.",
         "HappyRide details and support"
       ]
     },
@@ -240,7 +240,7 @@
       "lang": "en",
       "category": "regional",
       "canonical": "https://www.xiaozhonglvyou.com/directory.html",
-      "lastmod": "2026-08-15",
+      "lastmod": "2026-08-16",
       "changefreq": "weekly",
       "priority": 1,
       "images": [],
@@ -388,7 +388,7 @@
       "lang": "en",
       "category": "hub",
       "canonical": "https://www.xiaozhonglvyou.com/guides.html",
-      "lastmod": "2026-08-15",
+      "lastmod": "2026-08-16",
       "changefreq": "weekly",
       "priority": 1,
       "images": [],
@@ -428,13 +428,13 @@
     {
       "url": "https://www.xiaozhonglvyou.com/happyride-auto-ride-tracker.html",
       "path": "/happyride-auto-ride-tracker.html",
-      "title": "Automatic Ride Tracker for iPhone & Apple Watch | HappyRide",
-      "description": "Automatically record bike rides, walks, and runs on iPhone with no Start button. Save routes and Apple Health workouts; core tracking is free.",
-      "h1": "HappyRide records the rides you forget to start.",
+      "title": "Free Bike Ride Tracker App for iPhone | HappyRide",
+      "description": "Free bike ride tracker app for iPhone that records qualifying rides automatically without tapping Start. Save GPS routes and Apple Health workouts.",
+      "h1": "Free bike ride tracker app for iPhone. No Start button.",
       "lang": "en",
       "category": "page",
       "canonical": "https://www.xiaozhonglvyou.com/happyride-auto-ride-tracker.html",
-      "lastmod": "2026-08-15",
+      "lastmod": "2026-08-16",
       "changefreq": "weekly",
       "priority": 1,
       "images": [
@@ -444,23 +444,23 @@
         "https://www.xiaozhonglvyou.com/assets/happyride-ride-detail-screen.webp"
       ],
       "headings": [
-        "Move first. Review the activity later.",
+        "Track the ride first. Review the activity later.",
         "Routes, heart rate, calories, and workouts stay connected.",
         "Choose a route style, distance, or nearby destination.",
         "Know the current boundaries before installing.",
-        "What to know before the next ride."
+        "Free tracking, automatic recording, and compatibility."
       ]
     },
     {
       "url": "https://www.xiaozhonglvyou.com/",
       "path": "/",
       "title": "Privacy-First iPhone & Mac Apps | Photo Cleaner & GIF Maker",
-      "description": "Explore privacy-first iPhone and Mac apps for on-device photo cleanup, GIF creation, automatic ride tracking, travel translation, and screen privacy.",
+      "description": "Explore privacy-first iPhone and Mac apps for on-device photo cleanup, GIF creation, bike ride tracking, travel translation, and screen privacy.",
       "h1": "Privacy-first iPhone and Mac apps for photos, GIFs, travel, fitness, and work.",
       "lang": "en",
       "category": "home",
       "canonical": "https://www.xiaozhonglvyou.com/",
-      "lastmod": "2026-08-15",
+      "lastmod": "2026-08-16",
       "changefreq": "weekly",
       "priority": 1,
       "images": [

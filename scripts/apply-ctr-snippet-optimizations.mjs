@@ -175,23 +175,68 @@ const pages = [
   },
   {
     file: "happyride-auto-ride-tracker.html",
-    title: "HappyRide Auto Ride Tracker | iPhone &amp; Apple Watch",
+    title: "Free Bike Ride Tracker App for iPhone | HappyRide",
+    description: "Free bike ride tracker app for iPhone that records qualifying rides automatically without tapping Start. Save GPS routes and Apple Health workouts.",
+    keywords: "free bike ride tracker app, free bike ride tracker app for iPhone, bike ride tracker app, bike tracker app free, bike ride tracker iPhone, GPS bike ride tracker, Apple Health cycling app",
+    modifiedDate: "2026-08-16",
+    modifiedDateLabel: "August 16, 2026",
+    webPage: {
+      "@id": "https://www.xiaozhonglvyou.com/happyride-auto-ride-tracker.html#page",
+      name: "Free Bike Ride Tracker App for iPhone | HappyRide",
+      description: "Free bike ride tracker app for iPhone that records qualifying rides automatically without tapping Start. Save GPS routes and Apple Health workouts.",
+      dateModified: "2026-08-16"
+    },
+    softwareApplication: {
+      "@id": "https://www.xiaozhonglvyou.com/happyride-auto-ride-tracker.html#app",
+      alternateName: [
+        "HappyRide",
+        "Free Bike Ride Tracker App",
+        "Bike Ride Tracker App"
+      ],
+      description: "Free bike ride tracker app for iPhone that records qualifying rides automatically without tapping Start. Save GPS routes and Apple Health workouts."
+    },
     h1: [
       "Automatic cycling workout tracking, even when you forget to start.",
-      "HappyRide records the rides you forget to start."
+      "HappyRide records the rides you forget to start.",
+      "Free bike ride tracker app for iPhone. No Start button."
     ]
   },
   {
     file: "automatic-bike-ride-tracker-iphone.html",
-    title: "Automatic Bike Ride Tracking on iPhone: 4 Steps (2026)",
-    description: "Set up automatic bike ride tracking on iPhone in 4 steps. Compare no-Start detection, Apple Watch, permissions, Apple Health, and short-ride limits.",
+    title: "How to Track a Bike Ride on iPhone Automatically (2026)",
+    description: "Track a bike ride on iPhone automatically without tapping Start. Set up Motion &amp; Fitness, background location, Apple Health, Apple Watch, and a test ride.",
+    keywords: "how to track a bike ride on iPhone, how can I track my bike ride on iPhone, bike ride tracker iPhone, bike ride tracker app, track cycling on iPhone, automatic bike ride tracker",
+    modifiedDate: "2026-08-16",
+    modifiedDateLabel: "August 16, 2026",
+    article: {
+      description: "Track a bike ride on iPhone automatically without tapping Start. Set up Motion & Fitness, background location, Apple Health, Apple Watch, and a test ride.",
+      keywords: [
+        "how to track a bike ride on iPhone",
+        "how can I track my bike ride on iPhone",
+        "bike ride tracker iPhone",
+        "bike ride tracker app",
+        "automatic bike ride tracker",
+        "Apple Health workout",
+        "background GPS ride recording"
+      ]
+    },
+    autoArticleWordCount: true,
+    howTo: {
+      "@id": "https://www.xiaozhonglvyou.com/automatic-bike-ride-tracker-iphone.html#howto",
+      name: "How to track a bike ride on iPhone automatically",
+      description: "Set up HappyRide to detect qualifying bike rides, record GPS routes, and save Apple Health workouts without tapping Start."
+    },
     headline: [
       "Automatic Bike Ride Tracker for iPhone (2026 Guide)",
-      "Automatic Bike Ride Tracking on iPhone: 4 Steps (2026)"
+      "Automatic Bike Ride Tracking on iPhone: 4 Steps (2026)",
+      "Automatic iPhone Bike Tracker: No Start Button (2026)",
+      "How to Track a Bike Ride on iPhone Automatically (2026)"
     ],
     h1: [
       "Track a bike ride without pressing Start.",
-      "Set up automatic bike ride tracking in 4 steps."
+      "Set up automatic bike ride tracking in 4 steps.",
+      "Automatic bike ride tracking. No Start button.",
+      "Track a bike ride on iPhone automatically in 4 steps."
     ]
   },
   {
@@ -370,10 +415,35 @@ function replaceMeta(html, attribute, name, value, label) {
   return html.replace(match, updated);
 }
 
-function updateArticleJsonLd(html, page) {
-  if (!page.article) return html;
+function countVisibleMainWords(html) {
+  const main = html.match(/<main\b[^>]*>([\s\S]*?)<\/main>/i)?.[1] ?? html;
+  const visibleText = main
+    .replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi, " ")
+    .replace(/<style\b[^>]*>[\s\S]*?<\/style>/gi, " ")
+    .replace(/<noscript\b[^>]*>[\s\S]*?<\/noscript>/gi, " ")
+    .replace(/<[^>]*>/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
 
-  let articleCount = 0;
+  return visibleText ? visibleText.split(/\s+/).length : 0;
+}
+
+function updateJsonLd(html, page) {
+  const updates = [
+    page.article && { type: "Article", values: page.article, label: "Article" },
+    page.webPage && { type: "WebPage", id: page.webPage["@id"], values: page.webPage, label: "WebPage" },
+    page.softwareApplication && {
+      type: "SoftwareApplication",
+      id: page.softwareApplication["@id"],
+      values: page.softwareApplication,
+      label: "SoftwareApplication"
+    },
+    page.howTo && { type: "HowTo", id: page.howTo["@id"], values: page.howTo, label: "HowTo" }
+  ].filter(Boolean);
+
+  if (updates.length === 0) return html;
+
+  const counts = new Map(updates.map((update) => [update, 0]));
 
   const updatedHtml = html.replace(
     /(<script\b[^>]*type=["']application\/ld\+json["'][^>]*>)([\s\S]*?)(<\/script>)/gi,
@@ -391,10 +461,13 @@ function updateArticleJsonLd(html, page) {
 
         const types = Array.isArray(value["@type"]) ? value["@type"] : [value["@type"]];
 
-        if (types.includes("Article")) {
-          articleCount += 1;
+        for (const update of updates) {
+          if (!types.includes(update.type)) continue;
+          if (update.id && value["@id"] !== update.id) continue;
 
-          for (const [key, expected] of Object.entries(page.article)) {
+          counts.set(update, counts.get(update) + 1);
+
+          for (const [key, expected] of Object.entries(update.values)) {
             if (JSON.stringify(value[key]) !== JSON.stringify(expected)) {
               value[key] = expected;
               changed = true;
@@ -418,8 +491,11 @@ function updateArticleJsonLd(html, page) {
     }
   );
 
-  if (articleCount !== 1) {
-    throw new Error(`Expected one ${page.file} Article node, found ${articleCount}`);
+  for (const update of updates) {
+    const count = counts.get(update);
+    if (count !== 1) {
+      throw new Error(`Expected one ${page.file} ${update.label} node, found ${count}`);
+    }
   }
 
   return updatedHtml;
@@ -453,18 +529,18 @@ async function updatePage(siteDir, page) {
     );
   }
 
-  html = updateArticleJsonLd(html, page);
-
-  if (page.headline) {
+  if (page.headline || page.modifiedDate) {
     const pageModifiedDate = page.modifiedDate ?? modifiedDate;
     const pageModifiedDateLabel = page.modifiedDateLabel ?? modifiedDateLabel;
-    html = replaceMeta(
-      html,
-      "property",
-      "article:modified_time",
-      pageModifiedDate,
-      `${page.file} article:modified_time`
-    );
+    if (page.headline) {
+      html = replaceMeta(
+        html,
+        "property",
+        "article:modified_time",
+        pageModifiedDate,
+        `${page.file} article:modified_time`
+      );
+    }
     html = html.replace(
       /"dateModified": "\d{4}-\d{2}-\d{2}"/,
       `"dateModified": "${pageModifiedDate}"`
@@ -483,6 +559,18 @@ async function updatePage(siteDir, page) {
       `${page.file} H1`
     );
   }
+
+  const pageWithResolvedArticle = page.autoArticleWordCount
+    ? {
+        ...page,
+        article: {
+          ...page.article,
+          wordCount: countVisibleMainWords(html)
+        }
+      }
+    : page;
+
+  html = updateJsonLd(html, pageWithResolvedArticle);
 
   if (html !== original) await writeFile(filePath, html, "utf8");
   return html !== original;
