@@ -298,30 +298,70 @@ const pages = [
   },
   {
     file: "mac-screen-privacy.html",
-    title: "Best Mac Screen Privacy App? Free vs Full (2026)",
-    description: "Compare free Anti-spy screen Lite vs the $2.99 full Mac app for local face detection, sensitive-window hiding, presentation mode, and screen-share privacy.",
+    title: "Mac Privacy Screen App | Free vs $2.99 (2026)",
+    description: "Mac privacy screen app for hiding selected windows, covering sensitive areas, and safer presentations. Compare free Lite with the $2.99 full Mac app.",
+    keywords: "mac privacy screen app, Mac privacy app, screen privacy app for Mac, privacy screen app MacBook, hide sensitive windows Mac, anti spy screen, presentation privacy app",
+    modifiedDate: "2026-08-16",
+    modifiedDateLabel: "August 16, 2026",
+    article: {
+      description: "Mac privacy screen app for hiding selected windows, covering sensitive areas, and safer presentations. Compare free Lite with the $2.99 full Mac app.",
+      keywords: [
+        "mac privacy screen app",
+        "Mac privacy app",
+        "screen privacy app for Mac",
+        "privacy screen app MacBook",
+        "hide sensitive windows Mac",
+        "anti spy screen",
+        "presentation privacy app"
+      ]
+    },
+    autoArticleWordCount: true,
     headline: [
       "Mac Screen Privacy App",
-      "Best Mac Screen Privacy App? Free vs Full (2026)"
+      "Best Mac Screen Privacy App? Free vs Full (2026)",
+      "Mac Privacy Screen App: Free vs $2.99 (2026)"
     ],
     h1: [
       "Hide sensitive Mac windows in shared spaces.",
-      "Choose the right Mac screen privacy app."
+      "Choose the right Mac screen privacy app.",
+      "Mac privacy screen app. Hide sensitive windows."
     ]
   },
   {
     file: "screen-sharing-privacy-guide.html",
-    title: "Mac Screen Sharing Privacy Checklist: 6 Steps (2026)",
-    description: "Protect private windows and notifications before sharing your Mac screen. Follow 6 steps for permissions, protected apps, Presenting Mode, and a test.",
+    title: "How to Hide Notifications When Screen Sharing on Mac (2026)",
+    description: "Hide notifications when screen sharing on Mac in 6 steps. Use Focus, share one window, protect private apps, enable Presenting Mode, and test first.",
+    keywords: "how to hide notifications when screen sharing on Mac, Mac hide notifications when sharing screen, Mac screen sharing privacy, share screen privacy settings Mac, hide private windows Mac",
+    modifiedDate: "2026-08-16",
+    modifiedDateLabel: "August 16, 2026",
+    article: {
+      description: "Hide notifications when screen sharing on Mac in 6 steps. Use Focus, share one window, protect private apps, enable Presenting Mode, and test first.",
+      keywords: [
+        "how to hide notifications when screen sharing on Mac",
+        "Mac hide notifications when sharing screen",
+        "Mac screen sharing privacy",
+        "share screen privacy settings Mac",
+        "hide private windows Mac"
+      ]
+    },
+    autoArticleWordCount: true,
+    howTo: {
+      "@id": "https://www.xiaozhonglvyou.com/screen-sharing-privacy-guide.html#howto",
+      name: "How to hide notifications when screen sharing on Mac",
+      description: "A six-step checklist using Focus, notification settings, a narrow shared source, protected apps, Presenting Mode, and a test share."
+    },
     headline: [
       "Mac Screen Sharing Privacy Guide",
       "How to Protect Mac Privacy During Screen Sharing",
-      "Mac Screen Sharing Privacy Checklist: 6 Steps (2026)"
+      "Mac Screen Sharing Privacy Checklist: 6 Steps (2026)",
+      "How to Hide Notifications When Screen Sharing on Mac (2026)"
     ],
     h1: [
       "Protect sensitive Mac windows before a meeting or nearby glance exposes them.",
       "Protect Mac privacy before screen sharing.",
-      "Protect Mac screen sharing privacy in 6 steps."
+      "Protect Mac screen sharing privacy in 6 steps.",
+      "Hide notifications and private windows before screen sharing.",
+      "Hide notifications when screen sharing on Mac in 6 steps."
     ]
   },
   {
