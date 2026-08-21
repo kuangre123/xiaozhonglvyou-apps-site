@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-16",
+  "generatedAt": "2026-08-21",
   "origin": "https://www.xiaozhonglvyou.com",
   "pageCount": 54,
   "pages": [
@@ -98,7 +98,7 @@
       "lang": "en",
       "category": "hub",
       "canonical": "https://www.xiaozhonglvyou.com/apps.html",
-      "lastmod": "2026-08-16",
+      "lastmod": "2026-08-21",
       "changefreq": "weekly",
       "priority": 1,
       "images": [
@@ -240,7 +240,7 @@
       "lang": "en",
       "category": "regional",
       "canonical": "https://www.xiaozhonglvyou.com/directory.html",
-      "lastmod": "2026-08-16",
+      "lastmod": "2026-08-21",
       "changefreq": "weekly",
       "priority": 1,
       "images": [],
@@ -356,13 +356,13 @@
     {
       "url": "https://www.xiaozhonglvyou.com/gif-maker.html",
       "path": "/gif-maker.html",
-      "title": "Free GIF Maker for iPhone: Video & Live Photo to GIF",
-      "description": "Make GIFs from video, Live Photos, or photos on iPhone. Edit timing, captions, canvas, reverse, and boomerang entirely on-device. Free download.",
-      "h1": "Turn videos and Live Photos into GIFs on iPhone.",
+      "title": "Free GIF Maker App for iPhone | Video & Live Photo",
+      "description": "Free GIF maker app for iPhone that turns videos, Live Photos, and pictures into GIFs. Edit timing, captions, canvas, reverse, and boomerang on-device.",
+      "h1": "Free GIF maker app for iPhone.",
       "lang": "en",
       "category": "page",
       "canonical": "https://www.xiaozhonglvyou.com/gif-maker.html",
-      "lastmod": "2026-08-15",
+      "lastmod": "2026-08-21",
       "changefreq": "weekly",
       "priority": 1,
       "images": [
@@ -375,7 +375,7 @@
         "Use the media you already have.",
         "Fine-tune the loop instead of accepting a preset.",
         "Your source media stays on your device.",
-        "How to make a GIF on iPhone.",
+        "One iPhone GIF maker for photos, video, and Live Photos.",
         "GIFmaker answers, without the guesswork."
       ]
     },
@@ -388,7 +388,7 @@
       "lang": "en",
       "category": "hub",
       "canonical": "https://www.xiaozhonglvyou.com/guides.html",
-      "lastmod": "2026-08-16",
+      "lastmod": "2026-08-21",
       "changefreq": "weekly",
       "priority": 1,
       "images": [],
@@ -460,7 +460,7 @@
       "lang": "en",
       "category": "home",
       "canonical": "https://www.xiaozhonglvyou.com/",
-      "lastmod": "2026-08-16",
+      "lastmod": "2026-08-21",
       "changefreq": "weekly",
       "priority": 1,
       "images": [
@@ -751,13 +751,13 @@
     {
       "url": "https://www.xiaozhonglvyou.com/make-gif-on-iphone-guide.html",
       "path": "/make-gif-on-iphone-guide.html",
-      "title": "How to Make a GIF on iPhone From Video or Live Photo (2026)",
-      "description": "Make a real GIF from video or a Live Photo on iPhone in 5 steps. Fine-tune timing, then export up to 1080px on-device. Free; no uploads.",
-      "h1": "Make a GIF from video or a Live Photo on iPhone.",
+      "title": "How to Make a GIF on iPhone From Video: 5 Steps (2026)",
+      "description": "Make a GIF on iPhone from video in 5 steps. Trim frames, tune timing, and export up to 1080px. Also learn how to turn a Live Photo into a GIF.",
+      "h1": "Make a GIF on iPhone from video in 5 steps.",
       "lang": "en",
       "category": "guide",
       "canonical": "https://www.xiaozhonglvyou.com/make-gif-on-iphone-guide.html",
-      "lastmod": "2026-08-13",
+      "lastmod": "2026-08-21",
       "changefreq": "weekly",
       "priority": 1,
       "images": [
@@ -769,7 +769,7 @@
       "headings": [
         "Choose the output before choosing the method.",
         "Photos effect or GIF export?",
-        "How to make a real GIF on iPhone.",
+        "How to turn a video into a GIF on iPhone.",
         "Keep the loop clear, short, and intentional.",
         "Check privacy before importing personal media.",
         "Making GIFs on iPhone.",

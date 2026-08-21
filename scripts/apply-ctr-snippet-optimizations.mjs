@@ -154,23 +154,191 @@ const pages = [
   },
   {
     file: "gif-maker.html",
-    title: "GIF Maker for iPhone: Video &amp; Live Photos to GIF",
+    title: "Free GIF Maker App for iPhone | Video &amp; Live Photo",
+    description: "Free GIF maker app for iPhone that turns videos, Live Photos, and pictures into GIFs. Edit timing, captions, canvas, reverse, and boomerang on-device.",
+    keywords: "free GIF maker app, free GIF maker app for iPhone, iPhone GIF maker, video GIF maker free for iPhone, GIF maker from photos, animated GIF maker, on-device GIF editor",
+    modifiedDate: "2026-08-21",
+    modifiedDateLabel: "August 21, 2026",
+    webPage: {
+      "@id": "https://www.xiaozhonglvyou.com/gif-maker.html#page",
+      name: "Free GIF Maker App for iPhone | Video & Live Photo",
+      description: "Free GIF maker app for iPhone that turns videos, Live Photos, and pictures into GIFs. Edit timing, captions, canvas, reverse, and boomerang on-device.",
+      dateModified: "2026-08-21"
+    },
+    softwareApplication: {
+      "@id": "https://www.xiaozhonglvyou.com/gif-maker.html#app",
+      alternateName: [
+        "GIFmaker",
+        "GIF Maker: Photos & Video",
+        "Free GIF Maker App for iPhone",
+        "Video to GIF Maker"
+      ],
+      description: "A free GIF maker app for iPhone that creates animated GIFs from photos, videos, and Live Photos with timing, captions, frame order, canvas, and playback controls."
+    },
+    structuredData: [
+      {
+        type: "BreadcrumbList",
+        id: "https://www.xiaozhonglvyou.com/gif-maker.html#breadcrumb",
+        values: {
+          name: "Free GIF Maker App for iPhone",
+          itemListElement: [
+            { "@type": "ListItem", position: 1, name: "Home", item: "https://www.xiaozhonglvyou.com/" },
+            { "@type": "ListItem", position: 2, name: "Apps", item: "https://www.xiaozhonglvyou.com/apps.html" },
+            { "@type": "ListItem", position: 3, name: "Free GIF Maker App for iPhone", item: "https://www.xiaozhonglvyou.com/gif-maker.html" }
+          ]
+        }
+      }
+    ],
+    questions: [
+      {
+        names: ["Can GIFmaker turn a video or Live Photo into a GIF?", "Is there a free GIF maker app for iPhone?"],
+        answer: "Yes. GIFmaker-Gif Studio is free to download and turns photos, videos, and Live Photos into GIFs on iPhone. It includes per-frame timing, captions, canvas ratios, reverse, and boomerang playback."
+      }
+    ],
+    removeJsonLdIds: ["https://www.xiaozhonglvyou.com/gif-maker.html#howto"],
     h1: [
       "Turn photos, video, or Live Photos into a GIF.",
-      "Make GIFs from video and Live Photos on iPhone."
+      "Make GIFs from video and Live Photos on iPhone.",
+      "Turn videos and Live Photos into GIFs on iPhone.",
+      "Free GIF maker app for iPhone."
+    ],
+    replacements: [
+      {
+        label: "product breadcrumb label",
+        from: ["<li aria-current=\"page\">GIFmaker</li>"],
+        to: "<li aria-current=\"page\">Free GIF Maker App</li>"
+      },
+      {
+        label: "product eyebrow",
+        from: ["<p class=\"eyebrow\">GIF maker for iPhone</p>"],
+        to: "<p class=\"eyebrow\">Free GIF maker app for iPhone</p>"
+      },
+      {
+        label: "product hero summary",
+        from: ["<p class=\"hero-summary\">Edit frame timing, captions, canvas, reverse, and boomerang with live preview. Everything stays on-device.</p>"],
+        to: "<p class=\"hero-summary\">Turn videos, Live Photos, or pictures into GIFs. Edit timing, captions, canvas, reverse, and boomerang with on-device processing.</p>"
+      },
+      {
+        label: "product guide call to action",
+        from: ["<a class=\"button button-secondary\" href=\"privacy.html#gifmaker\">Privacy details</a>"],
+        to: "<a class=\"button button-secondary\" href=\"make-gif-on-iphone-guide.html\">Make a GIF from video</a>"
+      },
+      {
+        label: "product workflow section id",
+        from: ["id=\"make-a-gif-on-iphone\""],
+        to: "id=\"gif-maker-workflow\""
+      },
+      {
+        label: "product workflow introduction",
+        from: ["<div><p class=\"section-kicker\">Four-step workflow</p><h2>How to make a GIF on iPhone.</h2><p>Choose the source first, then use the live preview to refine the loop before you export. For the full workflow and the difference between Photos effects and a portable .gif file, read the <a href=\"make-gif-on-iphone-guide.html\">five-step real GIF guide</a>.</p></div>"],
+        to: "<div><p class=\"section-kicker\">What the app includes</p><h2>One iPhone GIF maker for photos, video, and Live Photos.</h2><p>Choose the source, refine the loop with live preview, and export from the same app. For the complete video workflow and the difference between Photos effects and a portable .gif file, read <a href=\"make-gif-on-iphone-guide.html\">how to make a GIF on iPhone from video</a>.</p></div>"
+      },
+      {
+        label: "product visible FAQ",
+        from: ["<details open><summary>Can GIFmaker turn a video or Live Photo into a GIF?</summary><p>Yes. GIFmaker can import photos, videos, or Live Photos and turn them into animated GIFs on iPhone.</p></details>"],
+        to: "<details open><summary>Is there a free GIF maker app for iPhone?</summary><p>Yes. GIFmaker-Gif Studio is free to download and turns photos, videos, and Live Photos into GIFs on iPhone. It includes per-frame timing, captions, canvas ratios, reverse, and boomerang playback.</p></details>"
+      }
     ]
   },
   {
     file: "make-gif-on-iphone-guide.html",
-    title: "How to Make a Real GIF on iPhone in 5 Steps (2026)",
-    description: "Turn video or a Live Photo into a real GIF on iPhone in 5 steps. Edit timing and playback, then export up to 1080px on-device. Free app; no uploads.",
+    title: "How to Make a GIF on iPhone From Video: 5 Steps (2026)",
+    description: "Make a GIF on iPhone from video in 5 steps. Trim frames, tune timing, and export up to 1080px. Also learn how to turn a Live Photo into a GIF.",
+    keywords: "how to make a GIF on iPhone from video, convert video to GIF iPhone, turn video into GIF iPhone, how to turn a Live Photo into a GIF, convert Live Photo to GIF",
+    modifiedDate: "2026-08-21",
+    modifiedDateLabel: "August 21, 2026",
     headline: [
       "How to Make a GIF on iPhone from Video or Live Photos",
-      "How to Make a Real GIF on iPhone in 5 Steps (2026)"
+      "How to Make a Real GIF on iPhone in 5 Steps (2026)",
+      "How to Make a GIF on iPhone From Video or Live Photo (2026)",
+      "How to Make a GIF on iPhone From Video: 5 Steps (2026)"
+    ],
+    article: {
+      "@id": "https://www.xiaozhonglvyou.com/make-gif-on-iphone-guide.html#article",
+      headline: "How to Make a GIF on iPhone From Video: 5 Steps (2026)",
+      description: "Make a GIF on iPhone from video in five steps, with trimming, frame timing, canvas, captions, playback controls, and export up to 1080px. The guide also covers turning a Live Photo into a GIF.",
+      dateModified: "2026-08-21",
+      keywords: [
+        "how to make a GIF on iPhone from video",
+        "convert video to GIF iPhone",
+        "turn video into GIF iPhone",
+        "how to turn a Live Photo into a GIF",
+        "convert Live Photo to GIF"
+      ]
+    },
+    autoArticleWordCount: true,
+    howTo: {
+      "@id": "https://www.xiaozhonglvyou.com/make-gif-on-iphone-guide.html#howto",
+      name: "How to make a GIF on iPhone from video",
+      description: "Choose a video, trim the useful frames, tune timing and playback, set the canvas, and export a GIF up to 1080px on iPhone. The same workflow can turn a Live Photo into a GIF."
+    },
+    structuredData: [
+      {
+        type: "BreadcrumbList",
+        id: "https://www.xiaozhonglvyou.com/make-gif-on-iphone-guide.html#breadcrumb",
+        values: {
+          name: "Make a GIF on iPhone From Video",
+          itemListElement: [
+            { "@type": "ListItem", position: 1, name: "Home", item: "https://www.xiaozhonglvyou.com/" },
+            { "@type": "ListItem", position: 2, name: "Guides", item: "https://www.xiaozhonglvyou.com/guides.html" },
+            { "@type": "ListItem", position: 3, name: "Make a GIF on iPhone From Video", item: "https://www.xiaozhonglvyou.com/make-gif-on-iphone-guide.html" }
+          ]
+        }
+      }
+    ],
+    questions: [
+      {
+        names: ["Can the iPhone Photos app turn a Live Photo into a GIF?", "How do I turn a Live Photo into a GIF on iPhone?"],
+        answer: "Open the Live Photo in GIFmaker, keep the useful frames, adjust timing and playback, preview the loop, then export a real GIF. Apple's Photos app can apply Loop or Bounce, but those effects do not provide the same frame and export controls."
+      }
     ],
     h1: [
       "Make a GIF on iPhone from video or Live Photos.",
-      "Make a real GIF on iPhone in 5 steps."
+      "Make a real GIF on iPhone in 5 steps.",
+      "Make a GIF from video or a Live Photo on iPhone.",
+      "Make a GIF on iPhone from video in 5 steps."
+    ],
+    replacements: [
+      {
+        label: "guide breadcrumb label",
+        from: ["<li aria-current=\"page\">Make a GIF on iPhone</li>"],
+        to: "<li aria-current=\"page\">Make a GIF From Video</li>"
+      },
+      {
+        label: "guide eyebrow",
+        from: ["<p class=\"eyebrow\">Video and Live Photo guide</p>"],
+        to: "<p class=\"eyebrow\">Video to GIF on iPhone</p>"
+      },
+      {
+        label: "guide hero summary",
+        from: ["<p class=\"hero-summary\">Make a real .gif in five steps: tune timing and playback, then export up to 1080px with free on-device editing and no uploads.</p>"],
+        to: "<p class=\"hero-summary\">Trim the useful frames, tune timing and playback, then export up to 1080px. The same workflow also turns a Live Photo into a GIF.</p>"
+      },
+      {
+        label: "guide publication date",
+        from: ["<p class=\"article-meta\">Published and updated <time datetime=\"2026-08-13\">August 13, 2026</time> by <a href=\"about.html\" rel=\"author\">Bo Chen</a></p>"],
+        to: "<p class=\"article-meta\">Published August 10, 2026 · Updated <time datetime=\"2026-08-21\">August 21, 2026</time> by <a href=\"about.html\" rel=\"author\">Bo Chen</a></p>"
+      },
+      {
+        label: "guide product call to action",
+        from: ["<a class=\"button button-secondary\" href=\"gif-maker.html\">See GIFmaker details</a>"],
+        to: "<a class=\"button button-secondary\" href=\"gif-maker.html\">Free GIF maker app</a>"
+      },
+      {
+        label: "guide workflow heading",
+        from: ["<h2>How to make a real GIF on iPhone.</h2>"],
+        to: "<h2>How to turn a video into a GIF on iPhone.</h2>"
+      },
+      {
+        label: "guide visible FAQ",
+        from: ["<details open><summary>Can the iPhone Photos app turn a Live Photo into a GIF?</summary><p>Photos can apply Loop or Bounce to a Live Photo, which is useful for quick animation. Use a GIF maker when you need a real GIF file, frame timing, captions, canvas control, or predictable sharing outside Apple apps.</p></details>"],
+        to: "<details open><summary>How do I turn a Live Photo into a GIF on iPhone?</summary><p>Open the Live Photo in GIFmaker, keep the useful frames, adjust timing and playback, preview the loop, then export a real GIF. Apple's Photos app can apply Loop or Bounce, but those effects do not provide the same frame and export controls.</p></details>"
+      },
+      {
+        label: "guide related product label",
+        from: ["<a class=\"region-card\" href=\"gif-maker.html\"><span>Product details</span><strong>GIFmaker features, privacy, requirements, and App Store link</strong></a>"],
+        to: "<a class=\"region-card\" href=\"gif-maker.html\"><span>Free GIF maker app</span><strong>GIFmaker features, privacy, requirements, and App Store link</strong></a>"
+      }
     ]
   },
   {
@@ -468,6 +636,59 @@ function countVisibleMainWords(html) {
   return visibleText ? visibleText.split(/\s+/).length : 0;
 }
 
+function removeJsonLdNodesById(html, ids = []) {
+  if (ids.length === 0) return html;
+
+  const remainingIds = new Set(ids);
+  const updatedHtml = html.replace(
+    /(<script\b[^>]*type=["']application\/ld\+json["'][^>]*>)([\s\S]*?)(<\/script>)/gi,
+    (full, open, content, close) => {
+      const parsed = JSON.parse(content);
+      let changed = false;
+
+      const filterValue = (value) => {
+        if (Array.isArray(value)) {
+          const filtered = value
+            .filter((item) => {
+              if (!item || typeof item !== "object" || !remainingIds.has(item["@id"])) return true;
+              remainingIds.delete(item["@id"]);
+              changed = true;
+              return false;
+            })
+            .map(filterValue);
+          return filtered;
+        }
+
+        if (!value || typeof value !== "object") return value;
+
+        for (const [key, child] of Object.entries(value)) {
+          value[key] = filterValue(child);
+        }
+
+        return value;
+      };
+
+      const filtered = filterValue(parsed);
+      if (!changed) return full;
+
+      const indent = content.match(/^\s*\n([ \t]+)/)?.[1] ?? "      ";
+      const formatted = JSON.stringify(filtered, null, 2)
+        .split("\n")
+        .map((line) => `${indent}${line}`)
+        .join("\n");
+
+      return `${open}\n${formatted}\n    ${close}`;
+    }
+  );
+
+  if (remainingIds.size > 0) {
+    const unresolved = [...remainingIds].filter((id) => html.includes(`"@id": "${id}"`));
+    if (unresolved.length > 0) throw new Error(`Failed to remove JSON-LD nodes: ${unresolved.join(", ")}`);
+  }
+
+  return updatedHtml;
+}
+
 function updateJsonLd(html, page) {
   const updates = [
     page.article && { type: "Article", values: page.article, label: "Article" },
@@ -478,7 +699,13 @@ function updateJsonLd(html, page) {
       values: page.softwareApplication,
       label: "SoftwareApplication"
     },
-    page.howTo && { type: "HowTo", id: page.howTo["@id"], values: page.howTo, label: "HowTo" }
+    page.howTo && { type: "HowTo", id: page.howTo["@id"], values: page.howTo, label: "HowTo" },
+    ...(page.structuredData || []).map((update) => ({
+      type: update.type,
+      id: update.id,
+      values: update.values,
+      label: update.label || update.type
+    }))
   ].filter(Boolean);
 
   if (updates.length === 0) return html;
@@ -541,10 +768,68 @@ function updateJsonLd(html, page) {
   return updatedHtml;
 }
 
+function updateQuestions(html, page) {
+  if (!page.questions?.length) return html;
+
+  const remaining = new Set(page.questions);
+  const updatedHtml = html.replace(
+    /(<script\b[^>]*type=["']application\/ld\+json["'][^>]*>)([\s\S]*?)(<\/script>)/gi,
+    (full, open, content, close) => {
+      const parsed = JSON.parse(content);
+      let changed = false;
+
+      const visit = (value) => {
+        if (Array.isArray(value)) {
+          value.forEach(visit);
+          return;
+        }
+        if (!value || typeof value !== "object") return;
+
+        const types = Array.isArray(value["@type"]) ? value["@type"] : [value["@type"]];
+        if (types.includes("Question")) {
+          for (const question of page.questions) {
+            if (!question.names.includes(value.name)) continue;
+            const nextName = question.names.at(-1);
+            if (value.name !== nextName) {
+              value.name = nextName;
+              changed = true;
+            }
+            if (value.acceptedAnswer?.text !== question.answer) {
+              value.acceptedAnswer = { "@type": "Answer", text: question.answer };
+              changed = true;
+            }
+            remaining.delete(question);
+          }
+        }
+
+        Object.values(value).forEach(visit);
+      };
+
+      visit(parsed);
+      if (!changed) return full;
+
+      const indent = content.match(/^\s*\n([ \t]+)/)?.[1] ?? "      ";
+      const formatted = JSON.stringify(parsed, null, 2)
+        .split("\n")
+        .map((line) => `${indent}${line}`)
+        .join("\n");
+      return `${open}\n${formatted}\n    ${close}`;
+    }
+  );
+
+  if (remaining.size > 0) {
+    throw new Error(`Missing ${page.file} FAQ questions: ${[...remaining].map((question) => question.names.at(-1)).join(", ")}`);
+  }
+
+  return updatedHtml;
+}
+
 async function updatePage(siteDir, page) {
   const filePath = path.join(siteDir, page.file);
   let html = await readFile(filePath, "utf8");
   const original = html;
+
+  html = removeJsonLdNodesById(html, page.removeJsonLdIds);
 
   html = html.replace(/<title>[\s\S]*?<\/title>/i, `<title>${page.title}</title>`);
   html = replaceMeta(html, "property", "og:title", page.title, `${page.file} og:title`);
@@ -600,6 +885,15 @@ async function updatePage(siteDir, page) {
     );
   }
 
+  for (const replacement of page.replacements || []) {
+    html = replaceFromCandidates(
+      html,
+      [...replacement.from, replacement.to],
+      (value) => value,
+      `${page.file} ${replacement.label}`
+    );
+  }
+
   const pageWithResolvedArticle = page.autoArticleWordCount
     ? {
         ...page,
@@ -611,6 +905,7 @@ async function updatePage(siteDir, page) {
     : page;
 
   html = updateJsonLd(html, pageWithResolvedArticle);
+  html = updateQuestions(html, pageWithResolvedArticle);
 
   if (html !== original) await writeFile(filePath, html, "utf8");
   return html !== original;

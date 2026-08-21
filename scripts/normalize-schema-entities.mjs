@@ -5,6 +5,7 @@ import { fileURLToPath } from "node:url";
 const scriptDir = path.dirname(fileURLToPath(import.meta.url));
 const siteDir = path.resolve(scriptDir, "..");
 const breadcrumbsOnly = process.argv.includes("--breadcrumbs-only");
+const itemListsOnly = process.argv.includes("--itemlists-only");
 const origin = "https://www.xiaozhonglvyou.com";
 const developerId = `${origin}/#developer`;
 const publisherId = `${origin}/#publisher`;
@@ -114,7 +115,7 @@ const hubLists = new Map([
         ["AI Cleaning - Photo Cleaner", `${origin}/ai-photo-classification.html`],
         ["Translation Specialist", `${origin}/travel-translator.html`],
         ["GIFmaker-Gif Studio", `${origin}/gif-maker.html`],
-        ["HappyRide: Auto Ride Tracker", `${origin}/happyride-auto-ride-tracker.html`],
+        ["Free Bike Ride Tracker App", `${origin}/happyride-auto-ride-tracker.html`],
         ["Anti-spy screen", `${origin}/mac-screen-privacy.html`],
         ["Anti-spy screen Lite", `${origin}/mac-screen-privacy.html#lite`]
       ]
@@ -125,18 +126,20 @@ const hubLists = new Map([
     {
       name: "App Guides",
       items: [
-        ["Best iPhone Photo Cleaner App Guide", `${origin}/best-iphone-photo-cleaner-app.html`],
+        ["Free Photo Cleaner App for iPhone", `${origin}/best-iphone-photo-cleaner-app.html`],
         ["AI Photo Organizer Guide", `${origin}/ai-photo-organizer-guide.html`],
         ["iPad Photo Organizer Guide", `${origin}/ipad-photo-organizer-guide.html`],
         ["Duplicate Photo Cleaner Guide", `${origin}/duplicate-photo-cleaner-guide.html`],
         ["Private AI Photo Cleaner Guide", `${origin}/private-ai-photo-cleaner.html`],
         ["iPhone Storage Cleanup Guide", `${origin}/iphone-storage-cleanup-guide.html`],
-        ["Photo Cleaner Comparison 2026", `${origin}/iphone-photo-cleaner-comparison.html`],
+        ["AI Cleaning vs Cleanup vs Cleaner Kit", `${origin}/iphone-photo-cleaner-comparison.html`],
         ["German iPhone Foto Cleaner Guide", `${origin}/iphone-foto-cleaner-de.html`],
         ["French Nettoyeur Photo iPhone Guide", `${origin}/nettoyeur-photo-iphone-fr.html`],
-        ["Voice and Camera Translator Guide", `${origin}/voice-camera-translator-guide.html`],
-        ["Mac Screen Sharing Privacy Guide", `${origin}/screen-sharing-privacy-guide.html`],
-        ["Make a GIF on iPhone Guide", `${origin}/make-gif-on-iphone-guide.html`]
+        ["How to Translate Menus and Conversations on iPhone", `${origin}/voice-camera-translator-guide.html`],
+        ["Best Translator Apps for Travel", `${origin}/best-travel-translator-apps-iphone.html`],
+        ["Hide Notifications When Screen Sharing on Mac", `${origin}/screen-sharing-privacy-guide.html`],
+        ["How to Make a GIF on iPhone From Video", `${origin}/make-gif-on-iphone-guide.html`],
+        ["How to Track a Bike Ride on iPhone", `${origin}/automatic-bike-ride-tracker-iphone.html`]
       ]
     }
   ],
@@ -396,6 +399,10 @@ function normalizeNode(value, fileName, canonical) {
     return hasType(node, "BreadcrumbList") ? normalizeBreadcrumbList(node, canonical) : node;
   }
 
+  if (itemListsOnly) {
+    return hasType(node, "ItemList") ? normalizeItemList(node, fileName) : node;
+  }
+
   if (hasType(node, "Person") && (node["@id"] === developerId || ["CrazyAIAgent", "Summer Chen", "Bo Chen", "bo chen"].includes(node.name))) {
     node = developerEntity();
   }
@@ -440,7 +447,7 @@ function normalizeHtml(html, fileName) {
     }
   );
 
-  if (!breadcrumbsOnly) {
+  if (!breadcrumbsOnly && !itemListsOnly) {
     updated = updated.replace(
       /(<a\b[^>]*\brel=["'][^"']*\bauthor\b[^"']*["'][^>]*>)(?:CrazyAIAgent|Summer Chen)(<\/a>)/gi,
       "$1Bo Chen$2"
