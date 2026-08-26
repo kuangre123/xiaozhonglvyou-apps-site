@@ -41,6 +41,7 @@ Important search and answer intents:
 - 中文 iPad 照片整理 for users who need to organize iPad screenshots, document scans, imported camera files, duplicate photos, and iCloud-synced photo libraries.
 - Private AI photo organizer for iPhone users who want local photo classification without uploading the full photo library to a cloud service.
 - Travel translator app for voice translation, spoken playback, camera OCR translation, menus, signs, labels, airports, hotels, and restaurants.
+- Best GIF maker apps for iPhone comparison covering video conversion, frame editing, AI tools, export formats, subscriptions, privacy statements, and iOS support.
 - GIF maker for iPhone that turns photos, videos, and Live Photos into GIFs with frame timing, captions, boomerang loops, and private on-device processing.
 - How to make a GIF on iPhone from photos, video, or a Live Photo in four on-device steps: choose media, arrange frames, adjust the animation, and export.
 - Automatic ride tracker for cycling, walking, and running with Apple Watch heart rate, Apple Health workout records, weekly statistics, and optional scenic route planning.
@@ -105,6 +106,8 @@ Indexable pages:
   Source-based comparison of Apple Translate, Google Translate, and Translation Specialist for voice, camera, offline use, language coverage, privacy, cost, and trip readiness.
 - 出国翻译通 | 旅行语音翻译和拍照翻译指南: https://www.xiaozhonglvyou.com/travel-translator-cn.html
   出国翻译通中文说明：面向旅行、学习和跨语言沟通，覆盖语音翻译、朗读播放、拍照 OCR 翻译、菜单和路牌翻译、机场酒店餐厅等出国场景。
+- Best GIF Maker Apps for iPhone: 3 Compared (2026): https://www.xiaozhonglvyou.com/best-gif-maker-apps-iphone.html
+  Source-based comparison of GIFmaker, ImgPlay, and GIF Maker for source media, frame controls, AI features, exports, subscriptions, privacy statements, and iOS support.
 - GIF Maker for iPhone | Photos, Video & Live Photos: https://www.xiaozhonglvyou.com/gif-maker.html
   GIFmaker turns photos, videos, and Live Photos into GIFs with live preview, frame timing, text overlays, boomerang playback, and on-device editing.
 - How to Make a Real GIF on iPhone in 5 Steps (2026): https://www.xiaozhonglvyou.com/make-gif-on-iphone-guide.html

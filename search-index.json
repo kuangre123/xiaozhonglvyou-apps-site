@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-21",
+  "generatedAt": "2026-08-22",
   "origin": "https://www.xiaozhonglvyou.com",
-  "pageCount": 54,
+  "pageCount": 55,
   "pages": [
     {
       "url": "https://www.xiaozhonglvyou.com/about.html",
@@ -142,6 +142,33 @@
       ]
     },
     {
+      "url": "https://www.xiaozhonglvyou.com/best-gif-maker-apps-iphone.html",
+      "path": "/best-gif-maker-apps-iphone.html",
+      "title": "Best GIF Maker Apps for iPhone: 3 Compared (2026)",
+      "description": "Compare 3 GIF maker apps for iPhone: GIFmaker, ImgPlay, and GIF Maker for video-to-GIF tools, frame editing, AI features, pricing, and iOS support.",
+      "h1": "3 best GIF maker apps for iPhone, compared.",
+      "lang": "en",
+      "category": "regional",
+      "canonical": "https://www.xiaozhonglvyou.com/best-gif-maker-apps-iphone.html",
+      "lastmod": "2026-08-22",
+      "changefreq": "weekly",
+      "priority": 1,
+      "images": [
+        "https://www.xiaozhonglvyou.com/assets/og-gif-maker-app.png",
+        "https://www.xiaozhonglvyou.com/assets/gifmaker-editor-screen.webp",
+        "https://www.xiaozhonglvyou.com/assets/gifmaker-export-screen.webp"
+      ],
+      "headings": [
+        "Choose by editing workflow, not by the longest feature list.",
+        "This comparison uses current official App Store listings.",
+        "GIFmaker vs ImgPlay vs GIF Maker.",
+        "The best app depends on what you are making.",
+        "Free download does not mean every feature is free.",
+        "GIF maker app questions answered.",
+        "Choose and test your GIF workflow."
+      ]
+    },
+    {
       "url": "https://www.xiaozhonglvyou.com/best-iphone-photo-cleaner-app.html",
       "path": "/best-iphone-photo-cleaner-app.html",
       "title": "Free Photo Cleaner App for iPhone | Free vs Pro (2026)",
@@ -240,7 +267,7 @@
       "lang": "en",
       "category": "regional",
       "canonical": "https://www.xiaozhonglvyou.com/directory.html",
-      "lastmod": "2026-08-21",
+      "lastmod": "2026-08-22",
       "changefreq": "weekly",
       "priority": 1,
       "images": [],
@@ -362,7 +389,7 @@
       "lang": "en",
       "category": "page",
       "canonical": "https://www.xiaozhonglvyou.com/gif-maker.html",
-      "lastmod": "2026-08-21",
+      "lastmod": "2026-08-22",
       "changefreq": "weekly",
       "priority": 1,
       "images": [
@@ -388,7 +415,7 @@
       "lang": "en",
       "category": "hub",
       "canonical": "https://www.xiaozhonglvyou.com/guides.html",
-      "lastmod": "2026-08-21",
+      "lastmod": "2026-08-22",
       "changefreq": "weekly",
       "priority": 1,
       "images": [],
