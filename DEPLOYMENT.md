@@ -29,6 +29,16 @@ bash scripts/verify-site.sh
 This runs the static site audit, regenerates the Supabase Edge bundle, and verifies
 the generated Edge assets match the source site before any deployment.
 
+After GitHub Pages has deployed a push, verify that the public home page and its
+analytics scripts match the local release:
+
+```sh
+node scripts/audit-live-analytics-parity.mjs
+```
+
+This online check is intentionally separate from `verify-site.sh`, so offline
+build verification does not depend on DNS or the public host.
+
 Supabase Edge deployment from the workspace root:
 
 ```sh
