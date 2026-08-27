@@ -17,3 +17,15 @@
 
 /*.html
   Cache-Control: public, max-age=3600
+
+/*.xml
+  Cache-Control: public, max-age=300, must-revalidate
+
+/*.txt
+  Cache-Control: public, max-age=300, must-revalidate
+
+/search-index.json
+  Cache-Control: public, max-age=300, must-revalidate
+
+/manifest.webmanifest
+  Cache-Control: public, max-age=300, must-revalidate
