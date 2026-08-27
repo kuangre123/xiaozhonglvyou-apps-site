@@ -37,6 +37,31 @@ const failures = [];
 const characterCount = (value) => [...value].length;
 const byteCount = (value) => Buffer.byteLength(value, "utf8");
 
+function flattenJsonLd(parsed) {
+  if (Array.isArray(parsed)) return parsed;
+  if (Array.isArray(parsed?.["@graph"])) return parsed["@graph"];
+  return [parsed];
+}
+
+function extractJsonLd(html, pageName) {
+  const nodes = [];
+
+  for (const match of html.matchAll(/<script\b[^>]*type=["']application\/ld\+json["'][^>]*>([\s\S]*?)<\/script>/gi)) {
+    try {
+      nodes.push(...flattenJsonLd(JSON.parse(match[1])));
+    } catch (error) {
+      failures.push(`${pageName} contains invalid JSON-LD: ${error.message}`);
+    }
+  }
+
+  return nodes;
+}
+
+function hasType(node, type) {
+  const types = Array.isArray(node?.["@type"]) ? node["@type"] : [node?.["@type"]];
+  return types.includes(type);
+}
+
 const [support, privacy, actions, aso] = await Promise.all([
   readFile(path.join(siteDir, "support.html"), "utf8"),
   readFile(path.join(siteDir, "privacy.html"), "utf8"),
@@ -58,15 +83,20 @@ for (const app of apps) {
 
   for (const pageName of app.pages) {
     const html = await readFile(path.join(siteDir, pageName), "utf8");
+    const jsonLd = extractJsonLd(html, pageName);
     const requiredSignals = [
       `app-id=${app.appId}`,
       `id${app.appId}`,
-      `"softwareVersion": "${app.version}"`,
-      '"@type": "SoftwareApplication"',
       app.marketingUrl.replace(/\.html$/, pageName.endsWith("-cn.html") ? "-cn.html" : ".html")
     ];
     for (const signal of requiredSignals) {
       if (!html.includes(signal)) failures.push(`${pageName} is missing ASO signal: ${signal}`);
+    }
+    if (!jsonLd.some((node) => hasType(node, "SoftwareApplication"))) {
+      failures.push(`${pageName} is missing ASO signal: SoftwareApplication JSON-LD type`);
+    }
+    if (!jsonLd.some((node) => hasType(node, "SoftwareApplication") && node.softwareVersion === app.version)) {
+      failures.push(`${pageName} is missing ASO signal: softwareVersion ${app.version}`);
     }
   }
 }
