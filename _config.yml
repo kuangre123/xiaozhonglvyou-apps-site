@@ -5,3 +5,6 @@ exclude:
   - README.md
   - DEPLOYMENT.md
   - SEO_SUBMISSION.md
+  - ASO_ACTIONS.md
+  - BACKLINK_ACTIONS.md
+  - scripts/
