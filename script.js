@@ -2,23 +2,6 @@ const header = document.querySelector("[data-elevate]");
 const analyticsDebugMode = window.analyticsDebugEnabled === true
   || new URLSearchParams(window.location.search).get("ga_debug") === "1";
 
-const aiSourceFromReferrer = (referrer) => {
-  if (!referrer) return "";
-
-  try {
-    const hostname = new URL(referrer).hostname.toLowerCase();
-    if (hostname.includes("chat.openai") || hostname.includes("chatgpt")) return "chatgpt";
-    if (hostname.includes("perplexity")) return "perplexity";
-    if (hostname.includes("claude.ai")) return "claude";
-    if (hostname.includes("gemini.google") || hostname.includes("bard")) return "gemini";
-    if (hostname.includes("copilot.microsoft")) return "copilot";
-  } catch {
-    return "";
-  }
-
-  return "";
-};
-
 const trackAnalyticsEvent = (eventName, parameters = {}) => {
   if (typeof window.gtag !== "function") return false;
   window.gtag("event", eventName, analyticsDebugMode
@@ -30,7 +13,7 @@ const trackAnalyticsEvent = (eventName, parameters = {}) => {
 window.trackAnalyticsEvent = trackAnalyticsEvent;
 window.analyticsDebugEnabled = analyticsDebugMode;
 
-const aiSource = aiSourceFromReferrer(document.referrer);
+const aiSource = window.analyticsAiSource || "";
 if (aiSource) {
   trackAnalyticsEvent("ai_referral_visit", {
     ai_source: aiSource,

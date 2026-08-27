@@ -21,6 +21,8 @@ try {
   analyticsAiSource = "";
 }
 
+window.analyticsAiSource = analyticsAiSource;
+
 if (analyticsAiSource) {
   window.gtag("set", "user_properties", { ai_source: analyticsAiSource });
 }

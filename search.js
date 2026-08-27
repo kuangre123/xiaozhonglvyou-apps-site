@@ -22,8 +22,9 @@
   }
 
   function localPath(value) {
-    if (typeof value !== "string" || !value || /^(?:[a-z][a-z\d+.-]*:|\/\/)/i.test(value)) return "/";
-    return value.startsWith("/") ? value : `/${value}`;
+    if (typeof value !== "string" || !value || /^(?:[a-z][a-z\d+.-]*:|\/\/)/i.test(value)) return "./";
+    if (value === "/") return "./";
+    return value.replace(/^\/+/, "");
   }
 
   function renderResults(query) {
@@ -95,7 +96,7 @@
   input.addEventListener("input", (event) => renderResults(event.target.value));
 
   try {
-    const response = await fetch("/search-index.json", { headers: { Accept: "application/json" } });
+    const response = await fetch("search-index.json", { headers: { Accept: "application/json" } });
     if (!response.ok) throw new Error("Search index request failed: " + response.status);
     const data = await response.json();
     pages = Array.isArray(data.pages) ? data.pages : [];
