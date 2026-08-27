@@ -32,12 +32,12 @@
     const normalizedQuery = query.trim();
     if (normalizedQuery.length < 2) {
       resultsDiv.replaceChildren();
-      emptyDiv.style.display = "block";
+      emptyDiv.hidden = false;
       setStatus("Type to search across " + pages.length + " pages.");
       return;
     }
 
-    emptyDiv.style.display = "none";
+    emptyDiv.hidden = true;
     const q = normalizedQuery.toLowerCase();
     const matched = pages.filter((page) => {
       return (page.title && page.title.toLowerCase().includes(q))
@@ -68,7 +68,7 @@
     if (matched.length === 0) {
       resultsDiv.replaceChildren();
       const noResults = document.createElement("p");
-      noResults.style.cssText = "text-align:center;color:#6b7280;";
+      noResults.className = "search-no-results";
       noResults.textContent = 'No results found for "' + query + '".';
       resultsDiv.append(noResults);
       return;
@@ -79,13 +79,13 @@
       const title = page.title || page.h1 || page.path;
       const description = page.description || "";
       const item = document.createElement("div");
-      item.style.cssText = "margin-bottom:1.5rem;";
+      item.className = "search-result";
       const link = document.createElement("a");
       link.href = localPath(page.path);
-      link.style.cssText = "font-weight:600;font-size:1.0625rem;color:var(--blue);";
+      link.className = "search-result-link";
       link.textContent = title;
       const descriptionElement = document.createElement("p");
-      descriptionElement.style.cssText = "color:#4b5563;margin-top:0.25rem;";
+      descriptionElement.className = "search-result-description";
       descriptionElement.textContent = description;
       item.append(link, descriptionElement);
       fragment.append(item);
@@ -111,7 +111,7 @@
     console.error("Unable to load the search index.", error);
     input.disabled = true;
     resultsDiv.setAttribute("aria-busy", "false");
-    emptyDiv.style.display = "block";
+    emptyDiv.hidden = false;
     setStatus("The page index is temporarily unavailable.", true);
   }
 })();

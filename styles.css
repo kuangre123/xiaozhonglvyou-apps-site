@@ -2593,3 +2593,160 @@ summary {
 .related-articles {
   border-top: 1px solid var(--line);
 }
+
+/* CSP-safe search presentation */
+.search-box {
+  max-width: 640px;
+  margin: 0 auto 2rem;
+}
+
+#site-search {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 2px solid #d1d5db;
+  border-radius: 8px;
+  background: #fff;
+  color: #121417;
+  font: inherit;
+  font-size: 1.125rem;
+}
+
+#site-search:focus-visible {
+  border-color: var(--blue);
+  outline: 3px solid var(--focus-ring);
+  outline-offset: 2px;
+}
+
+.search-results {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.search-empty {
+  padding: 2rem 0;
+  color: #6b7280;
+  text-align: center;
+}
+
+.search-no-results {
+  color: #6b7280;
+  text-align: center;
+}
+
+.content-list .search-result {
+  margin-bottom: 1.5rem;
+}
+
+.content-list .search-result-link {
+  color: var(--blue);
+  font-size: 1.0625rem;
+  font-weight: 600;
+}
+
+.content-list .search-result-description {
+  margin-top: 0.25rem;
+  color: #4b5563;
+}
+
+/* Page-specific hero arrangements previously shipped as inline styles. */
+@media (min-width: 981px) and (max-height: 800px) {
+  .ai-classification-page .page-hero,
+  .mac-privacy-page .page-hero {
+    min-height: calc(100vh - 73px);
+    gap: 44px;
+    padding: 76px 0 40px;
+  }
+
+  .ai-classification-page .page-hero-copy h1,
+  .mac-privacy-page .page-hero-copy h1 {
+    font-size: 58px;
+  }
+}
+
+@media (max-width: 640px) {
+  .ai-classification-page .page-hero,
+  .ai-organizer-page .page-hero,
+  .ipad-organizer-page .page-hero,
+  .mac-privacy-page .page-hero {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    padding-top: 36px;
+    padding-bottom: 36px;
+  }
+
+  .ai-classification-page .page-hero-copy,
+  .ai-organizer-page .page-hero-copy,
+  .ipad-organizer-page .page-hero-copy,
+  .mac-privacy-page .page-hero-copy {
+    display: contents;
+  }
+
+  .ai-classification-page .breadcrumb,
+  .ai-organizer-page .breadcrumb,
+  .ipad-organizer-page .breadcrumb,
+  .mac-privacy-page .breadcrumb {
+    order: 1;
+    margin-bottom: 12px;
+  }
+
+  .ai-classification-page .eyebrow,
+  .ai-organizer-page .eyebrow,
+  .ipad-organizer-page .eyebrow,
+  .mac-privacy-page .eyebrow {
+    order: 2;
+  }
+
+  .ai-classification-page .page-hero-copy h1,
+  .ai-organizer-page .page-hero-copy h1,
+  .ipad-organizer-page .page-hero-copy h1,
+  .mac-privacy-page .page-hero-copy h1 {
+    order: 3;
+    margin: 8px 0 12px;
+    font-size: 38px;
+    line-height: 1.04;
+    letter-spacing: 0;
+  }
+
+  .ai-classification-page .page-hero-media,
+  .ai-organizer-page .page-hero-media,
+  .ipad-organizer-page .page-hero-media,
+  .mac-privacy-page .page-hero-media {
+    order: 4;
+    margin: 0 0 12px;
+  }
+
+  .ai-classification-page .product-screen-media.ctr-product-screen img,
+  .ai-organizer-page .product-screen-media.ctr-product-screen img,
+  .ipad-organizer-page .product-screen-media.ctr-product-screen img {
+    width: 120px;
+    border-radius: 14px;
+  }
+
+  .ai-classification-page .hero-summary,
+  .ai-organizer-page .hero-summary,
+  .ipad-organizer-page .hero-summary,
+  .mac-privacy-page .hero-summary {
+    order: 5;
+    font-size: 16px;
+    line-height: 1.45;
+  }
+
+  .ai-classification-page .hero-actions,
+  .ai-organizer-page .hero-actions,
+  .ipad-organizer-page .hero-actions,
+  .mac-privacy-page .hero-actions {
+    order: 6;
+    margin-top: 16px;
+    gap: 8px;
+  }
+
+  .ai-classification-page .article-meta,
+  .ai-organizer-page .article-meta,
+  .ipad-organizer-page .article-meta,
+  .mac-privacy-page .article-meta {
+    order: 7;
+    margin-top: 14px;
+  }
+}
