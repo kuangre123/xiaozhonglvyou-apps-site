@@ -13,7 +13,9 @@
     <lastmod>2026-07-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-
+    <image:image>
+      <image:loc>https://www.xiaozhonglvyou.com/assets/og-ai-photo-classification.png</image:loc>
+    </image:image>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.xiaozhonglvyou.com/ai-photo-classification.html" />
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.xiaozhonglvyou.com/ai-photo-classification-cn.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.xiaozhonglvyou.com/ai-photo-classification.html" />
@@ -205,7 +207,9 @@
     <lastmod>2026-07-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-
+    <image:image>
+      <image:loc>https://www.xiaozhonglvyou.com/assets/og-duplicate-photo-cleaner.png</image:loc>
+    </image:image>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.xiaozhonglvyou.com/duplicate-photo-cleaner-guide.html" />
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.xiaozhonglvyou.com/duplicate-photo-cleaner-cn.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.xiaozhonglvyou.com/duplicate-photo-cleaner-guide.html" />
@@ -292,6 +296,9 @@
     <priority>1.0</priority>
     <image:image>
       <image:loc>https://www.xiaozhonglvyou.com/assets/gifmaker-icon.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.xiaozhonglvyou.com/assets/og-gif-maker-app.png</image:loc>
     </image:image>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.xiaozhonglvyou.com/gif-maker.html" />
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.xiaozhonglvyou.com/gif-maker-cn.html" />
@@ -423,6 +430,9 @@
     <image:image>
       <image:loc>https://www.xiaozhonglvyou.com/assets/ai-cleaning-screen.png</image:loc>
     </image:image>
+    <image:image>
+      <image:loc>https://www.xiaozhonglvyou.com/assets/og-ipad-photo-organizer-guide.png</image:loc>
+    </image:image>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.xiaozhonglvyou.com/ipad-photo-organizer-guide.html" />
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.xiaozhonglvyou.com/ipad-photo-organizer-cn.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.xiaozhonglvyou.com/ipad-photo-organizer-guide.html" />
@@ -447,7 +457,9 @@
     <lastmod>2026-07-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-
+    <image:image>
+      <image:loc>https://www.xiaozhonglvyou.com/assets/og-ai-photo-cleaner-iphone.png</image:loc>
+    </image:image>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.xiaozhonglvyou.com/iphone-photo-cleaner.html" />
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.xiaozhonglvyou.com/iphone-photo-cleaner-cn.html" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.xiaozhonglvyou.com/iphone-foto-cleaner-de.html" />
@@ -612,6 +624,9 @@
     <image:image>
       <image:loc>https://www.xiaozhonglvyou.com/assets/anti-spy-screen.png</image:loc>
     </image:image>
+    <image:image>
+      <image:loc>https://www.xiaozhonglvyou.com/assets/og-mac-screen-privacy.png</image:loc>
+    </image:image>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.xiaozhonglvyou.com/mac-screen-privacy.html" />
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.xiaozhonglvyou.com/mac-screen-privacy-cn.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.xiaozhonglvyou.com/mac-screen-privacy.html" />
@@ -713,7 +728,9 @@
     <lastmod>2026-07-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-
+    <image:image>
+      <image:loc>https://www.xiaozhonglvyou.com/assets/og-ai-photo-cleaner-iphone.png</image:loc>
+    </image:image>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.xiaozhonglvyou.com/iphone-photo-cleaner.html" />
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.xiaozhonglvyou.com/iphone-photo-cleaner-cn.html" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.xiaozhonglvyou.com/iphone-foto-cleaner-de.html" />
@@ -865,6 +882,9 @@
     <priority>1.0</priority>
     <image:image>
       <image:loc>https://www.xiaozhonglvyou.com/assets/travel-translator-icon.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.xiaozhonglvyou.com/assets/og-travel-translator-app.png</image:loc>
     </image:image>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.xiaozhonglvyou.com/travel-translator.html" />
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.xiaozhonglvyou.com/travel-translator-cn.html" />

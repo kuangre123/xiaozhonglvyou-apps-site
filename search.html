@@ -4,7 +4,7 @@
     <link rel="preconnect" href="https://www.googletagmanager.com">
     <link rel="preconnect" href="https://apps.apple.com"><link rel="dns-prefetch" href="https://apps.apple.com">
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-JY8T5JJGNH"></script>
-    <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());(function(){var r=document.referrer||"",s="organic";if(/chat\.openai|chatgpt/i.test(r))s="chatgpt";else if(/perplexity/i.test(r))s="perplexity";else if(/claude\.ai/i.test(r))s="claude";else if(/gemini\.google|bard/i.test(r))s="gemini";else if(/copilot\.microsoft/i.test(r))s="copilot";if(s!=="organic")gtag("set","user_properties",{ai_source:s});gtag("config","G-JY8T5JJGNH");}());</script>
+    <script src="analytics.js?v=20260827-analytics" defer></script>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Search | CrazyAIAgent Apps, Guides, and Markets</title>
@@ -131,9 +131,12 @@
               autocomplete="off"
             />
           </div>
-          <div id="search-results" class="content-list" style="max-width:640px;margin:0 auto;"></div>
-          <div id="search-empty" style="text-align:center;color:#6b7280;padding:2rem 0;">
-            Type to search across 52 pages.
+          <div id="search-results" class="content-list" style="max-width:640px;margin:0 auto;" aria-live="polite" aria-busy="true"></div>
+          <div id="search-empty" style="text-align:center;color:#6b7280;padding:2rem 0;" aria-live="polite">
+            Loading the page index...
+            <noscript>
+              <p><a href="directory.html">Browse the full directory.</a></p>
+            </noscript>
           </div>
         </div>
       </section>
@@ -149,47 +152,7 @@
         </div>
       </div>
     </footer>
-    <script>
-      (async () => {
-        const res = await fetch('/search-index.json');
-        const data = await res.json();
-        const pages = data.pages;
-        const input = document.getElementById('site-search');
-        const resultsDiv = document.getElementById('search-results');
-        const emptyDiv = document.getElementById('search-empty');
-
-        function renderResults(query) {
-          if (!query || query.length < 2) {
-            resultsDiv.innerHTML = '';
-            emptyDiv.style.display = 'block';
-            emptyDiv.textContent = 'Type to search across ' + pages.length + ' pages.';
-            return;
-          }
-          emptyDiv.style.display = 'none';
-          const q = query.toLowerCase();
-          const matched = pages.filter(p => {
-            return (p.title && p.title.toLowerCase().includes(q)) ||
-                   (p.description && p.description.toLowerCase().includes(q)) ||
-                   (p.h1 && p.h1.toLowerCase().includes(q)) ||
-                   (p.category && p.category.toLowerCase().includes(q));
-          });
-          if (matched.length === 0) {
-            resultsDiv.innerHTML = '<p style="text-align:center;color:#6b7280;">No results found for "' + query + '".</p>';
-            return;
-          }
-          resultsDiv.innerHTML = matched.map(p => {
-            const title = p.title || p.h1 || p.path;
-            const desc = p.description || '';
-            return '<div style="margin-bottom:1.5rem;"><a href="' + p.path + '" style="font-weight:600;font-size:1.0625rem;color:var(--blue);">' + title + '</a><p style="color:#4b5563;margin-top:0.25rem;">' + desc + '</p></div>';
-          }).join('');
-        }
-
-        input.addEventListener('input', (e) => renderResults(e.target.value));
-          const params = new URLSearchParams(window.location.search);
-          const q = params.get('q');
-          if (q) { input.value = q; renderResults(q); }
-      })();
-    </script>
-    <script src="script.js?v=20260718-conversion" defer></script>
+    <script src="search.js?v=20260827-analytics" defer></script>
+    <script src="script.js?v=20260827-analytics" defer></script>
   </body>
 </html>
