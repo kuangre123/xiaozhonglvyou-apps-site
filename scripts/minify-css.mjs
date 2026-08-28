@@ -193,6 +193,7 @@ export function minifyCss(source) {
     }
 
     const insideUrl = frame.valueFunctionNames.includes("url");
+    const insideGradient = frame.valueFunctionNames.some((name) => name.endsWith("gradient"));
     if (
       frame.kind === "declarations"
       && !insideUrl
@@ -209,6 +210,19 @@ export function minifyCss(source) {
           continue;
         }
       }
+    }
+
+    if (
+      frame.trimValueSpace
+      && insideGradient
+      && !insideUrl
+      && source.startsWith("0%", index)
+      && !isIdentifierCharacter(source[index - 1] ?? "")
+      && !isIdentifierCharacter(source[index + 2] ?? "")
+    ) {
+      output += "0";
+      index += 1;
+      continue;
     }
 
     if (frame.trimValueSpace && !insideUrl && !isIdentifierCharacter(source[index - 1] ?? "")) {
