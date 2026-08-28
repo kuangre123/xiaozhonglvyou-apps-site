@@ -33,13 +33,16 @@ const pages = [
     file: "ai-photo-classification.html",
     title: "AI Photo Classification App for iPhone | 9 Smart Categories",
     description: "Classify iPhone photos privately on-device into 9 useful categories, then review duplicates, screenshots, blurry shots, and large media before deleting.",
+    modifiedDate: "2026-08-12",
+    modifiedDateLabel: "August 12, 2026",
+    article: {
+      headline: "AI Photo Classification App for iPhone | 9 Smart Categories",
+      description: "Classify iPhone photos privately on-device into 9 useful categories, then review duplicates, screenshots, blurry shots, and large media before deleting."
+    },
     headline: [
       "AI Photo Classification for iPhone",
-      "AI Photo Classification App for iPhone: 9 Smart Categories"
-    ],
-    h1: [
-      "AI photo classification for iPhone photo libraries.",
-      "Classify iPhone photos into 9 useful categories."
+      "AI Photo Classification App for iPhone: 9 Smart Categories",
+      "AI Photo Classification App for iPhone | 9 Smart Categories"
     ]
   },
   {
@@ -62,18 +65,16 @@ const pages = [
     keywords: "free photo cleaner app, free photo cleaner app for iPhone, iPhone photo cleaner app, duplicate photo cleaner, similar photo cleaner, free up iPhone storage",
     modifiedDate: "2026-08-15",
     modifiedDateLabel: "August 15, 2026",
+    article: {
+      headline: "Free Photo Cleaner App for iPhone | Free vs Pro (2026)",
+      description: "Free photo cleaner app for iPhone: review duplicate and similar photos before deleting. AI Cleaning is free to download; optional Pro adds 9 AI categories."
+    },
     headline: [
       "How to Choose an iPhone Photo Cleaner (2026 Guide)",
       "Best iPhone Photo Cleaner App? 9 AI Categories (2026)",
       "iPhone Photo Cleaner: Free Download and Optional AI (2026)",
-      "Free Photo Cleaner App for iPhone: Free vs Pro (2026)"
-    ],
-    h1: [
-      "The best iPhone photo cleaner should classify before it deletes.",
-      "Is AI Cleaning the best iPhone photo cleaner for you?",
-      "Best iPhone photo cleaner for you?",
-      "Start free. Review duplicates before upgrading.",
-      "Free photo cleaner app for iPhone. Review first."
+      "Free Photo Cleaner App for iPhone: Free vs Pro (2026)",
+      "Free Photo Cleaner App for iPhone | Free vs Pro (2026)"
     ]
   },
   {
@@ -82,28 +83,31 @@ const pages = [
     description: "Start with iPhone's free Duplicates tool, then use a duplicate photo cleaner for similar photos. Compare the best copy and review before deleting.",
     modifiedDate: "2026-08-15",
     modifiedDateLabel: "August 15, 2026",
+    article: {
+      headline: "Duplicate Photo Cleaner for iPhone | Free & Similar Photos",
+      description: "Start with iPhone's free Duplicates tool, then use a duplicate photo cleaner for similar photos. Compare the best copy and review before deleting."
+    },
     headline: [
       "Duplicate Photo Cleaner Guide for iPhone",
       "Duplicate Photo Cleaner for iPhone: Safe Review Guide",
       "Duplicate Photo Cleaner for iPhone: Find and Delete Safely",
-      "Duplicate Photo Cleaner for iPhone: Free and Similar Photo Options"
-    ],
-    h1: [
-      "Clean duplicate iPhone photos without deleting the wrong memory.",
-      "Find duplicate iPhone photos. Review before deleting.",
-      "Find duplicate iPhone photos. Review first.",
-      "Duplicate photo cleaner for iPhone. Find and delete safely.",
-      "Duplicate photo cleaner for iPhone. Start free, then find similar shots.",
-      "Duplicate photo cleaner for iPhone: start free, then find similar shots."
+      "Duplicate Photo Cleaner for iPhone: Free and Similar Photo Options",
+      "Duplicate Photo Cleaner for iPhone | Free & Similar Photos"
     ]
   },
   {
     file: "iphone-storage-cleanup-guide.html",
     title: "How to Clean Up iPhone Photo Storage for Free | 2026 Guide",
     description: "Practical iPhone storage cleanup guide for photos: classify the library, then review large media, screenshots, blurry shots, duplicates, and similar photos.",
-    h1: [
-      "Clean iPhone storage by reviewing the photo library first.",
-      "Free up iPhone photo storage. Review first."
+    modifiedDate: "2026-08-11",
+    modifiedDateLabel: "August 11, 2026",
+    article: {
+      headline: "How to Clean Up iPhone Photo Storage for Free | 2026 Guide",
+      description: "Practical iPhone storage cleanup guide for photos: classify the library, then review large media, screenshots, blurry shots, duplicates, and similar photos."
+    },
+    headline: [
+      "How to Clean Up iPhone Photo Storage for Free",
+      "How to Clean Up iPhone Photo Storage for Free | 2026 Guide"
     ]
   },
   {
@@ -127,15 +131,15 @@ const pages = [
     description: "Photo cleaner for iPhone that finds duplicate and similar photos, screenshots, blurry shots, and large files. Review first, then free up space safely.",
     modifiedDate: "2026-08-15",
     modifiedDateLabel: "August 15, 2026",
+    article: {
+      headline: "Photo Cleaner for iPhone | Find Duplicates & Free Space",
+      description: "Photo cleaner for iPhone that finds duplicate and similar photos, screenshots, blurry shots, and large files. Review first, then free up space safely."
+    },
     headline: [
       "iPhone Photo Cleaner with AI Classification",
       "AI Photo Cleaner for iPhone",
-      "Photo Cleaner for iPhone: Find Duplicates and Free Space"
-    ],
-    h1: [
-      "Sort and clean iPhone photos with on-device AI.",
-      "Sort iPhone photos before you delete.",
-      "Photo cleaner for iPhone. Find clutter, review, free space."
+      "Photo Cleaner for iPhone: Find Duplicates and Free Space",
+      "Photo Cleaner for iPhone | Find Duplicates & Free Space"
     ]
   },
   {
@@ -738,14 +742,17 @@ const pages = [
     file: "voice-camera-translator-guide.html",
     title: "Voice &amp; Camera Translator for Travel: 6 Steps (2026)",
     description: "Translate travel conversations, menus, and signs on iPhone in 6 steps. Use voice, camera OCR, live interpretation, and offline core language pairs.",
+    modifiedDate: "2026-08-15",
+    modifiedDateLabel: "August 15, 2026",
+    article: {
+      headline: "Voice & Camera Translator for Travel: 6 Steps (2026)",
+      description: "Translate travel conversations, menus, and signs on iPhone in 6 steps. Use voice, camera OCR, live interpretation, and offline core language pairs."
+    },
     headline: [
       "Voice and Camera Translator Guide for Travel",
       "Voice and Camera Translator for Travel",
-      "Voice and Camera Translator for Travel: 6 Steps (2026)"
-    ],
-    h1: [
-      "Use voice translation for conversations and camera OCR for the world around you.",
-      "Use a voice and camera translator for travel in 6 steps."
+      "Voice and Camera Translator for Travel: 6 Steps (2026)",
+      "Voice & Camera Translator for Travel: 6 Steps (2026)"
     ]
   },
   {
@@ -974,8 +981,14 @@ function removeJsonLdNodesById(html, ids = []) {
 }
 
 function updateJsonLd(html, page) {
+  const articleValues = page.article || page.headline
+    ? {
+        ...(page.article || {}),
+        ...(page.headline ? { headline: page.headline.at(-1) } : {})
+      }
+    : null;
   const updates = [
-    page.article && { type: "Article", values: page.article, label: "Article" },
+    articleValues && { type: "Article", values: articleValues, label: "Article" },
     page.webPage && { type: "WebPage", id: page.webPage["@id"], values: page.webPage, label: "WebPage" },
     page.softwareApplication && {
       type: "SoftwareApplication",
@@ -1127,15 +1140,6 @@ async function updatePage(siteDir, page) {
 
   if (page.keywords) {
     html = replaceMeta(html, "name", "keywords", page.keywords, `${page.file} keywords`);
-  }
-
-  if (page.headline) {
-    html = replaceFromCandidates(
-      html,
-      page.headline,
-      (value) => `"headline": "${value}"`,
-      `${page.file} Article headline`
-    );
   }
 
   if (page.headline || page.modifiedDate) {

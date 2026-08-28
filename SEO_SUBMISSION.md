@@ -31,7 +31,7 @@ Search index: https://www.xiaozhonglvyou.com/search-index.json
 - 55 indexable HTML pages, 127 JSON-LD blocks, 182 top-level structured-data nodes, 0 parse errors
 - `robots.txt` allows 26+ crawler UAs including Googlebot, Bingbot, DuckDuckBot, Baiduspider, Sogou, 360Spider, YisouSpider, Bytespider, PetalBot, and AI crawlers (GPTBot, ClaudeBot, PerplexityBot)
 - `robots.txt` advertises sitemap-index, sitemap.xml, sitemap-global.xml, sitemap-articles.xml, sitemap-cn.xml, sitemap.txt, sitemap-global.txt, sitemap-articles.txt, sitemap-cn.txt, feed.xml, atom.xml
-- `sitemap.xml` includes 55 URLs with per-page lastmod values through 2026-08-22, changefreq, priority, 413 hreflang alternate links, and 82 image entries
+- `sitemap.xml` includes 55 URLs with per-page lastmod values through 2026-08-28, changefreq, priority, 413 hreflang alternate links, and 90 image entries
 - `sitemap-index.xml` points to sitemap.xml, sitemap-global.xml, sitemap-articles.xml, sitemap-cn.xml, feed.xml, and atom.xml
 - `sitemap-global.xml` lists 42 global, English, and localized non-Chinese landing pages for Google, Bing, Yandex, DuckDuckGo, and other international search platform submissions
 - `sitemap-articles.xml` lists 27 Article/guide pages with per-page dateModified values from JSON-LD
@@ -40,7 +40,7 @@ Search index: https://www.xiaozhonglvyou.com/search-index.json
 - `sitemap-global.txt` lists the same 42 global and international URLs in plain text format
 - `sitemap-articles.txt` lists the same 27 Article/guide URLs in plain text format
 - `sitemap-cn.txt` lists the same 11 Chinese-language URLs in plain text format
-- `feed.xml` and `atom.xml` each expose 27 Article entries with updates through 2026-08-22
+- `feed.xml` and `atom.xml` each expose 27 Article entries with updates through 2026-08-28
 - `search-index.json` with 55 pages, includes title/description/h1/lang/category/headings
 - `directory.html` human-readable page directory with grouped links
 - `search.html` client-side site search with ?q= parameter support
@@ -98,7 +98,7 @@ Search index: https://www.xiaozhonglvyou.com/search-index.json
 - Latest deployment validation: commit `7613956`; added reciprocal hreflang and visible cross-links for the English and Simplified Chinese iPad photo organizer guides.
 - Latest sitemap validation: commit `e5f2264`; 401 hreflang alternate links, including paired English/Simplified Chinese guide and app pages, are present in sitemap.xml.
 - Latest global-focused sitemap validation: sitemap-global.xml and sitemap-global.txt contain 42 non-Chinese global and localized URLs and are advertised from robots.txt and sitemap-index.xml.
-- Latest article sitemap validation: 2026-08-26; sitemap-articles.xml and sitemap-articles.txt contain all 27 Article/guide URLs and are advertised from robots.txt and sitemap-index.xml.
+- Latest article sitemap validation: 2026-08-28; sitemap-articles.xml and sitemap-articles.txt contain all 27 Article/guide URLs and are advertised from robots.txt and sitemap-index.xml.
 - Latest China-focused sitemap validation: sitemap-cn.xml contains 11 Chinese-language URLs and is advertised from robots.txt and sitemap-index.xml.
 - Latest China-focused text sitemap validation: sitemap-cn.txt contains the same 11 Chinese-language URLs and is advertised from robots.txt.
 - Latest people-first content pass: the English and Simplified Chinese iPhone photo-cleaner pages now use the real product screen and document version 1.1.3, iOS 16 compatibility, nine explicit categories, on-device processing, and review-before-delete behavior checked against the current App Store listing on 2026-07-13. Regional and guide copy that addressed search traffic instead of readers was rewritten around practical user tasks.

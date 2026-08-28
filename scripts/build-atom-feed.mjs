@@ -3,8 +3,25 @@
 import { readdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 
-const siteDir = process.cwd();
 const origin = "https://www.xiaozhonglvyou.com";
+
+function parseArgs(argv) {
+  const args = { siteDir: process.cwd() };
+
+  for (let index = 0; index < argv.length; index += 1) {
+    if (argv[index] === "--site-dir" && argv[index + 1]) {
+      args.siteDir = path.resolve(argv[index + 1]);
+      index += 1;
+      continue;
+    }
+
+    throw new Error(`Unknown or incomplete argument: ${argv[index]}`);
+  }
+
+  return args;
+}
+
+const { siteDir } = parseArgs(process.argv.slice(2));
 
 function flattenJsonLd(value) {
   if (Array.isArray(value)) return value;
@@ -88,4 +105,3 @@ ${entryXml}
 
 await writeFile(path.join(siteDir, "atom.xml"), xml, "utf8");
 console.log(`Wrote ${entries.length} article entries to ${path.join(siteDir, "atom.xml")}.`);
-
