@@ -58,7 +58,7 @@ Search index: https://www.xiaozhonglvyou.com/search-index.json
 - 55 indexable pages: Atom alternate links point to the canonical 27-entry Atom feed, with titles, summaries, links, and dates checked against Article JSON-LD
 - 27 Article nodes: page-specific topic keyword sets are aligned with each article's title, description, language, and search intent; legacy generic brand keywords are rejected by the readiness audit
 - Localized, regional, and paired content pages: hreflang alternates (15 regional pages + 20 paired content pages)
-- No broken internal links, no orphan pages, all pages have >= 3 internal entry points
+- No broken internal links; all 55 indexable pages have at least 3 unique inbound HTML source pages. The coverage audit excludes the noindex 404 page and counts each distinct linking HTML page once, so the market directory is reachable from the homepage, directory hub, and apps hub.
 - No generic anchor text ("click here" etc.)
 - No heading hierarchy skips
 - No public-facing SEO terminology leaks
