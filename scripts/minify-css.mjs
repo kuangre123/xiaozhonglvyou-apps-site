@@ -80,7 +80,8 @@ export function minifyCss(source) {
     statement: "",
     customProperty: false,
     trimValueSpace: false,
-    valueParenDepth: 0
+    valueParenDepth: 0,
+    valueFunctionNames: []
   }];
 
   const currentFrame = () => frames[frames.length - 1];
@@ -160,7 +161,8 @@ export function minifyCss(source) {
         statement: "",
         customProperty: false,
         trimValueSpace: false,
-        valueParenDepth: 0
+        valueParenDepth: 0,
+        valueFunctionNames: []
       });
       parent.statement = "";
     }
@@ -174,25 +176,47 @@ export function minifyCss(source) {
     if (character === ":" && frame.kind === "declarations" && propertyName(frame.statement)) {
       frame.customProperty = frame.statement.trim().startsWith("--");
       frame.trimValueSpace = !frame.customProperty;
-    } else if (frame.trimValueSpace && character === "(") {
+    } else if (frame.kind === "declarations" && character === "(") {
       frame.valueParenDepth += 1;
-    } else if (frame.trimValueSpace && character === ")" && frame.valueParenDepth > 0) {
+      frame.valueFunctionNames.push(output.match(/[-\w]+$/)?.[0]?.toLowerCase() ?? "");
+    } else if (frame.kind === "declarations" && character === ")" && frame.valueParenDepth > 0) {
       frame.valueParenDepth -= 1;
+      frame.valueFunctionNames.pop();
     } else if (character === ";") {
       frame.statement = "";
       frame.customProperty = false;
       frame.trimValueSpace = false;
       frame.valueParenDepth = 0;
+      frame.valueFunctionNames = [];
     } else if (character !== "{" && character !== "}") {
       frame.statement += character;
     }
 
-    if (frame.trimValueSpace && frame.valueParenDepth === 0 && !isIdentifierCharacter(source[index - 1] ?? "")) {
+    const insideUrl = frame.valueFunctionNames.includes("url");
+    if (
+      frame.kind === "declarations"
+      && !insideUrl
+      && !isIdentifierCharacter(source[index - 1] ?? "")
+    ) {
+      const hexMatch = source.slice(index).match(/^#([0-9a-f]{6})(?![0-9a-f])/i);
+      if (hexMatch && !isIdentifierCharacter(source[index + hexMatch[0].length] ?? "")) {
+        const hex = hexMatch[1];
+        if (hex[0].toLowerCase() === hex[1].toLowerCase()
+          && hex[2].toLowerCase() === hex[3].toLowerCase()
+          && hex[4].toLowerCase() === hex[5].toLowerCase()) {
+          output += `#${hex[0]}${hex[2]}${hex[4]}`;
+          index += hexMatch[0].length - 1;
+          continue;
+        }
+      }
+    }
+
+    if (frame.trimValueSpace && !insideUrl && !isIdentifierCharacter(source[index - 1] ?? "")) {
       const next = source[index + 3] ?? "";
-      if (
+      if (frame.valueParenDepth === 0 && (
         (source.startsWith("0px", index) || source.startsWith("0vh", index) || source.startsWith("0vw", index))
         && !isIdentifierCharacter(next)
-      ) {
+      )) {
         output += "0";
         index += 2;
         continue;
