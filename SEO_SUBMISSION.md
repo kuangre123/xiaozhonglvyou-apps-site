@@ -95,7 +95,7 @@ Search index: https://www.xiaozhonglvyou.com/search-index.json
 ### Bing Readiness Audit
 - Script: `node scripts/audit-bing-readiness.mjs`
 - Checks: Bingbot/BingPreview allowed in robots.txt, sitemap advertised, IndexNow key valid, all indexable pages have meta keywords (Bing values these), meta description, canonical, and JSON-LD structured data
-- Status: PASS (51 Bing-audited pages, all with keywords/description/canonical/JSON-LD)
+- Status: PASS (55 Bing-audited pages, all with keywords/description/canonical/JSON-LD; the only excluded HTML file is the noindex 404 page)
 - Bing Webmaster Tools property is active: the 2026-07-17 account screenshot shows Recommendations for `xiaozhonglvyou.com`. No `msvalidate.01` tag is present, which is expected when the property is verified through another supported method such as DNS or Google Search Console import.
 - Latest deployment validation: commit `7613956`; added reciprocal hreflang and visible cross-links for the English and Simplified Chinese iPad photo organizer guides.
 - Latest sitemap validation: commit `e5f2264`; 413 hreflang alternate links, including paired English/Simplified Chinese guide and app pages, are present in sitemap.xml.

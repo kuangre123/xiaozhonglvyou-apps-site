@@ -2,12 +2,12 @@ import { access, mkdir, readFile, readdir, writeFile } from "node:fs/promises";
 import path from "node:path";
 
 const root = process.cwd();
-const siteDir = path.join(root, "outputs", "github-pages-site");
+const siteDir = process.env.SITE_DIR
+  ? path.resolve(root, process.env.SITE_DIR)
+  : path.join(root, "outputs", "github-pages-site");
 const origin = "https://www.xiaozhonglvyou.com";
 const keyFileName = "a6013cad6cead8e0.txt";
 const key = "a6013cad6cead8e0";
-
-const EXCLUDED = new Set(["404.html", "directory.html", "privacy.html", "search.html", "support.html"]);
 
 function parseArgs(argv) {
   const args = { outputJsonPath: null, outputMarkdownPath: null };
@@ -47,13 +47,24 @@ function hasVerificationMeta(html, name) {
   return re.test(html);
 }
 
+function isIndexableHtml(html) {
+  return !/\bnoindex\b/i.test(metaContent(html, "robots"));
+}
+
 async function auditFiles() {
   const allFiles = (await readdir(siteDir)).filter((f) => f.endsWith(".html"));
-  const indexable = allFiles.filter((f) => !EXCLUDED.has(f));
+  const indexable = [];
+  const excluded = [];
   const pages = [];
 
-  for (const fileName of indexable) {
+  for (const fileName of allFiles) {
     const html = await readFile(path.join(siteDir, fileName), "utf8");
+    if (!isIndexableHtml(html)) {
+      excluded.push(fileName);
+      continue;
+    }
+
+    indexable.push(fileName);
     const title = (html.match(/<title>([\s\S]*?)<\/title>/i)?.[1] ?? "").replace(/<[^>]*>/g, " ").trim();
     const description = metaContent(html, "description");
     const keywords = metaContent(html, "keywords");
@@ -76,12 +87,12 @@ async function auditFiles() {
       jsonLdBlocks: jsonLdCount
     });
   }
-  return { pages, total: indexable.length };
+  return { pages, total: indexable.length, excluded: excluded.sort() };
 }
 
 function summarize(results) {
   const failures = [];
-  const { pages, total } = results.pages;
+  const { pages, total, excluded } = results.pages;
   const robotsTxt = results.robots.txt;
   const sitemapUrls = results.sitemap.urls;
 
@@ -131,6 +142,8 @@ function summarize(results) {
     ok: failures.length === 0,
     summary: {
       indexablePages: total,
+      excludedPages: excluded.length,
+      excludedPageFiles: excluded,
       pagesWithKeywords: pages.filter((p) => p.hasKeywords).length,
       pagesWithDescription: pages.filter((p) => p.hasDescription).length,
       pagesWithCanonical: pages.filter((p) => p.hasCanonical).length,
