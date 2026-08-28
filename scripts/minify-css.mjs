@@ -5,6 +5,10 @@ import { fileURLToPath } from "node:url";
 const trimBefore = new Set(["{", "}", ",", ";", ")", "]", ">", "~"]);
 const trimAfter = new Set(["{", "(", ",", ";", ">", "~", "}"]);
 
+function isIdentifierCharacter(character) {
+  return Boolean(character) && /[A-Za-z0-9_.-]/.test(character);
+}
+
 function blockKind(prelude) {
   if (!/^@/.test(prelude)) return "declarations";
   if (/^@(font-face|page|counter-style|property|viewport)\b/i.test(prelude)) {
@@ -22,7 +26,13 @@ export function minifyCss(source) {
   let quote = "";
   let inComment = false;
   let pendingWhitespace = false;
-  const frames = [{ kind: "container", statement: "", customProperty: false, trimValueSpace: false }];
+  const frames = [{
+    kind: "container",
+    statement: "",
+    customProperty: false,
+    trimValueSpace: false,
+    valueParenDepth: 0
+  }];
 
   const currentFrame = () => frames[frames.length - 1];
 
@@ -100,7 +110,8 @@ export function minifyCss(source) {
         kind: blockKind(parent.statement.trim()),
         statement: "",
         customProperty: false,
-        trimValueSpace: false
+        trimValueSpace: false,
+        valueParenDepth: 0
       });
       parent.statement = "";
     }
@@ -114,12 +125,34 @@ export function minifyCss(source) {
     if (character === ":" && frame.kind === "declarations" && propertyName(frame.statement)) {
       frame.customProperty = frame.statement.trim().startsWith("--");
       frame.trimValueSpace = !frame.customProperty;
+    } else if (frame.trimValueSpace && character === "(") {
+      frame.valueParenDepth += 1;
+    } else if (frame.trimValueSpace && character === ")" && frame.valueParenDepth > 0) {
+      frame.valueParenDepth -= 1;
     } else if (character === ";") {
       frame.statement = "";
       frame.customProperty = false;
       frame.trimValueSpace = false;
+      frame.valueParenDepth = 0;
     } else if (character !== "{" && character !== "}") {
       frame.statement += character;
+    }
+
+    if (frame.trimValueSpace && frame.valueParenDepth === 0 && !isIdentifierCharacter(source[index - 1] ?? "")) {
+      const next = source[index + 3] ?? "";
+      if (
+        (source.startsWith("0px", index) || source.startsWith("0vh", index) || source.startsWith("0vw", index))
+        && !isIdentifierCharacter(next)
+      ) {
+        output += "0";
+        index += 2;
+        continue;
+      }
+      if (character === "0" && source[index + 1] === "." && /\d/.test(source[index + 2] ?? "")) {
+        output += ".";
+        index += 1;
+        continue;
+      }
     }
 
     output += character;
