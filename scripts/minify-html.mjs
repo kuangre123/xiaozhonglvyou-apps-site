@@ -155,6 +155,42 @@ function normalizeText(text, previous, next, preserveWhitespace) {
   return text.replace(/\s+/g, " ");
 }
 
+function normalizeTag(node) {
+  if (node.kind !== "open") return node.text;
+
+  let output = "";
+  let quote = "";
+  let pendingWhitespace = false;
+
+  for (const character of node.text) {
+    if (quote) {
+      output += character;
+      if (character === quote) quote = "";
+      continue;
+    }
+
+    if (character === '"' || character === "'") {
+      if (pendingWhitespace && output && !output.endsWith(" ")) output += " ";
+      pendingWhitespace = false;
+      quote = character;
+      output += character;
+      continue;
+    }
+
+    if (/\s/.test(character)) {
+      pendingWhitespace = true;
+      continue;
+    }
+
+    if (pendingWhitespace && output && character !== ">" && !output.endsWith(" ")) output += " ";
+    pendingWhitespace = false;
+    output += character;
+  }
+
+  if (voidElements.has(node.name) && node.selfClosing) output = output.replace(/\s*\/\s*>$/, ">");
+  return output;
+}
+
 export function minifyHtml(source) {
   const nodes = tokenizeHtml(source);
   let output = "";
@@ -163,7 +199,7 @@ export function minifyHtml(source) {
     const node = nodes[index];
     output += node.kind === "text"
       ? normalizeText(node.text, nodes[index - 1], nodes[index + 1], node.preserveWhitespace)
-      : node.text;
+      : normalizeTag(node);
   }
 
   return `${output}\n`;
