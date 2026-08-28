@@ -451,6 +451,132 @@ const pages = [
     ]
   },
   {
+    file: "ipad-photo-organizer-cn.html",
+    title: "iPad照片整理指南 | 相册清理、AI分类和 iCloud 同步",
+    description: "iPad照片整理指南：先确认 iCloud 同步，再用 AI 分类整理平板相册中的截图、文档、票据、重复照片和大视频，复查重要资料后再安全清理并释放空间。",
+    modifiedDate: "2026-08-28",
+    modifiedDateLabel: "2026年8月28日",
+    article: {
+      headline: "iPad照片整理指南 | 相册清理、AI分类和 iCloud 同步",
+      description: "iPad照片整理指南：先确认 iCloud 同步，再用 AI 分类整理平板相册中的截图、文档、票据、重复照片和大视频，复查重要资料后再安全清理并释放空间。",
+      dateModified: "2026-08-28"
+    },
+    structuredData: [
+      {
+        type: "BreadcrumbList",
+        id: "https://www.xiaozhonglvyou.com/ipad-photo-organizer-cn.html#breadcrumb",
+        values: {
+          name: "iPad照片整理指南 | 相册清理、AI分类和 iCloud 同步",
+          itemListElement: [
+            { "@type": "ListItem", position: 1, name: "中文首页", item: "https://www.xiaozhonglvyou.com/zh-cn.html" },
+            { "@type": "ListItem", position: 2, name: "iPad照片整理指南 | 相册清理、AI分类和 iCloud 同步", item: "https://www.xiaozhonglvyou.com/ipad-photo-organizer-cn.html" }
+          ]
+        }
+      }
+    ],
+    replacements: [
+      {
+        label: "iPad guide breadcrumb label",
+        from: ["<li aria-current=\"page\">iPad照片整理指南</li>"],
+        to: "<li aria-current=\"page\">iPad照片整理指南 | 相册清理、AI分类和 iCloud 同步</li>"
+      },
+      {
+        label: "iPad guide modified time",
+        from: ["<meta property=\"article:modified_time\" content=\"2026-07-13\">"],
+        to: "<meta property=\"article:modified_time\" content=\"2026-08-28\">"
+      },
+      {
+        label: "iPad guide publication date",
+        from: ["<p class=\"article-meta\"><time datetime=\"2026-07-13\">2026年7月13日更新</time> · 作者 <a href=\"about.html\" rel=\"author\">Bo Chen</a></p>"],
+        to: "<p class=\"article-meta\"><time datetime=\"2026-08-28\">2026年8月28日更新</time> · 作者 <a href=\"about.html\" rel=\"author\">Bo Chen</a></p>"
+      }
+    ]
+  },
+  {
+    file: "mac-screen-privacy-cn.html",
+    title: "Mac防窥和屏幕隐私指南 | 共享屏幕、演示和窗口保护",
+    description: "Mac防窥和屏幕隐私指南：面向共享屏幕、远程会议、演示模式和开放办公区，了解本地人脸检测、敏感窗口隐藏、隐私遮挡块和 Lite 版本信息及系统要求。",
+    modifiedDate: "2026-08-28",
+    modifiedDateLabel: "2026年8月28日",
+    article: {
+      headline: "Mac防窥和屏幕隐私指南 | 共享屏幕、演示和窗口保护",
+      description: "Mac防窥和屏幕隐私指南：面向共享屏幕、远程会议、演示模式和开放办公区，了解本地人脸检测、敏感窗口隐藏、隐私遮挡块和 Lite 版本信息及系统要求。",
+      dateModified: "2026-08-28"
+    },
+    structuredData: [
+      {
+        type: "BreadcrumbList",
+        id: "https://www.xiaozhonglvyou.com/mac-screen-privacy-cn.html#breadcrumb",
+        values: {
+          name: "Mac防窥和屏幕隐私指南 | 共享屏幕、演示和窗口保护",
+          itemListElement: [
+            { "@type": "ListItem", position: 1, name: "中文首页", item: "https://www.xiaozhonglvyou.com/zh-cn.html" },
+            { "@type": "ListItem", position: 2, name: "Mac防窥和屏幕隐私指南 | 共享屏幕、演示和窗口保护", item: "https://www.xiaozhonglvyou.com/mac-screen-privacy-cn.html" }
+          ]
+        }
+      }
+    ],
+    replacements: [
+      {
+        label: "Mac privacy guide breadcrumb label",
+        from: ["<li aria-current=\"page\">Mac防窥和屏幕隐私</li>"],
+        to: "<li aria-current=\"page\">Mac防窥和屏幕隐私指南 | 共享屏幕、演示和窗口保护</li>"
+      },
+      {
+        label: "Mac privacy guide modified time",
+        from: ["<meta property=\"article:modified_time\" content=\"2026-08-03\">"],
+        to: "<meta property=\"article:modified_time\" content=\"2026-08-28\">"
+      },
+      {
+        label: "Mac privacy guide publication date",
+        from: ["<p class=\"article-meta\"><time datetime=\"2026-08-03\">2026年8月3日更新</time> · 作者 <a href=\"about.html\" rel=\"author\">Bo Chen</a></p>"],
+        to: "<p class=\"article-meta\"><time datetime=\"2026-08-28\">2026年8月28日更新</time> · 作者 <a href=\"about.html\" rel=\"author\">Bo Chen</a></p>"
+      }
+    ]
+  },
+  {
+    file: "travel-translator-cn.html",
+    title: "出国翻译通 | iPhone旅行语音、拍照 OCR 和离线翻译",
+    description: "出国翻译通旅行指南：用双向语音、连续传译、拍照 OCR 和文字翻译应对机场、酒店、餐厅、菜单和路牌，核心语言对支持离线使用，适用于 iPhone。",
+    modifiedDate: "2026-08-28",
+    modifiedDateLabel: "2026年8月28日",
+    article: {
+      headline: "出国翻译通 | iPhone旅行语音、拍照 OCR 和离线翻译",
+      description: "出国翻译通旅行指南：用双向语音、连续传译、拍照 OCR 和文字翻译应对机场、酒店、餐厅、菜单和路牌，核心语言对支持离线使用，适用于 iPhone。",
+      dateModified: "2026-08-28"
+    },
+    structuredData: [
+      {
+        type: "BreadcrumbList",
+        id: "https://www.xiaozhonglvyou.com/travel-translator-cn.html#breadcrumb",
+        values: {
+          name: "出国翻译通 | iPhone旅行语音、拍照 OCR 和离线翻译",
+          itemListElement: [
+            { "@type": "ListItem", position: 1, name: "中文首页", item: "https://www.xiaozhonglvyou.com/zh-cn.html" },
+            { "@type": "ListItem", position: 2, name: "出国翻译通 | iPhone旅行语音、拍照 OCR 和离线翻译", item: "https://www.xiaozhonglvyou.com/travel-translator-cn.html" }
+          ]
+        }
+      }
+    ],
+    replacements: [
+      {
+        label: "travel translator guide breadcrumb label",
+        from: ["<li aria-current=\"page\">出国翻译通</li>"],
+        to: "<li aria-current=\"page\">出国翻译通 | iPhone旅行语音、拍照 OCR 和离线翻译</li>"
+      },
+      {
+        label: "travel translator guide modified time",
+        from: ["<meta property=\"article:modified_time\" content=\"2026-07-14\">"],
+        to: "<meta property=\"article:modified_time\" content=\"2026-08-28\">"
+      },
+      {
+        label: "travel translator guide publication date",
+        from: ["<p class=\"article-meta\"><time datetime=\"2026-07-14\">2026年7月14日更新</time> · 作者 <a href=\"about.html\" rel=\"author\">Bo Chen</a></p>"],
+        to: "<p class=\"article-meta\"><time datetime=\"2026-08-28\">2026年8月28日更新</time> · 作者 <a href=\"about.html\" rel=\"author\">Bo Chen</a></p>"
+      }
+    ]
+  },
+  {
     file: "voice-camera-translator-guide.html",
     title: "Voice &amp; Camera Translator for Travel: 6 Steps (2026)",
     description: "Translate travel conversations, menus, and signs on iPhone in 6 steps. Use voice, camera OCR, live interpretation, and offline core language pairs.",
