@@ -56,6 +56,7 @@ Search index: https://www.xiaozhonglvyou.com/search-index.json
 - All 147 visible App Store links: GA4 `app_store_click` event metadata, product/storefront identifiers, accessible labels, and safe new-tab attributes
 - 27 Article pages: og:article:published_time and og:article:modified_time (synced with JSON-LD)
 - 55 indexable pages: Atom alternate links point to the canonical 27-entry Atom feed, with titles, summaries, links, and dates checked against Article JSON-LD
+- 27 Article nodes: page-specific topic keyword sets are aligned with each article's title, description, language, and search intent; legacy generic brand keywords are rejected by the readiness audit
 - Localized, regional, and paired content pages: hreflang alternates (15 regional pages + 20 paired content pages)
 - No broken internal links, no orphan pages, all pages have >= 3 internal entry points
 - No generic anchor text ("click here" etc.)

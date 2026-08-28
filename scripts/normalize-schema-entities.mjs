@@ -1,6 +1,7 @@
 import { readdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { articleKeywordsByFile } from "./article-keyword-map.mjs";
 
 const scriptDir = path.dirname(fileURLToPath(import.meta.url));
 const siteDir = path.resolve(scriptDir, "..");
@@ -323,12 +324,15 @@ function normalizeArticle(node, fileName, canonical) {
     productNames.add(mappedProduct);
   }
 
-  const keywords = new Set(normalizeKeywords(node.keywords));
-  for (const productName of productNames) {
-    for (const keyword of productKeywords.get(productName) || []) keywords.add(keyword);
+  const mappedKeywords = articleKeywordsByFile.get(fileName);
+  const keywords = new Set(mappedKeywords || normalizeKeywords(node.keywords));
+  if (!mappedKeywords) {
+    for (const productName of productNames) {
+      for (const keyword of productKeywords.get(productName) || []) keywords.add(keyword);
+    }
   }
-  if (keywords.size < 4) {
-    ["independent app developer", "App Store utility", "privacy-first apps", "CrazyAIAgent"].forEach((keyword) => keywords.add(keyword));
+  if (!mappedKeywords && keywords.size < 4) {
+    ["independent app developer", "App Store utility", "privacy-first apps"].forEach((keyword) => keywords.add(keyword));
   }
 
   return {
