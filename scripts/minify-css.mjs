@@ -21,6 +21,55 @@ function propertyName(statement) {
   return /^[-\w]+$/.test(statement.trim());
 }
 
+function normalizeRgbaFunctions(source) {
+  let output = "";
+  let quote = "";
+
+  for (let index = 0; index < source.length; index += 1) {
+    const character = source[index];
+
+    if (quote) {
+      output += character;
+      if (character === "\\" && index + 1 < source.length) output += source[++index];
+      else if (character === quote) quote = "";
+      continue;
+    }
+
+    if (character === '"' || character === "'") {
+      quote = character;
+      output += character;
+      continue;
+    }
+
+    const functionMatch = source.slice(index).match(/^rgba\(/i);
+    if (!functionMatch) {
+      output += character;
+      continue;
+    }
+
+    const close = source.indexOf(")", index + functionMatch[0].length);
+    if (close === -1) {
+      output += character;
+      continue;
+    }
+
+    const argumentsText = source.slice(index + functionMatch[0].length, close);
+    if (/[()]/.test(argumentsText)) {
+      output += character;
+      continue;
+    }
+
+    const normalizedArguments = argumentsText
+      .trim()
+      .replace(/\s*,\s*/g, ",")
+      .replace(/(^|,)0\.(\d+)/g, "$1.$2");
+    output += `${functionMatch[0]}${normalizedArguments})`;
+    index = close;
+  }
+
+  return output;
+}
+
 export function minifyCss(source) {
   let output = "";
   let quote = "";
@@ -162,7 +211,7 @@ export function minifyCss(source) {
   if (quote) throw new Error("styles.css contains an unterminated string");
   if (frames.length !== 1) throw new Error("styles.css contains an unterminated block");
 
-  return `${output.trim()}\n`;
+  return `${normalizeRgbaFunctions(output.trim())}\n`;
 }
 
 async function main() {
