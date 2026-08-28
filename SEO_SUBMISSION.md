@@ -50,11 +50,12 @@ Search index: https://www.xiaozhonglvyou.com/search-index.json
 ### Technical SEO
 - All 55 indexable pages: unique title, unique meta description, single H1, canonical, viewport, robots=index,follow
 - All 55 indexable pages: og:locale, og:image:secure_url, og:image:width/height/alt, og:site_name
-- 32 single-product iOS pages expose validated Smart App Banner metadata with the correct app ID and canonical app argument
+- 36 single-product iOS pages expose validated Smart App Banner metadata with the correct app ID and canonical app argument
 - All 55 indexable pages: manifest.webmanifest link, preconnect for googletagmanager and apps.apple.com
 - `manifest.webmanifest`: 3 validated icons, 2 screenshots, 4 app shortcuts, explicit language, and standalone display metadata
 - All 147 visible App Store links: GA4 `app_store_click` event metadata, product/storefront identifiers, accessible labels, and safe new-tab attributes
 - 27 Article pages: og:article:published_time and og:article:modified_time (synced with JSON-LD)
+- 55 indexable pages: Atom alternate links point to the canonical 27-entry Atom feed, with titles, summaries, links, and dates checked against Article JSON-LD
 - Localized, regional, and paired content pages: hreflang alternates (15 regional pages + 20 paired content pages)
 - No broken internal links, no orphan pages, all pages have >= 3 internal entry points
 - No generic anchor text ("click here" etc.)
@@ -93,10 +94,10 @@ Search index: https://www.xiaozhonglvyou.com/search-index.json
 ### Bing Readiness Audit
 - Script: `node scripts/audit-bing-readiness.mjs`
 - Checks: Bingbot/BingPreview allowed in robots.txt, sitemap advertised, IndexNow key valid, all indexable pages have meta keywords (Bing values these), meta description, canonical, and JSON-LD structured data
-- Status: PASS (47 Bing-audited pages, all with keywords/description/canonical/JSON-LD)
+- Status: PASS (51 Bing-audited pages, all with keywords/description/canonical/JSON-LD)
 - Bing Webmaster Tools property is active: the 2026-07-17 account screenshot shows Recommendations for `xiaozhonglvyou.com`. No `msvalidate.01` tag is present, which is expected when the property is verified through another supported method such as DNS or Google Search Console import.
 - Latest deployment validation: commit `7613956`; added reciprocal hreflang and visible cross-links for the English and Simplified Chinese iPad photo organizer guides.
-- Latest sitemap validation: commit `e5f2264`; 401 hreflang alternate links, including paired English/Simplified Chinese guide and app pages, are present in sitemap.xml.
+- Latest sitemap validation: commit `e5f2264`; 413 hreflang alternate links, including paired English/Simplified Chinese guide and app pages, are present in sitemap.xml.
 - Latest global-focused sitemap validation: sitemap-global.xml and sitemap-global.txt contain 42 non-Chinese global and localized URLs and are advertised from robots.txt and sitemap-index.xml.
 - Latest article sitemap validation: 2026-08-28; sitemap-articles.xml and sitemap-articles.txt contain all 27 Article/guide URLs and are advertised from robots.txt and sitemap-index.xml.
 - Latest China-focused sitemap validation: sitemap-cn.xml contains 11 Chinese-language URLs and is advertised from robots.txt and sitemap-index.xml.
