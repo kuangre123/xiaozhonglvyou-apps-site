@@ -451,6 +451,164 @@ const pages = [
     ]
   },
   {
+    file: "ai-photo-classification-cn.html",
+    title: "AI照片分类指南 | iPhone相册整理和安全清理",
+    description: "中文 AI 照片分类指南：先用智能分类整理 iPhone 相册，再逐组复查重复照片、相似照片、截图、模糊照片、票据、证件、文档和大文件，看清真实存储空间后决定安全清理，降低误删风险。",
+    modifiedDate: "2026-08-28",
+    modifiedDateLabel: "2026年8月28日",
+    article: {
+      headline: "AI照片分类指南 | iPhone相册整理和安全清理",
+      description: "中文 AI 照片分类指南：先用智能分类整理 iPhone 相册，再逐组复查重复照片、相似照片、截图、模糊照片、票据、证件、文档和大文件，看清真实存储空间后决定安全清理，降低误删风险。",
+      dateModified: "2026-08-28"
+    },
+    structuredData: [
+      {
+        type: "BreadcrumbList",
+        id: "https://www.xiaozhonglvyou.com/ai-photo-classification-cn.html#breadcrumb",
+        values: {
+          name: "AI照片分类指南 | iPhone相册整理和安全清理",
+          itemListElement: [
+            { "@type": "ListItem", position: 1, name: "中文首页", item: "https://www.xiaozhonglvyou.com/zh-cn.html" },
+            { "@type": "ListItem", position: 2, name: "中文应用", item: "https://www.xiaozhonglvyou.com/zh-cn.html" },
+            { "@type": "ListItem", position: 3, name: "AI照片分类指南 | iPhone相册整理和安全清理", item: "https://www.xiaozhonglvyou.com/ai-photo-classification-cn.html" }
+          ]
+        }
+      }
+    ],
+    replacements: [
+      {
+        label: "AI classification guide breadcrumb label",
+        from: ["<li aria-current=\"page\">AI照片分类指南</li>"],
+        to: "<li aria-current=\"page\">AI照片分类指南 | iPhone相册整理和安全清理</li>"
+      },
+      {
+        label: "AI classification guide modified time",
+        from: ["<meta property=\"article:modified_time\" content=\"2026-07-13\">"] ,
+        to: "<meta property=\"article:modified_time\" content=\"2026-08-28\">"
+      },
+      {
+        label: "AI classification guide publication date",
+        from: ["<p class=\"article-meta\"><time datetime=\"2026-07-13\">2026年7月13日更新</time> · 作者 <a href=\"about.html\" rel=\"author\">Bo Chen</a></p>"],
+        to: "<p class=\"article-meta\"><time datetime=\"2026-08-28\">2026年8月28日更新</time> · 作者 <a href=\"about.html\" rel=\"author\">Bo Chen</a></p>"
+      }
+    ]
+  },
+  {
+    file: "duplicate-photo-cleaner-cn.html",
+    title: "重复照片清理指南 | 相似照片和 iPhone 相册复查",
+    description: "中文重复照片清理指南：讲解 iPhone 相册里重复照片、相似照片、连拍、截图和模糊照片如何成组复查、对比场景和内容后再决定保留或清理，避免一键误删珍贵回忆和重要记录。",
+    modifiedDate: "2026-08-28",
+    modifiedDateLabel: "2026年8月28日",
+    article: {
+      headline: "重复照片清理指南 | 相似照片和 iPhone 相册复查",
+      description: "中文重复照片清理指南：讲解 iPhone 相册里重复照片、相似照片、连拍、截图和模糊照片如何成组复查、对比场景和内容后再决定保留或清理，避免一键误删珍贵回忆和重要记录。",
+      dateModified: "2026-08-28"
+    },
+    structuredData: [
+      {
+        type: "BreadcrumbList",
+        id: "https://www.xiaozhonglvyou.com/duplicate-photo-cleaner-cn.html#breadcrumb",
+        values: {
+          name: "重复照片清理指南 | 相似照片和 iPhone 相册复查",
+          itemListElement: [
+            { "@type": "ListItem", position: 1, name: "中文首页", item: "https://www.xiaozhonglvyou.com/zh-cn.html" },
+            { "@type": "ListItem", position: 2, name: "重复照片清理指南 | 相似照片和 iPhone 相册复查", item: "https://www.xiaozhonglvyou.com/duplicate-photo-cleaner-cn.html" }
+          ]
+        }
+      }
+    ],
+    replacements: [
+      {
+        label: "duplicate photo guide breadcrumb label",
+        from: ["<li aria-current=\"page\">重复照片清理指南</li>"],
+        to: "<li aria-current=\"page\">重复照片清理指南 | 相似照片和 iPhone 相册复查</li>"
+      },
+      {
+        label: "duplicate photo guide modified time",
+        from: ["<meta property=\"article:modified_time\" content=\"2026-07-13\">"] ,
+        to: "<meta property=\"article:modified_time\" content=\"2026-08-28\">"
+      },
+      {
+        label: "duplicate photo guide publication date",
+        from: ["<p class=\"article-meta\"><time datetime=\"2026-07-13\">2026年7月13日更新</time> · 作者 <a href=\"about.html\" rel=\"author\">Bo Chen</a></p>"],
+        to: "<p class=\"article-meta\"><time datetime=\"2026-08-28\">2026年8月28日更新</time> · 作者 <a href=\"about.html\" rel=\"author\">Bo Chen</a></p>"
+      }
+    ]
+  },
+  {
+    file: "iphone-photo-cleaner-cn.html",
+    title: "iPhone照片清理 App | AI Cleaning 重复照片复查",
+    description: "AI Cleaning 在 iPhone 本机查找重复和相似照片，集中复查截图、模糊照片和大文件；先确认再删除，核心功能免费，无需登录，照片不上传。",
+    modifiedDate: "2026-08-28",
+    modifiedDateLabel: "2026年8月28日",
+    article: {
+      headline: "iPhone照片清理 App | AI Cleaning 重复照片复查",
+      description: "AI Cleaning 在 iPhone 本机查找重复和相似照片，集中复查截图、模糊照片和大文件；先确认再删除，核心功能免费，无需登录，照片不上传。",
+      dateModified: "2026-08-28"
+    },
+    structuredData: [
+      {
+        type: "BreadcrumbList",
+        id: "https://www.xiaozhonglvyou.com/iphone-photo-cleaner-cn.html#breadcrumb",
+        values: {
+          name: "iPhone照片清理 App | AI Cleaning 重复照片复查",
+          itemListElement: [
+            { "@type": "ListItem", position: 1, name: "中文首页", item: "https://www.xiaozhonglvyou.com/zh-cn.html" },
+            { "@type": "ListItem", position: 2, name: "iPhone照片清理 App | AI Cleaning 重复照片复查", item: "https://www.xiaozhonglvyou.com/iphone-photo-cleaner-cn.html" }
+          ]
+        }
+      }
+    ],
+    replacements: [
+      {
+        label: "iPhone photo cleaner breadcrumb label",
+        from: ["<li aria-current=\"page\">iPhone照片清理指南</li>"],
+        to: "<li aria-current=\"page\">iPhone照片清理 App | AI Cleaning 重复照片复查</li>"
+      },
+      {
+        label: "iPhone photo cleaner modified time",
+        from: ["<meta property=\"article:modified_time\" content=\"2026-08-15\">"] ,
+        to: "<meta property=\"article:modified_time\" content=\"2026-08-28\">"
+      },
+      {
+        label: "iPhone photo cleaner publication date",
+        from: ["<p class=\"article-meta\"><time datetime=\"2026-08-15\">2026年8月15日更新</time> · 作者 <a href=\"about.html\" rel=\"author\">Bo Chen</a></p>"],
+        to: "<p class=\"article-meta\"><time datetime=\"2026-08-28\">2026年8月28日更新</time> · 作者 <a href=\"about.html\" rel=\"author\">Bo Chen</a></p>"
+      }
+    ]
+  },
+  {
+    file: "gif-maker-cn.html",
+    title: "iPhone GIF制作器 | 照片、视频和 Live Photo 转 GIF",
+    description: "GIFmaker 可在 iPhone 本机把照片、视频和 Live Photo 制作成 GIF，支持逐帧调速、文字、倒放、回旋循环和多种画布比例。",
+    webPage: {
+      "@id": "https://www.xiaozhonglvyou.com/gif-maker-cn.html#page",
+      name: "iPhone GIF制作器 | 照片、视频和 Live Photo 转 GIF",
+      description: "GIFmaker 可在 iPhone 本机把照片、视频和 Live Photo 制作成 GIF，支持逐帧调速、文字、倒放、回旋循环和多种画布比例。"
+    },
+    structuredData: [
+      {
+        type: "BreadcrumbList",
+        id: "https://www.xiaozhonglvyou.com/gif-maker-cn.html#breadcrumb",
+        values: {
+          name: "iPhone GIF制作器 | 照片、视频和 Live Photo 转 GIF",
+          itemListElement: [
+            { "@type": "ListItem", position: 1, name: "首页", item: "https://www.xiaozhonglvyou.com/zh-cn.html" },
+            { "@type": "ListItem", position: 2, name: "应用", item: "https://www.xiaozhonglvyou.com/apps.html" },
+            { "@type": "ListItem", position: 3, name: "iPhone GIF制作器 | 照片、视频和 Live Photo 转 GIF", item: "https://www.xiaozhonglvyou.com/gif-maker-cn.html" }
+          ]
+        }
+      }
+    ],
+    replacements: [
+      {
+        label: "GIF maker product breadcrumb label",
+        from: ["<li aria-current=\"page\">GIFmaker</li>"],
+        to: "<li aria-current=\"page\">iPhone GIF制作器 | 照片、视频和 Live Photo 转 GIF</li>"
+      }
+    ]
+  },
+  {
     file: "ipad-photo-organizer-cn.html",
     title: "iPad照片整理指南 | 相册清理、AI分类和 iCloud 同步",
     description: "iPad照片整理指南：先确认 iCloud 同步，再用 AI 分类整理平板相册中的截图、文档、票据、重复照片和大视频，复查重要资料后再安全清理并释放空间。",
