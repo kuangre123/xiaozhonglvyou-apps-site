@@ -28,7 +28,7 @@ Search index: https://www.xiaozhonglvyou.com/search-index.json
 
 ## Completed On Site
 
-- 55 indexable HTML pages, 127 JSON-LD blocks, 182 top-level structured-data nodes, 0 parse errors
+- 55 indexable HTML pages, 128 JSON-LD blocks, 183 top-level structured-data nodes, 0 parse errors
 - `robots.txt` allows 26+ crawler UAs including Googlebot, Bingbot, DuckDuckBot, Baiduspider, Sogou, 360Spider, YisouSpider, Bytespider, PetalBot, and AI crawlers (GPTBot, ClaudeBot, PerplexityBot)
 - `robots.txt` advertises sitemap-index, sitemap.xml, sitemap-global.xml, sitemap-articles.xml, sitemap-cn.xml, sitemap.txt, sitemap-global.txt, sitemap-articles.txt, sitemap-cn.txt, feed.xml, atom.xml
 - `sitemap.xml` includes 55 URLs with per-page lastmod values through 2026-08-28, changefreq, priority, 413 hreflang alternate links, and 90 image entries
@@ -63,9 +63,9 @@ Search index: https://www.xiaozhonglvyou.com/search-index.json
 - No heading hierarchy skips
 - No public-facing SEO terminology leaks
 
-### Structured Data (127 blocks, 15 top-level types, 182 nodes)
+### Structured Data (128 blocks, 15 top-level types, 183 nodes)
 - BreadcrumbList: 54 pages (all indexable pages except index.html)
-- FAQPage: 42 pages with 218 visible and structured Q&A pairs
+- FAQPage: 43 pages with 223 visible and structured Q&A pairs
 - Article: 27 pages with datePublished/dateModified synced per page
 - WebPage: 21 pages
 - CollectionPage: 5 pages
@@ -97,8 +97,8 @@ Search index: https://www.xiaozhonglvyou.com/search-index.json
 - Checks: Bingbot/BingPreview allowed in robots.txt, sitemap advertised, IndexNow key valid, all indexable pages have meta keywords (Bing values these), meta description, canonical, and JSON-LD structured data
 - Status: PASS (55 Bing-audited pages, all with keywords/description/canonical/JSON-LD; the only excluded HTML file is the noindex 404 page)
 - Bing Webmaster Tools property is active: the 2026-07-17 account screenshot shows Recommendations for `xiaozhonglvyou.com`. No `msvalidate.01` tag is present, which is expected when the property is verified through another supported method such as DNS or Google Search Console import.
-- Latest deployment validation: commit `7613956`; added reciprocal hreflang and visible cross-links for the English and Simplified Chinese iPad photo organizer guides.
-- Latest sitemap validation: commit `e5f2264`; 413 hreflang alternate links, including paired English/Simplified Chinese guide and app pages, are present in sitemap.xml.
+- Latest deployment validation: 2026-08-28; full site verification passed all 99 tests after adding five Italian-language installation and workflow answers with matching FAQPage structured data.
+- Latest sitemap validation: 2026-08-28; 55 URLs, 413 hreflang alternate links, and 90 image entries are present in sitemap.xml.
 - Latest global-focused sitemap validation: sitemap-global.xml and sitemap-global.txt contain 42 non-Chinese global and localized URLs and are advertised from robots.txt and sitemap-index.xml.
 - Latest article sitemap validation: 2026-08-28; sitemap-articles.xml and sitemap-articles.txt contain all 27 Article/guide URLs and are advertised from robots.txt and sitemap-index.xml.
 - Latest China-focused sitemap validation: sitemap-cn.xml contains 11 Chinese-language URLs and is advertised from robots.txt and sitemap-index.xml.
