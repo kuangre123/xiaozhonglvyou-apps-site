@@ -4,15 +4,36 @@ Disallow: /README.md
 Disallow: /SEO_SUBMISSION.md
 Allow: /
 
-# Main global and China search crawlers
+# Main global, regional, and local search crawlers
 User-agent: Googlebot
 User-agent: Googlebot-Image
 User-agent: Bingbot
 User-agent: BingPreview
+User-agent: MicrosoftPreview
 User-agent: DuckDuckBot
 User-agent: Slurp
+User-agent: Y!J-BRU
+User-agent: Y!J-BRW
+User-agent: Y!J-ASR
+User-agent: Y!J-MMP
+User-agent: Y!J-WSC
+User-agent: YJ-BRU
+User-agent: YJ-BRW
+User-agent: YJ-ASR
+User-agent: YJ-MMP
+User-agent: YJ-WSC
 User-agent: Applebot
+User-agent: Yandex
 User-agent: YandexBot
+User-agent: Mail.RU_Bot
+User-agent: Yeti
+User-agent: Daum
+User-agent: SeznamBot
+User-agent: Qwantbot
+User-agent: Qwantify
+User-agent: coccocbot
+User-agent: coccocbot-web
+User-agent: coccocbot-image
 User-agent: Baiduspider
 User-agent: Sogou web spider
 User-agent: Sogou inst spider
