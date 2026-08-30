@@ -66,10 +66,12 @@ Allow: /
 Sitemap: https://www.xiaozhonglvyou.com/sitemap-index.xml
 Sitemap: https://www.xiaozhonglvyou.com/sitemap.xml
 Sitemap: https://www.xiaozhonglvyou.com/sitemap-global.xml
+Sitemap: https://www.xiaozhonglvyou.com/sitemap-local.xml
 Sitemap: https://www.xiaozhonglvyou.com/sitemap-articles.xml
 Sitemap: https://www.xiaozhonglvyou.com/sitemap-cn.xml
 Sitemap: https://www.xiaozhonglvyou.com/sitemap.txt
 Sitemap: https://www.xiaozhonglvyou.com/sitemap-global.txt
+Sitemap: https://www.xiaozhonglvyou.com/sitemap-local.txt
 Sitemap: https://www.xiaozhonglvyou.com/sitemap-articles.txt
 Sitemap: https://www.xiaozhonglvyou.com/sitemap-cn.txt
 Sitemap: https://www.xiaozhonglvyou.com/feed.xml
