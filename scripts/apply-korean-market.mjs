@@ -1,0 +1,170 @@
+#!/usr/bin/env node
+
+import { readFile, writeFile } from "node:fs/promises";
+import path from "node:path";
+
+const siteDir = process.env.SITE_DIR
+  ? path.resolve(process.cwd(), process.env.SITE_DIR)
+  : path.resolve(import.meta.dirname, "..");
+const fileName = "ko-kr.html";
+const updatedDate = "2026-08-30";
+const aiCleaningStoreUrl = "https://apps.apple.com/kr/app/ai-cleaning-%EC%82%AC%EC%A7%84-%EC%A0%95%EB%A6%AC/id6768019606?uo=4";
+const translatorStoreUrl = "https://apps.apple.com/kr/app/translation-specialist/id6755734543?uo=4";
+
+const faqItems = [
+  {
+    question: "iPhone 사진 정리는 어떤 앱부터 보면 되나요?",
+    answer: "iPhone 사진 정리는 AI Cleaning부터 보면 됩니다. 사진을 유형별로 분류하고, 중복 사진, 유사 사진, 스크린샷, 흐린 사진, 용량이 큰 미디어를 삭제 전에 검토할 수 있습니다."
+  },
+  {
+    question: "AI Cleaning은 사진을 자동으로 삭제하나요?",
+    answer: "아니요. AI Cleaning은 분류 결과와 정리 후보를 보여 주지만, 삭제할 사진은 사용자가 내용을 확인한 뒤 직접 결정합니다. 문서, 신분증, 편집한 사진, 가족 사진이 섞여 있지 않은지 확인하세요."
+  },
+  {
+    question: "사진 분류와 분석은 온라인에서 처리되나요?",
+    answer: "AI Cleaning의 사진 분류와 분석은 iPhone 기기에서 처리되도록 설계되어 있습니다. 사진을 분류하기 위해 개인 사진을 원격 서비스에 업로드하지 않고 정리 흐름을 진행할 수 있습니다."
+  },
+  {
+    question: "여행 중 번역에는 어떤 앱을 쓰나요?",
+    answer: "Travel Translator는 음성 입력, 번역 음성 재생, 카메라 OCR 번역, 연속 통역을 지원해 공항, 호텔, 식당, 메뉴, 표지판 확인에 사용할 수 있습니다. 출발 전에 사용할 언어와 기능을 시험하세요."
+  },
+  {
+    question: "Mac 화면 개인정보 보호 앱은 언제 필요하나요?",
+    answer: "Anti-spy screen은 회의, 공유 공간, 프레젠테이션, 화면 공유 중 보이고 싶지 않은 Mac 창이나 화면 영역을 보호하는 보조 도구입니다. 실제 공유 창이나 디스플레이는 회의 앱에서도 확인해야 합니다."
+  },
+  {
+    question: "의료나 법률 번역을 그대로 사용해도 되나요?",
+    answer: "일상적인 여행에는 기계 번역이 유용하지만, 의료, 법률, 안전, 입국 절차에 관한 중요한 내용은 공식 정보나 자격을 갖춘 통역사에게도 확인하세요. 이름, 날짜, 금액, 주소는 원문과 대조해야 합니다."
+  }
+];
+
+function escapeHtml(value) {
+  return value
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;");
+}
+
+function faqJsonLd() {
+  return `<script type="application/ld+json">${JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "ko-KR",
+    mainEntity: faqItems.map(({ question, answer }) => ({
+      "@type": "Question",
+      name: question,
+      acceptedAnswer: { "@type": "Answer", text: answer }
+    }))
+  })}</script>`;
+}
+
+function faqSection() {
+  const details = faqItems.map(({ question, answer }, index) =>
+    `<details${index === 0 ? " open" : ""}><summary>${escapeHtml(question)}</summary><p>${escapeHtml(answer)}</p></details>`
+  ).join("");
+
+  return `<section class="section faq" id="faq" data-localized-faq="ko-kr"><div class="section-inner"><div class="section-heading"><div><p class="section-kicker">자주 묻는 질문</p><h2>설치 전에 확인할 내용.</h2></div><p>사진 정리, 여행 번역, Mac 화면 개인정보 보호의 차이와 사용 전에 알아야 할 범위를 정리했습니다.</p></div><div class="faq-list">${details}</div></div></section>`;
+}
+
+function mainContent() {
+  return `<main class="page-main" id="main-content"><section class="page-hero page-hero-simple"><div class="page-hero-copy"><nav class="breadcrumb" aria-label="경로"><ol><li><a href="ko-kr.html">홈</a></li><li aria-current="page">한국</li></ol></nav><p class="eyebrow">한국 사용자용 앱</p><h1>iPhone AI 사진 정리, 여행 번역, Mac 화면 개인정보 보호.</h1><p>사진을 지우기 전에 분류하고 검토하려는 사용자, 해외에서 대화와 메뉴를 번역하려는 여행자, 회의와 화면 공유에서 Mac의 민감한 창을 보호하려는 사용자를 위해 목적별 선택 방법과 주의점을 정리했습니다.</p><div class="hero-actions" aria-label="한국 사용자용 앱 작업"><a class="button button-primary" href="${aiCleaningStoreUrl}" target="_blank" rel="noopener noreferrer" data-analytics-event="app_store_click" data-store-product="ai-cleaning-photo-cleaner" data-storefront="ios-app-store" aria-label="한국 App Store에서 AI Cleaning 사진 정리 앱 열기(새 탭)">AI 사진 정리 시작</a> <a class="button button-secondary" href="${translatorStoreUrl}" target="_blank" rel="noopener noreferrer" data-analytics-event="app_store_click" data-store-product="translation-specialist" data-storefront="ios-app-store" aria-label="한국 App Store에서 Translation Specialist 열기(새 탭)">여행 번역 시작</a></div><p class="article-meta">내용 확인일 <time datetime="${updatedDate}">2026년 8월 30일</time></p></div></section><section class="section content-section" id="apps" data-korean-market="apps"><div class="section-inner content-grid"><div><p class="section-kicker">목적별 시작점</p><h2>먼저 해결하려는 문제를 하나 고릅니다.</h2><p>사진 정리, 여행 번역, 화면 개인정보 보호는 필요한 권한과 확인 절차가 서로 다릅니다. 앱 이름보다 실제로 끝내려는 작업을 기준으로 페이지를 선택하면 기능 범위를 더 정확하게 이해할 수 있습니다.</p></div><div class="content-list"><div id="photo-cleaning"><strong>AI Cleaning - Photo Cleaner</strong><p>음식, 문서, 영수증, 신분증, 식물, 동물, 단체 사진 등을 분류하고, 중복·유사·스크린샷·흐린 사진·용량이 큰 미디어를 삭제 전에 검토합니다. <a href="iphone-photo-cleaner.html">사진 정리 기능 페이지(영문)</a>에서 정리 범위를 확인할 수 있습니다.</p></div><div id="translation"><strong>Travel Translator</strong><p>음성 입력, 번역 음성 재생, 카메라 OCR, 연속 통역을 대화, 메뉴, 표지판, 라벨에 맞게 사용합니다. <a href="travel-translator.html">여행 번역 기능 페이지(영문)</a>에서 지원 흐름과 주의점을 확인할 수 있습니다.</p></div><div id="mac-privacy"><strong>Anti-spy screen</strong><p>선택한 앱 숨기기, 화면 영역을 가리는 Privacy Block, 프레젠테이션 보호 기능으로 공유 공간과 회의 중 노출을 줄입니다. <a href="mac-screen-privacy.html">Mac 화면 개인정보 보호 페이지(영문)</a>에서 소프트웨어 보호 범위를 확인할 수 있습니다.</p></div></div></div></section><section class="section content-section alt-section" id="decision-guide" data-korean-market="decision"><div class="section-inner"><div class="section-heading"><div><p class="section-kicker">검색 목적별 선택</p><h2>찾고 있는 작업에서 다음 페이지로 이동합니다.</h2></div><p>세부 가이드는 영문이지만 기능, 검토 순서, 삭제나 공유 전에 확인할 사항을 구체적으로 설명합니다.</p></div><div class="intent-table" role="table" aria-label="한국 사용자용 앱 선택표"><div class="intent-head" role="row"><span role="columnheader">하려는 작업</span><span role="columnheader">먼저 볼 페이지</span><span role="columnheader">확인할 내용</span></div><div role="row"><span role="cell">iPhone 사진을 AI로 유형별 정리</span><span role="cell"><a href="ai-photo-classification.html">AI 사진 분류 가이드</a></span><span role="cell">분류 카테고리, 기기 내 처리, 사용자가 삭제 전에 검토하는 흐름.</span></div><div role="row"><span role="cell">중복 사진, 유사 사진, 스크린샷 정리</span><span role="cell"><a href="duplicate-photo-cleaner-guide.html">중복 사진 검토 가이드</a></span><span role="cell">중복과 유사 사진의 차이, 남길 사진 비교, 삭제 전 최종 확인.</span></div><div role="row"><span role="cell">여행 대화, 메뉴, 표지판 번역</span><span role="cell"><a href="voice-camera-translator-guide.html">음성·카메라 번역 가이드</a></span><span role="cell">음성, 읽어주기, 카메라 OCR, 연속 통역의 구분과 언어별 사전 시험.</span></div><div role="row"><span role="cell">회의와 화면 공유에서 Mac 내용 보호</span><span role="cell"><a href="screen-sharing-privacy-guide.html">화면 공유 개인정보 보호 가이드</a></span><span role="cell">알림, 공유 대상, 보호할 앱, 시험 통화를 시작 전에 확인.</span></div></div></div></section><section class="section content-section" id="preflight" data-korean-market="preflight"><div class="section-inner content-grid"><div><p class="section-kicker">실행 전 점검</p><h2>삭제, 번역, 화면 공유는 확인 후 실행합니다.</h2><p>앱은 후보와 보호 기능을 제공하지만, 남길 사진, 중요한 번역, 공유할 화면은 사용자가 판단합니다. 아래 항목을 먼저 확인하면 오작동과 실수를 줄일 수 있습니다.</p></div><div class="content-list"><div><strong>사진을 삭제하기 전</strong><p>iCloud 사진 동기화 상태를 확인하고 중복 그룹뿐 아니라 편집한 사진, 문서, 영수증, 신분증, 가족 사진 같은 중요한 카테고리도 다시 봅니다. 내용을 이해하는 항목만 선택합니다.</p></div><div><strong>유사 사진을 비교할 때</strong><p>비슷해 보여도 표정, 초점, 글자 가독성, 편집 상태가 다를 수 있습니다. 후보를 한 장씩 열고 남길 이유가 분명한 사진을 먼저 정합니다.</p></div><div><strong>여행 번역을 사용하기 전</strong><p>출발 전에 사용할 언어의 음성 입력과 카메라 번역을 시험합니다. 이름, 날짜, 금액, 주소는 원문과 대조하고 의료, 법률, 안전, 입국 절차는 공식 정보나 사람의 통역으로도 확인합니다.</p></div><div><strong>Mac 화면을 공유하기 전</strong><p>알림을 줄이고 공유할 창 또는 디스플레이를 확인하며 개인 채팅, 이메일, 고객 정보를 닫습니다. 실제 회의 전에 짧게 시험 공유를 실행해 보호할 내용이 보이지 않는지 확인합니다.</p></div><div><strong>한국 App Store에서 확인할 내용</strong><p><a href="${aiCleaningStoreUrl}" target="_blank" rel="noopener noreferrer" data-analytics-event="app_store_click" data-store-product="ai-cleaning-photo-cleaner" data-storefront="ios-app-store" aria-label="한국 App Store에서 AI Cleaning 정보 확인(새 탭)">AI Cleaning</a>과 <a href="${translatorStoreUrl}" target="_blank" rel="noopener noreferrer" data-analytics-event="app_store_click" data-store-product="translation-specialist" data-storefront="ios-app-store" aria-label="한국 App Store에서 Translation Specialist 정보 확인(새 탭)">Translation Specialist</a>의 현재 가격, 지원 OS, 사용 가능한 기능, 개인정보 표시를 설치 전에 확인합니다.</p></div></div></div></section><section class="section content-section alt-section" id="boundaries" data-korean-market="boundaries"><div class="section-inner content-grid"><div><p class="section-kicker">기능의 경계</p><h2>앱이 돕는 일과 사용자가 결정할 일을 구분합니다.</h2><p>짧은 검색 결과 설명만으로는 자동 처리 범위를 오해하기 쉽습니다. 각 도구가 보조하는 부분과 사용자가 직접 확인해야 하는 부분을 설치 전에 나누어 생각하세요.</p></div><div class="content-list"><div><strong>사진 정리는 자동 삭제가 아닙니다</strong><p>AI 분류와 중복 후보는 검토를 빠르게 하는 단서입니다. 남길 사진의 품질과 의미는 사용자가 판단하고 삭제할 항목을 선택합니다.</p></div><div><strong>사진 정리 앱은 iOS 시스템 청소가 아닙니다</strong><p>대상은 사진 라이브러리 안의 정리입니다. 보호된 iOS 시스템 데이터, RAM, 근거 없는 시스템 정크를 삭제하는 기능으로 안내하지 않습니다.</p></div><div><strong>기계 번역은 중요한 판단의 최종 확인이 아닙니다</strong><p>일상 대화를 돕는 데 유용하지만 의료, 법률, 안전, 입국 절차에서는 원문, 공식 창구, 자격을 갖춘 통역사의 확인이 필요합니다.</p></div><div><strong>화면 보호는 공유 대상을 자동 선택하지 않습니다</strong><p>보호 앱과 화면 영역을 설정해도 회의 앱에서 공유할 창이나 디스플레이는 사용자가 선택합니다. 공유 미리보기를 반드시 확인해야 합니다.</p></div></div></div></section>${faqSection()}</main>`;
+}
+
+function marketLinks() {
+  return `<section class="section content-section" data-korean-market="markets"><div class="section-inner"><p class="section-kicker">다른 App Store 시장</p><p><a href="us-apps.html">미국</a> · <a href="uk-apps.html">영국</a> · <a href="canada-australia-apps.html">캐나다·호주</a> · <a href="singapore-apps.html">싱가포르</a> · <a href="switzerland-apps.html">스위스</a> · <a href="netherlands-nordics-apps.html">네덜란드·북유럽</a> · <a href="de-de.html">독일</a> · <a href="fr-fr.html">프랑스</a> · <a href="es-es.html">스페인</a> · <a href="it-it.html">이탈리아</a> · <a href="ja-jp.html">일본</a> · <a href="zh-cn.html">중국어 간체</a> · <a href="zh-hant.html">중국어 번체</a></p></div></section>`;
+}
+
+function footer() {
+  return `<footer class="footer"><div class="footer-inner"><p>© 2026 CrazyAIAgent.</p><div><a href="ko-kr.html">홈</a> <a href="apps.html">앱 목록</a> <a href="guides.html">가이드</a> <a href="regions.html">국가·언어 페이지</a> <a href="directory.html">전체 페이지</a> <a href="search.html">사이트 검색</a> <a href="mailto:cb123428316@gmail.com">문의</a></div></div></footer>`;
+}
+
+function updateMarketLinks(html) {
+  const existing = [...html.matchAll(/<section\b[^>]*>[\s\S]*?<\/section>/gi)]
+    .find((match) => /<p class="section-kicker">\s*(?:Other App Store markets|다른 App Store 시장)\s*<\/p>/i.test(match[0]));
+
+  if (!existing) throw new Error("Missing market links section in ko-kr.html");
+  return html.replace(existing[0], marketLinks());
+}
+
+function updateMetadata(html) {
+  return html
+    .replace(/<title>[\s\S]*?<\/title>/i, "<title>아이폰 사진 정리·여행 번역·Mac 화면 개인정보 보호 | 한국</title>")
+    .replace(/<meta name="description" content="[^"]*">/i, '<meta name="description" content="한국 사용자를 위한 iPhone 사진 정리, 중복 사진 검토, 여행 음성·카메라 번역, Mac 화면 공유 개인정보 보호 안내. 삭제·번역·공유 전 확인점과 한국 App Store 링크를 제공합니다.">')
+    .replace(/<meta name="keywords" content="[^"]*">/i, '<meta name="keywords" content="아이폰 사진 정리, AI 사진 분류, 사진 정리 앱, 중복 사진 정리, 여행 번역 앱, 카메라 번역, Mac 화면 개인정보 보호, 화면 공유">')
+    .replace(/<meta property="og:title" content="[^"]*">/i, '<meta property="og:title" content="아이폰 사진 정리·여행 번역·Mac 화면 개인정보 보호">')
+    .replace(/<meta property="og:description" content="[^"]*">/i, '<meta property="og:description" content="한국 사용자를 위한 AI 사진 분류, 삭제 전 검토, 여행 번역, Mac 화면 공유 개인정보 보호 안내.">')
+    .replace(/<meta name="twitter:title" content="[^"]*">/i, '<meta name="twitter:title" content="아이폰 사진 정리·여행 번역·Mac 화면 개인정보 보호">')
+    .replace(/<meta name="twitter:description" content="[^"]*">/i, '<meta name="twitter:description" content="한국 사용자를 위한 AI 사진 분류, 삭제 전 검토, 여행 번역, Mac 화면 공유 개인정보 보호 안내.">');
+}
+
+function updateJsonLd(html) {
+  const replacementFaq = faqJsonLd();
+  const scriptPattern = /<script\b(?=[^>]*type=["']application\/ld\+json["'])[^>]*>([\s\S]*?)<\/script>/gi;
+  let foundFaq = false;
+  const updated = html.replace(scriptPattern, (block, body) => {
+    try {
+      const parsed = JSON.parse(body);
+
+      if (parsed?.["@type"] === "WebPage") {
+        parsed.name = "아이폰 사진 정리·여행 번역·Mac 화면 개인정보 보호";
+        parsed.about = [
+          "아이폰 사진 정리",
+          "AI 사진 분류",
+          "중복 사진 정리",
+          "여행 번역",
+          "카메라 번역",
+          "Mac 화면 개인정보 보호"
+        ];
+        parsed.dateModified = updatedDate;
+        return `<script type="application/ld+json">${JSON.stringify(parsed)}</script>`;
+      }
+
+      if (parsed?.["@type"] === "BreadcrumbList") {
+        parsed.name = "한국";
+        parsed.itemListElement = [
+          { "@type": "ListItem", position: 1, name: "홈", item: "https://www.xiaozhonglvyou.com/" },
+          { "@type": "ListItem", position: 2, name: "국가·언어 페이지", item: "https://www.xiaozhonglvyou.com/regions.html" },
+          { "@type": "ListItem", position: 3, name: "한국", item: "https://www.xiaozhonglvyou.com/ko-kr.html" }
+        ];
+        return `<script type="application/ld+json">${JSON.stringify(parsed)}</script>`;
+      }
+
+      if (parsed?.["@type"] === "FAQPage") {
+        foundFaq = true;
+        return replacementFaq;
+      }
+    } catch {
+      return block;
+    }
+
+    return block;
+  });
+
+  if (foundFaq) return updated;
+  if (!updated.includes("</head>")) throw new Error("Missing </head> in ko-kr.html");
+  return updated.replace("</head>", `${replacementFaq}</head>`);
+}
+
+function updateBody(html) {
+  let updated = html;
+
+  if (!/<body>\s*<a class="skip-link"/i.test(updated)) {
+    updated = updated.replace("<body>", '<body><a class="skip-link" href="#main-content">본문으로 이동</a>');
+  }
+
+  updated = updated.replace(
+    /<div class="nav-links">[\s\S]*?<\/div><a class="nav-cta"/i,
+    '<div class="nav-links"><a href="#photo-cleaning">사진 정리</a> <a href="#translation">여행 번역</a> <a href="#mac-privacy">Mac 개인정보</a></div><a class="nav-cta"'
+  );
+  updated = updated.replace(/<main\b[\s\S]*?<\/main>/i, mainContent());
+  updated = updateMarketLinks(updated);
+  updated = updated.replace(/<footer class="footer">[\s\S]*?<\/footer>/i, footer());
+  return updated;
+}
+
+const filePath = path.join(siteDir, fileName);
+const original = await readFile(filePath, "utf8");
+const updated = updateBody(updateJsonLd(updateMetadata(original)));
+
+if (updated !== original) await writeFile(filePath, updated, "utf8");
+console.log(`Applied Korean market content to ${fileName}; changed ${updated === original ? 0 : 1}.`);
