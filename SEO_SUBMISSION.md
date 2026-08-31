@@ -33,15 +33,15 @@ Search index: https://www.xiaozhonglvyou.com/search-index.json
 ## Completed On Site
 
 - 55 indexable HTML pages, 128 JSON-LD blocks, 183 top-level structured-data nodes, 0 parse errors
-- `robots.txt` allows 39 named search crawler UAs including Googlebot, Bingbot, MicrosoftPreview, DuckDuckBot, Slurp, Yahoo! JAPAN Y!J/YJ crawlers, Yandex, Mail.RU_Bot, Yeti, Daum, SeznamBot, Qwantbot/Qwantify, Coc Coc, Baiduspider, Sogou, 360Spider, YisouSpider, Bytespider, PetalBot, and AI crawlers (GPTBot, ClaudeBot, PerplexityBot)
+- `robots.txt` allows 40 named search crawler UAs including Googlebot, Bingbot, MicrosoftPreview, DuckDuckBot, Slurp, Yahoo! JAPAN Y!J/YJ crawlers, Yandex, Mail.RU_Bot, Yeti, Daum, SeznamBot, Qwantbot/Qwantify, Coc Coc, Baiduspider, Sogou, 360Spider, YisouSpider, Bytespider, PetalBot, and AI crawlers (GPTBot, ClaudeBot, PerplexityBot)
 - `robots.txt` advertises sitemap-index, sitemap.xml, sitemap-global.xml, sitemap-local.xml, sitemap-articles.xml, sitemap-cn.xml, sitemap.txt, sitemap-global.txt, sitemap-local.txt, sitemap-articles.txt, sitemap-cn.txt, feed.xml, atom.xml
-- `sitemap.xml` includes 55 URLs with per-page lastmod values through 2026-08-30, changefreq, priority, 413 hreflang alternate links, and 90 image entries
+- `sitemap.xml` includes 58 URLs with per-page lastmod values through 2026-08-31, changefreq, priority, 536 hreflang alternate links, and 93 image entries
 - `sitemap-index.xml` points to sitemap.xml, sitemap-global.xml, sitemap-local.xml, sitemap-articles.xml, sitemap-cn.xml, feed.xml, and atom.xml
 - `sitemap-global.xml` lists 42 global, English, and localized non-Chinese landing pages for Google, Bing, Yandex, DuckDuckGo, and other international search platform submissions
-- `sitemap-local.xml` lists 33 regional, localized, market-hub, and core product URLs for Yahoo! JAPAN, Naver, Daum, Yandex, Seznam, Qwant, Coc Coc, and other local search platform submissions
+- `sitemap-local.xml` lists 36 regional, localized, market-hub, and core product URLs for Yahoo! JAPAN, Naver, Daum, Yandex, Seznam, Qwant, Coc Coc, and other local search platform submissions
 - `sitemap-articles.xml` lists 27 Article/guide pages with per-page dateModified values from JSON-LD
 - `sitemap-cn.xml` lists 11 Simplified and Traditional Chinese landing pages for Baidu, 360, Sogou, Shenma, and other Chinese search platform submissions
-- `sitemap.txt` lists 55 URLs in plain text format
+- `sitemap.txt` lists 58 URLs in plain text format
 - `sitemap-global.txt` lists the same 42 global and international URLs in plain text format
 - `sitemap-local.txt` lists the same 33 local-search-priority URLs in plain text format
 - `sitemap-articles.txt` lists the same 27 Article/guide URLs in plain text format
@@ -63,7 +63,7 @@ Search index: https://www.xiaozhonglvyou.com/search-index.json
 - 27 Article pages: og:article:published_time and og:article:modified_time (synced with JSON-LD)
 - 55 indexable pages: Atom alternate links point to the canonical 27-entry Atom feed, with titles, summaries, links, and dates checked against Article JSON-LD
 - 27 Article nodes: page-specific topic keyword sets are aligned with each article's title, description, language, and search intent; legacy generic brand keywords are rejected by the readiness audit
-- Localized, regional, and paired content pages: hreflang alternates (15 regional pages + 20 paired content pages)
+- Localized, regional, and paired content pages: hreflang alternates (18 regional pages + 20 paired content pages)
 - No broken internal links; all 55 indexable pages have at least 3 unique inbound HTML source pages. The coverage audit excludes the noindex 404 page and counts each distinct linking HTML page once, so the market directory is reachable from the homepage, directory hub, and apps hub.
 - No generic anchor text ("click here" etc.)
 - No heading hierarchy skips
@@ -85,8 +85,8 @@ Search index: https://www.xiaozhonglvyou.com/search-index.json
 
 ### Internationalization
 - 15 regional/market pages with cross-links (Hub and Spoke)
-- hreflang: en, en-US, en-GB, en-CA, en-AU, en-SG, en-CH, en-NL, en-SE, en-DK, en-FI, en-NO, zh-Hans, zh-Hant, ja-JP, ko-KR, de-DE, fr-FR, es-ES, it-IT + x-default
-- Localized App Store links per market (30 unique external links)
+- hreflang: en, en-US, en-GB, en-CA, en-AU, en-SG, en-CH, en-NL, en-SE, en-DK, en-FI, en-NO, zh-Hans, zh-Hant, ja-JP, ko-KR, ru-RU, cs-CZ, vi-VN, de-DE, fr-FR, es-ES, it-IT + x-default
+- Localized App Store links per market (48 unique external links)
 
 ### Local Search Engine Matrix
 
@@ -97,10 +97,10 @@ Research date: 2026-08-30. Treat market-share figures as directional snapshots b
 | Japan | Google remains the main mobile index; Bing is material on desktop; Yahoo! JAPAN is a major local search and portal surface. StatCounter reported Japan July 2026 all-platform share as Google 59.73%, Bing 32.07%, Yahoo! 6.55%. Yahoo! JAPAN also documents its own Y!J crawler family. | `ja-jp.html` is in the hreflang cluster and `sitemap-local.xml`; `robots.txt` explicitly allows Googlebot, Bingbot, Slurp, and Yahoo! JAPAN Y!J/YJ crawler spellings including `Y!J-BRW`. | Submit `sitemap-local.xml` and `sitemap-articles.xml` in Google Search Console and Bing Webmaster Tools; monitor Yahoo! JAPAN referrals separately from Google/Bing because the portal and crawler signals can differ. |
 | South Korea | Naver is a required local surface, and Korean market-share sources conflict because Naver answers many queries inside its own properties. Daum remains a smaller Korean search surface. | `ko-kr.html` is in the hreflang cluster and `sitemap-local.xml`; `robots.txt` explicitly allows Naver `Yeti` and Daum. | Verify the canonical domain in Naver Search Advisor, submit `sitemap-local.xml`, request recrawl for `ko-kr.html`, and track Naver/Daum separately from Google organic. |
 | Mainland China | Baidu is the primary domestic engine; 360, Sogou, Shenma/Yisou, ByteDance search, Huawei Petal, and Bing are useful secondary surfaces for Chinese-language discovery. | `zh-cn.html` now provides 3,550 visible characters, seven task-specific Chinese guide paths, six matching FAQ items, and direct China storefront links for all six apps. `sitemap-cn.xml` and `sitemap-cn.txt` contain the Chinese-language pages; `robots.txt` explicitly allows Baiduspider, Sogou, 360Spider, YisouSpider, Bytespider, and PetalBot. | Verify in Baidu Search Resource Platform and submit `sitemap-cn.xml` or the available ordinary-inclusion channel. Reserve Baidu quick inclusion for eligible time-sensitive content; Baidu states that submission shortens discovery time but does not guarantee inclusion. Repeat ownership and resource submission in 360, Sogou, and Shenma webmaster tools. |
-| Russia and CIS | Yandex is the local leader in Russia; Mail.ru is a secondary Russian surface. This site does not currently have Russian-language landing pages. | `robots.txt` explicitly allows `Yandex`, `YandexBot`, and `Mail.RU_Bot`; IndexNow includes the Yandex endpoint; `sitemap-local.xml` exposes the strongest current market and product entries. | Keep Yandex Webmaster configured with `sitemap-local.xml`; do not create Russian pages until the app store copy, support path, and privacy wording can be localized accurately. |
-| Czechia | Seznam remains a meaningful local Czech engine. StatCounter reported Czech Republic July 2026 share as Google 81.07%, Seznam 14.05%, Bing 3.72%. | `robots.txt` explicitly allows `SeznamBot`; IndexNow includes the Seznam endpoint; `sitemap-local.xml` provides a bounded submission list. | If Czech localization becomes a priority, create a Czech market page and submit `sitemap-local.xml` in Seznam Webmaster. Until then, keep global pages crawlable and monitor referrals. |
+| Russia and CIS | Yandex is the local leader in Russia; Mail.ru is a secondary Russian surface. | `ru-ru.html` provides substantial Russian content for all six apps, local App Store links, six matching FAQ items, language-support disclosures, and `ru-RU` hreflang. `robots.txt` explicitly allows `Yandex`, `YandexBot`, and `Mail.RU_Bot`; IndexNow includes the Yandex endpoint. | Add `sitemap-local.xml` in Yandex Webmaster, request reindexing for `ru-ru.html`, and keep IndexNow enabled. Yandex recommends combining sitemap, manual reindexing, and IndexNow where applicable. |
+| Czechia | Seznam remains a meaningful local Czech engine. StatCounter reported Czech Republic July 2026 share as Google 81.07%, Seznam 14.05%, Bing 3.72%. | `cs-cz.html` provides substantial Czech content for all six apps, local App Store links, six matching FAQ items, an explicit Czech-interface limitation, and `cs-CZ` hreflang. `robots.txt` allows `SeznamBot`, and IndexNow includes the Seznam endpoint. | Submit `cs-cz.html` through Seznam Webmaster's add-page path and keep IndexNow enabled. Seznam documents both methods and states that internal crawlable links remain essential. |
 | France and EU privacy segment | Google and Bing remain primary in France, but Qwant is a French search engine with its own crawler/user-agent guidance. | `fr-fr.html` and `nettoyeur-photo-iphone-fr.html` are in hreflang clusters; `robots.txt` now allows `Qwantbot` and `Qwantify`. | Track Qwant referrals as a small but relevant privacy-aligned segment; keep French page claims concrete and tied to App Store/privacy evidence. |
-| Vietnam | Google dominates all-platform share, but Coc Coc is the clearest surviving national challenger engine in Vietnam. | No Vietnamese landing page yet; `robots.txt` now allows Coc Coc crawler spellings so existing English/global pages remain discoverable. | Treat Vietnamese localization as a later expansion candidate; do not submit translated pages until real localized copy exists. |
+| Vietnam | Google dominates all-platform share, but Cốc Cốc is the clearest national challenger and describes itself as Vietnam's second-largest search engine. | `vi-vn.html` provides substantial Vietnamese content for all six apps, local App Store links, six matching FAQ items, language-support disclosures, and `vi-VN` hreflang. `robots.txt` allows the official `coccocbot`, web, image, and fast crawler names. | Submit `sitemap-local.xml` and `vi-vn.html` in Cốc Cốc Search Console. Cốc Cốc says its crawler prioritizes Vietnamese content and accepts sitemap or individual URL submissions. |
 | US, UK, Canada, Australia, Germany, Switzerland, Netherlands, and Nordics | Google leads; Bing/Yahoo/DuckDuckGo are the practical secondary engines. Germany also has above-average privacy/mission search use through DuckDuckGo and Ecosia. | Regional pages, `sitemap-global.xml`, `sitemap-articles.xml`, Bing meta-keyword coverage, IndexNow, RSS, Atom, and `llms.txt` are already in place. | Continue Google Search Console and Bing Webmaster monitoring; use Bing data as the operational proxy for Yahoo Search and Copilot grounding. |
 
 Research sources used for this matrix:
@@ -117,6 +117,12 @@ Research sources used for this matrix:
 - Sogou Resource Platform: https://zhanzhang.sogou.com/
 - Apple Search API China storefront lookup for the six public app IDs: https://itunes.apple.com/lookup?id=6768019606,6755734543,6761301764,6766485393,6783559364,6786365305&country=cn
 - Yandex Webmaster sitemap guidance: https://www.yandex.com/support/webmaster/en/indexing-options/sitemap
+- Yandex new and changed page guidance: https://www.yandex.com/support/webmaster/en/robot-workings/new-changed
+- Seznam IndexNow guidance: https://o-seznam.cz/napoveda/vyhledavani/seznambot/protokol-indexnow/
+- Seznam search submission FAQ: https://o-seznam.cz/napoveda/vyhledavani/nejcastejsi-dotazy/
+- Cốc Cốc Search Console and sitemap guidance: https://coccoc.com/search/console/vn/introduction and https://coccoc.com/search/console/submit-sitemap-to-coc-coc-search
+- Cốc Cốc crawler user agents: https://coccoc.com/search/console/coc-coc-robots
+- Apple Search API storefront lookups: https://itunes.apple.com/lookup?id=6768019606,6755734543,6761301764,6766485393,6783559364,6786365305&country=ru, https://itunes.apple.com/lookup?id=6768019606,6755734543,6761301764,6766485393,6783559364,6786365305&country=cz, and https://itunes.apple.com/lookup?id=6768019606,6755734543,6761301764,6766485393,6783559364,6786365305&country=vn
 - Qwant crawler guidance: https://help.qwant.com/bot/
 - Daum robots guidance: https://cs.daum.net/faq/service/15/category/4118/detail/36354
 
@@ -128,17 +134,17 @@ Research sources used for this matrix:
 - Endpoints: `www.bing.com/indexnow`, `api.indexnow.org/IndexNow`, `yandex.com/indexnow`, `search.seznam.cz/indexnow`, `searchadvisor.naver.com/indexnow`
 - Validation: rejects empty, duplicate, over-limit, and off-domain sitemap URL lists before submission
 - Evidence: each workflow run saves `indexnow-report.json` as a 30-day GitHub Actions artifact
-- Latest verified automated run: the IndexNow readiness audit now validates the 55-URL sitemap; each workflow run preserves endpoint-level evidence in `indexnow-report.json`.
+- Latest verified automated run: the IndexNow readiness audit now validates the 58-URL sitemap; each workflow run preserves endpoint-level evidence in `indexnow-report.json`.
 
 ### Bing Readiness Audit
 - Script: `node scripts/audit-bing-readiness.mjs`
 - Checks: Bingbot/BingPreview allowed in robots.txt, sitemap advertised, IndexNow key valid, all indexable pages have meta keywords (Bing values these), meta description, canonical, and JSON-LD structured data
 - Status: PASS (55 Bing-audited pages, all with keywords/description/canonical/JSON-LD; the only excluded HTML file is the noindex 404 page)
 - Bing Webmaster Tools property is active: the 2026-07-17 account screenshot shows Recommendations for `xiaozhonglvyou.com`. No `msvalidate.01` tag is present, which is expected when the property is verified through another supported method such as DNS or Google Search Console import.
-- Latest deployment validation: 2026-08-30; full site verification passed all 103 tests with local search engine crawler coverage, market-specific content checks for China, Japan, and South Korea, a submission matrix, and dedicated local-search and China-focused sitemaps.
-- Latest sitemap validation: 2026-08-30; 55 URLs, 413 hreflang alternate links, and 90 image entries are present in sitemap.xml.
+- Latest deployment validation: 2026-08-31; full site verification passed all 104 tests with local search engine crawler coverage, market-specific content checks for China, Japan, South Korea, Russia, Czechia, and Vietnam, a submission matrix, and dedicated local-search and China-focused sitemaps.
+- Latest sitemap validation: 2026-08-31; 58 URLs, 536 hreflang alternate links, and 93 image entries are present in sitemap.xml.
 - Latest global-focused sitemap validation: sitemap-global.xml and sitemap-global.txt contain 42 non-Chinese global and localized URLs and are advertised from robots.txt and sitemap-index.xml.
-- Latest local-search-focused sitemap validation: 2026-08-30; sitemap-local.xml and sitemap-local.txt contain 33 regional, localized, market-hub, and core product URLs and are advertised from robots.txt and sitemap-index.xml.
+- Latest local-search-focused sitemap validation: 2026-08-31; sitemap-local.xml and sitemap-local.txt contain 36 regional, localized, market-hub, and core product URLs and are advertised from robots.txt and sitemap-index.xml.
 - Latest article sitemap validation: 2026-08-30; sitemap-articles.xml and sitemap-articles.txt contain all 27 Article/guide URLs and are advertised from robots.txt and sitemap-index.xml.
 - Latest China-focused sitemap validation: sitemap-cn.xml contains 11 Chinese-language URLs and is advertised from robots.txt and sitemap-index.xml.
 - Latest China-focused text sitemap validation: sitemap-cn.txt contains the same 11 Chinese-language URLs and is advertised from robots.txt.

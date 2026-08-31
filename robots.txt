@@ -34,6 +34,7 @@ User-agent: Qwantify
 User-agent: coccocbot
 User-agent: coccocbot-web
 User-agent: coccocbot-image
+User-agent: coccocbot-fast
 User-agent: Baiduspider
 User-agent: Sogou web spider
 User-agent: Sogou inst spider
