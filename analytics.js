@@ -1,1 +1,43 @@
-const analyticsMeasurementId="G-JY8T5JJGNH",analyticsDebugEnabled=new URLSearchParams(window.location.search).get("ga_debug")==="1";window.dataLayer=window.dataLayer||[],window.gtag=window.gtag||function(){window.dataLayer.push(arguments)},window.gtag("js",new Date);const referrer=document.referrer||"";let analyticsAiSource="";try{const e=new URL(referrer).hostname.toLowerCase();e==="chat.openai.com"||e.endsWith(".chat.openai.com")||e==="chatgpt.com"||e.endsWith(".chatgpt.com")?analyticsAiSource="chatgpt":e==="perplexity.ai"||e.endsWith(".perplexity.ai")?analyticsAiSource="perplexity":e==="claude.ai"||e.endsWith(".claude.ai")?analyticsAiSource="claude":e==="gemini.google.com"||e.endsWith(".gemini.google.com")||e==="bard.google.com"?analyticsAiSource="gemini":(e==="copilot.microsoft.com"||e.endsWith(".copilot.microsoft.com"))&&(analyticsAiSource="copilot")}catch{analyticsAiSource=""}window.analyticsAiSource=analyticsAiSource,analyticsAiSource&&window.gtag("set","user_properties",{ai_source:analyticsAiSource}),window.gtag("config",analyticsMeasurementId,analyticsDebugEnabled?{debug_mode:!0}:{}),window.analyticsDebugEnabled=analyticsDebugEnabled;
+const analyticsMeasurementId = "G-JY8T5JJGNH";
+const analyticsDebugEnabled = new URLSearchParams(window.location.search).get("ga_debug") === "1";
+
+window.dataLayer = window.dataLayer || [];
+window.gtag = window.gtag || function gtag() {
+  window.dataLayer.push(arguments);
+};
+window.gtag("js", new Date());
+
+const referrer = document.referrer || "";
+let analyticsAiSource = "";
+try {
+  const hostname = new URL(referrer).hostname.toLowerCase();
+  if (
+    hostname === "chat.openai.com"
+    || hostname.endsWith(".chat.openai.com")
+    || hostname === "chatgpt.com"
+    || hostname.endsWith(".chatgpt.com")
+  ) analyticsAiSource = "chatgpt";
+  else if (hostname === "perplexity.ai" || hostname.endsWith(".perplexity.ai")) analyticsAiSource = "perplexity";
+  else if (hostname === "claude.ai" || hostname.endsWith(".claude.ai")) analyticsAiSource = "claude";
+  else if (
+    hostname === "gemini.google.com"
+    || hostname.endsWith(".gemini.google.com")
+    || hostname === "bard.google.com"
+  ) analyticsAiSource = "gemini";
+  else if (
+    hostname === "copilot.microsoft.com"
+    || hostname.endsWith(".copilot.microsoft.com")
+  ) analyticsAiSource = "copilot";
+} catch {
+  analyticsAiSource = "";
+}
+
+window.analyticsAiSource = analyticsAiSource;
+if (analyticsAiSource) {
+  window.gtag("set", "user_properties", { ai_source: analyticsAiSource });
+}
+
+const analyticsConfig = { transport_type: "beacon" };
+if (analyticsDebugEnabled) analyticsConfig.debug_mode = true;
+window.gtag("config", analyticsMeasurementId, analyticsConfig);
+window.analyticsDebugEnabled = analyticsDebugEnabled;

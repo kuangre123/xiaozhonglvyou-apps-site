@@ -1,1 +1,156 @@
-(async()=>{const c=document.getElementById("site-search"),a=document.getElementById("search-results"),o=document.getElementById("search-empty");if(!c||!a||!o)return;let i=[],h=!1,m="",v=!1,x="";function p(t,n=!1){o.replaceChildren();const s=document.createElement("span");if(s.textContent=t,o.append(s),n){const r=document.createElement("a");r.href="directory.html",r.textContent=" Browse the full directory.",o.append(r)}}function E(t){return typeof t!="string"||!t||/^(?:[a-z][a-z\d+.-]*:|\/\/)/i.test(t)||t==="/"?"./":t.replace(/^\/+/,"")}function f(t){if(!h)return;const n=t.trim();if(n.length<2){a.replaceChildren(),o.hidden=!1,p("Type to search across "+i.length+" pages.");return}o.hidden=!0;const s=n.toLowerCase(),r=i.filter(e=>e.searchText.includes(s));if(n!==m){const e={search_term:n,search_result_count:r.length,search_page:window.location.pathname};typeof window.trackAnalyticsEvent==="function"?window.trackAnalyticsEvent("view_search_results",e):typeof window.gtag==="function"&&(window.analyticsDebugEnabled===!0&&(e.debug_mode=!0),window.gtag("event","view_search_results",e)),m=n}const w=new URL(window.location.href);if(w.searchParams.set("q",n),window.history.replaceState(null,"",w),r.length===0){a.replaceChildren();const e=document.createElement("p");e.className="search-no-results",e.textContent='No results found for "'+t+'".',a.append(e);return}const y=document.createDocumentFragment();r.forEach(e=>{const g=e.title||e.h1||e.path,C=e.description||"",d=document.createElement("div");d.className="search-result";const l=document.createElement("a");l.href=E(e.path),l.className="search-result-link",l.textContent=g;const u=document.createElement("p");u.className="search-result-description",u.textContent=C,d.append(l,u),y.append(d)}),a.replaceChildren(y)}function L(){v=!1,f(x)}function S(t){if(x=t,v)return;v=!0;const n=window.requestAnimationFrame;typeof n==="function"?window.requestAnimationFrame(L):L()}c.addEventListener("input",t=>S(t.target.value));try{const t=await fetch("search-index.json",{headers:{Accept:"application/json"}});if(!t.ok)throw new Error("Search index request failed: "+t.status);const n=await t.json();if(i=Array.isArray(n.pages)?n.pages.map(e=>({...e,searchText:[e.title,e.description,e.h1,e.category].filter(Boolean).join(" ").toLowerCase()})):[],i.length===0)throw new Error("Search index is empty");h=!0,a.setAttribute("aria-busy","false");const r=new URLSearchParams(window.location.search).get("q")||"",q=c.value||r;c.value=q,x=q,f(q)}catch(t){console.error("Unable to load the search index.",t),c.disabled=!0,a.setAttribute("aria-busy","false"),o.hidden=!1,p("The page index is temporarily unavailable.",!0)}})();
+(async () => {
+  const input = document.getElementById("site-search");
+  const results = document.getElementById("search-results");
+  const emptyState = document.getElementById("search-empty");
+  if (!input || !results || !emptyState) return;
+
+  let pages = [];
+  let ready = false;
+  let lastTrackedQuery = "";
+  let framePending = false;
+  let pendingQuery = "";
+
+  const showEmptyState = (message, includeDirectoryLink = false) => {
+    emptyState.replaceChildren();
+    const messageNode = document.createElement("span");
+    messageNode.textContent = message;
+    emptyState.append(messageNode);
+
+    if (includeDirectoryLink) {
+      const directoryLink = document.createElement("a");
+      directoryLink.href = "directory.html";
+      directoryLink.textContent = " Browse the full directory.";
+      emptyState.append(directoryLink);
+    }
+  };
+
+  const safePath = (value) => {
+    if (
+      typeof value !== "string"
+      || !value
+      || /^(?:[a-z][a-z\d+.-]*:|\/\/)/i.test(value)
+      || value === "/"
+    ) return "./";
+    return value.replace(/^\/+/, "");
+  };
+
+  const render = (value) => {
+    if (!ready) return;
+    const query = value.trim();
+
+    if (query.length < 2) {
+      results.replaceChildren();
+      emptyState.hidden = false;
+      showEmptyState(`Type to search across ${pages.length} pages.`);
+      return;
+    }
+
+    emptyState.hidden = true;
+    const normalizedQuery = query.toLowerCase();
+    const matches = pages.filter((page) => page.searchText.includes(normalizedQuery));
+
+    if (query !== lastTrackedQuery) {
+      const eventParams = {
+        search_term: query,
+        search_result_count: matches.length,
+        search_page: window.location.pathname
+      };
+      if (typeof window.trackAnalyticsEvent === "function") {
+        window.trackAnalyticsEvent("view_search_results", eventParams);
+      } else if (typeof window.gtag === "function") {
+        if (window.analyticsDebugEnabled === true) eventParams.debug_mode = true;
+        window.gtag("event", "view_search_results", eventParams);
+      }
+      lastTrackedQuery = query;
+    }
+
+    const nextUrl = new URL(window.location.href);
+    nextUrl.searchParams.set("q", query);
+    window.history.replaceState(null, "", nextUrl);
+
+    if (matches.length === 0) {
+      results.replaceChildren();
+      const noResults = document.createElement("p");
+      noResults.className = "search-no-results";
+      noResults.textContent = `No results found for "${value}".`;
+      results.append(noResults);
+      return;
+    }
+
+    const fragment = document.createDocumentFragment();
+    matches.forEach((page) => {
+      const title = page.title || page.h1 || page.path;
+      const description = page.description || "";
+      const result = document.createElement("div");
+      result.className = "search-result";
+
+      const link = document.createElement("a");
+      link.href = safePath(page.path);
+      link.className = "search-result-link";
+      link.textContent = title;
+      link.setAttribute("data-analytics-event", "search_result_click");
+      link.setAttribute("data-search-result-path", page.path || "");
+      link.setAttribute("data-search-result-title", title);
+      link.setAttribute("data-search-result-category", page.category || "unknown");
+      link.setAttribute("data-search-term", query);
+
+      const descriptionNode = document.createElement("p");
+      descriptionNode.className = "search-result-description";
+      descriptionNode.textContent = description;
+      result.append(link, descriptionNode);
+      fragment.append(result);
+    });
+    results.replaceChildren(fragment);
+  };
+
+  const renderLatest = () => {
+    framePending = false;
+    render(pendingQuery);
+  };
+
+  const scheduleRender = (value) => {
+    pendingQuery = value;
+    if (framePending) return;
+    framePending = true;
+    if (typeof window.requestAnimationFrame === "function") {
+      window.requestAnimationFrame(renderLatest);
+    } else {
+      renderLatest();
+    }
+  };
+
+  input.addEventListener("input", (event) => scheduleRender(event.target.value));
+
+  try {
+    const response = await fetch("search-index.json", {
+      headers: { Accept: "application/json" }
+    });
+    if (!response.ok) throw new Error(`Search index request failed: ${response.status}`);
+
+    const index = await response.json();
+    pages = Array.isArray(index.pages)
+      ? index.pages.map((page) => ({
+        ...page,
+        searchText: [page.title, page.description, page.h1, page.category]
+          .filter(Boolean)
+          .join(" ")
+          .toLowerCase()
+      }))
+      : [];
+    if (pages.length === 0) throw new Error("Search index is empty");
+
+    ready = true;
+    results.setAttribute("aria-busy", "false");
+    const queryFromUrl = new URLSearchParams(window.location.search).get("q") || "";
+    const initialQuery = input.value || queryFromUrl;
+    input.value = initialQuery;
+    pendingQuery = initialQuery;
+    render(initialQuery);
+  } catch (error) {
+    console.error("Unable to load the search index.", error);
+    input.disabled = true;
+    results.setAttribute("aria-busy", "false");
+    emptyState.hidden = false;
+    showEmptyState("The page index is temporarily unavailable.", true);
+  }
+})();
