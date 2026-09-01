@@ -5,12 +5,13 @@ import { createHash } from "node:crypto";
 import path from "node:path";
 import { pathToFileURL } from "node:url";
 import { priorityMarkets, priorityStores } from "./japan-germany-turkey-markets.mjs";
+import { latinAmericanMarkets, latinAmericanStores } from "./latin-america-markets.mjs";
 
 const siteDir = process.env.SITE_DIR
   ? path.resolve(process.cwd(), process.env.SITE_DIR)
   : path.resolve(import.meta.dirname, "..");
 const origin = "https://www.xiaozhonglvyou.com";
-const updatedDate = "2026-08-31";
+const updatedDate = "2026-09-01";
 const styleVersion = createHash("sha256")
   .update(await readFile(path.join(siteDir, "styles.css")))
   .digest("hex")
@@ -50,7 +51,8 @@ const stores = {
     gif: "https://apps.apple.com/vn/app/gifmaker-gif-studio/id6783559364?uo=4",
     ride: "https://apps.apple.com/vn/app/happyride-auto-ride-tracker/id6786365305?uo=4"
   },
-  ...priorityStores
+  ...priorityStores,
+  ...latinAmericanStores
 };
 
 const markets = [
@@ -276,7 +278,8 @@ const markets = [
     marketsIntro: "Hãy dùng trang phù hợp với quốc gia của tài khoản Apple hoặc ngôn ngữ bạn muốn đọc.",
     footer: ["Ứng dụng", "Hướng dẫn", "Quốc gia", "Hỗ trợ", "Quyền riêng tư"]
   },
-  ...priorityMarkets
+  ...priorityMarkets,
+  ...latinAmericanMarkets
 ];
 
 const regionalLinks = [
@@ -284,7 +287,7 @@ const regionalLinks = [
   ["Deutschland", "de-de.html"], ["France", "fr-fr.html"], ["España", "es-es.html"],
   ["Italia", "it-it.html"], ["日本", "ja-jp.html"], ["한국", "ko-kr.html"],
   ["简体中文", "zh-cn.html"], ["Русский", "ru-ru.html"], ["Čeština", "cs-cz.html"], ["Tiếng Việt", "vi-vn.html"],
-  ["Türkçe", "tr-tr.html"]
+  ["Türkçe", "tr-tr.html"], ["Brasil", "pt-br.html"], ["México", "es-mx.html"]
 ];
 
 const globalAlternates = [
@@ -296,7 +299,8 @@ const globalAlternates = [
   ["en-FI", "/netherlands-nordics-apps.html"], ["de-DE", "/de-de.html"],
   ["fr-FR", "/fr-fr.html"], ["es-ES", "/es-es.html"], ["it-IT", "/it-it.html"],
   ["ko-KR", "/ko-kr.html"], ["ja-JP", "/ja-jp.html"], ["ru-RU", "/ru-ru.html"],
-  ["cs-CZ", "/cs-cz.html"], ["vi-VN", "/vi-vn.html"], ["tr-TR", "/tr-tr.html"], ["zh-CN", "/zh-cn.html"],
+  ["cs-CZ", "/cs-cz.html"], ["vi-VN", "/vi-vn.html"], ["tr-TR", "/tr-tr.html"],
+  ["pt-BR", "/pt-br.html"], ["es-MX", "/es-mx.html"], ["zh-CN", "/zh-cn.html"],
   ["zh-Hant", "/zh-hant.html"], ["zh-TW", "/zh-hant.html"], ["zh-HK", "/zh-hant.html"],
   ["x-default", "/"]
 ];
@@ -309,7 +313,8 @@ const clusterFiles = [
   "index.html", "us-apps.html", "uk-apps.html", "canada-australia-apps.html",
   "singapore-apps.html", "switzerland-apps.html", "netherlands-nordics-apps.html",
   "de-de.html", "fr-fr.html", "es-es.html", "it-it.html", "ko-kr.html", "ja-jp.html",
-  "ru-ru.html", "cs-cz.html", "vi-vn.html", "tr-tr.html", "zh-cn.html", "zh-hant.html"
+  "ru-ru.html", "cs-cz.html", "vi-vn.html", "tr-tr.html", "pt-br.html", "es-mx.html",
+  "zh-cn.html", "zh-hant.html"
 ];
 
 function escapeHtml(value) {
@@ -351,14 +356,16 @@ function updateRegionsPage(html) {
     ["ru-ru.html", "Russian", "Russian page for iPhone and Mac utility app discovery."],
     ["cs-cz.html", "Czech", "Czech page for iPhone and Mac utility app discovery."],
     ["vi-vn.html", "Vietnamese", "Vietnamese page for iPhone and Mac utility app discovery."],
-    ["tr-tr.html", "Turkish", "Turkish page for iPhone and Mac utility app discovery."]
+    ["tr-tr.html", "Turkish", "Turkish page for iPhone and Mac utility app discovery."],
+    ["pt-br.html", "Brazilian Portuguese", "Brazilian Portuguese page for iPhone and Mac utility app discovery."],
+    ["es-mx.html", "Mexican Spanish", "Mexican Spanish page for iPhone and Mac utility app discovery."]
   ];
   let updated = html;
 
   const missingCards = newCards.filter(([href]) => !updated.includes(`href="${href}"`));
   if (missingCards.length > 0) {
     const cards = missingCards.map(([href, label, description]) => `<a class="region-card" href="${href}"><span>${label}</span><strong>${description}</strong></a>`).join("");
-    updated = updated.replace(/(<a class="region-card" href="ja-jp\.html">[\s\S]*?<\/a>)(\s*<\/div>)/i, `$1${cards}$2`);
+    updated = updated.replace(/(<a class="region-card" href="tr-tr\.html">[\s\S]*?<\/a>)/i, `$1${cards}`);
   }
 
   updated = updated.replace(/<script\b(?=[^>]*type=["']application\/ld\+json["'])[^>]*>([\s\S]*?)<\/script>/gi, (block, body) => {
@@ -369,10 +376,11 @@ function updateRegionsPage(html) {
       const list = nodes.find((node) => node?.["@type"] === "ItemList");
       if (!collection || !list) return block;
 
-      collection.description = "A market and localized page index for CrazyAIAgent app discovery in English, Chinese, Japanese, Korean, Russian, Czech, Vietnamese, Turkish, and major European languages.";
+      collection.description = "A market and localized page index for CrazyAIAgent app discovery in English, Chinese, Japanese, Korean, Russian, Czech, Vietnamese, Turkish, Brazilian Portuguese, Mexican Spanish, and major European languages.";
       collection.about = [
         "English App Store utility markets", "Chinese, Japanese, and Korean app pages",
-        "Russian, Czech, Vietnamese, and Turkish app pages", "German, French, Spanish, and Italian app pages"
+        "Russian, Czech, Vietnamese, and Turkish app pages", "German, French, Spanish, and Italian app pages",
+        "Brazilian Portuguese and Mexican Spanish app pages"
       ];
       const existing = (list.itemListElement ?? []).filter((item) => !newCards.some(([href]) => String(item.item).endsWith(`/${href}`)));
       list.itemListElement = [
@@ -411,7 +419,7 @@ function render(market) {
   };
   const faq = { "@context": "https://schema.org", "@type": "FAQPage", inLanguage: market.lang, mainEntity: market.faqs.map(([name, text]) => ({ "@type": "Question", name, acceptedAnswer: { "@type": "Answer", text } })) };
 
-  return `<!doctype html><html lang="${market.lang}"><head><meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; img-src 'self' https: data:; script-src 'self' https://www.googletagmanager.com; script-src-attr 'none'; style-src 'self'; style-src-attr 'none'; connect-src 'self' https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com; form-action 'none'; upgrade-insecure-requests"><link rel="preconnect" href="https://www.googletagmanager.com"><link rel="preconnect" href="https://apps.apple.com"><script src="analytics.js?v=c81ef6be0041"></script><script async fetchpriority="low" src="https://www.googletagmanager.com/gtag/js?id=G-JY8T5JJGNH"></script><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${escapeHtml(market.title)}</title><meta name="description" content="${escapeHtml(market.description)}"><meta name="keywords" content="${escapeHtml(market.keywords)}"><meta name="robots" content="index,follow,max-image-preview:large"><meta name="theme-color" content="#111827"><link rel="canonical" href="${url}"><link rel="alternate" type="application/rss+xml" title="CrazyAIAgent RSS" href="${origin}/feed.xml"><link rel="alternate" type="application/atom+xml" title="CrazyAIAgent Atom" href="${origin}/atom.xml">${hreflangMarkup}<meta property="og:type" content="website"><meta property="og:locale" content="${market.ogLocale}"><meta property="og:url" content="${url}"><meta property="og:title" content="${escapeHtml(market.ogTitle)}"><meta property="og:site_name" content="CrazyAIAgent"><meta property="og:description" content="${escapeHtml(market.ogDescription)}"><meta property="og:image" content="${origin}/assets/og-default.png"><meta property="og:image:secure_url" content="${origin}/assets/og-default.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="CrazyAIAgent iPhone and Mac applications"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="${escapeHtml(market.ogTitle)}"><meta name="twitter:description" content="${escapeHtml(market.ogDescription)}"><meta name="twitter:image" content="${origin}/assets/og-default.png"><link rel="icon" href="/favicon.ico" sizes="any"><link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="manifest" href="manifest.webmanifest"><link rel="stylesheet" href="styles.css?v=${styleVersion}">${jsonLd(webpage)}${jsonLd(breadcrumb)}${jsonLd(faq)}</head><body class="local-market-page"><a class="skip-link" href="#main-content">${escapeHtml(market.skip)}</a><header class="site-header" data-elevate><nav class="nav" aria-label="Primary"><a class="brand" href="/" aria-label="CrazyAIAgent"><span class="brand-mark" aria-hidden="true">CA</span><span>CrazyAIAgent</span></a><div class="nav-links"><a href="apps.html">${escapeHtml(market.nav[0])}</a><a href="guides.html">${escapeHtml(market.nav[1])}</a><a href="regions.html">${escapeHtml(market.nav[2])}</a></div>${storeLink(market, "ai", "App Store", "nav-cta")}</nav></header><main class="page-main" id="main-content"><section class="page-hero local-market-hero"><div class="page-hero-copy"><nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/">CrazyAIAgent</a></li><li><a href="regions.html">${escapeHtml(market.nav[2])}</a></li><li aria-current="page">${escapeHtml(market.breadcrumb)}</li></ol></nav><p class="eyebrow">${escapeHtml(market.eyebrow)}</p><h1>${escapeHtml(market.h1)}</h1><p>${escapeHtml(market.lead)}</p><div class="hero-actions">${storeLink(market, "ai", market.primary, "button button-primary")}<a class="button button-secondary" href="#apps">${escapeHtml(market.secondary)}</a></div><p class="article-meta">${escapeHtml(market.checked)}: <time datetime="${updatedDate}">${updatedDate}</time></p></div><div class="local-market-visual"><picture><source srcset="assets/ai-cleaning-screen.webp" type="image/webp"><img src="assets/ai-cleaning-screen.png" width="331" height="720" alt="AI Cleaning photo classification screen" fetchpriority="high" decoding="async"></picture></div></section><section class="section local-products" id="apps" data-local-search-market="${market.store}"><div class="section-inner"><div class="section-heading"><div><p class="section-kicker">${escapeHtml(market.appsKicker)}</p><h2>${escapeHtml(market.appsTitle)}</h2></div><p>${escapeHtml(market.appsIntro)}</p></div><div class="market-product-grid">${productCards(market)}</div></div></section><section class="section content-section alt-section" data-local-search-market="${market.store}-decisions"><div class="section-inner"><div class="section-heading"><div><p class="section-kicker">${escapeHtml(market.decisionKicker)}</p><h2>${escapeHtml(market.decisionTitle)}</h2></div><p>${escapeHtml(market.decisionIntro)}</p></div><div class="intent-table" role="table" aria-label="${escapeHtml(market.decisionTitle)}"><div class="intent-head" role="row"><span role="columnheader">${escapeHtml(market.table[0])}</span><span role="columnheader">${escapeHtml(market.table[1])}</span><span role="columnheader">${escapeHtml(market.table[2])}</span></div>${tableRows(market)}</div></div></section><section class="section content-section" data-local-search-market="${market.store}-language"><div class="section-inner content-grid"><div><p class="section-kicker">${escapeHtml(market.languageKicker)}</p><h2>${escapeHtml(market.languageTitle)}</h2><p>${escapeHtml(market.languageIntro)}</p></div><div class="content-list">${pairList(market.languageItems)}</div></div></section><section class="section content-section alt-section" data-local-search-market="${market.store}-safety"><div class="section-inner content-grid"><div><p class="section-kicker">${escapeHtml(market.safetyKicker)}</p><h2>${escapeHtml(market.safetyTitle)}</h2></div><div class="content-list">${pairList(market.safetyItems)}</div></div></section><section class="section faq" data-localized-faq="${market.store}"><div class="section-inner"><div class="section-heading"><div><p class="section-kicker">${escapeHtml(market.faqKicker)}</p><h2>${escapeHtml(market.faqTitle)}</h2></div></div><div class="faq-list">${faqSection(market)}</div></div></section><section class="section region-section alt-section"><div class="section-inner"><div class="section-heading"><div><p class="section-kicker">${escapeHtml(market.marketsKicker)}</p><h2>${escapeHtml(market.marketsTitle)}</h2></div><p>${escapeHtml(market.marketsIntro)}</p></div><div class="region-grid">${regionalLinks.map(([label, href]) => `<a class="region-card" href="${href}"><span>${escapeHtml(label)}</span><strong>${escapeHtml(label)}</strong></a>`).join("")}</div></div></section></main><footer class="footer"><div class="footer-inner"><p>© 2026 CrazyAIAgent.</p><div><a href="apps.html">${escapeHtml(market.footer[0])}</a> <a href="guides.html">${escapeHtml(market.footer[1])}</a> <a href="regions.html">${escapeHtml(market.footer[2])}</a> <a href="support.html">${escapeHtml(market.footer[3])}</a> <a href="privacy.html">${escapeHtml(market.footer[4])}</a></div></div></footer><script src="script.js?v=0570b9db0be0" defer></script></body></html>\n`;
+  return `<!doctype html><html lang="${market.lang}"><head><meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; img-src 'self' https: data:; script-src 'self' https://www.googletagmanager.com; script-src-attr 'none'; style-src 'self'; style-src-attr 'none'; connect-src 'self' https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com; form-action 'none'; upgrade-insecure-requests"><link rel="preconnect" href="https://www.googletagmanager.com"><link rel="preconnect" href="https://apps.apple.com"><script src="analytics.js?v=c81ef6be0041"></script><script async fetchpriority="low" src="https://www.googletagmanager.com/gtag/js?id=G-JY8T5JJGNH"></script><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${escapeHtml(market.title)}</title><meta name="description" content="${escapeHtml(market.description)}"><meta name="keywords" content="${escapeHtml(market.keywords)}"><meta name="robots" content="index,follow,max-image-preview:large"><meta name="theme-color" content="#111827"><link rel="canonical" href="${url}"><link rel="alternate" type="application/rss+xml" title="CrazyAIAgent RSS" href="${origin}/feed.xml"><link rel="alternate" type="application/atom+xml" title="CrazyAIAgent Atom" href="${origin}/atom.xml">${hreflangMarkup}<meta property="og:type" content="website"><meta property="og:locale" content="${market.ogLocale}"><meta property="og:url" content="${url}"><meta property="og:title" content="${escapeHtml(market.ogTitle)}"><meta property="og:site_name" content="CrazyAIAgent"><meta property="og:description" content="${escapeHtml(market.ogDescription)}"><meta property="og:image" content="${origin}/assets/og-default.png"><meta property="og:image:secure_url" content="${origin}/assets/og-default.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="${escapeHtml(market.imageAlt ?? "CrazyAIAgent iPhone and Mac applications")}"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="${escapeHtml(market.ogTitle)}"><meta name="twitter:description" content="${escapeHtml(market.ogDescription)}"><meta name="twitter:image" content="${origin}/assets/og-default.png"><link rel="icon" href="/favicon.ico" sizes="any"><link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="manifest" href="manifest.webmanifest"><link rel="stylesheet" href="styles.css?v=${styleVersion}">${jsonLd(webpage)}${jsonLd(breadcrumb)}${jsonLd(faq)}</head><body class="local-market-page"><a class="skip-link" href="#main-content">${escapeHtml(market.skip)}</a><header class="site-header" data-elevate><nav class="nav" aria-label="Primary"><a class="brand" href="/" aria-label="CrazyAIAgent"><span class="brand-mark" aria-hidden="true">CA</span><span>CrazyAIAgent</span></a><div class="nav-links"><a href="apps.html">${escapeHtml(market.nav[0])}</a><a href="guides.html">${escapeHtml(market.nav[1])}</a><a href="regions.html">${escapeHtml(market.nav[2])}</a></div>${storeLink(market, "ai", "App Store", "nav-cta")}</nav></header><main class="page-main" id="main-content"><section class="page-hero local-market-hero"><div class="page-hero-copy"><nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/">CrazyAIAgent</a></li><li><a href="regions.html">${escapeHtml(market.nav[2])}</a></li><li aria-current="page">${escapeHtml(market.breadcrumb)}</li></ol></nav><p class="eyebrow">${escapeHtml(market.eyebrow)}</p><h1>${escapeHtml(market.h1)}</h1><p>${escapeHtml(market.lead)}</p><div class="hero-actions">${storeLink(market, "ai", market.primary, "button button-primary")}<a class="button button-secondary" href="#apps">${escapeHtml(market.secondary)}</a></div><p class="article-meta">${escapeHtml(market.checked)}: <time datetime="${updatedDate}">${updatedDate}</time></p></div><div class="local-market-visual"><picture><source srcset="assets/ai-cleaning-screen.webp" type="image/webp"><img src="assets/ai-cleaning-screen.png" width="331" height="720" alt="${escapeHtml(market.imageAlt ?? "AI Cleaning photo classification screen")}" fetchpriority="high" decoding="async"></picture></div></section><section class="section local-products" id="apps" data-local-search-market="${market.store}"><div class="section-inner"><div class="section-heading"><div><p class="section-kicker">${escapeHtml(market.appsKicker)}</p><h2>${escapeHtml(market.appsTitle)}</h2></div><p>${escapeHtml(market.appsIntro)}</p></div><div class="market-product-grid">${productCards(market)}</div></div></section><section class="section content-section alt-section" data-local-search-market="${market.store}-decisions"><div class="section-inner"><div class="section-heading"><div><p class="section-kicker">${escapeHtml(market.decisionKicker)}</p><h2>${escapeHtml(market.decisionTitle)}</h2></div><p>${escapeHtml(market.decisionIntro)}</p></div><div class="intent-table" role="table" aria-label="${escapeHtml(market.decisionTitle)}"><div class="intent-head" role="row"><span role="columnheader">${escapeHtml(market.table[0])}</span><span role="columnheader">${escapeHtml(market.table[1])}</span><span role="columnheader">${escapeHtml(market.table[2])}</span></div>${tableRows(market)}</div></div></section><section class="section content-section" data-local-search-market="${market.store}-language"><div class="section-inner content-grid"><div><p class="section-kicker">${escapeHtml(market.languageKicker)}</p><h2>${escapeHtml(market.languageTitle)}</h2><p>${escapeHtml(market.languageIntro)}</p></div><div class="content-list">${pairList(market.languageItems)}</div></div></section><section class="section content-section alt-section" data-local-search-market="${market.store}-safety"><div class="section-inner content-grid"><div><p class="section-kicker">${escapeHtml(market.safetyKicker)}</p><h2>${escapeHtml(market.safetyTitle)}</h2></div><div class="content-list">${pairList(market.safetyItems)}</div></div></section><section class="section faq" data-localized-faq="${market.store}"><div class="section-inner"><div class="section-heading"><div><p class="section-kicker">${escapeHtml(market.faqKicker)}</p><h2>${escapeHtml(market.faqTitle)}</h2></div></div><div class="faq-list">${faqSection(market)}</div></div></section><section class="section region-section alt-section"><div class="section-inner"><div class="section-heading"><div><p class="section-kicker">${escapeHtml(market.marketsKicker)}</p><h2>${escapeHtml(market.marketsTitle)}</h2></div><p>${escapeHtml(market.marketsIntro)}</p></div><div class="region-grid">${regionalLinks.map(([label, href]) => `<a class="region-card" href="${href}"><span>${escapeHtml(label)}</span><strong>${escapeHtml(label)}</strong></a>`).join("")}</div></div></section></main><footer class="footer"><div class="footer-inner"><p>© 2026 CrazyAIAgent.</p><div><a href="apps.html">${escapeHtml(market.footer[0])}</a> <a href="guides.html">${escapeHtml(market.footer[1])}</a> <a href="regions.html">${escapeHtml(market.footer[2])}</a> <a href="support.html">${escapeHtml(market.footer[3])}</a> <a href="privacy.html">${escapeHtml(market.footer[4])}</a></div></div></footer><script src="script.js?v=0570b9db0be0" defer></script></body></html>\n`;
 }
 
 export async function applyMarketPages({ marketStores = null, syncDiscovery = true } = {}) {
@@ -435,7 +443,7 @@ export async function applyMarketPages({ marketStores = null, syncDiscovery = tr
     const filePath = path.join(siteDir, fileName);
     const current = await readFile(filePath, "utf8");
     const updated = current.replace(/(?:<link\b(?=[^>]*rel=["']alternate["'])(?=[^>]*hreflang=)[^>]*>)+/i, hreflangMarkup);
-    if (updated === current && !current.includes('hreflang="tr-TR"')) {
+    if (updated === current && !current.includes('hreflang="es-MX"')) {
       throw new Error(`Unable to synchronize hreflang links in ${fileName}`);
     }
     if (updated !== current) await writeFile(filePath, updated, "utf8");
