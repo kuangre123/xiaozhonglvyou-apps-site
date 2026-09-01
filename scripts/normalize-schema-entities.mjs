@@ -136,11 +136,14 @@ const hubLists = new Map([
         ["AI Cleaning vs Cleanup vs Cleaner Kit", `${origin}/iphone-photo-cleaner-comparison.html`],
         ["German iPhone Foto Cleaner Guide", `${origin}/iphone-foto-cleaner-de.html`],
         ["French Nettoyeur Photo iPhone Guide", `${origin}/nettoyeur-photo-iphone-fr.html`],
+        ["Japanese iPhone photo cleaner guide", `${origin}/ja-jp-photo-cleaner.html`],
+        ["Turkish iPhone photo cleaner guide", `${origin}/tr-tr-photo-cleaner.html`],
         ["How to Translate Menus and Conversations on iPhone", `${origin}/voice-camera-translator-guide.html`],
         ["Best Translator Apps for Travel", `${origin}/best-travel-translator-apps-iphone.html`],
         ["Hide Notifications When Screen Sharing on Mac", `${origin}/screen-sharing-privacy-guide.html`],
         ["How to Make a GIF on iPhone From Video", `${origin}/make-gif-on-iphone-guide.html`],
-        ["How to Track a Bike Ride on iPhone", `${origin}/automatic-bike-ride-tracker-iphone.html`]
+        ["How to Track a Bike Ride on iPhone", `${origin}/automatic-bike-ride-tracker-iphone.html`],
+        ["Best GIF Maker Apps for iPhone", `${origin}/best-gif-maker-apps-iphone.html`]
       ]
     }
   ],

@@ -17,7 +17,7 @@ const japanese = {
   primary: "日本のApp StoreでAI Cleaningを開く", secondary: "6本のアプリを見る", checked: "App Store情報の確認日",
   appsKicker: "用途別の6本", appsTitle: "やりたいことから選ぶ。",
   appsIntro: "このページは6本すべての用途を日本語で説明します。詳しい機能ページは一部英語ですが、ダウンロード先はすべて日本のApp Storeです。価格、アプリ内課金、対応OSはインストール直前にも確認してください。",
-  detailsLabel: "詳しい機能", storeLabel: "日本のApp Store", newTab: "新しいタブで開く", imageAlt: "AI Cleaningの写真分類画面",
+  detailsLabel: "詳しい機能", detailLabels: { ai: "写真整理ガイド（日本語）" }, productPageOverrides: { ai: "ja-jp-photo-cleaner.html" }, storeLabel: "日本のApp Store", newTab: "新しいタブで開く", imageAlt: "AI Cleaningの写真分類画面",
   products: {
     ai: ["AI Cleaning - 写真整理", "iOS 16以降。写真を種類別に分類し、重複・類似写真、スクリーンショット、ぼやけた写真、大きなファイルを削除前に確認できます。写真へのアクセスを許可し、重要な書類や家族写真を見直してから、自分で選んだ項目だけを削除します。保護されたiOSシステム領域やRAMを清掃するアプリではありません。"],
     translator: ["Translation Specialist - 旅行翻訳", "iOS 17.4以降。音声会話、訳文の読み上げ、カメラの文字認識、連続通訳を使い分けます。旅行前に言語の組み合わせを選んで短い会話を試し、メニューや看板にはカメラを使います。氏名、日付、金額、住所は原文とも照合してください。"],
@@ -26,7 +26,7 @@ const japanese = {
     gif: ["GIFmaker - GIF作成", "iOS 17以降。写真、動画、Live PhotosからGIFを作成できます。使う部分を取り込み、フレーム順、表示時間、文字、往復再生を調整します。プレビューでループと個人情報を確認してから、メッセージや短い操作説明に使うファイルを書き出します。"],
     ride: ["HappyRide - 自転車の自動記録", "iOS 17以降。条件を満たす自転車、徒歩、ランニングの移動を自動検出して記録します。位置情報とモーションの権限を安全な短い移動で試し、停車後にルートや履歴を確認します。Apple Watchの心拍数連携は任意で、画面表示の言語には制限があります。"]
   },
-  decisionKicker: "詳しく調べる", decisionTitle: "目的に合うガイドへ。", decisionIntro: "日本語の基本手順は上のアプリ一覧で確認できます。以下の詳細ガイドには英語のページもあります。",
+  decisionKicker: "詳しく調べる", decisionTitle: "目的に合うガイドへ。", decisionIntro: "写真整理の詳しい手順は日本語で確認できます。その他の詳細ガイドには英語のページもあります。",
   table: ["目的", "ガイド", "確認点"],
   decisions: [["写真をAIで分類する", "ai-photo-classification.html", "AI写真分類", "端末上での処理、分類項目、削除前の手動確認。"], ["重複写真を整理する", "duplicate-photo-cleaner-guide.html", "重複・類似写真の確認", "同じ写真と似た写真を区別し、残す一枚を選ぶ。"], ["会話やメニューを訳す", "voice-camera-translator-guide.html", "音声・カメラ翻訳", "旅行前に使う言語ペアを試す。"], ["Macの画面共有を保護する", "screen-sharing-privacy-guide.html", "画面共有の確認手順", "通知、共有ウィンドウ、テスト通話。"], ["動画からGIFを作る", "make-gif-on-iphone-guide.html", "iPhoneでGIFを作成", "切り取り、再生時間、書き出し後のサイズ。"], ["自転車を自動記録する", "automatic-bike-ride-tracker-iphone.html", "自動記録の始め方", "位置情報、モーション、記録条件、画面の言語。"]],
   languageKicker: "対応言語", languageTitle: "日本語の案内とアプリの表示言語は別です。",
@@ -83,7 +83,7 @@ const turkish = {
   primary: "Türkiye App Store'da AI Cleaning'i aç", secondary: "Altı uygulamayı gör", checked: "App Store bilgileri kontrol edildi",
   appsKicker: "Altı araç", appsTitle: "Önce yapmak istediğiniz işi seçin.",
   appsIntro: "Bu sayfa altı uygulamanın kullanımını Türkçe açıklar; ayrıntılı ürün sayfaları İngilizcedir. İndirme bağlantıları Türkiye App Store'a gider. Yüklemeden önce sistem gereksinimlerini, güncel fiyatı ve uygulama içi satın alımları inceleyin.",
-  detailsLabel: "Ayrıntılar", storeLabel: "Türkiye App Store", newTab: "yeni sekmede açılır", imageAlt: "AI Cleaning fotoğraf sınıflandırma ekranı",
+  detailsLabel: "Ayrıntılar", detailLabels: { ai: "Türkçe fotoğraf temizleme rehberi" }, productPageOverrides: { ai: "tr-tr-photo-cleaner.html" }, storeLabel: "Türkiye App Store", newTab: "yeni sekmede açılır", imageAlt: "AI Cleaning fotoğraf sınıflandırma ekranı",
   products: {
     ai: ["AI Cleaning - Fotoğraf düzenleme", "iOS 16 veya üzeri. Fotoğrafları içeriklerine göre gruplar; yinelenen ve benzer kareleri, ekran görüntülerini, bulanık fotoğrafları ve büyük dosyaları incelemenizi sağlar. Erişim izni verin, belgeleri ve aile fotoğraflarını ayrıca kontrol edin ve yalnız seçtiğiniz dosyaları silin. iOS sistem dosyalarını veya RAM'i temizleme vaadi vermez."],
     translator: ["Translation Specialist", "iOS 17.4 veya üzeri. Sesli konuşma, çeviriyi seslendirme, kamera ile metin tanıma ve sürekli çeviri modları sunar. Dil çiftini seyahatten önce deneyin; menü ve tabelalar için kamerayı kullanın. Ad, tarih, tutar ve adresleri özgün metinle karşılaştırın."],
@@ -92,7 +92,7 @@ const turkish = {
     gif: ["GIFmaker - GIF Studio", "iOS 17 veya üzeri. Fotoğraf, video ve Live Photos'tan GIF oluşturur. Kullanılacak bölümü içe aktarın; kare sırasını, süreyi ve yazıyı ayarlayın. Döngüyü ve özel bilgileri önizlemede kontrol ettikten sonra GIF dosyasını dışa aktarın."],
     ride: ["HappyRide - Otomatik sürüş kaydı", "iOS 17 veya üzeri. Uygun bisiklet, yürüyüş ve koşu etkinliklerini otomatik algılar. Konum ve hareket izinlerini kısa ve güvenli bir yolculukta deneyin, sürüş sırasında ekranla uğraşmayın ve özel başlangıç ya da varış noktalarını paylaşmayın."]
   },
-  decisionKicker: "Ayrıntılı rehberler", decisionTitle: "İlgili işlemi daha ayrıntılı inceleyin.", decisionIntro: "Temel kullanım adımlarını yukarıdaki kartlarda Türkçe okuyabilirsiniz. Aşağıdaki ayrıntılı rehberler İngilizcedir.", table: ["İşlem", "Rehber", "Kontrol edilecek nokta"],
+  decisionKicker: "Ayrıntılı rehberler", decisionTitle: "İlgili işlemi daha ayrıntılı inceleyin.", decisionIntro: "Fotoğraf temizleme adımlarını Türkçe olarak inceleyebilirsiniz. Diğer ayrıntılı rehberler İngilizcedir.", table: ["İşlem", "Rehber", "Kontrol edilecek nokta"],
   decisions: [["Fotoğrafları içeriğe göre ayırma", "ai-photo-classification.html", "Yapay zekâ ile sınıflandırma", "Cihazda işleme ve sonucu elle kontrol etme."], ["Yinelenen fotoğrafları bulma", "duplicate-photo-cleaner-guide.html", "Yinelenen ve benzer kareler", "Birebir kopyayla benzer çekim arasındaki fark."], ["Konuşma veya menü çevirme", "voice-camera-translator-guide.html", "Ses ve kamera çevirisi", "Gereken dil çiftini yolculuk öncesinde deneme."], ["Mac ekranını paylaşma", "screen-sharing-privacy-guide.html", "Ekran paylaşımında gizlilik", "Bildirimler, seçilen pencere ve deneme araması."], ["Videodan GIF oluşturma", "make-gif-on-iphone-guide.html", "iPhone'da GIF yapma", "Kırpma, dosya boyutu ve kişisel bilgiler."], ["Bisiklet sürüşünü otomatik kaydetme", "automatic-bike-ride-tracker-iphone.html", "Otomatik etkinlik kaydı", "İzinler, algılama koşulları ve arayüz dili."]],
   languageKicker: "Uygulama dilleri", languageTitle: "Türkçe tanıtım, her uygulamada Türkçe arayüz demek değildir.",
   languageIntro: "Kontrol tarihinde Apple'ın dil listesinde AI Cleaning, Anti-spy screen ve Anti-spy screen Lite için Türkçe yer alıyor. Translation Specialist, GIFmaker ve HappyRide için Türkçe arayüz listelenmiyor.",
