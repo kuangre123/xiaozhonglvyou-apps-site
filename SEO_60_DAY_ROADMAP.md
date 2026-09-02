@@ -14,17 +14,19 @@ This roadmap turns the practical lessons from the supplied SEO book into an exec
 
 ## Market Priorities
 
+Research snapshot: 2026-09-02, using StatCounter August 2026 country-level search share as a directional input.
+
 ### Japan
 
-Primary path: Google and Bing. Local discovery path: Yahoo! JAPAN, which uses its own crawler family and Bing-related result infrastructure. Keep Japanese content on `ja-jp.html` and `ja-jp-photo-cleaner.html`, with Japanese App Store links and `ja` hreflang.
+Primary path: Google and Bing. Local discovery path: Yahoo! JAPAN, which remains a meaningful Japanese portal and search surface. StatCounter reported August 2026 all-platform share in Japan as Google 63.02%, Bing 28.29%, Yahoo! 6.96%, DuckDuckGo 0.74%, Yandex 0.4%, and Coc Coc 0.35%. Keep Japanese content on `ja-jp.html` and `ja-jp-photo-cleaner.html`, with Japanese App Store links and `ja` hreflang.
 
 ### Germany
 
-Primary path: Google and Bing. Secondary discovery: Ecosia, DuckDuckGo, and Yahoo Search. Ecosia results may come through its partner indexes, so technical optimization remains centered on Google and Bing while German content and the German App Store destination stay explicit.
+Primary path: Google and Bing. Secondary discovery: Yahoo Search, Yandex, DuckDuckGo, and Ecosia. StatCounter reported August 2026 all-platform share in Germany as Google 88.49%, Bing 5.84%, Yahoo 1.57%, Yandex 1.56%, DuckDuckGo 1.2%, and Ecosia 1.02%. Ecosia results may come through its partner indexes, so technical optimization remains centered on Google and Bing while German content and the German App Store destination stay explicit.
 
 ### Türkiye
 
-Primary path: Google. Secondary path: Yandex Türkiye. Keep Turkish content on `tr-tr.html` and `tr-tr-photo-cleaner.html`, use the Turkish App Store destination, and send changed URLs through IndexNow where supported.
+Primary path: Google. Secondary path: Yandex Türkiye. StatCounter reported August 2026 all-platform share in Türkiye as Google 82.32%, Yandex 15.98%, Bing 0.88%, Yahoo 0.44%, and DuckDuckGo 0.3%. Keep Turkish content on `tr-tr.html` and `tr-tr-photo-cleaner.html`, use the Turkish App Store destination, and send changed URLs through IndexNow where supported.
 
 ## Days 1-7: Measurement and Crawl Baseline
 

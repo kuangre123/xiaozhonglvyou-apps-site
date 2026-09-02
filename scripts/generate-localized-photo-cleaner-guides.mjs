@@ -29,7 +29,7 @@ const publisher = {
   image: `${origin}/assets/anti-spy-screen.png`,
   description: "Independent App Store utility portfolio for photo organization, travel translation, and screen privacy.",
   founder: { "@id": `${origin}/#developer` },
-  contactPoint: { "@type": "ContactPoint", email: "mailto:cb123428316@gmail.com", contactType: "customer support", availableLanguage: ["en", "ja", "tr"] },
+  contactPoint: { "@type": "ContactPoint", email: "mailto:cb123428316@gmail.com", contactType: "customer support", availableLanguage: ["en", "de", "ja", "tr"] },
   sameAs: [
     "https://apps.apple.com/us/developer/bo-chen/id1321915789?uo=4",
     "https://apps.apple.com/us/app/ai-cleaning-photo-cleaner/id6768019606?uo=4",
@@ -64,6 +64,7 @@ const pages = [
     navGuide: "ガイド",
     navDirectory: "一覧",
     eyebrow: "日本語のiPhone写真整理ガイド",
+    imageAlt: "AI CleaningのiPhone写真分類画面",
     h1: "写真をAIで分類してから、重複写真を安全に整理する。",
     lead: "iPhoneの写真整理は、空き容量の数字だけを見て一括削除するより、写真の内容を先に把握する方が安全です。AI Cleaningは、写真を分類し、重複・類似写真、スクリーンショット、ぼやけた写真、大きなメディアを確認するための補助ツールです。",
     primary: "日本のApp StoreでAI Cleaningを確認",
@@ -95,7 +96,79 @@ const pages = [
       ["AI CleaningはどのiPhoneで使えますか？", "現在の製品情報ではiOS 16.0以降が対象です。対応機種、バージョン、価格は日本のApp Storeでインストール前に確認してください。"]
     ],
     relatedTitle: "同じ写真整理ガイドを別の言語で読む。",
-    relatedLabel: "関連する言語ページ"
+    relatedLabel: "関連する言語ページ",
+    ui: {
+      answerKicker: "先に答え",
+      checksKicker: "確認ポイント",
+      faqKicker: "よくある質問",
+      storeKicker: "App Storeで確認",
+      storeLink: "日本のApp Storeを開く",
+      updated: "2026年9月1日更新",
+      author: "著者",
+      privacy: "プライバシー",
+      contact: "お問い合わせ"
+    }
+  },
+  {
+    file: "iphone-foto-cleaner-de.html",
+    lang: "de-DE",
+    locale: "de_DE",
+    storeCountry: "de",
+    title: "iPhone Foto Cleaner | KI sortieren und Duplikate prüfen",
+    description: "Deutscher iPhone-Foto-Cleaner-Leitfaden: Fotos mit KI sortieren und Duplikate, ähnliche Bilder, Screenshots und unscharfe Fotos vor dem Löschen prüfen.",
+    keywords: ["iPhone Foto Cleaner", "KI Fotos sortieren", "doppelte Fotos iPhone", "iPhone Fotos aufräumen", "ähnliche Bilder prüfen", "iPhone Speicher bereinigen"],
+    ogTitle: "iPhone Foto Cleaner mit KI Foto Sortierung",
+    ogDescription: "Deutscher Leitfaden: Erst Fotos sortieren, dann Duplikate, Screenshots, unscharfe Fotos und große Medien prüfen.",
+    breadcrumb: "iPhone Foto Cleaner",
+    countryName: "Deutschland",
+    marketFile: "de-de.html",
+    navGuide: "Ratgeber",
+    navDirectory: "Verzeichnis",
+    eyebrow: "Deutschsprachiger iPhone-Foto-Cleaner-Ratgeber",
+    imageAlt: "AI Cleaning iPhone-Foto-Klassifizierung",
+    h1: "Fotos zuerst mit KI sortieren, dann sicher bereinigen.",
+    lead: "Eine große iPhone-Fotomediathek enthält nicht nur doppelte Bilder. Darin liegen auch Dokumente, Belege, Ausweise, Screenshots, Gruppenfotos und Erinnerungen. AI Cleaning hilft beim Sortieren, bevor Sie mögliche Löschkandidaten prüfen.",
+    primary: "AI Cleaning im deutschen App Store prüfen",
+    secondary: "Zur Deutschland-Seite",
+    quickTitle: "Ein iPhone-Foto-Cleaner sollte Sortieren, Prüfen und Löschen trennen.",
+    quickLead: "AI Cleaning zeigt Kategorien und mögliche Bereinigungsgruppen als Entscheidungshilfe. Wichtige Bilder prüfen Sie zuerst; die endgültige Auswahl zum Löschen bleibt bei Ihnen.",
+    quickItems: [
+      ["1. Fotos nach Inhalt sortieren", "Ordnen Sie Dokumente, Belege, Ausweise, Essen, Pflanzen, Tiere und Gruppenfotos zunächst ein. So können Sie wichtige Bilder leichter aus der Bereinigung ausschließen."],
+      ["2. Duplikate und ähnliche Bilder vergleichen", "Eine exakte Kopie und eine ähnliche Aufnahme sind nicht dasselbe. Vergleichen Sie Schärfe, Gesichtsausdruck, Bearbeitungsstand und lesbaren Text, bevor Sie eine Version behalten."],
+      ["3. Screenshots und große Medien prüfen", "Temporäre Screenshots, unscharfe Fotos und große Videos sind eigene Prüfschritte. Nach dem Löschen sollten Sie auch das Album ‚Zuletzt gelöscht‘ kontrollieren."]
+    ],
+    checksTitle: "Der sichere Umfang einer Foto-Bereinigung.",
+    checksLead: "Synchronisierung, wichtige Dokumente und das Album ‚Zuletzt gelöscht‘ gehören zur Kontrolle. Ein Speicherwert allein sagt nicht, welches Bild entbehrlich ist.",
+    checks: [
+      ["Fotos werden nicht automatisch gelöscht", "Kategorien und Kandidaten dienen der Orientierung. Sie öffnen die Gruppe, prüfen den Inhalt und entscheiden selbst, welche Fotos entfernt werden."],
+      ["Die Fotomediathek ist der Anwendungsbereich", "Die App wird nicht als Werkzeug zum Löschen geschützter iOS-Systemdaten oder zum Reinigen des Arbeitsspeichers angeboten. Fotoorganisation und Systemwartung sind unterschiedliche Aufgaben."],
+      ["Wichtige Bilder einzeln öffnen", "Dokumente, Tickets, Belege, Familienfotos und bearbeitete Aufnahmen nicht nur anhand einer Gruppe auswählen. Öffnen Sie das Original und prüfen Sie die Synchronisierung."],
+      ["Aktuelle Bedingungen im Store prüfen", "Preise, In-App-Käufe, iOS-Anforderung, Sprachen und Datenschutzangaben können sich ändern. Maßgeblich ist der aktuelle deutsche App-Store-Eintrag vor der Installation."]
+    ],
+    storeTitle: "Aktuelle Preise und Anforderungen vor der Installation prüfen.",
+    storeLead: "Im deutschen App Store können Sie die aktuelle iOS-Anforderung, den Preis, mögliche In-App-Käufe, die Sprachliste und die Datenschutzangaben von AI Cleaning prüfen.",
+    storeText: "Ein iPhone-Dienstprogramm, das Fotos auf dem Gerät klassifiziert und mögliche Prüfgruppen für die Mediathek zusammenstellt.",
+    faqTitle: "Fragen vor dem Download.",
+    faq: [
+      ["Kann ein iPhone Foto Cleaner doppelte Fotos löschen?", "Er kann Duplikate und ähnliche Fotos als Prüfgruppen anzeigen. Sie sollten jede Gruppe vergleichen und die zu löschenden Fotos selbst auswählen."],
+      ["Lädt AI Cleaning meine Fotos auf einen Server hoch?", "Nach der aktuellen Produktbeschreibung erfolgt die Fotoanalyse auf dem iPhone; die Fotomediathek wird nicht hochgeladen. Prüfen Sie beim Installieren zusätzlich die aktuelle Datenschutzangabe im deutschen App Store."],
+      ["Was ist der Unterschied zwischen Duplikaten und ähnlichen Fotos?", "Duplikate sind Kopien desselben Bildes. Ähnliche Fotos können verschiedene Aufnahmen einer Serie sein. Schärfe, Ausdruck, Bearbeitung und wichtige Details müssen vor dem Löschen verglichen werden."],
+      ["Warum wird der iPhone-Speicher nach dem Löschen nicht sofort frei?", "iOS bewahrt gelöschte Fotos zunächst im Album ‚Zuletzt gelöscht‘ auf. Wenn Sie Speicher freigeben möchten, prüfen und verwalten Sie dieses Album erst nach der inhaltlichen Kontrolle."],
+      ["Welche iPhones unterstützt AI Cleaning?", "Nach den aktuellen Produktinformationen wird iOS 16.0 oder neuer benötigt. Kompatible Geräte, Version, Preis und Datenschutzangaben prüfen Sie vor dem Download im deutschen App Store."]
+    ],
+    relatedTitle: "Diesen Foto-Cleaner-Ratgeber in einer anderen Sprache lesen.",
+    relatedLabel: "Verwandte Sprachseiten",
+    ui: {
+      answerKicker: "Direkte Antwort",
+      checksKicker: "Prüfpunkte",
+      faqKicker: "Häufige Fragen",
+      storeKicker: "Im App Store prüfen",
+      storeLink: "Deutschen App Store öffnen",
+      updated: "Am 1. September 2026 aktualisiert",
+      author: "Autor",
+      privacy: "Datenschutz",
+      contact: "Kontakt"
+    }
   },
   {
     file: "tr-tr-photo-cleaner.html",
@@ -113,6 +186,7 @@ const pages = [
     navGuide: "Rehberler",
     navDirectory: "Dizin",
     eyebrow: "Türkçe iPhone fotoğraf temizleme rehberi",
+    imageAlt: "AI Cleaning iPhone fotoğraf sınıflandırma ekranı",
     h1: "Fotoğrafları yapay zeka ile sınıflandırın, sonra yinelenenleri güvenle inceleyin.",
     lead: "iPhone depolama alanı azaldığında her şeyi tek seferde silmek yerine fotoğraf arşivinin içeriğini önce görmek daha güvenlidir. AI Cleaning; fotoğrafları sınıflandırmayı, yinelenen ve benzer kareleri, ekran görüntülerini, bulanık fotoğrafları ve büyük medyayı silmeden önce incelemeyi kolaylaştırır.",
     primary: "Türkiye App Store'da AI Cleaning'i incele",
@@ -144,7 +218,18 @@ const pages = [
       ["AI Cleaning hangi iPhone sürümlerinde çalışır?", "Mevcut ürün bilgisine göre iOS 16.0 veya daha yenisi gerekir. Uyumlu cihazları, sürümü ve fiyatı yüklemeden önce Türkiye App Store'da doğrulayın."]
     ],
     relatedTitle: "Aynı fotoğraf temizleme konusunu farklı dillerde okuyun.",
-    relatedLabel: "İlgili dil sayfaları"
+    relatedLabel: "İlgili dil sayfaları",
+    ui: {
+      answerKicker: "Kısa cevap",
+      checksKicker: "Kontrol noktaları",
+      faqKicker: "Sık sorulan sorular",
+      storeKicker: "App Store'da doğrulama",
+      storeLink: "Türkiye App Store'u aç",
+      updated: "1 Eylül 2026 tarihinde güncellendi",
+      author: "Yazar",
+      privacy: "Gizlilik",
+      contact: "İletişim"
+    }
   }
 ];
 
@@ -195,6 +280,15 @@ function listMarkup(items) {
   return items.map(([title, text]) => `<div><strong>${escapeHtml(title)}</strong><p>${escapeHtml(text)}</p></div>`).join("");
 }
 
+const relatedGuides = [
+  ["English photo cleaner guide", "iphone-photo-cleaner.html"],
+  ["中文照片清理页", "iphone-photo-cleaner-cn.html"],
+  ["Deutscher Foto-Cleaner", "iphone-foto-cleaner-de.html"],
+  ["Guide photo en français", "nettoyeur-photo-iphone-fr.html"],
+  ["日本語の写真整理ガイド", "ja-jp-photo-cleaner.html"],
+  ["Türkçe fotoğraf temizleme rehberi", "tr-tr-photo-cleaner.html"]
+];
+
 function render(page) {
   const url = `${origin}/${page.file}`;
   const article = {
@@ -234,12 +328,9 @@ function render(page) {
       { "@type": "ListItem", position: 3, name: page.breadcrumb, item: url }
     ]
   };
-  const relatedFiles = page.storeCountry === "jp"
-    ? [["English photo cleaner guide", "iphone-photo-cleaner.html"], ["中文照片清理页", "iphone-photo-cleaner-cn.html"], ["Deutscher Foto-Cleaner", "iphone-foto-cleaner-de.html"], ["Guide photo en français", "nettoyeur-photo-iphone-fr.html"], ["Türkçe fotoğraf temizleme rehberi", "tr-tr-photo-cleaner.html"]]
-    : [["English photo cleaner guide", "iphone-photo-cleaner.html"], ["中文照片清理页", "iphone-photo-cleaner-cn.html"], ["Deutscher Foto-Cleaner", "iphone-foto-cleaner-de.html"], ["Guide photo en français", "nettoyeur-photo-iphone-fr.html"], ["日本語の写真整理ガイド", "ja-jp-photo-cleaner.html"]];
+  const relatedFiles = relatedGuides.filter(([, file]) => file !== page.file);
   const relatedMarkup = relatedFiles.map(([label, file]) => `<a href="${file}">${escapeHtml(label)}</a>`).join(" ");
-  const isJapanese = page.storeCountry === "jp";
-  const storeSection = `<section class="section content-section"><div class="section-inner content-grid"><div><p class="section-kicker">${isJapanese ? "App Storeで確認" : "App Store'da doğrulama"}</p><h2>${escapeHtml(page.storeTitle)}</h2><p>${escapeHtml(page.storeLead)}</p></div><div class="content-list"><div><strong>AI Cleaning - Photo Cleaner</strong><p>${escapeHtml(page.storeText)}</p></div><div>${storeLink(page, isJapanese ? "日本のApp Storeを開く" : "Türkiye App Store'u aç", "store-link")}</div></div></div></section>`;
+  const storeSection = `<section class="section content-section"><div class="section-inner content-grid"><div><p class="section-kicker">${escapeHtml(page.ui.storeKicker)}</p><h2>${escapeHtml(page.storeTitle)}</h2><p>${escapeHtml(page.storeLead)}</p></div><div class="content-list"><div><strong>AI Cleaning - Photo Cleaner</strong><p>${escapeHtml(page.storeText)}</p></div><div>${storeLink(page, page.ui.storeLink, "store-link")}</div></div></div></section>`;
   const head = [
     "<!doctype html>", `<html lang="${page.lang}"><head>`,
     `<meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; img-src 'self' https: data:; script-src 'self' https://www.googletagmanager.com; script-src-attr 'none'; style-src 'self'; style-src-attr 'none'; connect-src 'self' https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com; form-action 'none'; upgrade-insecure-requests">`,
@@ -259,12 +350,12 @@ function render(page) {
     jsonLd(article), jsonLd(faq), jsonLd(breadcrumb), "</head>"
   ].join("");
   const header = `<body class="localized-photo-cleaner-page"><header class="site-header" data-elevate><nav class="nav" aria-label="Primary"><a class="brand" href="${page.marketFile}" aria-label="CrazyAIAgent"><span class="brand-mark" aria-hidden="true">CA</span><span>CrazyAIAgent</span></a><div class="nav-links"><a href="${page.marketFile}">${page.countryName}</a><a href="guides.html">${page.navGuide}</a><a href="directory.html">${page.navDirectory}</a></div>${storeLink(page, "App Store", "nav-cta")}</nav></header>`;
-  const hero = `<main class="page-main"><section class="page-hero"><div class="page-hero-copy"><nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="${page.marketFile}">${page.countryName}</a></li><li aria-current="page">${escapeHtml(page.breadcrumb)}</li></ol></nav><p class="eyebrow">${escapeHtml(page.eyebrow)}</p><h1>${escapeHtml(page.h1)}</h1><p>${escapeHtml(page.lead)}</p><p class="article-meta"><time datetime="${updatedDate}">${isJapanese ? "2026年9月1日更新" : "1 Eylül 2026 tarihinde güncellendi"}</time> · ${isJapanese ? "著者" : "Yazar"} <a href="about.html" rel="author">Bo Chen</a></p><div class="hero-actions">${storeLink(page, page.primary, "button button-primary")}<a class="button button-secondary" href="${page.marketFile}">${escapeHtml(page.secondary)}</a></div></div><div class="page-hero-media"><picture><source srcset="assets/ai-cleaning-screen.webp" type="image/webp"><img src="assets/ai-cleaning-screen.png" width="331" height="720" decoding="async" fetchpriority="high" alt="${isJapanese ? "AI CleaningのiPhone写真分類画面" : "AI Cleaning iPhone fotoğraf sınıflandırma ekranı"}"></picture></div></section>`;
-  const quickSection = `<section class="section content-section"><div class="section-inner content-grid"><div><p class="section-kicker">${isJapanese ? "先に答え" : "Kısa cevap"}</p><h2>${escapeHtml(page.quickTitle)}</h2><p>${escapeHtml(page.quickLead)}</p></div><div class="content-list">${listMarkup(page.quickItems)}</div></div></section>`;
-  const checksSection = `<section class="section content-section alt-section"><div class="section-inner content-grid"><div><p class="section-kicker">${isJapanese ? "確認ポイント" : "Kontrol noktaları"}</p><h2>${escapeHtml(page.checksTitle)}</h2><p>${escapeHtml(page.checksLead)}</p></div><div class="content-list">${listMarkup(page.checks)}</div></div></section>`;
-  const faqSection = `<section class="section faq"><div class="section-inner"><div class="section-heading"><p class="section-kicker">${isJapanese ? "よくある質問" : "Sık sorulan sorular"}</p><h2>${escapeHtml(page.faqTitle)}</h2></div><div class="faq-list">${page.faq.map(([question, answer], index) => `<details${index === 0 ? " open" : ""}><summary>${escapeHtml(question)}</summary><p>${escapeHtml(answer)}</p></details>`).join("")}</div></div></section>`;
+  const hero = `<main class="page-main"><section class="page-hero"><div class="page-hero-copy"><nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="${page.marketFile}">${page.countryName}</a></li><li aria-current="page">${escapeHtml(page.breadcrumb)}</li></ol></nav><p class="eyebrow">${escapeHtml(page.eyebrow)}</p><h1>${escapeHtml(page.h1)}</h1><p>${escapeHtml(page.lead)}</p><p class="article-meta"><time datetime="${updatedDate}">${escapeHtml(page.ui.updated)}</time> · ${escapeHtml(page.ui.author)} <a href="about.html" rel="author">Bo Chen</a></p><div class="hero-actions">${storeLink(page, page.primary, "button button-primary")}<a class="button button-secondary" href="${page.marketFile}">${escapeHtml(page.secondary)}</a></div></div><div class="page-hero-media"><picture><source srcset="assets/ai-cleaning-screen.webp" type="image/webp"><img src="assets/ai-cleaning-screen.png" width="331" height="720" decoding="async" fetchpriority="high" alt="${escapeHtml(page.imageAlt ?? "AI Cleaning photo classification screen")}"></picture></div></section>`;
+  const quickSection = `<section class="section content-section"><div class="section-inner content-grid"><div><p class="section-kicker">${escapeHtml(page.ui.answerKicker)}</p><h2>${escapeHtml(page.quickTitle)}</h2><p>${escapeHtml(page.quickLead)}</p></div><div class="content-list">${listMarkup(page.quickItems)}</div></div></section>`;
+  const checksSection = `<section class="section content-section alt-section"><div class="section-inner content-grid"><div><p class="section-kicker">${escapeHtml(page.ui.checksKicker)}</p><h2>${escapeHtml(page.checksTitle)}</h2><p>${escapeHtml(page.checksLead)}</p></div><div class="content-list">${listMarkup(page.checks)}</div></div></section>`;
+  const faqSection = `<section class="section faq"><div class="section-inner"><div class="section-heading"><p class="section-kicker">${escapeHtml(page.ui.faqKicker)}</p><h2>${escapeHtml(page.faqTitle)}</h2></div><div class="faq-list">${page.faq.map(([question, answer], index) => `<details${index === 0 ? " open" : ""}><summary>${escapeHtml(question)}</summary><p>${escapeHtml(answer)}</p></details>`).join("")}</div></div></section>`;
   const relatedSection = `<section class="section content-section alt-section"><div class="section-inner"><div class="section-heading"><div><p class="section-kicker">${escapeHtml(page.relatedLabel)}</p><h2>${escapeHtml(page.relatedTitle)}</h2></div></div><p>${relatedMarkup}</p></div></section></main>`;
-  const footer = `<footer class="footer"><div class="footer-inner"><p>© 2026 CrazyAIAgent.</p><div><a href="${page.marketFile}">${page.countryName}</a> <a href="guides.html">${page.navGuide}</a> <a href="directory.html">${page.navDirectory}</a> <a href="search.html">Search</a> <a href="privacy.html">${isJapanese ? "プライバシー" : "Gizlilik"}</a> <a href="mailto:cb123428316@gmail.com">${isJapanese ? "お問い合わせ" : "İletişim"}</a></div></div></footer><script src="script.js?v=fda667de6672" defer></script></body></html>\n`;
+  const footer = `<footer class="footer"><div class="footer-inner"><p>© 2026 CrazyAIAgent.</p><div><a href="${page.marketFile}">${page.countryName}</a> <a href="guides.html">${page.navGuide}</a> <a href="directory.html">${page.navDirectory}</a> <a href="search.html">Search</a> <a href="privacy.html">${page.ui.privacy}</a> <a href="mailto:cb123428316@gmail.com">${page.ui.contact}</a></div></div></footer><script src="script.js?v=fda667de6672" defer></script></body></html>\n`;
   return `${head}${header}${hero}${quickSection}${checksSection}${storeSection}${faqSection}${relatedSection}${footer}`;
 }
 
