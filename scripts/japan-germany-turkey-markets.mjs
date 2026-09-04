@@ -17,7 +17,7 @@ const japanese = {
   primary: "日本のApp StoreでAI Cleaningを開く", secondary: "6本のアプリを見る", checked: "App Store情報の確認日",
   appsKicker: "用途別の6本", appsTitle: "やりたいことから選ぶ。",
   appsIntro: "このページは6本すべての用途を日本語で説明します。詳しい機能ページは一部英語ですが、ダウンロード先はすべて日本のApp Storeです。価格、アプリ内課金、対応OSはインストール直前にも確認してください。",
-  detailsLabel: "詳しい機能", detailLabels: { ai: "写真整理ガイド（日本語）" }, productPageOverrides: { ai: "ja-jp-photo-cleaner.html" }, storeLabel: "日本のApp Store", newTab: "新しいタブで開く", imageAlt: "AI Cleaningの写真分類画面",
+  detailsLabel: "詳しい機能", detailLabels: { ai: "写真整理ガイド（日本語）" }, productPageOverrides: { ai: "ja-jp-photo-cleaner.html" }, extraProductLinks: { ai: [["ja-jp-best-iphone-photo-cleaner.html", "おすすめ写真整理アプリ"]] }, storeLabel: "日本のApp Store", newTab: "新しいタブで開く", imageAlt: "AI Cleaningの写真分類画面",
   products: {
     ai: ["AI Cleaning - 写真整理", "iOS 16以降。写真を種類別に分類し、重複・類似写真、スクリーンショット、ぼやけた写真、大きなファイルを削除前に確認できます。写真へのアクセスを許可し、重要な書類や家族写真を見直してから、自分で選んだ項目だけを削除します。保護されたiOSシステム領域やRAMを清掃するアプリではありません。"],
     translator: ["Translation Specialist - 旅行翻訳", "iOS 17.4以降。音声会話、訳文の読み上げ、カメラの文字認識、連続通訳を使い分けます。旅行前に言語の組み合わせを選んで短い会話を試し、メニューや看板にはカメラを使います。氏名、日付、金額、住所は原文とも照合してください。"],
@@ -50,7 +50,7 @@ const german = {
   primary: "AI Cleaning im deutschen App Store öffnen", secondary: "Sechs Apps ansehen", checked: "App-Store-Angaben geprüft",
   appsKicker: "Sechs Werkzeuge", appsTitle: "Die passende App für Ihre Aufgabe.",
   appsIntro: "Diese Seite erklärt alle sechs Aufgaben auf Deutsch. Der Fotoratgeber ist ebenfalls deutsch; weitere Detailseiten sind auf Englisch. Alle Downloadlinks führen zum deutschen App Store. Prüfen Sie dort Preise, In-App-Käufe und Systemanforderungen.",
-  detailsLabel: "Details", detailLabels: { ai: "Fotoratgeber (Deutsch)" }, productPageOverrides: { ai: "iphone-foto-cleaner-de.html" },
+  detailsLabel: "Details", detailLabels: { ai: "Fotoratgeber (Deutsch)" }, productPageOverrides: { ai: "iphone-foto-cleaner-de.html" }, extraProductLinks: { ai: [["de-de-beste-iphone-foto-cleaner.html", "Beste Foto-Cleaner wählen"]] },
   storeLabel: "Deutscher App Store", newTab: "öffnet einen neuen Tab", imageAlt: "Fotokategorien in AI Cleaning",
   products: {
     ai: ["AI Cleaning - Fotos aufräumen", "Für iOS 16 oder neuer. Sortiert Fotos nach Inhalt und zeigt Duplikate, ähnliche Bilder, Screenshots, unscharfe Aufnahmen und große Medien zur Kontrolle. Fotozugriff freigeben, wichtige Belege, Dokumente und Familienfotos prüfen und nur bewusst ausgewählte Dateien löschen. Kein Zugriff auf geschützte iOS-Systemdaten und kein RAM-Reiniger."],
@@ -83,7 +83,7 @@ const turkish = {
   primary: "Türkiye App Store'da AI Cleaning'i aç", secondary: "Altı uygulamayı gör", checked: "App Store bilgileri kontrol edildi",
   appsKicker: "Altı araç", appsTitle: "Önce yapmak istediğiniz işi seçin.",
   appsIntro: "Bu sayfa altı uygulamanın kullanımını Türkçe açıklar; ayrıntılı ürün sayfaları İngilizcedir. İndirme bağlantıları Türkiye App Store'a gider. Yüklemeden önce sistem gereksinimlerini, güncel fiyatı ve uygulama içi satın alımları inceleyin.",
-  detailsLabel: "Ayrıntılar", detailLabels: { ai: "Türkçe fotoğraf temizleme rehberi" }, productPageOverrides: { ai: "tr-tr-photo-cleaner.html" }, storeLabel: "Türkiye App Store", newTab: "yeni sekmede açılır", imageAlt: "AI Cleaning fotoğraf sınıflandırma ekranı",
+  detailsLabel: "Ayrıntılar", detailLabels: { ai: "Türkçe fotoğraf temizleme rehberi" }, productPageOverrides: { ai: "tr-tr-photo-cleaner.html" }, extraProductLinks: { ai: [["tr-tr-en-iyi-iphone-fotograf-temizleme.html", "En iyi uygulamayı seç"]] }, storeLabel: "Türkiye App Store", newTab: "yeni sekmede açılır", imageAlt: "AI Cleaning fotoğraf sınıflandırma ekranı",
   products: {
     ai: ["AI Cleaning - Fotoğraf düzenleme", "iOS 16 veya üzeri. Fotoğrafları içeriklerine göre gruplar; yinelenen ve benzer kareleri, ekran görüntülerini, bulanık fotoğrafları ve büyük dosyaları incelemenizi sağlar. Erişim izni verin, belgeleri ve aile fotoğraflarını ayrıca kontrol edin ve yalnız seçtiğiniz dosyaları silin. iOS sistem dosyalarını veya RAM'i temizleme vaadi vermez."],
     translator: ["Translation Specialist", "iOS 17.4 veya üzeri. Sesli konuşma, çeviriyi seslendirme, kamera ile metin tanıma ve sürekli çeviri modları sunar. Dil çiftini seyahatten önce deneyin; menü ve tabelalar için kamerayı kullanın. Ad, tarih, tutar ve adresleri özgün metinle karşılaştırın."],

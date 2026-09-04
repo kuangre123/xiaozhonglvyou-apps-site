@@ -335,7 +335,10 @@ function productCards(market) {
     const page = market.productPageOverrides?.[key] ?? defaultPage;
     const [name, description] = market.products[key];
     const detailsLabel = market.detailLabels?.[key] ?? market.detailsLabel;
-    return `<article class="market-product"><div><p class="market-product-label">${key === "privacy" || key === "privacyLite" ? "Mac" : "iPhone"}</p><h3>${escapeHtml(name)}</h3><p>${escapeHtml(description)}</p></div><div class="market-product-actions"><a href="${page}">${escapeHtml(detailsLabel)}</a>${storeLink(market, key, market.storeLabel, "store-link")}</div></article>`;
+    const extraLinks = (market.extraProductLinks?.[key] ?? [])
+      .map(([href, label]) => `<a href="${href}">${escapeHtml(label)}</a>`)
+      .join("");
+    return `<article class="market-product"><div><p class="market-product-label">${key === "privacy" || key === "privacyLite" ? "Mac" : "iPhone"}</p><h3>${escapeHtml(name)}</h3><p>${escapeHtml(description)}</p></div><div class="market-product-actions"><a href="${page}">${escapeHtml(detailsLabel)}</a>${extraLinks}${storeLink(market, key, market.storeLabel, "store-link")}</div></article>`;
   }).join("");
 }
 

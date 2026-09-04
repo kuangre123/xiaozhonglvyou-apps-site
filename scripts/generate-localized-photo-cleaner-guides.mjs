@@ -61,6 +61,8 @@ const pages = [
     breadcrumb: "iPhone写真整理ガイド",
     countryName: "日本",
     marketFile: "ja-jp.html",
+    decisionFile: "ja-jp-best-iphone-photo-cleaner.html",
+    decisionLabel: "おすすめアプリの選び方",
     navGuide: "ガイド",
     navDirectory: "一覧",
     eyebrow: "日本語のiPhone写真整理ガイド",
@@ -122,6 +124,8 @@ const pages = [
     breadcrumb: "iPhone Foto Cleaner",
     countryName: "Deutschland",
     marketFile: "de-de.html",
+    decisionFile: "de-de-beste-iphone-foto-cleaner.html",
+    decisionLabel: "Beste Foto-Cleaner wählen",
     navGuide: "Ratgeber",
     navDirectory: "Verzeichnis",
     eyebrow: "Deutschsprachiger iPhone-Foto-Cleaner-Ratgeber",
@@ -183,6 +187,8 @@ const pages = [
     breadcrumb: "iPhone Fotoğraf Temizleme Rehberi",
     countryName: "Türkiye",
     marketFile: "tr-tr.html",
+    decisionFile: "tr-tr-en-iyi-iphone-fotograf-temizleme.html",
+    decisionLabel: "En iyi uygulamayı seç",
     navGuide: "Rehberler",
     navDirectory: "Dizin",
     eyebrow: "Türkçe iPhone fotoğraf temizleme rehberi",
@@ -350,7 +356,8 @@ function render(page) {
     jsonLd(article), jsonLd(faq), jsonLd(breadcrumb), "</head>"
   ].join("");
   const header = `<body class="localized-photo-cleaner-page"><header class="site-header" data-elevate><nav class="nav" aria-label="Primary"><a class="brand" href="${page.marketFile}" aria-label="CrazyAIAgent"><span class="brand-mark" aria-hidden="true">CA</span><span>CrazyAIAgent</span></a><div class="nav-links"><a href="${page.marketFile}">${page.countryName}</a><a href="guides.html">${page.navGuide}</a><a href="directory.html">${page.navDirectory}</a></div>${storeLink(page, "App Store", "nav-cta")}</nav></header>`;
-  const hero = `<main class="page-main"><section class="page-hero"><div class="page-hero-copy"><nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="${page.marketFile}">${page.countryName}</a></li><li aria-current="page">${escapeHtml(page.breadcrumb)}</li></ol></nav><p class="eyebrow">${escapeHtml(page.eyebrow)}</p><h1>${escapeHtml(page.h1)}</h1><p>${escapeHtml(page.lead)}</p><p class="article-meta"><time datetime="${updatedDate}">${escapeHtml(page.ui.updated)}</time> · ${escapeHtml(page.ui.author)} <a href="about.html" rel="author">Bo Chen</a></p><div class="hero-actions">${storeLink(page, page.primary, "button button-primary")}<a class="button button-secondary" href="${page.marketFile}">${escapeHtml(page.secondary)}</a></div></div><div class="page-hero-media"><picture><source srcset="assets/ai-cleaning-screen.webp" type="image/webp"><img src="assets/ai-cleaning-screen.png" width="331" height="720" decoding="async" fetchpriority="high" alt="${escapeHtml(page.imageAlt ?? "AI Cleaning photo classification screen")}"></picture></div></section>`;
+  const decisionAction = page.decisionFile ? `<a class="button button-secondary" href="${page.decisionFile}">${escapeHtml(page.decisionLabel)}</a>` : "";
+  const hero = `<main class="page-main"><section class="page-hero"><div class="page-hero-copy"><nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="${page.marketFile}">${page.countryName}</a></li><li aria-current="page">${escapeHtml(page.breadcrumb)}</li></ol></nav><p class="eyebrow">${escapeHtml(page.eyebrow)}</p><h1>${escapeHtml(page.h1)}</h1><p>${escapeHtml(page.lead)}</p><p class="article-meta"><time datetime="${updatedDate}">${escapeHtml(page.ui.updated)}</time> · ${escapeHtml(page.ui.author)} <a href="about.html" rel="author">Bo Chen</a></p><div class="hero-actions">${storeLink(page, page.primary, "button button-primary")}<a class="button button-secondary" href="${page.marketFile}">${escapeHtml(page.secondary)}</a>${decisionAction}</div></div><div class="page-hero-media"><picture><source srcset="assets/ai-cleaning-screen.webp" type="image/webp"><img src="assets/ai-cleaning-screen.png" width="331" height="720" decoding="async" fetchpriority="high" alt="${escapeHtml(page.imageAlt ?? "AI Cleaning photo classification screen")}"></picture></div></section>`;
   const quickSection = `<section class="section content-section"><div class="section-inner content-grid"><div><p class="section-kicker">${escapeHtml(page.ui.answerKicker)}</p><h2>${escapeHtml(page.quickTitle)}</h2><p>${escapeHtml(page.quickLead)}</p></div><div class="content-list">${listMarkup(page.quickItems)}</div></div></section>`;
   const checksSection = `<section class="section content-section alt-section"><div class="section-inner content-grid"><div><p class="section-kicker">${escapeHtml(page.ui.checksKicker)}</p><h2>${escapeHtml(page.checksTitle)}</h2><p>${escapeHtml(page.checksLead)}</p></div><div class="content-list">${listMarkup(page.checks)}</div></div></section>`;
   const faqSection = `<section class="section faq"><div class="section-inner"><div class="section-heading"><p class="section-kicker">${escapeHtml(page.ui.faqKicker)}</p><h2>${escapeHtml(page.faqTitle)}</h2></div><div class="faq-list">${page.faq.map(([question, answer], index) => `<details${index === 0 ? " open" : ""}><summary>${escapeHtml(question)}</summary><p>${escapeHtml(answer)}</p></details>`).join("")}</div></div></section>`;

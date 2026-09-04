@@ -32,47 +32,47 @@ Search index: https://www.xiaozhonglvyou.com/search-index.json
 
 ## Completed On Site
 
-- 61 indexable HTML pages, 146 JSON-LD blocks, 201 top-level structured-data nodes, 0 parse errors
+- 66 indexable HTML pages, 161 JSON-LD blocks, 216 top-level structured-data nodes, 0 parse errors
 - `robots.txt` allows 40 named search crawler UAs including Googlebot, Bingbot, MicrosoftPreview, DuckDuckBot, Slurp, Yahoo! JAPAN Y!J/YJ crawlers, Yandex, Mail.RU_Bot, Yeti, Daum, SeznamBot, Qwantbot/Qwantify, Coc Coc, Baiduspider, Sogou, 360Spider, YisouSpider, Bytespider, PetalBot, and AI crawlers (GPTBot, ClaudeBot, PerplexityBot)
 - `robots.txt` advertises sitemap-index, sitemap.xml, sitemap-global.xml, sitemap-local.xml, sitemap-articles.xml, sitemap-cn.xml, sitemap.txt, sitemap-global.txt, sitemap-local.txt, sitemap-articles.txt, sitemap-cn.txt, feed.xml, atom.xml
-- `sitemap.xml` includes 61 URLs with per-page lastmod values through 2026-09-01, changefreq, priority, 677 hreflang alternate links, and 96 image entries
+- `sitemap.xml` includes 66 URLs with per-page lastmod values through 2026-09-04, changefreq, priority, 719 hreflang alternate links, and 110 image entries
 - `sitemap-index.xml` points to sitemap.xml, sitemap-global.xml, sitemap-local.xml, sitemap-articles.xml, sitemap-cn.xml, feed.xml, and atom.xml
-- `sitemap-global.xml` lists 42 global, English, and localized non-Chinese landing pages for Google, Bing, Yandex, DuckDuckGo, and other international search platform submissions
-- `sitemap-local.xml` lists 39 regional, localized, market-hub, and core product URLs for Yahoo! JAPAN, Naver, Daum, Yandex, Seznam, Qwant, Coc Coc, and other local search platform submissions
-- `sitemap-articles.xml` lists 27 Article/guide pages with per-page dateModified values from JSON-LD
+- `sitemap-global.xml` lists 45 global, English, and localized non-Chinese landing pages for Google, Bing, Yandex, DuckDuckGo, and other international search platform submissions
+- `sitemap-local.xml` lists 44 regional, localized, market-hub, and core product URLs for Yahoo! JAPAN, Naver, Daum, Yandex, Seznam, Qwant, Coc Coc, and other local search platform submissions
+- `sitemap-articles.xml` lists 30 priority Article/guide pages with per-page dateModified values from JSON-LD
 - `sitemap-cn.xml` lists 11 Simplified and Traditional Chinese landing pages for Baidu, 360, Sogou, Shenma, and other Chinese search platform submissions
-- `sitemap.txt` lists 61 URLs in plain text format
-- `sitemap-global.txt` lists the same 42 global and international URLs in plain text format
-- `sitemap-local.txt` lists the same 39 local-search-priority URLs in plain text format
-- `sitemap-articles.txt` lists the same 27 Article/guide URLs in plain text format
+- `sitemap.txt` lists 66 URLs in plain text format
+- `sitemap-global.txt` lists the same 45 global and international URLs in plain text format
+- `sitemap-local.txt` lists the same 44 local-search-priority URLs in plain text format
+- `sitemap-articles.txt` lists the same 30 priority Article/guide URLs in plain text format
 - `sitemap-cn.txt` lists the same 11 Chinese-language URLs in plain text format
-- `feed.xml` and `atom.xml` each expose 27 Article entries with updates through 2026-08-28
-- `search-index.json` with 61 pages, includes title/description/h1/lang/category/headings
+- `feed.xml` and `atom.xml` each expose 32 Article entries with updates through 2026-09-04
+- `search-index.json` with 66 pages, includes title/description/h1/lang/category/headings
 - `directory.html` human-readable page directory with grouped links
 - `search.html` client-side site search with ?q= parameter support
 - `llms.txt` with full page descriptions and discovery signals
 - `security.txt` at root for responsible disclosure (E-E-A-T trust signal)
 
 ### Technical SEO
-- All 61 indexable pages: unique title, unique meta description, single H1, canonical, viewport, robots=index,follow
-- All 61 indexable pages: og:locale, og:image:secure_url, og:image:width/height/alt, og:site_name
+- All 66 indexable pages: unique title, unique meta description, single H1, canonical, viewport, robots=index,follow
+- All 66 indexable pages: og:locale, og:image:secure_url, og:image:width/height/alt, og:site_name
 - 35 single-product iOS pages expose validated Smart App Banner metadata with the correct app ID and canonical app argument
-- All 61 indexable pages: manifest.webmanifest link, preconnect for googletagmanager and apps.apple.com
+- All 66 indexable pages: manifest.webmanifest link, preconnect for googletagmanager and apps.apple.com
 - `manifest.webmanifest`: 3 validated icons, 2 screenshots, 4 app shortcuts, explicit language, and standalone display metadata
-- All 215 visible App Store links: GA4 `app_store_click` event metadata, product/storefront identifiers, accessible labels, and safe new-tab attributes
-- 27 Article pages: og:article:published_time and og:article:modified_time (synced with JSON-LD)
-- 61 indexable pages: Atom alternate links point to the canonical 27-entry Atom feed, with titles, summaries, links, and dates checked against Article JSON-LD
-- 27 Article nodes: page-specific topic keyword sets are aligned with each article's title, description, language, and search intent; legacy generic brand keywords are rejected by the readiness audit
-- Localized, regional, and paired content pages: hreflang alternates (21 regional pages + 20 paired content pages)
-- No broken internal links; all 61 indexable pages have at least 3 unique inbound HTML source pages. The coverage audit excludes the noindex 404 page and counts each distinct linking HTML page once, so the market directory is reachable from the homepage, directory hub, and apps hub.
+- All 231 visible App Store links: GA4 `app_store_click` event metadata, product/storefront identifiers, accessible labels, and safe new-tab attributes
+- 32 Article pages: og:article:published_time and og:article:modified_time (synced with JSON-LD)
+- 66 indexable pages: Atom alternate links point to the canonical 32-entry Atom feed, with titles, summaries, links, and dates checked against Article JSON-LD
+- 32 Article nodes: page-specific topic keyword sets are aligned with each article's title, description, language, and search intent; legacy generic brand keywords are rejected by the readiness audit
+- Localized, regional, and paired content pages: hreflang alternates (21 regional pages + 26 paired content pages)
+- No broken internal links; all 66 indexable pages have at least 3 unique inbound HTML source pages. The coverage audit excludes the noindex 404 page and counts each distinct linking HTML page once, so the market directory is reachable from the homepage, directory hub, and apps hub.
 - No generic anchor text ("click here" etc.)
 - No heading hierarchy skips
 - No public-facing SEO terminology leaks
 
-### Structured Data (146 blocks, 15 top-level types, 201 nodes)
-- BreadcrumbList: 60 pages (all indexable pages except index.html)
-- FAQPage: 49 pages with 266 visible and structured Q&A pairs
-- Article: 27 pages with datePublished/dateModified synced per page
+### Structured Data (161 blocks, 15 top-level types, 216 nodes)
+- BreadcrumbList: 65 pages (all indexable pages except index.html)
+- FAQPage: 54 pages with 291 visible and structured Q&A pairs
+- Article: 32 pages with datePublished/dateModified synced per page
 - WebPage: 27 pages
 - CollectionPage: 5 pages
 - SoftwareApplication: 10 entities covering six products (with applicationCategory, operatingSystem, softwareVersion, software requirements, feature lists, and offers)
@@ -94,9 +94,9 @@ Research date: 2026-09-02. Treat market-share figures as directional snapshots b
 
 | Market | Search engines that need explicit attention | Current site-side coverage | Manual platform action |
 | --- | --- | --- | --- |
-| Japan | Google remains the main mobile index; Bing is material on desktop; Yahoo! JAPAN is a major local search and portal surface. StatCounter reported Japan August 2026 all-platform share as Google 63.02%, Bing 28.29%, Yahoo! 6.96%, DuckDuckGo 0.74%, Yandex 0.4%, and Coc Coc 0.35%. Yahoo! JAPAN also documents its own Y!J crawler family. | `ja-jp.html` covers all six apps in Japanese, and `ja-jp-photo-cleaner.html` is a dedicated Japanese photo-cleaner guide with tracked Japan storefront links, task paths, FAQ, explicit Japanese-interface disclosures, `ja-JP`/`ja` hreflang, and `sitemap-local.xml` inclusion; `robots.txt` allows Googlebot, Bingbot, Slurp, and the Yahoo! JAPAN Y!J/YJ crawler family including `Y!J-BRW`. | Submit `sitemap-local.xml` and `sitemap-articles.xml` in Google Search Console and Bing Webmaster Tools; monitor Yahoo! JAPAN referrals separately because its portal and crawler signals can differ. |
-| Germany | Google leads and Bing is the main secondary index. StatCounter reported Germany August 2026 all-platform share as Google 88.49%, Bing 5.84%, Yahoo 1.57%, Yandex 1.56%, DuckDuckGo 1.2%, and Ecosia 1.02%. Ecosia says its German results can come from Bing or Google, while EUSP availability is evolving. | `de-de.html` covers all six apps in German, and `iphone-foto-cleaner-de.html` is now a full German photo-cleaner guide with tracked Germany storefront links, task paths, FAQ, precise German-interface disclosures, `de-DE`/`de` hreflang, and sitemap inclusion. Bing and Google discovery also serves Ecosia's documented partner-result paths. | Keep Google Search Console and Bing Webmaster Tools current. Track Ecosia and DuckDuckGo referrals separately, but optimize through the underlying Google/Bing paths unless their official provider guidance changes. |
-| Türkiye | Google and Yandex need explicit attention. StatCounter reported Türkiye August 2026 all-platform share as Google 82.32%, Yandex 15.98%, Bing 0.88%, Yahoo 0.44%, and DuckDuckGo 0.3%. Yandex provides Turkish Webmaster and IndexNow documentation. | `tr-tr.html` covers all six apps in Turkish, and `tr-tr-photo-cleaner.html` is a dedicated Turkish photo-cleaner guide with tracked Türkiye storefront links, task paths, FAQ, current Turkish-interface disclosures, `tr-TR`/`tr` hreflang, and inclusion in `sitemap-local.xml`. The automatic IndexNow workflow already submits to Yandex and Bing. | Add `sitemap-local.xml` in Yandex Webmaster and request reindexing for `tr-tr.html` and `tr-tr-photo-cleaner.html`; retain the existing automatic IndexNow submission. Submit the main sitemap in Google Search Console. |
+| Japan | Google remains the main mobile index; Bing is material on desktop; Yahoo! JAPAN is a major local search and portal surface. StatCounter reported Japan August 2026 all-platform share as Google 63.02%, Bing 28.29%, Yahoo! 6.96%, DuckDuckGo 0.74%, Yandex 0.4%, and Coc Coc 0.35%. Yahoo! JAPAN also documents its own Y!J crawler family. | `ja-jp.html` covers all six apps in Japanese; `ja-jp-photo-cleaner.html` covers the use workflow; `ja-jp-best-iphone-photo-cleaner.html` targets Japanese decision-stage queries such as 写真整理アプリおすすめ and 写真クリーナー比較. All three use tracked Japan storefront links, local wording, FAQ/schema, hreflang, internal links, and `sitemap-local.xml` inclusion; `robots.txt` allows Googlebot, Bingbot, Slurp, and the Yahoo! JAPAN Y!J/YJ crawler family including `Y!J-BRW`. | Submit `sitemap-local.xml` and `sitemap-articles.xml` in Google Search Console and Bing Webmaster Tools; monitor Yahoo! JAPAN referrals separately because its portal and crawler signals can differ. |
+| Germany | Google leads and Bing is the main secondary index. StatCounter reported Germany August 2026 all-platform share as Google 88.49%, Bing 5.84%, Yahoo 1.57%, Yandex 1.56%, DuckDuckGo 1.2%, and Ecosia 1.02%. Ecosia says its German results can come from Bing or Google, while EUSP availability is evolving. | `de-de.html` covers all six apps in German; `iphone-foto-cleaner-de.html` is a full German photo-cleaner guide; `de-de-beste-iphone-foto-cleaner.html` targets German decision-stage searches such as beste iPhone Foto Cleaner and Foto Cleaner Vergleich. Bing and Google discovery also serves Ecosia's documented partner-result paths. | Keep Google Search Console and Bing Webmaster Tools current. Track Ecosia and DuckDuckGo referrals separately, but optimize through the underlying Google/Bing paths unless their official provider guidance changes. |
+| Türkiye | Google and Yandex need explicit attention. StatCounter reported Türkiye August 2026 all-platform share as Google 82.32%, Yandex 15.98%, Bing 0.88%, Yahoo 0.44%, and DuckDuckGo 0.3%. Yandex provides Turkish Webmaster and IndexNow documentation. | `tr-tr.html` covers all six apps in Turkish; `tr-tr-photo-cleaner.html` is the Turkish photo-cleaner workflow guide; `tr-tr-en-iyi-iphone-fotograf-temizleme.html` targets Turkish decision-stage searches such as en iyi iPhone fotoğraf temizleme. The automatic IndexNow workflow already submits to Yandex and Bing. | Add `sitemap-local.xml` in Yandex Webmaster and request reindexing for `tr-tr.html`, `tr-tr-photo-cleaner.html`, and `tr-tr-en-iyi-iphone-fotograf-temizleme.html`; retain the existing automatic IndexNow submission. Submit the main sitemap in Google Search Console. |
 | Brazil | Google is the dominant general web search entry point; Bing and Yahoo Search are the practical secondary paths for broad discovery. Brazil does not require a separate independent general index in this release, so the local strategy stays on Google/Bing crawlability plus the Brazilian App Store destination. | `pt-br.html` is a Brazilian Portuguese `pt-BR` market page with all six apps, eight tracked Brazil storefront links, six task paths, six matching FAQ items, language-support boundaries, and inclusion in `sitemap-local.xml`. The six public app IDs were checked through the Apple Search API with `country=br`. | Submit `sitemap.xml`, `sitemap-local.xml`, and `sitemap-articles.xml` in Google Search Console and Bing Webmaster Tools. Use Bing data as the operational proxy for Yahoo Search, and monitor Brazil traffic with `country=br` storefront links in GA4. |
 | Mexico | Google is the dominant general web search entry point; Bing and Yahoo Search remain the practical secondary paths. Mexico does not require a separate independent general index in this release, so the local strategy stays on Google/Bing crawlability plus the Mexican App Store destination. | `es-mx.html` is a Mexican Spanish `es-MX` market page with all six apps, eight tracked Mexico storefront links, six task paths, six matching FAQ items, language-support boundaries, and inclusion in `sitemap-local.xml`. The six public app IDs were checked through the Apple Search API with `country=mx`. | Submit `sitemap.xml`, `sitemap-local.xml`, and `sitemap-articles.xml` in Google Search Console and Bing Webmaster Tools. Use Bing data as the operational proxy for Yahoo Search, and monitor Mexico traffic with `country=mx` storefront links in GA4. |
 | South Korea | Naver is a required local surface, and Korean market-share sources conflict because Naver answers many queries inside its own properties. Daum remains a smaller Korean search surface. | `ko-kr.html` is in the hreflang cluster and `sitemap-local.xml`; `robots.txt` explicitly allows Naver `Yeti` and Daum. | Verify the canonical domain in Naver Search Advisor, submit `sitemap-local.xml`, request recrawl for `ko-kr.html`, and track Naver/Daum separately from Google organic. |
@@ -152,11 +152,11 @@ Research sources used for this matrix:
 - Checks: Bingbot/BingPreview allowed in robots.txt, sitemap advertised, IndexNow key valid, all indexable pages have meta keywords (Bing values these), meta description, canonical, and JSON-LD structured data
 - Status: PASS (61 Bing-audited pages, all with keywords/description/canonical/JSON-LD; the only excluded HTML file is the noindex 404 page)
 - Bing Webmaster Tools property is active: the 2026-07-17 account screenshot shows Recommendations for `xiaozhonglvyou.com`. No `msvalidate.01` tag is present, which is expected when the property is verified through another supported method such as DNS or Google Search Console import.
-- Latest deployment validation: 2026-09-01; full site verification passed with local search engine crawler coverage, market-specific content checks for China, Japan, Germany, Türkiye, South Korea, Russia, Czechia, Vietnam, Brazil, and Mexico, a submission matrix, and dedicated local-search and China-focused sitemaps.
-- Latest sitemap validation: 2026-09-01; 61 URLs, 677 hreflang alternate links, and 96 image entries are present in sitemap.xml.
-- Latest global-focused sitemap validation: sitemap-global.xml and sitemap-global.txt contain 42 non-Chinese global and localized URLs and are advertised from robots.txt and sitemap-index.xml.
-- Latest local-search-focused sitemap validation: 2026-09-01; sitemap-local.xml and sitemap-local.txt contain 39 regional, localized, market-hub, and core product URLs and are advertised from robots.txt and sitemap-index.xml.
-- Latest article sitemap validation: 2026-08-30; sitemap-articles.xml and sitemap-articles.txt contain all 27 Article/guide URLs and are advertised from robots.txt and sitemap-index.xml.
+- Latest deployment validation: 2026-09-04; full site verification passed with local search engine crawler coverage, market-specific content checks for China, Japan, Germany, Türkiye, South Korea, Russia, Czechia, Vietnam, Brazil, and Mexico, a submission matrix, and dedicated local-search and China-focused sitemaps.
+- Latest sitemap validation: 2026-09-04; 66 URLs, 719 hreflang alternate links, and 110 image entries are present in sitemap.xml.
+- Latest global-focused sitemap validation: sitemap-global.xml and sitemap-global.txt contain 45 non-Chinese global and localized URLs and are advertised from robots.txt and sitemap-index.xml.
+- Latest local-search-focused sitemap validation: 2026-09-04; sitemap-local.xml and sitemap-local.txt contain 44 regional, localized, market-hub, and core product URLs and are advertised from robots.txt and sitemap-index.xml.
+- Latest article sitemap validation: 2026-09-04; sitemap-articles.xml and sitemap-articles.txt contain 30 priority Article/guide URLs and are advertised from robots.txt and sitemap-index.xml.
 - Latest China-focused sitemap validation: sitemap-cn.xml contains 11 Chinese-language URLs and is advertised from robots.txt and sitemap-index.xml.
 - Latest China-focused text sitemap validation: sitemap-cn.txt contains the same 11 Chinese-language URLs and is advertised from robots.txt.
 - Latest Mainland China market pass: `zh-cn.html` grew from 1,984 to 3,550 visible characters, maps seven user tasks to focused Chinese guides, exposes six visible and structured FAQ answers, and links all six products to their verified China App Store or Mac App Store listings. Baidu ordinary/quick inclusion, 360, and Sogou submission guidance was rechecked against the public platform pages on 2026-08-30.

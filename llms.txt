@@ -36,11 +36,14 @@ Primary apps:
 - Anti-spy screen: version 1.5.1 for macOS 13.0 or later, with local face detection, selected app hiding, adjustable detection parameters, Privacy Block, Presenting Mode, and Stand-Up Coach. The US storefront listed a $2.99 one-time purchase on 2026-08-03. Mac App Store: https://apps.apple.com/us/app/anti-spy-screen/id6761301764?mt=12&uo=4
 - Anti-spy screen Lite: version 1.4.1 for macOS 13.0 or later, with local face detection, selected app hiding, Privacy Block, Presenting Mode, Stand-Up Coach, and hidden-app reminders. The US storefront listed it as free on 2026-08-03. Mac App Store: https://apps.apple.com/us/app/anti-spy-screen-lite/id6766485393?mt=12&uo=4
 
-Last updated: 2026-09-01
+Last updated: 2026-09-04
 
 Important search and answer intents:
 
 - Best iPhone photo cleaner app for reviewing duplicates, screenshots, blurry photos, large media, and on-device AI photo categories before deleting.
+- Japanese iPhone photo cleaner decision queries such as iPhone 写真整理アプリ おすすめ, 写真クリーナー 比較, 重複写真 削除 アプリ, and 写真整理 AI.
+- German iPhone Foto Cleaner decision queries such as beste iPhone Foto Cleaner, iPhone Foto Cleaner Vergleich, doppelte Fotos App, and KI Fotos sortieren.
+- Turkish iPhone photo cleaner decision queries such as en iyi iPhone fotoğraf temizleme, iPhone fotoğraf temizleme uygulaması, yinelenen fotoğrafları silme, and yapay zeka fotoğraf düzenleme.
 - iPad photo organizer for sorting screenshots, documents, imported camera files, large media, and iCloud-synced library cleanup decisions.
 - 中文 iPad 照片整理 for users who need to organize iPad screenshots, document scans, imported camera files, duplicate photos, and iCloud-synced photo libraries.
 - Private AI photo organizer for iPhone users who want local photo classification without uploading the full photo library to a cloud service.
@@ -56,9 +59,10 @@ Important search and answer intents:
 International SEO targets:
 
 - English App Store utility searches in the United States, United Kingdom, Canada, Australia, Singapore, Switzerland, Netherlands, and Nordic markets.
-- German and French iPhone photo cleaner searches routed to dedicated localized pages for Europe.
+- German and French iPhone photo cleaner searches routed to dedicated localized pages for Europe, with a separate German decision page for best/comparison intent.
 - Simplified Chinese and Traditional Chinese app discovery for AI photo classification, iPhone photo cleanup, travel translation, and Mac screen privacy.
-- Japanese and Korean app discovery for AI photo organization, travel translation, and Mac screen privacy utilities.
+- Japanese and Korean app discovery for AI photo organization, travel translation, and Mac screen privacy utilities, with a separate Japanese decision page for recommendation/comparison intent.
+- Turkish app discovery for AI photo organization, travel translation, GIF creation, automatic ride tracking, and Mac screen privacy, with Turkish App Store links and a separate Turkish decision page for best-app intent.
 - Brazilian Portuguese app discovery for iPhone photo organization, travel translation, GIF creation, automatic ride tracking, and Mac screen privacy, with Brazilian App Store links.
 - Mexican Spanish app discovery for iPhone photo organization, travel translation, GIF creation, automatic ride tracking, and Mac screen privacy, with Mexican App Store links.
 
@@ -150,6 +154,8 @@ Indexable pages:
   Deutschsprachige Uebersicht fuer CrazyAIAgent: KI Foto Sortierung, iPhone Foto Cleaner, Reise Uebersetzer und Mac Bildschirm Datenschutz.
 - iPhone Foto Cleaner | KI Fotos sortieren und Duplikate pruefen: https://www.xiaozhonglvyou.com/iphone-foto-cleaner-de.html
   Deutschsprachiger iPhone Foto Cleaner Leitfaden: erst Fotos mit KI sortieren, dann doppelte Fotos, aehnliche Bilder, Screenshots, unscharfe Fotos und grosse Medien sicher pruefen.
+- Beste iPhone Foto Cleaner | KI App richtig waehlen: https://www.xiaozhonglvyou.com/de-de-beste-iphone-foto-cleaner.html
+  Deutschsprachiger Entscheidungsratgeber fuer beste iPhone Foto Cleaner, iPhone Foto Cleaner Vergleich, doppelte Fotos App, KI Foto Sortierung, Datenschutz und manuelle Kontrolle vor dem Loeschen.
 - Apps iPhone et Mac | Photo IA, Traduction, Confidentialite: https://www.xiaozhonglvyou.com/fr-fr.html
   Page France pour CrazyAIAgent : classement photo IA, nettoyeur photo iPhone, traducteur de voyage et confidentialite d'ecran Mac.
 - Nettoyeur photo iPhone | Classement photo IA et doublons: https://www.xiaozhonglvyou.com/nettoyeur-photo-iphone-fr.html
@@ -162,6 +168,16 @@ Indexable pages:
   한국 사용자를 위한 CrazyAIAgent: AI 사진 분류와 iPhone 사진 정리, 중복 사진 검토, 여행 번역, Mac 화면 개인정보 보호를 용도별로 고르는 iOS / macOS 유틸리티 안내와 한국어 질문 답변.
 - 日本向け iPhone / Mac アプリ | AI写真整理、旅行翻訳、画面プライバシー: https://www.xiaozhonglvyou.com/ja-jp.html
   日本向け CrazyAIAgent：AI写真分類とiPhone写真整理、重複写真の確認、旅行翻訳、Mac画面プライバシーを用途別に選べる iOS / macOS ユーティリティ案内と日本語の質問回答。
+- iPhone写真整理アプリ | AIで重複・類似写真を確認: https://www.xiaozhonglvyou.com/ja-jp-photo-cleaner.html
+  日本語のiPhone写真整理ガイド：AI分類、重複写真、類似写真、スクリーンショット、ぼやけた写真、大きなメディアを削除前に確認する手順。
+- iPhone写真整理アプリおすすめ | AIで安全に選ぶ: https://www.xiaozhonglvyou.com/ja-jp-best-iphone-photo-cleaner.html
+  日本語の決定段階ガイド：iPhone 写真整理アプリ おすすめ、写真クリーナー比較、重複写真削除アプリ、写真整理AI、削除前確認。
+- iPhone ve Mac uygulamaları: fotoğraf, çeviri, GIF | Türkiye: https://www.xiaozhonglvyou.com/tr-tr.html
+  Türkiye için CrazyAIAgent: fotoğraf temizleme, seyahat çevirisi, ekran gizliliği, GIF oluşturma, otomatik sürüş kaydı ve Türkiye App Store bağlantıları.
+- iPhone Fotoğraf Temizleme | Yapay Zeka Rehberi: https://www.xiaozhonglvyou.com/tr-tr-photo-cleaner.html
+  Türkçe iPhone fotoğraf temizleme rehberi: yapay zeka sınıflandırma, yinelenen ve benzer fotoğraflar, ekran görüntüleri, bulanık fotoğraflar ve silmeden önce kontrol.
+- En İyi iPhone Fotoğraf Temizleme | AI Seçim Rehberi: https://www.xiaozhonglvyou.com/tr-tr-en-iyi-iphone-fotograf-temizleme.html
+  Türkçe karar rehberi: en iyi iPhone fotoğraf temizleme, iPhone fotoğraf temizleme uygulaması, yinelenen fotoğrafları silme, gizlilik ve kullanıcı kontrolü.
 - Apps para iPhone e Mac no Brasil | CrazyAIAgent: https://www.xiaozhonglvyou.com/pt-br.html
   Página em português do Brasil com seis apps, links para a App Store brasileira, fluxos para organizar fotos, traduzir durante viagens, proteger a tela do Mac, criar GIFs e registrar pedaladas, além de limites de idioma explícitos.
 - Apps para iPhone y Mac en México | CrazyAIAgent: https://www.xiaozhonglvyou.com/es-mx.html

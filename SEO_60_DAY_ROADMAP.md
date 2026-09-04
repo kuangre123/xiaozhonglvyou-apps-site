@@ -18,21 +18,21 @@ Research snapshot: 2026-09-02, using StatCounter August 2026 country-level searc
 
 ### Japan
 
-Primary path: Google and Bing. Local discovery path: Yahoo! JAPAN, which remains a meaningful Japanese portal and search surface. StatCounter reported August 2026 all-platform share in Japan as Google 63.02%, Bing 28.29%, Yahoo! 6.96%, DuckDuckGo 0.74%, Yandex 0.4%, and Coc Coc 0.35%. Keep Japanese content on `ja-jp.html` and `ja-jp-photo-cleaner.html`, with Japanese App Store links and `ja` hreflang.
+Primary path: Google and Bing. Local discovery path: Yahoo! JAPAN, which remains a meaningful Japanese portal and search surface. StatCounter reported August 2026 all-platform share in Japan as Google 63.02%, Bing 28.29%, Yahoo! 6.96%, DuckDuckGo 0.74%, Yandex 0.4%, and Coc Coc 0.35%. Keep Japanese content on `ja-jp.html`, `ja-jp-photo-cleaner.html`, and `ja-jp-best-iphone-photo-cleaner.html`, with Japanese App Store links and `ja` hreflang.
 
 ### Germany
 
-Primary path: Google and Bing. Secondary discovery: Yahoo Search, Yandex, DuckDuckGo, and Ecosia. StatCounter reported August 2026 all-platform share in Germany as Google 88.49%, Bing 5.84%, Yahoo 1.57%, Yandex 1.56%, DuckDuckGo 1.2%, and Ecosia 1.02%. Ecosia results may come through its partner indexes, so technical optimization remains centered on Google and Bing while German content and the German App Store destination stay explicit.
+Primary path: Google and Bing. Secondary discovery: Yahoo Search, Yandex, DuckDuckGo, and Ecosia. StatCounter reported August 2026 all-platform share in Germany as Google 88.49%, Bing 5.84%, Yahoo 1.57%, Yandex 1.56%, DuckDuckGo 1.2%, and Ecosia 1.02%. Ecosia results may come through its partner indexes, so technical optimization remains centered on Google and Bing while German content, `iphone-foto-cleaner-de.html`, `de-de-beste-iphone-foto-cleaner.html`, and the German App Store destination stay explicit.
 
 ### Türkiye
 
-Primary path: Google. Secondary path: Yandex Türkiye. StatCounter reported August 2026 all-platform share in Türkiye as Google 82.32%, Yandex 15.98%, Bing 0.88%, Yahoo 0.44%, and DuckDuckGo 0.3%. Keep Turkish content on `tr-tr.html` and `tr-tr-photo-cleaner.html`, use the Turkish App Store destination, and send changed URLs through IndexNow where supported.
+Primary path: Google. Secondary path: Yandex Türkiye. StatCounter reported August 2026 all-platform share in Türkiye as Google 82.32%, Yandex 15.98%, Bing 0.88%, Yahoo 0.44%, and DuckDuckGo 0.3%. Keep Turkish content on `tr-tr.html`, `tr-tr-photo-cleaner.html`, and `tr-tr-en-iyi-iphone-fotograf-temizleme.html`, use the Turkish App Store destination, and send changed URLs through IndexNow where supported.
 
 ## Days 1-7: Measurement and Crawl Baseline
 
 1. Verify ownership and sitemap submission in Google Search Console and Bing Webmaster Tools.
 2. Add `sitemap.xml`, `sitemap-local.xml`, and `sitemap-articles.xml` to the relevant properties. Add `sitemap-local.xml` to Yandex Webmaster for Türkiye and other Yandex-relevant markets.
-3. Inspect representative URLs individually: the home page, each market hub, each localized photo-cleaner page, and one article per product cluster.
+3. Inspect representative URLs individually: the home page, each market hub, each localized photo-cleaner workflow page, each localized decision page, and one article per product cluster.
 4. Record baseline values for indexed URLs, impressions, clicks, CTR, average position, organic landing pages, and `app_store_click` events.
 5. Keep GA4 search and referral attribution separate from App Store Connect installs. A website click cannot be treated as an install.
 6. Use the existing robots, canonical, hreflang, RSS, Atom, search index, and IndexNow audits as release gates.
@@ -42,7 +42,7 @@ Primary path: Google. Secondary path: Yandex Türkiye. StatCounter reported Augu
 ## Days 8-14: Intent and Keyword Map
 
 1. Build a table with market, language, search phrase, intent, canonical URL, App Store country, and evidence source.
-2. Prioritize bottom-of-funnel topics: `iPhone photo cleaner`, duplicate-photo cleanup, photo organizer, privacy, pricing, comparison, and alternatives.
+2. Prioritize bottom-of-funnel topics: `iPhone photo cleaner`, duplicate-photo cleanup, photo organizer, privacy, pricing, comparison, alternatives, and local-language "best/recommended" decision queries.
 3. Add mid-funnel guides for safe review workflows, on-device processing, screenshots, blurry photos, and large media.
 4. Use local wording rather than literal translation:
    - Japanese: 写真整理, 重複写真, 類似写真, ストレージ整理
@@ -55,10 +55,11 @@ Primary path: Google. Secondary path: Yandex Türkiye. StatCounter reported Augu
 ## Days 15-24: Localized Pages and Internal Discovery
 
 1. Improve the three market hubs before adding more country pages. Each hub should explain all six apps, local App Store links, language limitations, six task paths, FAQs, and a clear next action.
-2. Keep the dedicated localized photo-cleaner pages genuinely localized in title, description, H1, body copy, FAQ, schema language, breadcrumb, and CTA.
-3. Link each localized guide from its market hub, `guides.html`, `directory.html`, the English and Chinese photo-cleaner pages, and at least one related article.
-4. Keep every localized photo-cleaner page in the same seven-language hreflang cluster: `en`, `zh-CN`, `de`, `fr`, `ja`, `tr`, and `x-default`.
-5. Add new country pages only when there is a real local destination, local copy, unique search intent, and at least three internal discovery sources.
+2. Keep the dedicated localized photo-cleaner workflow pages genuinely localized in title, description, H1, body copy, FAQ, schema language, breadcrumb, and CTA.
+3. Add localized decision pages only where the query intent differs from the workflow page. Current targets are `ja-jp-best-iphone-photo-cleaner.html`, `de-de-beste-iphone-foto-cleaner.html`, and `tr-tr-en-iyi-iphone-fotograf-temizleme.html`.
+4. Link each localized guide from its market hub, `guides.html`, `directory.html`, the English and Chinese photo-cleaner pages, and at least one related article.
+5. Keep every localized photo-cleaner workflow page in the same seven-language hreflang cluster: `en`, `zh-CN`, `de`, `fr`, `ja`, `tr`, and `x-default`. Keep the decision pages in their separate `en`, `de`, `ja`, `tr`, and `x-default` cluster.
+6. Add new country pages only when there is a real local destination, local copy, unique search intent, and at least three internal discovery sources.
 
 **Exit condition:** no localized page is orphaned, and each page passes metadata, schema, image, hreflang, and local App Store attribution checks.
 
