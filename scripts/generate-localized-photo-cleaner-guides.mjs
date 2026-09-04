@@ -6,6 +6,7 @@ const siteDir = path.resolve(import.meta.dirname, "..");
 const origin = "https://www.xiaozhonglvyou.com";
 const updatedDate = "2026-09-01";
 const appId = "6768019606";
+const analyticsVersion = "0bee63cd1708";
 
 const developer = {
   "@type": "Person",
@@ -288,6 +289,7 @@ function listMarkup(items) {
 
 const relatedGuides = [
   ["English photo cleaner guide", "iphone-photo-cleaner.html"],
+  ["Photo cleaner comparison", "iphone-photo-cleaner-comparison.html"],
   ["中文照片清理页", "iphone-photo-cleaner-cn.html"],
   ["Deutscher Foto-Cleaner", "iphone-foto-cleaner-de.html"],
   ["Guide photo en français", "nettoyeur-photo-iphone-fr.html"],
@@ -340,7 +342,7 @@ function render(page) {
   const head = [
     "<!doctype html>", `<html lang="${page.lang}"><head>`,
     `<meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; img-src 'self' https: data:; script-src 'self' https://www.googletagmanager.com; script-src-attr 'none'; style-src 'self'; style-src-attr 'none'; connect-src 'self' https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com; form-action 'none'; upgrade-insecure-requests">`,
-    `<link rel="preconnect" href="https://www.googletagmanager.com"><link rel="preconnect" href="https://apps.apple.com"><script src="analytics.js"></script><script async fetchpriority="low" src="https://www.googletagmanager.com/gtag/js?id=G-JY8T5JJGNH"></script>`,
+    `<link rel="preconnect" href="https://www.googletagmanager.com"><link rel="preconnect" href="https://apps.apple.com"><script src="analytics.js?v=${analyticsVersion}"></script><script async fetchpriority="low" src="https://www.googletagmanager.com/gtag/js?id=G-JY8T5JJGNH"></script>`,
     `<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">`,
     `<title>${escapeHtml(page.title)}</title>`, `<meta name="description" content="${escapeHtml(page.description)}">`,
     `<meta name="keywords" content="${escapeHtml(page.keywords.join(", "))}">`,

@@ -6,6 +6,7 @@ const siteDir = path.resolve(import.meta.dirname, "..");
 const origin = "https://www.xiaozhonglvyou.com";
 const updatedDate = "2026-09-04";
 const appId = "6768019606";
+const analyticsVersion = "0bee63cd1708";
 
 const developer = {
   "@type": "Person",
@@ -102,6 +103,17 @@ const pages = [
         ]
       }
     ],
+    localSearch: {
+      kicker: "検索で確認",
+      title: "日本ではGoogle、Yahoo! JAPAN、Bingで同じ条件を確認します。",
+      lead: "検索結果の記事だけで判断せず、検索語を変えて比較し、最後は日本のApp Storeで価格、対応OS、言語、プライバシー表示を確認します。",
+      items: [
+        ["検索語を分ける", "「iPhone 写真整理アプリ おすすめ」「iPhone 写真クリーナー 比較」「重複写真 削除 アプリ」を分けて検索し、同じアプリがどの意図で説明されているかを見ます。"],
+        ["Yahoo! JAPANとBingも確認", "日本ではGoogleだけでなくYahoo! JAPANやBing経由で比較記事を見る利用者もいます。古い価格や古い対応OSの説明に注意します。"],
+        ["横断比較", "英語の比較ページも開き、重複、類似写真、スクリーンショット、大容量メディア、削除前確認の違いを確認します。"]
+      ],
+      comparisonLabel: "英語の写真クリーナー比較を見る"
+    },
     storeTitle: "インストール前に、日本のApp Storeで条件を確認する。",
     storeLead: "ストア上の価格、アプリ内課金、対応OS、言語、プライバシー表示が最終情報です。検索結果や古い紹介記事だけで判断しないでください。",
     faqTitle: "写真整理アプリ選びの質問",
@@ -170,6 +182,17 @@ const pages = [
         ]
       }
     ],
+    localSearch: {
+      kicker: "Suche prüfen",
+      title: "In Deutschland lohnt sich der Vergleich über Google, Bing, Ecosia und DuckDuckGo.",
+      lead: "Suchergebnisse können unterschiedliche Ratgeber, alte App-Versionen oder regionale Store-Angaben zeigen. Entscheidend bleibt der aktuelle deutsche App-Store-Eintrag.",
+      items: [
+        ["Suchintention trennen", "Suchen Sie getrennt nach „beste iPhone Foto Cleaner“, „iPhone Foto Cleaner Vergleich“ und „doppelte Fotos App“, weil diese Anfragen verschiedene Erwartungen haben."],
+        ["Mehrere Suchmaschinen prüfen", "Google dominiert, aber Bing, Ecosia und DuckDuckGo bringen eigene Ergebnislisten. Achten Sie auf Datum, Store-Land und Datenschutzangaben."],
+        ["Vergleich öffnen", "Nutzen Sie zusätzlich die englische Vergleichsseite, wenn Sie Funktionen wie Duplikate, ähnliche Bilder, Screenshots und große Medien nebeneinander bewerten möchten."]
+      ],
+      comparisonLabel: "Englischen Foto-Cleaner-Vergleich öffnen"
+    },
     storeTitle: "Aktuelle Bedingungen im deutschen App Store kontrollieren.",
     storeLead: "Der App-Store-Eintrag ist die maßgebliche Quelle für Preis, In-App-Käufe, iOS-Version, Sprachliste und Datenschutzangaben.",
     faqTitle: "Fragen zur Auswahl eines iPhone Foto Cleaners",
@@ -238,6 +261,17 @@ const pages = [
         ]
       }
     ],
+    localSearch: {
+      kicker: "Aramada kontrol",
+      title: "Türkiye'de Google ve Yandex sonuçlarını ayrı ayrı kontrol etmek yararlıdır.",
+      lead: "Arama sonuçları eski fiyat, eski uygulama sürümü veya farklı ülke mağazası gösterebilir. Son karar için Türkiye App Store kaydı esas alınmalıdır.",
+      items: [
+        ["Niyete göre arayın", "„en iyi iPhone fotoğraf temizleme“, „iPhone fotoğraf temizleme uygulaması“ ve „yinelenen fotoğrafları silme“ aramaları aynı ihtiyacı anlatmaz."],
+        ["Google ve Yandex'i karşılaştırın", "Türkiye'de Google ana giriş olsa da Yandex de önemli bir keşif yoludur. Sonuçlarda tarih, mağaza ülkesi ve gizlilik bilgisini kontrol edin."],
+        ["Karşılaştırma sayfasına bakın", "İngilizce karşılaştırma sayfası; yinelenenler, benzer kareler, ekran görüntüleri ve büyük medya gibi görevleri yan yana değerlendirmenize yardımcı olur."]
+      ],
+      comparisonLabel: "İngilizce fotoğraf temizleme karşılaştırmasını aç"
+    },
     storeTitle: "Yüklemeden önce Türkiye App Store kaydını kontrol edin.",
     storeLead: "Mağaza kaydı güncel fiyat, uygulama içi satın alma, iOS sürümü, dil listesi ve gizlilik bilgileri için son kontrol noktasıdır.",
     faqTitle: "iPhone fotoğraf temizleme uygulaması seçimi",
@@ -314,6 +348,7 @@ function relatedMarkup(page) {
   return [
     [page.guideLabel, page.guideFile],
     ["English decision guide", "best-iphone-photo-cleaner-app.html"],
+    ["Photo cleaner comparison", "iphone-photo-cleaner-comparison.html"],
     ["日本語おすすめ", "ja-jp-best-iphone-photo-cleaner.html"],
     ["Beste Foto-Cleaner", "de-de-beste-iphone-foto-cleaner.html"],
     ["Türkçe seçim rehberi", "tr-tr-en-iyi-iphone-fotograf-temizleme.html"]
@@ -365,7 +400,7 @@ function render(page) {
   const head = [
     "<!doctype html>", `<html lang="${page.lang}"><head>`,
     `<meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; img-src 'self' https: data:; script-src 'self' https://www.googletagmanager.com; script-src-attr 'none'; style-src 'self'; style-src-attr 'none'; connect-src 'self' https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com; form-action 'none'; upgrade-insecure-requests">`,
-    `<link rel="preconnect" href="https://www.googletagmanager.com"><link rel="preconnect" href="https://apps.apple.com"><script src="analytics.js"></script><script async fetchpriority="low" src="https://www.googletagmanager.com/gtag/js?id=G-JY8T5JJGNH"></script>`,
+    `<link rel="preconnect" href="https://www.googletagmanager.com"><link rel="preconnect" href="https://apps.apple.com"><script src="analytics.js?v=${analyticsVersion}"></script><script async fetchpriority="low" src="https://www.googletagmanager.com/gtag/js?id=G-JY8T5JJGNH"></script>`,
     `<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">`,
     `<title>${escapeHtml(page.title)}</title><meta name="description" content="${escapeHtml(page.description)}">`,
     `<meta name="keywords" content="${escapeHtml(page.keywords.join(", "))}">`,
@@ -383,11 +418,12 @@ function render(page) {
   const header = `<body class="localized-photo-cleaner-page"><header class="site-header" data-elevate><nav class="nav" aria-label="Primary"><a class="brand" href="${page.marketFile}" aria-label="CrazyAIAgent"><span class="brand-mark" aria-hidden="true">CA</span><span>CrazyAIAgent</span></a><div class="nav-links"><a href="${page.marketFile}">${escapeHtml(page.countryName)}</a><a href="guides.html">${escapeHtml(page.navGuide)}</a><a href="directory.html">${escapeHtml(page.navDirectory)}</a></div>${storeLink(page, "App Store", "nav-cta")}</nav></header>`;
   const hero = `<main class="page-main"><section class="page-hero"><div class="page-hero-copy"><nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="${page.marketFile}">${escapeHtml(page.countryName)}</a></li><li aria-current="page">${escapeHtml(page.breadcrumb)}</li></ol></nav><p class="eyebrow">${escapeHtml(page.eyebrow)}</p><h1>${escapeHtml(page.h1)}</h1><p>${escapeHtml(page.lead)}</p><p class="article-meta"><time datetime="${updatedDate}">${escapeHtml(page.ui.updated)}</time> · ${escapeHtml(page.ui.author)} <a href="about.html" rel="author">Bo Chen</a></p><div class="hero-actions">${storeLink(page, page.primary, "button button-primary")}<a class="button button-secondary" href="${page.guideFile}">${escapeHtml(page.secondary)}</a></div></div><div class="page-hero-media"><picture><source srcset="assets/ai-cleaning-screen.webp" type="image/webp"><img src="assets/ai-cleaning-screen.png" width="331" height="720" decoding="async" fetchpriority="high" alt="${escapeHtml(page.imageAlt)}"></picture></div></section>`;
   const sections = page.sections.map((section, index) => `<section class="section content-section${index % 2 === 1 ? " alt-section" : ""}"><div class="section-inner content-grid"><div><p class="section-kicker">${escapeHtml(section.kicker)}</p><h2>${escapeHtml(section.title)}</h2><p>${escapeHtml(section.lead)}</p></div><div class="content-list">${listMarkup(section.items)}</div></div></section>`).join("");
+  const localSearchSection = `<section class="section content-section alt-section"><div class="section-inner content-grid"><div><p class="section-kicker">${escapeHtml(page.localSearch.kicker)}</p><h2>${escapeHtml(page.localSearch.title)}</h2><p>${escapeHtml(page.localSearch.lead)}</p></div><div class="content-list">${listMarkup(page.localSearch.items)}<div><a class="store-link store-link-secondary" href="iphone-photo-cleaner-comparison.html">${escapeHtml(page.localSearch.comparisonLabel)}</a></div></div></div></section>`;
   const storeSection = `<section class="section content-section alt-section"><div class="section-inner content-grid"><div><p class="section-kicker">App Store</p><h2>${escapeHtml(page.storeTitle)}</h2><p>${escapeHtml(page.storeLead)}</p></div><div class="content-list"><div><strong>AI Cleaning - Photo Cleaner</strong><p>${escapeHtml(page.description)}</p></div><div>${storeLink(page, page.ui.storeLink, "store-link")}</div></div></div></section>`;
   const faqSection = `<section class="section faq"><div class="section-inner"><div class="section-heading"><p class="section-kicker">${escapeHtml(page.ui.faqKicker)}</p><h2>${escapeHtml(page.faqTitle)}</h2></div><div class="faq-list">${page.faq.map(([question, answer], index) => `<details${index === 0 ? " open" : ""}><summary>${escapeHtml(question)}</summary><p>${escapeHtml(answer)}</p></details>`).join("")}</div></div></section>`;
   const relatedSection = `<section class="section content-section alt-section"><div class="section-inner"><div class="section-heading"><div><p class="section-kicker">Related</p><h2>${escapeHtml(page.guideLabel)}</h2></div></div><p>${relatedMarkup(page)}</p></div></section></main>`;
   const footer = `<footer class="footer"><div class="footer-inner"><p>© 2026 CrazyAIAgent.</p><div><a href="${page.marketFile}">${escapeHtml(page.countryName)}</a> <a href="guides.html">${escapeHtml(page.navGuide)}</a> <a href="directory.html">${escapeHtml(page.navDirectory)}</a> <a href="search.html">Search</a> <a href="privacy.html">${escapeHtml(page.ui.privacy)}</a> <a href="mailto:cb123428316@gmail.com">${escapeHtml(page.ui.contact)}</a></div></div></footer><script src="script.js?v=fda667de6672" defer></script></body></html>\n`;
-  return `${head}${header}${hero}${sections}${storeSection}${faqSection}${relatedSection}${footer}`;
+  return `${head}${header}${hero}${sections}${localSearchSection}${storeSection}${faqSection}${relatedSection}${footer}`;
 }
 
 async function syncEnglishDecisionAlternates() {
