@@ -143,7 +143,10 @@ const hubLists = new Map([
         ["Hide Notifications When Screen Sharing on Mac", `${origin}/screen-sharing-privacy-guide.html`],
         ["How to Make a GIF on iPhone From Video", `${origin}/make-gif-on-iphone-guide.html`],
         ["How to Track a Bike Ride on iPhone", `${origin}/automatic-bike-ride-tracker-iphone.html`],
-        ["Best GIF Maker Apps for iPhone", `${origin}/best-gif-maker-apps-iphone.html`]
+        ["Best GIF Maker Apps for iPhone", `${origin}/best-gif-maker-apps-iphone.html`],
+        ["日本語 iPhone写真整理アプリおすすめ", `${origin}/ja-jp-best-iphone-photo-cleaner.html`],
+        ["Beste iPhone Foto Cleaner", `${origin}/de-de-beste-iphone-foto-cleaner.html`],
+        ["En iyi iPhone fotoğraf temizleme", `${origin}/tr-tr-en-iyi-iphone-fotograf-temizleme.html`]
       ]
     }
   ],
@@ -166,7 +169,16 @@ const hubLists = new Map([
         ["Spanish App Page", `${origin}/es-es.html`],
         ["Italian App Page", `${origin}/it-it.html`],
         ["Korean App Page", `${origin}/ko-kr.html`],
-        ["Japanese App Page", `${origin}/ja-jp.html`]
+        ["Japanese App Page", `${origin}/ja-jp.html`],
+        ["Russian App Page", `${origin}/ru-ru.html`],
+        ["Czech App Page", `${origin}/cs-cz.html`],
+        ["Vietnamese App Page", `${origin}/vi-vn.html`],
+        ["Turkish App Page", `${origin}/tr-tr.html`],
+        ["Brazilian Portuguese App Page", `${origin}/pt-br.html`],
+        ["Mexican Spanish App Page", `${origin}/es-mx.html`],
+        ["Japanese photo cleaner decision guide", `${origin}/ja-jp-best-iphone-photo-cleaner.html`],
+        ["German Foto Cleaner decision guide", `${origin}/de-de-beste-iphone-foto-cleaner.html`],
+        ["Turkish photo cleaner decision guide", `${origin}/tr-tr-en-iyi-iphone-fotograf-temizleme.html`]
       ]
     }
   ]

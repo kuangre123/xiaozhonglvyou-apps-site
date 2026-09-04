@@ -156,6 +156,7 @@ Research sources used for this matrix:
 - Latest sitemap validation: 2026-09-04; 66 URLs, 719 hreflang alternate links, and 110 image entries are present in sitemap.xml.
 - Latest global-focused sitemap validation: sitemap-global.xml and sitemap-global.txt contain 45 non-Chinese global and localized URLs and are advertised from robots.txt and sitemap-index.xml.
 - Latest local-search-focused sitemap validation: 2026-09-04; sitemap-local.xml and sitemap-local.txt contain 44 regional, localized, market-hub, and core product URLs and are advertised from robots.txt and sitemap-index.xml.
+- Latest regional hub discovery pass: 2026-09-04; `regions.html` now exposes Japan, Germany, and Türkiye iPhone photo-cleaner decision pages as visible cards and as ItemList entries, bringing the three hub ItemLists to 50 total ListItem nodes.
 - Latest article sitemap validation: 2026-09-04; sitemap-articles.xml and sitemap-articles.txt contain 32 Article/guide URLs and are advertised from robots.txt and sitemap-index.xml.
 - Latest China-focused sitemap validation: sitemap-cn.xml contains 11 Chinese-language URLs and is advertised from robots.txt and sitemap-index.xml.
 - Latest China-focused text sitemap validation: sitemap-cn.txt contains the same 11 Chinese-language URLs and is advertised from robots.txt.
