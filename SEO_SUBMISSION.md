@@ -39,12 +39,12 @@ Search index: https://www.xiaozhonglvyou.com/search-index.json
 - `sitemap-index.xml` points to sitemap.xml, sitemap-global.xml, sitemap-local.xml, sitemap-articles.xml, sitemap-cn.xml, feed.xml, and atom.xml
 - `sitemap-global.xml` lists 45 global, English, and localized non-Chinese landing pages for Google, Bing, Yandex, DuckDuckGo, and other international search platform submissions
 - `sitemap-local.xml` lists 44 regional, localized, market-hub, and core product URLs for Yahoo! JAPAN, Naver, Daum, Yandex, Seznam, Qwant, Coc Coc, and other local search platform submissions
-- `sitemap-articles.xml` lists 30 priority Article/guide pages with per-page dateModified values from JSON-LD
+- `sitemap-articles.xml` lists 32 Article/guide pages with per-page dateModified values from JSON-LD
 - `sitemap-cn.xml` lists 11 Simplified and Traditional Chinese landing pages for Baidu, 360, Sogou, Shenma, and other Chinese search platform submissions
 - `sitemap.txt` lists 66 URLs in plain text format
 - `sitemap-global.txt` lists the same 45 global and international URLs in plain text format
 - `sitemap-local.txt` lists the same 44 local-search-priority URLs in plain text format
-- `sitemap-articles.txt` lists the same 30 priority Article/guide URLs in plain text format
+- `sitemap-articles.txt` lists the same 32 Article/guide URLs in plain text format
 - `sitemap-cn.txt` lists the same 11 Chinese-language URLs in plain text format
 - `feed.xml` and `atom.xml` each expose 32 Article entries with updates through 2026-09-04
 - `search-index.json` with 66 pages, includes title/description/h1/lang/category/headings
@@ -145,7 +145,7 @@ Research sources used for this matrix:
 - Endpoints: `www.bing.com/indexnow`, `api.indexnow.org/IndexNow`, `yandex.com/indexnow`, `search.seznam.cz/indexnow`, `searchadvisor.naver.com/indexnow`
 - Validation: rejects empty, duplicate, over-limit, and off-domain sitemap URL lists before submission
 - Evidence: each workflow run saves `indexnow-report.json` as a 30-day GitHub Actions artifact
-- Latest verified automated run: the IndexNow readiness audit now validates the 61-URL sitemap; each workflow run preserves endpoint-level evidence in `indexnow-report.json`.
+- Latest verified automated run: the IndexNow readiness audit now validates the 66-URL sitemap; each workflow run preserves endpoint-level evidence in `indexnow-report.json`.
 
 ### Bing Readiness Audit
 - Script: `node scripts/audit-bing-readiness.mjs`
@@ -156,7 +156,7 @@ Research sources used for this matrix:
 - Latest sitemap validation: 2026-09-04; 66 URLs, 719 hreflang alternate links, and 110 image entries are present in sitemap.xml.
 - Latest global-focused sitemap validation: sitemap-global.xml and sitemap-global.txt contain 45 non-Chinese global and localized URLs and are advertised from robots.txt and sitemap-index.xml.
 - Latest local-search-focused sitemap validation: 2026-09-04; sitemap-local.xml and sitemap-local.txt contain 44 regional, localized, market-hub, and core product URLs and are advertised from robots.txt and sitemap-index.xml.
-- Latest article sitemap validation: 2026-09-04; sitemap-articles.xml and sitemap-articles.txt contain 30 priority Article/guide URLs and are advertised from robots.txt and sitemap-index.xml.
+- Latest article sitemap validation: 2026-09-04; sitemap-articles.xml and sitemap-articles.txt contain 32 Article/guide URLs and are advertised from robots.txt and sitemap-index.xml.
 - Latest China-focused sitemap validation: sitemap-cn.xml contains 11 Chinese-language URLs and is advertised from robots.txt and sitemap-index.xml.
 - Latest China-focused text sitemap validation: sitemap-cn.txt contains the same 11 Chinese-language URLs and is advertised from robots.txt.
 - Latest Mainland China market pass: `zh-cn.html` grew from 1,984 to 3,550 visible characters, maps seven user tasks to focused Chinese guides, exposes six visible and structured FAQ answers, and links all six products to their verified China App Store or Mac App Store listings. Baidu ordinary/quick inclusion, 360, and Sogou submission guidance was rechecked against the public platform pages on 2026-08-30.
