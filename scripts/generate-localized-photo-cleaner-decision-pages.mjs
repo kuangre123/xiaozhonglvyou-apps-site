@@ -4,7 +4,8 @@ import { priorityStores } from "./japan-germany-turkey-markets.mjs";
 
 const siteDir = path.resolve(import.meta.dirname, "..");
 const origin = "https://www.xiaozhonglvyou.com";
-const updatedDate = "2026-09-04";
+const publishedDate = "2026-09-04";
+const updatedDate = "2026-09-05";
 const appId = "6768019606";
 const analyticsVersion = "0bee63cd1708";
 
@@ -103,14 +104,18 @@ const pages = [
         ]
       }
     ],
-    localSearch: {
-      kicker: "検索で確認",
-      title: "日本ではGoogle、Yahoo! JAPAN、Bingで同じ条件を確認します。",
-      lead: "検索結果の記事だけで判断せず、検索語を変えて比較し、最後は日本のApp Storeで価格、対応OS、言語、プライバシー表示を確認します。",
+    applePhotos: {
+      kicker: "標準機能との比較",
+      title: "重複写真だけなら、まずiPhone標準の写真アプリを確認。",
+      lead: "重複項目の整理は、追加のクリーナーを入れなくても始められます。Appleの日本語ガイドで標準機能を確認し、それでも残る整理作業に合わせて専用アプリを選びます。",
       items: [
-        ["検索語を分ける", "「iPhone 写真整理アプリ おすすめ」「iPhone 写真クリーナー 比較」「重複写真 削除 アプリ」を分けて検索し、同じアプリがどの意図で説明されているかを見ます。"],
-        ["Yahoo! JAPANとBingも確認", "日本ではGoogleだけでなくYahoo! JAPANやBing経由で比較記事を見る利用者もいます。古い価格や古い対応OSの説明に注意します。"],
-        ["横断比較", "英語の比較ページも開き、重複、類似写真、スクリーンショット、大容量メディア、削除前確認の違いを確認します。"]
+        ["写真アプリで重複を整理", "Appleの現行ガイドでは、写真アプリの「コレクション」から「ユーティリティ」、「重複項目」と進みます。表示された組を確認してから結合します。画面の配置はiOSのバージョンで異なることがあります。"],
+        ["重複項目が見つからない場合", "まず写真の解析が終わっているかを考えます。Appleによると、検出にはiPhoneをロックして電源につなぐ必要があり、写真の量によって数日かかる場合があります。表示されないだけで、すぐに追加アプリが必要とは限りません。"],
+        ["専用アプリを検討する場面", "旅行の連写から残す一枚を選ぶ、書類とスクリーンショットを分ける、大きな動画を見直す、といった作業が残る場合です。AI Cleaningを含む候補の分類、プレビュー、料金を比べ、削除する写真は自分で確認します。"]
+      ],
+      sources: [
+        ["Apple：重複する写真やビデオの結合", "https://support.apple.com/ja-jp/guide/iphone/iph1978d9c23/ios"],
+        ["Apple：重複項目が見つからない場合", "https://support.apple.com/ja-jp/102260"]
       ],
       comparisonLabel: "英語の写真クリーナー比較を見る"
     },
@@ -124,7 +129,7 @@ const pages = [
       ["日本語UIかどうかはどこで確認しますか？", "日本のApp Storeの言語欄、スクリーンショット、アプリ内表示をインストール前に確認します。ページ上の説明言語とアプリ画面の言語は別です。"],
       ["削除しても容量が増えないことはありますか？", "あります。iOSは削除した写真を「最近削除した項目」に一定期間保存します。必要な写真がないことを確認してから、そのアルバムも管理します。"]
     ],
-    ui: { updated: "2026年9月4日更新", storeLink: "日本のApp Storeを開く", faqKicker: "FAQ", author: "著者", privacy: "プライバシー", contact: "お問い合わせ" }
+    ui: { updated: "2026年9月5日更新", storeLink: "日本のApp Storeを開く", faqKicker: "FAQ", author: "著者", privacy: "プライバシー", contact: "お問い合わせ" }
   },
   {
     file: "de-de-beste-iphone-foto-cleaner.html",
@@ -182,14 +187,18 @@ const pages = [
         ]
       }
     ],
-    localSearch: {
-      kicker: "Suche prüfen",
-      title: "In Deutschland lohnt sich der Vergleich über Google, Bing, Ecosia und DuckDuckGo.",
-      lead: "Suchergebnisse können unterschiedliche Ratgeber, alte App-Versionen oder regionale Store-Angaben zeigen. Entscheidend bleibt der aktuelle deutsche App-Store-Eintrag.",
+    applePhotos: {
+      kicker: "Apple Fotos oder zusätzliche App",
+      title: "Für erkannte Duplikate zuerst die integrierte Fotos-App prüfen.",
+      lead: "Zum Zusammenführen erkannter Duplikate brauchen Sie keine zusätzliche Cleaner-App. Prüfen Sie zuerst Apples Funktion und entscheiden Sie dann, welche Aufgaben in Ihrer Mediathek noch offen sind.",
       items: [
-        ["Suchintention trennen", "Suchen Sie getrennt nach „beste iPhone Foto Cleaner“, „iPhone Foto Cleaner Vergleich“ und „doppelte Fotos App“, weil diese Anfragen verschiedene Erwartungen haben."],
-        ["Mehrere Suchmaschinen prüfen", "Google dominiert, aber Bing, Ecosia und DuckDuckGo bringen eigene Ergebnislisten. Achten Sie auf Datum, Store-Land und Datenschutzangaben."],
-        ["Vergleich öffnen", "Nutzen Sie zusätzlich die englische Vergleichsseite, wenn Sie Funktionen wie Duplikate, ähnliche Bilder, Screenshots und große Medien nebeneinander bewerten möchten."]
+        ["Duplikate in Apple Fotos", "Apples aktuelles Handbuch führt über Fotos, Sammlungen und Sonstige zu Duplikate. Prüfen Sie die angezeigten Gruppen, bevor Sie sie zusammenführen. Je nach iOS-Version kann die Anordnung anders aussehen."],
+        ["Wenn Duplikate fehlen", "Lassen Sie das iPhone gesperrt und am Strom, damit die Erkennung laufen kann. Apple nennt je nach Mediathek und Hintergrundaufgaben eine Wartezeit von bis zu mehreren Tagen. Eine fehlende Sammlung bedeutet daher nicht automatisch, dass Sie einen Cleaner benötigen."],
+        ["Wann eine zusätzliche App hilft", "Wenn Sie aus einer Fotoserie auswählen, Dokumente von Screenshots trennen oder große Videos durchsehen möchten, vergleichen Sie die Gruppierung und Vorschau zusätzlicher Apps. Prüfen Sie bei AI Cleaning und anderen Kandidaten auch Kosten, Datenschutz und die Kontrolle vor dem Löschen."]
+      ],
+      sources: [
+        ["Apple: Doppelte Fotos und Videos zusammenführen", "https://support.apple.com/de-de/guide/iphone/iph1978d9c23/ios"],
+        ["Apple: Wenn das Album Duplikate fehlt", "https://support.apple.com/de-de/102260"]
       ],
       comparisonLabel: "Englischen Foto-Cleaner-Vergleich öffnen"
     },
@@ -203,7 +212,7 @@ const pages = [
       ["Wo prüfe ich deutsche Preise und Kompatibilität?", "Im deutschen App Store. Dort stehen die aktuellen Preise, In-App-Käufe, iOS-Anforderungen, Spracheinträge und Datenschutzinformationen."],
       ["Ist ein Foto-Cleaner ein Systemreiniger?", "Nein. AI Cleaning ist für die Fotomediathek gedacht. Geschützte iOS-Systemdaten, RAM oder allgemeine Cache-Bereinigung sind nicht der versprochene Anwendungsbereich."]
     ],
-    ui: { updated: "Aktualisiert am 4. September 2026", storeLink: "Deutschen App Store öffnen", faqKicker: "FAQ", author: "Autor", privacy: "Datenschutz", contact: "Kontakt" }
+    ui: { updated: "Aktualisiert am 5. September 2026", storeLink: "Deutschen App Store öffnen", faqKicker: "FAQ", author: "Autor", privacy: "Datenschutz", contact: "Kontakt" }
   },
   {
     file: "tr-tr-en-iyi-iphone-fotograf-temizleme.html",
@@ -261,14 +270,18 @@ const pages = [
         ]
       }
     ],
-    localSearch: {
-      kicker: "Aramada kontrol",
-      title: "Türkiye'de Google ve Yandex sonuçlarını ayrı ayrı kontrol etmek yararlıdır.",
-      lead: "Arama sonuçları eski fiyat, eski uygulama sürümü veya farklı ülke mağazası gösterebilir. Son karar için Türkiye App Store kaydı esas alınmalıdır.",
+    applePhotos: {
+      kicker: "Fotoğraflar mı, ek uygulama mı?",
+      title: "Saptanan yinelenenler için önce iPhone'un Fotoğraflar uygulamasına bakın.",
+      lead: "Saptanan yinelenenleri birleştirmek için ek bir temizleme uygulaması gerekmez. Önce Apple'ın sunduğu özelliği deneyin; ardından arşivde kalan düzenleme ihtiyacınıza göre seçim yapın.",
       items: [
-        ["Niyete göre arayın", "„en iyi iPhone fotoğraf temizleme“, „iPhone fotoğraf temizleme uygulaması“ ve „yinelenen fotoğrafları silme“ aramaları aynı ihtiyacı anlatmaz."],
-        ["Google ve Yandex'i karşılaştırın", "Türkiye'de Google ana giriş olsa da Yandex de önemli bir keşif yoludur. Sonuçlarda tarih, mağaza ülkesi ve gizlilik bilgisini kontrol edin."],
-        ["Karşılaştırma sayfasına bakın", "İngilizce karşılaştırma sayfası; yinelenenler, benzer kareler, ekran görüntüleri ve büyük medya gibi görevleri yan yana değerlendirmenize yardımcı olur."]
+        ["Fotoğraflar'da yinelenenleri birleştirme", "Apple'ın güncel kılavuzunda Fotoğraflar içinden Koleksiyonlar, Diğer ve Yinelenenler yolunu izlersiniz. Birleştirmeden önce gösterilen grubu kontrol edin. Menülerin yeri iOS sürümüne göre değişebilir."],
+        ["Yinelenenler görünmüyorsa", "Saptama işlemi için iPhone'u kilitli ve güç kaynağına bağlı bırakın. Apple, arşiv boyutuna ve arka plan işlemlerine göre taramanın birkaç gün sürebileceğini belirtiyor. Albümün görünmemesi tek başına ek bir uygulama gerektiği anlamına gelmez."],
+        ["Ek uygulama ne zaman düşünülebilir?", "Seri çekimlerden bir kare seçmek, belgeleri ekran görüntülerinden ayırmak veya büyük videoları incelemek istiyorsanız uygulamaların gruplama ve önizleme özelliklerini karşılaştırın. AI Cleaning ve diğer seçeneklerde ücretleri, gizliliği ve silme kontrolünü de değerlendirin."]
+      ],
+      sources: [
+        ["Apple: Yinelenen fotoğrafları ve videoları birleştirme", "https://support.apple.com/tr-tr/guide/iphone/iph1978d9c23/ios"],
+        ["Apple: Yinelenenler albümünü bulamıyorsanız", "https://support.apple.com/tr-tr/102260"]
       ],
       comparisonLabel: "İngilizce fotoğraf temizleme karşılaştırmasını aç"
     },
@@ -282,7 +295,7 @@ const pages = [
       ["Türkçe arayüzü nereden doğrularım?", "Türkiye App Store'daki dil listesi, ekran görüntüleri ve uygulama içi deneyim kontrol edilmelidir. Türkçe sayfa açıklaması, her zaman uygulama arayüzünün Türkçe olduğu anlamına gelmez."],
       ["Fotoğrafları sildikten sonra alan neden hemen açılmaz?", "iOS silinen fotoğrafları bir süre Son Silinenler albümünde tutar. Önemli içerik olmadığını doğruladıktan sonra bu albüm de yönetilmelidir."]
     ],
-    ui: { updated: "4 Eylül 2026 tarihinde güncellendi", storeLink: "Türkiye App Store'u aç", faqKicker: "FAQ", author: "Yazar", privacy: "Gizlilik", contact: "İletişim" }
+    ui: { updated: "5 Eylül 2026 tarihinde güncellendi", storeLink: "Türkiye App Store'u aç", faqKicker: "FAQ", author: "Yazar", privacy: "Gizlilik", contact: "İletişim" }
   }
 ];
 
@@ -329,17 +342,6 @@ function appEntity(page) {
   };
 }
 
-function textLength(page) {
-  return [
-    page.lead,
-    ...page.sections.flatMap((section) => [section.title, section.lead, ...section.items.flat()]),
-    page.storeTitle,
-    page.storeLead,
-    page.faqTitle,
-    ...page.faq.flat()
-  ].join(" ").length;
-}
-
 function listMarkup(items) {
   return items.map(([title, text]) => `<div><strong>${escapeHtml(title)}</strong><p>${escapeHtml(text)}</p></div>`).join("");
 }
@@ -367,10 +369,10 @@ function render(page) {
     description: page.description,
     image: `${origin}/assets/og-ai-photo-cleaner-iphone.jpg`,
     mainEntityOfPage: url,
-    wordCount: Math.max(960, textLength(page)),
+    citation: page.applePhotos.sources.map(([, url]) => url),
     articleSection: "Localized Decision Guides",
     inLanguage: page.lang,
-    datePublished: updatedDate,
+    datePublished: publishedDate,
     dateModified: updatedDate,
     author: developer,
     about: [appEntity(page)],
@@ -408,7 +410,7 @@ function render(page) {
     `<meta name="apple-itunes-app" content="app-id=${appId}, app-argument=${url}">`,
     `<link rel="canonical" href="${url}">`, alternateMarkup(),
     `<link rel="alternate" type="application/rss+xml" title="CrazyAIAgent RSS" href="${origin}/feed.xml"><link rel="alternate" type="application/atom+xml" title="CrazyAIAgent Atom" href="${origin}/atom.xml">`,
-    `<meta property="og:type" content="article"><meta property="og:locale" content="${page.locale}"><meta property="article:published_time" content="${updatedDate}"><meta property="article:modified_time" content="${updatedDate}">`,
+    `<meta property="og:type" content="article"><meta property="og:locale" content="${page.locale}"><meta property="article:published_time" content="${publishedDate}"><meta property="article:modified_time" content="${updatedDate}">`,
     `<meta property="og:url" content="${url}"><meta property="og:title" content="${escapeHtml(page.ogTitle)}"><meta property="og:site_name" content="CrazyAIAgent"><meta property="og:description" content="${escapeHtml(page.ogDescription)}">`,
     `<meta property="og:image" content="${origin}/assets/og-ai-photo-cleaner-iphone.jpg"><meta property="og:image:secure_url" content="${origin}/assets/og-ai-photo-cleaner-iphone.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="${escapeHtml(page.imageAlt)}">`,
     `<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="${escapeHtml(page.ogTitle)}"><meta name="twitter:description" content="${escapeHtml(page.ogDescription)}"><meta name="twitter:image" content="${origin}/assets/og-ai-photo-cleaner-iphone.jpg">`,
@@ -418,12 +420,13 @@ function render(page) {
   const header = `<body class="localized-photo-cleaner-page"><header class="site-header" data-elevate><nav class="nav" aria-label="Primary"><a class="brand" href="${page.marketFile}" aria-label="CrazyAIAgent"><span class="brand-mark" aria-hidden="true">CA</span><span>CrazyAIAgent</span></a><div class="nav-links"><a href="${page.marketFile}">${escapeHtml(page.countryName)}</a><a href="guides.html">${escapeHtml(page.navGuide)}</a><a href="directory.html">${escapeHtml(page.navDirectory)}</a></div>${storeLink(page, "App Store", "nav-cta")}</nav></header>`;
   const hero = `<main class="page-main"><section class="page-hero"><div class="page-hero-copy"><nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="${page.marketFile}">${escapeHtml(page.countryName)}</a></li><li aria-current="page">${escapeHtml(page.breadcrumb)}</li></ol></nav><p class="eyebrow">${escapeHtml(page.eyebrow)}</p><h1>${escapeHtml(page.h1)}</h1><p>${escapeHtml(page.lead)}</p><p class="article-meta"><time datetime="${updatedDate}">${escapeHtml(page.ui.updated)}</time> · ${escapeHtml(page.ui.author)} <a href="about.html" rel="author">Bo Chen</a></p><div class="hero-actions">${storeLink(page, page.primary, "button button-primary")}<a class="button button-secondary" href="${page.guideFile}">${escapeHtml(page.secondary)}</a></div></div><div class="page-hero-media"><picture><source srcset="assets/ai-cleaning-screen.webp" type="image/webp"><img src="assets/ai-cleaning-screen.png" width="331" height="720" decoding="async" fetchpriority="high" alt="${escapeHtml(page.imageAlt)}"></picture></div></section>`;
   const sections = page.sections.map((section, index) => `<section class="section content-section${index % 2 === 1 ? " alt-section" : ""}"><div class="section-inner content-grid"><div><p class="section-kicker">${escapeHtml(section.kicker)}</p><h2>${escapeHtml(section.title)}</h2><p>${escapeHtml(section.lead)}</p></div><div class="content-list">${listMarkup(section.items)}</div></div></section>`).join("");
-  const localSearchSection = `<section class="section content-section alt-section"><div class="section-inner content-grid"><div><p class="section-kicker">${escapeHtml(page.localSearch.kicker)}</p><h2>${escapeHtml(page.localSearch.title)}</h2><p>${escapeHtml(page.localSearch.lead)}</p></div><div class="content-list">${listMarkup(page.localSearch.items)}<div><a class="store-link store-link-secondary" href="iphone-photo-cleaner-comparison.html">${escapeHtml(page.localSearch.comparisonLabel)}</a></div></div></div></section>`;
+  const appleSources = page.applePhotos.sources.map(([label, href]) => `<p><a href="${href}">${escapeHtml(label)}</a></p>`).join("");
+  const applePhotosSection = `<section class="section content-section alt-section" data-apple-photos-comparison><div class="section-inner content-grid"><div><p class="section-kicker">${escapeHtml(page.applePhotos.kicker)}</p><h2>${escapeHtml(page.applePhotos.title)}</h2><p>${escapeHtml(page.applePhotos.lead)}</p>${appleSources}</div><div class="content-list">${listMarkup(page.applePhotos.items)}<div><a class="store-link store-link-secondary" href="iphone-photo-cleaner-comparison.html">${escapeHtml(page.applePhotos.comparisonLabel)}</a></div></div></div></section>`;
   const storeSection = `<section class="section content-section alt-section"><div class="section-inner content-grid"><div><p class="section-kicker">App Store</p><h2>${escapeHtml(page.storeTitle)}</h2><p>${escapeHtml(page.storeLead)}</p></div><div class="content-list"><div><strong>AI Cleaning - Photo Cleaner</strong><p>${escapeHtml(page.description)}</p></div><div>${storeLink(page, page.ui.storeLink, "store-link")}</div></div></div></section>`;
   const faqSection = `<section class="section faq"><div class="section-inner"><div class="section-heading"><p class="section-kicker">${escapeHtml(page.ui.faqKicker)}</p><h2>${escapeHtml(page.faqTitle)}</h2></div><div class="faq-list">${page.faq.map(([question, answer], index) => `<details${index === 0 ? " open" : ""}><summary>${escapeHtml(question)}</summary><p>${escapeHtml(answer)}</p></details>`).join("")}</div></div></section>`;
   const relatedSection = `<section class="section content-section alt-section"><div class="section-inner"><div class="section-heading"><div><p class="section-kicker">Related</p><h2>${escapeHtml(page.guideLabel)}</h2></div></div><p>${relatedMarkup(page)}</p></div></section></main>`;
   const footer = `<footer class="footer"><div class="footer-inner"><p>© 2026 CrazyAIAgent.</p><div><a href="${page.marketFile}">${escapeHtml(page.countryName)}</a> <a href="guides.html">${escapeHtml(page.navGuide)}</a> <a href="directory.html">${escapeHtml(page.navDirectory)}</a> <a href="search.html">Search</a> <a href="privacy.html">${escapeHtml(page.ui.privacy)}</a> <a href="mailto:cb123428316@gmail.com">${escapeHtml(page.ui.contact)}</a></div></div></footer><script src="script.js?v=fda667de6672" defer></script></body></html>\n`;
-  return `${head}${header}${hero}${sections}${localSearchSection}${storeSection}${faqSection}${relatedSection}${footer}`;
+  return `${head}${header}${hero}${sections}${applePhotosSection}${storeSection}${faqSection}${relatedSection}${footer}`;
 }
 
 async function syncEnglishDecisionAlternates() {
@@ -434,8 +437,10 @@ async function syncEnglishDecisionAlternates() {
     /(<link rel="canonical" href="https:\/\/www\.xiaozhonglvyou\.com\/best-iphone-photo-cleaner-app\.html">)/,
     `$1${alternateMarkup()}`
   );
-  if (!html.includes("data-localized-decision-guides")) {
-    const localizedSection = `<section class="section content-section alt-section" data-localized-decision-guides><div class="section-inner"><div class="section-heading"><div><p class="section-kicker">Localized decision guides</p><h2>Compare iPhone photo cleaner choices in Japanese, German, or Turkish.</h2></div><p>These pages localize the same decision-stage intent for markets where Yahoo! JAPAN, Bing, Ecosia, DuckDuckGo, Google, and Yandex discovery paths matter.</p></div><p><a href="ja-jp-best-iphone-photo-cleaner.html">日本語 iPhone写真整理アプリおすすめ</a> <a href="de-de-beste-iphone-foto-cleaner.html">Beste iPhone Foto Cleaner</a> <a href="tr-tr-en-iyi-iphone-fotograf-temizleme.html">En iyi iPhone fotoğraf temizleme</a></p></div></section>`;
+  const localizedSection = `<section class="section content-section alt-section" data-localized-decision-guides><div class="section-inner"><div class="section-heading"><div><p class="section-kicker">Localized decision guides</p><h2>Compare iPhone photo cleaner choices in Japanese, German, or Turkish.</h2></div><p>Read how Apple Photos and dedicated cleaners handle your tasks, then check prices, language support, and privacy details in your local App Store.</p></div><p><a href="ja-jp-best-iphone-photo-cleaner.html">日本語 iPhone写真整理アプリおすすめ</a> <a href="de-de-beste-iphone-foto-cleaner.html">Beste iPhone Foto Cleaner</a> <a href="tr-tr-en-iyi-iphone-fotograf-temizleme.html">En iyi iPhone fotoğraf temizleme</a></p></div></section>`;
+  if (html.includes("data-localized-decision-guides")) {
+    html = html.replace(/<section\b[^>]*data-localized-decision-guides[^>]*>[\s\S]*?<\/section>/, localizedSection);
+  } else {
     html = html.replace(/(<section class="section related-articles")/, `${localizedSection}$1`);
   }
   if (html !== original) await writeFile(filePath, html, "utf8");

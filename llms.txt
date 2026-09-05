@@ -36,7 +36,7 @@ Primary apps:
 - Anti-spy screen: version 1.5.1 for macOS 13.0 or later, with local face detection, selected app hiding, adjustable detection parameters, Privacy Block, Presenting Mode, and Stand-Up Coach. The US storefront listed a $2.99 one-time purchase on 2026-08-03. Mac App Store: https://apps.apple.com/us/app/anti-spy-screen/id6761301764?mt=12&uo=4
 - Anti-spy screen Lite: version 1.4.1 for macOS 13.0 or later, with local face detection, selected app hiding, Privacy Block, Presenting Mode, Stand-Up Coach, and hidden-app reminders. The US storefront listed it as free on 2026-08-03. Mac App Store: https://apps.apple.com/us/app/anti-spy-screen-lite/id6766485393?mt=12&uo=4
 
-Last updated: 2026-09-04
+Last updated: 2026-09-05
 
 Important search and answer intents:
 

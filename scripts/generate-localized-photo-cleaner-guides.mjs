@@ -306,7 +306,6 @@ function render(page) {
     description: page.description,
     image: `${origin}/assets/ai-cleaning-screen.png`,
     mainEntityOfPage: url,
-    wordCount: page.lead.length + page.quickLead.length + page.quickItems.flat().join("").length + page.checks.flat().join("").length + page.faq.flat().join("").length,
     articleSection: "Regional Guides",
     inLanguage: page.lang,
     datePublished: updatedDate,

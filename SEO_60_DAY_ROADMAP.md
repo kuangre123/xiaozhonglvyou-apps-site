@@ -108,6 +108,16 @@ Primary path: Google. Secondary path: Yandex Türkiye. StatCounter reported Augu
 
 ## Current Release Checklist
 
+### Content Quality Update: 2026-09-05
+
+- Japanese, German, and Turkish decision guides now compare built-in Apple Photos with additional cleaner apps and cite Apple Support in each language.
+- The guides explain where to find duplicates and why detection may take time; an absent duplicates collection is not treated as a reason to install another app immediately.
+- Localized entries in `guides.html` have separate descriptions and language attributes. Duplicate links embedded in the French entry are removed.
+- Localized generators omit the inaccurate optional `wordCount` field instead of using character counts. The decision guides preserve their original publication date when updating content.
+- The remaining measurement and webmaster-account actions below are still pending. Content improvements alone do not establish indexing or clicks.
+
+### Release Status
+
 - [x] Japanese, German, and Turkish market hubs exist.
 - [x] Japanese and Turkish dedicated photo-cleaner guides exist; German guide is present.
 - [x] Localized guides have local App Store links and tracked conversion events.
