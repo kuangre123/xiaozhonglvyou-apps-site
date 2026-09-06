@@ -118,6 +118,9 @@ Primary path: Google. Secondary path: Yandex Türkiye. StatCounter reported Augu
 
 ### Release Status
 
+- 2026-09-06: automatic IndexNow submission now compares against the last successful run, verifies live content first, and sends one shared notification batch. This addresses duplicate submissions and notifications racing the deployment; it does not establish Google index coverage.
+- 2026-09-06 measurement access check: the available browser reached the public Search Console introduction page, with no signed-in property report. Chrome inspection was unavailable due to a screen-capture error. Country/query impressions, clicks, CTR, and exclusion reasons remain unverified until a signed-in report or export is available.
+
 - [x] Japanese, German, and Turkish market hubs exist.
 - [x] Japanese and Turkish dedicated photo-cleaner guides exist; German guide is present.
 - [x] Localized guides have local App Store links and tracked conversion events.

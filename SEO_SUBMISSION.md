@@ -141,11 +141,13 @@ Research sources used for this matrix:
 - Key file: https://www.xiaozhonglvyou.com/a6013cad6cead8e0.txt (verified HTTP 200)
 - Automatic workflow: `.github/workflows/indexnow.yml`
 - Trigger: every `main` push that changes public HTML or discovery files, plus manual `workflow_dispatch`
-- Submit command: `node scripts/submit-indexnow.mjs --submit --output-json-path indexnow-report.json`
-- Endpoints: `www.bing.com/indexnow`, `api.indexnow.org/IndexNow`, `yandex.com/indexnow`, `search.seznam.cz/indexnow`, `searchadvisor.naver.com/indexnow`
-- Validation: rejects empty, duplicate, over-limit, and off-domain sitemap URL lists before submission
-- Evidence: each workflow run saves `indexnow-report.json` as a 30-day GitHub Actions artifact
-- Latest verified automated run: the IndexNow readiness audit now validates the 66-URL sitemap; each workflow run preserves endpoint-level evidence in `indexnow-report.json`.
+- Full manual submit command (run in the site repository): `node scripts/submit-indexnow.mjs --submit --verify-live --output-json-path indexnow-report.json`
+- Automatic runs use `--since-last-success --verify-live`: compare with the latest successful ancestor run, include added/changed/removed HTML and sitemap membership changes, and skip without network submission when no URLs changed. Failed or superseded runs do not advance this baseline.
+- Before submission, current pages must return HTTP 200 with content matching the checkout. Removed files must be absent from the current sitemap and return HTTP 404 or 410. A bounded deployment wait fails with a report if the live release is stale.
+- Default endpoint: `api.indexnow.org/IndexNow`. Participating engines share notifications, so the same batch is no longer sent five times. `--endpoint` remains available for a targeted override such as `www.bing.com/indexnow`, `yandex.com/indexnow`, `search.seznam.cz/indexnow`, or `searchadvisor.naver.com/indexnow`. Protocol reference: https://www.indexnow.org/documentation
+- Validation: rejects empty sitemaps, duplicate, over-limit, and off-domain URL lists; an empty change set is a successful no-op. Local tests cover changes across multiple commits, renames, deletions, newly listed pages, stale deployment, key failures, and rate limiting.
+- Evidence: each workflow run saves `indexnow-report.json` as a 30-day GitHub Actions artifact, including the baseline commit, exact URL list, deployment checks, and endpoint response. `received` and `received_key_validation_pending` distinguish HTTP 200 from HTTP 202; neither proves indexing.
+- Before the incremental change, run `33953214997` submitted all 66 URLs successfully on 2026-09-05. Future runs report the actual changed-URL count instead of assuming the full sitemap was submitted.
 
 ### Bing Readiness Audit
 - Script: `node scripts/audit-bing-readiness.mjs`
