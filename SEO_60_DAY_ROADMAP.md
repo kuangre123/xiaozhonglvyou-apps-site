@@ -1,6 +1,14 @@
 # SEO/GEO 60-Day Roadmap
 
-This roadmap turns the practical lessons from the supplied SEO book into an execution sequence for CrazyAIAgent. The book is used as strategy reference only; it is not a source of code or deployment instructions.
+This is a provisional execution roadmap for CrazyAIAgent, informed by the previously extracted book outline and selected notes alongside general SEO practice. It is not a chapter-by-chapter book summary. The book is used as strategy reference only; it is not a source of code or deployment instructions.
+
+## Book Review Status
+
+- The earlier session recorded an outline and selected takeaways; full chapter-by-chapter reading has not been completed.
+- On 2026-09-07, the supplied WeChat temporary PDF path no longer resolved to a file. Page-level attribution cannot currently be verified.
+- Resume the book review when the PDF is available, preserving a private working copy outside the published site.
+- For each reviewed chapter, record page references, takeaways, corresponding site issues, implementation actions, and verification results. Keep unread chapters explicitly pending.
+- The implementation checklist below describes site work, not proof that the book has been fully read or that search traffic has increased.
 
 ## Operating Rules
 
@@ -122,6 +130,7 @@ Primary path: Google. Secondary path: Yandex Türkiye. StatCounter reported Augu
 - 2026-09-06 measurement access check: the available browser reached the public Search Console introduction page, with no signed-in property report. Chrome inspection was unavailable due to a screen-capture error. Country/query impressions, clicks, CTR, and exclusion reasons remain unverified until a signed-in report or export is available.
 - 2026-09-07 public crawl check: representative homepage, Japan, Germany, and Türkiye photo-cleaner URLs return `200`, self-canonicalize, and allow indexing. The bare domain, HTTP variants, and legacy GitHub Pages host redirect to `https://www.xiaozhonglvyou.com/`. This reduces the likelihood that the current "no clicks" issue is caused by a broad redirect/canonical failure, but it does not prove Google indexing or clicks.
 - 2026-09-07 Search Console message review: historical account messages prove Google had started collecting impressions on 2026-06-13, a redirect error was validated as fixed on 2026-07-03, and some `Crawled - currently not indexed` URLs still existed on 2026-07-18. Current affected URLs still require a signed-in Search Console export or URL Inspection results.
+- 2026-09-07 localized discovery pass: the Japanese, German, and Turkish photo-cleaner workflow pages now have visible body links from both the core English photo-cleaner page and the regional hub. The regional ItemList includes all three workflows as separate URLs. This strengthens crawler and reader discovery without creating additional near-duplicate pages.
 
 - [x] Japanese, German, and Turkish market hubs exist.
 - [x] Japanese and Turkish dedicated photo-cleaner guides exist; German guide is present.
