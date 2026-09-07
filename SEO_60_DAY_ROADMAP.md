@@ -14,7 +14,7 @@ This roadmap turns the practical lessons from the supplied SEO book into an exec
 
 ## Market Priorities
 
-Research snapshot: 2026-09-02, using StatCounter August 2026 country-level search share as a directional input.
+Research snapshot: 2026-09-07, using StatCounter August 2026 country-level search share as a directional input.
 
 ### Japan
 
@@ -120,6 +120,8 @@ Primary path: Google. Secondary path: Yandex Türkiye. StatCounter reported Augu
 
 - 2026-09-06: automatic IndexNow submission now compares against the last successful run, verifies live content first, and sends one shared notification batch. This addresses duplicate submissions and notifications racing the deployment; it does not establish Google index coverage.
 - 2026-09-06 measurement access check: the available browser reached the public Search Console introduction page, with no signed-in property report. Chrome inspection was unavailable due to a screen-capture error. Country/query impressions, clicks, CTR, and exclusion reasons remain unverified until a signed-in report or export is available.
+- 2026-09-07 public crawl check: representative homepage, Japan, Germany, and Türkiye photo-cleaner URLs return `200`, self-canonicalize, and allow indexing. The bare domain, HTTP variants, and legacy GitHub Pages host redirect to `https://www.xiaozhonglvyou.com/`. This reduces the likelihood that the current "no clicks" issue is caused by a broad redirect/canonical failure, but it does not prove Google indexing or clicks.
+- 2026-09-07 Search Console message review: historical account messages prove Google had started collecting impressions on 2026-06-13, a redirect error was validated as fixed on 2026-07-03, and some `Crawled - currently not indexed` URLs still existed on 2026-07-18. Current affected URLs still require a signed-in Search Console export or URL Inspection results.
 
 - [x] Japanese, German, and Turkish market hubs exist.
 - [x] Japanese and Turkish dedicated photo-cleaner guides exist; German guide is present.
@@ -129,4 +131,5 @@ Primary path: Google. Secondary path: Yandex Türkiye. StatCounter reported Augu
 - [x] Robots policy covers the documented local search crawler families.
 - [ ] Submit or re-submit the sitemaps in each verified webmaster account.
 - [ ] Record a real GSC/GA4/App Store Connect baseline before judging clicks.
+- [ ] Export the current affected URL list for `Crawled - currently not indexed` and inspect the Japan/Germany/Türkiye target URLs one by one.
 - [ ] Reassess titles and descriptions after enough country-specific query data exists.

@@ -90,7 +90,7 @@ Search index: https://www.xiaozhonglvyou.com/search-index.json
 
 ### Local Search Engine Matrix
 
-Research date: 2026-09-02. Treat market-share figures as directional snapshots because national search panels and domestic query-share panels can diverge materially.
+Research date: 2026-09-07. Treat market-share figures as directional snapshots because national search panels and domestic query-share panels can diverge materially.
 
 | Market | Search engines that need explicit attention | Current site-side coverage | Manual platform action |
 | --- | --- | --- | --- |
@@ -177,6 +177,16 @@ Research sources used for this matrix:
 - `scripts/audit-backlink-readiness.mjs` verifies the site-side media destination, URL map, support/privacy anchors, and GitHub README links without falsely claiming that an external backlink already exists.
 - The public GitHub repository links the homepage and product pages. HappyRide currently links the generic domain homepage from Apple, GIFmaker links an older GitHub Pages site, and earlier product pages did not expose the canonical domain; product-specific App Store Connect URLs remain the P0 external action.
 
+## Current Crawl Diagnostics
+
+Checked on 2026-09-07:
+
+- `http://xiaozhonglvyou.com/`, `https://xiaozhonglvyou.com/`, and `http://www.xiaozhonglvyou.com/` each return one `301` hop to `https://www.xiaozhonglvyou.com/`.
+- `https://kuangre123.github.io/xiaozhonglvyou-apps-site/` returns one `301` hop to `https://www.xiaozhonglvyou.com/`, so the legacy GitHub Pages host is not serving a duplicate homepage.
+- `https://www.xiaozhonglvyou.com/`, `ja-jp-photo-cleaner.html`, `iphone-foto-cleaner-de.html`, and `tr-tr-photo-cleaner.html` return `200`, use self-referencing canonical URLs, and expose `robots` content of `index,follow,max-image-preview:large`.
+- `https://www.xiaozhonglvyou.com/sitemap.xml` and `https://www.xiaozhonglvyou.com/robots.txt` return `200`.
+- These checks do not prove Google indexing or clicks. They show that the representative current public URLs do not reproduce a redirect-chain, canonical, robots-meta, or sitemap availability failure.
+
 ## Public Indexing Baseline (2026-07-13)
 
 Public `site:` and exact-domain searches provide a directional baseline, not the authoritative index coverage available inside webmaster accounts.
@@ -196,10 +206,11 @@ The following actions require user accounts on each search engine's webmaster pl
 
 ### Google Search Console
 - URL: https://search.google.com/search-console
-- Add property: https://www.xiaozhonglvyou.com/
-- Verification: add `<meta name="google-site-verification" content="TOKEN" />` to index.html head
-- Submit sitemap: https://www.xiaozhonglvyou.com/sitemap-index.xml
-- Monitor: Coverage, Performance, Core Web Vitals, Mobile Usability
+- Property: account evidence shows the domain property can receive Search Console messages. Add a URL-prefix property only if the account does not already show the exact `https://www.xiaozhonglvyou.com/` view needed for URL Inspection and sitemap reporting.
+- Verification: prefer the existing domain-level DNS verification. Add `<meta name="google-site-verification" content="TOKEN" />` to `index.html` only for a new URL-prefix verification token.
+- Submit or confirm `https://www.xiaozhonglvyou.com/sitemap-index.xml`, then inspect `sitemap.xml`, `sitemap-local.xml`, and `sitemap-articles.xml` as separate submitted or discovered sitemap sources.
+- Monitor: Pages indexing, Sitemaps, Performance search results, Core Web Vitals, HTTPS, and URL Inspection for the Japan/Germany/Türkiye target URLs.
+- Export: last 28 days and last 3 months by page, query, country, device, clicks, impressions, CTR, and average position. Use this data before rewriting titles for "no clicks".
 
 ### Bing Webmaster Tools
 - URL: https://www.bing.com/webmasters
@@ -234,4 +245,4 @@ The following actions require user accounts on each search engine's webmaster pl
 ### Yandex Webmaster
 - URL: https://webmaster.yandex.com
 - Add site and verify
-- Submit sitemap
+- Submit `https://www.xiaozhonglvyou.com/sitemap-local.xml` and request recrawling for `tr-tr.html`, `tr-tr-photo-cleaner.html`, and `tr-tr-en-iyi-iphone-fotograf-temizleme.html`
