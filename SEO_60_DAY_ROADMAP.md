@@ -22,7 +22,7 @@ This is a provisional execution roadmap for CrazyAIAgent, informed by the previo
 
 ## Market Priorities
 
-Research snapshot: 2026-09-07, using StatCounter August 2026 country-level search share as a directional input.
+Research snapshot: 2026-09-21, using StatCounter August 2026 country-level search share as a directional input.
 
 ### Japan
 
@@ -131,6 +131,8 @@ Primary path: Google. Secondary path: Yandex Türkiye. StatCounter reported Augu
 - 2026-09-07 public crawl check: representative homepage, Japan, Germany, and Türkiye photo-cleaner URLs return `200`, self-canonicalize, and allow indexing. The bare domain, HTTP variants, and legacy GitHub Pages host redirect to `https://www.xiaozhonglvyou.com/`. This reduces the likelihood that the current "no clicks" issue is caused by a broad redirect/canonical failure, but it does not prove Google indexing or clicks.
 - 2026-09-07 Search Console message review: historical account messages prove Google had started collecting impressions on 2026-06-13, a redirect error was validated as fixed on 2026-07-03, and some `Crawled - currently not indexed` URLs still existed on 2026-07-18. Current affected URLs still require a signed-in Search Console export or URL Inspection results.
 - 2026-09-07 localized discovery pass: the Japanese, German, and Turkish photo-cleaner workflow pages now have visible body links from both the core English photo-cleaner page and the regional hub. The regional ItemList includes all three workflows as separate URLs. This strengthens crawler and reader discovery without creating additional near-duplicate pages.
+- 2026-09-21 deployment and discovery check: the live sitemap and search index both list 66 pages and include the Japanese, German, and Turkish photo-cleaner workflow and decision pages. The live `iphone-photo-cleaner.html` and `regions.html` pages expose the localized workflow section, and the latest local verification passes 114/114 tests. This proves crawlability/discovery readiness, not Google clicks or index inclusion.
+- 2026-09-21 market-priority check: StatCounter's August 2026 country pages still support Japan = Google/Bing/Yahoo! JAPAN, Germany = Google/Bing plus Ecosia/DuckDuckGo monitoring, and Türkiye = Google/Yandex as the main operational paths.
 
 - [x] Japanese, German, and Turkish market hubs exist.
 - [x] Japanese and Turkish dedicated photo-cleaner guides exist; German guide is present.

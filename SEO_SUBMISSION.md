@@ -35,7 +35,7 @@ Search index: https://www.xiaozhonglvyou.com/search-index.json
 - 66 indexable HTML pages, 161 JSON-LD blocks, 216 top-level structured-data nodes, 0 parse errors
 - `robots.txt` allows 40 named search crawler UAs including Googlebot, Bingbot, MicrosoftPreview, DuckDuckBot, Slurp, Yahoo! JAPAN Y!J/YJ crawlers, Yandex, Mail.RU_Bot, Yeti, Daum, SeznamBot, Qwantbot/Qwantify, Coc Coc, Baiduspider, Sogou, 360Spider, YisouSpider, Bytespider, PetalBot, and AI crawlers (GPTBot, ClaudeBot, PerplexityBot)
 - `robots.txt` advertises sitemap-index, sitemap.xml, sitemap-global.xml, sitemap-local.xml, sitemap-articles.xml, sitemap-cn.xml, sitemap.txt, sitemap-global.txt, sitemap-local.txt, sitemap-articles.txt, sitemap-cn.txt, feed.xml, atom.xml
-- `sitemap.xml` includes 66 URLs with per-page lastmod values through 2026-09-04, changefreq, priority, 719 hreflang alternate links, and 110 image entries
+- `sitemap.xml` includes 66 URLs with per-page lastmod values through 2026-09-21, changefreq, priority, 719 hreflang alternate links, and 110 image entries
 - `sitemap-index.xml` points to sitemap.xml, sitemap-global.xml, sitemap-local.xml, sitemap-articles.xml, sitemap-cn.xml, feed.xml, and atom.xml
 - `sitemap-global.xml` lists 45 global, English, and localized non-Chinese landing pages for Google, Bing, Yandex, DuckDuckGo, and other international search platform submissions
 - `sitemap-local.xml` lists 44 regional, localized, market-hub, and core product URLs for Yahoo! JAPAN, Naver, Daum, Yandex, Seznam, Qwant, Coc Coc, and other local search platform submissions
@@ -46,7 +46,7 @@ Search index: https://www.xiaozhonglvyou.com/search-index.json
 - `sitemap-local.txt` lists the same 44 local-search-priority URLs in plain text format
 - `sitemap-articles.txt` lists the same 32 Article/guide URLs in plain text format
 - `sitemap-cn.txt` lists the same 11 Chinese-language URLs in plain text format
-- `feed.xml` and `atom.xml` each expose 32 Article entries with updates through 2026-09-04
+- `feed.xml` and `atom.xml` each expose 32 Article entries with updates through 2026-09-21
 - `search-index.json` with 66 pages, includes title/description/h1/lang/category/headings
 - `directory.html` human-readable page directory with grouped links
 - `search.html` client-side site search with ?q= parameter support
@@ -90,7 +90,7 @@ Search index: https://www.xiaozhonglvyou.com/search-index.json
 
 ### Local Search Engine Matrix
 
-Research date: 2026-09-07. Treat market-share figures as directional snapshots because national search panels and domestic query-share panels can diverge materially.
+Research date: 2026-09-21. Treat market-share figures as directional snapshots because national search panels and domestic query-share panels can diverge materially. The current Japan, Germany, and Türkiye priorities were rechecked against StatCounter's August 2026 country pages on 2026-09-21.
 
 | Market | Search engines that need explicit attention | Current site-side coverage | Manual platform action |
 | --- | --- | --- | --- |
@@ -154,10 +154,11 @@ Research sources used for this matrix:
 - Checks: Bingbot/BingPreview allowed in robots.txt, sitemap advertised, IndexNow key valid, all indexable pages have meta keywords (Bing values these), meta description, canonical, and JSON-LD structured data
 - Status: PASS (61 Bing-audited pages, all with keywords/description/canonical/JSON-LD; the only excluded HTML file is the noindex 404 page)
 - Bing Webmaster Tools property is active: the 2026-07-17 account screenshot shows Recommendations for `xiaozhonglvyou.com`. No `msvalidate.01` tag is present, which is expected when the property is verified through another supported method such as DNS or Google Search Console import.
-- Latest deployment validation: 2026-09-04; full site verification passed with local search engine crawler coverage, market-specific content checks for China, Japan, Germany, Türkiye, South Korea, Russia, Czechia, Vietnam, Brazil, and Mexico, a submission matrix, and dedicated local-search and China-focused sitemaps.
-- Latest sitemap validation: 2026-09-04; 66 URLs, 719 hreflang alternate links, and 110 image entries are present in sitemap.xml.
+- Latest deployment validation: 2026-09-21; full site verification passed with 114 tests, including local search engine crawler coverage, market-specific content checks for China, Japan, Germany, Türkiye, South Korea, Russia, Czechia, Vietnam, Brazil, and Mexico, a submission matrix, and dedicated local-search and China-focused sitemaps.
+- Latest live deployment check: 2026-09-21; GitHub Actions run `34101916965` deployed commit `2f3fce2`, run `34101917697` completed URL submission for the same commit, and the live core product page plus regional hub expose the Japan, Germany, and Türkiye localized photo-cleaner workflow links. The repository is currently fast-forwarded to commit `e437ae1`, whose Pages and URL-submission runs also completed successfully on 2026-09-14.
+- Latest sitemap validation: 2026-09-21; 66 URLs, 719 hreflang alternate links, and 110 image entries are present in sitemap.xml.
 - Latest global-focused sitemap validation: sitemap-global.xml and sitemap-global.txt contain 45 non-Chinese global and localized URLs and are advertised from robots.txt and sitemap-index.xml.
-- Latest local-search-focused sitemap validation: 2026-09-04; sitemap-local.xml and sitemap-local.txt contain 44 regional, localized, market-hub, and core product URLs and are advertised from robots.txt and sitemap-index.xml.
+- Latest local-search-focused sitemap validation: 2026-09-21; sitemap-local.xml and sitemap-local.txt contain 44 regional, localized, market-hub, and core product URLs and are advertised from robots.txt and sitemap-index.xml.
 - Latest regional hub discovery pass: 2026-09-07; `regions.html` now exposes the Japanese, German, and Turkish photo-cleaner workflow pages as visible language-specific cards alongside the three decision pages. The same workflow links are visible in the core `iphone-photo-cleaner.html` body, and the three hub ItemLists now contain 53 total ListItem nodes.
 - Latest localized content pass: 2026-09-05; the Japanese, German, and Turkish decision pages explain when to start with Apple Photos and when to compare an additional cleaner. Each cites two Apple Support pages in the matching language, including duplicate detection delays. The comparison-page path and tracked local App Store links remain available. Search-engine submission strategy belongs in this document; visitor-facing guides focus on the photo-cleanup decision.
 - Latest guide quality pass: 2026-09-05; `guides.html` gives each Japanese, German, and Turkish decision/workflow entry its own description and removes repeated Japanese/Turkish links from the French entry. Localized generators no longer publish character counts as `wordCount`. Publication dates are preserved separately from content modification dates.
