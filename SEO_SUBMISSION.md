@@ -212,6 +212,7 @@ The following actions require user accounts on each search engine's webmaster pl
 - Submit or confirm `https://www.xiaozhonglvyou.com/sitemap-index.xml`, then inspect `sitemap.xml`, `sitemap-local.xml`, and `sitemap-articles.xml` as separate submitted or discovered sitemap sources.
 - Monitor: Pages indexing, Sitemaps, Performance search results, Core Web Vitals, HTTPS, and URL Inspection for the Japan/Germany/Türkiye target URLs.
 - Export: last 28 days and last 3 months by page, query, country, device, clicks, impressions, CTR, and average position. Use this data before rewriting titles for "no clicks".
+- Local baseline tool: after exporting the page-level Search Console table, run `node scripts/build-search-baseline.mjs --input PATH_TO_GSC_EXPORT.csv --date-range "LAST_28_DAYS"` from this repository. The generated private report summarizes only the nine Japan/Germany/Türkiye target URLs and flags missing, no-impression, no-click, and low-CTR cases without inventing traffic.
 
 ### Bing Webmaster Tools
 - URL: https://www.bing.com/webmasters

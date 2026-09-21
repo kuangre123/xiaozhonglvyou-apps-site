@@ -141,6 +141,6 @@ Primary path: Google. Secondary path: Yandex Türkiye. StatCounter reported Augu
 - [x] Localized guides are represented in sitemap, search index, RSS/Atom, and internal discovery.
 - [x] Robots policy covers the documented local search crawler families.
 - [ ] Submit or re-submit the sitemaps in each verified webmaster account.
-- [ ] Record a real GSC/GA4/App Store Connect baseline before judging clicks.
+- [ ] Record a real GSC/GA4/App Store Connect baseline before judging clicks. Use `node scripts/build-search-baseline.mjs --input PATH_TO_GSC_EXPORT.csv --date-range "LAST_28_DAYS"` once a Search Console export is available.
 - [ ] Export the current affected URL list for `Crawled - currently not indexed` and inspect the Japan/Germany/Türkiye target URLs one by one.
 - [ ] Reassess titles and descriptions after enough country-specific query data exists.
