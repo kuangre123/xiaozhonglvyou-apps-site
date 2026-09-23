@@ -12,10 +12,10 @@ const lailemmaLanguages = [
 ];
 
 const labels = {
-  en: { nav: "Primary", apps: "Apps", guides: "Guides", support: "Support", breadcrumb: "Breadcrumb", home: "Home", newTab: "opens in a new tab", screen: "Real product screen", preview: "Body Readiness build preview", inside: "Inside the app", faq: "Common questions", before: "Before you download", directory: "Directory", privacy: "Privacy" },
+  en: { nav: "Primary", apps: "Apps", guides: "Guides", support: "Support", breadcrumb: "Breadcrumb", home: "Home", newTab: "opens in a new tab", screen: "Real product screen", preview: "Body Readiness screens", inside: "Inside the app", faq: "Common questions", before: "Before you download", directory: "Directory", privacy: "Privacy" },
   "zh-CN": { nav: "主导航", apps: "全部应用", guides: "使用指南", support: "支持", breadcrumb: "路径", home: "首页", newTab: "在新标签页打开", screen: "真实产品画面", preview: "身体准备度新版截图", inside: "应用截图", faq: "常见问题", before: "下载前先确认", directory: "网站目录", privacy: "隐私" },
-  "ja-JP": { nav: "主なナビゲーション", apps: "アプリ", guides: "ガイド", support: "サポート", breadcrumb: "現在地", home: "ホーム", newTab: "新しいタブで開く", screen: "実際の画面", preview: "新しいビルドの画面プレビュー", inside: "アプリの画面", faq: "よくある質問", before: "ダウンロード前に確認", directory: "サイトマップ", privacy: "プライバシー" },
-  "de-DE": { nav: "Hauptnavigation", apps: "Apps", guides: "Ratgeber", support: "Support", breadcrumb: "Pfad", home: "Startseite", newTab: "öffnet einen neuen Tab", screen: "Produktansicht", preview: "Vorschau eines neueren Builds", inside: "In der App", faq: "Häufige Fragen", before: "Vor dem Download", directory: "Verzeichnis", privacy: "Datenschutz" }
+  "ja-JP": { nav: "主なナビゲーション", apps: "アプリ", guides: "ガイド", support: "サポート", breadcrumb: "現在地", home: "ホーム", newTab: "新しいタブで開く", screen: "実際の画面", preview: "身体コンディションの画面", inside: "アプリの画面", faq: "よくある質問", before: "ダウンロード前に確認", directory: "サイトマップ", privacy: "プライバシー" },
+  "de-DE": { nav: "Hauptnavigation", apps: "Apps", guides: "Ratgeber", support: "Support", breadcrumb: "Pfad", home: "Startseite", newTab: "öffnet einen neuen Tab", screen: "Produktansicht", preview: "Ansichten der Körperbereitschaft", inside: "In der App", faq: "Häufige Fragen", before: "Vor dem Download", directory: "Verzeichnis", privacy: "Datenschutz" }
 };
 
 const products = [
@@ -23,30 +23,30 @@ const products = [
     file: "lailemma-period-tracker.html",
     lang: "en",
     ogLocale: "en_US",
-    title: "Lailemma Period Tracker & Body Readiness Preview",
-    description: "Track periods, ovulation and symptoms with Lailemma. Preview an upcoming on-device Body Readiness estimate using permitted Apple Health data.",
-    keywords: "period tracker iPhone, cycle tracker, ovulation log, Body Readiness preview, Apple Health",
+    title: "Lailemma Period Tracker & Body Readiness for iPhone",
+    description: "Track periods, ovulation and symptoms with Lailemma. Version 2.0.5 adds an on-device Body Readiness estimate using authorized Apple Health data.",
+    keywords: "period tracker iPhone, cycle tracker, ovulation log, Body Readiness, Apple Health",
     kicker: "Cycle tracking · iPhone and iPad",
-    heading: "Lailemma: period tracking with a Body Readiness preview",
-    lead: "Log your cycle, symptoms and fertile window in one place. A newer build adds a daily Body Readiness estimate; the screenshots below are a preview, not a feature promised in the current App Store release.",
+    heading: "Lailemma: period tracking and Body Readiness",
+    lead: "Log your cycle, symptoms and fertile window in one place. The public version 2.0.5 adds a daily Body Readiness estimate based on authorized Apple Health signals.",
     icon: "lailemma-icon.webp",
     screenshots: [
-      { file: "lailemma-readiness-home.webp", alt: "Preview of Lailemma's upcoming Body Readiness card on the Today screen", caption: "Newer-build preview: daily estimate on the Today screen." },
-      { file: "lailemma-readiness-detail.webp", alt: "Preview of the detailed Body Readiness estimate with sleep, HRV and cycle-phase contributions", caption: "Newer-build preview: the score explains contributing signals." }
+      { file: "lailemma-readiness-home.webp", alt: "Lailemma Body Readiness card on the Today screen in a Chinese-language screenshot", caption: "Developer-supplied Chinese-language screen: daily estimate on Today." },
+      { file: "lailemma-readiness-detail.webp", alt: "Lailemma Body Readiness details with sleep, HRV and cycle-phase contributions", caption: "Developer-supplied screen: the estimate explains contributing signals." }
     ],
-    previewLabel: "Feature preview, not yet in the public version",
-    status: "As checked on 23 September 2026, the public App Store release is v2.0.3. Body Readiness is shown here from a newer build and should not be expected until that update is published.",
+    previewLabel: "Available in public version 2.0.5",
+    status: "The US App Store release notes dated 23 September 2026 list Body Readiness. The screenshots were supplied by the developer from a Chinese-language build; the public interface may differ.",
     storeUrl: "https://apps.apple.com/us/app/lailemma-period-fertility/id6775935474?uo=4",
     storeProduct: "lailemma-period-fertility",
     storeCountry: "us",
-    storeLabel: "Open current App Store version",
+    storeLabel: "Get Lailemma on App Store",
     appName: "Lailemma - Period & Fertility",
     appCategory: "HealthApplication",
     operatingSystem: "iOS, iPadOS",
     softwareRequirements: "iOS 17.0 or later",
     price: "0",
     currency: "USD",
-    appDescription: "Period and ovulation tracking, symptom logging and cycle insights. A Body Readiness estimate is in a newer build, not the public App Store release checked on 23 September 2026.",
+    appDescription: "Period and ovulation tracking, symptom logging, cycle insights and an on-device Body Readiness estimate available in version 2.0.5.",
     alternate: { file: "lailemma-period-tracker-cn.html", label: "简体中文", lang: "zh-CN" },
     sections: [
       {
@@ -60,49 +60,49 @@ const products = [
         ]
       },
       {
-        kicker: "Newer-build preview",
+        kicker: "Available in version 2.0.5",
         heading: "What the Body Readiness estimate explains",
-        intro: "With permission, the newer build combines available sleep, heart-rate variability, resting heart rate, wrist temperature, blood oxygen, activity load and cycle-phase context into an app-estimated daily score. Missing signals are shown rather than silently invented.",
+        intro: "With permission, version 2.0.5 combines available sleep, heart-rate variability, resting heart rate, wrist temperature, blood oxygen, activity load and cycle-phase context into an app-estimated daily score. Missing signals are shown rather than silently invented.",
         items: [
-          ["A score with reasons", "The preview shows a 0–100 estimate and contributions such as sleep, HRV and cycle phase, so the number is not presented without context."],
+          ["A score with reasons", "The screen shows a 0–100 estimate and contributions such as sleep, HRV and cycle phase, so the number is not presented without context."],
           ["On-device interpretation", "The estimate uses data you authorize from Apple Health. It is this app's estimate, not an Apple readiness score."],
           ["Health boundary", "Use it for everyday reflection only. It does not diagnose illness, determine fitness to exercise or replace medical advice."]
         ]
       }
     ],
     faqs: [
-      ["Is Body Readiness in the App Store release today?", "No. On 23 September 2026 the public listing was v2.0.3; the screenshots show a newer build. Check the App Store release notes before expecting this feature."],
-      ["Does Lailemma calculate an Apple readiness score?", "No. The newer build estimates its own score on device from available, authorized health signals and cycle context. It is not a medical diagnosis."]
+      ["Is Body Readiness in the App Store release today?", "Yes. The US App Store lists Body Readiness in version 2.0.5, released on 23 September 2026. Availability can vary by storefront; check your local listing."],
+      ["Does Lailemma calculate an Apple readiness score?", "No. The app estimates its own score on device from available, authorized health signals and cycle context. It is not a medical diagnosis."]
     ]
   },
   {
     file: "lailemma-period-tracker-cn.html",
     lang: "zh-CN",
     ogLocale: "zh_CN",
-    title: "来了么经期记录与备孕助手 | 身体准备度新版预览",
-    description: "来了么提供经期记录、排卵与备孕计划、每日症状记录及周期洞察。查看新版身体准备度真实截图：基于授权的 Apple 健康数据在本机估算，并明确区分目前已上架版本与待发布功能。",
-    keywords: "来了么, 经期记录, 排卵记录, 身体准备度新版预览, Apple 健康",
+    title: "来了么经期记录与备孕助手 | 身体准备度 2.0.5",
+    description: "来了么 2.0.5 在已上架地区提供身体准备度：本机结合授权的 Apple 健康数据与周期信息估算每日状态，并解释睡眠、心率变异性等信号。中国大陆区可用性请核对商店。",
+    keywords: "来了么, 经期记录, 排卵记录, 身体准备度, Apple 健康",
     kicker: "经期记录 · iPhone 与 iPad",
-    heading: "来了么：经期记录与身体准备度新版预览",
-    lead: "记录经期、排卵窗口和每日身体感受。下面的“身体准备度”截图来自较新版本构建，是功能预览；当前 App Store 公开版不包含该功能。",
+    heading: "来了么：经期记录与身体准备度",
+    lead: "记录经期、排卵窗口和每日身体感受。公开版 2.0.5 已加入身体准备度，结合你授权的健康数据在本机估算当天状态。",
     icon: "lailemma-icon.webp",
     screenshots: [
-      { file: "lailemma-readiness-home.webp", alt: "来了么新版今日页面中的身体准备度卡片预览", caption: "新版预览：今日页展示本 App 估算的身体准备度。" },
-      { file: "lailemma-readiness-detail.webp", alt: "来了么新版健康页的身体准备度明细，包含睡眠、心率变异性和周期阶段", caption: "新版预览：睡眠、HRV 和周期阶段的贡献明细。" }
+      { file: "lailemma-readiness-home.webp", alt: "来了么今日页面中的身体准备度卡片", caption: "开发者提供的中文截图：今日页展示本 App 估算的身体准备度。" },
+      { file: "lailemma-readiness-detail.webp", alt: "来了么健康页的身体准备度明细，包含睡眠、心率变异性和周期阶段", caption: "开发者提供的中文截图：睡眠、HRV 和周期阶段的贡献明细。" }
     ],
-    previewLabel: "新版功能预览，当前公开版尚未上线",
-    status: "截至 2026 年 9 月 23 日，App Store 公开版为 2.0.3。截图来自较新版本构建；请以商店更新说明确认身体准备度何时正式可用。",
-    storeUrl: "https://apps.apple.com/cn/app/lailemma-period-fertility/id6775935474?uo=4",
+    previewLabel: "公开版 2.0.5 已包含该功能",
+    status: "2026 年 9 月 23 日美区 App Store 更新说明已列出身体准备度；此处展示开发者提供的中文截图。中国大陆商店未查到该 App，下载可用性请以 Apple 账户所在地区为准。",
+    storeUrl: "https://apps.apple.com/us/app/lailemma-period-fertility/id6775935474?uo=4",
     storeProduct: "lailemma-period-fertility",
-    storeCountry: "cn",
-    storeLabel: "查看目前公开版",
+    storeCountry: "us",
+    storeLabel: "查看美区 App Store",
     appName: "Lailemma - Period & Fertility",
     appCategory: "HealthApplication",
     operatingSystem: "iOS, iPadOS",
     softwareRequirements: "iOS 17.0 或更高版本",
     price: "0",
-    currency: "CNY",
-    appDescription: "经期、排卵与症状记录应用。身体准备度是较新版本预览，不属于 2026 年 9 月 23 日核对时的公开版。",
+    currency: "USD",
+    appDescription: "经期、排卵与症状记录应用。2.0.5 公开版已加入在本机估算的身体准备度，商店可用性依账户地区而异。",
     alternate: { file: "lailemma-period-tracker.html", label: "English", lang: "en" },
     sections: [
       {
@@ -116,9 +116,9 @@ const products = [
         ]
       },
       {
-        kicker: "新版预览",
+        kicker: "2.0.5 已上线",
         heading: "身体准备度怎样得出估算",
-        intro: "在用户授权且有对应数据时，新版会参考睡眠、心率变异性、静息心率、手腕温度、血氧、活动负荷和周期阶段，生成 0–100 的本 App 估算分数。没有的数据不会被当作已测得的数据。",
+        intro: "在用户授权且有对应数据时，2.0.5 会参考睡眠、心率变异性、静息心率、手腕温度、血氧、活动负荷和周期阶段，生成 0–100 的本 App 估算分数。没有的数据不会被当作已测得的数据。",
         items: [
           ["分数有依据", "截图展示了睡眠、HRV、周期阶段和手腕温度等因素对当天分数的影响。"],
           ["不是 Apple 官方分数", "估算在本机利用已授权的健康数据生成，不是 Apple 准备度分数。"],
@@ -127,7 +127,7 @@ const products = [
       }
     ],
     faqs: [
-      ["现在下载就能用身体准备度吗？", "截至 2026 年 9 月 23 日，公开版为 2.0.3，尚未包含身体准备度。这里的截图是新版预览，请以 App Store 更新说明为准。"],
+      ["现在下载就能用身体准备度吗？", "美区等已上架的 2.0.5 版本包含身体准备度；中国大陆商店未查到该 App。请先核对自己 Apple 账户所在地区的商店页面。"],
       ["身体准备度是 Apple 官方或医疗分数吗？", "不是。它是来了么在本机依据已授权数据和周期信息计算的日常估算，不提供医疗诊断。"]
     ]
   },
@@ -135,19 +135,19 @@ const products = [
     file: "lailemma-period-tracker-ja.html",
     lang: "ja-JP",
     ogLocale: "ja_JP",
-    title: "Lailemma 生理日管理・妊活アプリ | 身体コンディションの新機能プレビュー",
-    description: "Lailemmaで生理日、症状、排卵の目安を記録。Appleヘルスケアの許可済みデータを使う身体コンディション推定は開発中の画面プレビューで、現在のApp Store版には含まれません。",
-    keywords: "生理日管理アプリ, 生理周期 記録 iPhone, 排卵日 目安, 身体コンディション プレビュー",
+    title: "Lailemma 生理日管理・妊活アプリ | 身体コンディション推定",
+    description: "Lailemmaで生理日、症状、排卵の目安を記録。公開版2.0.5では、許可したAppleヘルスケアデータから身体コンディションを端末上で推定できます。",
+    keywords: "生理日管理アプリ, 生理周期 記録 iPhone, 排卵日 目安, 身体コンディション 推定",
     kicker: "生理周期の記録 · iPhoneとiPad",
     heading: "Lailemmaで生理周期を記録する",
-    lead: "生理日、症状、排卵の目安を一か所で確認できます。身体コンディションの推定画面は新しいビルドのプレビューであり、現在公開中のApp Store版の機能ではありません。",
+    lead: "生理日、症状、排卵の目安を一か所で確認できます。公開版2.0.5には、許可したヘルスケアデータに基づく身体コンディション推定が追加されました。",
     icon: "lailemma-icon.webp",
     screenshots: [
-      { file: "lailemma-readiness-home.webp", alt: "中国語UIの新しいビルドで、今日の画面に身体コンディション推定が表示されるプレビュー", caption: "新しいビルドのプレビュー。画像の画面表示は中国語です。" },
+      { file: "lailemma-readiness-home.webp", alt: "中国語UIの今日の画面に表示された身体コンディション推定", caption: "開発者提供の画面。画像の表示言語は中国語です。" },
       { file: "lailemma-readiness-detail.webp", alt: "睡眠、心拍変動、周期の段階を説明する中国語UIの詳細画面", caption: "睡眠や心拍変動など、推定に使われた信号の内訳。" }
     ],
-    previewLabel: "未公開機能のプレビュー",
-    status: "2026年9月23日に確認したApp Storeの公開版は2.0.3です。身体コンディション機能はまだ公開されていません。実際の提供状況は更新履歴で確認してください。",
+    previewLabel: "公開版2.0.5で利用可能",
+    status: "2026年9月23日公開の日本のApp Store版2.0.5に身体コンディション推定が含まれます。掲載画像は開発者提供の中国語UIで、実際の表示は異なる場合があります。",
     storeUrl: "https://apps.apple.com/jp/app/lailemma-%E7%94%9F%E7%90%86%E6%97%A5%E7%AE%A1%E7%90%86%E3%81%A8%E5%A6%8A%E6%B4%BB/id6775935474?uo=4",
     storeProduct: "lailemma-period-fertility",
     storeCountry: "jp",
@@ -158,7 +158,7 @@ const products = [
     softwareRequirements: "iOS 17.0以降",
     price: "0",
     currency: "JPY",
-    appDescription: "生理周期、症状、排卵の目安を記録。身体コンディション推定は2026年9月23日時点の公開版にはない新しいビルドのプレビューです。",
+    appDescription: "生理周期、症状、排卵の目安を記録。公開版2.0.5には端末上で計算する身体コンディション推定が含まれます。",
     sections: [
       {
         kicker: "現在の公開版",
@@ -171,38 +171,38 @@ const products = [
         ]
       },
       {
-        kicker: "開発中の画面",
+        kicker: "公開版2.0.5の機能",
         heading: "身体コンディション推定の読み方",
-        intro: "新しいビルドでは、許可済みで実際に取得できる睡眠、心拍変動、安静時心拍数、手首温度、活動量、周期の段階などを参考に、その日の状態をアプリ内で推定します。画像は中国語UIで撮影されています。",
+        intro: "公開版2.0.5では、許可済みで実際に取得できる睡眠、心拍変動、安静時心拍数、手首温度、血中酸素、活動量、周期の段階などを参考に、その日の状態をアプリ内で推定します。掲載画像は中国語UIで撮影されています。",
         items: [
-          ["数字だけに頼らない", "プレビューでは0〜100の推定値と、睡眠や心拍変動などの寄与を一緒に表示します。"],
+          ["数字だけに頼らない", "画面には0〜100の推定値と、睡眠や心拍変動などの寄与を一緒に表示します。"],
           ["Apple公式のスコアではない", "このアプリが端末上で計算した目安です。Appleが提供する準備度スコアではありません。"],
           ["健康上の注意", "病気の診断、運動可否の決定、医療相談の代わりには使えません。"]
         ]
       }
     ],
     faqs: [
-      ["今ダウンロードすると身体コンディション機能を使えますか？", "いいえ。2026年9月23日時点の公開版2.0.3には含まれません。公開状況はApp Storeの更新履歴で確認してください。"],
-      ["日本語の画面で使えますか？", "公開版のApp Store対応言語には日本語が含まれます。このページの新機能プレビュー画像は中国語UIのビルドで撮影されたものです。"]
+      ["今ダウンロードすると身体コンディション機能を使えますか？", "はい。日本のApp Storeで公開中の2.0.5の更新履歴に記載されています。利用前に最新のストア情報をご確認ください。"],
+      ["日本語の画面で使えますか？", "公開版2.0.5では日本語に対応しています。このページの掲載画像は中国語UIで撮影されたものです。"]
     ]
   },
   {
     file: "lailemma-period-tracker-de.html",
     lang: "de-DE",
     ogLocale: "de_DE",
-    title: "Lailemma Zyklus-App | Körperbereitschaft als Vorschau",
-    description: "Lailemma dokumentiert Periode und Symptome. Körperbereitschaft ist nur eine Vorschau aus einem neueren Build, nicht Teil der aktuellen App-Store-Version.",
-    keywords: "Zyklus App iPhone, Periode dokumentieren, Eisprung Schätzung, Körperbereitschaft Vorschau",
+    title: "Lailemma Zyklus-App | Körperbereitschaft in Version 2.0.5",
+    description: "Lailemma dokumentiert Periode und Symptome. Version 2.0.5 schätzt die Körperbereitschaft auf dem Gerät anhand freigegebener Health-Daten.",
+    keywords: "Zyklus App iPhone, Periode dokumentieren, Eisprung Schätzung, Körperbereitschaft",
     kicker: "Zyklus dokumentieren · iPhone und iPad",
     heading: "Lailemma: Zyklus und Symptome im Blick",
-    lead: "Halte Periode und tägliche Symptome fest und sieh Schätzungen zum fruchtbaren Fenster. Die gezeigte Körperbereitschaft stammt aus einem neueren Build und ist noch keine Funktion der öffentlich verfügbaren App-Store-Version.",
+    lead: "Halte Periode und tägliche Symptome fest und sieh Schätzungen zum fruchtbaren Fenster. Die öffentliche Version 2.0.5 ergänzt eine tägliche Schätzung der Körperbereitschaft aus freigegebenen Health-Daten.",
     icon: "lailemma-icon.webp",
     screenshots: [
-      { file: "lailemma-readiness-home.webp", alt: "Vorschau der Körperbereitschaft auf der Startseite eines neueren Builds mit chinesischer Oberfläche", caption: "Vorschau aus einem neueren Build; die abgebildete Oberfläche ist chinesisch." },
+      { file: "lailemma-readiness-home.webp", alt: "Körperbereitschaft auf der Lailemma-Startseite mit chinesischer Oberfläche", caption: "Vom Entwickler bereitgestellte Ansicht; die abgebildete Oberfläche ist chinesisch." },
       { file: "lailemma-readiness-detail.webp", alt: "Detailansicht mit Beiträgen von Schlaf, Herzfrequenzvariabilität und Zyklusphase in chinesischer Oberfläche", caption: "Die Schätzung erläutert Schlaf, HRV und weitere verfügbare Signale." }
     ],
-    previewLabel: "Vorschau, noch nicht öffentlich verfügbar.",
-    status: "Am 23. September 2026 war Version 2.0.3 im App Store öffentlich. Körperbereitschaft ist darin noch nicht enthalten. Prüfe die Versionshinweise vor der Installation.",
+    previewLabel: "In der öffentlichen Version 2.0.5 verfügbar.",
+    status: "Die deutsche App-Store-Version 2.0.5 vom 23. September 2026 enthält Körperbereitschaft. Die vom Entwickler bereitgestellten Bilder zeigen eine chinesische Oberfläche; die tatsächliche Darstellung kann abweichen.",
     storeUrl: "https://apps.apple.com/de/app/lailemma-zyklus-fertilit%C3%A4t/id6775935474?uo=4",
     storeProduct: "lailemma-period-fertility",
     storeCountry: "de",
@@ -213,7 +213,7 @@ const products = [
     softwareRequirements: "iOS 17.0 oder neuer",
     price: "0",
     currency: "EUR",
-    appDescription: "Zyklus, Symptome und Eisprung-Schätzungen dokumentieren. Körperbereitschaft ist eine Vorschau aus einem neueren Build und fehlt in der am 23. September 2026 geprüften öffentlichen Version.",
+    appDescription: "Zyklus, Symptome und Eisprung-Schätzungen dokumentieren. Version 2.0.5 enthält eine auf dem Gerät berechnete Schätzung der Körperbereitschaft.",
     sections: [
       {
         kicker: "Schon verfügbar",
@@ -226,19 +226,19 @@ const products = [
         ]
       },
       {
-        kicker: "Vorschau eines neueren Builds",
+        kicker: "In Version 2.0.5 verfügbar",
         heading: "Was die Körperbereitschaft erklärt",
-        intro: "Ein neuerer Build schätzt den Tageszustand anhand tatsächlich verfügbarer, freigegebener Signale wie Schlaf, Herzfrequenzvariabilität, Ruhepuls, Handgelenktemperatur, Aktivität und Zyklusphase. Die abgebildeten Screenshots zeigen eine chinesische Oberfläche.",
+        intro: "Version 2.0.5 schätzt den Tageszustand anhand tatsächlich verfügbarer, freigegebener Signale wie Schlaf, Herzfrequenzvariabilität, Ruhepuls, Handgelenktemperatur, Blutsauerstoff, Aktivität und Zyklusphase. Die abgebildeten Screenshots zeigen eine chinesische Oberfläche.",
         items: [
-          ["Schätzung mit Gründen", "Der Vorschaubildschirm zeigt einen Wert von 0 bis 100 und den Beitrag einzelner Signale, statt nur eine Zahl auszugeben."],
+          ["Schätzung mit Gründen", "Die Ansicht zeigt einen Wert von 0 bis 100 und den Beitrag einzelner Signale, statt nur eine Zahl auszugeben."],
           ["Kein Apple-Score", "Die Berechnung stammt von Lailemma und erfolgt auf dem Gerät. Sie ist kein offizieller Apple-Bereitschaftswert."],
           ["Keine medizinische Aussage", "Der Wert dient der alltäglichen Orientierung und ersetzt weder eine Diagnose noch ärztlichen Rat."]
         ]
       }
     ],
     faqs: [
-      ["Ist Körperbereitschaft bereits im App Store verfügbar?", "Nein. In der am 23. September 2026 geprüften öffentlichen Version 2.0.3 fehlt diese Funktion. Maßgeblich sind die aktuellen Versionshinweise im App Store."],
-      ["Ist die App auf Deutsch nutzbar?", "Ja, Deutsch steht in der Sprachliste der öffentlichen App. Die Vorschaubilder für die neue Funktion wurden jedoch mit einer chinesischen Oberfläche aufgenommen."]
+      ["Ist Körperbereitschaft bereits im App Store verfügbar?", "Ja. Die deutsche App-Store-Version 2.0.5 vom 23. September 2026 nennt diese Funktion. Prüfe vor dem Download die aktuellen Versionshinweise."],
+      ["Ist die App auf Deutsch nutzbar?", "Ja, Version 2.0.5 unterstützt Deutsch. Die Bilder auf dieser Seite wurden mit einer chinesischen Oberfläche aufgenommen."]
     ]
   },
   {
@@ -310,7 +310,7 @@ const products = [
     appCategory: "MultimediaApplication",
     operatingSystem: "iOS",
     softwareRequirements: "iOS 18.0 or later; iPhone XS or newer for simultaneous dual-camera capture",
-    price: "1.99",
+    price: "0.99",
     currency: "USD",
     appDescription: "Simultaneous iPhone front and back camera capture with picture-in-picture or split layouts for photos and video.",
     sections: [
@@ -327,7 +327,7 @@ const products = [
       {
         kicker: "Before you buy",
         heading: "Check the interface language and price",
-        intro: "The current app interface is Simplified Chinese, even though this product description is in English. The US App Store listed an upfront $1.99 price on 23 September 2026; prices vary by region.",
+        intro: "The current app interface is Simplified Chinese, even though this product description is in English. The US App Store listed an upfront $0.99 price on 23 September 2026; prices vary by region.",
         items: [
           ["Privacy", "The App Store listing says TwoPic has no network access and the developer does not collect data; captures stay in your Photos library."],
           ["No automatic editing claim", "TwoPic captures both perspectives at once. The page does not promise automatic post-production or cloud syncing."]

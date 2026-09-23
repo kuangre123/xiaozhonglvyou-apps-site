@@ -22,7 +22,7 @@ const products = new Map([
       image: `${origin}/assets/ai-cleaning-icon.png`,
       applicationCategory: "UtilitiesApplication",
       operatingSystem: "iOS",
-      softwareVersion: "1.1.3",
+      softwareVersion: "1.1.6",
       price: "0.00",
       priceCurrency: "USD"
     }
@@ -35,7 +35,7 @@ const products = new Map([
       image: `${origin}/assets/travel-translator-icon.png`,
       applicationCategory: "TravelApplication",
       operatingSystem: "iOS",
-      softwareVersion: "2.1.0",
+      softwareVersion: "2.2.3",
       price: "0.00",
       priceCurrency: "USD"
     }
@@ -74,7 +74,7 @@ const products = new Map([
       image: `${origin}/assets/gifmaker-icon.png`,
       applicationCategory: "MultimediaApplication",
       operatingSystem: "iOS",
-      softwareVersion: "1.1.2",
+      softwareVersion: "1.1.4",
       price: "0.00",
       priceCurrency: "USD"
     }
@@ -87,7 +87,7 @@ const products = new Map([
       image: `${origin}/assets/happyride-icon.png`,
       applicationCategory: "HealthApplication",
       operatingSystem: "iOS, watchOS",
-      softwareVersion: "1.2",
+      softwareVersion: "1.4.1",
       price: "0.00",
       priceCurrency: "USD"
     }
@@ -97,7 +97,7 @@ const products = new Map([
     {
       appId: "6775935474", url: "https://apps.apple.com/us/app/lailemma-period-fertility/id6775935474?uo=4",
       image: `${origin}/assets/lailemma-icon.webp`, applicationCategory: "HealthApplication",
-      operatingSystem: "iOS, iPadOS", softwareVersion: "2.0.3", price: "0", priceCurrency: "USD"
+      operatingSystem: "iOS, iPadOS", softwareVersion: "2.0.5", price: "0", priceCurrency: "USD"
     }
   ],
   [
@@ -113,7 +113,7 @@ const products = new Map([
     {
       appId: "6800405096", url: "https://apps.apple.com/us/app/twopic-dual-camera/id6800405096?uo=4",
       image: `${origin}/assets/twopic-icon.webp`, applicationCategory: "MultimediaApplication",
-      operatingSystem: "iOS", softwareVersion: "1.1.3", price: "1.99", priceCurrency: "USD"
+      operatingSystem: "iOS", softwareVersion: "1.1.3", price: "0.99", priceCurrency: "USD"
     }
   ]
 ]);
@@ -206,6 +206,9 @@ const hubLists = new Map([
         ["Turkish App Page", `${origin}/tr-tr.html`],
         ["Brazilian Portuguese App Page", `${origin}/pt-br.html`],
         ["Mexican Spanish App Page", `${origin}/es-mx.html`],
+        ["Japanese iPhone photo cleaner workflow", `${origin}/ja-jp-photo-cleaner.html`],
+        ["German iPhone Foto Cleaner workflow", `${origin}/iphone-foto-cleaner-de.html`],
+        ["Turkish iPhone photo cleaner workflow", `${origin}/tr-tr-photo-cleaner.html`],
         ["Japanese photo cleaner decision guide", `${origin}/ja-jp-best-iphone-photo-cleaner.html`],
         ["German Foto Cleaner decision guide", `${origin}/de-de-beste-iphone-foto-cleaner.html`],
         ["Turkish photo cleaner decision guide", `${origin}/tr-tr-en-iyi-iphone-fotograf-temizleme.html`]
@@ -236,7 +239,10 @@ function developerEntity() {
       "GIF creation",
       "cycling and activity tracking",
       "travel translation",
-      "screen privacy"
+      "screen privacy",
+      "cycle tracking",
+      "Markdown notes",
+      "dual-camera capture"
     ]
   };
 }
@@ -252,7 +258,7 @@ function publisherEntity() {
       url: `${origin}/apple-touch-icon.png`
     },
     image: `${origin}/assets/anti-spy-screen.png`,
-    description: "Independent App Store utility portfolio for photo organization, GIF creation, activity tracking, travel translation, and screen privacy.",
+    description: "Independent App Store portfolio for photo organization, cycle tracking, Markdown notes, dual-camera capture, activity tracking, travel translation, GIFs, and screen privacy.",
     founder: { "@id": developerId },
     contactPoint: {
       "@type": "ContactPoint",
@@ -271,7 +277,10 @@ function publisherEntity() {
       { "@id": `${origin}/#gifmaker` },
       { "@id": `${origin}/#happyride` },
       { "@id": `${origin}/#anti-spy-screen` },
-      { "@id": `${origin}/#anti-spy-lite` }
+      { "@id": `${origin}/#anti-spy-lite` },
+      { "@id": `${origin}/#lailemma` },
+      { "@id": `${origin}/#inkstone-notes` },
+      { "@id": `${origin}/#twopic` }
     ]
   };
 }

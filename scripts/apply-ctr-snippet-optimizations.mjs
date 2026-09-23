@@ -129,8 +129,8 @@ const pages = [
     file: "iphone-photo-cleaner.html",
     title: "Photo Cleaner for iPhone | Find Duplicates &amp; Free Space",
     description: "Photo cleaner for iPhone that finds duplicate and similar photos, screenshots, blurry shots, and large files. Review first, then free up space safely.",
-    modifiedDate: "2026-08-15",
-    modifiedDateLabel: "August 15, 2026",
+    modifiedDate: "2026-09-23",
+    modifiedDateLabel: "September 23, 2026",
     article: {
       headline: "Photo Cleaner for iPhone | Find Duplicates & Free Space",
       description: "Photo cleaner for iPhone that finds duplicate and similar photos, screenshots, blurry shots, and large files. Review first, then free up space safely."
@@ -161,8 +161,8 @@ const pages = [
     title: "Free GIF Maker App for iPhone | Video &amp; Live Photo",
     description: "Free GIF maker app for iPhone that turns videos, Live Photos, and pictures into GIFs. Edit timing, captions, canvas, reverse, and boomerang on-device.",
     keywords: "free GIF maker app, free GIF maker app for iPhone, iPhone GIF maker, video GIF maker free for iPhone, GIF maker from photos, animated GIF maker, on-device GIF editor",
-    modifiedDate: "2026-08-21",
-    modifiedDateLabel: "August 21, 2026",
+    modifiedDate: "2026-09-23",
+    modifiedDateLabel: "September 23, 2026",
     webPage: {
       "@id": "https://www.xiaozhonglvyou.com/gif-maker.html#page",
       name: "Free GIF Maker App for iPhone | Video & Live Photo",
@@ -350,8 +350,8 @@ const pages = [
     title: "Free Bike Ride Tracker App for iPhone | HappyRide",
     description: "Free bike ride tracker app for iPhone that records qualifying rides automatically without tapping Start. Save GPS routes and Apple Health workouts.",
     keywords: "free bike ride tracker app, free bike ride tracker app for iPhone, bike ride tracker app, bike tracker app free, bike ride tracker iPhone, GPS bike ride tracker, Apple Health cycling app",
-    modifiedDate: "2026-08-16",
-    modifiedDateLabel: "August 16, 2026",
+    modifiedDate: "2026-09-23",
+    modifiedDateLabel: "September 23, 2026",
     webPage: {
       "@id": "https://www.xiaozhonglvyou.com/happyride-auto-ride-tracker.html#page",
       name: "Free Bike Ride Tracker App for iPhone | HappyRide",
@@ -378,8 +378,8 @@ const pages = [
     title: "How to Track a Bike Ride on iPhone Automatically (2026)",
     description: "Track a bike ride on iPhone automatically without tapping Start. Set up Motion &amp; Fitness, background location, Apple Health, Apple Watch, and a test ride.",
     keywords: "how to track a bike ride on iPhone, how can I track my bike ride on iPhone, bike ride tracker iPhone, bike ride tracker app, track cycling on iPhone, automatic bike ride tracker",
-    modifiedDate: "2026-08-16",
-    modifiedDateLabel: "August 16, 2026",
+    modifiedDate: "2026-09-23",
+    modifiedDateLabel: "September 23, 2026",
     article: {
       description: "Track a bike ride on iPhone automatically without tapping Start. Set up Motion & Fitness, background location, Apple Health, Apple Watch, and a test ride.",
       keywords: [
@@ -742,8 +742,8 @@ const pages = [
     file: "voice-camera-translator-guide.html",
     title: "Voice &amp; Camera Translator for Travel: 6 Steps (2026)",
     description: "Translate travel conversations, menus, and signs on iPhone in 6 steps. Use voice, camera OCR, live interpretation, and offline core language pairs.",
-    modifiedDate: "2026-08-15",
-    modifiedDateLabel: "August 15, 2026",
+    modifiedDate: "2026-09-23",
+    modifiedDateLabel: "September 23, 2026",
     article: {
       headline: "Voice & Camera Translator for Travel: 6 Steps (2026)",
       description: "Translate travel conversations, menus, and signs on iPhone in 6 steps. Use voice, camera OCR, live interpretation, and offline core language pairs."

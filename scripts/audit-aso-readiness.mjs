@@ -7,7 +7,7 @@ const apps = [
   {
     key: "GIFmaker",
     appId: "6783559364",
-    version: "1.1.2",
+    version: "1.1.4",
     name: "GIFmaker-Gif Studio",
     subtitle: "Photos, Video & Live Photos",
     keywords: "photos,video,live photo,animation,boomerang,meme,caption,frame editor,reverse,loop",
@@ -20,7 +20,7 @@ const apps = [
   {
     key: "HappyRide",
     appId: "6786365305",
-    version: "1.2",
+    version: "1.4.1",
     name: "HappyRide: Auto Ride Tracker",
     subtitle: "Cycling, Walks & Runs",
     keywords: "cycling,bike,gps,apple watch,health,workout,route planner,scenic,walking,running",

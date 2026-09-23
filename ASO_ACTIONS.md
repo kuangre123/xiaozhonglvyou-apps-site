@@ -2,6 +2,8 @@
 
 Last verified: 2026-07-18
 
+Public listing versions rechecked: 2026-09-23 (US App Store).
+
 This document separates public App Store facts from proposed metadata. Nothing below is represented as live until it is saved in App Store Connect and visible on the public product page.
 
 Apple's current constraints used here:
@@ -21,7 +23,7 @@ Official references:
 
 ## GIFmaker-Gif Studio
 
-Current public facts: version 1.1.2, iOS 17.0+, free, Photo & Video, English + Simplified Chinese + Traditional Chinese. Public App Store subtitle: `GIF maker: photos & video`. The listing states that editing happens on device with no account and no uploads; the public privacy label says Data Not Collected.
+Current public facts: version 1.1.4, iOS 17.0+, free, Photo & Video, English + Simplified Chinese + Traditional Chinese. Public App Store subtitle: `GIF maker: photos & video`. The listing states that editing happens on device with no account and no uploads; the public privacy label says Data Not Collected.
 
 ### English (US)
 
@@ -62,7 +64,7 @@ Replace the current public Developer Website (`https://kuangre123.github.io/gifm
 
 ## HappyRide: Auto Ride Tracker
 
-Current public facts: version 1.2, iOS 17.0+, free with an optional route-planning subscription, Health & Fitness / Sports, automatic cycling, walking, and running detection, Apple Watch heart rate, Apple Health workout records, and optional network-based route planning. The current on-screen interface is Simplified Chinese only.
+Current public facts: version 1.4.1, iOS 17.0+, free with an optional route-planning subscription, Health & Fitness / Sports, automatic cycling, walking, and running detection, Apple Watch heart rate, Apple Health workout records, and optional network-based route planning. The current on-screen interface is Simplified Chinese only.
 
 ### English (US)
 

@@ -331,7 +331,7 @@ function appEntity(page) {
     applicationCategory: "UtilitiesApplication",
     url: appUrl,
     downloadUrl: appUrl,
-    softwareVersion: "1.1.3",
+    softwareVersion: "1.1.6",
     offers: { "@type": "Offer", price: "0.00", priceCurrency: "USD", availability: "https://schema.org/InStock" },
     sameAs: [appUrl],
     identifier: { "@type": "PropertyValue", propertyID: "Apple App Store ID", value: appId },
