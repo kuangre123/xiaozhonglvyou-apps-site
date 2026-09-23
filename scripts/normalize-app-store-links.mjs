@@ -11,7 +11,10 @@ const products = new Map([
   ["6783559364", { product: "gifmaker-gif-studio", storefront: "ios-app-store", label: "GIFmaker-Gif Studio" }],
   ["6786365305", { product: "happyride-auto-ride-tracker", storefront: "ios-app-store", label: "HappyRide: Auto Ride Tracker" }],
   ["6761301764", { product: "anti-spy-screen", storefront: "mac-app-store", label: "Anti-spy screen" }],
-  ["6766485393", { product: "anti-spy-screen-lite", storefront: "mac-app-store", label: "Anti-spy screen Lite" }]
+  ["6766485393", { product: "anti-spy-screen-lite", storefront: "mac-app-store", label: "Anti-spy screen Lite" }],
+  ["6775935474", { product: "lailemma-period-fertility", storefront: "ios-app-store", label: "Lailemma - Period & Fertility" }],
+  ["6810287923", { product: "inkstone-notes-markdown", storefront: "ios-app-store", label: "Inkstone Notes Markdown" }],
+  ["6800405096", { product: "twopic-dual-camera", storefront: "ios-app-store", label: "TwoPic Dual Camera" }]
 ]);
 
 function getAttribute(tag, name) {

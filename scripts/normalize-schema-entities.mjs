@@ -91,6 +91,30 @@ const products = new Map([
       price: "0.00",
       priceCurrency: "USD"
     }
+  ],
+  [
+    "Lailemma - Period & Fertility",
+    {
+      appId: "6775935474", url: "https://apps.apple.com/us/app/lailemma-period-fertility/id6775935474?uo=4",
+      image: `${origin}/assets/lailemma-icon.webp`, applicationCategory: "HealthApplication",
+      operatingSystem: "iOS, iPadOS", softwareVersion: "2.0.3", price: "0", priceCurrency: "USD"
+    }
+  ],
+  [
+    "Inkstone Notes Markdown",
+    {
+      appId: "6810287923", url: "https://apps.apple.com/us/app/inkstone-notes-markdown/id6810287923?uo=4",
+      image: `${origin}/assets/inkstone-icon.webp`, applicationCategory: "ProductivityApplication",
+      operatingSystem: "iOS", softwareVersion: "1.0.0", price: "0.99", priceCurrency: "USD"
+    }
+  ],
+  [
+    "TwoPic Dual Camera",
+    {
+      appId: "6800405096", url: "https://apps.apple.com/us/app/twopic-dual-camera/id6800405096?uo=4",
+      image: `${origin}/assets/twopic-icon.webp`, applicationCategory: "MultimediaApplication",
+      operatingSystem: "iOS", softwareVersion: "1.1.3", price: "1.99", priceCurrency: "USD"
+    }
   ]
 ]);
 
@@ -99,7 +123,10 @@ const productKeywords = new Map([
   ["Translation Specialist", ["travel translator", "voice translation", "camera translation", "travel language app", "on-device travel tools"]],
   ["Anti-spy screen", ["Mac screen privacy", "screen sharing privacy", "window protection", "presentation privacy", "macOS utility"]],
   ["GIFmaker-Gif Studio", ["GIF maker for iPhone", "photos to GIF", "video to GIF", "Live Photo to GIF", "on-device GIF editor"]],
-  ["HappyRide: Auto Ride Tracker", ["automatic cycling tracker", "bike ride tracker", "Apple Watch cycling", "Apple Health workout", "background activity detection"]]
+  ["HappyRide: Auto Ride Tracker", ["automatic cycling tracker", "bike ride tracker", "Apple Watch cycling", "Apple Health workout", "background activity detection"]],
+  ["Lailemma - Period & Fertility", ["period tracker", "cycle logging", "fertility window", "Body Readiness preview"]],
+  ["Inkstone Notes Markdown", ["Markdown notes", "plain files", "iCloud Drive", "wiki links"]],
+  ["TwoPic Dual Camera", ["dual camera", "front and back camera", "picture in picture", "iPhone video"]]
 ]);
 
 const articleProductByFile = new Map([
@@ -118,7 +145,10 @@ const hubLists = new Map([
         ["GIFmaker-Gif Studio", `${origin}/gif-maker.html`],
         ["Free Bike Ride Tracker App", `${origin}/happyride-auto-ride-tracker.html`],
         ["Anti-spy screen", `${origin}/mac-screen-privacy.html`],
-        ["Anti-spy screen Lite", `${origin}/mac-screen-privacy.html#lite`]
+        ["Anti-spy screen Lite", `${origin}/mac-screen-privacy.html#lite`],
+        ["Lailemma - Period & Fertility", `${origin}/lailemma-period-tracker.html`],
+        ["Inkstone Notes Markdown", `${origin}/inkstone-markdown-notes.html`],
+        ["TwoPic Dual Camera", `${origin}/twopic-dual-camera.html`]
       ]
     }
   ],
