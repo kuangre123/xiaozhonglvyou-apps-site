@@ -1,6 +1,6 @@
 # CrazyAIAgent
 
-CrazyAIAgent is the independent app portfolio of Bo Chen (listed as “bo chen” on the App Store), covering iPhone, iPad, Apple Watch, and Mac utilities for photo organization, GIF creation, automatic activity tracking, travel translation, screen privacy, and creator workflows.
+CrazyAIAgent is the independent app portfolio of Bo Chen (listed as “bo chen” on the App Store), covering iPhone, iPad, Apple Watch, and Mac apps for photo organization, cycle tracking, Markdown notes, dual-camera capture, GIF creation, activity tracking, travel translation, and screen privacy.
 
 Canonical resources:
 
@@ -35,6 +35,9 @@ Primary apps:
 - HappyRide: Auto Ride Tracker: version 1.2 for iOS 17.0 or later. Automatically detects cycling, walking, and running, can use Apple Watch heart rate, writes qualifying workout details to Apple Health, and offers optional network-based route planning. The current on-screen interface is Simplified Chinese. App Store: https://apps.apple.com/us/app/happyride-auto-ride-tracker/id6786365305?uo=4
 - Anti-spy screen: version 1.5.1 for macOS 13.0 or later, with local face detection, selected app hiding, adjustable detection parameters, Privacy Block, Presenting Mode, and Stand-Up Coach. The US storefront listed a $2.99 one-time purchase on 2026-08-03. Mac App Store: https://apps.apple.com/us/app/anti-spy-screen/id6761301764?mt=12&uo=4
 - Anti-spy screen Lite: version 1.4.1 for macOS 13.0 or later, with local face detection, selected app hiding, Privacy Block, Presenting Mode, Stand-Up Coach, and hidden-app reminders. The US storefront listed it as free on 2026-08-03. Mac App Store: https://apps.apple.com/us/app/anti-spy-screen-lite/id6766485393?mt=12&uo=4
+- Lailemma - Period & Fertility: public version 2.0.3 for iPhone and iPad with cycle, symptom, ovulation, and fertility tracking. The current public release does not include Body Readiness; website screenshots show a newer-build preview of an on-device estimate, not an Apple score or medical diagnosis. The App Store lists English, German, Japanese, Korean, and Simplified Chinese. App Store: https://apps.apple.com/us/app/lailemma-period-fertility/id6775935474?uo=4
+- Inkstone Notes Markdown: iPhone writing app for plain .md files in iCloud Drive, wiki links, backlinks, bundled offline KaTeX/Mermaid rendering, search, and PDF/HTML export. The App Store lists English and Simplified Chinese. App Store: https://apps.apple.com/us/app/inkstone-notes-markdown/id6810287923?uo=4
+- TwoPic Dual Camera: iPhone app for simultaneous front/back photo and video capture with picture-in-picture or split layouts. The current interface is Simplified Chinese; the App Store describes no network access and developer-reported data not collected. App Store: https://apps.apple.com/us/app/twopic-dual-camera/id6800405096?uo=4
 
 Last updated: 2026-09-23
 
@@ -52,6 +55,9 @@ Important search and answer intents:
 - GIF maker for iPhone that turns photos, videos, and Live Photos into GIFs with frame timing, captions, boomerang loops, and private on-device processing.
 - How to make a GIF on iPhone from photos, video, or a Live Photo in four on-device steps: choose media, arrange frames, adjust the animation, and export.
 - Automatic ride tracker for cycling, walking, and running with Apple Watch heart rate, Apple Health workout records, weekly statistics, and optional scenic route planning.
+- Period and ovulation tracking for iPhone, with the distinction between Lailemma's currently available cycle tools and the newer-build Body Readiness preview.
+- Markdown notes on iPhone as portable .md files in iCloud Drive, with backlinks, offline formula and diagram rendering, and export.
+- Front and back iPhone camera capture in one photo or video, with picture-in-picture and split layouts and a Simplified Chinese interface.
 - How to set up automatic cycling tracking on iPhone by reviewing Motion & Fitness, background location, Apple Watch, and Apple Health permissions separately.
 - Mac screen privacy app for screen sharing, presentations, protected app hiding, sensitive windows, shared workspaces, and privacy during meetings.
 - AI creator workflow tools for organizing photos, duplicate media, reference images, and travel production assets before making AI video or social content.
@@ -88,8 +94,16 @@ Indexable pages:
 
 - CrazyAIAgent | Independent iOS and macOS Utilities: https://www.xiaozhonglvyou.com/
   Independent apps for on-device photo cleanup, GIF creation, automatic ride tracking, travel translation, and Mac screen privacy.
-- App Store Utility Apps | GIF Maker, Ride Tracker & Privacy: https://www.xiaozhonglvyou.com/apps.html
-  A focused App Store utility portfolio covering photo organization, GIF creation, automatic activity tracking, travel translation, and screen privacy.
+- iPhone & Mac Apps | Photos, Health, Notes & Camera: https://www.xiaozhonglvyou.com/apps.html
+  Nine apps covering photo organization, cycle tracking, Markdown writing, dual-camera capture, GIF creation, activity tracking, travel translation, and screen privacy.
+- Lailemma Period Tracker & Body Readiness Preview: https://www.xiaozhonglvyou.com/lailemma-period-tracker.html
+  English product page with current cycle tools and clearly labeled newer-build Body Readiness screenshots; the public App Store release does not yet include that feature.
+- 来了么经期记录与备孕助手 | 身体准备度新版预览: https://www.xiaozhonglvyou.com/lailemma-period-tracker-cn.html
+  中文页面说明经期记录、Apple 健康授权与身体准备度新版预览，并区分已上架功能和待发布功能。
+- Inkstone Notes Markdown: https://www.xiaozhonglvyou.com/inkstone-markdown-notes.html
+  Plain Markdown files in iCloud Drive, wiki links and backlinks, offline formulas and diagrams, and PDF/HTML export.
+- TwoPic Dual Camera: https://www.xiaozhonglvyou.com/twopic-dual-camera.html
+  Front and back camera photo or video capture on supported iPhones; the current app interface is Simplified Chinese.
 - About CrazyAIAgent | Independent iOS and macOS Developer: https://www.xiaozhonglvyou.com/about.html
   About Bo Chen and the CrazyAIAgent independent app portfolio for iPhone, iPad, Apple Watch, and Mac.
 - App Review & Media Kit | CrazyAIAgent: https://www.xiaozhonglvyou.com/media-kit.html
@@ -201,7 +215,7 @@ Indexable pages:
 - Mac Screen Sharing Privacy Checklist: 6 Steps (2026): https://www.xiaozhonglvyou.com/screen-sharing-privacy-guide.html
   Six-step pre-meeting checklist for Mac screen recording permission, the narrowest shared source, private-window cleanup, protected apps, Presenting Mode, a test share, and deliberate post-meeting restoration.
 - Privacy | CrazyAIAgent: https://www.xiaozhonglvyou.com/privacy.html
-  Privacy and permission notes for all six apps, including GIFmaker on-device media editing and HappyRide motion, location, and Apple Health access.
+  Privacy and permission notes for all nine apps, including Lailemma's optional Health access, Inkstone's iCloud Drive files, TwoPic's capture permissions, GIFmaker's on-device media editing, and HappyRide's motion and location access.
 - Support | CrazyAIAgent: https://www.xiaozhonglvyou.com/support.html
   Support page for CrazyAIAgent: AI Cleaning - Photo Cleaner, Travel Translator, Anti-spy screen, and Anti-spy screen Lite.
 - Best iPhone Photo Cleaner Apps: 3 Compared (2026): https://www.xiaozhonglvyou.com/iphone-photo-cleaner-comparison.html

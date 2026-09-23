@@ -32,6 +32,10 @@ Search index: https://www.xiaozhonglvyou.com/search-index.json
 
 ## Completed On Site
 
+The numerical inventory below is a 2026-09-21 snapshot, retained for comparison. The 2026-09-23 release added four product URLs (70 indexable HTML URLs total); use the current automated audit reports for live counts rather than treating the older numbers as current. The three new apps are linked from the portfolio, support, privacy, and media-kit pages. Lailemma's Body Readiness content is explicitly a newer-build preview.
+
+The regional market rows below describe the original six-app hub content. Do not infer that Inkstone or TwoPic has Japanese, German, or Turkish interface support, or that the three new apps already have dedicated pages in those languages. A private GSC export ending 2026-09-20 predates both the 2026-09-21 localized release and the 2026-09-23 new-app release; it cannot measure their post-release results.
+
 - 66 indexable HTML pages, 161 JSON-LD blocks, 216 top-level structured-data nodes, 0 parse errors
 - `robots.txt` allows 40 named search crawler UAs including Googlebot, Bingbot, MicrosoftPreview, DuckDuckBot, Slurp, Yahoo! JAPAN Y!J/YJ crawlers, Yandex, Mail.RU_Bot, Yeti, Daum, SeznamBot, Qwantbot/Qwantify, Coc Coc, Baiduspider, Sogou, 360Spider, YisouSpider, Bytespider, PetalBot, and AI crawlers (GPTBot, ClaudeBot, PerplexityBot)
 - `robots.txt` advertises sitemap-index, sitemap.xml, sitemap-global.xml, sitemap-local.xml, sitemap-articles.xml, sitemap-cn.xml, sitemap.txt, sitemap-global.txt, sitemap-local.txt, sitemap-articles.txt, sitemap-cn.txt, feed.xml, atom.xml

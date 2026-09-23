@@ -5,7 +5,7 @@ This is a provisional execution roadmap for CrazyAIAgent, informed by the previo
 ## Book Review Status
 
 - The earlier session recorded an outline and selected takeaways; full chapter-by-chapter reading has not been completed.
-- On 2026-09-07, the supplied WeChat temporary PDF path no longer resolved to a file. Page-level attribution cannot currently be verified.
+- On 2026-09-07 and again on 2026-09-23, the supplied WeChat temporary PDF path no longer resolved to a file. Page-level attribution cannot currently be verified.
 - Resume the book review when the PDF is available, preserving a private working copy outside the published site.
 - For each reviewed chapter, record page references, takeaways, corresponding site issues, implementation actions, and verification results. Keep unread chapters explicitly pending.
 - The implementation checklist below describes site work, not proof that the book has been fully read or that search traffic has increased.
@@ -62,7 +62,7 @@ Primary path: Google. Secondary path: Yandex Türkiye. StatCounter reported Augu
 
 ## Days 15-24: Localized Pages and Internal Discovery
 
-1. Improve the three market hubs before adding more country pages. Each hub should explain all six apps, local App Store links, language limitations, six task paths, FAQs, and a clear next action.
+1. Improve the three market hubs before adding more country pages. Each hub should accurately explain its supported apps, local App Store links, language limitations, task paths, FAQs, and a clear next action. The existing market hubs cover the original six apps; do not imply the three newer apps have localized pages or interfaces where they do not.
 2. Keep the dedicated localized photo-cleaner workflow pages genuinely localized in title, description, H1, body copy, FAQ, schema language, breadcrumb, and CTA.
 3. Add localized decision pages only where the query intent differs from the workflow page. Current targets are `ja-jp-best-iphone-photo-cleaner.html`, `de-de-beste-iphone-foto-cleaner.html`, and `tr-tr-en-iyi-iphone-fotograf-temizleme.html`.
 4. Link each localized guide from its market hub, `guides.html`, `directory.html`, the English and Chinese photo-cleaner pages, and at least one related article.
@@ -133,6 +133,8 @@ Primary path: Google. Secondary path: Yandex Türkiye. StatCounter reported Augu
 - 2026-09-07 localized discovery pass: the Japanese, German, and Turkish photo-cleaner workflow pages now have visible body links from both the core English photo-cleaner page and the regional hub. The regional ItemList includes all three workflows as separate URLs. This strengthens crawler and reader discovery without creating additional near-duplicate pages.
 - 2026-09-21 deployment and discovery check: the live sitemap and search index both list 66 pages and include the Japanese, German, and Turkish photo-cleaner workflow and decision pages. The live `iphone-photo-cleaner.html` and `regions.html` pages expose the localized workflow section, and the latest local verification passes 114/114 tests. This proves crawlability/discovery readiness, not Google clicks or index inclusion.
 - 2026-09-21 market-priority check: StatCounter's August 2026 country pages still support Japan = Google/Bing/Yahoo! JAPAN, Germany = Google/Bing plus Ecosia/DuckDuckGo monitoring, and Türkiye = Google/Yandex as the main operational paths.
+- 2026-09-23 GSC measurement check: a private Pages export is available locally. Its reporting window ends on 2026-09-20, before the 2026-09-21 Japanese/German/Turkish release and the 2026-09-23 new-app release. Treat missing rows for newly deployed URLs as pre-release absence, not indexing failure. Keep the raw export outside the public repository and obtain post-release query-by-page data before changing titles.
+- 2026-09-23 portfolio check: Lailemma, Inkstone Notes, and TwoPic have live product pages. Body Readiness screenshots are labeled as newer-build previews, not a feature in the current public Lailemma version. Privacy, support, and machine-readable discovery should include all three, while market pages must preserve each app's actual interface-language limitations.
 
 - [x] Japanese, German, and Turkish market hubs exist.
 - [x] Japanese and Turkish dedicated photo-cleaner guides exist; German guide is present.
@@ -141,6 +143,7 @@ Primary path: Google. Secondary path: Yandex Türkiye. StatCounter reported Augu
 - [x] Localized guides are represented in sitemap, search index, RSS/Atom, and internal discovery.
 - [x] Robots policy covers the documented local search crawler families.
 - [ ] Submit or re-submit the sitemaps in each verified webmaster account.
-- [ ] Record a real GSC/GA4/App Store Connect baseline before judging clicks. Use `node scripts/build-search-baseline.mjs --input PATH_TO_GSC_EXPORT.csv --date-range "LAST_28_DAYS"` once a Search Console export is available.
+- [x] Record a real pre-release GSC Pages baseline using `node scripts/build-search-baseline.mjs --input PATH_TO_GSC_EXPORT.csv --date-range "2026-08-24 to 2026-09-20"`; keep the export and report private.
+- [ ] Obtain post-release GSC page/query data, GA4 `app_store_click` data, and App Store Connect product-page/install data before judging the new pages' performance.
 - [ ] Export the current affected URL list for `Crawled - currently not indexed` and inspect the Japan/Germany/Türkiye target URLs one by one.
 - [ ] Reassess titles and descriptions after enough country-specific query data exists.
