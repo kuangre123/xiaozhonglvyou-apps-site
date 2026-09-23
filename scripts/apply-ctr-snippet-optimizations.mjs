@@ -757,13 +757,13 @@ const pages = [
   },
   {
     file: "mac-screen-privacy.html",
-    title: "Mac Privacy Screen App | Free vs $2.99 (2026)",
-    description: "Mac privacy screen app for hiding selected windows, covering sensitive areas, and safer presentations. Compare free Lite with the $2.99 full Mac app.",
+    title: "Mac Privacy Screen App | Free vs $3.99 (2026)",
+    description: "Mac privacy screen app for hiding selected windows, covering sensitive areas, and safer presentations. Compare free Lite with the $3.99 full Mac app.",
     keywords: "mac privacy screen app, Mac privacy app, screen privacy app for Mac, privacy screen app MacBook, hide sensitive windows Mac, anti spy screen, presentation privacy app",
-    modifiedDate: "2026-08-16",
-    modifiedDateLabel: "August 16, 2026",
+    modifiedDate: "2026-09-23",
+    modifiedDateLabel: "September 23, 2026",
     article: {
-      description: "Mac privacy screen app for hiding selected windows, covering sensitive areas, and safer presentations. Compare free Lite with the $2.99 full Mac app.",
+      description: "Mac privacy screen app for hiding selected windows, covering sensitive areas, and safer presentations. Compare free Lite with the $3.99 full Mac app.",
       keywords: [
         "mac privacy screen app",
         "Mac privacy app",
@@ -778,7 +778,7 @@ const pages = [
     headline: [
       "Mac Screen Privacy App",
       "Best Mac Screen Privacy App? Free vs Full (2026)",
-      "Mac Privacy Screen App: Free vs $2.99 (2026)"
+      "Mac Privacy Screen App: Free vs $3.99 (2026)"
     ],
     h1: [
       "Hide sensitive Mac windows in shared spaces.",
@@ -791,8 +791,8 @@ const pages = [
     title: "How to Hide Notifications When Screen Sharing on Mac (2026)",
     description: "Hide notifications when screen sharing on Mac in 6 steps. Use Focus, share one window, protect private apps, enable Presenting Mode, and test first.",
     keywords: "how to hide notifications when screen sharing on Mac, Mac hide notifications when sharing screen, Mac screen sharing privacy, share screen privacy settings Mac, hide private windows Mac",
-    modifiedDate: "2026-08-16",
-    modifiedDateLabel: "August 16, 2026",
+    modifiedDate: "2026-09-23",
+    modifiedDateLabel: "September 23, 2026",
     article: {
       description: "Hide notifications when screen sharing on Mac in 6 steps. Use Focus, share one window, protect private apps, enable Presenting Mode, and test first.",
       keywords: [

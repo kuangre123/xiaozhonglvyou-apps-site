@@ -48,8 +48,8 @@ const products = new Map([
       image: `${origin}/assets/anti-spy-icon.png`,
       applicationCategory: "UtilitiesApplication",
       operatingSystem: "macOS",
-      softwareVersion: "1.5.1",
-      price: "2.99",
+      softwareVersion: "1.5.3",
+      price: "3.99",
       priceCurrency: "USD"
     }
   ],
@@ -61,7 +61,7 @@ const products = new Map([
       image: `${origin}/assets/anti-spy-lite-icon.png`,
       applicationCategory: "UtilitiesApplication",
       operatingSystem: "macOS",
-      softwareVersion: "1.4.1",
+      softwareVersion: "1.4.5",
       price: "0.00",
       priceCurrency: "USD"
     }
