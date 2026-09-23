@@ -4,6 +4,19 @@ import { fileURLToPath } from "node:url";
 
 const siteDir = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const origin = "https://www.xiaozhonglvyou.com";
+const lailemmaLanguages = [
+  ["en", "lailemma-period-tracker.html", "English"],
+  ["zh-CN", "lailemma-period-tracker-cn.html", "简体中文"],
+  ["ja-JP", "lailemma-period-tracker-ja.html", "日本語"],
+  ["de-DE", "lailemma-period-tracker-de.html", "Deutsch"]
+];
+
+const labels = {
+  en: { nav: "Primary", apps: "Apps", guides: "Guides", support: "Support", breadcrumb: "Breadcrumb", home: "Home", newTab: "opens in a new tab", screen: "Real product screen", preview: "Body Readiness build preview", inside: "Inside the app", faq: "Common questions", before: "Before you download", directory: "Directory", privacy: "Privacy" },
+  "zh-CN": { nav: "主导航", apps: "全部应用", guides: "使用指南", support: "支持", breadcrumb: "路径", home: "首页", newTab: "在新标签页打开", screen: "真实产品画面", preview: "身体准备度新版截图", inside: "应用截图", faq: "常见问题", before: "下载前先确认", directory: "网站目录", privacy: "隐私" },
+  "ja-JP": { nav: "主なナビゲーション", apps: "アプリ", guides: "ガイド", support: "サポート", breadcrumb: "現在地", home: "ホーム", newTab: "新しいタブで開く", screen: "実際の画面", preview: "新しいビルドの画面プレビュー", inside: "アプリの画面", faq: "よくある質問", before: "ダウンロード前に確認", directory: "サイトマップ", privacy: "プライバシー" },
+  "de-DE": { nav: "Hauptnavigation", apps: "Apps", guides: "Ratgeber", support: "Support", breadcrumb: "Pfad", home: "Startseite", newTab: "öffnet einen neuen Tab", screen: "Produktansicht", preview: "Vorschau eines neueren Builds", inside: "In der App", faq: "Häufige Fragen", before: "Vor dem Download", directory: "Verzeichnis", privacy: "Datenschutz" }
+};
 
 const products = [
   {
@@ -116,6 +129,116 @@ const products = [
     faqs: [
       ["现在下载就能用身体准备度吗？", "截至 2026 年 9 月 23 日，公开版为 2.0.3，尚未包含身体准备度。这里的截图是新版预览，请以 App Store 更新说明为准。"],
       ["身体准备度是 Apple 官方或医疗分数吗？", "不是。它是来了么在本机依据已授权数据和周期信息计算的日常估算，不提供医疗诊断。"]
+    ]
+  },
+  {
+    file: "lailemma-period-tracker-ja.html",
+    lang: "ja-JP",
+    ogLocale: "ja_JP",
+    title: "Lailemma 生理日管理・妊活アプリ | 身体コンディションの新機能プレビュー",
+    description: "Lailemmaで生理日、症状、排卵の目安を記録。Appleヘルスケアの許可済みデータを使う身体コンディション推定は開発中の画面プレビューで、現在のApp Store版には含まれません。",
+    keywords: "生理日管理アプリ, 生理周期 記録 iPhone, 排卵日 目安, 身体コンディション プレビュー",
+    kicker: "生理周期の記録 · iPhoneとiPad",
+    heading: "Lailemmaで生理周期を記録する",
+    lead: "生理日、症状、排卵の目安を一か所で確認できます。身体コンディションの推定画面は新しいビルドのプレビューであり、現在公開中のApp Store版の機能ではありません。",
+    icon: "lailemma-icon.webp",
+    screenshots: [
+      { file: "lailemma-readiness-home.webp", alt: "中国語UIの新しいビルドで、今日の画面に身体コンディション推定が表示されるプレビュー", caption: "新しいビルドのプレビュー。画像の画面表示は中国語です。" },
+      { file: "lailemma-readiness-detail.webp", alt: "睡眠、心拍変動、周期の段階を説明する中国語UIの詳細画面", caption: "睡眠や心拍変動など、推定に使われた信号の内訳。" }
+    ],
+    previewLabel: "未公開機能のプレビュー",
+    status: "2026年9月23日に確認したApp Storeの公開版は2.0.3です。身体コンディション機能はまだ公開されていません。実際の提供状況は更新履歴で確認してください。",
+    storeUrl: "https://apps.apple.com/jp/app/lailemma-%E7%94%9F%E7%90%86%E6%97%A5%E7%AE%A1%E7%90%86%E3%81%A8%E5%A6%8A%E6%B4%BB/id6775935474?uo=4",
+    storeProduct: "lailemma-period-fertility",
+    storeCountry: "jp",
+    storeLabel: "日本のApp Storeで公開版を見る",
+    appName: "Lailemma - 生理日管理と妊活",
+    appCategory: "HealthApplication",
+    operatingSystem: "iOS, iPadOS",
+    softwareRequirements: "iOS 17.0以降",
+    price: "0",
+    currency: "JPY",
+    appDescription: "生理周期、症状、排卵の目安を記録。身体コンディション推定は2026年9月23日時点の公開版にはない新しいビルドのプレビューです。",
+    sections: [
+      {
+        kicker: "現在の公開版",
+        heading: "周期と毎日の変化をまとめて確認",
+        intro: "日本のApp Storeの説明には、生理予測、排卵の目安、日々の症状記録、妊娠関連の表示、任意のAppleヘルスケア連携が掲載されています。予測値は医療上の判断には使わないでください。",
+        items: [
+          ["生理日と症状", "経血量、気分、症状、体温を記録し、周期の変化を振り返れます。"],
+          ["妊活の目安", "排卵日や妊娠しやすい時期の推定を予定の参考にできます。避妊や診断の根拠にはなりません。"],
+          ["言語とデータ", "App Storeの対応言語には日本語が含まれます。ヘルスケアへのアクセスは任意で、許可した項目を設定で管理できます。"]
+        ]
+      },
+      {
+        kicker: "開発中の画面",
+        heading: "身体コンディション推定の読み方",
+        intro: "新しいビルドでは、許可済みで実際に取得できる睡眠、心拍変動、安静時心拍数、手首温度、活動量、周期の段階などを参考に、その日の状態をアプリ内で推定します。画像は中国語UIで撮影されています。",
+        items: [
+          ["数字だけに頼らない", "プレビューでは0〜100の推定値と、睡眠や心拍変動などの寄与を一緒に表示します。"],
+          ["Apple公式のスコアではない", "このアプリが端末上で計算した目安です。Appleが提供する準備度スコアではありません。"],
+          ["健康上の注意", "病気の診断、運動可否の決定、医療相談の代わりには使えません。"]
+        ]
+      }
+    ],
+    faqs: [
+      ["今ダウンロードすると身体コンディション機能を使えますか？", "いいえ。2026年9月23日時点の公開版2.0.3には含まれません。公開状況はApp Storeの更新履歴で確認してください。"],
+      ["日本語の画面で使えますか？", "公開版のApp Store対応言語には日本語が含まれます。このページの新機能プレビュー画像は中国語UIのビルドで撮影されたものです。"]
+    ]
+  },
+  {
+    file: "lailemma-period-tracker-de.html",
+    lang: "de-DE",
+    ogLocale: "de_DE",
+    title: "Lailemma Zyklus-App | Körperbereitschaft als Vorschau",
+    description: "Lailemma dokumentiert Periode und Symptome. Körperbereitschaft ist nur eine Vorschau aus einem neueren Build, nicht Teil der aktuellen App-Store-Version.",
+    keywords: "Zyklus App iPhone, Periode dokumentieren, Eisprung Schätzung, Körperbereitschaft Vorschau",
+    kicker: "Zyklus dokumentieren · iPhone und iPad",
+    heading: "Lailemma: Zyklus und Symptome im Blick",
+    lead: "Halte Periode und tägliche Symptome fest und sieh Schätzungen zum fruchtbaren Fenster. Die gezeigte Körperbereitschaft stammt aus einem neueren Build und ist noch keine Funktion der öffentlich verfügbaren App-Store-Version.",
+    icon: "lailemma-icon.webp",
+    screenshots: [
+      { file: "lailemma-readiness-home.webp", alt: "Vorschau der Körperbereitschaft auf der Startseite eines neueren Builds mit chinesischer Oberfläche", caption: "Vorschau aus einem neueren Build; die abgebildete Oberfläche ist chinesisch." },
+      { file: "lailemma-readiness-detail.webp", alt: "Detailansicht mit Beiträgen von Schlaf, Herzfrequenzvariabilität und Zyklusphase in chinesischer Oberfläche", caption: "Die Schätzung erläutert Schlaf, HRV und weitere verfügbare Signale." }
+    ],
+    previewLabel: "Vorschau, noch nicht öffentlich verfügbar.",
+    status: "Am 23. September 2026 war Version 2.0.3 im App Store öffentlich. Körperbereitschaft ist darin noch nicht enthalten. Prüfe die Versionshinweise vor der Installation.",
+    storeUrl: "https://apps.apple.com/de/app/lailemma-zyklus-fertilit%C3%A4t/id6775935474?uo=4",
+    storeProduct: "lailemma-period-fertility",
+    storeCountry: "de",
+    storeLabel: "Öffentliche Version im App Store ansehen",
+    appName: "Lailemma - Zyklus & Fertilität",
+    appCategory: "HealthApplication",
+    operatingSystem: "iOS, iPadOS",
+    softwareRequirements: "iOS 17.0 oder neuer",
+    price: "0",
+    currency: "EUR",
+    appDescription: "Zyklus, Symptome und Eisprung-Schätzungen dokumentieren. Körperbereitschaft ist eine Vorschau aus einem neueren Build und fehlt in der am 23. September 2026 geprüften öffentlichen Version.",
+    sections: [
+      {
+        kicker: "Schon verfügbar",
+        heading: "Zyklusdaten mit Alltagseinträgen verbinden",
+        intro: "Der deutsche App Store beschreibt Periodenvorhersagen, geschätzte Eisprungtage, Symptomprotokolle, Schwangerschaftsansichten und eine optionale Verbindung mit Apple Health. Vorhersagen sind keine medizinischen Feststellungen.",
+        items: [
+          ["Periode und Symptome", "Blutung, Stimmung, Beschwerden und Temperatur festhalten und Entwicklungen im Zeitverlauf vergleichen."],
+          ["Fruchtbares Fenster", "Geschätzte Tage zur Planung nutzen, aber nicht als zuverlässige Verhütungsmethode oder Diagnose verstehen."],
+          ["Sprache und Berechtigungen", "Deutsch steht in Apples Sprachliste. Der Zugriff auf Health-Daten ist optional und lässt sich in iOS verwalten."]
+        ]
+      },
+      {
+        kicker: "Vorschau eines neueren Builds",
+        heading: "Was die Körperbereitschaft erklärt",
+        intro: "Ein neuerer Build schätzt den Tageszustand anhand tatsächlich verfügbarer, freigegebener Signale wie Schlaf, Herzfrequenzvariabilität, Ruhepuls, Handgelenktemperatur, Aktivität und Zyklusphase. Die abgebildeten Screenshots zeigen eine chinesische Oberfläche.",
+        items: [
+          ["Schätzung mit Gründen", "Der Vorschaubildschirm zeigt einen Wert von 0 bis 100 und den Beitrag einzelner Signale, statt nur eine Zahl auszugeben."],
+          ["Kein Apple-Score", "Die Berechnung stammt von Lailemma und erfolgt auf dem Gerät. Sie ist kein offizieller Apple-Bereitschaftswert."],
+          ["Keine medizinische Aussage", "Der Wert dient der alltäglichen Orientierung und ersetzt weder eine Diagnose noch ärztlichen Rat."]
+        ]
+      }
+    ],
+    faqs: [
+      ["Ist Körperbereitschaft bereits im App Store verfügbar?", "Nein. In der am 23. September 2026 geprüften öffentlichen Version 2.0.3 fehlt diese Funktion. Maßgeblich sind die aktuellen Versionshinweise im App Store."],
+      ["Ist die App auf Deutsch nutzbar?", "Ja, Deutsch steht in der Sprachliste der öffentlichen App. Die Vorschaubilder für die neue Funktion wurden jedoch mit einer chinesischen Oberfläche aufgenommen."]
     ]
   },
   {
@@ -240,7 +363,8 @@ function schemaFor(page) {
         mainEntity: { "@id": `${canonical}#app` }
       },
       {
-        "@type": "SoftwareApplication", "@id": `${canonical}#app`, name: page.appName,
+        "@type": "SoftwareApplication", "@id": `${canonical}#app`, name: page.file.startsWith("lailemma") ? "Lailemma - Period & Fertility" : page.appName,
+        ...(page.file.startsWith("lailemma") && page.appName !== "Lailemma - Period & Fertility" ? { alternateName: page.appName } : {}),
         applicationCategory: page.appCategory, operatingSystem: page.operatingSystem,
         softwareRequirements: page.softwareRequirements,
         url: page.storeUrl, downloadUrl: page.storeUrl, description: page.appDescription,
@@ -267,18 +391,17 @@ function schemaFor(page) {
 
 function render(page) {
   const canonical = `${origin}/${page.file}`;
-  const chinese = page.lang === "zh-CN";
+  const ui = labels[page.lang] ?? labels.en;
   const appId = page.storeUrl.match(/\/id(\d+)/)?.[1];
   if (!appId) throw new Error(`${page.file}: App Store ID missing`);
   const schema = JSON.stringify(schemaFor(page)).replace(/</g, "\\u003c");
-  const alternates = page.alternate ? `
-<link rel="alternate" hreflang="en" href="${origin}/lailemma-period-tracker.html">
-<link rel="alternate" hreflang="zh-CN" href="${origin}/lailemma-period-tracker-cn.html">
+  const isLailemma = page.file.startsWith("lailemma");
+  const alternates = isLailemma ? `\n${lailemmaLanguages.map(([lang, file]) => `<link rel="alternate" hreflang="${lang}" href="${origin}/${file}">`).join("\n")}
 <link rel="alternate" hreflang="x-default" href="${origin}/lailemma-period-tracker.html">` : "";
   const screenshotMarkup = page.screenshots.map((shot) => `<figure><img src="assets/${shot.file}" width="520" height="1125" loading="lazy" decoding="async" alt="${escapeHtml(shot.alt)}"><figcaption>${escapeHtml(shot.caption)}</figcaption></figure>`).join("\n");
   const sectionMarkup = page.sections.map((section, index) => `<section class="section content-section${index % 2 ? " alt-section" : ""}"><div class="section-inner content-grid"><div><p class="section-kicker">${escapeHtml(section.kicker)}</p><h2>${escapeHtml(section.heading)}</h2><p>${escapeHtml(section.intro)}</p></div><div class="content-list">${itemList(section.items)}</div></div></section>`).join("\n");
   const faqMarkup = page.faqs.map(([question, answer]) => `<details><summary>${escapeHtml(question)}</summary><p>${escapeHtml(answer)}</p></details>`).join("\n");
-  const alternateLink = page.alternate ? `<a href="${page.alternate.file}" lang="${page.alternate.lang}">${escapeHtml(page.alternate.label)}</a>` : "";
+  const languageLinks = isLailemma ? lailemmaLanguages.filter(([, file]) => file !== page.file).map(([lang, file, name]) => `<a href="${file}" lang="${lang}">${escapeHtml(name)}</a>`).join("") : "";
   const statusMarkup = page.status ? `<p class="new-app-status"><strong>${escapeHtml(page.previewLabel)}</strong> ${escapeHtml(page.status)}</p>` : "";
   return `<!doctype html>
 <html lang="${page.lang}">
@@ -312,19 +435,19 @@ function render(page) {
 <script type="application/ld+json">${schema}</script>
 </head>
 <body>
-<header class="site-header" data-elevate><nav class="nav" aria-label="${chinese ? "主导航" : "Primary"}"><a class="brand" href="/" aria-label="CrazyAIAgent home"><span class="brand-mark" aria-hidden="true">CA</span><span>CrazyAIAgent</span></a><div class="nav-links"><a href="apps.html">${chinese ? "全部应用" : "Apps"}</a><a href="guides.html">${chinese ? "使用指南" : "Guides"}</a><a href="support.html">${chinese ? "支持" : "Support"}</a></div></nav></header>
+<header class="site-header" data-elevate><nav class="nav" aria-label="${ui.nav}"><a class="brand" href="/" aria-label="CrazyAIAgent home"><span class="brand-mark" aria-hidden="true">CA</span><span>CrazyAIAgent</span></a><div class="nav-links"><a href="apps.html">${ui.apps}</a><a href="guides.html">${ui.guides}</a><a href="support.html">${ui.support}</a></div></nav></header>
 <main class="new-app-page ${page.file.startsWith("lailemma") ? "health-app" : page.file.startsWith("inkstone") ? "notes-app" : "camera-app"}">
 <section class="page-hero new-app-intro"><div class="section-inner">
-<nav class="breadcrumb" aria-label="${chinese ? "路径" : "Breadcrumb"}"><ol><li><a href="/">${chinese ? "首页" : "Home"}</a></li><li><a href="apps.html">${chinese ? "应用" : "Apps"}</a></li><li aria-current="page">${escapeHtml(page.appName)}</li></ol></nav>
+<nav class="breadcrumb" aria-label="${ui.breadcrumb}"><ol><li><a href="/">${ui.home}</a></li><li><a href="apps.html">${ui.apps}</a></li><li aria-current="page">${escapeHtml(page.appName)}</li></ol></nav>
 <div class="new-app-title"><img src="assets/${page.icon}" width="112" height="112" fetchpriority="high" decoding="async" alt="${escapeHtml(page.appName)} icon"><div><p class="section-kicker">${escapeHtml(page.kicker)}</p><h1>${escapeHtml(page.heading)}</h1></div></div>
 <p class="new-app-lead">${escapeHtml(page.lead)}</p>${statusMarkup}
-<div class="hero-actions"><a class="button button-primary" href="${page.storeUrl}" target="_blank" rel="noopener noreferrer" data-analytics-event="app_store_click" data-store-product="${page.storeProduct}" data-storefront="ios-app-store" data-store-country="${page.storeCountry}" aria-label="${escapeHtml(page.storeLabel)} (${chinese ? "在新标签页打开" : "opens in a new tab"})">${escapeHtml(page.storeLabel)}</a>${alternateLink}</div>
+<div class="hero-actions"><a class="button button-primary" href="${page.storeUrl}" target="_blank" rel="noopener noreferrer" data-analytics-event="app_store_click" data-store-product="${page.storeProduct}" data-storefront="ios-app-store" data-store-country="${page.storeCountry}" aria-label="${escapeHtml(page.storeLabel)} (${ui.newTab})">${escapeHtml(page.storeLabel)}</a>${languageLinks}</div>
 </div></section>
-<section class="section new-app-visual" aria-labelledby="new-app-screen-title"><div class="section-inner"><p class="section-kicker">${chinese ? "真实产品画面" : "Real product screen"}</p><h2 id="new-app-screen-title">${page.status ? (chinese ? "身体准备度新版截图" : "Body Readiness build preview") : (chinese ? "应用截图" : "Inside the app")}</h2><div class="new-app-screens">${screenshotMarkup}</div></div></section>
+<section class="section new-app-visual" aria-labelledby="new-app-screen-title"><div class="section-inner"><p class="section-kicker">${ui.screen}</p><h2 id="new-app-screen-title">${page.status ? ui.preview : ui.inside}</h2><div class="new-app-screens">${screenshotMarkup}</div></div></section>
 ${sectionMarkup}
-<section class="section content-section new-app-faq"><div class="section-inner"><p class="section-kicker">${chinese ? "常见问题" : "Common questions"}</p><h2>${chinese ? "下载前先确认" : "Before you download"}</h2><div class="faq-list">${faqMarkup}</div></div></section>
+<section class="section content-section new-app-faq"><div class="section-inner"><p class="section-kicker">${ui.faq}</p><h2>${ui.before}</h2><div class="faq-list">${faqMarkup}</div></div></section>
 </main>
-<footer class="footer"><div class="footer-inner"><p>© 2026 CrazyAIAgent.</p><div><a href="/">${chinese ? "首页" : "Home"}</a><a href="apps.html">${chinese ? "全部应用" : "Apps"}</a><a href="directory.html">${chinese ? "网站目录" : "Directory"}</a>${alternateLink}<a href="privacy.html">${chinese ? "隐私" : "Privacy"}</a><a href="support.html">${chinese ? "支持" : "Support"}</a></div></div></footer>
+<footer class="footer"><div class="footer-inner"><p>© 2026 CrazyAIAgent.</p><div><a href="/">${ui.home}</a><a href="apps.html">${ui.apps}</a><a href="directory.html">${ui.directory}</a>${languageLinks}<a href="privacy.html">${ui.privacy}</a><a href="support.html">${ui.support}</a></div></div></footer>
 <script src="script.js" defer></script>
 </body>
 </html>\n`;

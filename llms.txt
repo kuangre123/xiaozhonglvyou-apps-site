@@ -97,6 +97,8 @@ Indexable pages:
 - iPhone & Mac Apps | Photos, Health, Notes & Camera: https://www.xiaozhonglvyou.com/apps.html
   Nine apps covering photo organization, cycle tracking, Markdown writing, dual-camera capture, GIF creation, activity tracking, travel translation, and screen privacy.
 - Lailemma Period Tracker & Body Readiness Preview: https://www.xiaozhonglvyou.com/lailemma-period-tracker.html
+- Lailemma 生理日管理（日本語）: https://www.xiaozhonglvyou.com/lailemma-period-tracker-ja.html
+- Lailemma Zyklus-App (Deutsch): https://www.xiaozhonglvyou.com/lailemma-period-tracker-de.html
   English product page with current cycle tools and clearly labeled newer-build Body Readiness screenshots; the public App Store release does not yet include that feature.
 - 来了么经期记录与备孕助手 | 身体准备度新版预览: https://www.xiaozhonglvyou.com/lailemma-period-tracker-cn.html
   中文页面说明经期记录、Apple 健康授权与身体准备度新版预览，并区分已上架功能和待发布功能。
