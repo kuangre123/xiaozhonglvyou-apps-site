@@ -31,5 +31,5 @@ export const articleKeywordsByFile = new Map([
   ["seedance-ai-tools.html", ["Seedance 2.5 tools", "AI creator tools", "AI video workflow", "photo organization for creators", "duplicate media cleanup", "travel translation for creators"]],
   ["travel-translator-cn.html", ["出国翻译", "iPhone旅行翻译", "语音翻译", "拍照OCR翻译", "离线翻译", "旅行语言工具"]],
   ["travel-translator.html", ["travel translator", "voice translation", "camera translation", "travel language app", "on-device travel tools", "offline translation"]],
-  ["voice-camera-translator-guide.html", ["voice translator for travel", "camera translator for menus", "iPhone travel translation", "offline translator app", "translate signs with camera", "travel conversation translator"]]
+  ["voice-camera-translator-guide.html", ["how to translate menus on iPhone", "translate a menu on iPhone", "Apple Translate camera", "camera translator for menus", "iPhone travel translation", "voice translator for travel", "travel conversation translator"]]
 ]);

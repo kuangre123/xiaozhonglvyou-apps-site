@@ -740,19 +740,24 @@ const pages = [
   },
   {
     file: "voice-camera-translator-guide.html",
-    title: "Voice &amp; Camera Translator for Travel: 6 Steps (2026)",
-    description: "Translate travel conversations, menus, and signs on iPhone in 6 steps. Use voice, camera OCR, live interpretation, and offline core language pairs.",
+    title: "How to Translate Menus on iPhone: Camera &amp; Voice (2026)",
+    description: "Translate menus on iPhone with Apple Translate camera, then use voice, camera OCR, live interpretation, and offline core language pairs while traveling.",
+    keywords: "how to translate menus on iPhone, translate a menu on iPhone, Apple Translate camera, translate conversations on iPhone, translate signs with camera, iPhone translation guide",
     modifiedDate: "2026-09-23",
     modifiedDateLabel: "September 23, 2026",
     article: {
-      headline: "Voice & Camera Translator for Travel: 6 Steps (2026)",
-      description: "Translate travel conversations, menus, and signs on iPhone in 6 steps. Use voice, camera OCR, live interpretation, and offline core language pairs."
+      description: "Translate menus on iPhone with Apple Translate camera, then use voice, camera OCR, live interpretation, and offline core language pairs while traveling."
     },
+    autoArticleWordCount: true,
     headline: [
       "Voice and Camera Translator Guide for Travel",
       "Voice and Camera Translator for Travel",
       "Voice and Camera Translator for Travel: 6 Steps (2026)",
-      "Voice & Camera Translator for Travel: 6 Steps (2026)"
+      "How to Translate Menus on iPhone: Camera & Voice (2026)"
+    ],
+    h1: [
+      "Translate menus, signs, and conversations in 6 steps.",
+      "How to translate menus on iPhone, then handle conversations."
     ]
   },
   {
