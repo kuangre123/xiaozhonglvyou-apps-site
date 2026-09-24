@@ -413,15 +413,18 @@ const pages = [
   },
   {
     file: "best-travel-translator-apps-iphone.html",
-    title: "Best Translator Apps for Travel: 3 Compared (2026)",
-    description: "Compare the best translator apps for travel on iPhone: Apple Translate, Google Translate, and Translation Specialist for voice, camera, and offline use.",
-    keywords: "best translator apps for travel, best translator app for travel, translation apps for travelers, offline translator app, voice translator app, camera translator app",
+    title: "Best Translator App for iPhone: 3 Compared (2026)",
+    description: "Compare the best translator apps for iPhone: Apple Translate, Google Translate, and Translation Specialist for voice, camera, offline, and travel use.",
+    keywords: "translator app for iPhone, best translator app for iPhone, best translation app for iPhone, translation app for iPhone, Apple Translate vs Google Translate, offline translator app, camera translator app",
     article: {
-      description: "Compare the best translator apps for travel on iPhone: Apple Translate, Google Translate, and Translation Specialist for voice, camera, and offline use.",
+      description: "Compare the best translator apps for iPhone: Apple Translate, Google Translate, and Translation Specialist for voice, camera, offline, and travel use.",
+      dateModified: "2026-09-24",
       keywords: [
+        "translator app for iPhone",
+        "best translator app for iPhone",
+        "best translation app for iPhone",
+        "translation app for iPhone",
         "best translator apps for travel",
-        "best translator app for travel",
-        "translation apps for travelers",
         "Apple Translate vs Google Translate",
         "offline translator app",
         "camera translator app",
@@ -429,17 +432,61 @@ const pages = [
       ],
       wordCount: 1478
     },
-    modifiedDate: "2026-08-15",
-    modifiedDateLabel: "August 15, 2026",
+    structuredData: [
+      {
+        type: "BreadcrumbList",
+        id: "https://www.xiaozhonglvyou.com/best-travel-translator-apps-iphone.html#breadcrumb",
+        values: {
+          name: "Best Translator Apps for iPhone",
+          itemListElement: [
+            { "@type": "ListItem", position: 1, name: "Home", item: "https://www.xiaozhonglvyou.com/" },
+            { "@type": "ListItem", position: 2, name: "Guides", item: "https://www.xiaozhonglvyou.com/guides.html" },
+            { "@type": "ListItem", position: 3, name: "Best Translator Apps for iPhone", item: "https://www.xiaozhonglvyou.com/best-travel-translator-apps-iphone.html" }
+          ]
+        }
+      }
+    ],
+    questions: [
+      {
+        names: ["What is the best translator app for travel?", "What is the best translator app for iPhone?"],
+        answer: "There is no universal winner. Apple Translate is the simplest built-in choice, Google Translate is strongest for broad language and input coverage, and Translation Specialist is a focused option for travelers who want two-way voice conversation, continuous live interpretation, camera translation, and phrase flashcards in one app."
+      }
+    ],
+    modifiedDate: "2026-09-24",
+    modifiedDateLabel: "September 24, 2026",
     headline: [
       "Best Travel Translator Apps for iPhone: 3 Compared (2026)",
-      "Best Translator Apps for Travel: 3 Compared (2026)"
+      "Best Translator Apps for Travel: 3 Compared (2026)",
+      "Best Translator App for iPhone: 3 Compared (2026)"
     ],
     h1: [
       "The best travel translator depends on how you communicate.",
       "3 travel translator apps compared.",
       "3 best travel translator apps for iPhone, compared.",
-      "3 best translator apps for travel, compared."
+      "3 best translator apps for travel, compared.",
+      "Best translator apps for iPhone, compared."
+    ],
+    replacements: [
+      {
+        label: "translator comparison breadcrumb",
+        from: ["<li aria-current=\"page\">Translator Apps for Travel</li>"],
+        to: "<li aria-current=\"page\">Translator Apps for iPhone</li>"
+      },
+      {
+        label: "translator comparison eyebrow",
+        from: ["<p class=\"eyebrow\">Translator apps for travel</p>"],
+        to: "<p class=\"eyebrow\">iPhone translator app comparison</p>"
+      },
+      {
+        label: "translator comparison hero summary",
+        from: ["<p class=\"hero-summary\">Apple Translate, Google Translate, and Translation Specialist compared for voice, camera, offline use, privacy, and cost.</p>"],
+        to: "<p class=\"hero-summary\">Apple Translate, Google Translate, and Translation Specialist compared for iPhone voice translation, camera menus, offline packs, privacy, and cost.</p>"
+      },
+      {
+        label: "translator comparison lead question",
+        from: ["<summary>What is the best translator app for travel?</summary>"],
+        to: "<summary>What is the best translator app for iPhone?</summary>"
+      }
     ]
   },
   {

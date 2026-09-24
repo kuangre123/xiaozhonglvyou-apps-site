@@ -7,7 +7,7 @@ export const articleKeywordsByFile = new Map([
   ["best-gif-maker-apps-iphone.html", ["best GIF maker apps for iPhone", "best GIF maker app", "iPhone GIF maker comparison", "free GIF maker app", "video to GIF maker for iPhone", "ImgPlay alternative"]],
   ["best-iphone-photo-cleaner-app.html", ["free photo cleaner app", "free photo cleaner app for iPhone", "iPhone photo cleaner app", "duplicate photo cleaner", "similar photo cleaner", "free up iPhone storage"]],
   ["de-de-beste-iphone-foto-cleaner.html", ["beste iPhone Foto Cleaner", "iPhone Foto Cleaner Vergleich", "doppelte Fotos App", "KI Fotos sortieren", "iPhone Speicher bereinigen", "AI Cleaning"]],
-  ["best-travel-translator-apps-iphone.html", ["best translator apps for travel", "best translator app for travel", "translation apps for travelers", "Apple Translate vs Google Translate", "offline translator app", "camera translator app", "voice translator app"]],
+  ["best-travel-translator-apps-iphone.html", ["translator app for iPhone", "best translator app for iPhone", "best translation app for iPhone", "translation app for iPhone", "best translator apps for travel", "Apple Translate vs Google Translate", "offline translator app", "camera translator app", "voice translator app"]],
   ["duplicate-photo-cleaner-cn.html", ["重复照片清理", "iPhone重复照片", "相似照片整理", "iPhone相册清理", "截图清理", "模糊照片复查"]],
   ["duplicate-photo-cleaner-guide.html", ["duplicate photo cleaner", "duplicate photo cleaner iPhone", "find duplicate photos iPhone", "delete duplicate photos iPhone", "similar photo review"]],
   ["ipad-photo-organizer-cn.html", ["iPad照片整理", "iPad相册清理", "AI照片分类", "iCloud照片同步", "重复照片复查", "截图和文档整理"]],
