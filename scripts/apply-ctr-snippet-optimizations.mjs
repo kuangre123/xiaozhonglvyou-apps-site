@@ -246,28 +246,29 @@ const pages = [
   },
   {
     file: "make-gif-on-iphone-guide.html",
-    title: "How to Make a GIF on iPhone From Video: 5 Steps (2026)",
-    description: "Make a GIF on iPhone from video in 5 steps. Trim frames, tune timing, and export up to 1080px. Also learn how to turn a Live Photo into a GIF.",
-    keywords: "how to make a GIF on iPhone from video, convert video to GIF iPhone, turn video into GIF iPhone, how to turn a Live Photo into a GIF, convert Live Photo to GIF",
-    modifiedDate: "2026-08-21",
-    modifiedDateLabel: "August 21, 2026",
+    title: "How to Create an Animated GIF on iPhone (2026)",
+    description: "Create an animated GIF on iPhone from photos with Shortcuts or from video and Live Photos with GIFmaker. Compare Photos Loop with a real .gif export.",
+    keywords: "how to create animated GIF on iPhone, how to make a GIF on iPhone, iPhone Shortcuts Make GIF, video to GIF iPhone, Live Photo to GIF iPhone",
+    modifiedDate: "2026-09-24",
+    modifiedDateLabel: "September 24, 2026",
     headline: [
       "How to Make a GIF on iPhone from Video or Live Photos",
       "How to Make a Real GIF on iPhone in 5 Steps (2026)",
       "How to Make a GIF on iPhone From Video or Live Photo (2026)",
-      "How to Make a GIF on iPhone From Video: 5 Steps (2026)"
+      "How to Make a GIF on iPhone From Video: 5 Steps (2026)",
+      "How to Create an Animated GIF on iPhone (2026)"
     ],
     article: {
       "@id": "https://www.xiaozhonglvyou.com/make-gif-on-iphone-guide.html#article",
-      headline: "How to Make a GIF on iPhone From Video: 5 Steps (2026)",
-      description: "Make a GIF on iPhone from video in five steps, with trimming, frame timing, canvas, captions, playback controls, and export up to 1080px. The guide also covers turning a Live Photo into a GIF.",
-      dateModified: "2026-08-21",
+      headline: "How to Create an Animated GIF on iPhone (2026)",
+      description: "Create an animated GIF on iPhone from photos with Shortcuts or from video and Live Photos with GIFmaker. Compare Photos Loop with a real .gif export.",
+      dateModified: "2026-09-24",
       keywords: [
-        "how to make a GIF on iPhone from video",
-        "convert video to GIF iPhone",
-        "turn video into GIF iPhone",
-        "how to turn a Live Photo into a GIF",
-        "convert Live Photo to GIF"
+        "how to create animated GIF on iPhone",
+        "how to make a GIF on iPhone",
+        "iPhone Shortcuts Make GIF",
+        "video to GIF iPhone",
+        "Live Photo to GIF iPhone"
       ]
     },
     autoArticleWordCount: true,
@@ -281,11 +282,11 @@ const pages = [
         type: "BreadcrumbList",
         id: "https://www.xiaozhonglvyou.com/make-gif-on-iphone-guide.html#breadcrumb",
         values: {
-          name: "Make a GIF on iPhone From Video",
+          name: "Make an Animated GIF on iPhone",
           itemListElement: [
             { "@type": "ListItem", position: 1, name: "Home", item: "https://www.xiaozhonglvyou.com/" },
             { "@type": "ListItem", position: 2, name: "Guides", item: "https://www.xiaozhonglvyou.com/guides.html" },
-            { "@type": "ListItem", position: 3, name: "Make a GIF on iPhone From Video", item: "https://www.xiaozhonglvyou.com/make-gif-on-iphone-guide.html" }
+            { "@type": "ListItem", position: 3, name: "Make an Animated GIF on iPhone", item: "https://www.xiaozhonglvyou.com/make-gif-on-iphone-guide.html" }
           ]
         }
       }
@@ -300,28 +301,32 @@ const pages = [
       "Make a GIF on iPhone from video or Live Photos.",
       "Make a real GIF on iPhone in 5 steps.",
       "Make a GIF from video or a Live Photo on iPhone.",
-      "Make a GIF on iPhone from video in 5 steps."
+      "Make a GIF on iPhone from video in 5 steps.",
+      "Create an animated GIF on iPhone from photos or video."
     ],
     replacements: [
       {
         label: "guide breadcrumb label",
-        from: ["<li aria-current=\"page\">Make a GIF on iPhone</li>"],
-        to: "<li aria-current=\"page\">Make a GIF From Video</li>"
+        from: ["<li aria-current=\"page\">Make a GIF on iPhone</li>", "<li aria-current=\"page\">Make a GIF From Video</li>"],
+        to: "<li aria-current=\"page\">Make an Animated GIF</li>"
       },
       {
         label: "guide eyebrow",
-        from: ["<p class=\"eyebrow\">Video and Live Photo guide</p>"],
-        to: "<p class=\"eyebrow\">Video to GIF on iPhone</p>"
+        from: ["<p class=\"eyebrow\">Video and Live Photo guide</p>", "<p class=\"eyebrow\">Video to GIF on iPhone</p>"],
+        to: "<p class=\"eyebrow\">Make a GIF on iPhone</p>"
       },
       {
         label: "guide hero summary",
-        from: ["<p class=\"hero-summary\">Make a real .gif in five steps: tune timing and playback, then export up to 1080px with free on-device editing and no uploads.</p>"],
-        to: "<p class=\"hero-summary\">Trim the useful frames, tune timing and playback, then export up to 1080px. The same workflow also turns a Live Photo into a GIF.</p>"
+        from: [
+          "<p class=\"hero-summary\">Make a real .gif in five steps: tune timing and playback, then export up to 1080px with free on-device editing and no uploads.</p>",
+          "<p class=\"hero-summary\">Trim the useful frames, tune timing and playback, then export up to 1080px. The same workflow also turns a Live Photo into a GIF.</p>"
+        ],
+        to: "<p class=\"hero-summary\">Use Shortcuts to make a GIF from photos, or turn a video or Live Photo into a GIF with frame controls. Photos Loop is a quick effect, not a .gif export.</p>"
       },
       {
         label: "guide publication date",
         from: ["<p class=\"article-meta\">Published and updated <time datetime=\"2026-08-13\">August 13, 2026</time> by <a href=\"about.html\" rel=\"author\">Bo Chen</a></p>"],
-        to: "<p class=\"article-meta\">Published August 10, 2026 · Updated <time datetime=\"2026-08-21\">August 21, 2026</time> by <a href=\"about.html\" rel=\"author\">Bo Chen</a></p>"
+        to: "<p class=\"article-meta\">Published August 10, 2026 · Updated <time datetime=\"2026-09-24\">September 24, 2026</time> by <a href=\"about.html\" rel=\"author\">Bo Chen</a></p>"
       },
       {
         label: "guide product call to action",
@@ -342,6 +347,40 @@ const pages = [
         label: "guide related product label",
         from: ["<a class=\"region-card\" href=\"gif-maker.html\"><span>Product details</span><strong>GIFmaker features, privacy, requirements, and App Store link</strong></a>"],
         to: "<a class=\"region-card\" href=\"gif-maker.html\"><span>Free GIF maker app</span><strong>GIFmaker features, privacy, requirements, and App Store link</strong></a>"
+      },
+      {
+        label: "animated GIF quick answer",
+        from: ["<p>If you only want a Live Photo to move repeatedly inside Apple-compatible apps, Photos may be enough. If the destination expects a .gif file, or you need editing controls, export a real GIF.</p>"],
+        to: "<p>For a looping Live Photo, use Photos Loop or Bounce. For a .gif file from still photos, use Apple's Shortcuts Make GIF action. For video, Live Photos, or detailed frame editing, export a GIF with GIFmaker.</p>"
+      },
+      {
+        label: "animated GIF method summary",
+        from: ["<div><strong>Real GIF export</strong><p>Use this for a portable GIF file, custom frame timing, captions, canvas ratios, reverse playback, or a refined boomerang loop.</p></div>"],
+        to: "<div><strong>Shortcuts GIF</strong><p>Turn selected still photos into a shareable .gif file without a separate editor.</p></div><div><strong>GIFmaker export</strong><p>Use this for a video or Live Photo, custom frame timing, captions, canvas ratios, or reverse playback.</p></div>"
+      },
+      {
+        label: "animated GIF method heading",
+        from: ["<h2>Photos effect or GIF export?</h2>"],
+        to: "<h2>Photos effect, Shortcuts, or a GIF editor?</h2>"
+      },
+      {
+        label: "animated GIF method table",
+        from: ["<div role=\"row\"><span role=\"cell\">Send a .gif file</span><span role=\"cell\">GIFmaker</span><span role=\"cell\">Exports the animation in GIF format for wider sharing.</span></div>"],
+        to: "<div role=\"row\"><span role=\"cell\">Create a .gif from still photos</span><span role=\"cell\">Shortcuts Make GIF</span><span role=\"cell\">Builds a GIF file with Apple's built-in actions.</span></div><div role=\"row\"><span role=\"cell\">Convert video to a .gif file</span><span role=\"cell\">GIFmaker</span><span role=\"cell\">Exports a video clip as a GIF for sharing.</span></div>"
+      },
+      {
+        label: "Shortcuts GIF workflow",
+        from: ["<section class=\"section content-section\" id=\"make-gif-steps\">"],
+        to: [
+          "<section class=\"section content-section alt-section\" id=\"make-gif-with-shortcuts\"><div class=\"section-inner content-grid\"><div>",
+          "<p class=\"section-kicker\">Built-in GIF file</p><h2>Make a GIF from photos with Shortcuts.</h2>",
+          "<p>Open Shortcuts and build a workflow with Select Photos, Make GIF, then Save File. Choose several still photos, run the shortcut, and save the result to Files. Open the saved file to check its animation and .gif extension.</p>",
+          "<p>Apple documents the <a href=\"https://support.apple.com/guide/shortcuts/intro-to-shortcuts-apdf22b0444c/ios\" target=\"_blank\" rel=\"noopener noreferrer\">Make GIF action</a> and <a href=\"https://support.apple.com/guide/shortcuts/apdaf74d75a5/ios\" target=\"_blank\" rel=\"noopener noreferrer\">Save File action</a> in Shortcuts.</p>",
+          "</div><div class=\"content-list\"><div><strong>1. Select photos</strong><p>Add Select Photos and enable multiple selection. Choose the still images when you run the shortcut.</p></div>",
+          "<div><strong>2. Make GIF</strong><p>Add Make GIF after Select Photos and preview the animated result.</p></div>",
+          "<div><strong>3. Save the file</strong><p>Add Save File after Make GIF, choose a location in Files, and confirm the saved file is a .gif.</p></div></div></div></section>",
+          "<section class=\"section content-section\" id=\"make-gif-steps\">"
+        ].join("")
       }
     ]
   },
