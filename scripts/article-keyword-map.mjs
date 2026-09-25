@@ -18,7 +18,7 @@ export const articleKeywordsByFile = new Map([
   ["iphone-photo-cleaner-cn.html", ["iPhone照片清理", "iPhone重复照片", "相似照片复查", "截图清理", "照片不上传", "iPhone存储清理"]],
   ["iphone-photo-cleaner-comparison.html", ["best iPhone photo cleaner apps", "iPhone photo cleaner comparison", "AI photo cleaner comparison", "duplicate photo cleanup apps", "photo cleaner privacy", "free photo cleaner app"]],
   ["iphone-photo-cleaner.html", ["photo cleaner", "iPhone photo cleaner", "photo cleaner app", "iPhone storage cleanup", "on-device photo analysis", "find duplicate photos"]],
-  ["iphone-storage-cleanup-guide.html", ["iPhone storage cleanup", "free up iPhone storage", "iPhone photo storage", "large video cleanup", "duplicate photo review", "screenshot cleanup"]],
+  ["iphone-storage-cleanup-guide.html", ["clean up iPhone storage photos", "clean up photos on iPhone for free", "iPhone photo storage", "merge duplicate photos on iPhone", "review iPhone videos and screenshots", "iCloud Photos deletion"]],
   ["mac-screen-privacy-cn.html", ["Mac屏幕隐私", "Mac共享屏幕保护", "Mac演示隐私", "敏感窗口隐藏", "Mac防窥软件", "macOS隐私工具"]],
   ["mac-screen-privacy.html", ["mac privacy screen app", "Mac privacy app", "screen privacy app for Mac", "privacy screen app MacBook", "hide sensitive windows Mac", "anti spy screen", "presentation privacy app"]],
   ["make-gif-on-iphone-guide.html", ["how to create animated GIF on iPhone", "how to make a GIF on iPhone", "iPhone Shortcuts Make GIF", "video to GIF iPhone", "Live Photo to GIF iPhone"]],

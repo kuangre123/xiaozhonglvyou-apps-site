@@ -3,6 +3,29 @@
 import { readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 
+const photoStorageSteps = [
+  {
+    name: "Check what uses space",
+    text: "Open Settings, General, then iPhone Storage. Note the free space and the Photos usage before changing anything. Check Settings, your name, iCloud, then Photos to see whether iCloud Photos is syncing."
+  },
+  {
+    name: "Merge built-in duplicates",
+    text: "In Photos, open Collections, Utilities, then Duplicates. Review each set before tapping Merge. If Duplicates is missing, the library may still be indexing or no duplicates were found."
+  },
+  {
+    name: "Review videos and screenshots",
+    text: "In Photos, open Collections, then Media Types to inspect videos. Use the Screenshots collection or the library filter to review screenshots. Select only items you no longer need."
+  },
+  {
+    name: "Back up and delete selectively",
+    text: "Make an independent copy of irreplaceable originals before deleting. Select reviewed photos or videos in Photos and tap Delete. If iCloud Photos is on, deletion also affects your other synced devices."
+  },
+  {
+    name: "Check Recently Deleted and storage again",
+    text: "In Photos, open Collections, Utilities, then Recently Deleted to recover mistakes. Permanently delete only items you are sure about; otherwise Apple keeps them there for 30 days. Recheck Settings, General, then iPhone Storage."
+  }
+];
+
 const pages = [
   {
     file: "index.html",
@@ -98,16 +121,118 @@ const pages = [
   {
     file: "iphone-storage-cleanup-guide.html",
     title: "How to Clean Up iPhone Photo Storage for Free | 2026 Guide",
-    description: "Practical iPhone storage cleanup guide for photos: classify the library, then review large media, screenshots, blurry shots, duplicates, and similar photos.",
-    modifiedDate: "2026-08-11",
-    modifiedDateLabel: "August 11, 2026",
+    description: "Clean up iPhone photo storage for free: check storage, merge duplicates, review videos and screenshots, and avoid iCloud deletion mistakes.",
+    modifiedDate: "2026-09-25",
+    modifiedDateLabel: "September 25, 2026",
     article: {
       headline: "How to Clean Up iPhone Photo Storage for Free | 2026 Guide",
-      description: "Practical iPhone storage cleanup guide for photos: classify the library, then review large media, screenshots, blurry shots, duplicates, and similar photos."
+      description: "Clean up iPhone photo storage for free: check storage, merge duplicates, review videos and screenshots, and avoid iCloud deletion mistakes.",
+      dateModified: "2026-09-25"
+    },
+    autoArticleWordCount: true,
+    howTo: {
+      name: "How to clean up iPhone photo storage for free",
+      description: "Check photo storage, merge duplicates, review videos and screenshots, then delete selectively with iCloud and Recently Deleted in mind.",
+      step: photoStorageSteps.map((step, index) => ({
+        "@type": "HowToStep",
+        position: index + 1,
+        name: step.name,
+        text: step.text
+      }))
     },
     headline: [
       "How to Clean Up iPhone Photo Storage for Free",
       "How to Clean Up iPhone Photo Storage for Free | 2026 Guide"
+    ],
+    h1: [
+      "Free up iPhone photo storage. Review first.",
+      "How to clean up iPhone photo storage for free."
+    ],
+    questions: [
+      {
+        names: ["What fills iPhone storage fastest in the photo library?", "What is the fastest free way to clean up iPhone photos?"],
+        answer: "Start in Settings, General, iPhone Storage. Then use Photos' built-in Duplicates tool and review videos and screenshots before deleting anything."
+      },
+      {
+        names: ["Can an app safely clean iPhone system storage?", "Can a photo cleaner app clear iOS System Data?"],
+        answer: "No photo cleaner app can directly clear protected iOS System Data. Use iPhone Storage recommendations and focus on photos and videos you can review."
+      },
+      {
+        names: ["Why use AI classification before storage cleanup?", "Does deleting iPhone photos also delete them from iCloud?"],
+        answer: "Yes, when iCloud Photos is on, deleting a photo also removes it from other synced devices. You can usually recover it from Recently Deleted for 30 days."
+      }
+    ],
+    replacements: [
+      {
+        label: "storage guide hero summary",
+        from: ["<p class=\"hero-summary\">Review the photos that usually take the most space: large media, screenshots, duplicates, and blurry shots.</p>"],
+        to: "<p class=\"hero-summary\">Start with iPhone's free storage and duplicate tools. Review videos and screenshots before deleting, and check what iCloud Photos will sync.</p>"
+      },
+      {
+        label: "storage guide primary action",
+        from: ["<a class=\"button button-primary\" href=\"https://apps.apple.com/us/app/ai-cleaning-photo-cleaner/id6768019606?uo=4\" target=\"_blank\" rel=\"noopener noreferrer\" data-analytics-event=\"app_store_click\" data-store-product=\"ai-cleaning-photo-cleaner\" data-storefront=\"ios-app-store\" aria-label=\"Get AI Cleaning - Photo Cleaner free on the App Store (opens in a new tab)\">Get AI Cleaning free</a>"],
+        to: "<a class=\"button button-primary\" href=\"#free-steps\">Start free cleanup</a><a class=\"button button-secondary\" href=\"https://apps.apple.com/us/app/ai-cleaning-photo-cleaner/id6768019606?uo=4\" target=\"_blank\" rel=\"noopener noreferrer\" data-analytics-event=\"app_store_click\" data-store-product=\"ai-cleaning-photo-cleaner\" data-storefront=\"ios-app-store\" aria-label=\"AI Cleaning - Photo Cleaner on the App Store (opens in a new tab)\">Explore AI Cleaning</a>"
+      },
+      {
+        label: "storage guide workflow anchor",
+        from: ["<section class=\"section content-section\">"],
+        to: "<section class=\"section content-section\" id=\"free-steps\">"
+      },
+      {
+        label: "storage guide workflow introduction",
+        from: ["<p class=\"section-kicker\">Storage pressure</p><h2>Start with content you can actually review.</h2><p>iOS apps should not promise impossible system junk cleanup. A more honest iPhone storage workflow focuses on user-visible items: photos, videos, screenshots, duplicates, blurry shots, low-quality media, and contacts that the user can inspect before changing.</p>"],
+        to: "<p class=\"section-kicker\">Free iPhone tools</p><h2>Clean up your photo library in five steps.</h2><p>You do not need to install an app to check iPhone storage or merge exact duplicates. First compare the Photos category with available device space; then work through the library in small, reviewable groups. Storage saved will depend on what you actually remove.</p><p>Apple documents <a href=\"https://support.apple.com/en-au/108429\" target=\"_blank\" rel=\"noopener noreferrer\">iPhone Storage</a>, <a href=\"https://support.apple.com/en-gb/guide/iphone/iph1978d9c23/27/ios/27\" target=\"_blank\" rel=\"noopener noreferrer\">merging duplicates</a>, and <a href=\"https://support.apple.com/en-mide/guide/iphone/iph8530ff6a2/ios\" target=\"_blank\" rel=\"noopener noreferrer\">Media Types</a>.</p>"
+      },
+      {
+        label: "storage guide first step",
+        from: ["<div><strong>Large media</strong><p>Videos and high-resolution media can take meaningful space and should be reviewed with real size context.</p></div>"],
+        to: `<div><strong>1. ${photoStorageSteps[0].name}</strong><p>${photoStorageSteps[0].text}</p></div>`
+      },
+      {
+        label: "storage guide second step",
+        from: ["<div><strong>Screenshots</strong><p>Repeated screenshots accumulate quickly and are often easier to delete after grouping.</p></div>"],
+        to: `<div><strong>2. ${photoStorageSteps[1].name}</strong><p>${photoStorageSteps[1].text}</p></div>`
+      },
+      {
+        label: "storage guide remaining steps",
+        from: ["<div><strong>Duplicate and similar photos</strong><p>Find likely cleanup candidates, then keep the best copy instead of bulk deleting blindly.</p></div>"],
+        to: photoStorageSteps.slice(2).map((step, index) => `<div><strong>${index + 3}. ${step.name}</strong><p>${step.text}</p></div>`).join("")
+      },
+      {
+        label: "storage guide options introduction",
+        from: ["<p class=\"section-kicker\">AI review path</p><h2>Classification makes cleanup safer.</h2><p>AI Cleaning separates everyday categories and document categories from cleanup categories. That gives users a better path than starting with a delete button.</p>"],
+        to: "<p class=\"section-kicker\">Keep or delete</p><h2>Choose what happens to your originals.</h2><p>Deleting is not the only way to reduce on-device storage. If you use iCloud Photos and have enough iCloud space, Optimize iPhone Storage can keep full-resolution originals in iCloud and smaller versions on your iPhone. It does not erase photos from your library.</p>"
+      },
+      {
+        label: "storage guide iCloud option",
+        from: ["<div><strong>Understand the library</strong><p>Review animals, plants, food, restaurants, group photos, documents, receipts, invoices, and ID cards.</p></div>"],
+        to: "<div><strong>Keep every photo, use less device space</strong><p>Check Settings, your name, iCloud, then Photos for Optimize Storage. This uses iCloud storage, which is separate from iPhone storage and may require a paid plan for a large library. See <a href=\"https://support.apple.com/en-gb/108782\" target=\"_blank\" rel=\"noopener noreferrer\">Apple's iCloud Photos guide</a>.</p></div>"
+      },
+      {
+        label: "storage guide optional app",
+        from: ["<div><strong>Review cleanup candidates</strong><p>Move through duplicates, screenshots, blurry shots, low-quality photos, and large media.</p></div>"],
+        to: "<div><strong>Need help with similar photos?</strong><p>After using Apple's Duplicates tool, <a href=\"iphone-photo-cleaner.html\">AI Cleaning</a> can group visually similar photos, screenshots, and large media for manual review. It is free to download; check the current App Store listing for any optional Pro features before relying on them.</p></div>"
+      },
+      {
+        label: "storage guide deletion warning",
+        from: ["<div><strong>Confirm before deleting</strong><p>Storage cleanup is more useful when users understand what they are removing and why.</p></div>"],
+        to: "<div><strong>Know the deletion boundary</strong><p>With iCloud Photos on, deletion syncs across devices. Recently Deleted normally holds items for 30 days; permanent deletion cannot be undone. Check <a href=\"https://support.apple.com/en-euro/guide/iphone/iphb4defbde9/27/ios/27\" target=\"_blank\" rel=\"noopener noreferrer\">Apple's delete and recovery instructions</a> before clearing it.</p></div>"
+      },
+      {
+        label: "storage guide FAQ one",
+        from: ["<details open><summary>What fills iPhone storage fastest in the photo library?</summary><p>Large videos, repeated screenshots, duplicate photos, visually similar shots, blurry photos, and old media can all contribute to storage pressure.</p></details>"],
+        to: "<details open><summary>What is the fastest free way to clean up iPhone photos?</summary><p>Start in Settings, General, iPhone Storage. Then use Photos' built-in Duplicates tool and review videos and screenshots before deleting anything.</p></details>"
+      },
+      {
+        label: "storage guide FAQ two",
+        from: ["<details><summary>Can an app safely clean iPhone system storage?</summary><p>Apps should not make fake iOS system-cleaning promises. A safer approach is to focus on reviewable content such as photos, screenshots, duplicates, large media, and contacts.</p></details>"],
+        to: "<details><summary>Can a photo cleaner app clear iOS System Data?</summary><p>No photo cleaner app can directly clear protected iOS System Data. Use iPhone Storage recommendations and focus on photos and videos you can review.</p></details>"
+      },
+      {
+        label: "storage guide FAQ three",
+        from: ["<details><summary>Why use AI classification before storage cleanup?</summary><p>AI classification helps users understand what is in the library before deletion, which is especially useful for documents, receipts, ID cards, and personal memories.</p></details>"],
+        to: "<details><summary>Does deleting iPhone photos also delete them from iCloud?</summary><p>Yes, when iCloud Photos is on, deleting a photo also removes it from other synced devices. You can usually recover it from Recently Deleted for 30 days.</p></details>"
+      }
     ]
   },
   {
