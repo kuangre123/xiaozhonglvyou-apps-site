@@ -1108,8 +1108,8 @@ const pages = [
   },
   {
     file: "screen-sharing-privacy-guide.html",
-    title: "How to Hide Notifications When Screen Sharing on Mac (2026)",
-    description: "Hide notifications when screen sharing on Mac in 6 steps. Use Focus, share one window, protect private apps, enable Presenting Mode, and test first.",
+    title: "Hide Notifications While Screen Sharing on Mac: 6 Steps",
+    description: "Turn off macOS alerts while mirroring or sharing, enable Focus, share one window, and test before your meeting. A practical 6-step Mac checklist.",
     keywords: "how to hide notifications when screen sharing on Mac, Mac hide notifications when sharing screen, Mac screen sharing privacy, share screen privacy settings Mac, hide private windows Mac",
     modifiedDate: "2026-09-23",
     modifiedDateLabel: "September 23, 2026",
@@ -1133,7 +1133,7 @@ const pages = [
       "Mac Screen Sharing Privacy Guide",
       "How to Protect Mac Privacy During Screen Sharing",
       "Mac Screen Sharing Privacy Checklist: 6 Steps (2026)",
-      "How to Hide Notifications When Screen Sharing on Mac (2026)"
+      "Hide Notifications While Screen Sharing on Mac: 6 Steps"
     ],
     h1: [
       "Protect sensitive Mac windows before a meeting or nearby glance exposes them.",
