@@ -83,21 +83,95 @@ const pages = [
   },
   {
     file: "best-iphone-photo-cleaner-app.html",
-    title: "Free Photo Cleaner App for iPhone | Free vs Pro (2026)",
-    description: "Free photo cleaner app for iPhone: review duplicate and similar photos before deleting. AI Cleaning is free to download; optional Pro adds 9 AI categories.",
-    keywords: "free photo cleaner app, free photo cleaner app for iPhone, iPhone photo cleaner app, duplicate photo cleaner, similar photo cleaner, free up iPhone storage",
-    modifiedDate: "2026-08-15",
-    modifiedDateLabel: "August 15, 2026",
+    title: "Free iPhone Photo Cleaner App: Limits &amp; Pro (2026)",
+    description: "AI Cleaning is free to download. Free users get one in-app cleanup action; more gated cleanup actions and 9 AI photo categories require Pro.",
+    keywords: "free photo cleaner app for iPhone, free iPhone photo cleaner app, photo cleaner free limit, iPhone photo cleaner free vs paid, Live Photo cleanup iPhone, burst photo cleanup",
+    modifiedDate: "2026-09-29",
+    modifiedDateLabel: "September 29, 2026",
     article: {
-      headline: "Free Photo Cleaner App for iPhone | Free vs Pro (2026)",
-      description: "Free photo cleaner app for iPhone: review duplicate and similar photos before deleting. AI Cleaning is free to download; optional Pro adds 9 AI categories."
+      headline: "Free iPhone Photo Cleaner App: Limits & Pro (2026)",
+      description: "AI Cleaning is free to download. Free users get one in-app cleanup action; more gated cleanup actions and 9 AI photo categories require Pro.",
+      dateModified: "2026-09-29"
     },
+    autoArticleWordCount: true,
     headline: [
       "How to Choose an iPhone Photo Cleaner (2026 Guide)",
       "Best iPhone Photo Cleaner App? 9 AI Categories (2026)",
       "iPhone Photo Cleaner: Free Download and Optional AI (2026)",
       "Free Photo Cleaner App for iPhone: Free vs Pro (2026)",
-      "Free Photo Cleaner App for iPhone | Free vs Pro (2026)"
+      "Free Photo Cleaner App for iPhone | Free vs Pro (2026)",
+      "Free iPhone Photo Cleaner App: Limits & Pro (2026)"
+    ],
+    h1: [
+      "Free photo cleaner app for iPhone. Review first.",
+      "Free iPhone photo cleaner app: know the limit first."
+    ],
+    questions: [
+      {
+        names: ["Is there a free photo cleaner app for iPhone?", "What does the free version of AI Cleaning include?"],
+        answer: "AI Cleaning is free to download. Free users get one successful in-app cleanup action across eligible tools, not one per screen; the action may include multiple selected items. Further gated cleanup actions and the nine Auto-Categorize AI categories require Pro. Review selections before confirming, and check your local App Store for current prices."
+      },
+      {
+        names: ["Does AI Cleaning upload my library for AI classification?"],
+        answer: "The developer says photo analysis runs on the iPhone and nothing is uploaded. Apple's App Store privacy label reports Data Not Collected; Apple says this developer-provided disclosure has not been verified by Apple. See the private AI cleaner evidence guide."
+      },
+      {
+        names: ["Does AI Cleaning collect or upload photo data?"],
+        answer: "The developer says photo analysis runs on the iPhone and nothing is uploaded. Apple's App Store privacy label reports Data Not Collected; Apple says this developer-provided disclosure has not been verified by Apple."
+      }
+    ],
+    replacements: [
+      {
+        label: "free cleaner hero summary",
+        from: ["<p class=\"hero-summary\">AI Cleaning is free to download for iPhone. Review duplicate and similar photos before deleting; optional Pro adds 9 on-device AI categories.</p>"],
+        to: "<p class=\"hero-summary\">Free to download, with one successful in-app cleanup action. More gated cleanup actions and 9 AI photo categories require Pro.</p>"
+      },
+      {
+        label: "free cleaner product facts intro",
+        from: ["<p>These product facts come from the current US App Store listing, including its pricing and privacy disclosures.</p>"],
+        to: "<p>AI Cleaning is free to install. The app's free cleanup allowance is limited; Pro unlocks additional gated actions and nine AI categories. Subscription prices vary by App Store storefront.</p>"
+      },
+      {
+        label: "free cleaner cost row",
+        from: ["<div role=\"row\"><span role=\"cell\">Cost</span> <span role=\"cell\">Free download; optional monthly and yearly subscriptions</span> <span role=\"cell\">You can install before deciding whether Pro classification fits your library.</span></div>"],
+        to: "<div role=\"row\"><span role=\"cell\">Free allowance</span> <span role=\"cell\">One successful in-app cleanup action; more gated actions require Pro</span> <span role=\"cell\">One action can cover multiple selected items; it is not one free photo per tap.</span></div>"
+      },
+      {
+        label: "free cleaner standout row",
+        from: ["<div role=\"row\"><span role=\"cell\">Standout feature</span> <span role=\"cell\">9 Pro AI categories plus review-first cleanup groups</span> <span role=\"cell\">Documents and memories can be separated from likely cleanup candidates.</span></div>"],
+        to: "<div role=\"row\"><span role=\"cell\">New cleanup tools</span> <span role=\"cell\">Private Vault, Live Photo Slimming, and Burst Cleanup</span> <span role=\"cell\">Keep private items separate, remove a Live Photo's motion clip, or review burst shots.</span></div>"
+      },
+      {
+        label: "free cleaner privacy row",
+        from: ["<div role=\"row\"><span role=\"cell\">Privacy</span> <span role=\"cell\">On-device AI; App Store label says Data Not Collected</span> <span role=\"cell\">Photo analysis is described as local, with no account or upload required for core features.</span></div>"],
+        to: "<div role=\"row\"><span role=\"cell\">Privacy</span> <span role=\"cell\">On-device AI; developer-reported App Store label says Data Not Collected</span> <span role=\"cell\">Apple states that this privacy disclosure is developer-provided and has not been verified by Apple.</span></div>"
+      },
+      {
+        label: "free cleaner intent answer",
+        from: ["<div role=\"row\"><span role=\"cell\">\"free photo cleaner app\"</span> <span role=\"cell\">This decision guide</span> <span role=\"cell\">Choose an app that classifies first, then helps review cleanup groups.</span></div>"],
+        to: "<div role=\"row\"><span role=\"cell\">\"free photo cleaner app\"</span> <span role=\"cell\">This decision guide</span> <span role=\"cell\">Compare the free cleanup allowance with Pro limits before installing.</span></div>"
+      },
+      {
+        label: "free cleaner FAQ allowance",
+        from: ["<details open><summary>Is there a free photo cleaner app for iPhone?</summary><p>Yes. AI Cleaning is free to download from the App Store for iPhone. It includes optional monthly and yearly subscriptions for Pro features, so free download does not mean every feature is free.</p></details>"],
+        to: "<details open><summary>What does the free version of AI Cleaning include?</summary><p>AI Cleaning is free to download. Free users get one successful in-app cleanup action across eligible tools, not one per screen; the action may include multiple selected items. Further gated cleanup actions and the nine Auto-Categorize AI categories require Pro. Review selections before confirming, and check your local App Store for current prices.</p></details>"
+      },
+      {
+        label: "free cleaner privacy FAQ evidence",
+        from: [
+          "<p>The current App Store listing says AI computation runs on the iPhone, nothing is uploaded, and the privacy label is Data Not Collected. See the <a href=\"private-ai-photo-cleaner.html\">private AI cleaner evidence guide.</a></p>",
+          "<p>The developer says photo analysis runs on the iPhone and nothing is uploaded. Apple's App Store privacy label says Data Not Collected, but Apple notes that this developer-provided disclosure has not been verified by Apple. See the <a href=\"private-ai-photo-cleaner.html\">private AI cleaner evidence guide.</a></p>"
+        ],
+        to: "<p>The developer says photo analysis runs on the iPhone and nothing is uploaded. Apple's App Store privacy label reports Data Not Collected; Apple says this developer-provided disclosure has not been verified by Apple. See the <a href=\"private-ai-photo-cleaner.html\">private AI cleaner evidence guide.</a></p>"
+      },
+      {
+        label: "free cleaner privacy FAQ duplicate",
+        from: [
+          "<p>The App Store listing says every AI computation runs on the iPhone, nothing is uploaded, and the app privacy label is Data Not Collected.</p>",
+          "<p>The developer says photo analysis runs on the iPhone and nothing is uploaded. Apple's App Store privacy label says Data Not Collected; Apple notes this developer-provided disclosure has not been verified by Apple.</p>"
+        ],
+        to: "<p>The developer says photo analysis runs on the iPhone and nothing is uploaded. Apple's App Store privacy label reports Data Not Collected; Apple says this developer-provided disclosure has not been verified by Apple.</p>"
+      }
     ]
   },
   {
@@ -254,17 +328,47 @@ const pages = [
     file: "iphone-photo-cleaner.html",
     title: "Photo Cleaner for iPhone | Find Duplicates &amp; Free Space",
     description: "Photo cleaner for iPhone that finds duplicate and similar photos, screenshots, blurry shots, and large files. Review first, then free up space safely.",
-    modifiedDate: "2026-09-23",
-    modifiedDateLabel: "September 23, 2026",
+    modifiedDate: "2026-09-29",
+    modifiedDateLabel: "September 29, 2026",
     article: {
       headline: "Photo Cleaner for iPhone | Find Duplicates & Free Space",
-      description: "Photo cleaner for iPhone that finds duplicate and similar photos, screenshots, blurry shots, and large files. Review first, then free up space safely."
+      description: "Photo cleaner for iPhone that finds duplicate and similar photos, screenshots, blurry shots, and large files. Review first, then free up space safely.",
+      dateModified: "2026-09-29"
     },
+    autoArticleWordCount: true,
     headline: [
       "iPhone Photo Cleaner with AI Classification",
       "AI Photo Cleaner for iPhone",
       "Photo Cleaner for iPhone: Find Duplicates and Free Space",
       "Photo Cleaner for iPhone | Find Duplicates & Free Space"
+    ],
+    questions: [
+      {
+        names: ["Does AI Cleaning delete photos automatically?"],
+        answer: "No. AI Cleaning asks you to review and confirm before a cleanup action. Free users get one successful in-app cleanup action across eligible tools; additional gated actions require Pro. Daily Cleanup offers 30 review cards per day, but reviewing cards does not itself delete them."
+      }
+    ],
+    replacements: [
+      {
+        label: "photo cleaner current facts date",
+        from: ["These details reflect version 1.1.6 and were checked on September 23, 2026 against the"],
+        to: "The feature details reflect app version 1.1.6 and were rechecked on September 29, 2026; App Store version notes can vary by storefront. See the"
+      },
+      {
+        label: "photo cleaner review and free limit",
+        from: ["<div><strong>Review before deletion</strong><p>Exact and similar photos, screenshots, blurry media, and large files remain review candidates. Daily Cleanup presents 30 swipe-style cards rather than deleting automatically.</p></div>"],
+        to: "<div><strong>Review and free allowance</strong><p>Review photos before confirming. Free users get one successful in-app cleanup action across eligible tools; additional gated actions require Pro. Daily Cleanup's 30 daily review cards do not delete photos by themselves.</p></div>"
+      },
+      {
+        label: "photo cleaner version and new tools",
+        from: ["<div><strong>Version and compatibility</strong><p>The current release is version 1.1.6 and requires iOS 16.0 or later.</p></div>"],
+        to: "<div><strong>Version 1.1.6 tools</strong><p>Private Vault keeps selected photos in an app-private, Face ID-locked store; Live Photo Slimming keeps the still image without its motion clip; Burst Cleanup helps review shots from a burst. Requires iOS 16.0 or later.</p></div>"
+      },
+      {
+        label: "photo cleaner FAQ review and free limit",
+        from: ["<details><summary>Does AI Cleaning delete photos automatically?</summary><p>No. It presents cleanup candidates for review and asks for confirmation before deletion. Daily Cleanup provides 30 swipe-style review cards at a time.</p></details>"],
+        to: "<details><summary>Does AI Cleaning delete photos automatically?</summary><p>No. AI Cleaning asks you to review and confirm before a cleanup action. Free users get one successful in-app cleanup action across eligible tools; additional gated actions require Pro. Daily Cleanup offers 30 review cards per day, but reviewing cards does not itself delete them.</p></details>"
+      }
     ]
   },
   {

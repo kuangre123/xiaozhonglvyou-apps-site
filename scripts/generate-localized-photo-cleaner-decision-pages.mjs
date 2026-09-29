@@ -5,7 +5,7 @@ import { priorityStores } from "./japan-germany-turkey-markets.mjs";
 const siteDir = path.resolve(import.meta.dirname, "..");
 const origin = "https://www.xiaozhonglvyou.com";
 const publishedDate = "2026-09-04";
-const updatedDate = "2026-09-05";
+const updatedDate = "2026-09-29";
 const appId = "6768019606";
 const analyticsVersion = "0bee63cd1708";
 
@@ -54,10 +54,10 @@ const pages = [
     locale: "ja_JP",
     storeCountry: "jp",
     title: "iPhone写真整理アプリおすすめ | AIで安全に選ぶ",
-    description: "日本語でiPhone写真整理アプリの選び方を解説します。重複写真、類似写真、スクリーンショット、AI分類、プライバシー、削除前確認を比較します。",
+    description: "日本向けにiPhone写真整理アプリを比較。AI Cleaningの無料整理枠とPro対象、重複・類似写真、Face ID保護、Live Photo・連写整理を解説します。",
     keywords: ["iPhone 写真整理アプリ おすすめ", "iPhone 写真クリーナー 比較", "重複写真 削除 アプリ", "写真整理 AI", "iPhone ストレージ整理", "AI Cleaning"],
     ogTitle: "iPhone写真整理アプリの選び方",
-    ogDescription: "日本語で確認するiPhone写真整理アプリの選び方。重複写真、類似写真、AI分類、削除前確認を比較します。",
+    ogDescription: "AI Cleaningの無料整理枠とPro対象、新しい写真整理機能を含め、日本向けにiPhone写真整理アプリを比較します。",
     breadcrumb: "写真整理アプリの選び方",
     countryName: "日本",
     marketFile: "ja-jp.html",
@@ -100,6 +100,7 @@ const pages = [
         items: [
           ["合うケース", "旅行写真、料理写真、書類写真、スクリーンショットが混在し、何から見ればよいか分からないとき。"],
           ["慎重に使うケース", "仕事用書類、証明書、家族写真、編集済み写真が多い場合は、分類だけで判断せず元画像を開きます。"],
+          ["新しい整理ツール", "Private Vault（Face IDで保護するアプリ内保管庫）、Live Photoの動画部分を省いて静止画を残す機能、連写内の写真整理を搭載。"],
           ["合わないケース", "写真ライブラリ以外のiOSシステム容量、キャッシュ、RAMを消す目的では使いません。"]
         ]
       }
@@ -125,11 +126,11 @@ const pages = [
     faq: [
       ["iPhone写真整理アプリのおすすめ基準は何ですか？", "削除前に写真を比較できること、重複と類似写真を区別できること、重要な写真を除外しやすいこと、App Storeの価格とプライバシー表示を確認できることです。"],
       ["AI Cleaningは写真を自動削除しますか？", "いいえ。分類や削除候補は確認の補助です。最終的に削除する写真は利用者が選びます。"],
-      ["無料の写真整理機能だけで十分ですか？", "iPhone標準の重複項目だけで足りる場合もあります。類似写真、スクリーンショット、ぼやけた写真、大きな動画をまとめて確認したい場合は専用アプリを比較します。"],
+      ["AI Cleaningの無料版では何ができますか？", "ダウンロードは無料です。無料ユーザーが実行できる対象の整理操作はアプリ全体で1回で、画面ごとに1回ではありません。1回の操作で複数の選択項目を処理できる場合があります。追加の対象操作と9種類のAI自動分類にはProが必要です。料金は日本のApp Storeで確認してください。"],
       ["日本語UIかどうかはどこで確認しますか？", "日本のApp Storeの言語欄、スクリーンショット、アプリ内表示をインストール前に確認します。ページ上の説明言語とアプリ画面の言語は別です。"],
       ["削除しても容量が増えないことはありますか？", "あります。iOSは削除した写真を「最近削除した項目」に一定期間保存します。必要な写真がないことを確認してから、そのアルバムも管理します。"]
     ],
-    ui: { updated: "2026年9月5日更新", storeLink: "日本のApp Storeを開く", faqKicker: "FAQ", author: "著者", privacy: "プライバシー", contact: "お問い合わせ" }
+    ui: { updated: "2026年9月29日更新", storeLink: "日本のApp Storeを開く", faqKicker: "FAQ", author: "著者", privacy: "プライバシー", contact: "お問い合わせ" }
   },
   {
     file: "de-de-beste-iphone-foto-cleaner.html",
@@ -137,10 +138,10 @@ const pages = [
     locale: "de_DE",
     storeCountry: "de",
     title: "Beste iPhone Foto Cleaner | KI App richtig wählen",
-    description: "Deutschsprachiger Entscheidungsratgeber für iPhone Foto Cleaner: KI-Sortierung, doppelte Fotos, ähnliche Bilder, Datenschutz und Löschkontrolle prüfen.",
+    description: "iPhone Foto Cleaner in Deutschland: AI Cleanings kostenloses Kontingent, Pro-Grenzen, Datenschutz und neue Live-Photo- und Serienbild-Werkzeuge.",
     keywords: ["beste iPhone Foto Cleaner", "iPhone Foto Cleaner Vergleich", "doppelte Fotos App", "KI Fotos sortieren", "iPhone Speicher bereinigen", "AI Cleaning"],
     ogTitle: "Beste iPhone Foto Cleaner richtig auswählen",
-    ogDescription: "Deutscher Entscheidungsratgeber für iPhone Foto Cleaner: Duplikate, ähnliche Bilder, KI-Sortierung, Datenschutz und Kontrolle vor dem Löschen.",
+    ogDescription: "AI Cleanings kostenloses Bereinigungskontingent, Pro-Grenzen und neue Funktionen im deutschen iPhone-Foto-Cleaner-Ratgeber.",
     breadcrumb: "Beste Foto-Cleaner wählen",
     countryName: "Deutschland",
     marketFile: "de-de.html",
@@ -183,6 +184,7 @@ const pages = [
         items: [
           ["Geeignet", "Große private Fotomediatheken mit vielen ähnlichen Aufnahmen, Screenshots, Dokumentfotos und Videos."],
           ["Mit Vorsicht", "Berufliche Dokumente, Belege, Ausweise, Familienbilder und bearbeitete Dateien sollten einzeln geöffnet werden."],
+          ["Neue Werkzeuge", "Private Vault mit Face-ID-Schutz, Live Photo Slimming zum Entfernen des Bewegungsclips und Burst Cleanup zur Prüfung von Serienbildern."],
           ["Nicht geeignet", "Wenn das Ziel RAM-Reinigung, Systemcache, versteckte iOS-Daten oder automatische Löschung ohne Kontrolle ist."]
         ]
       }
@@ -207,12 +209,12 @@ const pages = [
     faqTitle: "Fragen zur Auswahl eines iPhone Foto Cleaners",
     faq: [
       ["Was macht einen guten iPhone Foto Cleaner aus?", "Wichtig sind klare Prüfgruppen, eine zuverlässige Vorschau, getrennte Behandlung von Duplikaten und ähnlichen Fotos, transparente Datenschutzangaben und manuelle Kontrolle vor dem Löschen."],
-      ["Löscht AI Cleaning Fotos automatisch?", "Nein. Die App unterstützt beim Sortieren und Anzeigen möglicher Löschkandidaten. Die endgültige Auswahl trifft der Nutzer."],
+      ["Was ist bei AI Cleaning kostenlos?", "Der Download ist kostenlos. Ohne Pro ist eine erfolgreiche Bereinigungsaktion über die berechtigten Werkzeuge hinweg möglich, nicht eine pro Bildschirm. Eine Aktion kann mehrere ausgewählte Objekte umfassen. Weitere gesperrte Bereinigungen und die neun KI-Autokategorien erfordern Pro. Den aktuellen Preis im deutschen App Store prüfen."],
       ["Reicht Apples Duplikate-Funktion aus?", "Für exakte Duplikate kann sie ausreichen. Wer auch ähnliche Fotos, Screenshots, unscharfe Bilder und große Medien prüfen möchte, vergleicht zusätzliche Foto-Cleaner-Apps."],
       ["Wo prüfe ich deutsche Preise und Kompatibilität?", "Im deutschen App Store. Dort stehen die aktuellen Preise, In-App-Käufe, iOS-Anforderungen, Spracheinträge und Datenschutzinformationen."],
       ["Ist ein Foto-Cleaner ein Systemreiniger?", "Nein. AI Cleaning ist für die Fotomediathek gedacht. Geschützte iOS-Systemdaten, RAM oder allgemeine Cache-Bereinigung sind nicht der versprochene Anwendungsbereich."]
     ],
-    ui: { updated: "Aktualisiert am 5. September 2026", storeLink: "Deutschen App Store öffnen", faqKicker: "FAQ", author: "Autor", privacy: "Datenschutz", contact: "Kontakt" }
+    ui: { updated: "Aktualisiert am 29. September 2026", storeLink: "Deutschen App Store öffnen", faqKicker: "FAQ", author: "Autor", privacy: "Datenschutz", contact: "Kontakt" }
   },
   {
     file: "tr-tr-en-iyi-iphone-fotograf-temizleme.html",
@@ -220,10 +222,10 @@ const pages = [
     locale: "tr_TR",
     storeCountry: "tr",
     title: "En İyi iPhone Fotoğraf Temizleme | AI Seçim Rehberi",
-    description: "Türkçe iPhone fotoğraf temizleme uygulaması seçme rehberi: yapay zeka sınıflandırma, yinelenen fotoğraflar, gizlilik ve silme kontrolü.",
+    description: "iPhone fotoğraf temizleme uygulamalarını karşılaştırın: AI Cleaning'in ücretsiz hakkı, Pro sınırları ve yeni Live Photo/seri çekim araçları.",
     keywords: ["en iyi iPhone fotoğraf temizleme", "iPhone fotoğraf temizleme uygulaması", "yinelenen fotoğrafları silme", "yapay zeka fotoğraf düzenleme", "iPhone depolama temizleme", "AI Cleaning"],
     ogTitle: "En iyi iPhone fotoğraf temizleme uygulaması nasıl seçilir",
-    ogDescription: "Türkçe karar rehberi: yinelenen fotoğraflar, benzer kareler, yapay zeka sınıflandırma, gizlilik ve silmeden önce kontrol.",
+    ogDescription: "AI Cleaning'in ücretsiz temizlik hakkı, Pro sınırları ve yeni özellikleriyle Türkiye için iPhone fotoğraf temizleme rehberi.",
     breadcrumb: "En iyi fotoğraf temizleme seçimi",
     countryName: "Türkiye",
     marketFile: "tr-tr.html",
@@ -266,6 +268,7 @@ const pages = [
         items: [
           ["Uygun durum", "Çok sayıda seyahat, yemek, belge, ekran görüntüsü ve seri çekim fotoğrafının karıştığı arşivler."],
           ["Dikkatli kullanım", "İş belgeleri, kimlikler, makbuzlar, aile fotoğrafları ve düzenlenmiş görseller tek tek açılmalıdır."],
+          ["Yeni araçlar", "Face ID kilitli Private Vault, Live Photo'nun hareket videosunu kaldırıp fotoğrafı koruma ve seri çekim fotoğraflarını gözden geçirme."],
           ["Uygun olmayan beklenti", "RAM temizleme, sistem önbelleği, korunan iOS verisi veya kullanıcı kontrolü olmadan otomatik silme bekleniyorsa doğru araç değildir."]
         ]
       }
@@ -290,12 +293,12 @@ const pages = [
     faqTitle: "iPhone fotoğraf temizleme uygulaması seçimi",
     faq: [
       ["En iyi iPhone fotoğraf temizleme uygulaması nasıl seçilir?", "Silmeden önce önizleme sunması, yinelenen ve benzer fotoğrafları ayırması, önemli kategorileri dışarıda bırakmayı kolaylaştırması ve güncel App Store bilgilerini açıkça kontrol ettirmesi gerekir."],
-      ["AI Cleaning fotoğrafları kendiliğinden siler mi?", "Hayır. Uygulama aday grupları gösterir. Hangi fotoğrafların silineceğine kullanıcı karar verir."],
+      ["AI Cleaning'in ücretsiz sürümünde neler var?", "Uygulamayı indirmek ücretsizdir. Pro olmadan, uygun araçlar genelinde bir başarılı temizlik işlemi yapılabilir; her ekran için ayrı ücretsiz işlem yoktur. Tek işlem birden fazla seçili öğeyi kapsayabilir. Sonraki kısıtlı temizlik işlemleri ve 9 AI otomatik kategorisi Pro gerektirir. Güncel fiyatı Türkiye App Store'da kontrol edin."],
       ["iPhone'un yerleşik yinelenenler özelliği yeterli mi?", "Sadece birebir kopyalar için yeterli olabilir. Benzer fotoğraflar, ekran görüntüleri, bulanık görseller ve büyük videolar için ek bir uygulama karşılaştırılabilir."],
       ["Türkçe arayüzü nereden doğrularım?", "Türkiye App Store'daki dil listesi, ekran görüntüleri ve uygulama içi deneyim kontrol edilmelidir. Türkçe sayfa açıklaması, her zaman uygulama arayüzünün Türkçe olduğu anlamına gelmez."],
       ["Fotoğrafları sildikten sonra alan neden hemen açılmaz?", "iOS silinen fotoğrafları bir süre Son Silinenler albümünde tutar. Önemli içerik olmadığını doğruladıktan sonra bu albüm de yönetilmelidir."]
     ],
-    ui: { updated: "5 Eylül 2026 tarihinde güncellendi", storeLink: "Türkiye App Store'u aç", faqKicker: "FAQ", author: "Yazar", privacy: "Gizlilik", contact: "İletişim" }
+    ui: { updated: "29 Eylül 2026 tarihinde güncellendi", storeLink: "Türkiye App Store'u aç", faqKicker: "FAQ", author: "Yazar", privacy: "Gizlilik", contact: "İletişim" }
   }
 ];
 
