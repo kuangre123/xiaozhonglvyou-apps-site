@@ -8,14 +8,16 @@ const lailemmaLanguages = [
   ["en", "lailemma-period-tracker.html", "English"],
   ["zh-CN", "lailemma-period-tracker-cn.html", "简体中文"],
   ["ja-JP", "lailemma-period-tracker-ja.html", "日本語"],
-  ["de-DE", "lailemma-period-tracker-de.html", "Deutsch"]
+  ["de-DE", "lailemma-period-tracker-de.html", "Deutsch"],
+  ["tr-TR", "lailemma-period-tr.html", "Türkçe"]
 ];
 
 const labels = {
   en: { nav: "Primary", apps: "Apps", guides: "Guides", support: "Support", breadcrumb: "Breadcrumb", home: "Home", newTab: "opens in a new tab", screen: "Real product screen", preview: "Body Readiness screens", inside: "Inside the app", faq: "Common questions", before: "Before you download", directory: "Directory", privacy: "Privacy" },
   "zh-CN": { nav: "主导航", apps: "全部应用", guides: "使用指南", support: "支持", breadcrumb: "路径", home: "首页", newTab: "在新标签页打开", screen: "真实产品画面", preview: "身体准备度新版截图", inside: "应用截图", faq: "常见问题", before: "下载前先确认", directory: "网站目录", privacy: "隐私" },
   "ja-JP": { nav: "主なナビゲーション", apps: "アプリ", guides: "ガイド", support: "サポート", breadcrumb: "現在地", home: "ホーム", newTab: "新しいタブで開く", screen: "実際の画面", preview: "身体コンディションの画面", inside: "アプリの画面", faq: "よくある質問", before: "ダウンロード前に確認", directory: "サイトマップ", privacy: "プライバシー" },
-  "de-DE": { nav: "Hauptnavigation", apps: "Apps", guides: "Ratgeber", support: "Support", breadcrumb: "Pfad", home: "Startseite", newTab: "öffnet einen neuen Tab", screen: "Produktansicht", preview: "Ansichten der Körperbereitschaft", inside: "In der App", faq: "Häufige Fragen", before: "Vor dem Download", directory: "Verzeichnis", privacy: "Datenschutz" }
+  "de-DE": { nav: "Hauptnavigation", apps: "Apps", guides: "Ratgeber", support: "Support", breadcrumb: "Pfad", home: "Startseite", newTab: "öffnet einen neuen Tab", screen: "Produktansicht", preview: "Ansichten der Körperbereitschaft", inside: "In der App", faq: "Häufige Fragen", before: "Vor dem Download", directory: "Verzeichnis", privacy: "Datenschutz" },
+  "tr-TR": { nav: "Ana gezinme", apps: "Uygulamalar", guides: "Rehberler", support: "Destek", breadcrumb: "Sayfa yolu", home: "Ana sayfa", newTab: "yeni sekmede açılır", screen: "Gerçek ürün ekranı", preview: "Body Readiness ekranları", inside: "Uygulama içinden", faq: "Sık sorulan sorular", before: "İndirmeden önce", directory: "Dizin", privacy: "Gizlilik" }
 };
 
 const products = [
@@ -23,30 +25,31 @@ const products = [
     file: "lailemma-period-tracker.html",
     lang: "en",
     ogLocale: "en_US",
-    title: "Lailemma Period Tracker & Body Readiness for iPhone",
-    description: "Track periods, ovulation and symptoms with Lailemma. Version 2.0.5 adds an on-device Body Readiness estimate using authorized Apple Health data.",
-    keywords: "period tracker iPhone, cycle tracker, ovulation log, Body Readiness, Apple Health",
+    title: "Laleme Period Tracker & Body Readiness (Lailemma)",
+    description: "Track periods, ovulation and symptoms with Laleme, formerly Lailemma. Version 2.0.7 estimates Body Readiness on device from authorized Apple Health signals.",
+    keywords: "period tracker iPhone, cycle tracker, ovulation log, Body Readiness, Apple Health, Laleme, Lailemma",
     kicker: "Cycle tracking · iPhone and iPad",
-    heading: "Lailemma: period tracking and Body Readiness",
-    lead: "Log your cycle, symptoms and fertile window in one place. The public version 2.0.5 adds a daily Body Readiness estimate based on authorized Apple Health signals.",
+    heading: "Laleme: cycle tracking and Body Readiness",
+    lead: "Laleme, formerly Lailemma, brings cycle logs and daily health context together. Version 2.0.7 estimates Body Readiness on device from signals you authorize in Apple Health.",
     icon: "lailemma-icon.webp",
     screenshots: [
       { file: "lailemma-readiness-home.webp", alt: "Lailemma Body Readiness card on the Today screen in a Chinese-language screenshot", caption: "Developer-supplied Chinese-language screen: daily estimate on Today." },
       { file: "lailemma-readiness-detail.webp", alt: "Lailemma Body Readiness details with sleep, HRV and cycle-phase contributions", caption: "Developer-supplied screen: the estimate explains contributing signals." }
     ],
-    previewLabel: "Available in public version 2.0.5",
-    status: "The US App Store release notes dated 23 September 2026 list Body Readiness. The screenshots were supplied by the developer from a Chinese-language build; the public interface may differ.",
-    storeUrl: "https://apps.apple.com/us/app/lailemma-period-fertility/id6775935474?uo=4",
+    previewLabel: "Available in version 2.0.7",
+    status: "The current US, Japan, Germany and Turkey App Store listings identify Laleme as version 2.0.7. These developer-supplied screenshots show a Chinese-language interface; the app's listed interface languages are English, Simplified Chinese, German, Japanese and Korean.",
+    storeUrl: "https://apps.apple.com/us/app/id6775935474?uo=4",
     storeProduct: "lailemma-period-fertility",
     storeCountry: "us",
-    storeLabel: "Get Lailemma on App Store",
-    appName: "Lailemma - Period & Fertility",
+    storeLabel: "Get Laleme on App Store",
+    appName: "Laleme - Health Tracker",
     appCategory: "HealthApplication",
     operatingSystem: "iOS, iPadOS",
     softwareRequirements: "iOS 17.0 or later",
+    softwareVersion: "2.0.7",
     price: "0",
     currency: "USD",
-    appDescription: "Period and ovulation tracking, symptom logging, cycle insights and an on-device Body Readiness estimate available in version 2.0.5.",
+    appDescription: "Period and ovulation tracking, symptom logging, cycle insights and an on-device Body Readiness estimate in version 2.0.7.",
     alternate: { file: "lailemma-period-tracker-cn.html", label: "简体中文", lang: "zh-CN" },
     sections: [
       {
@@ -60,9 +63,9 @@ const products = [
         ]
       },
       {
-        kicker: "Available in version 2.0.5",
+        kicker: "Available in version 2.0.7",
         heading: "What the Body Readiness estimate explains",
-        intro: "With permission, version 2.0.5 combines available sleep, heart-rate variability, resting heart rate, wrist temperature, blood oxygen, activity load and cycle-phase context into an app-estimated daily score. Missing signals are shown rather than silently invented.",
+        intro: "With permission, version 2.0.7 combines available sleep, heart-rate variability, resting heart rate, wrist temperature, blood oxygen, activity and cycle-phase context into an app-estimated daily score. Missing signals are not presented as measured data.",
         items: [
           ["A score with reasons", "The screen shows a 0–100 estimate and contributions such as sleep, HRV and cycle phase, so the number is not presented without context."],
           ["On-device interpretation", "The estimate uses data you authorize from Apple Health. It is this app's estimate, not an Apple readiness score."],
@@ -71,38 +74,39 @@ const products = [
       }
     ],
     faqs: [
-      ["Is Body Readiness in the App Store release today?", "Yes. The US App Store lists Body Readiness in version 2.0.5, released on 23 September 2026. Availability can vary by storefront; check your local listing."],
-      ["Does Lailemma calculate an Apple readiness score?", "No. The app estimates its own score on device from available, authorized health signals and cycle context. It is not a medical diagnosis."]
+      ["Is Body Readiness in the current App Store release?", "Yes. The current US, Japan, Germany and Turkey listings show version 2.0.7 with Body Readiness. Check your local listing for availability and current release details."],
+      ["Does Laleme calculate an Apple readiness score?", "No. Laleme estimates its own score on device from available, authorized health signals and cycle context. It is not a medical diagnosis."]
     ]
   },
   {
     file: "lailemma-period-tracker-cn.html",
     lang: "zh-CN",
     ogLocale: "zh_CN",
-    title: "来了么经期记录与备孕助手 | 身体准备度 2.0.5",
-    description: "来了么 2.0.5 在已上架地区提供身体准备度：本机结合授权的 Apple 健康数据与周期信息估算每日状态，并解释睡眠、心率变异性等信号。中国大陆区可用性请核对商店。",
-    keywords: "来了么, 经期记录, 排卵记录, 身体准备度, Apple 健康",
+    title: "来了么 Laleme 经期记录与身体准备度 | 2.0.7",
+    description: "来了么（Laleme，曾用名 Lailemma）2.0.7 提供本机身体准备度估算，结合授权的 Apple 健康数据与周期阶段。中国大陆区可用性请核对商店。",
+    keywords: "来了么, Laleme, Lailemma, 经期记录, 排卵记录, 身体准备度, Apple 健康",
     kicker: "经期记录 · iPhone 与 iPad",
-    heading: "来了么：经期记录与身体准备度",
-    lead: "记录经期、排卵窗口和每日身体感受。公开版 2.0.5 已加入身体准备度，结合你授权的健康数据在本机估算当天状态。",
+    heading: "来了么 Laleme：经期记录与身体准备度",
+    lead: "记录经期、排卵窗口和每日身体感受。2.0.7 会结合你授权的健康信号在本机估算身体准备度；来了么是 Laleme 的中文名称，旧名为 Lailemma。",
     icon: "lailemma-icon.webp",
     screenshots: [
       { file: "lailemma-readiness-home.webp", alt: "来了么今日页面中的身体准备度卡片", caption: "开发者提供的中文截图：今日页展示本 App 估算的身体准备度。" },
       { file: "lailemma-readiness-detail.webp", alt: "来了么健康页的身体准备度明细，包含睡眠、心率变异性和周期阶段", caption: "开发者提供的中文截图：睡眠、HRV 和周期阶段的贡献明细。" }
     ],
-    previewLabel: "公开版 2.0.5 已包含该功能",
-    status: "2026 年 9 月 23 日美区 App Store 更新说明已列出身体准备度；此处展示开发者提供的中文截图。中国大陆商店未查到该 App，下载可用性请以 Apple 账户所在地区为准。",
-    storeUrl: "https://apps.apple.com/us/app/lailemma-period-fertility/id6775935474?uo=4",
+    previewLabel: "2.0.7 已包含身体准备度",
+    status: "截至 2026 年 9 月 29 日，日本、德国、土耳其及美国 App Store 均显示 Laleme 2.0.7。截图由开发者提供，展示中文界面；中国大陆区是否可下载仍请按 Apple 账户地区核对。",
+    storeUrl: "https://apps.apple.com/us/app/id6775935474?uo=4",
     storeProduct: "lailemma-period-fertility",
     storeCountry: "us",
-    storeLabel: "查看美区 App Store",
-    appName: "Lailemma - Period & Fertility",
+    storeLabel: "查看 App Store 商品页",
+    appName: "Laleme - Health Tracker",
     appCategory: "HealthApplication",
     operatingSystem: "iOS, iPadOS",
     softwareRequirements: "iOS 17.0 或更高版本",
+    softwareVersion: "2.0.7",
     price: "0",
     currency: "USD",
-    appDescription: "经期、排卵与症状记录应用。2.0.5 公开版已加入在本机估算的身体准备度，商店可用性依账户地区而异。",
+    appDescription: "经期、排卵与症状记录应用。2.0.7 提供在本机估算的身体准备度，商店可用性依账户地区而异。",
     alternate: { file: "lailemma-period-tracker.html", label: "English", lang: "en" },
     sections: [
       {
@@ -116,9 +120,9 @@ const products = [
         ]
       },
       {
-        kicker: "2.0.5 已上线",
+        kicker: "2.0.7 已上线",
         heading: "身体准备度怎样得出估算",
-        intro: "在用户授权且有对应数据时，2.0.5 会参考睡眠、心率变异性、静息心率、手腕温度、血氧、活动负荷和周期阶段，生成 0–100 的本 App 估算分数。没有的数据不会被当作已测得的数据。",
+        intro: "在用户授权且有对应数据时，2.0.7 会参考睡眠、心率变异性、静息心率、手腕温度、血氧、活动和周期阶段，在本机生成身体准备度估算。缺失信号不会被当作已测量数据。",
         items: [
           ["分数有依据", "截图展示了睡眠、HRV、周期阶段和手腕温度等因素对当天分数的影响。"],
           ["不是 Apple 官方分数", "估算在本机利用已授权的健康数据生成，不是 Apple 准备度分数。"],
@@ -127,38 +131,39 @@ const products = [
       }
     ],
     faqs: [
-      ["现在下载就能用身体准备度吗？", "美区等已上架的 2.0.5 版本包含身体准备度；中国大陆商店未查到该 App。请先核对自己 Apple 账户所在地区的商店页面。"],
-      ["身体准备度是 Apple 官方或医疗分数吗？", "不是。它是来了么在本机依据已授权数据和周期信息计算的日常估算，不提供医疗诊断。"]
+      ["现在下载就能用身体准备度吗？", "美国、日本、德国和土耳其 App Store 当前列出的 2.0.7 版本包含身体准备度。中国大陆商店可用性请先按 Apple 账户地区核对。"],
+      ["身体准备度是 Apple 官方或医疗分数吗？", "不是。它是 Laleme（来了么）在本机依据已授权数据和周期信息计算的日常估算，不提供医疗诊断。"]
     ]
   },
   {
     file: "lailemma-period-tracker-ja.html",
     lang: "ja-JP",
     ogLocale: "ja_JP",
-    title: "Lailemma 生理日管理・妊活アプリ | 身体コンディション推定",
-    description: "Lailemmaで生理日、症状、排卵の目安を記録。公開版2.0.5では、許可したAppleヘルスケアデータから身体コンディションを端末上で推定できます。",
-    keywords: "生理日管理アプリ, 生理周期 記録 iPhone, 排卵日 目安, 身体コンディション 推定",
+    title: "Laleme 生理日管理・妊活アプリ | 体調推定 2.0.7",
+    description: "Laleme（旧Lailemma）で生理日と症状を記録。2.0.7では許可したAppleヘルスケアデータから身体コンディションを端末上で推定します。",
+    keywords: "生理日管理アプリ, 生理周期 記録 iPhone, 排卵日 目安, 身体コンディション 推定, Laleme, Lailemma",
     kicker: "生理周期の記録 · iPhoneとiPad",
-    heading: "Lailemmaで生理周期を記録する",
-    lead: "生理日、症状、排卵の目安を一か所で確認できます。公開版2.0.5には、許可したヘルスケアデータに基づく身体コンディション推定が追加されました。",
+    heading: "Lalemeで生理周期と体調を記録する",
+    lead: "生理日、症状、排卵の目安を一か所で確認できます。2.0.7では許可したヘルスケアデータを端末上で分析し、身体コンディションを推定します。",
     icon: "lailemma-icon.webp",
     screenshots: [
       { file: "lailemma-readiness-home.webp", alt: "中国語UIの今日の画面に表示された身体コンディション推定", caption: "開発者提供の画面。画像の表示言語は中国語です。" },
       { file: "lailemma-readiness-detail.webp", alt: "睡眠、心拍変動、周期の段階を説明する中国語UIの詳細画面", caption: "睡眠や心拍変動など、推定に使われた信号の内訳。" }
     ],
-    previewLabel: "公開版2.0.5で利用可能",
-    status: "2026年9月23日公開の日本のApp Store版2.0.5に身体コンディション推定が含まれます。掲載画像は開発者提供の中国語UIで、実際の表示は異なる場合があります。",
-    storeUrl: "https://apps.apple.com/jp/app/lailemma-%E7%94%9F%E7%90%86%E6%97%A5%E7%AE%A1%E7%90%86%E3%81%A8%E5%A6%8A%E6%B4%BB/id6775935474?uo=4",
+    previewLabel: "公開版2.0.7で利用可能",
+    status: "日本のApp StoreはLaleme 2.0.7を掲載しています。掲載画像は開発者提供の中国語UIで、実際のアプリ表示言語は日本語、英語、ドイツ語、簡体字中国語、韓国語です。",
+    storeUrl: "https://apps.apple.com/jp/app/laleme-%E5%81%A5%E5%BA%B7%E8%A8%98%E9%8C%B2/id6775935474?uo=4",
     storeProduct: "lailemma-period-fertility",
     storeCountry: "jp",
-    storeLabel: "日本のApp Storeで公開版を見る",
-    appName: "Lailemma - 生理日管理と妊活",
+    storeLabel: "日本のApp StoreでLalemeを見る",
+    appName: "Laleme - 健康記録",
     appCategory: "HealthApplication",
     operatingSystem: "iOS, iPadOS",
     softwareRequirements: "iOS 17.0以降",
+    softwareVersion: "2.0.7",
     price: "0",
     currency: "JPY",
-    appDescription: "生理周期、症状、排卵の目安を記録。公開版2.0.5には端末上で計算する身体コンディション推定が含まれます。",
+    appDescription: "生理周期、症状、排卵の目安を記録。公開版2.0.7には端末上で計算する身体コンディション推定が含まれます。",
     sections: [
       {
         kicker: "現在の公開版",
@@ -171,9 +176,9 @@ const products = [
         ]
       },
       {
-        kicker: "公開版2.0.5の機能",
+        kicker: "公開版2.0.7の機能",
         heading: "身体コンディション推定の読み方",
-        intro: "公開版2.0.5では、許可済みで実際に取得できる睡眠、心拍変動、安静時心拍数、手首温度、血中酸素、活動量、周期の段階などを参考に、その日の状態をアプリ内で推定します。掲載画像は中国語UIで撮影されています。",
+        intro: "公開版2.0.7では、許可済みで実際に取得できる睡眠、心拍変動、安静時心拍数、手首温度、血中酸素、活動量、周期の段階などを参考に、その日の状態を端末上で推定します。掲載画像は中国語UIで撮影されています。",
         items: [
           ["数字だけに頼らない", "画面には0〜100の推定値と、睡眠や心拍変動などの寄与を一緒に表示します。"],
           ["Apple公式のスコアではない", "このアプリが端末上で計算した目安です。Appleが提供する準備度スコアではありません。"],
@@ -182,38 +187,39 @@ const products = [
       }
     ],
     faqs: [
-      ["今ダウンロードすると身体コンディション機能を使えますか？", "はい。日本のApp Storeで公開中の2.0.5の更新履歴に記載されています。利用前に最新のストア情報をご確認ください。"],
-      ["日本語の画面で使えますか？", "公開版2.0.5では日本語に対応しています。このページの掲載画像は中国語UIで撮影されたものです。"]
+      ["今ダウンロードすると身体コンディション機能を使えますか？", "はい。日本のApp Storeで公開中の2.0.7に含まれます。利用前に最新のストア情報をご確認ください。"],
+      ["日本語の画面で使えますか？", "はい。App Storeの対応言語に日本語が含まれます。このページの掲載画像は中国語UIで撮影されたものです。"]
     ]
   },
   {
     file: "lailemma-period-tracker-de.html",
     lang: "de-DE",
     ogLocale: "de_DE",
-    title: "Lailemma Zyklus-App | Körperbereitschaft in Version 2.0.5",
-    description: "Lailemma dokumentiert Periode und Symptome. Version 2.0.5 schätzt die Körperbereitschaft auf dem Gerät anhand freigegebener Health-Daten.",
-    keywords: "Zyklus App iPhone, Periode dokumentieren, Eisprung Schätzung, Körperbereitschaft",
+    title: "Laleme Zyklus-App | Körperbereitschaft Version 2.0.7",
+    description: "Laleme (früher Lailemma) dokumentiert Zyklus und Symptome. Version 2.0.7 schätzt Körperbereitschaft auf dem Gerät anhand freigegebener Health-Daten.",
+    keywords: "Zyklus App iPhone, Periode dokumentieren, Eisprung Schätzung, Körperbereitschaft, Laleme, Lailemma",
     kicker: "Zyklus dokumentieren · iPhone und iPad",
-    heading: "Lailemma: Zyklus und Symptome im Blick",
-    lead: "Halte Periode und tägliche Symptome fest und sieh Schätzungen zum fruchtbaren Fenster. Die öffentliche Version 2.0.5 ergänzt eine tägliche Schätzung der Körperbereitschaft aus freigegebenen Health-Daten.",
+    heading: "Laleme: Zyklus, Symptome und Körperbereitschaft",
+    lead: "Halte Periode und tägliche Symptome fest und sieh Schätzungen zum fruchtbaren Fenster. Version 2.0.7 ergänzt eine tägliche Schätzung der Körperbereitschaft aus freigegebenen Health-Daten.",
     icon: "lailemma-icon.webp",
     screenshots: [
       { file: "lailemma-readiness-home.webp", alt: "Körperbereitschaft auf der Lailemma-Startseite mit chinesischer Oberfläche", caption: "Vom Entwickler bereitgestellte Ansicht; die abgebildete Oberfläche ist chinesisch." },
       { file: "lailemma-readiness-detail.webp", alt: "Detailansicht mit Beiträgen von Schlaf, Herzfrequenzvariabilität und Zyklusphase in chinesischer Oberfläche", caption: "Die Schätzung erläutert Schlaf, HRV und weitere verfügbare Signale." }
     ],
-    previewLabel: "In der öffentlichen Version 2.0.5 verfügbar.",
-    status: "Die deutsche App-Store-Version 2.0.5 vom 23. September 2026 enthält Körperbereitschaft. Die vom Entwickler bereitgestellten Bilder zeigen eine chinesische Oberfläche; die tatsächliche Darstellung kann abweichen.",
-    storeUrl: "https://apps.apple.com/de/app/lailemma-zyklus-fertilit%C3%A4t/id6775935474?uo=4",
+    previewLabel: "In der öffentlichen Version 2.0.7 verfügbar.",
+    status: "Der deutsche App Store führt Laleme in Version 2.0.7. Die vom Entwickler bereitgestellten Bilder zeigen eine chinesische Oberfläche; die App-Sprachliste enthält Deutsch, Englisch, vereinfachtes Chinesisch, Japanisch und Koreanisch.",
+    storeUrl: "https://apps.apple.com/de/app/laleme-gesundheit/id6775935474?uo=4",
     storeProduct: "lailemma-period-fertility",
     storeCountry: "de",
-    storeLabel: "Öffentliche Version im App Store ansehen",
-    appName: "Lailemma - Zyklus & Fertilität",
+    storeLabel: "Laleme im deutschen App Store ansehen",
+    appName: "Laleme - Gesundheit",
     appCategory: "HealthApplication",
     operatingSystem: "iOS, iPadOS",
     softwareRequirements: "iOS 17.0 oder neuer",
+    softwareVersion: "2.0.7",
     price: "0",
     currency: "EUR",
-    appDescription: "Zyklus, Symptome und Eisprung-Schätzungen dokumentieren. Version 2.0.5 enthält eine auf dem Gerät berechnete Schätzung der Körperbereitschaft.",
+    appDescription: "Zyklus, Symptome und Eisprung-Schätzungen dokumentieren. Version 2.0.7 enthält eine auf dem Gerät berechnete Schätzung der Körperbereitschaft.",
     sections: [
       {
         kicker: "Schon verfügbar",
@@ -226,9 +232,9 @@ const products = [
         ]
       },
       {
-        kicker: "In Version 2.0.5 verfügbar",
+        kicker: "In Version 2.0.7 verfügbar",
         heading: "Was die Körperbereitschaft erklärt",
-        intro: "Version 2.0.5 schätzt den Tageszustand anhand tatsächlich verfügbarer, freigegebener Signale wie Schlaf, Herzfrequenzvariabilität, Ruhepuls, Handgelenktemperatur, Blutsauerstoff, Aktivität und Zyklusphase. Die abgebildeten Screenshots zeigen eine chinesische Oberfläche.",
+        intro: "Version 2.0.7 schätzt den Tageszustand anhand tatsächlich verfügbarer, freigegebener Signale wie Schlaf, Herzfrequenzvariabilität, Ruhepuls, Handgelenktemperatur, Blutsauerstoff, Aktivität und Zyklusphase auf dem Gerät. Die Screenshots zeigen eine chinesische Oberfläche.",
         items: [
           ["Schätzung mit Gründen", "Die Ansicht zeigt einen Wert von 0 bis 100 und den Beitrag einzelner Signale, statt nur eine Zahl auszugeben."],
           ["Kein Apple-Score", "Die Berechnung stammt von Lailemma und erfolgt auf dem Gerät. Sie ist kein offizieller Apple-Bereitschaftswert."],
@@ -237,8 +243,65 @@ const products = [
       }
     ],
     faqs: [
-      ["Ist Körperbereitschaft bereits im App Store verfügbar?", "Ja. Die deutsche App-Store-Version 2.0.5 vom 23. September 2026 nennt diese Funktion. Prüfe vor dem Download die aktuellen Versionshinweise."],
-      ["Ist die App auf Deutsch nutzbar?", "Ja, Version 2.0.5 unterstützt Deutsch. Die Bilder auf dieser Seite wurden mit einer chinesischen Oberfläche aufgenommen."]
+      ["Ist Körperbereitschaft bereits im App Store verfügbar?", "Ja. Der deutsche App Store führt Version 2.0.7 mit dieser Funktion. Prüfe vor dem Download die aktuellen Versionshinweise."],
+      ["Ist die App auf Deutsch nutzbar?", "Ja, Deutsch ist in der Sprachliste enthalten. Die Bilder auf dieser Seite wurden mit einer chinesischen Oberfläche aufgenommen."]
+    ]
+  },
+  {
+    file: "lailemma-period-tr.html",
+    lang: "tr-TR",
+    ogLocale: "tr_TR",
+    title: "Laleme Döngü Takibi ve Body Readiness Tahmini | 2.0.7",
+    description: "Laleme (eski adı Lailemma) ile döngü ve belirtileri kaydedin. 2.0.7, izin verilen Apple Health verilerinden cihaz üzerinde günlük Body Readiness tahmini sunar.",
+    keywords: "adet takip uygulaması, regl takibi iPhone, döngü takibi, yumurtlama takibi, Body Readiness, Laleme, Lailemma",
+    kicker: "Döngü takibi · iPhone ve iPad",
+    heading: "Laleme: döngü takibi ve Body Readiness tahmini",
+    lead: "Regl dönemini, belirtileri ve günlük sağlık sinyallerini tek yerde kaydedin. Sürüm 2.0.7, izin verdiğiniz Apple Health verilerinden günlük Body Readiness tahminini cihaz üzerinde hesaplar.",
+    icon: "lailemma-icon.webp",
+    screenshots: [
+      { file: "lailemma-readiness-home.webp", alt: "Çince arayüzlü Laleme ekranında günlük Body Readiness tahmini", caption: "Geliştiricinin sağladığı ekran görüntüsü Çince arayüzden alınmıştır." },
+      { file: "lailemma-readiness-detail.webp", alt: "Uyku, HRV ve döngü evresinin günlük tahmine katkılarını gösteren Çince ekran", caption: "Ayrıntı ekranı tahmine katkı sağlayan mevcut sinyalleri açıklar." }
+    ],
+    previewLabel: "2.0.7 sürümünde kullanılabilir",
+    status: "Türkiye App Store, Laleme'yi 2.0.7 sürümüyle listeliyor. Uygulama dil listesinde Türkçe yer almıyor; ekran görüntüleri Çince arayüzü gösteriyor. Bu tahmin Apple Readiness puanı veya tıbbi tavsiye değildir.",
+    storeUrl: "https://apps.apple.com/tr/app/laleme-health-tracker/id6775935474?uo=4",
+    storeProduct: "lailemma-period-fertility",
+    storeCountry: "tr",
+    storeLabel: "Türkiye App Store'da Laleme",
+    appName: "Laleme - Health Tracker",
+    appCategory: "HealthApplication",
+    operatingSystem: "iOS, iPadOS",
+    softwareRequirements: "iOS 17.0 veya üzeri",
+    softwareVersion: "2.0.7",
+    price: "0",
+    currency: "TRY",
+    appDescription: "Döngü, belirtiler ve yumurtlama tahminlerini kaydedin. 2.0.7 sürümü, izin verilen sağlık sinyallerinden cihaz üzerinde Body Readiness tahmini sunar.",
+    sections: [
+      {
+        kicker: "Günlük sağlık kaydı",
+        heading: "Döngü bilgilerini günlük kayıtlarla birlikte inceleyin",
+        intro: "Türkiye App Store açıklaması regl tahmini, yumurtlama takibi, günlük belirtiler, döngü uyarıları ve isteğe bağlı Apple Health bağlantısından söz eder. Tahminler tıbbi değerlendirme değildir.",
+        items: [
+          ["Döngü ve belirtiler", "Akış, ruh hali, belirtiler ve sıcaklık kayıtlarını ekleyip zaman içindeki değişimleri gözden geçirin."],
+          ["Doğurganlık ve gebelik görünümleri", "Yumurtlama tahminleri, doğurganlık zamanlaması ve gebelik haftası bilgilerini planlama desteği olarak değerlendirin; klinik sonuç olarak kullanmayın."],
+          ["Hatırlatmalar", "2.0.7; beklenen regl gününde ve 6-10. günlerde kayıt hatırlatmaları sunar. Açık kalan regl kaydı 10. günde otomatik sona erer."]
+        ]
+      },
+      {
+        kicker: "Sürüm 2.0.7",
+        heading: "Body Readiness tahminini bağlamıyla okuyun",
+        intro: "İzin verildiğinde uyku, HRV, dinlenik kalp hızı, bilek sıcaklığı, kan oksijeni, aktivite ve döngü evresi gibi mevcut sinyaller cihazda değerlendirilir. Eksik ölçümler varmış gibi gösterilmez.",
+        items: [
+          ["Uygulamaya ait tahmin", "Gösterilen değer Laleme'nin kendi tahminidir; Apple Readiness puanı değildir."],
+          ["Cihaz üzerinde değerlendirme", "Geliştirici açıklaması, sağlık analizinin cihazda yapıldığını ve kayıtların sunuculara yüklenmediğini belirtir."],
+          ["Tıbbi sınır", "Sonuç yalnızca günlük referans içindir; hastalık tanısı koymaz, egzersiz uygunluğunu belirlemez ve sağlık uzmanı tavsiyesinin yerini almaz."]
+        ]
+      }
+    ],
+    faqs: [
+      ["Laleme Türkçe arayüz sunuyor mu?", "Türkiye App Store'daki dil listesi İngilizce, Basitleştirilmiş Çince, Almanca, Japonca ve Koreceyi kapsıyor; Türkçe arayüz listelenmiyor. Bu sayfa Türkçe ürün bilgisi sunar."],
+      ["Body Readiness Apple'ın resmi puanı mı?", "Hayır. Laleme'nin izin verilen sağlık sinyallerinden cihaz üzerinde hesapladığı günlük tahmindir; Apple puanı veya tıbbi değerlendirme değildir."],
+      ["Regl kaydı açık kalırsa ne olur?", "Sürüm 2.0.7, bitiş kaydı yapılmamış açık regl dönemini 10. günde otomatik olarak tamamlar; isterseniz kaydı ayrıca inceleyebilirsiniz."]
     ]
   },
   {
@@ -363,10 +426,10 @@ function schemaFor(page) {
         mainEntity: { "@id": `${canonical}#app` }
       },
       {
-        "@type": "SoftwareApplication", "@id": `${canonical}#app`, name: page.file.startsWith("lailemma") ? "Lailemma - Period & Fertility" : page.appName,
-        ...(page.file.startsWith("lailemma") && page.appName !== "Lailemma - Period & Fertility" ? { alternateName: page.appName } : {}),
+        "@type": "SoftwareApplication", "@id": `${canonical}#app`, name: page.appName,
+        ...(page.file.startsWith("lailemma") ? { alternateName: ["Lailemma", "Lailemma - Period & Fertility", "来了么"] } : {}),
         applicationCategory: page.appCategory, operatingSystem: page.operatingSystem,
-        softwareRequirements: page.softwareRequirements,
+        softwareRequirements: page.softwareRequirements, softwareVersion: page.softwareVersion,
         url: page.storeUrl, downloadUrl: page.storeUrl, description: page.appDescription,
         image: `${origin}/assets/${page.icon}`,
         offers: { "@type": "Offer", price: page.price, priceCurrency: page.currency, availability: "https://schema.org/InStock" }

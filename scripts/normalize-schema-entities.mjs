@@ -93,11 +93,11 @@ const products = new Map([
     }
   ],
   [
-    "Lailemma - Period & Fertility",
+    "Laleme - Health Tracker",
     {
-      appId: "6775935474", url: "https://apps.apple.com/us/app/lailemma-period-fertility/id6775935474?uo=4",
+      appId: "6775935474", url: "https://apps.apple.com/us/app/id6775935474?uo=4",
       image: `${origin}/assets/lailemma-icon.webp`, applicationCategory: "HealthApplication",
-      operatingSystem: "iOS, iPadOS", softwareVersion: "2.0.5", price: "0", priceCurrency: "USD"
+      operatingSystem: "iOS, iPadOS", softwareVersion: "2.0.7", price: "0", priceCurrency: "USD"
     }
   ],
   [
@@ -124,7 +124,7 @@ const productKeywords = new Map([
   ["Anti-spy screen", ["Mac screen privacy", "screen sharing privacy", "window protection", "presentation privacy", "macOS utility"]],
   ["GIFmaker-Gif Studio", ["GIF maker for iPhone", "photos to GIF", "video to GIF", "Live Photo to GIF", "on-device GIF editor"]],
   ["HappyRide: Auto Ride Tracker", ["automatic cycling tracker", "bike ride tracker", "Apple Watch cycling", "Apple Health workout", "background activity detection"]],
-  ["Lailemma - Period & Fertility", ["period tracker", "cycle logging", "fertility window", "Body Readiness preview"]],
+  ["Laleme - Health Tracker", ["period tracker", "cycle logging", "fertility window", "Body Readiness", "Lailemma"]],
   ["Inkstone Notes Markdown", ["Markdown notes", "plain files", "iCloud Drive", "wiki links"]],
   ["TwoPic Dual Camera", ["dual camera", "front and back camera", "picture in picture", "iPhone video"]]
 ]);
@@ -146,7 +146,7 @@ const hubLists = new Map([
         ["Free Bike Ride Tracker App", `${origin}/happyride-auto-ride-tracker.html`],
         ["Anti-spy screen", `${origin}/mac-screen-privacy.html`],
         ["Anti-spy screen Lite", `${origin}/mac-screen-privacy.html#lite`],
-        ["Lailemma - Period & Fertility", `${origin}/lailemma-period-tracker.html`],
+        ["Laleme - Health Tracker", `${origin}/lailemma-period-tracker.html`],
         ["Inkstone Notes Markdown", `${origin}/inkstone-markdown-notes.html`],
         ["TwoPic Dual Camera", `${origin}/twopic-dual-camera.html`]
       ]

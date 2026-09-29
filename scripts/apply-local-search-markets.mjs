@@ -11,7 +11,7 @@ const siteDir = process.env.SITE_DIR
   ? path.resolve(process.cwd(), process.env.SITE_DIR)
   : path.resolve(import.meta.dirname, "..");
 const origin = "https://www.xiaozhonglvyou.com";
-const updatedDate = "2026-09-01";
+const updatedDate = "2026-09-29";
 const styleVersion = createHash("sha256")
   .update(await readFile(path.join(siteDir, "styles.css")))
   .digest("hex")
@@ -23,7 +23,9 @@ const productPages = [
   ["privacy", "mac-screen-privacy.html", "anti-spy-screen", "mac-app-store"],
   ["privacyLite", "mac-screen-privacy.html#lite", "anti-spy-screen-lite", "mac-app-store"],
   ["gif", "gif-maker.html", "gifmaker-gif-studio", "ios-app-store"],
-  ["ride", "happyride-auto-ride-tracker.html", "happyride-auto-ride-tracker", "ios-app-store"]
+  ["ride", "happyride-auto-ride-tracker.html", "happyride-auto-ride-tracker", "ios-app-store"],
+  ["inkstone", "inkstone-markdown-notes.html", "inkstone-notes-markdown", "ios-app-store"],
+  ["twopic", "twopic-dual-camera.html", "twopic-dual-camera", "ios-app-store"]
 ];
 
 const stores = {
@@ -331,7 +333,9 @@ function storeLink(market, key, label, className = "button button-secondary") {
 }
 
 function productCards(market) {
-  return productPages.map(([key, defaultPage]) => {
+  const keys = market.productKeys ?? productPages.slice(0, 6).map(([key]) => key);
+  return keys.map((key) => {
+    const [, defaultPage] = productPages.find(([productKey]) => productKey === key);
     const page = market.productPageOverrides?.[key] ?? defaultPage;
     const [name, description] = market.products[key];
     const detailsLabel = market.detailLabels?.[key] ?? market.detailsLabel;
