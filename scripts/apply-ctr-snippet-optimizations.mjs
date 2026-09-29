@@ -312,6 +312,9 @@ const pages = [
   {
     file: "iphone-photo-cleaner-comparison.html",
     title: "Best iPhone Photo Cleaner Apps: 3 Compared (2026)",
+    modifiedDate: "2026-09-29",
+    modifiedDateLabel: "September 29, 2026",
+    article: { dateModified: "2026-09-29" },
     headline: [
       "Best iPhone Photo Cleaner Apps: 2026 Comparison",
       "Best iPhone Photo Cleaner Apps: 3 Compared (2026)"
@@ -322,6 +325,15 @@ const pages = [
       "Compare 3 iPhone photo cleaner apps.",
       "Compare AI Cleaning, Cleanup, and Cleaner Kit.",
       "3 iPhone photo cleaner apps compared."
+    ],
+    replacements: [
+      {
+        label: "route free-use intent to decision guide",
+        from: [
+          "The better fit depends on whether you value a focused photo workflow or an all-in-one storage utility.</p></div>"
+        ],
+        to: "The better fit depends on whether you value a focused photo workflow or an all-in-one storage utility.</p><p>Looking for a free-use allowance before choosing? Read our <a href=\"best-iphone-photo-cleaner-app.html\">free iPhone photo cleaner guide</a>; this page compares three apps side by side.</p></div>"
+      }
     ]
   },
   {
