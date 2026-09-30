@@ -29,6 +29,19 @@
 .new-app-faq .section-inner{max-width:900px}
 .new-app-faq .faq-list{display:grid;gap:10px}
 .new-app-faq details{border:1px solid var(--line);border-radius:6px;background:#fff}
+.notes-app-hero-inner{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(230px,.8fr);align-items:center;gap:48px}
+.notes-app-hero-copy{min-width:0}
+.notes-app-hero-visual{text-align:center}
+.notes-app-hero-visual h2{margin:6px 0 18px;font-size:30px;line-height:1.22;letter-spacing:0}
+.notes-app-hero-visual .new-app-screens{justify-content:center;overflow:visible;padding-bottom:0}
+.notes-app-hero-visual .new-app-screens figure{width:min(230px,100%)}
+@media(max-width:900px){
+  .notes-app-hero-inner{grid-template-columns:minmax(0,1fr);gap:28px}
+  .notes-app-hero-visual{text-align:left}
+  .notes-app-hero-visual .new-app-screens{justify-content:flex-start}
+  .notes-app-hero-visual .new-app-screens figure{width:min(210px,65vw)}
+}
+@media(max-width:700px){.notes-app-hero-visual h2{font-size:26px}}
 @media(max-width:700px){
   .new-app-intro{padding:86px 0 38px}
   .new-app-title{gap:16px;align-items:flex-start}
@@ -42,4 +55,4 @@
   .new-app-page .content-section{padding-top:48px;padding-bottom:48px}
   .new-app-page .content-grid h2{font-size:30px}
 }
-:root{--new-app-css-version:1}
+:root{--new-app-css-version:2}

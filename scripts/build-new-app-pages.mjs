@@ -315,7 +315,7 @@ const products = [
     heading: "Inkstone Notes keeps your Markdown notes as files",
     lead: "Every note is an ordinary .md file in iCloud Drive, so you can open the same folder on a Mac or in another editor. Inkstone adds a focused native writing surface without locking your notes in a database.",
     icon: "inkstone-icon.webp",
-    screenshots: [{ file: "inkstone-editor-screen.webp", alt: "Inkstone Notes Markdown editor showing links, task lists and rich-text copy controls", caption: "The iPhone editor works directly with Markdown files." }],
+    screenshots: [{ file: "inkstone-editor-screen.webp", width: 520, height: 1130, alt: "Inkstone Notes Markdown editor showing links, task lists and rich-text copy controls", caption: "The iPhone editor works directly with Markdown files." }],
     storeUrl: "https://apps.apple.com/us/app/inkstone-notes-markdown/id6810287923?uo=4",
     storeProduct: "inkstone-notes-markdown",
     storeCountry: "us",
@@ -459,9 +459,12 @@ function render(page) {
   if (!appId) throw new Error(`${page.file}: App Store ID missing`);
   const schema = JSON.stringify(schemaFor(page)).replace(/</g, "\\u003c");
   const isLailemma = page.file.startsWith("lailemma");
+  const isInkstone = page.file === "inkstone-markdown-notes.html";
   const alternates = isLailemma ? `\n${lailemmaLanguages.map(([lang, file]) => `<link rel="alternate" hreflang="${lang}" href="${origin}/${file}">`).join("\n")}
 <link rel="alternate" hreflang="x-default" href="${origin}/lailemma-period-tracker.html">` : "";
-  const screenshotMarkup = page.screenshots.map((shot) => `<figure><img src="assets/${shot.file}" width="520" height="1125" loading="lazy" decoding="async" alt="${escapeHtml(shot.alt)}"><figcaption>${escapeHtml(shot.caption)}</figcaption></figure>`).join("\n");
+  const screenshotMarkup = page.screenshots.map((shot) => `<figure><img src="assets/${shot.file}" width="${shot.width ?? 520}" height="${shot.height ?? 1125}" loading="${isInkstone ? "eager" : "lazy"}" ${isInkstone ? 'fetchpriority="high"' : ""} decoding="async" alt="${escapeHtml(shot.alt)}"><figcaption>${escapeHtml(shot.caption)}</figcaption></figure>`).join("\n");
+  const heroScreensMarkup = isInkstone ? `<div class="notes-app-hero-visual" aria-labelledby="new-app-screen-title"><p class="section-kicker">${ui.screen}</p><h2 id="new-app-screen-title">${ui.inside}</h2><div class="new-app-screens">${screenshotMarkup}</div></div>` : "";
+  const visualSectionMarkup = isInkstone ? "" : `<section class="section new-app-visual" aria-labelledby="new-app-screen-title"><div class="section-inner"><p class="section-kicker">${ui.screen}</p><h2 id="new-app-screen-title">${page.status ? ui.preview : ui.inside}</h2><div class="new-app-screens">${screenshotMarkup}</div></div></section>`;
   const sectionMarkup = page.sections.map((section, index) => `<section class="section content-section${index % 2 ? " alt-section" : ""}"><div class="section-inner content-grid"><div><p class="section-kicker">${escapeHtml(section.kicker)}</p><h2>${escapeHtml(section.heading)}</h2><p>${escapeHtml(section.intro)}</p></div><div class="content-list">${itemList(section.items)}</div></div></section>`).join("\n");
   const faqMarkup = page.faqs.map(([question, answer]) => `<details><summary>${escapeHtml(question)}</summary><p>${escapeHtml(answer)}</p></details>`).join("\n");
   const languageLinks = isLailemma ? lailemmaLanguages.filter(([, file]) => file !== page.file).map(([lang, file, name]) => `<a href="${file}" lang="${lang}">${escapeHtml(name)}</a>`).join("") : "";
@@ -500,13 +503,13 @@ function render(page) {
 <body>
 <header class="site-header" data-elevate><nav class="nav" aria-label="${ui.nav}"><a class="brand" href="/" aria-label="CrazyAIAgent home"><span class="brand-mark" aria-hidden="true">CA</span><span>CrazyAIAgent</span></a><div class="nav-links"><a href="apps.html">${ui.apps}</a><a href="guides.html">${ui.guides}</a><a href="support.html">${ui.support}</a></div></nav></header>
 <main class="new-app-page ${page.file.startsWith("lailemma") ? "health-app" : page.file.startsWith("inkstone") ? "notes-app" : "camera-app"}">
-<section class="page-hero new-app-intro"><div class="section-inner">
+<section class="page-hero new-app-intro"><div class="section-inner${isInkstone ? " notes-app-hero-inner" : ""}">${isInkstone ? '<div class="notes-app-hero-copy">' : ""}
 <nav class="breadcrumb" aria-label="${ui.breadcrumb}"><ol><li><a href="/">${ui.home}</a></li><li><a href="apps.html">${ui.apps}</a></li><li aria-current="page">${escapeHtml(page.appName)}</li></ol></nav>
-<div class="new-app-title"><img src="assets/${page.icon}" width="112" height="112" fetchpriority="high" decoding="async" alt="${escapeHtml(page.appName)} icon"><div><p class="section-kicker">${escapeHtml(page.kicker)}</p><h1>${escapeHtml(page.heading)}</h1></div></div>
+<div class="new-app-title"><img src="assets/${page.icon}" width="112" height="112" fetchpriority="${isInkstone ? "low" : "high"}" decoding="async" alt="${escapeHtml(page.appName)} icon"><div><p class="section-kicker">${escapeHtml(page.kicker)}</p><h1>${escapeHtml(page.heading)}</h1></div></div>
 <p class="new-app-lead">${escapeHtml(page.lead)}</p>${statusMarkup}
 <div class="hero-actions"><a class="button button-primary" href="${page.storeUrl}" target="_blank" rel="noopener noreferrer" data-analytics-event="app_store_click" data-store-product="${page.storeProduct}" data-storefront="ios-app-store" data-store-country="${page.storeCountry}" aria-label="${escapeHtml(page.storeLabel)} (${ui.newTab})">${escapeHtml(page.storeLabel)}</a>${languageLinks}</div>
-</div></section>
-<section class="section new-app-visual" aria-labelledby="new-app-screen-title"><div class="section-inner"><p class="section-kicker">${ui.screen}</p><h2 id="new-app-screen-title">${page.status ? ui.preview : ui.inside}</h2><div class="new-app-screens">${screenshotMarkup}</div></div></section>
+</div>${heroScreensMarkup}</div></section>
+${visualSectionMarkup}
 ${sectionMarkup}
 <section class="section content-section new-app-faq"><div class="section-inner"><p class="section-kicker">${ui.faq}</p><h2>${ui.before}</h2><div class="faq-list">${faqMarkup}</div></div></section>
 </main>
