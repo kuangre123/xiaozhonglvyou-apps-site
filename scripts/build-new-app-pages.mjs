@@ -13,7 +13,7 @@ const lailemmaLanguages = [
 ];
 
 const labels = {
-  en: { nav: "Primary", apps: "Apps", guides: "Guides", support: "Support", breadcrumb: "Breadcrumb", home: "Home", newTab: "opens in a new tab", screen: "Real product screen", preview: "Body Readiness screens", inside: "Inside the app", faq: "Common questions", before: "Before you download", directory: "Directory", privacy: "Privacy" },
+  en: { nav: "Primary", apps: "Apps", guides: "Guides", support: "Support", breadcrumb: "Breadcrumb", home: "Home", newTab: "opens in a new tab", screen: "Real product screen", preview: "Body Readiness screens", inside: "Inside the app", faq: "Common questions", before: "Before you download", directory: "Directory", privacy: "Privacy", checked: "Product details checked" },
   "zh-CN": { nav: "主导航", apps: "全部应用", guides: "使用指南", support: "支持", breadcrumb: "路径", home: "首页", newTab: "在新标签页打开", screen: "真实产品画面", preview: "身体准备度新版截图", inside: "应用截图", faq: "常见问题", before: "下载前先确认", directory: "网站目录", privacy: "隐私" },
   "ja-JP": { nav: "主なナビゲーション", apps: "アプリ", guides: "ガイド", support: "サポート", breadcrumb: "現在地", home: "ホーム", newTab: "新しいタブで開く", screen: "実際の画面", preview: "身体コンディションの画面", inside: "アプリの画面", faq: "よくある質問", before: "ダウンロード前に確認", directory: "サイトマップ", privacy: "プライバシー" },
   "de-DE": { nav: "Hauptnavigation", apps: "Apps", guides: "Ratgeber", support: "Support", breadcrumb: "Pfad", home: "Startseite", newTab: "öffnet einen neuen Tab", screen: "Produktansicht", preview: "Ansichten der Körperbereitschaft", inside: "In der App", faq: "Häufige Fragen", before: "Vor dem Download", directory: "Verzeichnis", privacy: "Datenschutz" },
@@ -324,6 +324,8 @@ const products = [
     appCategory: "ProductivityApplication",
     operatingSystem: "iOS",
     softwareRequirements: "iOS 18.0 or later",
+    softwareVersion: "1.0.1",
+    checkedAt: "2026-09-30",
     price: "0.99",
     currency: "USD",
     appDescription: "Markdown writing app with plain files in iCloud Drive, wiki links, backlinks, offline formulas and diagrams, and PDF or HTML export.",
@@ -339,18 +341,31 @@ const products = [
         ]
       },
       {
+        kicker: "Connected writing",
+        heading: "Keep an index, notes and tasks connected",
+        intro: "A project can have an overview, separate meeting notes and a daily log. Link the notes together while keeping each one as an ordinary Markdown file.",
+        items: [
+          ["Start with an overview", "Write the project's purpose in an index note and add links such as [[Meeting Notes]] and [[Tasks]]. An unwritten link can become a new note; backlinks show which notes point to the one you are reading."],
+          ["Capture details in smaller notes", "Keep decisions in meeting notes, dated progress in daily notes and checklists in task notes. Tick tasks in the preview, follow the outline or use full-text search when the collection grows."],
+          ["Share a document or keep the source", "Use the .md files when another person or editor needs the source. For readers who need a finished document, copy styled rich text or export PDF or HTML with images included."]
+        ]
+      },
+      {
         kicker: "Offline rendering",
         heading: "Formulas and diagrams without a web service",
         intro: "KaTeX and Mermaid are bundled for local rendering. The App Store privacy label says the developer does not collect data from this app.",
         items: [
           ["Requirements", "Inkstone is an iPhone app requiring iOS 18.0 or later; the interface is available in English and Simplified Chinese."],
-          ["Store price", "The US App Store listed a $0.99 upfront price when checked on 23 September 2026; regional prices may differ."]
+          ["PDF export", "Version 1.0.1 fixes exported PDFs so the file is named after the note and includes pictures from the note. The same release improves editing responsiveness in notes with large photos."],
+          ["Store price", "The US App Store listed a $0.99 upfront price when checked on 30 September 2026; regional prices may differ."]
         ]
       }
     ],
     faqs: [
       ["Are Inkstone notes locked in its own database?", "No. Notes are ordinary Markdown files in an iCloud Drive folder that can be opened or edited by other tools."],
-      ["Can I use Inkstone's editor on a Mac?", "The current App Store listing is for iPhone. You can access the same Markdown files on a Mac through iCloud Drive and edit them with another app."]
+      ["Can I use Inkstone's editor on a Mac?", "The current App Store listing is for iPhone. You can access the same Markdown files on a Mac through iCloud Drive and edit them with another app."],
+      ["Do formulas and diagrams need an internet connection?", "KaTeX and Mermaid are bundled and render locally. Availability and syncing of the note files themselves depend on iCloud Drive, your device settings and your connection."],
+      ["Which format should I use to share a note?", "Share the Markdown file when the recipient wants editable source. Copy rich text for a publishing composer, or export PDF or HTML for a formatted document. Version 1.0.1 fixes PDF filenames and the inclusion of pictures."]
     ]
   },
   {
@@ -373,6 +388,8 @@ const products = [
     appCategory: "MultimediaApplication",
     operatingSystem: "iOS",
     softwareRequirements: "iOS 18.0 or later; iPhone XS or newer for simultaneous dual-camera capture",
+    softwareVersion: "1.1.3",
+    checkedAt: "2026-09-30",
     price: "0.99",
     currency: "USD",
     appDescription: "Simultaneous iPhone front and back camera capture with picture-in-picture or split layouts for photos and video.",
@@ -388,10 +405,21 @@ const products = [
         ]
       },
       {
+        kicker: "Two viewpoints",
+        heading: "Choose a layout for the moment",
+        intro: "Frame the scene and your reaction together before capturing. The choice of layout determines how much space each viewpoint gets in the saved photo or video.",
+        items: [
+          ["Picture in picture", "Keep the scene large and your reaction in the inset. Tap the small window to swap the main and secondary cameras when the explanation or reaction should fill the frame."],
+          ["Top and bottom", "Give the two live views separate horizontal halves. This suits a composition where the scene and the person both need prominent space instead of a small inset."],
+          ["Left and right", "Arrange the two views side by side. Check both halves while framing so a face, sign or other important detail is not cut off by the split."]
+        ]
+      },
+      {
         kicker: "Before you buy",
         heading: "Check the interface language and price",
-        intro: "The current app interface is Simplified Chinese, even though this product description is in English. The US App Store listed an upfront $0.99 price on 23 September 2026; prices vary by region.",
+        intro: "The current app interface is Simplified Chinese, even though this product description is in English. The US App Store listed an upfront $0.99 price on 30 September 2026; prices vary by region.",
         items: [
+          ["Film Grain and Vintage Tone", "Version 1.1.3 refines these looks for photos and videos: stronger grain and a more faded vintage tone. Compare the live views before deciding which look suits the capture."],
           ["Privacy", "The App Store listing says TwoPic has no network access and the developer does not collect data; captures stay in your Photos library."],
           ["No automatic editing claim", "TwoPic captures both perspectives at once. The page does not promise automatic post-production or cloud syncing."]
         ]
@@ -399,7 +427,9 @@ const products = [
     ],
     faqs: [
       ["Does TwoPic require a newer iPhone?", "Yes. Simultaneous front and back camera capture requires an iPhone XS or later with an A12-class chip and iOS 18.0 or later."],
-      ["Is the TwoPic app interface available in English?", "Not in the current version checked on 23 September 2026. Its interface is in Simplified Chinese, although the App Store description is translated."]
+      ["Is the TwoPic app interface available in English?", "Not in the current version checked on 30 September 2026. Its interface is in Simplified Chinese, although the App Store description is translated."],
+      ["Does TwoPic save both camera views together?", "Yes. The chosen layout combines the front and back views in one photo or video and saves the result to the system Photos library."],
+      ["Which permissions does TwoPic need?", "Camera access enables capture, microphone access enables recorded audio, and Photos permission enables saving captures. You can manage these permissions in iOS Settings."]
     ]
   }
 ];
@@ -469,6 +499,7 @@ function render(page) {
   const faqMarkup = page.faqs.map(([question, answer]) => `<details><summary>${escapeHtml(question)}</summary><p>${escapeHtml(answer)}</p></details>`).join("\n");
   const languageLinks = isLailemma ? lailemmaLanguages.filter(([, file]) => file !== page.file).map(([lang, file, name]) => `<a href="${file}" lang="${lang}">${escapeHtml(name)}</a>`).join("") : "";
   const statusMarkup = page.status ? `<p class="new-app-status"><strong>${escapeHtml(page.previewLabel)}</strong> ${escapeHtml(page.status)}</p>` : "";
+  const productMeta = page.checkedAt ? `<p class="article-meta"><a href="about.html">CrazyAIAgent</a> · <span>Version ${escapeHtml(page.softwareVersion)}</span> · ${ui.checked} <time datetime="${page.checkedAt}">${new Date(`${page.checkedAt}T00:00:00Z`).toLocaleDateString(page.lang, { month: "long", day: "numeric", year: "numeric", timeZone: "UTC" })}</time></p>` : "";
   return `<!doctype html>
 <html lang="${page.lang}">
 <head>
@@ -506,9 +537,9 @@ function render(page) {
 <section class="page-hero new-app-intro"><div class="section-inner${isInkstone ? " notes-app-hero-inner" : ""}">${isInkstone ? '<div class="notes-app-hero-copy">' : ""}
 <nav class="breadcrumb" aria-label="${ui.breadcrumb}"><ol><li><a href="/">${ui.home}</a></li><li><a href="apps.html">${ui.apps}</a></li><li aria-current="page">${escapeHtml(page.appName)}</li></ol></nav>
 <div class="new-app-title"><img src="assets/${page.icon}" width="112" height="112" fetchpriority="${isInkstone ? "low" : "high"}" decoding="async" alt="${escapeHtml(page.appName)} icon"><div><p class="section-kicker">${escapeHtml(page.kicker)}</p><h1>${escapeHtml(page.heading)}</h1></div></div>
-<p class="new-app-lead">${escapeHtml(page.lead)}</p>${statusMarkup}
+<p class="new-app-lead">${escapeHtml(page.lead)}</p>${statusMarkup}${productMeta}
 <div class="hero-actions"><a class="button button-primary" href="${page.storeUrl}" target="_blank" rel="noopener noreferrer" data-analytics-event="app_store_click" data-store-product="${page.storeProduct}" data-storefront="ios-app-store" data-store-country="${page.storeCountry}" aria-label="${escapeHtml(page.storeLabel)} (${ui.newTab})">${escapeHtml(page.storeLabel)}</a>${languageLinks}</div>
-</div>${heroScreensMarkup}</div></section>
+${isInkstone ? "</div>" : ""}${heroScreensMarkup}</div></section>
 ${visualSectionMarkup}
 ${sectionMarkup}
 <section class="section content-section new-app-faq"><div class="section-inner"><p class="section-kicker">${ui.faq}</p><h2>${ui.before}</h2><div class="faq-list">${faqMarkup}</div></div></section>

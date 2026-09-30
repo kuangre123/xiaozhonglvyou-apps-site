@@ -62,7 +62,7 @@ Primary path: Google. Secondary path: Yandex Türkiye. StatCounter reported Augu
 
 ## Days 15-24: Localized Pages and Internal Discovery
 
-1. Improve the three market hubs before adding more country pages. Each hub should accurately explain its supported apps, local App Store links, language limitations, task paths, FAQs, and a clear next action. The existing market hubs cover the original six apps; do not imply the three newer apps have localized pages or interfaces where they do not.
+1. Improve the three market hubs before adding more country pages. Japan, Germany and Türkiye now list all nine apps with local App Store links and explicit interface-language limitations. Laleme has Japanese, German and Turkish product pages; Inkstone and TwoPic use their English product pages. A translated product description does not imply a translated app interface.
 2. Keep the dedicated localized photo-cleaner workflow pages genuinely localized in title, description, H1, body copy, FAQ, schema language, breadcrumb, and CTA.
 3. Add localized decision pages only where the query intent differs from the workflow page. Current targets are `ja-jp-best-iphone-photo-cleaner.html`, `de-de-beste-iphone-foto-cleaner.html`, and `tr-tr-en-iyi-iphone-fotograf-temizleme.html`.
 4. Link each localized guide from its market hub, `guides.html`, `directory.html`, the English and Chinese photo-cleaner pages, and at least one related article.
@@ -135,6 +135,8 @@ Primary path: Google. Secondary path: Yandex Türkiye. StatCounter reported Augu
 - 2026-09-21 market-priority check: StatCounter's August 2026 country pages still support Japan = Google/Bing/Yahoo! JAPAN, Germany = Google/Bing plus Ecosia/DuckDuckGo monitoring, and Türkiye = Google/Yandex as the main operational paths.
 - 2026-09-23 GSC measurement check: a private Pages export is available locally. Its reporting window ends on 2026-09-20, before the 2026-09-21 Japanese/German/Turkish release and the 2026-09-23 new-app release. Treat missing rows for newly deployed URLs as pre-release absence, not indexing failure. Keep the raw export outside the public repository and obtain post-release query-by-page data before changing titles.
 - 2026-09-23 portfolio check: Lailemma, Inkstone Notes, and TwoPic have live product pages. Body Readiness screenshots are labeled as newer-build previews, not a feature in the current public Lailemma version. Privacy, support, and machine-readable discovery should include all three, while market pages must preserve each app's actual interface-language limitations.
+- 2026-09-30 release check: the earlier Body Readiness preview status is superseded by the published Laleme 2.0.7 pages. Apple live lookup confirms Inkstone 1.0.1 and TwoPic 1.1.3, each priced at $0.99 in the US at the time of this check. Inkstone's real editor screenshot appears in its product hero. The two product pages now explain connected-note workflows, export choices, camera layouts and permissions, with visible version information consistent with SoftwareApplication data.
+- 2026-09-30 discovery check: Google has downloaded the 73-URL sitemap with zero reported warnings or errors. The site's GitHub IndexNow workflow verified the deployed pages and live key, then received HTTP 200 for the changed-URL batch. These are successful discovery notifications, not evidence that every URL has been indexed or received clicks.
 
 - [x] Japanese, German, and Turkish market hubs exist.
 - [x] Japanese and Turkish dedicated photo-cleaner guides exist; German guide is present.

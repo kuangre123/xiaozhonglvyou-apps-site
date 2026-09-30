@@ -105,7 +105,7 @@ const products = new Map([
     {
       appId: "6810287923", url: "https://apps.apple.com/us/app/inkstone-notes-markdown/id6810287923?uo=4",
       image: `${origin}/assets/inkstone-icon.webp`, applicationCategory: "ProductivityApplication",
-      operatingSystem: "iOS", softwareVersion: "1.0.0", price: "0.99", priceCurrency: "USD"
+      operatingSystem: "iOS", softwareVersion: "1.0.1", price: "0.99", priceCurrency: "USD"
     }
   ],
   [
