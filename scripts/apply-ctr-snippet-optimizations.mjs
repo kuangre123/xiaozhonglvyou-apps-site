@@ -110,15 +110,15 @@ const pages = [
   },
   {
     file: "best-iphone-photo-cleaner-app.html",
-    title: "Free iPhone Photo Cleaner App: Limits &amp; Pro (2026)",
-    description: "AI Cleaning is free to download. Free users get one in-app cleanup action; more gated cleanup actions and 9 AI photo categories require Pro.",
+    title: "Free iPhone Photo Cleaner App: One Free Cleanup (2026)",
+    description: "AI Cleaning is free to download. Its one free cleanup action can include multiple selected items; more cleanup actions and nine AI categories require Pro.",
     keywords: "free photo cleaner app for iPhone, free iPhone photo cleaner app, photo cleaner free limit, iPhone photo cleaner free vs paid, Live Photo cleanup iPhone, burst photo cleanup",
-    modifiedDate: "2026-09-29",
-    modifiedDateLabel: "September 29, 2026",
+    modifiedDate: "2026-10-03",
+    modifiedDateLabel: "October 3, 2026",
     article: {
-      headline: "Free iPhone Photo Cleaner App: Limits & Pro (2026)",
-      description: "AI Cleaning is free to download. Free users get one in-app cleanup action; more gated cleanup actions and 9 AI photo categories require Pro.",
-      dateModified: "2026-09-29"
+      headline: "Free iPhone Photo Cleaner App: One Free Cleanup (2026)",
+      description: "AI Cleaning is free to download. Its one free cleanup action can include multiple selected items; more cleanup actions and nine AI categories require Pro.",
+      dateModified: "2026-10-03"
     },
     autoArticleWordCount: true,
     headline: [
@@ -127,7 +127,7 @@ const pages = [
       "iPhone Photo Cleaner: Free Download and Optional AI (2026)",
       "Free Photo Cleaner App for iPhone: Free vs Pro (2026)",
       "Free Photo Cleaner App for iPhone | Free vs Pro (2026)",
-      "Free iPhone Photo Cleaner App: Limits & Pro (2026)"
+      "Free iPhone Photo Cleaner App: One Free Cleanup (2026)"
     ],
     h1: [
       "Free photo cleaner app for iPhone. Review first.",

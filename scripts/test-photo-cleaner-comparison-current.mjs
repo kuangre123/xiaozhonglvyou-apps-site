@@ -26,7 +26,32 @@ test("comparison keeps its established intent, canonical, and synchronized fresh
   assert.equal(article.dateModified, "2026-10-03");
   assert.equal(article.citation.length, 6);
   const decision = await readFile(path.join(site, "best-iphone-photo-cleaner-app.html"), "utf8");
-  assert.ok(decision.includes("Free iPhone Photo Cleaner App: Limits &amp; Pro (2026)"));
+  assert.ok(decision.includes("Free iPhone Photo Cleaner App: One Free Cleanup (2026)"));
+});
+
+test("free photo-cleaner search snippet states the real free allowance consistently", async () => {
+  const file = "best-iphone-photo-cleaner-app.html";
+  const html = await readFile(path.join(site, file), "utf8");
+  const nodes = [...html.matchAll(/<script\b[^>]*type="application\/ld\+json"[^>]*>([\s\S]*?)<\/script>/g)]
+    .flatMap((match) => {
+      const value = JSON.parse(match[1]);
+      return value["@graph"] ?? [value];
+    });
+  const title = "Free iPhone Photo Cleaner App: One Free Cleanup (2026)";
+  const description = "AI Cleaning is free to download. Its one free cleanup action can include multiple selected items; more cleanup actions and nine AI categories require Pro.";
+  const article = nodes.find((node) => node["@type"] === "Article");
+
+  assert.ok(html.includes(`<title>${title}</title>`));
+  assert.ok(html.includes(`<meta name="description" content="${description}">`));
+  assert.ok(html.includes(`<meta property="og:title" content="${title}">`));
+  assert.ok(html.includes(`<meta name="twitter:title" content="${title}">`));
+  assert.ok(html.includes('article:modified_time" content="2026-10-03"'));
+  assert.ok(html.includes('Updated <time datetime="2026-10-03">October 3, 2026</time>'));
+  assert.equal(article.headline, title);
+  assert.equal(article.description, description);
+  assert.equal(article.dateModified, "2026-10-03");
+  assert.match(html, /one successful in-app cleanup action across eligible tools/);
+  assert.match(html, /the action may include multiple selected items/);
 });
 
 test("free baseline, safe review, local languages, and current listing facts are visible", () => {
@@ -80,6 +105,25 @@ test("comparison content regeneration is idempotent without duplicating sections
     assert.equal(await readFile(path.join(temp, file), "utf8"), afterFirst);
     assert.equal([...afterFirst.matchAll(/id="apple-photos"/g)].length, 1);
     assert.equal([...afterFirst.matchAll(/<summary>/g)].length, 7);
+  } finally {
+    await rm(temp, { recursive: true, force: true });
+  }
+});
+
+test("free photo-cleaner snippet optimization is idempotent", async () => {
+  const temp = await mkdtemp(path.join(os.tmpdir(), "free-photo-cleaner-snippet-"));
+  const file = "best-iphone-photo-cleaner-app.html";
+  try {
+    const html = await readFile(path.join(site, file), "utf8");
+    await writeFile(path.join(temp, file), html);
+    const args = [path.join(site, "scripts", "apply-ctr-snippet-optimizations.mjs"), "--site-dir", temp, "--file", file];
+    const first = spawnSync(process.execPath, args, { encoding: "utf8" });
+    assert.equal(first.status, 0, first.stderr);
+    const afterFirst = await readFile(path.join(temp, file), "utf8");
+    const second = spawnSync(process.execPath, args, { encoding: "utf8" });
+    assert.equal(second.status, 0, second.stderr);
+    assert.match(second.stdout, /Updated 0 CTR-focused pages/);
+    assert.equal(await readFile(path.join(temp, file), "utf8"), afterFirst);
   } finally {
     await rm(temp, { recursive: true, force: true });
   }
