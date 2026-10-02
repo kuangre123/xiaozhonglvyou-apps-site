@@ -685,12 +685,12 @@ const pages = [
   {
     file: "automatic-bike-ride-tracker-iphone.html",
     title: "How to Track a Bike Ride on iPhone Automatically (2026)",
-    description: "Track a bike ride on iPhone automatically without tapping Start. Set up Motion &amp; Fitness, background location, Apple Health, Apple Watch, and a test ride.",
+    description: "Track bike rides on iPhone without tapping Start. Enable Motion &amp; Fitness and background location; Apple Health and Apple Watch heart rate are optional.",
     keywords: "how to track a bike ride on iPhone, how can I track my bike ride on iPhone, bike ride tracker iPhone, bike ride tracker app, track cycling on iPhone, automatic bike ride tracker",
     modifiedDate: "2026-09-23",
     modifiedDateLabel: "September 23, 2026",
     article: {
-      description: "Track a bike ride on iPhone automatically without tapping Start. Set up Motion & Fitness, background location, Apple Health, Apple Watch, and a test ride.",
+      description: "Track bike rides on iPhone without tapping Start. Enable Motion & Fitness and background location; Apple Health and Apple Watch heart rate are optional.",
       keywords: [
         "how to track a bike ride on iPhone",
         "how can I track my bike ride on iPhone",
