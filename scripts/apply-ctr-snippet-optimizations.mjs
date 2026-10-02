@@ -2,6 +2,7 @@
 
 import { readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
+import { photoCleanerComparisonUpdate } from "./photo-cleaner-comparison-content.mjs";
 
 const photoStorageSteps = [
   {
@@ -338,9 +339,7 @@ const pages = [
   {
     file: "iphone-photo-cleaner-comparison.html",
     title: "Best iPhone Photo Cleaner Apps: 3 Compared (2026)",
-    modifiedDate: "2026-09-29",
-    modifiedDateLabel: "September 29, 2026",
-    article: { dateModified: "2026-09-29" },
+    ...photoCleanerComparisonUpdate,
     headline: [
       "Best iPhone Photo Cleaner Apps: 2026 Comparison",
       "Best iPhone Photo Cleaner Apps: 3 Compared (2026)"
@@ -359,7 +358,8 @@ const pages = [
           "The better fit depends on whether you value a focused photo workflow or an all-in-one storage utility.</p></div>"
         ],
         to: "The better fit depends on whether you value a focused photo workflow or an all-in-one storage utility.</p><p>Looking for a free-use allowance before choosing? Read our <a href=\"best-iphone-photo-cleaner-app.html\">free iPhone photo cleaner guide</a>; this page compares three apps side by side.</p></div>"
-      }
+      },
+      ...photoCleanerComparisonUpdate.replacements
     ]
   },
   {
