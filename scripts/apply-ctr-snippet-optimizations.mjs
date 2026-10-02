@@ -338,18 +338,20 @@ const pages = [
   },
   {
     file: "iphone-photo-cleaner-comparison.html",
-    title: "Best iPhone Photo Cleaner Apps: 3 Compared (2026)",
+    title: "Best Photo Cleaner App for iPhone: 3 Compared (2026)",
     ...photoCleanerComparisonUpdate,
     headline: [
       "Best iPhone Photo Cleaner Apps: 2026 Comparison",
-      "Best iPhone Photo Cleaner Apps: 3 Compared (2026)"
+      "Best iPhone Photo Cleaner Apps: 3 Compared (2026)",
+      "Best Photo Cleaner App for iPhone: 3 Compared (2026)"
     ],
     h1: [
       "Compare the best iPhone photo cleaner apps for 2026.",
       "AI Cleaning vs Cleanup vs Cleaner Kit.",
       "Compare 3 iPhone photo cleaner apps.",
       "Compare AI Cleaning, Cleanup, and Cleaner Kit.",
-      "3 iPhone photo cleaner apps compared."
+      "3 iPhone photo cleaner apps compared.",
+      "The best photo cleaner app for iPhone depends on your cleanup job."
     ],
     replacements: [
       {

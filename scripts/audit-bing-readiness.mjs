@@ -8,6 +8,7 @@ const siteDir = process.env.SITE_DIR
 const origin = "https://www.xiaozhonglvyou.com";
 const keyFileName = "a6013cad6cead8e0.txt";
 const key = "a6013cad6cead8e0";
+const bingMetaKeywordsNote = "Meta keywords are counted for inventory only; Bing's Webmaster Blog says the tag has no SEO value: https://blogs.bing.com/webmaster/2014/10/Blame-The-Meta-Keyword-Tag/";
 
 function parseArgs(argv) {
   const args = { outputJsonPath: null, outputMarkdownPath: null };
@@ -115,11 +116,6 @@ function summarize(results) {
   }
 
   // Per-page checks
-  const missingKeywords = pages.filter((p) => !p.hasKeywords).map((p) => p.file);
-  if (missingKeywords.length > 0) {
-    failures.push({ file: "multiple", failure: `Pages missing meta keywords (Bing values these): ${missingKeywords.join(", ")}` });
-  }
-
   const missingDescription = pages.filter((p) => !p.hasDescription).map((p) => p.file);
   if (missingDescription.length > 0) {
     failures.push({ file: "multiple", failure: `Pages missing meta description: ${missingDescription.join(", ")}` });
@@ -144,7 +140,7 @@ function summarize(results) {
       indexablePages: total,
       excludedPages: excluded.length,
       excludedPageFiles: excluded,
-      pagesWithKeywords: pages.filter((p) => p.hasKeywords).length,
+      pagesWithMetaKeywords: pages.filter((p) => p.hasKeywords).length,
       pagesWithDescription: pages.filter((p) => p.hasDescription).length,
       pagesWithCanonical: pages.filter((p) => p.hasCanonical).length,
       pagesWithJsonLd: pages.filter((p) => p.jsonLdBlocks > 0).length,
@@ -158,6 +154,7 @@ function summarize(results) {
     },
     informational: {
       bingWebmasterVerification: bingVerified > 0 ? "msvalidate.01 meta tag present" : "msvalidate.01 meta tag absent; Bing may instead verify the active property through DNS or Google Search Console import",
+      bingMetaKeywords: bingMetaKeywordsNote,
       indexNowNote: "IndexNow notifies Bing of changes but does not guarantee indexing. An active Bing Webmaster Tools property is required for authoritative reporting.",
       bingbotNote: "Bingbot can fetch the site. Remaining authority recommendations require crawlable links from relevant external domains."
     },
@@ -174,7 +171,7 @@ function renderMarkdown(report) {
     "## Summary",
     "",
     `- Indexable pages: ${report.summary.indexablePages}`,
-    `- Pages with meta keywords (Bing values these): ${report.summary.pagesWithKeywords}`,
+    `- Pages declaring meta keywords (inventory only): ${report.summary.pagesWithMetaKeywords}`,
     `- Pages with meta description: ${report.summary.pagesWithDescription}`,
     `- Pages with canonical: ${report.summary.pagesWithCanonical}`,
     `- Pages with JSON-LD: ${report.summary.pagesWithJsonLd}`,
@@ -189,6 +186,7 @@ function renderMarkdown(report) {
     "## Informational",
     "",
     `- Bing Webmaster verification signal: ${report.informational.bingWebmasterVerification}`,
+    `- Meta keywords: ${report.informational.bingMetaKeywords}`,
     `- IndexNow: ${report.informational.indexNowNote}`,
     `- Bingbot: ${report.informational.bingbotNote}`
   ];

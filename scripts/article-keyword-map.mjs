@@ -16,7 +16,7 @@ export const articleKeywordsByFile = new Map([
   ["ja-jp-best-iphone-photo-cleaner.html", ["iPhone 写真整理アプリ おすすめ", "iPhone 写真クリーナー 比較", "重複写真 削除 アプリ", "写真整理 AI", "iPhone ストレージ整理", "AI Cleaning"]],
   ["ja-jp-photo-cleaner.html", ["iPhone 写真整理アプリ", "iPhone 写真クリーナー", "重複写真 削除", "類似写真 整理", "写真整理 AI", "iPhone ストレージ整理"]],
   ["iphone-photo-cleaner-cn.html", ["iPhone照片清理", "iPhone重复照片", "相似照片复查", "截图清理", "照片不上传", "iPhone存储清理"]],
-  ["iphone-photo-cleaner-comparison.html", ["best iPhone photo cleaner apps", "iPhone photo cleaner comparison", "AI photo cleaner comparison", "duplicate photo cleanup apps", "photo cleaner privacy comparison", "photo cleaner app pricing comparison"]],
+  ["iphone-photo-cleaner-comparison.html", ["best photo cleaner app for iPhone", "best iPhone photo cleaner apps", "iPhone photo cleaner comparison", "AI photo cleaner comparison", "duplicate photo cleanup apps", "photo cleaner privacy comparison", "photo cleaner app pricing comparison"]],
   ["iphone-photo-cleaner.html", ["photo cleaner", "iPhone photo cleaner", "photo cleaner app", "iPhone storage cleanup", "on-device photo analysis", "find duplicate photos"]],
   ["iphone-storage-cleanup-guide.html", ["clean up iPhone storage photos", "clean up photos on iPhone for free", "iPhone photo storage", "merge duplicate photos on iPhone", "review iPhone videos and screenshots", "iCloud Photos deletion"]],
   ["mac-screen-privacy-cn.html", ["Mac屏幕隐私", "Mac共享屏幕保护", "Mac演示隐私", "敏感窗口隐藏", "Mac防窥软件", "macOS隐私工具"]],

@@ -155,8 +155,9 @@ Research sources used for this matrix:
 
 ### Bing Readiness Audit
 - Script: `node scripts/audit-bing-readiness.mjs`
-- Checks: Bingbot/BingPreview allowed in robots.txt, sitemap advertised, IndexNow key valid, all indexable pages have meta keywords (Bing values these), meta description, canonical, and JSON-LD structured data
-- Status: PASS (61 Bing-audited pages, all with keywords/description/canonical/JSON-LD; the only excluded HTML file is the noindex 404 page)
+- Checks: Bingbot/BingPreview allowed in robots.txt, sitemap advertised, IndexNow key valid, and indexable pages have a meta description and canonical. JSON-LD coverage and meta-keyword presence are informational; missing meta keywords are not a Bing readiness failure.
+- 2026-10-03 correction: Bing's official Webmaster Blog says the meta-keywords tag has no SEO value. The readiness audit no longer fails pages that omit it: [Bing Webmaster Blog](https://blogs.bing.com/webmaster/2014/10/Blame-The-Meta-Keyword-Tag/).
+- Status (2026-10-03): PASS (73 indexable pages have meta descriptions, canonicals and JSON-LD; meta-keyword presence is informational only; the noindex 404 page is excluded)
 - Bing Webmaster Tools property is active: the 2026-07-17 account screenshot shows Recommendations for `xiaozhonglvyou.com`. No `msvalidate.01` tag is present, which is expected when the property is verified through another supported method such as DNS or Google Search Console import.
 - Latest deployment validation: 2026-09-21; full site verification passed with 114 tests, including local search engine crawler coverage, market-specific content checks for China, Japan, Germany, Türkiye, South Korea, Russia, Czechia, Vietnam, Brazil, and Mexico, a submission matrix, and dedicated local-search and China-focused sitemaps.
 - Latest live deployment check: 2026-09-21; GitHub Actions run `34101916965` deployed commit `2f3fce2`, run `34101917697` completed URL submission for the same commit, and the live core product page plus regional hub expose the Japan, Germany, and Türkiye localized photo-cleaner workflow links. The repository is currently fast-forwarded to commit `e437ae1`, whose Pages and URL-submission runs also completed successfully on 2026-09-14.

@@ -52,11 +52,11 @@ const listingRows = [
 
 export const photoCleanerComparisonUpdate = {
   description,
-  modifiedDate: "2026-10-02",
-  modifiedDateLabel: "October 2, 2026",
+  modifiedDate: "2026-10-03",
+  modifiedDateLabel: "October 3, 2026",
   article: {
     description,
-    dateModified: "2026-10-02",
+    dateModified: "2026-10-03",
     citation: [
       "https://apps.apple.com/us/app/ai-cleaning-photo-cleaner/id6768019606",
       "https://apps.apple.com/us/app/cleanup-phone-storage-cleaner/id1510944943",

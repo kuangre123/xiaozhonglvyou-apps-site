@@ -15,13 +15,15 @@ const nodes = [...html.matchAll(/<script\b[^>]*type="application\/ld\+json"[^>]*
   });
 
 test("comparison keeps its established intent, canonical, and synchronized freshness", async () => {
-  assert.ok(html.includes("<title>Best iPhone Photo Cleaner Apps: 3 Compared (2026)</title>"));
+  assert.ok(html.includes("<title>Best Photo Cleaner App for iPhone: 3 Compared (2026)</title>"));
   assert.ok(html.includes(`rel="canonical" href="https://www.xiaozhonglvyou.com/${file}"`));
   assert.ok(html.includes('href="best-iphone-photo-cleaner-app.html">free iPhone photo cleaner guide</a>'));
-  assert.ok(html.includes('Updated <time datetime="2026-10-02">October 2, 2026</time>'));
-  assert.ok(html.includes('article:modified_time" content="2026-10-02"'));
+  assert.ok(html.includes('Updated <time datetime="2026-10-03">October 3, 2026</time>'));
+  assert.ok(html.includes('article:modified_time" content="2026-10-03"'));
   const article = nodes.find((node) => node["@type"] === "Article");
-  assert.equal(article.dateModified, "2026-10-02");
+  assert.equal(article.headline, "Best Photo Cleaner App for iPhone: 3 Compared (2026)");
+  assert.ok(article.keywords.includes("best photo cleaner app for iPhone"));
+  assert.equal(article.dateModified, "2026-10-03");
   assert.equal(article.citation.length, 6);
   const decision = await readFile(path.join(site, "best-iphone-photo-cleaner-app.html"), "utf8");
   assert.ok(decision.includes("Free iPhone Photo Cleaner App: Limits &amp; Pro (2026)"));
