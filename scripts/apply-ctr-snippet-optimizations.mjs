@@ -727,7 +727,7 @@ const pages = [
     keywords: "translator app for iPhone, best translator app for iPhone, best translation app for iPhone, translation app for iPhone, Apple Translate vs Google Translate, offline translator app, camera translator app",
     article: {
       description: "Compare the best translator apps for iPhone: Apple Translate, Google Translate, and Translation Specialist for voice, camera, offline, and travel use.",
-      dateModified: "2026-09-24",
+      dateModified: "2026-10-03",
       keywords: [
         "translator app for iPhone",
         "best translator app for iPhone",
@@ -741,6 +741,7 @@ const pages = [
       ],
       wordCount: 1478
     },
+    autoArticleWordCount: true,
     structuredData: [
       {
         type: "BreadcrumbList",
@@ -761,8 +762,8 @@ const pages = [
         answer: "There is no universal winner. Apple Translate is the simplest built-in choice, Google Translate is strongest for broad language and input coverage, and Translation Specialist is a focused option for travelers who want two-way voice conversation, continuous live interpretation, camera translation, and phrase flashcards in one app."
       }
     ],
-    modifiedDate: "2026-09-24",
-    modifiedDateLabel: "September 24, 2026",
+    modifiedDate: "2026-10-03",
+    modifiedDateLabel: "October 3, 2026",
     headline: [
       "Best Travel Translator Apps for iPhone: 3 Compared (2026)",
       "Best Translator Apps for Travel: 3 Compared (2026)",
@@ -795,6 +796,28 @@ const pages = [
         label: "translator comparison lead question",
         from: ["<summary>What is the best translator app for travel?</summary>"],
         to: "<summary>What is the best translator app for iPhone?</summary>"
+      },
+      {
+        label: "translator comparison first-party research date and app name",
+        from: [
+          '<p>We checked Apple Support, Google Translate Help, and the current US App Store listings on <time datetime="2026-08-10">August 10, 2026</time>. We did not invent universal accuracy scores: translation quality changes by language pair, accent, background noise, text clarity, and context.</p>'
+        ],
+        to: '<p>Apple currently lists our app as Translation Specialist: Speak; this comparison uses Translation Specialist for brevity. We checked Apple Support, Google Translate Help, and the current US App Store listings on <time datetime="2026-10-03">October 3, 2026</time>. We did not invent universal accuracy scores: translation quality changes by language pair, accent, background noise, text clarity, and context.</p>'
+      },
+      {
+        label: "translator comparison published breadth and size rows",
+        from: [
+          '<div role="row"><span role="cell"><strong>Published breadth</strong></span><span role="cell">Supported languages vary by feature and Apple platform availability</span><span role="cell">Up to 249 text languages; not every input mode works with every language</span><span role="cell">20 app interface languages; current release notes describe live interpretation across 17 languages</span></div>',
+          '<div role="row"><span role="cell"><strong>Published language claims</strong></span><span role="cell">Supported languages vary by feature and Apple platform availability</span><span role="cell">Up to 249 text languages; feature support varies by language</span><span role="cell">Store copy advertises 20 app languages; App Store language metadata lists English plus 7 more; live interpretation is separately described as supporting 17 languages</span></div><div role="row"><span role="cell"><strong>US App Store size at check date</strong></span><span role="cell">Built in on supported iPhones; no separate install size in this comparison</span><span role="cell">308.3 MB</span><span role="cell">986.8 MB; download on Wi-Fi and leave storage for language resources</span></div>'
+        ],
+        to: '<div role="row"><span role="cell"><strong>Published language claims</strong></span><span role="cell">Supported languages vary by feature and Apple platform availability</span><span role="cell">Up to 249 text languages; feature support varies by language</span><span role="cell">Store copy advertises 20 app languages; App Store language metadata lists English plus 7 more; live interpretation is separately described as supporting 17 languages</span></div><div role="row"><span role="cell"><strong>US App Store size at check date</strong></span><span role="cell">Built in on supported iPhones; no separate install size in this comparison</span><span role="cell">308.3 MB</span><span role="cell">986.8 MB; check available storage and download on Wi-Fi</span></div>'
+      },
+      {
+        label: "translator comparison current system requirements",
+        from: [
+          '<div role="row"><span role="cell"><strong>Current iPhone requirement</strong></span><span role="cell">Depends on iOS feature and device; some Live Translation features require Apple Intelligence</span><span role="cell">Current US listing requires iOS 18 or later</span><span role="cell">Version 2.2.3 requires iOS 17.4 or later</span></div>'
+        ],
+        to: '<div role="row"><span role="cell"><strong>Current iPhone requirement</strong></span><span role="cell">Depends on iOS feature and device; some Live Translation features require Apple Intelligence</span><span role="cell">US App Store listing requires iOS 18 or later</span><span role="cell">Version 2.2.3, released September 7, 2026, requires iOS 17.4 or later</span></div>'
       }
     ]
   },
