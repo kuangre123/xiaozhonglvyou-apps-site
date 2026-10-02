@@ -336,7 +336,7 @@ const products = [
     operatingSystem: "iOS",
     softwareRequirements: "iOS 18.0 or later",
     softwareVersion: "1.0.1",
-    checkedAt: "2026-09-30",
+    checkedAt: "2026-10-03",
     price: "0.99",
     currency: "USD",
     appDescription: "Markdown writing app with plain files in iCloud Drive, wiki links, backlinks, offline formulas and diagrams, and PDF or HTML export.",
@@ -368,7 +368,7 @@ const products = [
         items: [
           ["Requirements", "Inkstone is an iPhone app requiring iOS 18.0 or later; the interface is available in English and Simplified Chinese."],
           ["PDF export", "Version 1.0.1 fixes exported PDFs so the file is named after the note and includes pictures from the note. The same release improves editing responsiveness in notes with large photos."],
-          ["Store price", "The US App Store listed a $0.99 upfront price when checked on 30 September 2026; regional prices may differ."]
+          ["Store price and download size", "The US App Store lists Version 1.0.1 at $0.99 with an 8.7 MB download size, checked on 3 October 2026. Price and download size may vary by storefront."]
         ]
       }
     ],
