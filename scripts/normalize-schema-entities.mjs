@@ -49,7 +49,7 @@ const products = new Map([
       applicationCategory: "UtilitiesApplication",
       operatingSystem: "macOS",
       softwareVersion: "1.5.3",
-      price: "3.99",
+      price: "2.99",
       priceCurrency: "USD"
     }
   ],
@@ -70,12 +70,13 @@ const products = new Map([
     "GIFmaker-Gif Studio",
     {
       appId: "6783559364",
+      listingName: "GIFmaker: GIF Maker & Editor",
       url: "https://apps.apple.com/us/app/gifmaker-gif-studio/id6783559364?uo=4",
       image: `${origin}/assets/gifmaker-icon.png`,
       applicationCategory: "MultimediaApplication",
       operatingSystem: "iOS",
       softwareVersion: "1.1.4",
-      price: "0.00",
+      price: "0.99",
       priceCurrency: "USD"
     }
   ],
@@ -313,6 +314,7 @@ function fullProductEntity(name) {
   return {
     "@type": "SoftwareApplication",
     name,
+    ...(product.listingName ? { alternateName: [product.listingName] } : {}),
     url: product.url,
     downloadUrl: product.url,
     image: product.image,
@@ -338,6 +340,12 @@ function normalizeSoftwareApplication(node) {
 
   return {
     ...node,
+    ...(product.listingName ? {
+      alternateName: [...new Set([
+        ...(Array.isArray(node.alternateName) ? node.alternateName : node.alternateName ? [node.alternateName] : []),
+        product.listingName
+      ])]
+    } : {}),
     url,
     downloadUrl,
     image: product.image,
@@ -350,7 +358,9 @@ function normalizeSoftwareApplication(node) {
     offers: {
       ...(node.offers || {}),
       "@type": "Offer",
-      price: node.offers?.price ?? product.price,
+      price: node.offers?.priceCurrency && node.offers.priceCurrency !== product.priceCurrency
+        ? node.offers.price
+        : product.price,
       priceCurrency: node.offers?.priceCurrency ?? product.priceCurrency,
       availability: "https://schema.org/InStock"
     }

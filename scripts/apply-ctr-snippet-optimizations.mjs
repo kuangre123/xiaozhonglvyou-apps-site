@@ -26,6 +26,32 @@ const photoStorageSteps = [
   }
 ];
 
+const screenSharingFocusAnswer = "Focus can still allow selected people, apps, and time-sensitive notifications. Teams calls, requests to join, and meeting-start notifications are not controlled by macOS Focus. Review the meeting app's own notification settings and test from a receiving device.";
+const screenSharingBuiltinAnswer = "No extra app is needed to change macOS notification settings or to choose a window or tab in the meeting app. Anti-spy screen Lite is an optional tool for protected apps and presentation controls; test its effect in the receiving view before relying on it.";
+const screenSharingSteps = [
+  ["Silence notifications and check recording permission", "In System Settings, open Notifications and set Show Notifications: when mirroring or sharing the display to Notifications Off. Turn on Focus, then confirm which meeting apps may record the screen and system audio."],
+  ["Choose the narrowest shared source", "Share one application window or browser tab when the meeting app allows it, instead of an entire display with unrelated private windows. Check the audio-sharing option too."],
+  ["Close private windows and choose protected apps", "Close unrelated chat, email, finance, client, and internal-tool windows. If using Anti-spy screen Lite, select the sensitive apps to protect."],
+  ["Test optional presentation controls", "If using Presenting Mode or a Privacy Color Block, enable it before the test call. Do not assume that an overlay visible on your Mac will appear in the meeting's captured output."],
+  ["Run a private test share", "Join a private test call from a second device with its microphone and speakers muted. Inspect the receiving view, trigger a harmless notification, and confirm the intended window, any protected content, and shared audio. Stop if private content appears."],
+  ["Stop sharing and restore the workspace", "End screen sharing before reopening private apps, then confirm the meeting app is no longer recording and restore hidden windows deliberately."]
+];
+const screenSharingRiskSection = '<section class="section content-section"><div class="section-inner content-grid"><div><p class="section-kicker">Risk checklist</p>';
+const screenSharingMeetingSections = [
+  '<section class="section content-section" id="meeting-apps"><div class="section-inner content-grid"><div><p class="section-kicker">Choose the shared source</p><h2>Share a window or tab in Zoom, Meet, or Teams.</h2><p>Start with the smallest source that contains your presentation. A narrow source reduces unrelated desktop exposure, but anything sensitive inside that source can still be visible. Leave system audio sharing off unless the meeting needs it.</p></div><div class="content-list">',
+  '<div><strong>Zoom on Mac</strong><p>In Share, open Screens and select the intended application window rather than the entire display. Check Share sound separately. Zoom also offers a cropped Portion of screen; keep private content outside that boundary. See <a href="https://support.zoom.com/hc/en/article?id=zm_kb&amp;sysparm_article=KB0060596" target="_blank" rel="noopener noreferrer">Zoom sharing options</a>.</p></div>',
+  '<div><strong>Google Meet in Chrome</strong><p>Choose Present now, then A tab for a web presentation or A window for one app. Check the tab-audio or system-audio option before confirming. Do not present the meeting window itself. See <a href="https://support.google.com/meet/answer/9308856?hl=en" target="_blank" rel="noopener noreferrer">Meet presentation settings</a>.</p></div>',
+  '<div><strong>Microsoft Teams on Mac</strong><p>Select Share and choose the presentation window. Teams needs macOS screen-recording permission; for Teams in a browser, permission belongs to that browser. The optional native macOS sharing experience does not support giving or taking control. See <a href="https://support.microsoft.com/en-us/teams/meetings/present-content-in-microsoft-teams-meetings" target="_blank" rel="noopener noreferrer">Teams Mac sharing instructions</a>.</p></div>',
+  '<div><strong>If alerts still appear</strong><p>Check allowed people, apps, and time-sensitive notifications in <a href="https://support.apple.com/en-lb/guide/mac-help/mchl613dc43f/mac" target="_blank" rel="noopener noreferrer">Focus settings</a>. Teams calls, requests to join, and meeting-start alerts do not depend on macOS Focus; review <a href="https://support.microsoft.com/en-us/teams/notifications-settings/manage-notifications-in-microsoft-teams" target="_blank" rel="noopener noreferrer">Teams notification settings</a> too.</p></div>',
+  '</div></div></section>',
+  '<section class="section content-section alt-section" id="receiver-test"><div class="section-inner content-grid"><div><p class="section-kicker">Receiving-side check</p><h2>Check what another participant actually sees.</h2><p>A local screen preview is not proof that private content is absent from the transmitted view. Capture modes can differ: <a href="https://support.zoom.com/hc/en/article?id=zm_kb&amp;sysparm_article=KB0063824" target="_blank" rel="noopener noreferrer">Zoom documents window-filtering and capture options</a>. Do not assume that a color block visible on your own display also covers a separately captured window.</p></div><div class="content-list">',
+  '<div><strong>Use harmless sample content</strong><p>Join a private test call from a second device, mute its microphone and speakers, and inspect the receiving view. Keep real client records, passwords, and personal messages closed during the test.</p></div>',
+  '<div><strong>Exercise the exact workflow</strong><p>Share the intended source, switch slides, open a harmless alert, and test any optional protected-app or color-block behavior. Repeat for an external display or a different sharing mode; a successful window-share test does not prove an entire-display share is safe.</p></div>',
+  '<div><strong>Stop on unexpected exposure</strong><p>If any private area appears, stop sharing and remove that content from the source. Re-test before inviting others. Choosing a narrower window or preparing a separate presentation document is preferable to relying on an unverified mask.</p></div>',
+  '<div><strong>macOS settings do not require another app</strong><p>Use the built-in notification control and the meeting app first. On older macOS versions, the notification control may be an Allow notifications when mirroring or sharing the display switch; turn it off. Anti-spy screen Lite is optional, not a requirement for these settings.</p></div>',
+  '</div></div></section>'
+].join("");
+
 const pages = [
   {
     file: "index.html",
@@ -399,45 +425,45 @@ const pages = [
   },
   {
     file: "gif-maker.html",
-    title: "Free GIF Maker App for iPhone | Video &amp; Live Photo",
-    description: "Free GIF maker app for iPhone that turns videos, Live Photos, and pictures into GIFs. Edit timing, captions, canvas, reverse, and boomerang on-device.",
-    keywords: "free GIF maker app, free GIF maker app for iPhone, iPhone GIF maker, video GIF maker free for iPhone, GIF maker from photos, animated GIF maker, on-device GIF editor",
-    modifiedDate: "2026-09-23",
-    modifiedDateLabel: "September 23, 2026",
+    title: "GIF Maker App for iPhone | Video &amp; Live Photo",
+    description: "GIFmaker turns videos, Live Photos, and pictures into GIFs on iPhone. Edit timing, captions, canvas, reverse, and boomerang on-device. US price: $0.99.",
+    keywords: "GIF maker app, GIF maker app for iPhone, iPhone GIF maker, video GIF maker for iPhone, GIF maker from photos, animated GIF maker, on-device GIF editor",
+    modifiedDate: "2026-10-02",
+    modifiedDateLabel: "October 2, 2026",
     webPage: {
       "@id": "https://www.xiaozhonglvyou.com/gif-maker.html#page",
-      name: "Free GIF Maker App for iPhone | Video & Live Photo",
-      description: "Free GIF maker app for iPhone that turns videos, Live Photos, and pictures into GIFs. Edit timing, captions, canvas, reverse, and boomerang on-device.",
-      dateModified: "2026-08-21"
+      name: "GIF Maker App for iPhone | Video & Live Photo",
+      description: "GIFmaker turns videos, Live Photos, and pictures into GIFs on iPhone. Edit timing, captions, canvas, reverse, and boomerang on-device. US price: $0.99.",
+      dateModified: "2026-10-02"
     },
     softwareApplication: {
       "@id": "https://www.xiaozhonglvyou.com/gif-maker.html#app",
       alternateName: [
         "GIFmaker",
         "GIF Maker: Photos & Video",
-        "Free GIF Maker App for iPhone",
+        "GIF Maker App for iPhone",
         "Video to GIF Maker"
       ],
-      description: "A free GIF maker app for iPhone that creates animated GIFs from photos, videos, and Live Photos with timing, captions, frame order, canvas, and playback controls."
+      description: "A GIF maker app for iPhone that creates animated GIFs from photos, videos, and Live Photos with timing, captions, frame order, canvas, and playback controls. The US storefront lists a $0.99 upfront price."
     },
     structuredData: [
       {
         type: "BreadcrumbList",
         id: "https://www.xiaozhonglvyou.com/gif-maker.html#breadcrumb",
         values: {
-          name: "Free GIF Maker App for iPhone",
+          name: "GIF Maker App for iPhone",
           itemListElement: [
             { "@type": "ListItem", position: 1, name: "Home", item: "https://www.xiaozhonglvyou.com/" },
             { "@type": "ListItem", position: 2, name: "Apps", item: "https://www.xiaozhonglvyou.com/apps.html" },
-            { "@type": "ListItem", position: 3, name: "Free GIF Maker App for iPhone", item: "https://www.xiaozhonglvyou.com/gif-maker.html" }
+            { "@type": "ListItem", position: 3, name: "GIF Maker App for iPhone", item: "https://www.xiaozhonglvyou.com/gif-maker.html" }
           ]
         }
       }
     ],
     questions: [
       {
-        names: ["Can GIFmaker turn a video or Live Photo into a GIF?", "Is there a free GIF maker app for iPhone?"],
-        answer: "Yes. GIFmaker-Gif Studio is free to download and turns photos, videos, and Live Photos into GIFs on iPhone. It includes per-frame timing, captions, canvas ratios, reverse, and boomerang playback."
+        names: ["Can GIFmaker turn a video or Live Photo into a GIF?", "Is there a free GIF maker app for iPhone?", "How much does GIFmaker cost?"],
+        answer: "The US App Store lists GIFmaker at an upfront price of $0.99 when checked on October 2, 2026. It turns photos, videos, and Live Photos into GIFs with frame timing, captions, canvas ratios, reverse, and boomerang playback. Check the local purchase sheet for current pricing."
       }
     ],
     removeJsonLdIds: ["https://www.xiaozhonglvyou.com/gif-maker.html#howto"],
@@ -445,18 +471,19 @@ const pages = [
       "Turn photos, video, or Live Photos into a GIF.",
       "Make GIFs from video and Live Photos on iPhone.",
       "Turn videos and Live Photos into GIFs on iPhone.",
-      "Free GIF maker app for iPhone."
+      "Free GIF maker app for iPhone.",
+      "Turn videos and Live Photos into GIFs on iPhone."
     ],
     replacements: [
       {
         label: "product breadcrumb label",
-        from: ["<li aria-current=\"page\">GIFmaker</li>"],
-        to: "<li aria-current=\"page\">Free GIF Maker App</li>"
+        from: ["<li aria-current=\"page\">GIFmaker</li>", "<li aria-current=\"page\">Free GIF Maker App</li>"],
+        to: "<li aria-current=\"page\">GIF Maker App</li>"
       },
       {
         label: "product eyebrow",
-        from: ["<p class=\"eyebrow\">GIF maker for iPhone</p>"],
-        to: "<p class=\"eyebrow\">Free GIF maker app for iPhone</p>"
+        from: ["<p class=\"eyebrow\">GIF maker for iPhone</p>", "<p class=\"eyebrow\">Free GIF maker app for iPhone</p>"],
+        to: "<p class=\"eyebrow\">GIF maker app for iPhone</p>"
       },
       {
         label: "product hero summary",
@@ -476,12 +503,12 @@ const pages = [
       {
         label: "product workflow introduction",
         from: ["<div><p class=\"section-kicker\">Four-step workflow</p><h2>How to make a GIF on iPhone.</h2><p>Choose the source first, then use the live preview to refine the loop before you export. For the full workflow and the difference between Photos effects and a portable .gif file, read the <a href=\"make-gif-on-iphone-guide.html\">five-step real GIF guide</a>.</p></div>"],
-        to: "<div><p class=\"section-kicker\">What the app includes</p><h2>One iPhone GIF maker for photos, video, and Live Photos.</h2><p>Choose the source, refine the loop with live preview, and export from the same app. For the complete video workflow and the difference between Photos effects and a portable .gif file, read <a href=\"make-gif-on-iphone-guide.html\">how to make a GIF on iPhone from video</a>.</p></div>"
+        to: "<div><p class=\"section-kicker\">What the app includes</p><h2>One iPhone GIF maker for photos, video, and Live Photos.</h2><p>Choose the source, refine the loop with live preview, and export from the same app. For the complete video workflow, read <a href=\"make-gif-on-iphone-guide.html\">how to make a GIF on iPhone from video</a>. To compare formats, AI tools, subscriptions, and iOS support, see the <a href=\"best-gif-maker-apps-iphone.html\">best GIF maker apps for iPhone</a>.</p></div>"
       },
       {
         label: "product visible FAQ",
-        from: ["<details open><summary>Can GIFmaker turn a video or Live Photo into a GIF?</summary><p>Yes. GIFmaker can import photos, videos, or Live Photos and turn them into animated GIFs on iPhone.</p></details>"],
-        to: "<details open><summary>Is there a free GIF maker app for iPhone?</summary><p>Yes. GIFmaker-Gif Studio is free to download and turns photos, videos, and Live Photos into GIFs on iPhone. It includes per-frame timing, captions, canvas ratios, reverse, and boomerang playback.</p></details>"
+        from: ["<details open><summary>Can GIFmaker turn a video or Live Photo into a GIF?</summary><p>Yes. GIFmaker can import photos, videos, or Live Photos and turn them into animated GIFs on iPhone.</p></details>", "<details open><summary>Is there a free GIF maker app for iPhone?</summary><p>Yes. GIFmaker-Gif Studio is free to download and turns photos, videos, and Live Photos into GIFs on iPhone. It includes per-frame timing, captions, canvas ratios, reverse, and boomerang playback.</p></details>", "<details open><summary>How much does GIFmaker cost?</summary><p>The US App Store lists GIFmaker-Gif Studio at an upfront price of $0.99 when checked on October 2, 2026. It turns photos, videos, and Live Photos into GIFs with frame timing, captions, canvas ratios, reverse, and boomerang playback. Check the local purchase sheet for current pricing.</p></details>"],
+        to: "<details open><summary>How much does GIFmaker cost?</summary><p>The US App Store lists GIFmaker at an upfront price of $0.99 when checked on October 2, 2026. It turns photos, videos, and Live Photos into GIFs with frame timing, captions, canvas ratios, reverse, and boomerang playback. Check the local purchase sheet for current pricing.</p></details>"
       }
     ]
   },
@@ -572,7 +599,7 @@ const pages = [
       {
         label: "guide product call to action",
         from: ["<a class=\"button button-secondary\" href=\"gif-maker.html\">See GIFmaker details</a>"],
-        to: "<a class=\"button button-secondary\" href=\"gif-maker.html\">Free GIF maker app</a>"
+        to: "<a class=\"button button-secondary\" href=\"gif-maker.html\">GIF maker app</a>"
       },
       {
         label: "guide workflow heading",
@@ -587,7 +614,7 @@ const pages = [
       {
         label: "guide related product label",
         from: ["<a class=\"region-card\" href=\"gif-maker.html\"><span>Product details</span><strong>GIFmaker features, privacy, requirements, and App Store link</strong></a>"],
-        to: "<a class=\"region-card\" href=\"gif-maker.html\"><span>Free GIF maker app</span><strong>GIFmaker features, privacy, requirements, and App Store link</strong></a>"
+        to: "<a class=\"region-card\" href=\"gif-maker.html\"><span>GIF maker app</span><strong>GIFmaker features, privacy, requirements, and App Store link</strong></a>"
       },
       {
         label: "animated GIF quick answer",
@@ -1089,13 +1116,14 @@ const pages = [
   },
   {
     file: "mac-screen-privacy.html",
-    title: "Mac Privacy Screen App | Free vs $3.99 (2026)",
-    description: "Mac privacy screen app for hiding selected windows, covering sensitive areas, and safer presentations. Compare free Lite with the $3.99 full Mac app.",
+    title: "Mac Privacy Screen App | Free vs $2.99 (2026)",
+    description: "Mac privacy screen app for hiding selected windows, covering sensitive areas, and safer presentations. Compare free Lite with the $2.99 full Mac app.",
     keywords: "mac privacy screen app, Mac privacy app, screen privacy app for Mac, privacy screen app MacBook, hide sensitive windows Mac, anti spy screen, presentation privacy app",
-    modifiedDate: "2026-09-23",
-    modifiedDateLabel: "September 23, 2026",
+    modifiedDate: "2026-09-30",
+    modifiedDateLabel: "September 30, 2026",
     article: {
-      description: "Mac privacy screen app for hiding selected windows, covering sensitive areas, and safer presentations. Compare free Lite with the $3.99 full Mac app.",
+      description: "Mac privacy screen app for hiding selected windows, covering sensitive areas, and safer presentations. Compare free Lite with the $2.99 full Mac app.",
+      dateModified: "2026-09-30",
       keywords: [
         "mac privacy screen app",
         "Mac privacy app",
@@ -1110,7 +1138,8 @@ const pages = [
     headline: [
       "Mac Screen Privacy App",
       "Best Mac Screen Privacy App? Free vs Full (2026)",
-      "Mac Privacy Screen App: Free vs $3.99 (2026)"
+      "Mac Privacy Screen App: Free vs $3.99 (2026)",
+      "Mac Privacy Screen App: Free vs $2.99 (2026)"
     ],
     h1: [
       "Hide sensitive Mac windows in shared spaces.",
@@ -1123,10 +1152,11 @@ const pages = [
     title: "Hide Notifications While Screen Sharing on Mac: 6 Steps",
     description: "Turn off macOS alerts while mirroring or sharing, enable Focus, share one window, and test before your meeting. A practical 6-step Mac checklist.",
     keywords: "how to hide notifications when screen sharing on Mac, Mac hide notifications when sharing screen, Mac screen sharing privacy, share screen privacy settings Mac, hide private windows Mac",
-    modifiedDate: "2026-09-23",
-    modifiedDateLabel: "September 23, 2026",
+    modifiedDate: "2026-09-30",
+    modifiedDateLabel: "September 30, 2026",
     article: {
-      description: "Hide notifications when screen sharing on Mac in 6 steps. Use Focus, share one window, protect private apps, enable Presenting Mode, and test first.",
+      description: "Turn off macOS alerts while mirroring or sharing, enable Focus, share one window, and test before your meeting. A practical 6-step Mac checklist.",
+      dateModified: "2026-09-30",
       keywords: [
         "how to hide notifications when screen sharing on Mac",
         "Mac hide notifications when sharing screen",
@@ -1139,7 +1169,14 @@ const pages = [
     howTo: {
       "@id": "https://www.xiaozhonglvyou.com/screen-sharing-privacy-guide.html#howto",
       name: "How to hide notifications when screen sharing on Mac",
-      description: "A six-step checklist using Focus, notification settings, a narrow shared source, protected apps, Presenting Mode, and a test share."
+      description: "A six-step checklist using macOS notification settings, a narrow shared source, optional privacy controls, and a receiving-device test.",
+      step: screenSharingSteps.map(([name, text], index) => ({
+        "@type": "HowToStep",
+        position: index + 1,
+        url: `https://www.xiaozhonglvyou.com/screen-sharing-privacy-guide.html#step-${index + 1}`,
+        name,
+        text
+      }))
     },
     headline: [
       "Mac Screen Sharing Privacy Guide",
@@ -1153,6 +1190,72 @@ const pages = [
       "Protect Mac screen sharing privacy in 6 steps.",
       "Hide notifications and private windows before screen sharing.",
       "Hide notifications when screen sharing on Mac in 6 steps."
+    ],
+    questions: [
+      { names: ["What is the main risk during screen sharing?", "Why do some alerts still appear with Do Not Disturb on?"], answer: screenSharingFocusAnswer },
+      { names: ["Does this replace careful meeting setup?", "Do I need another app to hide notifications or share one window?"], answer: screenSharingBuiltinAnswer }
+    ],
+    replacements: [
+      {
+        label: "built-in-first screen sharing summary",
+        from: ['<p class="hero-summary">Use Focus, share one window, protect sensitive apps, enable Presenting Mode, and run a test before the meeting or recording starts.</p>'],
+        to: '<p class="hero-summary">Use built-in macOS notification settings, share one window or tab, and check the receiving view before your meeting. Privacy utilities are optional, and any protected-app or color-block behavior needs its own test.</p>'
+      },
+      {
+        label: "notification-first contents link",
+        from: ['<a href="#step-1">Check screen recording permission</a>'],
+        to: '<a href="#step-1">Silence notifications and check permission</a>'
+      },
+      {
+        label: "meeting and receiving-test contents links",
+        from: ['<li><a href="#step-6">Stop sharing and restore the workspace</a></li></ol>'],
+        to: '<li><a href="#step-6">Stop sharing and restore the workspace</a></li><li><a href="#meeting-apps">Zoom, Meet, and Teams settings</a></li><li><a href="#receiver-test">Check the receiving view</a></li></ol>'
+      },
+      {
+        label: "optional privacy controls boundary",
+        from: ['<p>The first two steps use macOS and the meeting app. The privacy utility adds protected apps and presentation controls, but it cannot choose the correct shared source for you.</p>'],
+        to: '<p>macOS notification settings and a window or tab share do not require another app. If you add a privacy utility, verify its protected-app and presentation behavior in the captured output; it cannot choose the correct shared source for you.</p>'
+      },
+      {
+        label: "window and audio selection step",
+        from: ['<p>Share one application window when the meeting app allows it. Sharing an entire display makes unrelated windows, menu-bar activity, and desktop content easier to expose.</p>'],
+        to: `<p>${screenSharingSteps[1][1]}</p>`
+      },
+      {
+        label: "optional protected-app step",
+        from: ['<p>Close unrelated chat, email, finance, client, and internal-tool windows. In Anti-spy screen Lite, mark the apps that should be hidden when privacy protection triggers.</p>'],
+        to: `<p>${screenSharingSteps[2][1]}</p>`
+      },
+      {
+        label: "capture-aware presentation controls step",
+        from: ['<strong>4. Enable Presenting Mode</strong><p>Before the meeting, use Presenting Mode and a Privacy Color Block where needed to reduce exposure from sensitive windows or private screen regions.</p>'],
+        to: `<strong>4. ${screenSharingSteps[3][0]}</strong><p>${screenSharingSteps[3][1]}</p>`
+      },
+      {
+        label: "optional controls contents link",
+        from: ['<a href="#step-4">Enable Presenting Mode</a>'],
+        to: '<a href="#step-4">Test optional presentation controls</a>'
+      },
+      {
+        label: "receiving-device test step",
+        from: ['<p>Start a test call, confirm the exact source being shared, open a harmless notification, and verify that private apps and screen regions remain hidden.</p>'],
+        to: `<p>${screenSharingSteps[4][1]}</p>`
+      },
+      {
+        label: "meeting-specific guidance and receiving checklist",
+        from: [screenSharingRiskSection],
+        to: screenSharingMeetingSections + screenSharingRiskSection
+      },
+      {
+        label: "Focus exception FAQ",
+        from: ['<summary>What is the main risk during screen sharing?</summary><p>Private windows, notifications, documents, or protected work can be exposed when the wrong app or desktop area is shared.</p>'],
+        to: `<summary>Why do some alerts still appear with Do Not Disturb on?</summary><p>${screenSharingFocusAnswer}</p>`
+      },
+      {
+        label: "built-in settings FAQ",
+        from: ['<summary>Does this replace careful meeting setup?</summary><p>No. It supports a privacy workflow. Users should still check the meeting app, shared screen source, and protected apps before presenting.</p>'],
+        to: `<summary>Do I need another app to hide notifications or share one window?</summary><p>${screenSharingBuiltinAnswer}</p>`
+      }
     ]
   },
   {
