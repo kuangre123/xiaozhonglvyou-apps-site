@@ -18,12 +18,18 @@ const mediaKitSignals = [
   "https://www.xiaozhonglvyou.com/mac-screen-privacy.html",
   "https://www.xiaozhonglvyou.com/gif-maker.html",
   "https://www.xiaozhonglvyou.com/happyride-auto-ride-tracker.html",
+  "https://www.xiaozhonglvyou.com/lailemma-period-tracker.html",
+  "https://www.xiaozhonglvyou.com/inkstone-markdown-notes.html",
+  "https://www.xiaozhonglvyou.com/twopic-dual-camera.html",
   "id6768019606",
   "id6755734543",
   "id6761301764",
   "id6766485393",
   "id6783559364",
   "id6786365305",
+  "id6775935474",
+  "id6810287923",
+  "id6800405096",
   "Editorial disclosure",
   "cb123428316@gmail.com"
 ];
@@ -35,11 +41,17 @@ const actionMapSignals = [
   "https://www.xiaozhonglvyou.com/support.html#anti-spy-screen-lite",
   "https://www.xiaozhonglvyou.com/support.html#gifmaker",
   "https://www.xiaozhonglvyou.com/support.html#happyride",
+  "https://www.xiaozhonglvyou.com/support.html#support-lailemma",
+  "https://www.xiaozhonglvyou.com/support.html#support-inkstone-notes",
+  "https://www.xiaozhonglvyou.com/support.html#support-twopic",
   "https://www.xiaozhonglvyou.com/privacy.html#ai-cleaning",
   "https://www.xiaozhonglvyou.com/privacy.html#travel-translator",
   "https://www.xiaozhonglvyou.com/privacy.html#anti-spy-screen",
   "https://www.xiaozhonglvyou.com/privacy.html#gifmaker",
-  "https://www.xiaozhonglvyou.com/privacy.html#happyride"
+  "https://www.xiaozhonglvyou.com/privacy.html#happyride",
+  "https://www.xiaozhonglvyou.com/privacy.html#lailemma-privacy",
+  "https://www.xiaozhonglvyou.com/privacy.html#inkstone-privacy",
+  "https://www.xiaozhonglvyou.com/privacy.html#twopic-privacy"
 ];
 
 const supportAnchors = [
@@ -48,7 +60,10 @@ const supportAnchors = [
   'id="anti-spy-screen"',
   'id="anti-spy-screen-lite"',
   'id="gifmaker"',
-  'id="happyride"'
+  'id="happyride"',
+  'id="support-lailemma"',
+  'id="support-inkstone-notes"',
+  'id="support-twopic"'
 ];
 
 const privacyAnchors = [
@@ -56,7 +71,21 @@ const privacyAnchors = [
   'id="travel-translator"',
   'id="anti-spy-screen"',
   'id="gifmaker"',
-  'id="happyride"'
+  'id="happyride"',
+  'id="lailemma-privacy"',
+  'id="inkstone-privacy"',
+  'id="twopic-privacy"'
+];
+
+const readmeProductUrls = [
+  "https://www.xiaozhonglvyou.com/iphone-photo-cleaner.html",
+  "https://www.xiaozhonglvyou.com/travel-translator.html",
+  "https://www.xiaozhonglvyou.com/mac-screen-privacy.html",
+  "https://www.xiaozhonglvyou.com/gif-maker.html",
+  "https://www.xiaozhonglvyou.com/happyride-auto-ride-tracker.html",
+  "https://www.xiaozhonglvyou.com/lailemma-period-tracker.html",
+  "https://www.xiaozhonglvyou.com/inkstone-markdown-notes.html",
+  "https://www.xiaozhonglvyou.com/twopic-dual-camera.html"
 ];
 
 async function exists(fileName) {
@@ -100,6 +129,8 @@ if (missingFiles.length === 0) {
   if (!readme.includes("https://www.xiaozhonglvyou.com/")) {
     failures.push("README does not link to the official homepage");
   }
+
+  failures.push(...missingSignals(readme, readmeProductUrls).map((url) => `README missing product landing-page link: ${url}`));
 }
 
 const ok = failures.length === 0;

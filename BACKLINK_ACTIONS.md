@@ -2,13 +2,13 @@
 
 Production domain: https://www.xiaozhonglvyou.com/
 
-Last verified: 2026-08-03
+Last verified: 2026-10-03 (site destinations and anchors; App Store Connect fields remain to be verified)
 
 ## Diagnosis
 
 Bing's “lacks inbound links from high-quality domains” recommendation is an off-site authority signal. Metadata, sitemaps, IndexNow, and structured data can make pages discoverable, but they cannot create third-party links.
 
-The public GitHub repository already exposes the official homepage and product landing-page links. HappyRide exposes the domain homepage as its Developer Website, while GIFmaker still points to its older GitHub Pages site. Earlier app pages did not expose the domain as their Developer Website, and some public privacy links still pointed to `docs.qq.com`. The highest-priority controlled action is therefore to connect every Apple product page to its matching official landing page, support anchor, and privacy anchor.
+The public GitHub README previously listed only five products and omitted Anti-spy screen Lite, Laleme, Inkstone, and TwoPic. It now links all nine apps to their matching product pages. App Store Connect Marketing, Support, and Privacy URLs are a separate external action; their current public values have not been rechecked in this update. The highest-priority controlled action is to connect every Apple product page to its matching official landing page, support anchor, and privacy anchor, then verify the public listings.
 
 ## P0 — App Store Connect URL map
 
@@ -22,6 +22,9 @@ In App Store Connect, open each app and each active localization under the platf
 | Anti-spy screen Lite | https://www.xiaozhonglvyou.com/mac-screen-privacy.html | https://www.xiaozhonglvyou.com/support.html#anti-spy-screen-lite | https://www.xiaozhonglvyou.com/privacy.html#anti-spy-screen |
 | GIFmaker-Gif Studio | https://www.xiaozhonglvyou.com/gif-maker.html | https://www.xiaozhonglvyou.com/support.html#gifmaker | https://www.xiaozhonglvyou.com/privacy.html#gifmaker |
 | HappyRide: Auto Ride Tracker | https://www.xiaozhonglvyou.com/happyride-auto-ride-tracker.html | https://www.xiaozhonglvyou.com/support.html#happyride | https://www.xiaozhonglvyou.com/privacy.html#happyride |
+| Laleme - Health Tracker (formerly Lailemma) | https://www.xiaozhonglvyou.com/lailemma-period-tracker.html | https://www.xiaozhonglvyou.com/support.html#support-lailemma | https://www.xiaozhonglvyou.com/privacy.html#lailemma-privacy |
+| Inkstone Notes Markdown | https://www.xiaozhonglvyou.com/inkstone-markdown-notes.html | https://www.xiaozhonglvyou.com/support.html#support-inkstone-notes | https://www.xiaozhonglvyou.com/privacy.html#inkstone-privacy |
+| TwoPic Dual Camera | https://www.xiaozhonglvyou.com/twopic-dual-camera.html | https://www.xiaozhonglvyou.com/support.html#support-twopic | https://www.xiaozhonglvyou.com/privacy.html#twopic-privacy |
 
 Apple documents the Marketing URL as the website where users learn more about the app and requires the Support URL to lead to real contact information:
 
@@ -40,7 +43,7 @@ For the two newest apps, replace GIFmaker's existing `kuangre123.github.io/gifma
 
 ## P1 — Existing authority surfaces
 
-- GitHub repository: complete. The README and repository Website field link to the official domain.
+- GitHub README: complete for all nine products, including product-specific landing-page URLs. The repository Website field links to the official domain.
 - GitHub profile: set the profile Website field to `https://www.xiaozhonglvyou.com/` if it is still empty.
 - X profile: add the clean homepage URL to the Website field; keep product names in the bio.
 - Product Hunt: use the specific product landing page and the media kit, not a generic campaign URL.
