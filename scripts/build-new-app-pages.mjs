@@ -4,6 +4,7 @@ import { fileURLToPath } from "node:url";
 
 const siteDir = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const origin = "https://www.xiaozhonglvyou.com";
+const assetVersions = { analytics: "0bee63cd1708", styles: "989efcb20c21", script: "fda667de6672" };
 const lailemmaLanguages = [
   ["en", "lailemma-period-tracker.html", "English"],
   ["zh-CN", "lailemma-period-tracker-cn.html", "简体中文"],
@@ -34,7 +35,9 @@ const products = [
     icon: "lailemma-icon.webp",
     screenshots: [
       { file: "lailemma-readiness-home.webp", alt: "Lailemma Body Readiness card on the Today screen in a Chinese-language screenshot", caption: "Developer-supplied Chinese-language screen: daily estimate on Today." },
-      { file: "lailemma-readiness-detail.webp", alt: "Lailemma Body Readiness details with sleep, HRV and cycle-phase contributions", caption: "Developer-supplied screen: the estimate explains contributing signals." }
+      { file: "lailemma-readiness-detail.webp", alt: "Lailemma Body Readiness details with sleep, HRV and cycle-phase contributions", caption: "Developer-supplied screen: the estimate explains contributing signals." },
+      { file: "lailemma-readiness-snapshot.webp", alt: "Chinese-language Health screen with a daily snapshot, cycle chart and all-metrics entry", caption: "Developer-supplied Chinese-language screen: daily health snapshot, cycle chart and indicator navigation." },
+      { file: "lailemma-readiness-all-metrics.webp", alt: "Chinese-language list of Apple Health indicators grouped into vital signs, sleep and activity", caption: "Developer-supplied Chinese-language screen: the available health indicators used for daily context." }
     ],
     previewLabel: "Available in version 2.0.7",
     status: "The current US, Japan, Germany and Turkey App Store listings identify Laleme as version 2.0.7. These developer-supplied screenshots show a Chinese-language interface; the app's listed interface languages are English, Simplified Chinese, German, Japanese and Korean.",
@@ -91,7 +94,9 @@ const products = [
     icon: "lailemma-icon.webp",
     screenshots: [
       { file: "lailemma-readiness-home.webp", alt: "来了么今日页面中的身体准备度卡片", caption: "开发者提供的中文截图：今日页展示本 App 估算的身体准备度。" },
-      { file: "lailemma-readiness-detail.webp", alt: "来了么健康页的身体准备度明细，包含睡眠、心率变异性和周期阶段", caption: "开发者提供的中文截图：睡眠、HRV 和周期阶段的贡献明细。" }
+      { file: "lailemma-readiness-detail.webp", alt: "来了么健康页的身体准备度明细，包含睡眠、心率变异性和周期阶段", caption: "开发者提供的中文截图：睡眠、HRV 和周期阶段的贡献明细。" },
+      { file: "lailemma-readiness-snapshot.webp", alt: "来了么健康页中文截图，展示今日健康快照、周期体征图表和全部指标入口", caption: "开发者提供的中文截图：今日快照、周期图表与指标列表入口。" },
+      { file: "lailemma-readiness-all-metrics.webp", alt: "来了么全部指标中文列表，按生命体征、睡眠和活动分类", caption: "开发者提供的中文截图：Apple 健康中可用指标的分类列表。" }
     ],
     previewLabel: "2.0.7 已包含身体准备度",
     status: "截至 2026 年 9 月 29 日，日本、德国、土耳其及美国 App Store 均显示 Laleme 2.0.7。截图由开发者提供，展示中文界面；中国大陆区是否可下载仍请按 Apple 账户地区核对。",
@@ -148,7 +153,9 @@ const products = [
     icon: "lailemma-icon.webp",
     screenshots: [
       { file: "lailemma-readiness-home.webp", alt: "中国語UIの今日の画面に表示された身体コンディション推定", caption: "開発者提供の画面。画像の表示言語は中国語です。" },
-      { file: "lailemma-readiness-detail.webp", alt: "睡眠、心拍変動、周期の段階を説明する中国語UIの詳細画面", caption: "睡眠や心拍変動など、推定に使われた信号の内訳。" }
+      { file: "lailemma-readiness-detail.webp", alt: "睡眠、心拍変動、周期の段階を説明する中国語UIの詳細画面", caption: "睡眠や心拍変動など、推定に使われた信号の内訳。" },
+      { file: "lailemma-readiness-snapshot.webp", alt: "今日の健康スナップショット、周期チャート、全指標への入口を示す中国語UI", caption: "開発者提供の中国語UI。今日の健康データと周期チャートを表示します。" },
+      { file: "lailemma-readiness-all-metrics.webp", alt: "バイタル、睡眠、活動に分類されたAppleヘルスケア指標の中国語一覧", caption: "開発者提供の中国語UI。利用可能な健康指標の一覧です。" }
     ],
     previewLabel: "公開版2.0.7で利用可能",
     status: "日本のApp StoreはLaleme 2.0.7を掲載しています。掲載画像は開発者提供の中国語UIで、実際のアプリ表示言語は日本語、英語、ドイツ語、簡体字中国語、韓国語です。",
@@ -204,7 +211,9 @@ const products = [
     icon: "lailemma-icon.webp",
     screenshots: [
       { file: "lailemma-readiness-home.webp", alt: "Körperbereitschaft auf der Lailemma-Startseite mit chinesischer Oberfläche", caption: "Vom Entwickler bereitgestellte Ansicht; die abgebildete Oberfläche ist chinesisch." },
-      { file: "lailemma-readiness-detail.webp", alt: "Detailansicht mit Beiträgen von Schlaf, Herzfrequenzvariabilität und Zyklusphase in chinesischer Oberfläche", caption: "Die Schätzung erläutert Schlaf, HRV und weitere verfügbare Signale." }
+      { file: "lailemma-readiness-detail.webp", alt: "Detailansicht mit Beiträgen von Schlaf, Herzfrequenzvariabilität und Zyklusphase in chinesischer Oberfläche", caption: "Die Schätzung erläutert Schlaf, HRV und weitere verfügbare Signale." },
+      { file: "lailemma-readiness-snapshot.webp", alt: "Chinesische Health-Ansicht mit Tagesübersicht, Zyklusdiagramm und Link zu allen Messwerten", caption: "Vom Entwickler bereitgestellte Ansicht mit chinesischer Oberfläche: Tagesübersicht und Zyklusdiagramm." },
+      { file: "lailemma-readiness-all-metrics.webp", alt: "Chinesische Liste verfügbarer Health-Messwerte für Vitalzeichen, Schlaf und Aktivität", caption: "Vom Entwickler bereitgestellte Ansicht mit chinesischer Oberfläche: gruppierte Health-Messwerte." }
     ],
     previewLabel: "In der öffentlichen Version 2.0.7 verfügbar.",
     status: "Der deutsche App Store führt Laleme in Version 2.0.7. Die vom Entwickler bereitgestellten Bilder zeigen eine chinesische Oberfläche; die App-Sprachliste enthält Deutsch, Englisch, vereinfachtes Chinesisch, Japanisch und Koreanisch.",
@@ -260,7 +269,9 @@ const products = [
     icon: "lailemma-icon.webp",
     screenshots: [
       { file: "lailemma-readiness-home.webp", alt: "Çince arayüzlü Laleme ekranında günlük Body Readiness tahmini", caption: "Geliştiricinin sağladığı ekran görüntüsü Çince arayüzden alınmıştır." },
-      { file: "lailemma-readiness-detail.webp", alt: "Uyku, HRV ve döngü evresinin günlük tahmine katkılarını gösteren Çince ekran", caption: "Ayrıntı ekranı tahmine katkı sağlayan mevcut sinyalleri açıklar." }
+      { file: "lailemma-readiness-detail.webp", alt: "Uyku, HRV ve döngü evresinin günlük tahmine katkılarını gösteren Çince ekran", caption: "Ayrıntı ekranı tahmine katkı sağlayan mevcut sinyalleri açıklar." },
+      { file: "lailemma-readiness-snapshot.webp", alt: "Günlük sağlık özeti, döngü grafiği ve tüm ölçümlere bağlantı içeren Çince Sağlık ekranı", caption: "Geliştiricinin sağladığı Çince arayüz: günlük sağlık özeti ve döngü grafiği." },
+      { file: "lailemma-readiness-all-metrics.webp", alt: "Yaşamsal bulgular, uyku ve aktivite olarak gruplanmış Apple Health ölçümlerinin Çince listesi", caption: "Geliştiricinin sağladığı Çince arayüz: kullanılabilir sağlık ölçümlerinin listesi." }
     ],
     previewLabel: "2.0.7 sürümünde kullanılabilir",
     status: "Türkiye App Store, Laleme'yi 2.0.7 sürümüyle listeliyor. Uygulama dil listesinde Türkçe yer almıyor; ekran görüntüleri Çince arayüzü gösteriyor. Bu tahmin Apple Readiness puanı veya tıbbi tavsiye değildir.",
@@ -508,7 +519,7 @@ function render(page) {
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; img-src 'self' https: data:; script-src 'self' https://www.googletagmanager.com; script-src-attr 'none'; style-src 'self'; style-src-attr 'none'; connect-src 'self' https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com; form-action 'none'; upgrade-insecure-requests">
 <link rel="preconnect" href="https://www.googletagmanager.com">
 <link rel="preconnect" href="https://apps.apple.com">
-<script src="analytics.js"></script>
+<script src="analytics.js?v=${assetVersions.analytics}"></script>
 <script async fetchpriority="low" src="https://www.googletagmanager.com/gtag/js?id=G-JY8T5JJGNH"></script>
 <title>${escapeHtml(page.title)}</title>
 <meta name="description" content="${escapeHtml(page.description)}">
@@ -528,7 +539,7 @@ function render(page) {
 <meta name="twitter:description" content="${escapeHtml(page.description)}"><meta name="twitter:image" content="${origin}/assets/og-default.png">
 <link rel="icon" href="/favicon.ico" sizes="any"><link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="manifest" href="manifest.webmanifest">
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="styles.css?v=${assetVersions.styles}">
 <script type="application/ld+json">${schema}</script>
 </head>
 <body>
@@ -545,7 +556,7 @@ ${sectionMarkup}
 <section class="section content-section new-app-faq"><div class="section-inner"><p class="section-kicker">${ui.faq}</p><h2>${ui.before}</h2><div class="faq-list">${faqMarkup}</div></div></section>
 </main>
 <footer class="footer"><div class="footer-inner"><p>© 2026 CrazyAIAgent.</p><div><a href="/">${ui.home}</a><a href="apps.html">${ui.apps}</a><a href="directory.html">${ui.directory}</a>${languageLinks}<a href="privacy.html">${ui.privacy}</a><a href="support.html">${ui.support}</a></div></div></footer>
-<script src="script.js" defer></script>
+<script src="script.js?v=${assetVersions.script}" defer></script>
 </body>
 </html>\n`;
 }
