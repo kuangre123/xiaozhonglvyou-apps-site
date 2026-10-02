@@ -39,7 +39,7 @@ After saving:
 4. Recheck after 24 hours; Apple notes that app-information changes may take up to 24 hours to appear.
 5. Record the first public appearance date in Bing Webmaster Tools notes. Do not expect the Bing warning to clear immediately; Bing must recrawl both sides of the link.
 
-For the two newest apps, replace GIFmaker's existing `kuangre123.github.io/gifmaker-site/` Marketing URL and replace HappyRide's generic homepage Marketing URL with the product-specific URLs above. This makes Apple's authoritative developer link relevant to the exact app instead of only the portfolio homepage.
+Previously recorded legacy values needing verification are GIFmaker's `kuangre123.github.io/gifmaker-site/` Marketing URL and HappyRide's generic homepage Marketing URL. Check their current App Store Connect values before changing them. Also verify the active Marketing, Support, and Privacy URLs for Laleme, Inkstone, and TwoPic against the product-specific rows above; none of these external fields is confirmed changed by this repository update.
 
 ## P1 — Existing authority surfaces
 
