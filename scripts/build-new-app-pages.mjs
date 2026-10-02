@@ -326,6 +326,8 @@ const products = [
     heading: "Inkstone Notes keeps your Markdown notes as files",
     lead: "Every note is an ordinary .md file in iCloud Drive, so you can open the same folder on a Mac or in another editor. Inkstone adds a focused native writing surface without locking your notes in a database.",
     icon: "inkstone-icon.webp",
+    socialImage: "og-inkstone-notes.jpg",
+    socialImageAlt: "Inkstone Notes Markdown with its real iPhone editor, Markdown files in iCloud Drive, wiki links, backlinks and PDF or HTML export",
     screenshots: [{ file: "inkstone-editor-screen.webp", width: 520, height: 1130, alt: "Inkstone Notes Markdown editor showing links, task lists and rich-text copy controls", caption: "The iPhone editor works directly with Markdown files." }],
     storeUrl: "https://apps.apple.com/us/app/inkstone-notes-markdown/id6810287923?uo=4",
     storeProduct: "inkstone-notes-markdown",
@@ -457,12 +459,18 @@ function itemList(items) {
 
 function schemaFor(page) {
   const canonical = `${origin}/${page.file}`;
+  const primaryScreenshot = page.screenshots[0];
   return {
     "@context": "https://schema.org",
     "@graph": [
       {
         "@type": "WebPage", "@id": `${canonical}#page`, url: canonical, name: page.title,
         description: page.description, inLanguage: page.lang,
+        ...(primaryScreenshot ? { primaryImageOfPage: {
+          "@type": "ImageObject", url: `${origin}/assets/${primaryScreenshot.file}`,
+          width: primaryScreenshot.width ?? 520, height: primaryScreenshot.height ?? 1125,
+          caption: primaryScreenshot.alt
+        } } : {}),
         isPartOf: { "@id": `${origin}/#website` }, publisher: { "@id": `${origin}/#publisher` },
         mainEntity: { "@id": `${canonical}#app` }
       },
@@ -473,6 +481,7 @@ function schemaFor(page) {
         softwareRequirements: page.softwareRequirements, softwareVersion: page.softwareVersion,
         url: page.storeUrl, downloadUrl: page.storeUrl, description: page.appDescription,
         image: `${origin}/assets/${page.icon}`,
+        ...(page.screenshots.length ? { screenshot: page.screenshots.map((shot) => `${origin}/assets/${shot.file}`) } : {}),
         offers: { "@type": "Offer", price: page.price, priceCurrency: page.currency, availability: "https://schema.org/InStock" }
       },
       {
@@ -495,6 +504,8 @@ function schemaFor(page) {
 
 function render(page) {
   const canonical = `${origin}/${page.file}`;
+  const socialImageUrl = `${origin}/assets/${page.socialImage ?? "og-default.png"}`;
+  const socialImageAlt = page.socialImageAlt ?? `${page.appName} by CrazyAIAgent`;
   const ui = labels[page.lang] ?? labels.en;
   const appId = page.storeUrl.match(/\/id(\d+)/)?.[1];
   if (!appId) throw new Error(`${page.file}: App Store ID missing`);
@@ -533,10 +544,10 @@ function render(page) {
 <meta property="og:type" content="website"><meta property="og:locale" content="${page.ogLocale}">
 <meta property="og:url" content="${canonical}"><meta property="og:title" content="${escapeHtml(page.title)}">
 <meta property="og:site_name" content="CrazyAIAgent"><meta property="og:description" content="${escapeHtml(page.description)}">
-<meta property="og:image" content="${origin}/assets/og-default.png"><meta property="og:image:secure_url" content="${origin}/assets/og-default.png">
-<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="${escapeHtml(page.appName)} by CrazyAIAgent">
+<meta property="og:image" content="${socialImageUrl}"><meta property="og:image:secure_url" content="${socialImageUrl}">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="${escapeHtml(socialImageAlt)}">
 <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="${escapeHtml(page.title)}">
-<meta name="twitter:description" content="${escapeHtml(page.description)}"><meta name="twitter:image" content="${origin}/assets/og-default.png">
+<meta name="twitter:description" content="${escapeHtml(page.description)}"><meta name="twitter:image" content="${socialImageUrl}"><meta name="twitter:image:alt" content="${escapeHtml(socialImageAlt)}">
 <link rel="icon" href="/favicon.ico" sizes="any"><link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="manifest" href="manifest.webmanifest">
 <link rel="stylesheet" href="styles.css?v=${assetVersions.styles}">
