@@ -1097,12 +1097,12 @@ const pages = [
   {
     file: "voice-camera-translator-guide.html",
     title: "How to Translate Menus on iPhone: Camera &amp; Voice (2026)",
-    description: "Translate menus on iPhone with Apple Translate camera, then use voice, camera OCR, live interpretation, and offline core language pairs while traveling.",
+    description: "Translate menus on iPhone with Apple Translate camera; check dishes and prices, then use voice for questions. Six steps cover language and offline limits.",
     keywords: "how to translate menus on iPhone, translate a menu on iPhone, Apple Translate camera, translate conversations on iPhone, translate signs with camera, iPhone translation guide",
     modifiedDate: "2026-09-23",
     modifiedDateLabel: "September 23, 2026",
     article: {
-      description: "Translate menus on iPhone with Apple Translate camera, then use voice, camera OCR, live interpretation, and offline core language pairs while traveling."
+      description: "Translate menus on iPhone with Apple Translate camera; check dishes and prices, then use voice for questions. Six steps cover language and offline limits."
     },
     autoArticleWordCount: true,
     headline: [
