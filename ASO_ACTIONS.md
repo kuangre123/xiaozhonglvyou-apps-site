@@ -116,13 +116,26 @@ Replace the current generic homepage Marketing URL with the product-specific can
 
 ### Website-to-App-Store conversion event
 
-Every public App Store link now emits the GA4 event `app_store_click` with these parameters:
+Every public App Store link queues the GA4 event `app_store_click` with these parameters. Queuing an event is not proof that GA4 received it:
 
-- `store_product`: one of the six stable product slugs, including `gifmaker-gif-studio` and `happyride-auto-ride-tracker`.
+- `store_product`: the stable product slug, including `gifmaker-gif-studio`, `happyride-auto-ride-tracker`, `lailemma-period-fertility`, `inkstone-notes-markdown`, and `twopic-dual-camera`. Comparison pages use separate competitor slugs.
 - `storefront`: `ios-app-store` or `mac-app-store`.
+- `store_country`: the destination storefront, such as `us`, `jp`, `de`, or `tr`, not the visitor's location.
 - `link_url`: the localized App Store destination.
 - `link_text`: the visible CTA text.
+- `page_path`: the originating website path.
+
+Normal clicks, keyboard activation, and middle-button link activation are covered. Right-clicking to open a context menu is not counted. Choosing a browser context-menu command is not observable as a normal page click. Ad blockers, consent settings, and connectivity can still prevent collection. Do not sum this custom event with the automatically collected outbound `click` event: they can describe the same activation.
 
 Use this event to compare landing-page CTA demand before and after an ASO release. Treat it as an outbound-click metric, not an install or purchase: App Store Connect remains authoritative for product-page views, downloads, conversion rate, retention, and proceeds.
 
 Avoid changing name, subtitle, keywords, and every screenshot concept simultaneously if the goal is to learn which change improved conversion. URL corrections can ship immediately because they fix attribution and authority rather than creative positioning.
+
+### GA4 verification and reporting gate
+
+1. In Analytics, locate the web data stream whose Measurement ID is `G-JY8T5JJGNH` and website is `https://www.xiaozhonglvyou.com`. A Measurement ID is not the numeric GA4 property ID.
+2. Connect that existing Analytics property in GSC Wizard using the Google account that can read it, then associate it with `sc-domain:xiaozhonglvyou.com`. At the October 3, 2026 check, this tool connection returned `connected: false` and no readable properties because Analytics access had not been granted. This is missing report access, not a zero-event report. No permissions or account roles were changed by the website update.
+3. First list the registered custom dimensions. Reuse existing event-scoped definitions for `store_product`, `storefront`, and `store_country`; only create missing definitions in Admin > Custom definitions. Prefer GA4's built-in Page path dimension over registering another `page_path`. Google notes that custom-dimension reporting can take 24-48 hours after collection and registration. [Google: event-scoped custom dimensions](https://support.google.com/analytics/answer/14239696?hl=en).
+4. For one deliberate QA session, open `https://www.xiaozhonglvyou.com/inkstone-markdown-notes.html?ga_debug=1`, enable the appropriate developer-traffic exclusion, and inspect `app_store_click` in DebugView. Confirm the product slug, page, and store country. Removing `ga_debug=1` disables this site's debug opt-in. Do not repeatedly generate clicks to manufacture traffic. [Google: DebugView and developer traffic](https://support.google.com/analytics/answer/7201382?hl=en).
+5. After access and collection are verified, report `app_store_click` event count by product, page, source/medium, visitor country, destination store country, and device over matched settled date ranges. An absent custom dimension is a reporting setup gap; an empty report must not be treated as proof of no conversion before checking collection, permissions, filters, and dates.
+6. Keep the three funnel stages separate: Search Console search clicks, GA4 store-link activation, and App Store Connect downloads. Marking this event as a GA4 key event is an explicit Analytics configuration decision, not an automatic result of adding the JavaScript. Website activity alone cannot establish installs or app revenue.

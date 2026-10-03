@@ -69,12 +69,13 @@ const getHashTarget = (hash) => {
   }
 };
 
-document.addEventListener("click", (event) => {
+const handleLinkActivation = (event) => {
+  if (event.type === "auxclick" && event.button !== 1) return;
   const anchor = event.target?.closest?.("a");
   if (!anchor) return;
 
   const href = anchor.getAttribute("href") || "";
-  if (href[0] === "#" && href !== "#") {
+  if (event.type !== "auxclick" && href[0] === "#" && href !== "#") {
     const target = getHashTarget(href);
     if (!target) return;
     event.preventDefault();
@@ -107,4 +108,7 @@ document.addEventListener("click", (event) => {
       transport_type: "beacon"
     });
   }
-});
+};
+
+document.addEventListener("click", handleLinkActivation);
+document.addEventListener("auxclick", handleLinkActivation);

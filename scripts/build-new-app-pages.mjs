@@ -1,10 +1,17 @@
 import { readFile, writeFile } from "node:fs/promises";
+import { createHash } from "node:crypto";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
 const siteDir = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const origin = "https://www.xiaozhonglvyou.com";
-const assetVersions = { analytics: "0bee63cd1708", styles: "989efcb20c21", script: "fda667de6672" };
+const assetVersions = {};
+for (const [asset, file] of [["analytics", "analytics.js"], ["styles", "styles.css"], ["script", "script.js"]]) {
+  assetVersions[asset] = createHash("sha256")
+    .update(await readFile(path.join(siteDir, file)))
+    .digest("hex")
+    .slice(0, 12);
+}
 const lailemmaLanguages = [
   ["en", "lailemma-period-tracker.html", "English"],
   ["zh-CN", "lailemma-period-tracker-cn.html", "简体中文"],
