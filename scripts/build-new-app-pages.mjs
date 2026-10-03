@@ -324,7 +324,7 @@ const products = [
     keywords: "Markdown notes iPhone, plain Markdown files, iCloud Drive notes, wiki links, Inkstone",
     kicker: "Markdown writing · iPhone",
     heading: "Inkstone Notes keeps your Markdown notes as files",
-    lead: "Every note is an ordinary .md file in iCloud Drive, so you can open the same folder on a Mac or in another editor. Inkstone adds a focused native writing surface without locking your notes in a database.",
+    lead: "Inkstone keeps each note as an ordinary .md file. When iCloud Drive syncing is enabled and available, the same folder can be opened on a Mac or in another editor. Your notes are not locked in a database.",
     icon: "inkstone-icon.webp",
     socialImage: "og-inkstone-notes.jpg",
     socialImageAlt: "Inkstone Notes Markdown with its real iPhone editor, Markdown files in iCloud Drive, wiki links, backlinks and PDF or HTML export",
@@ -346,7 +346,7 @@ const products = [
       {
         kicker: "File ownership",
         heading: "Your notes remain plain Markdown",
-        intro: "A folder of .md files is the source of truth. Open it from Finder on a Mac, edit with another app or move it without a proprietary export step.",
+        intro: "A folder of .md files is the source of truth. Find it in Files on iPhone, or in Finder on a Mac when the notes sync through iCloud Drive. Local-only notes do not automatically appear on another device.",
         items: [
           ["Connected notes", "Use [[note title]] links, backlinks and rename-aware links to navigate a growing collection."],
           ["Writing tools", "Syntax highlighting, live preview, outlines, inline tags, daily notes and full-text search stay close to the editor."],
@@ -364,6 +364,18 @@ const products = [
         ]
       },
       {
+        id: "inkstone-export-options",
+        kicker: "Export choices",
+        heading: "Export Markdown from iPhone as PDF or HTML",
+        intro: "Choose a rendered document for readers, styled text for a publishing composer, or the original files for another Markdown editor. Each option preserves different parts of the note.",
+        items: [
+          ["PDF with pictures", "Open the note, open the More menu and choose Export as PDF. In version 1.0.1 the PDF is named after the note and includes available image attachments. Save or share it from the system share sheet, then check the resulting file before sending it."],
+          ["Standalone HTML", "Choose Export as HTML in the same menu for a rendered HTML document with available attached images embedded. It is a publishing copy, not the original editable Markdown source; how it is saved depends on the receiving app."],
+          ["Styled copy", "Choose a Publishing style in More, then use Copy Styled in the bottom bar. Paste into an editor that accepts rich text and check its headings and images: the receiving editor can change the formatting."],
+          ["Original Markdown files", "Use Files to copy the original .md file when another editor needs the source. Keep the attachments folder and its relative paths with notes that contain pictures. More > Share Markdown sends source text, not a .md file or an attachment bundle."]
+        ]
+      },
+      {
         kicker: "Offline rendering",
         heading: "Formulas and diagrams without a web service",
         intro: "KaTeX and Mermaid are bundled for local rendering. The App Store privacy label says the developer does not collect data from this app.",
@@ -375,10 +387,12 @@ const products = [
       }
     ],
     faqs: [
-      ["Are Inkstone notes locked in its own database?", "No. Notes are ordinary Markdown files in an iCloud Drive folder that can be opened or edited by other tools."],
-      ["Can I use Inkstone's editor on a Mac?", "The current App Store listing is for iPhone. You can access the same Markdown files on a Mac through iCloud Drive and edit them with another app."],
+      ["Are Inkstone notes locked in its own database?", "No. Notes are ordinary Markdown files that can be opened or edited by other tools. Cross-device access requires the notes to be in the synced iCloud Drive folder; local-only notes stay on that device."],
+      ["Can I use Inkstone's editor on a Mac?", "The current App Store listing is for iPhone. When your notes sync through iCloud Drive, you can access the same Markdown files on a Mac and edit them with another app; this is not a native Inkstone Mac editor."],
       ["Do formulas and diagrams need an internet connection?", "KaTeX and Mermaid are bundled and render locally. Availability and syncing of the note files themselves depend on iCloud Drive, your device settings and your connection."],
-      ["Which format should I use to share a note?", "Share the Markdown file when the recipient wants editable source. Copy rich text for a publishing composer, or export PDF or HTML for a formatted document. Version 1.0.1 fixes PDF filenames and the inclusion of pictures."]
+      ["Which format should I use to share a note?", "Use Files for the original .md file and its referenced image attachments. The Share Markdown menu sends source text, not a file bundle. Use Copy Styled for a rich-text composer, or PDF and HTML for rendered documents, and inspect the result in the receiving app."],
+      ["How do I export a Markdown note as PDF on iPhone?", "Open the note in Inkstone, open More and choose Export as PDF. Save or send the result using the system share sheet. Version 1.0.1 names the PDF after the note and includes available attached pictures; reopen the result to check it before sharing."],
+      ["Will wiki links still open my other notes in an export?", "No. PDF and HTML exports and the bottom copy controls turn wiki links into display text rather than links into your note collection. Keep the original .md files and referenced notes together for an editor that supports their wiki-link syntax. A rendered document is not a portable linked vault."]
     ]
   },
   {
@@ -517,7 +531,7 @@ function render(page) {
   const screenshotMarkup = page.screenshots.map((shot) => `<figure><img src="assets/${shot.file}" width="${shot.width ?? 520}" height="${shot.height ?? 1125}" loading="${isInkstone ? "eager" : "lazy"}" ${isInkstone ? 'fetchpriority="high"' : ""} decoding="async" alt="${escapeHtml(shot.alt)}"><figcaption>${escapeHtml(shot.caption)}</figcaption></figure>`).join("\n");
   const heroScreensMarkup = isInkstone ? `<div class="notes-app-hero-visual" aria-labelledby="new-app-screen-title"><p class="section-kicker">${ui.screen}</p><h2 id="new-app-screen-title">${ui.inside}</h2><div class="new-app-screens">${screenshotMarkup}</div></div>` : "";
   const visualSectionMarkup = isInkstone ? "" : `<section class="section new-app-visual" aria-labelledby="new-app-screen-title"><div class="section-inner"><p class="section-kicker">${ui.screen}</p><h2 id="new-app-screen-title">${page.status ? ui.preview : ui.inside}</h2><div class="new-app-screens">${screenshotMarkup}</div></div></section>`;
-  const sectionMarkup = page.sections.map((section, index) => `<section class="section content-section${index % 2 ? " alt-section" : ""}"><div class="section-inner content-grid"><div><p class="section-kicker">${escapeHtml(section.kicker)}</p><h2>${escapeHtml(section.heading)}</h2><p>${escapeHtml(section.intro)}</p></div><div class="content-list">${itemList(section.items)}</div></div></section>`).join("\n");
+  const sectionMarkup = page.sections.map((section, index) => `<section class="section content-section${index % 2 ? " alt-section" : ""}"${section.id ? ` id="${escapeHtml(section.id)}"` : ""}><div class="section-inner content-grid"><div><p class="section-kicker">${escapeHtml(section.kicker)}</p><h2>${escapeHtml(section.heading)}</h2><p>${escapeHtml(section.intro)}</p></div><div class="content-list">${itemList(section.items)}</div></div></section>`).join("\n");
   const faqMarkup = page.faqs.map(([question, answer]) => `<details><summary>${escapeHtml(question)}</summary><p>${escapeHtml(answer)}</p></details>`).join("\n");
   const languageLinks = isLailemma ? lailemmaLanguages.filter(([, file]) => file !== page.file).map(([lang, file, name]) => `<a href="${file}" lang="${lang}">${escapeHtml(name)}</a>`).join("") : "";
   const statusMarkup = page.status ? `<p class="new-app-status"><strong>${escapeHtml(page.previewLabel)}</strong> ${escapeHtml(page.status)}</p>` : "";

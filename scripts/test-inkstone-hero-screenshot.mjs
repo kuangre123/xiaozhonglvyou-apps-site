@@ -45,3 +45,25 @@ test("Inkstone shares its branded image and identifies the real app screenshot",
   assert.match(source, /src="\.\.\/assets\/inkstone-editor-screen\.webp"/);
   assert.match(source, /src="\.\.\/assets\/inkstone-icon\.webp"/);
 });
+
+test("Inkstone explains export choices without promising a portable linked vault", () => {
+  assert.match(html, /<title>Inkstone Notes: Markdown Files on iPhone<\/title>/);
+  assert.match(html, /rel="canonical" href="https:\/\/www\.xiaozhonglvyou\.com\/inkstone-markdown-notes\.html"/);
+  const section = html.match(/<section\b[^>]*id="inkstone-export-options"[^>]*>(.*?)<\/section>/s)?.[1];
+  assert.ok(section, "export workflow has a stable section anchor");
+  assert.match(section, /Export Markdown from iPhone as PDF or HTML/);
+  assert.match(section, /Export as PDF/);
+  assert.match(section, /Export as HTML/);
+  assert.match(section, /Copy Styled/);
+  assert.match(section, /attachments folder/);
+  assert.match(section, /Share Markdown sends source text, not a \.md file/);
+
+  const schema = JSON.parse(html.match(/<script type="application\/ld\+json">(.*?)<\/script>/s)?.[1] ?? "null");
+  const faq = schema["@graph"].find((entity) => entity["@type"] === "FAQPage");
+  assert.equal(faq.mainEntity.length, 6);
+  assert.ok(faq.mainEntity.some((entry) => entry.name === "How do I export a Markdown note as PDF on iPhone?"));
+  const wikiLinks = faq.mainEntity.find((entry) => entry.name === "Will wiki links still open my other notes in an export?");
+  assert.match(wikiLinks.acceptedAnswer.text, /display text rather than links into your note collection/);
+  assert.match(html, /When iCloud Drive syncing is enabled and available/);
+  assert.doesNotMatch(html, /Every note is an ordinary \.md file in iCloud Drive/);
+});
