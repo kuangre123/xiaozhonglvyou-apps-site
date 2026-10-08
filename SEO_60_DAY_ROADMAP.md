@@ -24,6 +24,8 @@ This is a provisional execution roadmap for CrazyAIAgent, informed by the previo
 
 Research snapshot: 2026-09-21, using StatCounter August 2026 country-level search share as a directional input.
 
+Provider guidance rechecked on 2026-10-08, separately from the historical market shares: [Ecosia](https://support.ecosia.org/article/579-search-results-providers) currently limits EUSP to France, so Germany retains Google/Bing as its operational submission paths. [Yahoo! JAPAN](https://info-search.yahoo.co.jp/sitemaps/index.php) documents sitemap discovery, not proof of a separate submission account. [Yandex](https://yandex.com.tr/support/webmaster/tr/indexing-options/index-now) supports IndexNow without guaranteeing indexing. [Qwant](https://help.qwant.com/hc/fr-fr/articles/49002658519569-Comment-Qwant-indexe-le-web) documents its own crawler and discovery through links/sitemaps. Provider and crawler readiness must not be reported as measured clicks.
+
 ### Japan
 
 Primary path: Google and Bing. Local discovery path: Yahoo! JAPAN, which remains a meaningful Japanese portal and search surface. StatCounter reported August 2026 all-platform share in Japan as Google 63.02%, Bing 28.29%, Yahoo! 6.96%, DuckDuckGo 0.74%, Yandex 0.4%, and Coc Coc 0.35%. Keep Japanese content on `ja-jp.html`, `ja-jp-photo-cleaner.html`, and `ja-jp-best-iphone-photo-cleaner.html`, with Japanese App Store links and `ja` hreflang.
