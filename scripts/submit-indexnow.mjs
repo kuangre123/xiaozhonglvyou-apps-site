@@ -238,12 +238,22 @@ async function writeOutput(filePath, value) {
   await writeFile(absolutePath, `${JSON.stringify(value, null, 2)}\n`);
 }
 
-export async function runSubmission(args, request = fetch) {
+export function workflowEvidence(env = process.env) {
+  const repository = env.GITHUB_REPOSITORY;
+  const commitSha = env.GITHUB_SHA;
+  const runId = env.GITHUB_RUN_ID;
+  const runAttempt = env.GITHUB_RUN_ATTEMPT;
+  if (!/^[\w.-]+\/[\w.-]+$/.test(repository ?? "") || !/^[a-f0-9]{40}$/i.test(commitSha ?? "")
+    || !/^[1-9]\d*$/.test(runId ?? "") || !/^[1-9]\d*$/.test(runAttempt ?? "")) return null;
+  return { repository, commitSha, runId, runAttempt, artifactName: `indexnow-report-${runId}-attempt-${runAttempt}` };
+}
+
+export async function runSubmission(args, request = fetch, env = process.env) {
   const key = (await readFile(path.resolve(root, args.keyFilePath), "utf8")).trim();
   const keyFileName = path.basename(args.keyFilePath);
   const keyLocation = `${origin}/${keyFileName}`;
   const siteDir = path.dirname(path.resolve(root, args.sitemapPath));
-  const sinceRef = args.sinceLastSuccess ? await lastSuccessfulRef(siteDir, request) : args.sinceRef;
+  const sinceRef = args.sinceLastSuccess ? await lastSuccessfulRef(siteDir, request, env) : args.sinceRef;
   const urls = await selectUrls(args.sitemapPath, sinceRef);
   validateUrls(urls);
 
@@ -255,6 +265,7 @@ export async function runSubmission(args, request = fetch) {
   };
   const report = {
     mode: args.submit ? "submit" : "dry-run",
+    workflow: workflowEvidence(env),
     endpoints: args.endpoints,
     host: payload.host,
     keyLocation,

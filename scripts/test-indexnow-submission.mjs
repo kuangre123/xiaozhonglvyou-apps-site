@@ -4,7 +4,7 @@ import { mkdtemp, writeFile, readFile, rm } from "node:fs/promises";
 import { execFileSync } from "node:child_process";
 import os from "node:os";
 import path from "node:path";
-import { lastSuccessfulRef, parseArgs, runSubmission, selectUrls, verifyDeployment } from "./submit-indexnow.mjs";
+import { lastSuccessfulRef, parseArgs, runSubmission, selectUrls, verifyDeployment, workflowEvidence } from "./submit-indexnow.mjs";
 
 const origin = "https://www.xiaozhonglvyou.com";
 const url = file => `${origin}/${file === "index.html" ? "" : file}`;
@@ -93,4 +93,41 @@ test("IndexNow submits once, distinguishes 202, and preserves failure evidence",
   assert.equal(JSON.parse(await readFile(output, "utf8")).outcome, "key_validation_failed");
   assert.throws(() => parseArgs(["--since-ref"]), /Missing value/);
   assert.throws(() => parseArgs(["--since-ref", "--invalid"]), /full commit SHA/);
+});
+
+test("IndexNow workflow reports identify each retry without copying secrets", () => {
+  const env = { GITHUB_REPOSITORY: "example/site", GITHUB_SHA: "a".repeat(40), GITHUB_RUN_ID: "37716517617", GITHUB_RUN_ATTEMPT: "1", GITHUB_TOKEN: "must-not-be-exported" };
+  const first = workflowEvidence(env);
+  const second = workflowEvidence({ ...env, GITHUB_RUN_ATTEMPT: "2" });
+  assert.equal(first.artifactName, "indexnow-report-37716517617-attempt-1");
+  assert.equal(second.artifactName, "indexnow-report-37716517617-attempt-2");
+  assert.equal(second.commitSha, env.GITHUB_SHA);
+  assert.equal(second.runAttempt, "2");
+  assert.ok(!JSON.stringify(second).includes(env.GITHUB_TOKEN));
+  assert.equal(workflowEvidence({}), null);
+  for (const [key, value] of Object.entries({ GITHUB_REPOSITORY: "https://example.com/site", GITHUB_SHA: "main", GITHUB_RUN_ID: "", GITHUB_RUN_ATTEMPT: "0" })) {
+    assert.equal(workflowEvidence({ ...env, [key]: value }), null);
+  }
+});
+
+test("IndexNow preserves workflow provenance for no-op and failed deployment reports", async t => {
+  const f = await fixture(t);
+  const env = { GITHUB_REPOSITORY: "example/site", GITHUB_SHA: f.base, GITHUB_RUN_ID: "37716517617", GITHUB_RUN_ATTEMPT: "2" };
+  const output = path.join(f.dir, "report.json");
+  const noNetwork = () => { throw new Error("No-op must not submit"); };
+  const skipped = await runSubmission(f.options({ submit: true, outputJsonPath: output }), noNetwork, env);
+  assert.equal(skipped.outcome, "skipped_no_changed_urls");
+  assert.deepEqual(JSON.parse(await readFile(output, "utf8")).workflow, workflowEvidence(env));
+  await f.put("ja.html", "new release");
+  env.GITHUB_SHA = f.commit();
+  await assert.rejects(runSubmission(f.options({ submit: true, verifyLive: true, liveWaitMs: 0, outputJsonPath: output }), async () => new Response("stale release"), env), /nothing was submitted/);
+  const failed = JSON.parse(await readFile(output, "utf8"));
+  assert.equal(failed.outcome, "deployment_not_ready");
+  assert.deepEqual(failed.workflow, workflowEvidence(env));
+  assert.deepEqual(failed.submissions, []);
+});
+
+test("IndexNow artifact names use both run ID and attempt", async () => {
+  const workflow = await readFile(new URL("../.github/workflows/indexnow.yml", import.meta.url), "utf8");
+  assert.match(workflow, /name: indexnow-report-\$\{\{ github\.run_id \}\}-attempt-\$\{\{ github\.run_attempt \}\}/);
 });
