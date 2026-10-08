@@ -420,7 +420,7 @@ function render(market) {
   const url = `${origin}/${market.file}`;
   const webpage = {
     "@context": "https://schema.org", "@type": "WebPage", "@id": `${url}#page`,
-    name: market.ogTitle, url, inLanguage: market.lang, dateModified: updatedDate,
+    name: market.ogTitle, url, inLanguage: market.lang, dateModified: market.modifiedDate ?? updatedDate,
     about: Object.values(market.products).map(([name]) => name),
     isPartOf: { "@id": `${origin}/#website` }, publisher: { "@id": `${origin}/#publisher` }, author: { "@id": `${origin}/#developer` }
   };

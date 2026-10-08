@@ -2,6 +2,7 @@ import { readdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { articleKeywordsByFile } from "./article-keyword-map.mjs";
+import { gifmakerRelease } from "./gifmaker-release-facts.mjs";
 
 const scriptDir = path.dirname(fileURLToPath(import.meta.url));
 const siteDir = path.resolve(scriptDir, "..");
@@ -75,7 +76,8 @@ const products = new Map([
       image: `${origin}/assets/gifmaker-icon.png`,
       applicationCategory: "MultimediaApplication",
       operatingSystem: "iOS",
-      softwareVersion: "1.1.4",
+      softwareVersion: gifmakerRelease.version,
+      availableLanguage: gifmakerRelease.languages,
       price: "0.99",
       priceCurrency: "USD"
     }
@@ -321,6 +323,7 @@ function fullProductEntity(name) {
     applicationCategory: product.applicationCategory,
     operatingSystem: product.operatingSystem,
     softwareVersion: product.softwareVersion,
+    ...(product.availableLanguage ? { availableLanguage: product.availableLanguage } : {}),
     author: { "@id": developerId },
     offers: {
       "@type": "Offer",
@@ -352,6 +355,7 @@ function normalizeSoftwareApplication(node) {
     applicationCategory: product.applicationCategory,
     operatingSystem: node.operatingSystem || product.operatingSystem,
     softwareVersion: product.softwareVersion,
+    ...(product.availableLanguage ? { availableLanguage: product.availableLanguage } : {}),
     author: { "@id": developerId },
     publisher: { "@id": publisherId },
     provider: { "@id": publisherId },

@@ -430,13 +430,13 @@ const pages = [
     title: "GIF Maker App for iPhone | Video &amp; Live Photo",
     description: "GIFmaker turns videos, Live Photos, and pictures into GIFs on iPhone. Edit timing, captions, canvas, reverse, and boomerang on-device. US price: $0.99.",
     keywords: "GIF maker app, GIF maker app for iPhone, iPhone GIF maker, video GIF maker for iPhone, GIF maker from photos, animated GIF maker, on-device GIF editor",
-    modifiedDate: "2026-10-02",
-    modifiedDateLabel: "October 2, 2026",
+    modifiedDate: "2026-10-08",
+    modifiedDateLabel: "October 8, 2026",
     webPage: {
       "@id": "https://www.xiaozhonglvyou.com/gif-maker.html#page",
       name: "GIF Maker App for iPhone | Video & Live Photo",
       description: "GIFmaker turns videos, Live Photos, and pictures into GIFs on iPhone. Edit timing, captions, canvas, reverse, and boomerang on-device. US price: $0.99.",
-      dateModified: "2026-10-02"
+      dateModified: "2026-10-08"
     },
     softwareApplication: {
       "@id": "https://www.xiaozhonglvyou.com/gif-maker.html#app",
@@ -465,7 +465,7 @@ const pages = [
     questions: [
       {
         names: ["Can GIFmaker turn a video or Live Photo into a GIF?", "Is there a free GIF maker app for iPhone?", "How much does GIFmaker cost?"],
-        answer: "The US App Store lists GIFmaker at an upfront price of $0.99 when checked on October 2, 2026. It turns photos, videos, and Live Photos into GIFs with frame timing, captions, canvas ratios, reverse, and boomerang playback. Check the local purchase sheet for current pricing."
+        answer: "The US App Store lists GIFmaker at an upfront price of $0.99 when checked on October 8, 2026. It turns photos, videos, and Live Photos into GIFs with frame timing, captions, canvas ratios, reverse, and boomerang playback. Check the local purchase sheet for current pricing."
       }
     ],
     removeJsonLdIds: ["https://www.xiaozhonglvyou.com/gif-maker.html#howto"],
@@ -509,8 +509,8 @@ const pages = [
       },
       {
         label: "product visible FAQ",
-        from: ["<details open><summary>Can GIFmaker turn a video or Live Photo into a GIF?</summary><p>Yes. GIFmaker can import photos, videos, or Live Photos and turn them into animated GIFs on iPhone.</p></details>", "<details open><summary>Is there a free GIF maker app for iPhone?</summary><p>Yes. GIFmaker-Gif Studio is free to download and turns photos, videos, and Live Photos into GIFs on iPhone. It includes per-frame timing, captions, canvas ratios, reverse, and boomerang playback.</p></details>", "<details open><summary>How much does GIFmaker cost?</summary><p>The US App Store lists GIFmaker-Gif Studio at an upfront price of $0.99 when checked on October 2, 2026. It turns photos, videos, and Live Photos into GIFs with frame timing, captions, canvas ratios, reverse, and boomerang playback. Check the local purchase sheet for current pricing.</p></details>"],
-        to: "<details open><summary>How much does GIFmaker cost?</summary><p>The US App Store lists GIFmaker at an upfront price of $0.99 when checked on October 2, 2026. It turns photos, videos, and Live Photos into GIFs with frame timing, captions, canvas ratios, reverse, and boomerang playback. Check the local purchase sheet for current pricing.</p></details>"
+        from: ["<details open><summary>Can GIFmaker turn a video or Live Photo into a GIF?</summary><p>Yes. GIFmaker can import photos, videos, or Live Photos and turn them into animated GIFs on iPhone.</p></details>", "<details open><summary>Is there a free GIF maker app for iPhone?</summary><p>Yes. GIFmaker-Gif Studio is free to download and turns photos, videos, and Live Photos into GIFs on iPhone. It includes per-frame timing, captions, canvas ratios, reverse, and boomerang playback.</p></details>", "<details open><summary>How much does GIFmaker cost?</summary><p>The US App Store lists GIFmaker-Gif Studio at an upfront price of $0.99 when checked on October 2, 2026. It turns photos, videos, and Live Photos into GIFs with frame timing, captions, canvas ratios, reverse, and boomerang playback. Check the local purchase sheet for current pricing.</p></details>", "<details open><summary>How much does GIFmaker cost?</summary><p>The US App Store lists GIFmaker at an upfront price of $0.99 when checked on October 2, 2026. It turns photos, videos, and Live Photos into GIFs with frame timing, captions, canvas ratios, reverse, and boomerang playback. Check the local purchase sheet for current pricing.</p></details>"],
+        to: "<details open><summary>How much does GIFmaker cost?</summary><p>The US App Store lists GIFmaker at an upfront price of $0.99 when checked on October 8, 2026. It turns photos, videos, and Live Photos into GIFs with frame timing, captions, canvas ratios, reverse, and boomerang playback. Check the local purchase sheet for current pricing.</p></details>"
       }
     ]
   },
@@ -967,7 +967,8 @@ const pages = [
     webPage: {
       "@id": "https://www.xiaozhonglvyou.com/gif-maker-cn.html#page",
       name: "iPhone GIF制作器 | 照片、视频和 Live Photo 转 GIF",
-      description: "GIFmaker 可在 iPhone 本机把照片、视频和 Live Photo 制作成 GIF，支持逐帧调速、文字、倒放、回旋循环和多种画布比例。"
+      description: "GIFmaker 可在 iPhone 本机把照片、视频和 Live Photo 制作成 GIF，支持逐帧调速、文字、倒放、回旋循环和多种画布比例。",
+      dateModified: "2026-10-08"
     },
     structuredData: [
       {

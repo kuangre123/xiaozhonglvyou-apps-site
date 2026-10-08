@@ -1,5 +1,6 @@
 import { readFile } from "node:fs/promises";
 import path from "node:path";
+import { gifmakerRelease } from "./gifmaker-release-facts.mjs";
 
 const siteDir = process.cwd();
 
@@ -7,7 +8,7 @@ const apps = [
   {
     key: "GIFmaker",
     appId: "6783559364",
-    version: "1.1.4",
+    version: gifmakerRelease.version,
     name: "GIFmaker-Gif Studio",
     subtitle: "Photos, Video & Live Photos",
     keywords: "photos,video,live photo,animation,boomerang,meme,caption,frame editor,reverse,loop",
