@@ -4,6 +4,35 @@ import { readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { photoCleanerComparisonUpdate } from "./photo-cleaner-comparison-content.mjs";
 
+const legacyShortcutsGifSection = [
+  '<section class="section content-section alt-section" id="make-gif-with-shortcuts"><div class="section-inner content-grid"><div>',
+  '<p class="section-kicker">Built-in GIF file</p><h2>Make a GIF from photos with Shortcuts.</h2>',
+  "<p>Open Shortcuts and build a workflow with Select Photos, Make GIF, then Save File. Choose several still photos, run the shortcut, and save the result to Files. Open the saved file to check its animation and .gif extension.</p>",
+  '<p>Apple documents the <a href="https://support.apple.com/guide/shortcuts/intro-to-shortcuts-apdf22b0444c/ios" target="_blank" rel="noopener noreferrer">Make GIF action</a> and <a href="https://support.apple.com/guide/shortcuts/apdaf74d75a5/ios" target="_blank" rel="noopener noreferrer">Save File action</a> in Shortcuts.</p>',
+  '</div><div class="content-list"><div><strong>1. Select photos</strong><p>Add Select Photos and enable multiple selection. Choose the still images when you run the shortcut.</p></div>',
+  '<div><strong>2. Make GIF</strong><p>Add Make GIF after Select Photos and preview the animated result.</p></div>',
+  '<div><strong>3. Save the file</strong><p>Add Save File after Make GIF, choose a location in Files, and confirm the saved file is a .gif.</p></div></div></div></section>'
+].join("");
+const shortcutsGifSection = [
+  '<section class="section content-section alt-section" id="make-gif-with-shortcuts"><div class="section-inner content-grid"><div>',
+  '<p class="section-kicker">Built-in GIF file</p><h2>Make a GIF from photos with Shortcuts.</h2>',
+  '<p>No separate GIF editor is needed for this still-photo workflow. Create a shortcut with Select Photos, Make GIF, Quick Look, then Save File. Quick Look checks the generated animation before you save it; it is not an export action.</p>',
+  '<p>Apple explains <a href="https://support.apple.com/en-euro/guide/shortcuts/apd84c576f8c/ios" target="_blank" rel="noopener noreferrer">creating a shortcut</a>, the <a href="https://support.apple.com/guide/shortcuts/intro-to-shortcuts-apdf22b0444c/ios" target="_blank" rel="noopener noreferrer">Make GIF action</a>, <a href="https://support.apple.com/en-euro/guide/shortcuts/apda75604f37/ios" target="_blank" rel="noopener noreferrer">testing with Quick Look</a>, and <a href="https://support.apple.com/guide/shortcuts/apdaf74d75a5/ios" target="_blank" rel="noopener noreferrer">saving files</a>. Action labels and expanded settings can differ by iOS version and language.</p>',
+  '</div><div class="content-list"><div><strong>1. Select several photos</strong><p>In Shortcuts, tap the add button to create a shortcut. Add Select Photos and enable Select Multiple. When you run it, choose at least two different still images so there is a visible change between frames.</p></div>',
+  '<div><strong>2. Build the animation</strong><p>Add Make GIF after Select Photos. Confirm its input is the selected Photos, not an unrelated file or text.</p></div>',
+  '<div><strong>3. Preview with Quick Look</strong><p>Add Quick Look after Make GIF and pass it the GIF result. Run the shortcut, choose the photos, and watch the preview. Close the preview to continue; a thumbnail alone does not prove the animation plays.</p></div>',
+  '<div><strong>4. Save the GIF result</strong><p>Add Save File and make sure its input is the GIF produced by Make GIF. Choose a location in Files when prompted, then open the saved .gif to check that it still animates. Renaming a JPG to .gif does not create an animated file.</p></div></div></div></section>'
+].join("");
+const gifSharingChecks = [
+  '<section class="section content-section alt-section" id="gif-sharing-checks"><div class="section-inner content-grid"><div>',
+  '<p class="section-kicker">Before sharing</p><h2>What if the animation becomes a still image?</h2>',
+  '<p>Check the saved file separately from its thumbnail and the receiving app. A preview that shows only the first frame is not enough to identify where the animation was lost.</p>',
+  '</div><div class="content-list"><div><strong>Only one image changes nothing</strong><p>Check Select Multiple and use distinct photos. Inspect the Make GIF result in Quick Look before changing later save or share actions.</p></div>',
+  '<div><strong>The saved file is JPG or PNG</strong><p>Recheck the Save File input. Save the generated GIF, not one of the source photos or a screenshot of the preview. Keep the originals until you have checked the export.</p></div>',
+  '<div><strong>It plays locally but not after sharing</strong><p>Try sending the saved GIF as a file and check it on the receiving device. Some destinations show a static thumbnail or convert media; use their supported format. Apple specifically notes that a <a href="https://support.apple.com/en-au/104966" target="_blank" rel="noopener noreferrer">Live Photo sent through Mail becomes a still image</a>; a Live Photo is not the same as an exported GIF.</p></div>',
+  '</div></div></section>'
+].join("");
+
 const photoStorageSteps = [
   {
     name: "Check what uses space",
@@ -519,8 +548,8 @@ const pages = [
     title: "How to Create an Animated GIF on iPhone (2026)",
     description: "Create an animated GIF on iPhone from photos with Shortcuts or from video and Live Photos with GIFmaker. Compare Photos Loop with a real .gif export.",
     keywords: "how to create animated GIF on iPhone, how to make a GIF on iPhone, iPhone Shortcuts Make GIF, video to GIF iPhone, Live Photo to GIF iPhone",
-    modifiedDate: "2026-09-24",
-    modifiedDateLabel: "September 24, 2026",
+    modifiedDate: "2026-10-09",
+    modifiedDateLabel: "October 9, 2026",
     headline: [
       "How to Make a GIF on iPhone from Video or Live Photos",
       "How to Make a Real GIF on iPhone in 5 Steps (2026)",
@@ -532,7 +561,7 @@ const pages = [
       "@id": "https://www.xiaozhonglvyou.com/make-gif-on-iphone-guide.html#article",
       headline: "How to Create an Animated GIF on iPhone (2026)",
       description: "Create an animated GIF on iPhone from photos with Shortcuts or from video and Live Photos with GIFmaker. Compare Photos Loop with a real .gif export.",
-      dateModified: "2026-09-24",
+      dateModified: "2026-10-09",
       keywords: [
         "how to create animated GIF on iPhone",
         "how to make a GIF on iPhone",
@@ -596,7 +625,7 @@ const pages = [
       {
         label: "guide publication date",
         from: ["<p class=\"article-meta\">Published and updated <time datetime=\"2026-08-13\">August 13, 2026</time> by <a href=\"about.html\" rel=\"author\">Bo Chen</a></p>"],
-        to: "<p class=\"article-meta\">Published August 10, 2026 · Updated <time datetime=\"2026-09-24\">September 24, 2026</time> by <a href=\"about.html\" rel=\"author\">Bo Chen</a></p>"
+        to: "<p class=\"article-meta\">Published August 10, 2026 · Updated <time datetime=\"2026-10-09\">October 9, 2026</time> by <a href=\"about.html\" rel=\"author\">Bo Chen</a></p>"
       },
       {
         label: "guide product call to action",
@@ -624,6 +653,16 @@ const pages = [
         to: "<p>For a looping Live Photo, use Photos Loop or Bounce. For a .gif file from still photos, use Apple's Shortcuts Make GIF action. For video, Live Photos, or detailed frame editing, export a GIF with GIFmaker.</p>"
       },
       {
+        label: "GIF workflow section navigation",
+        from: ['<p>For a looping Live Photo, use Photos Loop or Bounce. For a .gif file from still photos, use Apple\'s Shortcuts Make GIF action. For video, Live Photos, or detailed frame editing, export a GIF with GIFmaker.</p>'],
+        to: '<p>For a looping Live Photo, use Photos Loop or Bounce. For a .gif file from still photos, use Apple\'s Shortcuts Make GIF action. For video, Live Photos, or detailed frame editing, export a GIF with GIFmaker.</p><p><a href="#make-gif-with-shortcuts">Shortcuts photo steps</a> | <a href="#make-gif-steps">Video and Live Photo steps</a> | <a href="#gif-sharing-checks">Check a static export</a></p>'
+      },
+      {
+        label: "correct Live Photos effects reference",
+        from: ['<p>Apple\'s <a href="https://support.apple.com/en-us/105029" target="_blank" rel="noopener noreferrer">Live Photos guide</a> explains the built-in Loop and Bounce effects.</p>'],
+        to: '<p>Apple\'s <a href="https://support.apple.com/en-au/104966" target="_blank" rel="noopener noreferrer">Live Photos guide</a> explains the built-in Loop and Bounce effects.</p>'
+      },
+      {
         label: "animated GIF method summary",
         from: ["<div><strong>Real GIF export</strong><p>Use this for a portable GIF file, custom frame timing, captions, canvas ratios, reverse playback, or a refined boomerang loop.</p></div>"],
         to: "<div><strong>Shortcuts GIF</strong><p>Turn selected still photos into a shareable .gif file without a separate editor.</p></div><div><strong>GIFmaker export</strong><p>Use this for a video or Live Photo, custom frame timing, captions, canvas ratios, or reverse playback.</p></div>"
@@ -640,17 +679,16 @@ const pages = [
       },
       {
         label: "Shortcuts GIF workflow",
-        from: ["<section class=\"section content-section\" id=\"make-gif-steps\">"],
-        to: [
-          "<section class=\"section content-section alt-section\" id=\"make-gif-with-shortcuts\"><div class=\"section-inner content-grid\"><div>",
-          "<p class=\"section-kicker\">Built-in GIF file</p><h2>Make a GIF from photos with Shortcuts.</h2>",
-          "<p>Open Shortcuts and build a workflow with Select Photos, Make GIF, then Save File. Choose several still photos, run the shortcut, and save the result to Files. Open the saved file to check its animation and .gif extension.</p>",
-          "<p>Apple documents the <a href=\"https://support.apple.com/guide/shortcuts/intro-to-shortcuts-apdf22b0444c/ios\" target=\"_blank\" rel=\"noopener noreferrer\">Make GIF action</a> and <a href=\"https://support.apple.com/guide/shortcuts/apdaf74d75a5/ios\" target=\"_blank\" rel=\"noopener noreferrer\">Save File action</a> in Shortcuts.</p>",
-          "</div><div class=\"content-list\"><div><strong>1. Select photos</strong><p>Add Select Photos and enable multiple selection. Choose the still images when you run the shortcut.</p></div>",
-          "<div><strong>2. Make GIF</strong><p>Add Make GIF after Select Photos and preview the animated result.</p></div>",
-          "<div><strong>3. Save the file</strong><p>Add Save File after Make GIF, choose a location in Files, and confirm the saved file is a .gif.</p></div></div></div></section>",
-          "<section class=\"section content-section\" id=\"make-gif-steps\">"
-        ].join("")
+        from: [
+          legacyShortcutsGifSection + '<section class="section content-section" id="make-gif-steps">',
+          '<section class="section content-section" id="make-gif-steps">'
+        ],
+        to: shortcutsGifSection + '<section class="section content-section" id="make-gif-steps">'
+      },
+      {
+        label: "GIF output and sharing checks",
+        from: ['<section class="section faq" aria-labelledby="gif-guide-faq-title">'],
+        to: gifSharingChecks + '<section class="section faq" aria-labelledby="gif-guide-faq-title">'
       }
     ]
   },
