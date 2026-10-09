@@ -9,3 +9,4 @@ exclude:
   - BACKLINK_ACTIONS.md
   - SEO_60_DAY_ROADMAP.md
   - scripts/
+  - outputs/
