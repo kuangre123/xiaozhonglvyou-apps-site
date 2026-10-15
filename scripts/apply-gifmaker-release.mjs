@@ -1,22 +1,24 @@
 import { readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { pathToFileURL } from "node:url";
-import { gifmakerRelease as release } from "./gifmaker-release-facts.mjs";
+import { gifmakerRelease as release, gifmakerCheckedDateLabel } from "./gifmaker-release-facts.mjs";
 
 const files = ["index.html", "gif-maker.html", "gif-maker-cn.html", "media-kit.html"];
 
 export function updateGifmakerRelease(file, html) {
   const productPage = file === "gif-maker.html" || file === "gif-maker-cn.html";
   const chinese = file === "gif-maker-cn.html";
+  const checkedDateEnglish = gifmakerCheckedDateLabel();
+  const checkedDateChinese = gifmakerCheckedDateLabel("zh-CN");
   if (productPage) {
     html = html
-      .replaceAll("GIFmaker version 1.1.4", `GIFmaker version ${release.version}`)
-      .replaceAll("GIFmaker 1.1.4", `GIFmaker ${release.version}`)
-      .replaceAll("checked on October 2, 2026", "checked on October 8, 2026")
-      .replaceAll("2026年10月2日核对", "2026年10月8日核对");
+      .replace(/GIFmaker version \d+\.\d+\.\d+/g, `GIFmaker version ${release.version}`)
+      .replace(/GIFmaker \d+\.\d+\.\d+/g, `GIFmaker ${release.version}`)
+      .replace(/checked on October (?:2|8), 2026/g, `checked on ${checkedDateEnglish}`)
+      .replace(/2026年10月(?:2|8)日核对/g, `${checkedDateChinese}核对`);
     const meta = chinese
-      ? `版本 ${release.version} · 需要 iOS 17.0 或更高版本 · 更新于 <time datetime="${release.checkedDate}">2026 年 10 月 8 日</time>`
-      : `Version ${release.version} · Requires iOS 17.0 or later · Updated <time datetime="${release.checkedDate}">October 8, 2026</time>`;
+      ? `版本 ${release.version} · 需要 iOS 17.0 或更高版本 · 更新于 <time datetime="${release.checkedDate}">${checkedDateChinese}</time>`
+      : `Version ${release.version} · Requires iOS 17.0 or later · Updated <time datetime="${release.checkedDate}">${checkedDateEnglish}</time>`;
     const language = `<p class="article-meta" data-gifmaker-languages="${release.version}">${chinese
       ? "界面语言：英语、中文、日语、韩语、德语和西班牙语；当前未列出土耳其语。"
       : "Interface languages: English, Chinese, Japanese, Korean, German and Spanish. Turkish is not listed."}</p>`;
@@ -28,13 +30,13 @@ export function updateGifmakerRelease(file, html) {
       ? html.replace(languagePattern, language)
       : html.replace(metaPattern, (match) => match + language);
   } else if (file === "index.html") {
-    const pattern = /(<p class="platform">)iOS 1\.1\.\d+(<\/p><h3>GIFmaker-Gif Studio<\/h3>)/;
+    const pattern = /(<p class="platform">)iOS \d+\.\d+\.\d+(<\/p><h3>GIFmaker-Gif Studio<\/h3>)/;
     if (!pattern.test(html)) throw new Error("Homepage GIFmaker version label not found");
     html = html.replace(pattern, `$1iOS ${release.version}$2`);
   } else if (file === "media-kit.html") {
     const pattern = /(<div role="row"><span role="cell">\s*<a href="gif-maker\.html">[\s\S]*?<\/a>\s*<\/span>\s*<span role="cell">)[\s\S]*?(<\/span>)/;
     if (!pattern.test(html)) throw new Error("Media kit GIFmaker facts row not found");
-    const facts = `Version ${release.version} · iOS 17.0+ · $0.99 upfront in the US · English, Chinese, Japanese, Korean, German and Spanish · checked October 8, 2026`;
+    const facts = `Version ${release.version} · iOS 17.0+ · $0.99 upfront in the US · English, Chinese, Japanese, Korean, German and Spanish · checked ${checkedDateEnglish}`;
     html = html.replace(pattern, (_match, open, close) => open + facts + close);
   }
 

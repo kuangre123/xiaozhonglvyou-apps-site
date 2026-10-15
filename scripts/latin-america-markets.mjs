@@ -98,11 +98,11 @@ const mexico = {
     ["Registrar una ruta en bicicleta automáticamente", "automatic-bike-ride-tracker-iphone.html", "Registro automático de actividad", "Permisos, condiciones de detección y revisión al terminar."]
   ],
   languageKicker: "Idiomas de los apps", languageTitle: "Una explicación en español no garantiza una interfaz en español.",
-  languageIntro: "El español aparece para AI Cleaning, Translation Specialist y las dos versiones de Anti-spy screen. GIFmaker 1.1.6 incluye español, confirmado en la ficha mexicana y sus notas de versión el 8 de octubre de 2026. HappyRide no lista español.",
+  languageIntro: "El español aparece para AI Cleaning, Translation Specialist y las dos versiones de Anti-spy screen. GIFmaker 1.2.0 incluye español, confirmado en la ficha mexicana el 15 de octubre de 2026. HappyRide no lista español.",
   languageItems: [
     ["AI Cleaning y Translation Specialist", "El español figura en los datos públicos revisados para estas apps. Confirma la ficha mexicana y la versión instalada, porque los idiomas y la compatibilidad pueden cambiar."],
     ["Anti-spy screen", "Las dos versiones incluyen español en la lista pública revisada. Aun así, prueba la protección con una ventana no sensible y verifica qué aplicación de reunión está compartiendo."],
-    ["GIFmaker y HappyRide", "GIFmaker 1.1.6 incluye español, inglés, chino, japonés, coreano y alemán. HappyRide no incluye español en su lista de idiomas; revisa la versión instalada y la ficha mexicana antes de decidir."],
+    ["GIFmaker y HappyRide", "GIFmaker 1.2.0 incluye español, inglés, chino, japonés, coreano y alemán. HappyRide no incluye español en su lista de idiomas; revisa la versión instalada y la ficha mexicana antes de decidir."],
     ["Idiomas de traducción", "El idioma de la interfaz no es la misma información que los idiomas que el traductor puede procesar. Prueba voz, cámara y el modo sin conexión que realmente vayas a usar."]
   ],
   safetyKicker: "Antes de realizar cambios", safetyTitle: "Comprueba por tu cuenta los resultados importantes.",
@@ -117,7 +117,7 @@ const mexico = {
   faqs: [
     ["¿Qué app ayuda a organizar fotos en el iPhone?", "AI Cleaning clasifica las fotos y muestra candidatos como duplicados, imágenes parecidas, capturas de pantalla, fotos borrosas y archivos grandes. Tú revisas los elementos y eliges manualmente cuáles borrar."],
     ["¿AI Cleaning borra fotos automáticamente?", "No. Organiza y muestra grupos para que los revises. La decisión de borrar sigue siendo del usuario, que debe comprobar documentos, fotos familiares e imágenes editadas."],
-    ["¿Los seis apps tienen interfaz en español?", "No todos. AI Cleaning, Translation Specialist, las dos versiones de Anti-spy screen y GIFmaker 1.1.6 listan español. HappyRide no lista español; comprueba siempre la ficha mexicana y la versión instalada."],
+    ["¿Los seis apps tienen interfaz en español?", "No todos. AI Cleaning, Translation Specialist, las dos versiones de Anti-spy screen y GIFmaker 1.2.0 listan español. HappyRide no lista español; comprueba siempre la ficha mexicana y la versión instalada."],
     ["¿Puedo usar traducción automática en una situación médica o legal?", "No como única fuente. Compara el resultado con información oficial y busca ayuda profesional cuando haya instrucciones, derechos, seguridad o consecuencias importantes."],
     ["¿GIFmaker crea GIF con fotos y vídeos?", "Sí. La descripción del producto incluye fotos, vídeos y Live Photos, además de ajustes de cuadros, duración y texto. Revisa la vista previa y elimina datos personales antes de compartir."],
     ["¿Dónde compruebo el precio y los requisitos en México?", "Los enlaces de esta página abren la App Store mexicana. La ficha de Apple es la referencia actual para precio, compras internas, sistema mínimo, idiomas, privacidad y disponibilidad."]
