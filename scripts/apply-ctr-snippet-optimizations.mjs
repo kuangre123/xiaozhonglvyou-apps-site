@@ -549,8 +549,8 @@ const pages = [
     title: "How to Create an Animated GIF on iPhone (2026)",
     description: "Create an animated GIF on iPhone from photos with Shortcuts or from video and Live Photos with GIFmaker. Compare Photos Loop with a real .gif export.",
     keywords: "how to create animated GIF on iPhone, how to make a GIF on iPhone, iPhone Shortcuts Make GIF, video to GIF iPhone, Live Photo to GIF iPhone",
-    modifiedDate: "2026-10-09",
-    modifiedDateLabel: "October 9, 2026",
+    modifiedDate: "2026-10-16",
+    modifiedDateLabel: "October 16, 2026",
     headline: [
       "How to Make a GIF on iPhone from Video or Live Photos",
       "How to Make a Real GIF on iPhone in 5 Steps (2026)",
@@ -562,7 +562,7 @@ const pages = [
       "@id": "https://www.xiaozhonglvyou.com/make-gif-on-iphone-guide.html#article",
       headline: "How to Create an Animated GIF on iPhone (2026)",
       description: "Create an animated GIF on iPhone from photos with Shortcuts or from video and Live Photos with GIFmaker. Compare Photos Loop with a real .gif export.",
-      dateModified: "2026-10-09",
+      dateModified: "2026-10-16",
       keywords: [
         "how to create animated GIF on iPhone",
         "how to make a GIF on iPhone",
@@ -626,12 +626,12 @@ const pages = [
       {
         label: "guide publication date",
         from: ["<p class=\"article-meta\">Published and updated <time datetime=\"2026-08-13\">August 13, 2026</time> by <a href=\"about.html\" rel=\"author\">Bo Chen</a></p>"],
-        to: "<p class=\"article-meta\">Published August 10, 2026 · Updated <time datetime=\"2026-10-09\">October 9, 2026</time> by <a href=\"about.html\" rel=\"author\">Bo Chen</a></p>"
+        to: "<p class=\"article-meta\">Published August 10, 2026 · Updated <time datetime=\"2026-10-16\">October 16, 2026</time> by <a href=\"about.html\" rel=\"author\">Bo Chen</a></p>"
       },
       {
-        label: "guide product call to action",
-        from: ["<a class=\"button button-secondary\" href=\"gif-maker.html\">See GIFmaker details</a>"],
-        to: "<a class=\"button button-secondary\" href=\"gif-maker.html\">GIF maker app</a>"
+        label: "guide method choices before product details",
+        from: ["GIF maker app", "See GIFmaker details"].map((label) => '<div class="hero-actions" aria-label="GIF guide actions"><a class="button button-primary" href="https://apps.apple.com/us/app/gifmaker-gif-studio/id6783559364?uo=4" target="_blank" rel="noopener noreferrer" data-analytics-event="app_store_click" data-store-product="gifmaker-gif-studio" data-storefront="ios-app-store" aria-label="View GIFmaker on the App Store (opens in a new tab)">View on App Store</a> <a class="button button-secondary" href="gif-maker.html">' + label + '</a></div>'),
+        to: '<div class="hero-actions" aria-label="Choose a GIF creation method"><a class="button button-primary" href="#make-gif-with-shortcuts">Use Shortcuts for photos</a> <a class="button button-secondary" href="#make-gif-steps">Video or Live Photo steps</a></div><p class="article-meta">The Shortcuts steps do not require GIFmaker. GIFmaker is a paid app; <a href="gif-maker.html">check its features and App Store price</a>.</p>'
       },
       {
         label: "guide workflow heading",

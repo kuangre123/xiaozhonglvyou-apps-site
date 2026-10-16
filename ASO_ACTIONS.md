@@ -124,10 +124,15 @@ Every public App Store link queues the GA4 event `app_store_click` with these pa
 - `link_url`: the localized App Store destination.
 - `link_text`: the visible CTA text.
 - `page_path`: the originating website path.
+- `ai_source`: only when that page's actual referrer is a recognized AI service. This is event context, not a user or session label.
 
 Normal clicks, keyboard activation, and middle-button link activation are covered. Right-clicking to open a context menu is not counted. Choosing a browser context-menu command is not observable as a normal page click. Ad blockers, consent settings, and connectivity can still prevent collection. Do not sum this custom event with the automatically collected outbound `click` event: they can describe the same activation.
 
 Use this event to compare landing-page CTA demand before and after an ASO release. Treat it as an outbound-click metric, not an install or purchase: App Store Connect remains authoritative for product-page views, downloads, conversion rate, retention, and proceeds.
+
+AI attribution correction (2026-10-15): the website no longer writes `ai_source` as a persistent user property. Google documents that user properties apply to future events, including later sessions; a previous ChatGPT visit must not label a later Google visit as current AI traffic. Recognized AI landing pages emit `ai_referral_visit` and attach `ai_source` to their custom events, including `app_store_click`. Internal navigation, direct visits, and ordinary search referrers do not inherit that page-referrer context. Use GA4's built-in session source/medium for a multi-page acquisition journey rather than treating this parameter as session attribution. [Google: user-property scope](https://support.google.com/analytics/answer/12370404?hl=en), [Google: event parameters](https://support.google.com/analytics/answer/13675006).
+
+Historical user-scoped `ai_source` values are not erased or rewritten by this change. Do not use that legacy user dimension as current visit attribution. If AI event reporting is needed, first check for an existing event-scoped `ai_source` dimension, then register one only with account-owner approval. The website update does not create definitions, change audiences, delete Analytics data, or prove GA4 receipt.
 
 Avoid changing name, subtitle, keywords, and every screenshot concept simultaneously if the goal is to learn which change improved conversion. URL corrections can ship immediately because they fix attribution and authority rather than creative positioning.
 

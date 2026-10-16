@@ -5,9 +5,50 @@ import { execFileSync } from "node:child_process";
 import os from "node:os";
 import path from "node:path";
 import { lastSuccessfulRef, parseArgs, runSubmission, selectUrls, verifyDeployment, workflowEvidence } from "./submit-indexnow.mjs";
+import { htmlWithoutResourceCacheVersions } from "./discovery-content.mjs";
 
 const origin = "https://www.xiaozhonglvyou.com";
 const url = file => `${origin}/${file === "index.html" ? "" : file}`;
+
+test("discovery comparison masks only known local resource cache tokens", () => {
+  for (const source of ["analytics.js", "/script.js", "./search.js"]) {
+    for (const quote of ['"', "'"]) {
+      const before = `<script defer src=${quote}${source}?v=000000000000${quote}></script>`;
+      assert.equal(htmlWithoutResourceCacheVersions(before), htmlWithoutResourceCacheVersions(before.replace("000000000000", "111111111111")));
+    }
+  }
+  for (const before of [
+    '<link rel="stylesheet" href="styles.css?v=000000000000">',
+    "<link href='./styles.css?v=000000000000' rel='stylesheet' media='screen'>",
+    '<link rel="stylesheet" href="/styles.css?v=000000000000">'
+  ]) {
+    assert.equal(htmlWithoutResourceCacheVersions(before), htmlWithoutResourceCacheVersions(before.replace("000000000000", "111111111111")));
+  }
+  for (const before of [
+    '<p>analytics.js?v=000000000000</p>',
+    '<a href="script.js?v=000000000000">Reference</a>',
+    '<script src="https://example.com/analytics.js?v=000000000000"></script>',
+    '<script src="other.js?v=000000000000"></script>',
+    '<script src="script.js?v=000000000000&mode=1"></script>',
+    '<a href="styles.css?v=000000000000">Stylesheet file</a>',
+    '<link rel="preload" as="style" href="styles.css?v=000000000000">',
+    '<link data-rel="stylesheet" href="styles.css?v=000000000000">',
+    '<link rel="stylesheet" href="https://example.com/styles.css?v=000000000000">',
+    '<link rel="stylesheet" href="other.css?v=000000000000">',
+    '<link rel="stylesheet" href="styles.css?v=000000000000&theme=1">'
+  ]) {
+    assert.notEqual(htmlWithoutResourceCacheVersions(before), htmlWithoutResourceCacheVersions(before.replaceAll("000000000000", "111111111111")));
+  }
+  assert.notEqual(
+    htmlWithoutResourceCacheVersions('<script src="script.js?v=000000000000" defer></script>'),
+    htmlWithoutResourceCacheVersions('<script src="script.js?v=111111111111" async></script>')
+  );
+  assert.notEqual(
+    htmlWithoutResourceCacheVersions('<link rel="stylesheet" href="styles.css?v=000000000000" media="screen">'),
+    htmlWithoutResourceCacheVersions('<link rel="stylesheet" href="styles.css?v=111111111111" media="print">')
+  );
+});
+
 async function fixture(t) {
   const dir = await mkdtemp(path.join(os.tmpdir(), "indexnow-"));
   t.after(() => rm(dir, { recursive: true, force: true }));
@@ -44,6 +85,23 @@ test("IndexNow selects changed, renamed, removed, and newly listed pages across 
   const noNetwork = () => { throw new Error("Unchanged release must make no network request"); };
   const skipped = await runSubmission(f.options({ sinceRef: head, submit: true, verifyLive: true }), noNetwork);
   assert.equal(skipped.outcome, "skipped_no_changed_urls");
+});
+
+test("IndexNow skips cache-only releases but still selects real content edits", async t => {
+  const f = await fixture(t);
+  const home = '<link rel="stylesheet" href="styles.css?v=000000000000"><h1>Home</h1><script src="analytics.js?v=000000000000"></script><script src="script.js?v=000000000000" defer></script>';
+  await f.put("index.html", home);
+  const base = f.commit();
+  await f.put("index.html", home.replaceAll("000000000000", "111111111111"));
+  f.commit();
+  assert.deepEqual(await selectUrls(path.join(f.dir, "sitemap.xml"), base), []);
+  const noNetwork = () => { throw new Error("Cache-only release must not send a notification"); };
+  const skipped = await runSubmission(f.options({ sinceRef: base, submit: true, verifyLive: true }), noNetwork);
+  assert.equal(skipped.outcome, "skipped_no_changed_urls");
+
+  await f.put("ja.html", "Japanese content update");
+  f.commit();
+  assert.deepEqual(await selectUrls(path.join(f.dir, "sitemap.xml"), base), [url("ja.html")]);
 });
 
 test("IndexNow uses a successful ancestor and can recover missing history with a full selection", async t => {

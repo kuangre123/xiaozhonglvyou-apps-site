@@ -13,6 +13,7 @@ on:
       - "robots.txt"
       - "llms.txt"
       - "scripts/submit-indexnow.mjs"
+      - "scripts/discovery-content.mjs"
       - "scripts/test-indexnow-submission.mjs"
       - ".github/workflows/indexnow.yml"
   workflow_dispatch:

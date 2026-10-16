@@ -5,6 +5,7 @@ import { promisify } from "node:util";
 import { pathToFileURL } from "node:url";
 import { setTimeout as pause } from "node:timers/promises";
 import path from "node:path";
+import { htmlWithoutResourceCacheVersions } from "./discovery-content.mjs";
 
 const root = process.cwd();
 const origin = "https://www.xiaozhonglvyou.com";
@@ -132,10 +133,19 @@ export async function selectUrls(sitemapPath, sinceRef) {
   const allowed = new Set([...currentUrls, ...previousUrls]);
   // Disabling rename detection keeps both the old and new URL in the notification.
   const diff = await git("git", ["diff", "--name-only", "--no-renames", "-z", sinceRef, "HEAD", "--", "*.html"], options);
-  const urls = diff.stdout.split("\0").filter(Boolean).map(file => {
+  const urls = [];
+  for (const file of diff.stdout.split("\0").filter(Boolean)) {
     const pathname = file === "index.html" ? "" : file;
-    return new URL(pathname.split("/").map(encodeURIComponent).join("/"), `${origin}/`).href;
-  }).filter(url => allowed.has(url));
+    const url = new URL(pathname.split("/").map(encodeURIComponent).join("/"), `${origin}/`).href;
+    if (!allowed.has(url)) continue;
+    const [before, after] = await Promise.all([
+      git("git", ["show", `${sinceRef}:${file}`], options).then(result => result.stdout, () => null),
+      git("git", ["show", `HEAD:${file}`], options).then(result => result.stdout, () => null)
+    ]);
+    if (before !== null && after !== null
+      && htmlWithoutResourceCacheVersions(before) === htmlWithoutResourceCacheVersions(after)) continue;
+    urls.push(url);
+  }
   const current = new Set(currentUrls);
   const previous = new Set(previousUrls);
   return [...new Set([...urls, ...currentUrls.filter(url => !previous.has(url)), ...previousUrls.filter(url => !current.has(url))])];

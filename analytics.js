@@ -33,9 +33,6 @@ try {
 }
 
 window.analyticsAiSource = analyticsAiSource;
-if (analyticsAiSource) {
-  window.gtag("set", "user_properties", { ai_source: analyticsAiSource });
-}
 
 const analyticsConfig = { transport_type: "beacon" };
 if (analyticsDebugEnabled) analyticsConfig.debug_mode = true;

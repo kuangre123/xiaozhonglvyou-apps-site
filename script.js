@@ -4,7 +4,9 @@ const analyticsDebugMode = window.analyticsDebugEnabled === true
 
 const trackAnalyticsEvent = (eventName, params = {}) => {
   if (typeof window.gtag !== "function") return false;
-  const eventParams = analyticsDebugMode ? { ...params, debug_mode: true } : params;
+  const eventParams = { ...params };
+  if (window.analyticsAiSource) eventParams.ai_source = window.analyticsAiSource;
+  if (analyticsDebugMode) eventParams.debug_mode = true;
   window.gtag("event", eventName, eventParams);
   return true;
 };

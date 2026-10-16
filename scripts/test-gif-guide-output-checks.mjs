@@ -8,6 +8,7 @@ import { fileURLToPath } from "node:url";
 
 const filename = "make-gif-on-iphone-guide.html";
 const html = await readFile(new URL(`../${filename}`, import.meta.url), "utf8");
+const css = await readFile(new URL("../styles.css", import.meta.url), "utf8");
 const generator = fileURLToPath(new URL("./apply-ctr-snippet-optimizations.mjs", import.meta.url));
 const nodes = [...html.matchAll(/<script\b[^>]*type="application\/ld\+json"[^>]*>([\s\S]*?)<\/script>/g)]
   .flatMap((match) => {
@@ -15,6 +16,26 @@ const nodes = [...html.matchAll(/<script\b[^>]*type="application\/ld\+json"[^>]*
     return value["@graph"] ?? [value];
   });
 const section = (source, id) => source.match(new RegExp(`<section\\b[^>]*id="${id}"[^>]*>[\\s\\S]*?<\\/section>`))?.[0];
+const compactJsonLd = (source) => source.replace(
+  /(<script\b[^>]*type="application\/ld\+json"[^>]*>)([\s\S]*?)(<\/script>)/g,
+  (_, open, json, close) => open + JSON.stringify(JSON.parse(json)) + close
+);
+
+test("GIF guide starts with method choices and discloses the paid editor separately", () => {
+  const hero = html.match(/<section\b[^>]*class="page-hero gif-guide-hero"[^>]*>[\s\S]*?<\/section>/)?.[0];
+  assert.ok(hero);
+  assert.ok(hero.includes('aria-label="Choose a GIF creation method"'));
+  for (const id of ["make-gif-with-shortcuts", "make-gif-steps"]) {
+    assert.ok(hero.includes(`href="#${id}"`), `Missing direct hero method: ${id}`);
+    assert.ok(section(html, id), `Missing method target: ${id}`);
+  }
+  assert.ok(hero.includes("The Shortcuts steps do not require GIFmaker."));
+  assert.ok(hero.includes("GIFmaker is a paid app;"));
+  assert.ok(hero.includes('href="gif-maker.html">check its features and App Store price</a>'));
+  assert.ok(!hero.includes('data-analytics-event="app_store_click"'), "Method choices must not masquerade as store clicks");
+  assert.ok(section(html, "make-gif-steps")?.includes('data-analytics-event="app_store_click"'), "Keep the store action with the editor workflow");
+  assert.match(css, /\.gif-guide-hero\s+\.hero-actions\[aria-label="Choose a GIF creation method"\]\s+\.button-secondary\s*\{\s*display:\s*inline-flex\s*;?\s*\}/);
+});
 
 test("GIF guide explains preview, saving the generated result and actual sharing limits", () => {
   const workflow = section(html, "make-gif-with-shortcuts");
@@ -45,9 +66,9 @@ test("output checks preserve GIF guide intent, video HowTo, FAQs, media and prod
   assert.ok(html.includes(`<link rel="canonical" href="https://www.xiaozhonglvyou.com/${filename}">`));
   const article = nodes.find((node) => node["@type"] === "Article");
   assert.equal(article.datePublished, "2026-08-10");
-  assert.equal(article.dateModified, "2026-10-09");
-  assert.ok(html.includes('article:modified_time" content="2026-10-09"'));
-  assert.ok(html.includes('Updated <time datetime="2026-10-09">October 9, 2026</time>'));
+  assert.equal(article.dateModified, "2026-10-16");
+  assert.ok(html.includes('article:modified_time" content="2026-10-16"'));
+  assert.ok(html.includes('Updated <time datetime="2026-10-16">October 16, 2026</time>'));
   const main = html.match(/<main\b[^>]*>([\s\S]*?)<\/main>/)[1];
   const words = main.replace(/<[^>]*>/g, " ").replace(/\s+/g, " ").trim().split(/\s+/).length;
   assert.equal(article.wordCount, words);
@@ -70,7 +91,7 @@ test("output checks preserve GIF guide intent, video HowTo, FAQs, media and prod
   assert.ok(html.includes('data-store-product="gifmaker-gif-studio"'));
 });
 
-test("GIF output-check generation is idempotent and migrates existing or absent Shortcuts sections", async () => {
+test("GIF guide generation is idempotent and migrates method choices and Shortcuts sections", async () => {
   const legacy = [
     '<section class="section content-section alt-section" id="make-gif-with-shortcuts"><div class="section-inner content-grid"><div>',
     '<p class="section-kicker">Built-in GIF file</p><h2>Make a GIF from photos with Shortcuts.</h2>',
@@ -82,7 +103,13 @@ test("GIF output-check generation is idempotent and migrates existing or absent 
   ].join("");
   const currentSection = section(html, "make-gif-with-shortcuts");
   const withoutSharing = html.replace(section(html, "gif-sharing-checks"), "");
-  const fixtures = [html, withoutSharing.replace(currentSection, legacy), withoutSharing.replace(currentSection, "")];
+  const methodBlock = html.match(/<div class="hero-actions" aria-label="Choose a GIF creation method">[\s\S]*?<\/div><p class="article-meta">The Shortcuts[\s\S]*?<\/p>/)?.[0];
+  assert.ok(methodBlock);
+  const legacyHeroes = ["GIF maker app", "See GIFmaker details"].map((label) => '<div class="hero-actions" aria-label="GIF guide actions"><a class="button button-primary" href="https://apps.apple.com/us/app/gifmaker-gif-studio/id6783559364?uo=4" target="_blank" rel="noopener noreferrer" data-analytics-event="app_store_click" data-store-product="gifmaker-gif-studio" data-storefront="ios-app-store" aria-label="View GIFmaker on the App Store (opens in a new tab)">View on App Store</a> <a class="button button-secondary" href="gif-maker.html">' + label + '</a></div>');
+  const fixtures = [
+    html, withoutSharing.replace(currentSection, legacy), withoutSharing.replace(currentSection, ""),
+    ...legacyHeroes.map((hero) => html.replace(methodBlock, hero).replaceAll("2026-10-16", "2026-10-09").replaceAll("October 16, 2026", "October 9, 2026"))
+  ];
   const directory = await mkdtemp(path.join(tmpdir(), "gif-output-checks-"));
   try {
     for (const fixture of fixtures) {
@@ -90,7 +117,7 @@ test("GIF output-check generation is idempotent and migrates existing or absent 
       await writeFile(file, fixture);
       execFileSync(process.execPath, [generator, "--site-dir", directory, "--file", filename]);
       const first = await readFile(file, "utf8");
-      assert.equal(first, html);
+      assert.equal(compactJsonLd(first), compactJsonLd(html));
       execFileSync(process.execPath, [generator, "--site-dir", directory, "--file", filename]);
       assert.equal(await readFile(file, "utf8"), first);
     }
