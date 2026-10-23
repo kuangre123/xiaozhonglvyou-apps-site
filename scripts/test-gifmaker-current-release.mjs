@@ -68,8 +68,8 @@ test("priority markets advertise GIFmaker localization without inventing Turkish
   const mexico = await readFile(new URL("es-mx.html", site), "utf8");
   assert.match(mexico, /GIFmaker 1\.2\.0 incluye español/);
   assert.doesNotMatch(mexico, /GIFmaker y HappyRide no se presentan aquí como apps con interfaz en español/);
-  for (const html of [japanese, german, turkish, mexico]) {
-    assert.equal(nodes(html).find((node) => node["@type"] === "WebPage").dateModified, "2026-10-15");
+  for (const [html, modifiedDate] of [[japanese, "2026-10-23"], [german, "2026-10-23"], [turkish, "2026-10-23"], [mexico, "2026-10-15"]]) {
+    assert.equal(nodes(html).find((node) => node["@type"] === "WebPage").dateModified, modifiedDate);
   }
 });
 

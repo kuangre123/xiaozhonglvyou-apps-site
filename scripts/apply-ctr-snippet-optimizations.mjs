@@ -4,6 +4,7 @@ import { readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { photoCleanerComparisonUpdate } from "./photo-cleaner-comparison-content.mjs";
 import { gifmakerRelease, gifmakerCheckedDateLabel } from "./gifmaker-release-facts.mjs";
+import { menuTranslationGuideUpdate } from "./menu-translation-guide-content.mjs";
 
 const legacyShortcutsGifSection = [
   '<section class="section content-section alt-section" id="make-gif-with-shortcuts"><div class="section-inner content-grid"><div>',
@@ -56,6 +57,28 @@ const photoStorageSteps = [
     text: "In Photos, open Collections, Utilities, then Recently Deleted to recover mistakes. Permanently delete only items you are sure about; otherwise Apple keeps them there for 30 days. Recheck Settings, General, then iPhone Storage."
   }
 ];
+
+const photoCleanupDecisionSection = [
+  '<section class="section content-section" id="choose-cleanup-method"><div class="section-inner content-grid"><div>',
+  '<p class="section-kicker">Choose your next step</p><h2>Do you need a photo cleaner app?</h2>',
+  '<p>If the built-in steps solved your storage problem, you can stop here. An app can help when you still have similar-looking shots or a large library to review.</p>',
+  '<p><a href="iphone-photo-cleaner.html">See AI Cleaning features and its free cleanup allowance</a>, or <a href="iphone-photo-cleaner-comparison.html">compare three iPhone photo cleaner apps</a> before choosing.</p>',
+  '</div><div class="content-list">',
+  '<div><strong>Use Apple Photos for built-in duplicate merging</strong><p>Start with the Duplicates collection and review videos and screenshots yourself. These steps do not require a cleaner subscription.</p></div>',
+  '<div><strong>Use AI Cleaning for another review workflow</strong><p>Group duplicate and visually similar photos, screenshots, or large media, then inspect the candidates before confirming a cleanup. AI category sorting requires Pro.</p></div>',
+  '<div><strong>Check the free allowance before downloading</strong><p>AI Cleaning requires iOS 16 or later and is free to download. Free users get one successful in-app cleanup action across eligible tools; that action can include multiple selected items. Additional gated actions require Pro. The 30 Daily Cleanup review cards are not a daily free-deletion allowance.</p></div>',
+  '</div></div></section>'
+].join("");
+
+const photoCleanerDownloadSection = [
+  '<section class="section content-section alt-section" id="get-ai-cleaning"><div class="section-inner content-grid"><div>',
+  '<p class="section-kicker">Ready to review your library?</p><h2>Check the allowance, then choose your cleanup path.</h2>',
+  '<p>Requires iOS 16 or later. The free download includes one successful cleanup action across eligible tools. Additional gated actions and AI category sorting require Pro; check the App Store for current subscription prices in your region.</p>',
+  '<a class="button button-primary" href="https://apps.apple.com/us/app/ai-cleaning-photo-cleaner/id6768019606?uo=4" target="_blank" rel="noopener noreferrer" data-analytics-event="app_store_click" data-store-product="ai-cleaning-photo-cleaner" data-storefront="ios-app-store" aria-label="Get AI Cleaning - Photo Cleaner on the App Store (opens in a new tab)">Get AI Cleaning on the App Store</a>',
+  '</div><div class="content-list"><div><strong>Prefer the built-in tools?</strong><p>Follow the <a href="iphone-storage-cleanup-guide.html#free-steps">five free iPhone photo-storage cleanup steps</a> to check storage and merge duplicates without installing a cleaner.</p></div>',
+  '<div><strong>Need to compare options?</strong><p>See <a href="iphone-photo-cleaner-comparison.html">AI Cleaning, Cleanup, and Cleaner Kit side by side</a> for their workflows, pricing models, and deletion controls.</p></div>',
+  '</div></div></section>'
+].join("");
 
 const screenSharingFocusAnswer = "Focus can still allow selected people, apps, and time-sensitive notifications. Teams calls, requests to join, and meeting-start notifications are not controlled by macOS Focus. Review the meeting app's own notification settings and test from a receiving device.";
 const screenSharingBuiltinAnswer = "No extra app is needed to change macOS notification settings or to choose a window or tab in the meeting app. Anti-spy screen Lite is an optional tool for protected apps and presentation controls; test its effect in the receiving view before relying on it.";
@@ -253,12 +276,12 @@ const pages = [
     file: "iphone-storage-cleanup-guide.html",
     title: "How to Clean Up iPhone Photo Storage for Free | 2026 Guide",
     description: "Clean up iPhone photo storage for free: check storage, merge duplicates, review videos and screenshots, and avoid iCloud deletion mistakes.",
-    modifiedDate: "2026-09-25",
-    modifiedDateLabel: "September 25, 2026",
+    modifiedDate: "2026-10-20",
+    modifiedDateLabel: "October 20, 2026",
     article: {
       headline: "How to Clean Up iPhone Photo Storage for Free | 2026 Guide",
       description: "Clean up iPhone photo storage for free: check storage, merge duplicates, review videos and screenshots, and avoid iCloud deletion mistakes.",
-      dateModified: "2026-09-25"
+      dateModified: "2026-10-20"
     },
     autoArticleWordCount: true,
     howTo: {
@@ -301,8 +324,11 @@ const pages = [
       },
       {
         label: "storage guide primary action",
-        from: ["<a class=\"button button-primary\" href=\"https://apps.apple.com/us/app/ai-cleaning-photo-cleaner/id6768019606?uo=4\" target=\"_blank\" rel=\"noopener noreferrer\" data-analytics-event=\"app_store_click\" data-store-product=\"ai-cleaning-photo-cleaner\" data-storefront=\"ios-app-store\" aria-label=\"Get AI Cleaning - Photo Cleaner free on the App Store (opens in a new tab)\">Get AI Cleaning free</a>"],
-        to: "<a class=\"button button-primary\" href=\"#free-steps\">Start free cleanup</a><a class=\"button button-secondary\" href=\"https://apps.apple.com/us/app/ai-cleaning-photo-cleaner/id6768019606?uo=4\" target=\"_blank\" rel=\"noopener noreferrer\" data-analytics-event=\"app_store_click\" data-store-product=\"ai-cleaning-photo-cleaner\" data-storefront=\"ios-app-store\" aria-label=\"AI Cleaning - Photo Cleaner on the App Store (opens in a new tab)\">Explore AI Cleaning</a>"
+        from: [
+          "<a class=\"button button-primary\" href=\"https://apps.apple.com/us/app/ai-cleaning-photo-cleaner/id6768019606?uo=4\" target=\"_blank\" rel=\"noopener noreferrer\" data-analytics-event=\"app_store_click\" data-store-product=\"ai-cleaning-photo-cleaner\" data-storefront=\"ios-app-store\" aria-label=\"Get AI Cleaning - Photo Cleaner free on the App Store (opens in a new tab)\">Get AI Cleaning free</a>",
+          "<a class=\"button button-primary\" href=\"#free-steps\">Start free cleanup</a><a class=\"button button-secondary\" href=\"https://apps.apple.com/us/app/ai-cleaning-photo-cleaner/id6768019606?uo=4\" target=\"_blank\" rel=\"noopener noreferrer\" data-analytics-event=\"app_store_click\" data-store-product=\"ai-cleaning-photo-cleaner\" data-storefront=\"ios-app-store\" aria-label=\"AI Cleaning - Photo Cleaner on the App Store (opens in a new tab)\">Explore AI Cleaning</a>"
+        ],
+        to: '<a class="button button-primary" href="#free-steps">Start free cleanup</a><a class="button button-secondary" href="#choose-cleanup-method">Do I need a cleaner app?</a>'
       },
       {
         label: "storage guide workflow anchor",
@@ -341,8 +367,16 @@ const pages = [
       },
       {
         label: "storage guide optional app",
-        from: ["<div><strong>Review cleanup candidates</strong><p>Move through duplicates, screenshots, blurry shots, low-quality photos, and large media.</p></div>"],
-        to: "<div><strong>Need help with similar photos?</strong><p>After using Apple's Duplicates tool, <a href=\"iphone-photo-cleaner.html\">AI Cleaning</a> can group visually similar photos, screenshots, and large media for manual review. It is free to download; check the current App Store listing for any optional Pro features before relying on them.</p></div>"
+        from: [
+          "<div><strong>Review cleanup candidates</strong><p>Move through duplicates, screenshots, blurry shots, low-quality photos, and large media.</p></div>",
+          "<div><strong>Need help with similar photos?</strong><p>After using Apple's Duplicates tool, <a href=\"iphone-photo-cleaner.html\">AI Cleaning</a> can group visually similar photos, screenshots, and large media for manual review. It is free to download; check the current App Store listing for any optional Pro features before relying on them.</p></div>"
+        ],
+        to: '<div><strong>Need help with similar photos?</strong><p>After using Apple\'s Duplicates tool, check the <a href="#choose-cleanup-method">built-in and app-assisted cleanup options</a>. Compare the review workflow and free allowance before installing an app.</p></div>'
+      },
+      {
+        label: "storage guide cleanup decision",
+        from: ['<section class="section faq">'],
+        to: photoCleanupDecisionSection + '<section class="section faq">'
       },
       {
         label: "storage guide deletion warning",
@@ -398,12 +432,12 @@ const pages = [
     file: "iphone-photo-cleaner.html",
     title: "Photo Cleaner for iPhone | Find Duplicates &amp; Free Space",
     description: "Photo cleaner for iPhone that finds duplicate and similar photos, screenshots, blurry shots, and large files. Review first, then free up space safely.",
-    modifiedDate: "2026-09-29",
-    modifiedDateLabel: "September 29, 2026",
+    modifiedDate: "2026-10-20",
+    modifiedDateLabel: "October 20, 2026",
     article: {
       headline: "Photo Cleaner for iPhone | Find Duplicates & Free Space",
       description: "Photo cleaner for iPhone that finds duplicate and similar photos, screenshots, blurry shots, and large files. Review first, then free up space safely.",
-      dateModified: "2026-09-29"
+      dateModified: "2026-10-20"
     },
     autoArticleWordCount: true,
     headline: [
@@ -419,6 +453,21 @@ const pages = [
       }
     ],
     replacements: [
+      {
+        label: "photo cleaner hero allowance and action",
+        from: ['<div class="hero-actions" aria-label="iPhone photo cleaner actions"><a class="button button-primary" href="https://apps.apple.com/us/app/ai-cleaning-photo-cleaner/id6768019606?uo=4" target="_blank" rel="noopener noreferrer" data-analytics-event="app_store_click" data-store-product="ai-cleaning-photo-cleaner" data-storefront="ios-app-store" aria-label="Download AI Cleaning - Photo Cleaner free on the App Store (opens in a new tab)">Download free</a></div>'],
+        to: '<p class="article-meta" id="photo-cleaner-free-allowance">iOS 16 or later. Free download with one successful cleanup action across eligible tools; additional gated actions and AI category sorting require Pro.</p><div class="hero-actions" aria-label="iPhone photo cleaner actions"><a class="button button-primary" href="https://apps.apple.com/us/app/ai-cleaning-photo-cleaner/id6768019606?uo=4" target="_blank" rel="noopener noreferrer" data-analytics-event="app_store_click" data-store-product="ai-cleaning-photo-cleaner" data-storefront="ios-app-store" aria-describedby="photo-cleaner-free-allowance" aria-label="Get AI Cleaning - Photo Cleaner on the App Store (opens in a new tab)">Get AI Cleaning</a></div>'
+      },
+      {
+        label: "photo cleaner concise hero summary",
+        from: ['<p class="hero-summary">AI Cleaning is a photo cleaner for iPhone that finds duplicate and similar photos, screenshots, blurry shots, and large files. Analysis stays on-device, and nothing is deleted without your confirmation.</p>'],
+        to: '<p class="hero-summary">Find duplicate and similar photos, screenshots, blurry shots, and large media. Analysis stays on-device; you review and confirm every cleanup.</p>'
+      },
+      {
+        label: "photo cleaner final download and alternatives",
+        from: ['</main>'],
+        to: photoCleanerDownloadSection + '</main>'
+      },
       {
         label: "photo cleaner current facts date",
         from: ["These details reflect version 1.1.6 and were checked on September 23, 2026 against the"],
@@ -1177,7 +1226,8 @@ const pages = [
     h1: [
       "Translate menus, signs, and conversations in 6 steps.",
       "How to translate menus on iPhone, then handle conversations."
-    ]
+    ],
+    ...menuTranslationGuideUpdate
   },
   {
     file: "mac-screen-privacy.html",
