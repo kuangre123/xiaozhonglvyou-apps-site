@@ -2,6 +2,7 @@ import { readFile, writeFile } from "node:fs/promises";
 import { createHash } from "node:crypto";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { leleHealthRelease } from "./lele-health-release-facts.mjs";
 
 const siteDir = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const origin = "https://www.xiaozhonglvyou.com";
@@ -33,63 +34,79 @@ const products = [
     file: "lailemma-period-tracker.html",
     lang: "en",
     ogLocale: "en_US",
-    title: "Laleme Period Tracker & Body Readiness (Lailemma)",
-    description: "Track periods, ovulation and symptoms with Laleme, formerly Lailemma. Version 2.0.7 estimates Body Readiness on device from authorized Apple Health signals.",
-    keywords: "period tracker iPhone, cycle tracker, ovulation log, Body Readiness, Apple Health, Laleme, Lailemma",
-    kicker: "Cycle tracking · iPhone and iPad",
-    heading: "Laleme: cycle tracking and Body Readiness",
-    lead: "Laleme, formerly Lailemma, brings cycle logs and daily health context together. Version 2.0.7 estimates Body Readiness on device from signals you authorize in Apple Health.",
+    title: "Lele Health: Daily Health Tracker & Optional Cycle Care",
+    description: "Review authorized Apple Health sleep, activity and heart-rate data, trends and daily notes with Lele Health. Cycle Care is optional; readiness is an estimate.",
+    keywords: "Lele Health, Laleme, Lailemma, iPhone health tracker, Apple Health trends, readiness estimate, daily health journal, Cycle Care",
+    kicker: "Daily health · iPhone and iPad",
+    heading: "Lele Health: daily health, with optional Cycle Care",
+    lead: "Lele Health, previously listed as Laleme and Lailemma, brings the health data you authorize into one place. Review sleep, activity, heart rate and body measurements, follow trends, and keep a daily journal. Cycle Care is an optional section.",
     icon: "lailemma-icon.webp",
     screenshots: [
-      { file: "lailemma-readiness-home.webp", alt: "Lailemma Body Readiness card on the Today screen in a Chinese-language screenshot", caption: "Developer-supplied Chinese-language screen: daily estimate on Today." },
-      { file: "lailemma-readiness-detail.webp", alt: "Lailemma Body Readiness details with sleep, HRV and cycle-phase contributions", caption: "Developer-supplied screen: the estimate explains contributing signals." },
-      { file: "lailemma-readiness-snapshot.webp", alt: "Chinese-language Health screen with a daily snapshot, cycle chart and all-metrics entry", caption: "Developer-supplied Chinese-language screen: daily health snapshot, cycle chart and indicator navigation." },
-      { file: "lailemma-readiness-all-metrics.webp", alt: "Chinese-language list of Apple Health indicators grouped into vital signs, sleep and activity", caption: "Developer-supplied Chinese-language screen: the available health indicators used for daily context." }
+      { file: "lailemma-readiness-home.webp", alt: "Earlier developer-supplied Chinese-language Laleme screen with a Body Readiness card", caption: "Earlier developer-supplied Chinese-language screen: a daily estimate. Not a version 2.1.0 interface preview." },
+      { file: "lailemma-readiness-detail.webp", alt: "Earlier Chinese-language readiness view showing contributing health signals", caption: "Earlier developer-supplied Chinese-language screen: contributing signals. The current layout may differ." },
+      { file: "lailemma-readiness-snapshot.webp", alt: "Earlier Chinese-language Health screen with a daily snapshot, cycle chart and metrics entry", caption: "Earlier developer-supplied Chinese-language screen: health context and cycle information. Cycle Care is optional in version 2.1.0." },
+      { file: "lailemma-readiness-all-metrics.webp", alt: "Earlier Chinese-language list of health indicators grouped by category", caption: "Earlier developer-supplied Chinese-language screen: health categories. Available records depend on your data and permissions." }
     ],
-    previewLabel: "Available in version 2.0.7",
-    status: "The current US, Japan, Germany and Turkey App Store listings identify Laleme as version 2.0.7. These developer-supplied screenshots show a Chinese-language interface; the app's listed interface languages are English, Simplified Chinese, German, Japanese and Korean.",
+    previewLabel: `App Store release ${leleHealthRelease.version}`,
+    status: "The US, Egypt, Malaysia and Poland App Store records checked on October 23, 2026 list Lele Health 2.1.0. The screenshots below come from the earlier Chinese-language product presentation; they are not a new 2.1.0 interface preview. Listed interface languages are English, German, Japanese, Korean and Simplified Chinese.",
+    checkedAt: leleHealthRelease.checkedDate,
     storeUrl: "https://apps.apple.com/us/app/id6775935474?uo=4",
     storeProduct: "lailemma-period-fertility",
     storeCountry: "us",
-    storeLabel: "Get Laleme on App Store",
-    appName: "Laleme - Health Tracker",
+    storeLabel: "Get Lele Health on App Store",
+    appName: leleHealthRelease.name,
     appCategory: "HealthApplication",
     operatingSystem: "iOS, iPadOS",
-    softwareRequirements: "iOS 17.0 or later",
-    softwareVersion: "2.0.7",
+    softwareRequirements: `iOS ${leleHealthRelease.minimumIOS} or later`,
+    softwareVersion: leleHealthRelease.version,
     price: "0",
     currency: "USD",
-    appDescription: "Period and ovulation tracking, symptom logging, cycle insights and an on-device Body Readiness estimate in version 2.0.7.",
+    appDescription: "Everyday health tracking with authorized Apple Health records, trends and a daily journal. Cycle Care is optional; readiness is an on-device wellness estimate, not an Apple score or medical diagnosis.",
     alternate: { file: "lailemma-period-tracker-cn.html", label: "简体中文", lang: "zh-CN" },
     sections: [
       {
-        kicker: "Available now",
-        heading: "Record your cycle without losing the context",
-        intro: "The current App Store listing covers period prediction, ovulation tracking, daily logs, cycle alerts and an optional Apple Health connection.",
+        kicker: "Your daily overview",
+        heading: "Review the health data you allow",
+        intro: "Connect Apple Health to review available sleep, activity, heart-rate and body-measurement records on your device. What appears depends on the records available and the categories you authorize.",
         items: [
-          ["Cycle and symptoms", "Record period flow, mood, symptoms and temperature, then review predicted cycle dates."],
-          ["Fertility and pregnancy modes", "Use ovulation and fertile-window estimates, a pregnancy-week view and a due-date calculator as planning aids, not clinical predictions."],
-          ["Your data", "The listing says records stay on your device, with optional Apple Health access that you can turn off."]
+          ["Home overview", "Bring readiness, steps, sleep, resting heart rate, HRV, active energy and exercise time into a daily view, using the data available to the app."],
+          ["Categories and individual records", "Browse health metrics by category and open individual records to see the information behind an overview."],
+          ["Trends and a journal", "Review changes across 7, 30 or 90 days. Add your mood, symptoms and notes to a daily journal for personal context."]
         ]
       },
       {
-        kicker: "Available in version 2.0.7",
-        heading: "What the Body Readiness estimate explains",
-        intro: "With permission, version 2.0.7 combines available sleep, heart-rate variability, resting heart rate, wrist temperature, blood oxygen, activity and cycle-phase context into an app-estimated daily score. Missing signals are not presented as measured data.",
+        kicker: "Optional Cycle Care",
+        heading: "Open cycle tools when you want them",
+        intro: "Cycle Care is an optional area reached from the bottom of Home. The everyday health overview and journal are not limited to period tracking.",
         items: [
-          ["A score with reasons", "The screen shows a 0–100 estimate and contributions such as sleep, HRV and cycle phase, so the number is not presented without context."],
-          ["On-device interpretation", "The estimate uses data you authorize from Apple Health. It is this app's estimate, not an Apple readiness score."],
-          ["Health boundary", "Use it for everyday reflection only. It does not diagnose illness, determine fitness to exercise or replace medical advice."]
+          ["Records and reminders", "Use the optional section for period records, predicted dates and reminders."],
+          ["Cycle context", "Fertility tools and cycle analysis are available within Cycle Care. Their estimates are for personal reference and are not a medical diagnosis."],
+          ["Choose your workflow", "Start with the health categories and journal you need; enter Cycle Care separately when those records are relevant to you."]
+        ]
+      },
+      {
+        kicker: "Permissions and estimates",
+        heading: "Keep the data and its interpretation in context",
+        intro: "The App Store description states that records stay local and health analysis runs on your device. Apple Health access is permission-based; review the categories you choose to share.",
+        items: [
+          ["A wellness estimate", "Readiness is Lele Health's daily wellness estimate. It is not an Apple readiness score and does not diagnose a condition."],
+          ["Before downloading", "The checked version requires iOS 17.0 or later. Apple lists English, German, Japanese, Korean and Simplified Chinese; an English product page does not add other interface languages."],
+          ["Current local listing", "Check your regional App Store for availability, compatibility and purchase conditions before installing. The October 23 check confirms public store records, not a device test of every screen."]
         ]
       }
     ],
     faqs: [
-      ["Is Body Readiness in the current App Store release?", "Yes. The current US, Japan, Germany and Turkey listings show version 2.0.7 with Body Readiness. Check your local listing for availability and current release details."],
-      ["Does Laleme calculate an Apple readiness score?", "No. Laleme estimates its own score on device from available, authorized health signals and cycle context. It is not a medical diagnosis."]
+      ["Is Lele Health only a period tracker?", "No. Version 2.1.0 is presented as an everyday health tracker with authorized Apple Health records, trends and a daily journal. Cycle Care is optional and opens separately from Home."],
+      ["Which release was checked?", "The public US, Egypt, Malaysia and Poland App Store records checked on October 23, 2026 list Lele Health 2.1.0. Check your local listing for newer updates and availability."],
+      ["Does Lele Health calculate an Apple readiness score?", "No. Readiness is the app's on-device daily wellness estimate, not an Apple score or a medical diagnosis."],
+      ["Are the screenshots from version 2.1.0?", "The images are developer-supplied Chinese-language screens from the earlier product presentation. They illustrate previous views and are not presented as a new 2.1.0 interface preview."],
+      ["Which languages and permissions should I check?", "Apple lists English, German, Japanese, Korean and Simplified Chinese. Choose the Apple Health categories you want to authorize, and review current requirements in your local App Store."]
     ]
   },
   {
     file: "lailemma-period-tracker-cn.html",
+    checkedAt: "2026-09-29",
+    historicalNote: "此页保留 2026 年 9 月 29 日核对的 2.0.7 版介绍。最新 Lele Health 2.1.0 日常健康与可选周期关怀介绍请见 English 页面。",
     lang: "zh-CN",
     ogLocale: "zh_CN",
     title: "来了么 Laleme 经期记录与身体准备度 | 2.0.7",
@@ -149,6 +166,8 @@ const products = [
   },
   {
     file: "lailemma-period-tracker-ja.html",
+    checkedAt: "2026-09-29",
+    historicalNote: "このページは2026年9月29日に確認した2.0.7の紹介です。Lele Health 2.1.0の日常の健康管理と任意のCycle CareについてはEnglishページをご覧ください。",
     lang: "ja-JP",
     ogLocale: "ja_JP",
     title: "Laleme 生理日管理・妊活アプリ | 体調推定 2.0.7",
@@ -207,6 +226,8 @@ const products = [
   },
   {
     file: "lailemma-period-tracker-de.html",
+    checkedAt: "2026-09-29",
+    historicalNote: "Diese Seite beschreibt Version 2.0.7 mit Stand vom 29. September 2026. Die aktuelle englische Seite erklärt Lele Health 2.1.0 für den Gesundheitsalltag und das optionale Cycle Care.",
     lang: "de-DE",
     ogLocale: "de_DE",
     title: "Laleme Zyklus-App | Körperbereitschaft Version 2.0.7",
@@ -265,6 +286,8 @@ const products = [
   },
   {
     file: "lailemma-period-tr.html",
+    checkedAt: "2026-09-29",
+    historicalNote: "Bu sayfa, 29 Eylül 2026 tarihinde kontrol edilen 2.0.7 sürümünü anlatır. Günlük sağlık takibi ve isteğe bağlı Cycle Care sunan Lele Health 2.1.0 için English sayfasına bakın.",
     lang: "tr-TR",
     ogLocale: "tr_TR",
     title: "Laleme Döngü Takibi ve Body Readiness Tahmini | 2.0.7",
@@ -497,7 +520,7 @@ function schemaFor(page) {
       },
       {
         "@type": "SoftwareApplication", "@id": `${canonical}#app`, name: page.appName,
-        ...(page.file.startsWith("lailemma") ? { alternateName: ["Lailemma", "Lailemma - Period & Fertility", "来了么"] } : {}),
+        ...(page.file.startsWith("lailemma") ? { alternateName: ["Lailemma", "Lailemma - Period & Fertility", "Laleme", "Laleme - Health Tracker", "来了么"] } : {}),
         applicationCategory: page.appCategory, operatingSystem: page.operatingSystem,
         softwareRequirements: page.softwareRequirements, softwareVersion: page.softwareVersion,
         url: page.storeUrl, downloadUrl: page.storeUrl, description: page.appDescription,
@@ -541,8 +564,8 @@ function render(page) {
   const sectionMarkup = page.sections.map((section, index) => `<section class="section content-section${index % 2 ? " alt-section" : ""}"${section.id ? ` id="${escapeHtml(section.id)}"` : ""}><div class="section-inner content-grid"><div><p class="section-kicker">${escapeHtml(section.kicker)}</p><h2>${escapeHtml(section.heading)}</h2><p>${escapeHtml(section.intro)}</p></div><div class="content-list">${itemList(section.items)}</div></div></section>`).join("\n");
   const faqMarkup = page.faqs.map(([question, answer]) => `<details><summary>${escapeHtml(question)}</summary><p>${escapeHtml(answer)}</p></details>`).join("\n");
   const languageLinks = isLailemma ? lailemmaLanguages.filter(([, file]) => file !== page.file).map(([lang, file, name]) => `<a href="${file}" lang="${lang}">${escapeHtml(name)}</a>`).join("") : "";
-  const statusMarkup = page.status ? `<p class="new-app-status"><strong>${escapeHtml(page.previewLabel)}</strong> ${escapeHtml(page.status)}</p>` : "";
-  const productMeta = page.checkedAt ? `<p class="article-meta"><a href="about.html">CrazyAIAgent</a> · <span>Version ${escapeHtml(page.softwareVersion)}</span> · ${ui.checked} <time datetime="${page.checkedAt}">${new Date(`${page.checkedAt}T00:00:00Z`).toLocaleDateString(page.lang, { month: "long", day: "numeric", year: "numeric", timeZone: "UTC" })}</time></p>` : "";
+  const statusMarkup = page.status ? `<p class="new-app-status"><strong>${escapeHtml(page.previewLabel)}</strong> ${page.historicalNote ? `${escapeHtml(page.historicalNote)} ` : ""}${escapeHtml(page.status)}</p>` : "";
+  const productMeta = page.checkedAt ? `<p class="article-meta"><a href="about.html">CrazyAIAgent</a> · <span>Version ${escapeHtml(page.softwareVersion)}</span> · ${ui.checked ?? ({"zh-CN":"产品信息核对日期","ja-JP":"製品情報確認日","de-DE":"Produktdaten geprüft","tr-TR":"Ürün bilgileri kontrol edildi"}[page.lang] ?? "Product details checked")} <time datetime="${page.checkedAt}">${new Date(`${page.checkedAt}T00:00:00Z`).toLocaleDateString(page.lang, { month: "long", day: "numeric", year: "numeric", timeZone: "UTC" })}</time></p>` : "";
   return `<!doctype html>
 <html lang="${page.lang}">
 <head>

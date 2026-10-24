@@ -96,6 +96,16 @@ const products = new Map([
     }
   ],
   [
+    "Lele Health",
+    {
+      appId: "6775935474", url: "https://apps.apple.com/us/app/id6775935474?uo=4",
+      image: `${origin}/assets/lailemma-icon.webp`, applicationCategory: "HealthApplication",
+      operatingSystem: "iOS, iPadOS", softwareVersion: "2.1.0",
+      availableLanguage: ["en", "de", "ja", "ko", "zh-Hans"],
+      price: "0", priceCurrency: "USD"
+    }
+  ],
+  [
     "Laleme - Health Tracker",
     {
       appId: "6775935474", url: "https://apps.apple.com/us/app/id6775935474?uo=4",
@@ -127,6 +137,7 @@ const productKeywords = new Map([
   ["Anti-spy screen", ["Mac screen privacy", "screen sharing privacy", "window protection", "presentation privacy", "macOS utility"]],
   ["GIFmaker-Gif Studio", ["GIF maker for iPhone", "photos to GIF", "video to GIF", "Live Photo to GIF", "on-device GIF editor"]],
   ["HappyRide: Auto Ride Tracker", ["automatic cycling tracker", "bike ride tracker", "Apple Watch cycling", "Apple Health workout", "background activity detection"]],
+  ["Lele Health", ["health tracker", "Apple Health records", "sleep and activity trends", "daily journal", "optional Cycle Care", "Laleme", "Lailemma"]],
   ["Laleme - Health Tracker", ["period tracker", "cycle logging", "fertility window", "Body Readiness", "Lailemma"]],
   ["Inkstone Notes Markdown", ["Markdown notes", "plain files", "iCloud Drive", "wiki links"]],
   ["TwoPic Dual Camera", ["dual camera", "front and back camera", "picture in picture", "iPhone video"]]
@@ -149,7 +160,7 @@ const hubLists = new Map([
         ["Free Bike Ride Tracker App", `${origin}/happyride-auto-ride-tracker.html`],
         ["Anti-spy screen", `${origin}/mac-screen-privacy.html`],
         ["Anti-spy screen Lite", `${origin}/mac-screen-privacy.html#lite`],
-        ["Laleme - Health Tracker", `${origin}/lailemma-period-tracker.html`],
+        ["Lele Health", `${origin}/lailemma-period-tracker.html`],
         ["Inkstone Notes Markdown", `${origin}/inkstone-markdown-notes.html`],
         ["TwoPic Dual Camera", `${origin}/twopic-dual-camera.html`]
       ]
@@ -243,7 +254,7 @@ function developerEntity() {
       "cycling and activity tracking",
       "travel translation",
       "screen privacy",
-      "cycle tracking",
+      "everyday health and optional cycle tracking",
       "Markdown notes",
       "dual-camera capture"
     ]
@@ -261,7 +272,7 @@ function publisherEntity() {
       url: `${origin}/apple-touch-icon.png`
     },
     image: `${origin}/assets/anti-spy-screen.png`,
-    description: "Independent App Store portfolio for photo organization, cycle tracking, Markdown notes, dual-camera capture, activity tracking, travel translation, GIFs, and screen privacy.",
+    description: "Independent App Store portfolio for photo organization, everyday health and optional cycle tracking, Markdown notes, dual-camera capture, activity tracking, travel translation, GIFs, and screen privacy.",
     founder: { "@id": developerId },
     contactPoint: {
       "@type": "ContactPoint",
@@ -271,7 +282,7 @@ function publisherEntity() {
     },
     sameAs: [
       appStoreDeveloperUrl,
-      ...[...products.values()].map((product) => product.url),
+      ...new Set([...products.values()].map((product) => product.url)),
       "https://github.com/kuangre123/xiaozhonglvyou-apps-site"
     ],
     owns: [

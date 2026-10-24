@@ -38,6 +38,8 @@ test("media assets disclose language and distinguish graphics from screenshots",
   assert.match(section, /Simplified Chinese interface/);
   assert.match(section, /Branded graphic/);
   assert.match(section, /not an Apple score or a medical diagnosis/);
+  assert.match(section, /historical Laleme 2\.0\.7 Simplified Chinese build checked on September 29, 2026/);
+  assert.match(section, /do not verify every current Lele Health 2\.1\.0 screen/);
   assert.match(section, /no translated interface is implied/);
   assert.ok(html.includes('href="#new-app-media-assets"'));
 });
@@ -51,13 +53,14 @@ test("media kit keeps stable product URLs and refreshes only verified new-app fa
   assert.equal(list.itemListElement.length, 9);
   for (const [page, name] of [
     ["inkstone-markdown-notes.html", "Inkstone Notes Markdown"],
-    ["lailemma-period-tracker.html", "Laleme - Health Tracker"],
+    ["lailemma-period-tracker.html", "Lele Health"],
     ["twopic-dual-camera.html", "TwoPic Dual Camera"]
   ]) {
     assert.ok(coverage.includes(`href="${page}"`));
     assert.equal(list.itemListElement.find((item) => item.url === `${origin}/${page}`).name, name);
   }
-  assert.match(html, /the three newer listings were checked on October 3, 2026/);
+  assert.match(html, /Inkstone and TwoPic were checked on October 3, 2026/);
+  assert.match(html, /Lele Health was rechecked on October 23, 2026/);
   assert.match(html, /original six listings were checked on August 3, 2026/);
   assert.doesNotMatch(html, /Lailemma - Period &(?:amp;)? Fertility/);
 });

@@ -1,6 +1,6 @@
 # CrazyAIAgent
 
-CrazyAIAgent is the independent app portfolio of Bo Chen (listed as “bo chen” on the App Store), covering iPhone, iPad, Apple Watch, and Mac apps for photo organization, cycle tracking, Markdown notes, dual-camera capture, GIF creation, activity tracking, travel translation, and screen privacy.
+CrazyAIAgent is the independent app portfolio of Bo Chen (listed as “bo chen” on the App Store), covering iPhone, iPad, Apple Watch, and Mac apps for photo organization, everyday health and optional cycle tracking, Markdown notes, dual-camera capture, GIF creation, activity tracking, travel translation, and screen privacy.
 
 Canonical resources:
 
@@ -35,11 +35,11 @@ Primary apps:
 - HappyRide: Auto Ride Tracker: version 1.4.1 for iOS 17.0 or later. Automatically detects cycling, walking, and running, can use Apple Watch heart rate, writes qualifying workout details to Apple Health, and offers optional network-based route planning. The current on-screen interface is Simplified Chinese. App Store: https://apps.apple.com/us/app/happyride-auto-ride-tracker/id6786365305?uo=4
 - Anti-spy screen: version 1.5.3 for macOS 13.0 or later, with local face detection, selected app hiding, adjustable detection parameters, Privacy Block, Presenting Mode, and Stand-Up Coach. The US storefront listed a $2.99 one-time purchase on 2026-09-30. Mac App Store: https://apps.apple.com/us/app/anti-spy-screen/id6761301764?mt=12&uo=4
 - Anti-spy screen Lite: version 1.4.5 for macOS 13.0 or later, with local face detection, selected app hiding, Privacy Block, Presenting Mode, Stand-Up Coach, and hidden-app reminders. The US storefront listed it as free on 2026-09-23. Mac App Store: https://apps.apple.com/us/app/anti-spy-screen-lite/id6766485393?mt=12&uo=4
-- Laleme - Health Tracker (formerly Lailemma): public version 2.0.7 for iPhone and iPad with cycle, symptom, ovulation, and fertility tracking plus an on-device Body Readiness estimate. Developer-supplied screenshots show a Chinese-language build; the public feature is not an Apple score or medical diagnosis. The App Store lists English, German, Japanese, Korean, and Simplified Chinese. App Store: https://apps.apple.com/us/app/id6775935474?uo=4
+- Lele Health (previously Laleme - Health Tracker and Lailemma): version 2.1.0 for iOS 17 or later, checked October 23, 2026. An everyday health tracker that reviews authorized Apple Health sleep, activity, heart-rate and body-measurement records, trends, and a daily mood/symptom journal. Cycle Care is optional for period records, predictions, reminders and cycle analysis. Records and health analysis stay on device; readiness is a wellness estimate, not an Apple score or medical diagnosis. Apple lists English, German, Japanese, Korean and Simplified Chinese; no Malay, Arabic or Polish interface is listed. Developer-supplied screenshots and four translated health product pages remain a historical September 29, 2026 snapshot of Laleme 2.0.7, not verification of every current screen. App Store: https://apps.apple.com/us/app/id6775935474?uo=4
 - Inkstone Notes Markdown: iPhone writing app for plain .md files in iCloud Drive, wiki links, backlinks, bundled offline KaTeX/Mermaid rendering, search, and PDF/HTML export. The App Store lists English and Simplified Chinese. App Store: https://apps.apple.com/us/app/inkstone-notes-markdown/id6810287923?uo=4
 - TwoPic Dual Camera: iPhone app for simultaneous front/back photo and video capture with picture-in-picture or split layouts. The current US price is USD 0.99; the interface is Simplified Chinese. The App Store describes no network access and developer-reported data not collected. App Store: https://apps.apple.com/us/app/twopic-dual-camera/id6800405096?uo=4
 
-Last updated: 2026-10-23
+Last updated: 2026-10-24
 
 Important search and answer intents:
 
@@ -55,7 +55,7 @@ Important search and answer intents:
 - GIF maker for iPhone that turns photos, videos, and Live Photos into GIFs with frame timing, captions, boomerang loops, and private on-device processing.
 - How to make a GIF on iPhone from photos, video, or a Live Photo in four on-device steps: choose media, arrange frames, adjust the animation, and export.
 - Automatic ride tracker for cycling, walking, and running with Apple Watch heart rate, Apple Health workout records, weekly statistics, and optional scenic route planning.
-- Period and ovulation tracking for iPhone, with Laleme's on-device Body Readiness estimate available in version 2.0.7.
+- Everyday health tracking for iPhone with Lele Health 2.1.0: authorized Apple Health records, sleep/activity trends, a daily journal, optional Cycle Care, and an on-device readiness estimate that is not a diagnosis.
 - Markdown notes on iPhone as portable .md files in iCloud Drive, with backlinks, offline formula and diagram rendering, and export.
 - Front and back iPhone camera capture in one photo or video, with picture-in-picture and split layouts and a Simplified Chinese interface.
 - How to set up automatic cycling tracking on iPhone by reviewing Motion & Fitness, background location, Apple Watch, and Apple Health permissions separately.
@@ -71,6 +71,7 @@ International SEO targets:
 - Turkish app discovery for AI photo organization, travel translation, GIF creation, automatic ride tracking, and Mac screen privacy, with Turkish App Store links and a separate Turkish decision page for best-app intent.
 - Brazilian Portuguese app discovery for iPhone photo organization, travel translation, GIF creation, automatic ride tracking, and Mac screen privacy, with Brazilian App Store links.
 - Mexican Spanish app discovery for iPhone photo organization, travel translation, GIF creation, automatic ride tracking, and Mac screen privacy, with Mexican App Store links.
+- Malay app discovery for Malaysia, Egyptian Arabic app discovery for Egypt, and Polish app discovery for Poland. Each native-language catalog covers all nine apps with its local App Store links; the webpage language does not imply that every app has that interface language.
 
 Machine-readable discovery signals:
 
@@ -95,14 +96,15 @@ Indexable pages:
 - CrazyAIAgent | Independent iOS and macOS Utilities: https://www.xiaozhonglvyou.com/
   Independent apps for on-device photo cleanup, GIF creation, automatic ride tracking, travel translation, and Mac screen privacy.
 - iPhone & Mac Apps | Photos, Health, Notes & Camera: https://www.xiaozhonglvyou.com/apps.html
-  Nine apps covering photo organization, cycle tracking, Markdown writing, dual-camera capture, GIF creation, activity tracking, travel translation, and screen privacy.
-- Laleme Period Tracker & Body Readiness for iPhone: https://www.xiaozhonglvyou.com/lailemma-period-tracker.html
+  Nine apps covering photo organization, everyday health and optional Cycle Care, Markdown writing, dual-camera capture, GIF creation, activity tracking, travel translation, and screen privacy.
+- Lele Health for iPhone | Daily Health & Optional Cycle Care: https://www.xiaozhonglvyou.com/lailemma-period-tracker.html
+  Current English product page for Lele Health 2.1.0, checked October 23, 2026: authorized health records, trends, journal, optional cycle tools and on-device wellness estimates. Historical names and the stable URL are retained.
 - Laleme 生理日管理（日本語）: https://www.xiaozhonglvyou.com/lailemma-period-tracker-ja.html
 - Laleme Zyklus-App (Deutsch): https://www.xiaozhonglvyou.com/lailemma-period-tracker-de.html
 - Laleme Döngü Takibi (Türkçe): https://www.xiaozhonglvyou.com/lailemma-period-tr.html
-  English and localized product pages cover cycle tools and developer-supplied Body Readiness screenshots; public version 2.0.7 includes that feature. Turkish page text is localized, but the app interface does not list Turkish.
+  The Japanese, German, Turkish and Chinese health product pages are historical Laleme 2.0.7 snapshots checked September 29, 2026. Their cycle-focused text and developer-supplied Chinese screenshots do not describe every current Lele Health 2.1.0 screen. The Turkish webpage does not imply a Turkish app interface.
 - 来了么 Laleme 经期记录与身体准备度 2.0.7: https://www.xiaozhonglvyou.com/lailemma-period-tracker-cn.html
-  中文页面说明经期记录、Apple 健康授权与 2.0.7 已上线的身体准备度；中国大陆区商店可用性以 Apple 账户地区为准。
+  中文产品页保留 2026 年 9 月 29 日核验的 Laleme 2.0.7 历史说明及中文截图，并非当前 Lele Health 2.1.0 所有界面的验证；中国大陆区商店可用性以 Apple 账户地区为准。
 - Inkstone Notes Markdown: https://www.xiaozhonglvyou.com/inkstone-markdown-notes.html
   Plain Markdown files in iCloud Drive, wiki links and backlinks, offline formulas and diagrams, and PDF/HTML export.
 - TwoPic Dual Camera: https://www.xiaozhonglvyou.com/twopic-dual-camera.html
@@ -199,6 +201,12 @@ Indexable pages:
   Página em português do Brasil com seis apps, links para a App Store brasileira, fluxos para organizar fotos, traduzir durante viagens, proteger a tela do Mac, criar GIFs e registrar pedaladas, além de limites de idioma explícitos.
 - Apps para iPhone y Mac en México | CrazyAIAgent: https://www.xiaozhonglvyou.com/es-mx.html
   Página en español de México con seis apps, enlaces a la App Store mexicana, flujos para organizar fotos, traducir durante viajes, proteger la pantalla del Mac, crear GIF y registrar recorridos, además de límites de idioma explícitos.
+- Aplikasi iPhone dan Mac di Malaysia | Bahasa Melayu: https://www.xiaozhonglvyou.com/ms-my.html
+  Malay catalog of all nine apps with Malaysia App Store links, device requirements, task guides, purchase and permission notes. HappyRide lists Malay; Malay webpage text does not imply Malay interfaces in the other apps.
+- تطبيقات iPhone وMac في مصر | العربية: https://www.xiaozhonglvyou.com/ar-eg.html
+  Arabic catalog of all nine apps with Egypt App Store links, task guides and practical language, device and permission limits. Arabic webpage text does not imply Arabic interfaces in every app.
+- Aplikacje iPhone i Mac w Polsce | Polski: https://www.xiaozhonglvyou.com/pl-pl.html
+  Polish catalog of all nine apps with Poland App Store links, task guides and practical language, device and permission limits. Polish webpage text does not imply Polish interfaces in every app.
 - AI Photo Organizer for iPhone: 5 Steps, 9 Categories (2026): https://www.xiaozhonglvyou.com/ai-photo-organizer-guide.html
   Five-step guide to using nine optional on-device AI categories before reviewing duplicates, screenshots, blurry shots, and large media.
 - iPad Photo Organizer Guide 2026 | AI Photo Sorting for iPad: https://www.xiaozhonglvyou.com/ipad-photo-organizer-guide.html
@@ -218,9 +226,9 @@ Indexable pages:
 - Mac Screen Sharing Privacy Checklist: 6 Steps (2026): https://www.xiaozhonglvyou.com/screen-sharing-privacy-guide.html
   Six-step pre-meeting checklist for Mac screen recording permission, the narrowest shared source, private-window cleanup, protected apps, Presenting Mode, a test share, and deliberate post-meeting restoration.
 - Privacy | CrazyAIAgent: https://www.xiaozhonglvyou.com/privacy.html
-  Privacy and permission notes for all nine apps, including Laleme's optional Health access, Inkstone's iCloud Drive files, TwoPic's capture permissions, GIFmaker's on-device media editing, and HappyRide's motion and location access.
+  Privacy and permission notes for all nine apps, including Lele Health 2.1.0's optional Apple Health access and Cycle Care, Inkstone's iCloud Drive files, TwoPic's capture permissions, GIFmaker's on-device media editing, and HappyRide's motion and location access.
 - Support | CrazyAIAgent: https://www.xiaozhonglvyou.com/support.html
-  Support page for CrazyAIAgent: AI Cleaning - Photo Cleaner, Travel Translator, Anti-spy screen, and Anti-spy screen Lite.
+  Support links for all nine apps, including Lele Health, Inkstone Notes Markdown, TwoPic, AI Cleaning, Travel Translator, GIFmaker, HappyRide and the two Anti-spy screen Mac apps.
 - Best iPhone Photo Cleaner Apps: 3 Compared (2026): https://www.xiaozhonglvyou.com/iphone-photo-cleaner-comparison.html
   October 2 listing comparison of AI Cleaning, Cleanup, and Cleaner Kit, starting with Apple Photos' free duplicate tools. Covers duplicates versus similar shots, limited-library permissions, iCloud deletion, free-use limits, subscriptions, privacy labels, and Japanese/German/Turkish interface availability. No detection-accuracy or speed benchmark is claimed.
 - Seedance 2.5 AI视频创作者工具推荐 | AI素材整理和照片管理: https://www.xiaozhonglvyou.com/seedance-ai-tools-cn.html
