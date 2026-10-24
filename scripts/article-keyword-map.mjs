@@ -1,3 +1,4 @@
+import { freeToolsArticleKeywordsByFile } from "./free-tools-content.mjs";
 // Topic-specific Article keywords kept in the same order across all site outputs.
 export const articleKeywordsByFile = new Map([
   ["ai-photo-classification-cn.html", ["AI照片分类", "iPhone相册整理", "AI照片清理", "重复照片复查", "本机AI分类", "iPhone存储清理"]],
@@ -32,4 +33,5 @@ export const articleKeywordsByFile = new Map([
   ["travel-translator-cn.html", ["出国翻译", "iPhone旅行翻译", "语音翻译", "拍照OCR翻译", "离线翻译", "旅行语言工具"]],
   ["travel-translator.html", ["travel translator", "voice translation", "camera translation", "travel language app", "on-device travel tools", "offline translation"]],
   ["voice-camera-translator-guide.html", ["how to translate menus on iPhone", "translate a menu on iPhone", "Apple Translate camera", "camera translator for menus", "iPhone travel translation", "voice translator for travel", "travel conversation translator"]]
+  , ...freeToolsArticleKeywordsByFile
 ]);

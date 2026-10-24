@@ -2,6 +2,7 @@ import { readdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { articleKeywordsByFile } from "./article-keyword-map.mjs";
+import { freeToolArticles, freeToolFile } from "./free-tools-content.mjs";
 import { gifmakerRelease } from "./gifmaker-release-facts.mjs";
 
 const scriptDir = path.dirname(fileURLToPath(import.meta.url));
@@ -234,6 +235,17 @@ const hubLists = new Map([
     }
   ]
 ]);
+
+// The public guide directory includes the six new task topics in both languages.
+hubLists.get("guides.html").items.push(...freeToolArticles.map((article) => [article.title, `${origin}/${freeToolFile(article)}`]));
+hubLists.set("tools.html", {
+  name: "Free tools",
+  items: [["Image compressor and resizer", `${origin}/image-compressor.html`], ["GIF maker and resizer", `${origin}/gif-maker-online.html`]]
+});
+hubLists.set("tools-cn.html", {
+  name: "免费工具",
+  items: [["图片压缩与尺寸调整", `${origin}/image-compressor-cn.html`], ["GIF 制作与缩小", `${origin}/gif-maker-online-cn.html`]]
+});
 
 function developerEntity() {
   return {
