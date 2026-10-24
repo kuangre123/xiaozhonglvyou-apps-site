@@ -54,6 +54,7 @@ const hubs = [
   },
   {
     file: "netherlands-nordics-apps.html", country: "se", lang: "sv-SE", kicker: "Appkatalog för Sverige",
+    nativeCatalog: ["sv-se.html", "Se alla nio appar med svensk vägledning"],
     title: "Fler appar i svenska App Store.",
     summary: "Här finns fler appar från katalogen med länkar till den svenska App Store-butiken. Produktsidorna är på engelska; kontrollera apparnas gränssnittsspråk, kompatibilitet, funktioner och lokala priser separat i svenska App Store.",
     productLabel: "Produktsida på engelska", storeLabel: "Svenska App Store", newTab: "öppnas i en ny flik"
@@ -172,7 +173,7 @@ function productSection(pageApps, routes) {
 function hubSection(hub, missingApps, routes) {
   if (!missingApps.length) return "";
   const rows = missingApps.map((app) => `<div><strong>${escapeHtml(app.name)}</strong><p><a href="${app.page}" hreflang="en">${escapeHtml(hub.productLabel)}</a> · ${storeAnchor(app, hub.country, hub.storeLabel, `${app.name} — ${hub.storeLabel} (${hub.newTab})`, routes)}</p></div>`).join("");
-  return `<section class="section content-section" id="regional-app-directory" lang="${hub.lang}" aria-labelledby="regional-app-directory-title"><div class="section-inner content-grid"><div><p class="section-kicker">${escapeHtml(hub.kicker)}</p><h2 id="regional-app-directory-title">${escapeHtml(hub.title)}</h2><p>${escapeHtml(hub.summary)}</p></div><div class="content-list">${rows}</div></div></section>`;
+  return `<section class="section content-section" id="regional-app-directory" lang="${hub.lang}" aria-labelledby="regional-app-directory-title"><div class="section-inner content-grid"><div><p class="section-kicker">${escapeHtml(hub.kicker)}</p><h2 id="regional-app-directory-title">${escapeHtml(hub.title)}</h2><p>${escapeHtml(hub.summary)}</p>${hub.nativeCatalog ? `<p><a href="${hub.nativeCatalog[0]}" hreflang="sv-SE">${escapeHtml(hub.nativeCatalog[1])}</a></p>` : ""}</div><div class="content-list">${rows}</div></div></section>`;
 }
 
 function parseSiteDir(argv) {

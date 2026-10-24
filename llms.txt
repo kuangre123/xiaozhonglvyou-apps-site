@@ -71,7 +71,7 @@ International SEO targets:
 - Turkish app discovery for AI photo organization, travel translation, GIF creation, automatic ride tracking, and Mac screen privacy, with Turkish App Store links and a separate Turkish decision page for best-app intent.
 - Brazilian Portuguese app discovery for iPhone photo organization, travel translation, GIF creation, automatic ride tracking, and Mac screen privacy, with Brazilian App Store links.
 - Mexican Spanish app discovery for iPhone photo organization, travel translation, GIF creation, automatic ride tracking, and Mac screen privacy, with Mexican App Store links.
-- Malay app discovery for Malaysia, Egyptian Arabic app discovery for Egypt, and Polish app discovery for Poland. Each native-language catalog covers all nine apps with its local App Store links; the webpage language does not imply that every app has that interface language.
+- Malay app discovery for Malaysia, Egyptian Arabic app discovery for Egypt, Polish app discovery for Poland, and Swedish app discovery for Sweden. Each native-language catalog covers all nine apps with its local App Store links; the webpage language does not imply that every app has that interface language.
 
 Machine-readable discovery signals:
 
@@ -207,6 +207,8 @@ Indexable pages:
   Arabic catalog of all nine apps with Egypt App Store links, task guides and practical language, device and permission limits. Arabic webpage text does not imply Arabic interfaces in every app.
 - Aplikacje iPhone i Mac w Polsce | Polski: https://www.xiaozhonglvyou.com/pl-pl.html
   Polish catalog of all nine apps with Poland App Store links, task guides and practical language, device and permission limits. Polish webpage text does not imply Polish interfaces in every app.
+- Appar för iPhone och Mac i Sverige | Svenska: https://www.xiaozhonglvyou.com/sv-se.html
+  Swedish catalog of all nine apps with Swedish App Store links, task guides, permissions, purchase conditions and actual interface-language limits. Swedish is listed for AI Cleaning, both Anti-spy screen variants and HappyRide, not all nine apps. The separate English Nordic hub remains available.
 - AI Photo Organizer for iPhone: 5 Steps, 9 Categories (2026): https://www.xiaozhonglvyou.com/ai-photo-organizer-guide.html
   Five-step guide to using nine optional on-device AI categories before reviewing duplicates, screenshots, blurry shots, and large media.
 - iPad Photo Organizer Guide 2026 | AI Photo Sorting for iPad: https://www.xiaozhonglvyou.com/ipad-photo-organizer-guide.html

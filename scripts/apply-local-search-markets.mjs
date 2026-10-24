@@ -302,7 +302,7 @@ const regionalLinks = [
   ["Italia", "it-it.html"], ["日本", "ja-jp.html"], ["한국", "ko-kr.html"],
   ["简体中文", "zh-cn.html"], ["Русский", "ru-ru.html"], ["Čeština", "cs-cz.html"], ["Tiếng Việt", "vi-vn.html"],
   ["Türkçe", "tr-tr.html"], ["Brasil", "pt-br.html"], ["México", "es-mx.html"],
-  ["Bahasa Melayu · Malaysia", "ms-my.html"], ["العربية · مصر", "ar-eg.html"], ["Polski · Polska", "pl-pl.html"]
+  ["Bahasa Melayu · Malaysia", "ms-my.html"], ["العربية · مصر", "ar-eg.html"], ["Polski · Polska", "pl-pl.html"], ["Svenska · Sverige", "sv-se.html"]
 ];
 
 const globalAlternates = [
@@ -316,7 +316,7 @@ const globalAlternates = [
   ["ko-KR", "/ko-kr.html"], ["ja-JP", "/ja-jp.html"], ["ru-RU", "/ru-ru.html"],
   ["cs-CZ", "/cs-cz.html"], ["vi-VN", "/vi-vn.html"], ["tr-TR", "/tr-tr.html"],
   ["pt-BR", "/pt-br.html"], ["es-MX", "/es-mx.html"],
-  ["ms-MY", "/ms-my.html"], ["ar-EG", "/ar-eg.html"], ["pl-PL", "/pl-pl.html"], ["zh-CN", "/zh-cn.html"],
+  ["ms-MY", "/ms-my.html"], ["ar-EG", "/ar-eg.html"], ["pl-PL", "/pl-pl.html"], ["sv-SE", "/sv-se.html"], ["zh-CN", "/zh-cn.html"],
   ["zh-Hant", "/zh-hant.html"], ["zh-TW", "/zh-hant.html"], ["zh-HK", "/zh-hant.html"],
   ["x-default", "/"]
 ];
@@ -330,7 +330,7 @@ const clusterFiles = [
   "singapore-apps.html", "switzerland-apps.html", "netherlands-nordics-apps.html",
   "de-de.html", "fr-fr.html", "es-es.html", "it-it.html", "ko-kr.html", "ja-jp.html",
   "ru-ru.html", "cs-cz.html", "vi-vn.html", "tr-tr.html", "pt-br.html", "es-mx.html",
-  "zh-cn.html", "zh-hant.html", "ms-my.html", "ar-eg.html", "pl-pl.html"
+  "zh-cn.html", "zh-hant.html", "ms-my.html", "ar-eg.html", "pl-pl.html", "sv-se.html"
 ];
 
 function escapeHtml(value) {
@@ -383,7 +383,8 @@ function updateRegionsPage(html) {
     ["es-mx.html", "Mexican Spanish", "Mexican Spanish page for iPhone and Mac utility app discovery."],
     ["ms-my.html", "Bahasa Melayu · Malaysia", "Nine iPhone and Mac apps with Malay guidance and Malaysian storefront links."],
     ["ar-eg.html", "العربية · مصر", "Nine iPhone and Mac apps with Arabic guidance and Egyptian storefront links."],
-    ["pl-pl.html", "Polski · Polska", "Nine iPhone and Mac apps with Polish guidance and Polish storefront links."]
+    ["pl-pl.html", "Polski · Polska", "Nine iPhone and Mac apps with Polish guidance and Polish storefront links."],
+    ["sv-se.html", "Svenska · Sverige", "Nine iPhone and Mac apps with Swedish guidance and Swedish storefront links."]
   ];
   let updated = html;
 
@@ -401,11 +402,11 @@ function updateRegionsPage(html) {
       const list = nodes.find((node) => node?.["@type"] === "ItemList");
       if (!collection || !list) return block;
 
-      collection.description = "A market and localized page index for CrazyAIAgent app discovery in English, Chinese, Japanese, Korean, Russian, Czech, Vietnamese, Turkish, Brazilian Portuguese, Mexican Spanish, Malay, Arabic, Polish, and major European languages.";
+      collection.description = "A market and localized page index for CrazyAIAgent app discovery in English, Chinese, Japanese, Korean, Russian, Czech, Vietnamese, Turkish, Brazilian Portuguese, Mexican Spanish, Malay, Arabic, Polish, Swedish, and major European languages.";
       collection.about = [
         "English App Store utility markets", "Chinese, Japanese, and Korean app pages",
         "Russian, Czech, Vietnamese, and Turkish app pages", "German, French, Spanish, and Italian app pages",
-        "Brazilian Portuguese and Mexican Spanish app pages", "Malay, Egyptian Arabic, and Polish app pages"
+        "Brazilian Portuguese and Mexican Spanish app pages", "Malay, Egyptian Arabic, Polish, and Swedish app pages"
       ];
       const existing = (list.itemListElement ?? []).filter((item) => !newCards.some(([href]) => String(item.item).endsWith(`/${href}`)));
       list.itemListElement = [
@@ -433,7 +434,8 @@ function render(market) {
   const nativeLabels = {
     my: ["Navigasi utama", "Jejak halaman", "Aplikasi iPhone dan Mac CrazyAIAgent"],
     eg: ["التنقل الرئيسي", "مسار الصفحة", "تطبيقات CrazyAIAgent لآيفون وماك"],
-    pl: ["Nawigacja główna", "Ścieżka strony", "Aplikacje CrazyAIAgent na iPhone’a i Maca"]
+    pl: ["Nawigacja główna", "Ścieżka strony", "Aplikacje CrazyAIAgent na iPhone’a i Maca"],
+    se: ["Huvudnavigering", "Sidans sökväg", "CrazyAIAgent-appar för iPhone och Mac"]
   }[market.store];
   const webpage = {
     "@context": "https://schema.org", "@type": "WebPage", "@id": `${url}#page`,
