@@ -1,5 +1,5 @@
 /* Self-hosted omggif 1.0.10; source: https://github.com/deanm/omggif/blob/0ec9069a525ec66223eadda3d62059d3685fd3b0/omggif.js
- * Local changes add pre-parse dimensions and per-descriptor frame/pixel bounds, strict malformed-stream errors, bounded encoding and disposal composition. */
+ * Local changes add pre-parse dimensions and per-descriptor frame/pixel bounds, strict malformed-stream and opaque-palette errors, bounded encoding and disposal composition. */
 (function (root) {
 // (c) Dean McNamee <dean@gmail.com>, 2013.
 //
@@ -596,6 +596,8 @@ function GifReader(buf) {
       if (index === trans) {
         op += 4;
       } else {
+        // Transparent indices are sentinels; only painted pixels need a color.
+        if (index >= frame.palette_size) throw new Error('invalid-gif');
         var r = buf[palette_offset + index * 3];
         var g = buf[palette_offset + index * 3 + 1];
         var b = buf[palette_offset + index * 3 + 2];
@@ -664,6 +666,8 @@ function GifReader(buf) {
       if (index === trans) {
         op += 4;
       } else {
+        // Transparent indices are sentinels; only painted pixels need a color.
+        if (index >= frame.palette_size) throw new Error('invalid-gif');
         var r = buf[palette_offset + index * 3];
         var g = buf[palette_offset + index * 3 + 1];
         var b = buf[palette_offset + index * 3 + 2];
@@ -879,7 +883,7 @@ function inspectGif(input) {
   if (!width || !height || width > LIMITS.sourceDimension || height > LIMITS.sourceDimension || width * height > LIMITS.sourcePixels || count < 1 || count > LIMITS.sourceFrames || width * height * count > LIMITS.decodedPixels) throw new Error('gif-limit');
   const frames = Array.from({ length: count }, (_, i) => reader.frameInfo(i));
   for (const frame of frames) {
-    if (!frame.width || !frame.height || frame.x + frame.width > width || frame.y + frame.height > height || frame.disposal > 3 || frame.data_offset + frame.data_length > data.length || frame.palette_size === null || (frame.transparent_index !== null && frame.transparent_index >= frame.palette_size) || frame.palette_offset + frame.palette_size * 3 > data.length || data[frame.data_offset] < 2 || data[frame.data_offset] > 8) throw new Error('invalid-gif');
+    if (!frame.width || !frame.height || frame.x + frame.width > width || frame.y + frame.height > height || frame.disposal > 3 || frame.data_offset + frame.data_length > data.length || frame.palette_size === null || frame.palette_offset + frame.palette_size * 3 > data.length || data[frame.data_offset] < 2 || data[frame.data_offset] > 8) throw new Error('invalid-gif');
   }
   return { data, reader, width, height, frames, count, duration: frames.reduce((sum, f) => sum + Math.max(2, f.delay || 10), 0) / 100 };
 }
