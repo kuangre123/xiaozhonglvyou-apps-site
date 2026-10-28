@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+import { isMainSiteHtmlFile } from "./standalone-privacy-pages.mjs";
 
 import { readdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
@@ -58,7 +59,7 @@ function atomDate(value) {
 }
 
 const htmlFiles = (await readdir(siteDir))
-  .filter((fileName) => fileName.endsWith(".html") && fileName !== "404.html")
+  .filter((fileName) => isMainSiteHtmlFile(fileName) && fileName !== "404.html")
   .sort();
 const entries = [];
 

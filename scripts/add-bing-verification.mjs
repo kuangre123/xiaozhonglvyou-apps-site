@@ -1,3 +1,4 @@
+import { isMainSiteHtmlFile } from "./standalone-privacy-pages.mjs";
 // Injects <meta name="msvalidate.01" content="TOKEN" /> into all indexable
 // HTML pages in the github-pages-site and syncs to all mirrors.
 //
@@ -44,7 +45,7 @@ async function processDir(siteDir, token, mode) {
   const dirPath = path.join(root, siteDir);
   let files;
   try {
-    files = (await readdir(dirPath)).filter((f) => f.endsWith(".html") && !EXCLUDED.has(f));
+    files = (await readdir(dirPath)).filter((f) => isMainSiteHtmlFile(f) && !EXCLUDED.has(f));
   } catch {
     return { dir: siteDir, processed: 0, skipped: 0 };
   }

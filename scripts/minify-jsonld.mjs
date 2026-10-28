@@ -1,3 +1,4 @@
+import { isMainSiteHtmlFile } from "./standalone-privacy-pages.mjs";
 import { readdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -34,7 +35,7 @@ function compactJsonLd(html, fileName) {
   return { updated, blockCount, changedBlocks };
 }
 
-const files = (await readdir(siteDir)).filter((file) => file.endsWith(".html")).sort();
+const files = (await readdir(siteDir)).filter(isMainSiteHtmlFile).sort();
 const sources = await Promise.all(
   files.map(async (file) => ({ file, html: await readFile(path.join(siteDir, file), "utf8") }))
 );

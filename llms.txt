@@ -32,9 +32,10 @@ Free browser tools (English and Simplified Chinese):
 - Tool directory: https://www.xiaozhonglvyou.com/tools.html and https://www.xiaozhonglvyou.com/tools-cn.html
 - Image compressor and resizer: https://www.xiaozhonglvyou.com/image-compressor.html and https://www.xiaozhonglvyou.com/image-compressor-cn.html. Local JPEG, PNG, and WebP input; maximum 20 MiB and 20 megapixels; output longest side at most 4096 pixels. Compare actual dimensions, bytes and previews. A new file may be larger. No photo-library scan, deletion, OCR, cropping or HEIC conversion.
 - GIF maker and resizer: https://www.xiaozhonglvyou.com/gif-maker-online.html and https://www.xiaozhonglvyou.com/gif-maker-online-cn.html. Photos, browser-decodable short video, or existing GIF input. Maximum 20 MiB per file, 20 photos, 80 output frames, 640-pixel longest side and 15 seconds of selected video; additional source and cumulative pixel limits apply. Uses a 256-color palette and white background; output may be larger. Does not import Live Photos directly.
+- Cycling speed, time and distance calculator: https://www.xiaozhonglvyou.com/cycling-speed-calculator.html and https://www.xiaozhonglvyou.com/cycling-speed-calculator-cn.html. Enter two values to find the third in kilometers or miles. Stops are entered separately to show moving and elapsed time and their corresponding average speeds. Calculations use a constant average speed, with no GPS, route or actual arrival-time prediction. Numerical inputs are not uploaded or saved; tool analytics include only the mode and unit system.
 - Processing takes place in the browser without media uploads or an account. Website analytics record page and tool use without file names or media contents. Tools save separate download copies and do not overwrite originals. Browser codec support and available memory affect processing.
 
-Image and GIF guides (each English URL also has a -cn.html Simplified Chinese counterpart):
+Practical tool guides (each English URL also has a -cn.html Simplified Chinese counterpart):
 
 - Video to GIF frame rate, dimensions and duration: https://www.xiaozhonglvyou.com/gif-frame-rate-size-guide.html
 - Reduce GIF file size: https://www.xiaozhonglvyou.com/gif-reduce-file-size-guide.html
@@ -42,6 +43,7 @@ Image and GIF guides (each English URL also has a -cn.html Simplified Chinese co
 - GIF not animating after export or sharing: https://www.xiaozhonglvyou.com/gif-not-animating-guide.html
 - Image resize versus compression: https://www.xiaozhonglvyou.com/image-resize-vs-compress-guide.html
 - JPEG, PNG and WebP format tradeoffs: https://www.xiaozhonglvyou.com/jpeg-png-webp-guide.html
+- Cycling time, distance, unit conversion and moving versus overall average speed: https://www.xiaozhonglvyou.com/cycling-time-distance-guide.html
 - Compression versus duplicate cleanup is covered in https://www.xiaozhonglvyou.com/duplicate-photo-cleaner-guide.html and https://www.xiaozhonglvyou.com/duplicate-photo-cleaner-cn.html
 - Menu capture, OCR verification and translation checks: https://www.xiaozhonglvyou.com/voice-camera-translator-guide.html and https://www.xiaozhonglvyou.com/travel-translator-cn.html
 
@@ -57,7 +59,7 @@ Primary apps:
 - Inkstone Notes Markdown: iPhone writing app for plain .md files in iCloud Drive, wiki links, backlinks, bundled offline KaTeX/Mermaid rendering, search, and PDF/HTML export. The App Store lists English and Simplified Chinese. App Store: https://apps.apple.com/us/app/inkstone-notes-markdown/id6810287923?uo=4
 - TwoPic Dual Camera: iPhone app for simultaneous front/back photo and video capture with picture-in-picture or split layouts. The current US price is USD 0.99; the interface is Simplified Chinese. The App Store describes no network access and developer-reported data not collected. App Store: https://apps.apple.com/us/app/twopic-dual-camera/id6800405096?uo=4
 
-Last updated: 2026-10-25
+Last updated: 2026-10-28
 
 Important search and answer intents:
 

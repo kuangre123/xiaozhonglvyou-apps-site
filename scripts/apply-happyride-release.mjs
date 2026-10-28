@@ -78,6 +78,8 @@ function updateGuide(html) {
 
 export function updateHappyrideRelease(file, html) {
   if (!happyrideReleaseFiles.includes(file)) throw new Error(`Unsupported HappyRide release file: ${file}`);
+  const modifiedDates = [...html.matchAll(/"dateModified"\s*:\s*"(\d{4}-\d{2}-\d{2})"/g)].map((match) => match[1]);
+  const pageDate = [release.checkedDate, ...modifiedDates].sort().at(-1);
   const productPage = file.startsWith("happyride-auto-ride-tracker");
   const guide = file === "automatic-bike-ride-tracker-iphone.html";
   const chinese = file.endsWith("-cn.html");
@@ -85,7 +87,7 @@ export function updateHappyrideRelease(file, html) {
   if (guide) html = updateGuide(html);
   if (productPage || guide) {
     html = html.replace(/<meta\b[^>]*>/gi, (tag) => /\bproperty\s*=\s*(["'])article:modified_time\1/i.test(tag)
-      ? tag.replace(/(\bcontent\s*=\s*["'])[^"']*(["'])/i, `$1${release.checkedDate}$2`)
+      ? tag.replace(/(\bcontent\s*=\s*["'])[^"']*(["'])/i, `$1${pageDate}$2`)
       : tag);
     // Migrate pages already refreshed before the subscription wording was clarified.
     html = html.replaceAll("Optional HappyRide Pro unlocks the live cycling computer after the first free ride, advanced statistics, Quiet and Scenic route planning, and turn-by-turn voice navigation.", "An optional auto-renewing HappyRide Pro subscription unlocks the live cycling computer after the first free ride, advanced statistics, Quiet and Scenic route planning, and turn-by-turn voice navigation.")
@@ -107,7 +109,7 @@ export function updateHappyrideRelease(file, html) {
         node.availableLanguage = release.languages;
         if (node.offers) node.offers.description = chinese ? chineseFreeAnswer : freeAnswer;
       }
-      if ((productPage || guide) && ["WebPage", "Article", "TechArticle"].includes(node["@type"])) node.dateModified = release.checkedDate;
+      if ((productPage || guide) && ["WebPage", "Article", "TechArticle"].includes(node["@type"])) node.dateModified = pageDate;
       if (questions && node["@type"] === "FAQPage") node.mainEntity = questions;
       Object.values(node).forEach(visit);
     };

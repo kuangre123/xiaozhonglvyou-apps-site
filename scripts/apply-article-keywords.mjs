@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+import { isMainSiteHtmlFile } from "./standalone-privacy-pages.mjs";
 
 import { readdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
@@ -62,7 +63,7 @@ async function updateFile(fileName) {
 }
 
 const files = (await readdir(siteDir))
-  .filter((fileName) => fileName.endsWith(".html"))
+  .filter(isMainSiteHtmlFile)
   .filter((fileName) => fileName !== "404.html")
   .sort();
 const results = await Promise.all(files.map(updateFile));

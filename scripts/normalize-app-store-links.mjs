@@ -1,3 +1,4 @@
+import { isMainSiteHtmlFile } from "./standalone-privacy-pages.mjs";
 import { readdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -51,7 +52,7 @@ function normalizeAnchor(tag) {
   return updated;
 }
 
-const files = (await readdir(siteDir)).filter((name) => name.endsWith(".html")).sort();
+const files = (await readdir(siteDir)).filter(isMainSiteHtmlFile).sort();
 let changedFiles = 0;
 let changedLinks = 0;
 

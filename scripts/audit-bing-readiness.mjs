@@ -1,3 +1,4 @@
+import { isMainSiteHtmlFile } from "./standalone-privacy-pages.mjs";
 import { access, mkdir, readFile, readdir, writeFile } from "node:fs/promises";
 import path from "node:path";
 
@@ -53,7 +54,7 @@ function isIndexableHtml(html) {
 }
 
 async function auditFiles() {
-  const allFiles = (await readdir(siteDir)).filter((f) => f.endsWith(".html"));
+  const allFiles = (await readdir(siteDir)).filter(isMainSiteHtmlFile);
   const indexable = [];
   const excluded = [];
   const pages = [];

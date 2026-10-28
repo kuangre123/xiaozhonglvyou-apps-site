@@ -1,3 +1,4 @@
+import { isMainSiteHtmlFile } from "./standalone-privacy-pages.mjs";
 import { readdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -236,15 +237,15 @@ const hubLists = new Map([
   ]
 ]);
 
-// The public guide directory includes the six new task topics in both languages.
+// The public guide directory includes each task topic in both languages.
 hubLists.get("guides.html").items.push(...freeToolArticles.map((article) => [article.title, `${origin}/${freeToolFile(article)}`]));
 hubLists.set("tools.html", {
   name: "Free tools",
-  items: [["Image compressor and resizer", `${origin}/image-compressor.html`], ["GIF maker and resizer", `${origin}/gif-maker-online.html`]]
+  items: [["Image compressor and resizer", `${origin}/image-compressor.html`], ["GIF maker and resizer", `${origin}/gif-maker-online.html`], ["Cycling speed, time and distance calculator", `${origin}/cycling-speed-calculator.html`]]
 });
 hubLists.set("tools-cn.html", {
   name: "免费工具",
-  items: [["图片压缩与尺寸调整", `${origin}/image-compressor-cn.html`], ["GIF 制作与缩小", `${origin}/gif-maker-online-cn.html`]]
+  items: [["图片压缩与尺寸调整", `${origin}/image-compressor-cn.html`], ["GIF 制作与缩小", `${origin}/gif-maker-online-cn.html`], ["骑行速度、时间与距离计算器", `${origin}/cycling-speed-calculator-cn.html`]]
 });
 
 function developerEntity() {
@@ -556,7 +557,7 @@ function normalizeHtml(html, fileName) {
   return updated;
 }
 
-const files = (await readdir(siteDir)).filter((name) => name.endsWith(".html")).sort();
+const files = (await readdir(siteDir)).filter(isMainSiteHtmlFile).sort();
 let changed = 0;
 
 for (const fileName of files) {
