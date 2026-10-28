@@ -29,21 +29,21 @@ function countVisibleWords(value) {
 }
 
 test("translator comparison retains its target intent and synchronized update date", () => {
-  assert.ok(html.includes(`<title>Best Translator App for iPhone: 3 Compared (2026)</title>`));
+  assert.ok(html.includes(`<title>Best Translator Apps for Travel on iPhone: 3 Compared</title>`));
   assert.ok(html.includes('rel="canonical" href="https://www.xiaozhonglvyou.com/best-travel-translator-apps-iphone.html"'));
-  assert.ok(html.includes('Updated <time datetime="2026-10-03">October 3, 2026</time>'));
-  assert.ok(html.includes('article:modified_time" content="2026-10-03"'));
-  assert.equal(article.dateModified, "2026-10-03");
-  assert.equal(article.headline, "Best Translator App for iPhone: 3 Compared (2026)");
+  assert.ok(html.includes('Updated <time datetime="2026-10-28">October 28, 2026</time>'));
+  assert.ok(html.includes('article:modified_time" content="2026-10-28"'));
+  assert.equal(article.dateModified, "2026-10-28");
+  assert.equal(article.headline, "Best Translator Apps for Travel on iPhone: 3 Compared");
 });
 
 test("comparison reflects current official store facts without conflating language counts", () => {
   assert.match(html, /Translation Specialist: Speak; this comparison uses Translation Specialist for brevity/);
-  assert.match(html, /current US App Store listings on <time datetime="2026-10-03">October 3, 2026<\/time>/);
-  assert.match(html, /Store copy advertises 20 app languages; App Store language metadata lists English plus 7 more; live interpretation is separately described as supporting 17 languages/);
-  assert.match(html, /US App Store size at check date[\s\S]*?308\.3 MB[\s\S]*?986\.8 MB; check available storage and download on Wi-Fi/);
-  assert.match(html, /Version 2\.2\.3, released September 7, 2026, requires iOS 17\.4 or later/);
-  assert.match(html, /US App Store listing requires iOS 18 or later/);
+  assert.match(html, /current US App Store listings on <time datetime="2026-10-28">October 28, 2026<\/time>/);
+  assert.match(html, /8 interface languages in store metadata; description advertises 20 app languages, and historical release notes separately describe 17 live-interpretation languages/);
+  assert.match(html, /US App Store size at check date[\s\S]*?255\.5 MB[\s\S]*?986\.7 MB; check available storage and download on Wi-Fi/);
+  assert.match(html, /Version 2\.2\.4 requires iOS 17\.4 or later; released October 22, 2026 \(UTC\)/);
+  assert.match(html, /Version 10\.44\.368 requires iOS 18 or later/);
   assert.ok(!html.includes("20 app interface languages"));
   for (const url of [
     "https://apps.apple.com/us/app/google-translate/id414706506",

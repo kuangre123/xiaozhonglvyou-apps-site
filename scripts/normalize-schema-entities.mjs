@@ -38,7 +38,7 @@ const products = new Map([
       image: `${origin}/assets/travel-translator-icon.png`,
       applicationCategory: "TravelApplication",
       operatingSystem: "iOS",
-      softwareVersion: "2.2.3",
+      softwareVersion: "2.2.4",
       price: "0.00",
       priceCurrency: "USD"
     }

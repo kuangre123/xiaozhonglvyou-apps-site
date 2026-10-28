@@ -5,6 +5,8 @@ import path from "node:path";
 import { photoCleanerComparisonUpdate } from "./photo-cleaner-comparison-content.mjs";
 import { gifmakerRelease, gifmakerCheckedDateLabel } from "./gifmaker-release-facts.mjs";
 import { updateGifGuide, gifGuideBrowserUpdate } from "./gif-guide-browser-update.mjs";
+import { updateStorageGuide, storageOptimizeCard } from "./storage-guide-decision-update.mjs";
+import { updateTranslatorComparison } from "./translator-comparison-decision-update.mjs";
 import { menuTranslationGuideUpdate } from "./menu-translation-guide-content.mjs";
 
 const legacyShortcutsGifSection = [
@@ -363,7 +365,7 @@ const pages = [
       },
       {
         label: "storage guide iCloud option",
-        from: ["<div><strong>Understand the library</strong><p>Review animals, plants, food, restaurants, group photos, documents, receipts, invoices, and ID cards.</p></div>"],
+        from: [storageOptimizeCard, "<div><strong>Understand the library</strong><p>Review animals, plants, food, restaurants, group photos, documents, receipts, invoices, and ID cards.</p></div>"],
         to: "<div><strong>Keep every photo, use less device space</strong><p>Check Settings, your name, iCloud, then Photos for Optimize Storage. This uses iCloud storage, which is separate from iPhone storage and may require a paid plan for a large library. See <a href=\"https://support.apple.com/en-gb/108782\" target=\"_blank\" rel=\"noopener noreferrer\">Apple's iCloud Photos guide</a>.</p></div>"
       },
       {
@@ -865,7 +867,8 @@ const pages = [
       "3 travel translator apps compared.",
       "3 best travel translator apps for iPhone, compared.",
       "3 best translator apps for travel, compared.",
-      "Best translator apps for iPhone, compared."
+      "Best translator apps for iPhone, compared.",
+      "Best translator apps for travel on iPhone."
     ],
     replacements: [
       {
@@ -1680,6 +1683,7 @@ async function updatePage(siteDir, page) {
   const filePath = path.join(siteDir, page.file);
   let html = await readFile(filePath, "utf8");
   const original = html;
+  const currentTravelComparison = page.file === "best-travel-translator-apps-iphone.html" && html.includes("data-travel-task-link");
   if (page.file === "make-gif-on-iphone-guide.html") {
     html = html.replace(/<div role="row" data-browser-gif-comparison>[\s\S]*?<\/div>/g, "");
     html = html.replace(/<p>For still photos or a short supported video,[\s\S]*?<\/p>/, "<p>For a looping Live Photo, use Photos Loop or Bounce. For a .gif file from still photos, use Apple's Shortcuts Make GIF action. For video, Live Photos, or detailed frame editing, export a GIF with GIFmaker.</p>");
@@ -1736,6 +1740,8 @@ async function updatePage(siteDir, page) {
   }
 
   for (const replacement of page.replacements || []) {
+    // The maintained comparison updater owns these current factual fields.
+    if (currentTravelComparison && ["translator comparison hero summary", "translator comparison first-party research date and app name", "translator comparison published breadth and size rows", "translator comparison current system requirements"].includes(replacement.label)) continue;
     html = replaceFromCandidates(
       html,
       [...replacement.from, replacement.to],
@@ -1758,6 +1764,8 @@ async function updatePage(siteDir, page) {
   html = updateQuestions(html, pageWithResolvedArticle);
 
   if (page.file === "make-gif-on-iphone-guide.html") html = updateGifGuide(html);
+  if (page.file === "iphone-storage-cleanup-guide.html") html = updateStorageGuide(html);
+  if (page.file === "best-travel-translator-apps-iphone.html") html = updateTranslatorComparison(html);
   if (html !== original) await writeFile(filePath, html, "utf8");
   return html !== original;
 }
