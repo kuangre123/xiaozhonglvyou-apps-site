@@ -3,6 +3,8 @@ import { readdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { freeToolArticles, freeToolFile, freeToolsRoutes } from "./free-tools-content.mjs";
+import { articleUpdateDate } from "./article-update-date.mjs";
+import { updateDuplicateGuide } from "./duplicate-guide-native-update.mjs";
 
 const siteDir = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const origin = "https://www.xiaozhonglvyou.com";
@@ -23,9 +25,7 @@ const menu = (zh) => section("menu-photo-quality-check", zh ? "拍照与核对" 
   : `<div class="content-list"><div><strong>Improve the capture first</strong><p>Keep the menu flat and the camera nearly parallel to its text. Avoid glare and shadows. Photograph long menus in sections while keeping dish names, ingredients and prices together. Enlarge the original and check individual characters; compression cannot restore blurred writing.</p></div><div><strong>Resize a copy only when transfer requires it</strong><p>If a large file needs a smaller sharing copy, try the <a href="image-compressor.html">image tool</a>. Crop irrelevant surroundings in your photo editor first; this browser tool changes size and format rather than cropping. Compare small letters and punctuation after export. Keep the original when the reduced copy loses readable detail.</p></div><div><strong>Check recognition separately from translation</strong><p>Compare OCR line order, numbers and dish names against the photograph before reading the translation. Ask staff about uncertain ingredients or dietary requirements. The web image tool does not perform OCR or translation; choose the camera, saved-photo or typed-text route described above in an app that supports it.</p></div></div>`);
 function refreshArticle(html, updateDate = true, modifiedDate = date) {
   if (updateDate) {
-    html = html.replace(/(<meta\b[^>]*property="article:modified_time"[^>]*content=")[^"]+("[^>]*>)/g, `$1${modifiedDate}$2`);
-    const visibleDate = modifiedDate === "2026-10-28" ? (/lang="zh/i.test(html) ? "2026年10月28日更新" : "Updated October 28, 2026") : (/lang="zh/i.test(html) ? "2026年10月24日更新" : "Updated October 24, 2026");
-    html = html.replace(/<p class="article-meta">[\s\S]*?<\/p>/g, (meta) => meta.replace(/<time\b[^>]*>[\s\S]*?<\/time>/, `<time datetime="${modifiedDate}">${visibleDate}</time>`));
+    ({ html, date: modifiedDate } = articleUpdateDate(html, modifiedDate));
   }
   const text = (html.match(/<main\b[^>]*>([\s\S]*?)<\/main>/i)?.[1] || "").replace(/<[^>]*>/g, " ").replace(/\s+/g, " ").trim();
   return html.replace(/(<script\b[^>]*type="application\/ld\+json"[^>]*>)([\s\S]*?)(<\/script>)/g, (_, open, json, close) => {
@@ -63,6 +63,7 @@ for (const file of (await readdir(siteDir)).filter((f) => isMainSiteHtmlFile(f) 
     for (const node of nodes) if (node["@type"] === "SiteNavigationElement" && !node.itemListElement.some((item) => item.url === `${origin}/tools.html`)) node.itemListElement.push({ "@type": "SiteNavigationElement", name: "Free tools", url: `${origin}/tools.html` });
     return open + JSON.stringify(parsed) + close;
   });
+  if (["duplicate-photo-cleaner-guide.html", "duplicate-photo-cleaner-cn.html"].includes(file)) html = updateDuplicateGuide(html, file);
   html = refreshArticle(html, false);
   if (html !== before) { await writeFile(filePath, html); updated += 1; }
 }

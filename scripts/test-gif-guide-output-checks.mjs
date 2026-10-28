@@ -62,13 +62,13 @@ test("GIF guide explains preview, saving the generated result and actual sharing
 });
 
 test("output checks preserve GIF guide intent, video HowTo, FAQs, media and product price", () => {
-  assert.ok(html.includes("<title>How to Create an Animated GIF on iPhone (2026)</title>"));
+  assert.ok(html.includes("<title>How to Make a GIF on iPhone: 3 Ways (Photos &amp; Video)</title>"));
   assert.ok(html.includes(`<link rel="canonical" href="https://www.xiaozhonglvyou.com/${filename}">`));
   const article = nodes.find((node) => node["@type"] === "Article");
   assert.equal(article.datePublished, "2026-08-10");
-  assert.equal(article.dateModified, "2026-10-16");
-  assert.ok(html.includes('article:modified_time" content="2026-10-16"'));
-  assert.ok(html.includes('Updated <time datetime="2026-10-16">October 16, 2026</time>'));
+  assert.equal(article.dateModified, "2026-10-28");
+  assert.ok(html.includes('article:modified_time" content="2026-10-28"'));
+  assert.ok(html.includes('Updated <time datetime="2026-10-28">October 28, 2026</time>'));
   const main = html.match(/<main\b[^>]*>([\s\S]*?)<\/main>/)[1];
   const words = main.replace(/<[^>]*>/g, " ").replace(/\s+/g, " ").trim().split(/\s+/).length;
   assert.equal(article.wordCount, words);
@@ -108,7 +108,7 @@ test("GIF guide generation is idempotent and migrates method choices and Shortcu
   const legacyHeroes = ["GIF maker app", "See GIFmaker details"].map((label) => '<div class="hero-actions" aria-label="GIF guide actions"><a class="button button-primary" href="https://apps.apple.com/us/app/gifmaker-gif-studio/id6783559364?uo=4" target="_blank" rel="noopener noreferrer" data-analytics-event="app_store_click" data-store-product="gifmaker-gif-studio" data-storefront="ios-app-store" aria-label="View GIFmaker on the App Store (opens in a new tab)">View on App Store</a> <a class="button button-secondary" href="gif-maker.html">' + label + '</a></div>');
   const fixtures = [
     html, withoutSharing.replace(currentSection, legacy), withoutSharing.replace(currentSection, ""),
-    ...legacyHeroes.map((hero) => html.replace(methodBlock, hero).replaceAll("2026-10-16", "2026-10-09").replaceAll("October 16, 2026", "October 9, 2026"))
+    ...legacyHeroes.map((hero) => html.replace(methodBlock, hero).replaceAll("2026-10-28", "2026-10-09").replaceAll("October 28, 2026", "October 9, 2026"))
   ];
   const directory = await mkdtemp(path.join(tmpdir(), "gif-output-checks-"));
   try {

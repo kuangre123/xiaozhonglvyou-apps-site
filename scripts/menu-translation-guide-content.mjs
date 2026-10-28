@@ -41,10 +41,12 @@ const previousWorkflowAction = '<div class="hero-actions" aria-label="Download T
 const workflowAction = '<div class="hero-actions" aria-label="Optional travel app details"><a class="button button-primary" href="travel-translator.html">Check Translation Specialist features</a></div>';
 
 export const menuTranslationGuideUpdate = {
-  modifiedDate: "2026-10-20",
-  modifiedDateLabel: "October 20, 2026",
+  modifiedDate: "2026-10-28",
+  modifiedDateLabel: "October 28, 2026",
   article: {
-    dateModified: "2026-10-20",
+    dateModified: "2026-10-28",
+    headline: "How to Translate a Menu on iPhone: Camera & Photos",
+    description: "Translate a printed menu or saved photo with Apple Translate on iPhone. Follow Camera and Photo Library steps, plus text and offline language checks.",
     citation: [cameraSource, liveTextSource]
   },
   replacements: [

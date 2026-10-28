@@ -4,6 +4,7 @@ import { readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { photoCleanerComparisonUpdate } from "./photo-cleaner-comparison-content.mjs";
 import { gifmakerRelease, gifmakerCheckedDateLabel } from "./gifmaker-release-facts.mjs";
+import { updateGifGuide, gifGuideBrowserUpdate } from "./gif-guide-browser-update.mjs";
 import { menuTranslationGuideUpdate } from "./menu-translation-guide-content.mjs";
 
 const legacyShortcutsGifSection = [
@@ -605,7 +606,8 @@ const pages = [
       "How to Make a Real GIF on iPhone in 5 Steps (2026)",
       "How to Make a GIF on iPhone From Video or Live Photo (2026)",
       "How to Make a GIF on iPhone From Video: 5 Steps (2026)",
-      "How to Create an Animated GIF on iPhone (2026)"
+      "How to Create an Animated GIF on iPhone (2026)",
+      gifGuideBrowserUpdate.title
     ],
     article: {
       "@id": "https://www.xiaozhonglvyou.com/make-gif-on-iphone-guide.html#article",
@@ -651,7 +653,8 @@ const pages = [
       "Make a real GIF on iPhone in 5 steps.",
       "Make a GIF from video or a Live Photo on iPhone.",
       "Make a GIF on iPhone from video in 5 steps.",
-      "Create an animated GIF on iPhone from photos or video."
+      "Create an animated GIF on iPhone from photos or video.",
+      gifGuideBrowserUpdate.heading
     ],
     replacements: [
       {
@@ -1208,24 +1211,26 @@ const pages = [
   },
   {
     file: "voice-camera-translator-guide.html",
-    title: "How to Translate Menus on iPhone: Camera &amp; Voice (2026)",
-    description: "Translate menus on iPhone with Apple Translate camera; check dishes and prices, then use voice for questions. Six steps cover language and offline limits.",
+    title: "How to Translate a Menu on iPhone: Camera &amp; Photos",
+    description: "Translate a printed menu or saved photo with Apple Translate on iPhone. Follow Camera and Photo Library steps, plus text and offline language checks.",
     keywords: "how to translate menus on iPhone, translate a menu on iPhone, Apple Translate camera, translate conversations on iPhone, translate signs with camera, iPhone translation guide",
     modifiedDate: "2026-09-23",
     modifiedDateLabel: "September 23, 2026",
     article: {
-      description: "Translate menus on iPhone with Apple Translate camera; check dishes and prices, then use voice for questions. Six steps cover language and offline limits."
+      description: "Translate a printed menu or saved photo with Apple Translate on iPhone. Follow Camera and Photo Library steps, plus text and offline language checks."
     },
     autoArticleWordCount: true,
     headline: [
       "Voice and Camera Translator Guide for Travel",
       "Voice and Camera Translator for Travel",
       "Voice and Camera Translator for Travel: 6 Steps (2026)",
-      "How to Translate Menus on iPhone: Camera & Voice (2026)"
+      "How to Translate Menus on iPhone: Camera & Voice (2026)",
+      "How to Translate a Menu on iPhone: Camera & Photos"
     ],
     h1: [
       "Translate menus, signs, and conversations in 6 steps.",
-      "How to translate menus on iPhone, then handle conversations."
+      "How to translate menus on iPhone, then handle conversations.",
+      "How to translate a menu on iPhone: camera or saved photo."
     ],
     ...menuTranslationGuideUpdate
   },
@@ -1675,6 +1680,13 @@ async function updatePage(siteDir, page) {
   const filePath = path.join(siteDir, page.file);
   let html = await readFile(filePath, "utf8");
   const original = html;
+  if (page.file === "make-gif-on-iphone-guide.html") {
+    html = html.replace(/<div role="row" data-browser-gif-comparison>[\s\S]*?<\/div>/g, "");
+    html = html.replace(/<p>For still photos or a short supported video,[\s\S]*?<\/p>/, "<p>For a looping Live Photo, use Photos Loop or Bounce. For a .gif file from still photos, use Apple's Shortcuts Make GIF action. For video, Live Photos, or detailed frame editing, export a GIF with GIFmaker.</p>");
+    html = html.replace(/<p class="hero-summary">[\s\S]*?<\/p>/, '<p class="hero-summary">Use Shortcuts to make a GIF from photos, or turn a video or Live Photo into a GIF with frame controls. Photos Loop is a quick effect, not a .gif export.</p>');
+    html = html.replace(/<div class="hero-actions" aria-label="Choose a GIF creation method">[\s\S]*?<\/div>/, '<div class="hero-actions" aria-label="Choose a GIF creation method"><a class="button button-primary" href="#make-gif-with-shortcuts">Use Shortcuts for photos</a> <a class="button button-secondary" href="#make-gif-steps">Video or Live Photo steps</a></div>');
+    html = html.replace(/<p class="article-meta">Published August 10, 2026 · Updated <time[^>]*>[^<]*<\/time> by/, '<p class="article-meta">Published August 10, 2026 · Updated <time datetime="2026-10-16">October 16, 2026</time> by');
+  }
 
   html = removeJsonLdNodesById(html, page.removeJsonLdIds);
 
@@ -1745,6 +1757,7 @@ async function updatePage(siteDir, page) {
   html = updateJsonLd(html, pageWithResolvedArticle);
   html = updateQuestions(html, pageWithResolvedArticle);
 
+  if (page.file === "make-gif-on-iphone-guide.html") html = updateGifGuide(html);
   if (html !== original) await writeFile(filePath, html, "utf8");
   return html !== original;
 }
