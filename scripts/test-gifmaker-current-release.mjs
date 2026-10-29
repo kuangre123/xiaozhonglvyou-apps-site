@@ -52,7 +52,7 @@ test("GIFmaker product copy and media facts do not advertise the old release", a
   for (const file of ["gif-maker.html", "gif-maker-cn.html"]) {
     const html = await readFile(new URL(file, site), "utf8");
     assert.match(html, /data-gifmaker-languages="1\.2\.0"/);
-    assert.equal(nodes(html).find((node) => node["@type"] === "WebPage").dateModified, "2026-10-15");
+    assert.equal(nodes(html).find((node) => node["@type"] === "WebPage").dateModified, "2026-10-29");
   }
 });
 
