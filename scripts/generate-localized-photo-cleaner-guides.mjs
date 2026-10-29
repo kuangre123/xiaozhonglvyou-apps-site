@@ -117,11 +117,19 @@ const pages = [
     lang: "de-DE",
     locale: "de_DE",
     storeCountry: "de",
-    title: "iPhone Foto Cleaner | KI sortieren und Duplikate prüfen",
-    description: "Deutscher iPhone-Foto-Cleaner-Leitfaden: Fotos mit KI sortieren und Duplikate, ähnliche Bilder, Screenshots und unscharfe Fotos vor dem Löschen prüfen.",
+    title: "iPhone Foto Cleaner: Duplikate ohne Zusatz-App löschen",
+    modifiedDate: "2026-10-29",
+    taskId: "fotos-ohne-zusatz-app",
+    taskLabel: "Kostenlose Schritte öffnen",
+    sources: [
+      ["Apple: Fotos-Sammlungen finden", "https://support.apple.com/de-de/121870"],
+      ["Apple: Fehlende Duplikate", "https://support.apple.com/de-de/102260"],
+      ["Apple: Löschen und Wiederherstellen", "https://support.apple.com/de-de/guide/iphone/iphb4defbde9/ios"]
+    ],
+    description: "Doppelte Fotos am iPhone prüfen und zusammenführen: kostenlose Schritte in Apple Fotos, fehlende Duplikate, iCloud-Löschung und AI Cleanings Pro-Grenzen.",
     keywords: ["iPhone Foto Cleaner", "KI Fotos sortieren", "doppelte Fotos iPhone", "iPhone Fotos aufräumen", "ähnliche Bilder prüfen", "iPhone Speicher bereinigen"],
-    ogTitle: "iPhone Foto Cleaner mit KI Foto Sortierung",
-    ogDescription: "Deutscher Leitfaden: Erst Fotos sortieren, dann Duplikate, Screenshots, unscharfe Fotos und große Medien prüfen.",
+    ogTitle: "iPhone-Fotos aufräumen: kostenlose Schritte und Pro-Grenzen",
+    ogDescription: "Duplikate in Apple Fotos prüfen, fehlende Gruppen verstehen und vor dem Löschen iCloud sowie Zuletzt gelöscht beachten.",
     breadcrumb: "iPhone Foto Cleaner",
     countryName: "Deutschland",
     marketFile: "de-de.html",
@@ -131,34 +139,38 @@ const pages = [
     navDirectory: "Verzeichnis",
     eyebrow: "Deutschsprachiger iPhone-Foto-Cleaner-Ratgeber",
     imageAlt: "AI Cleaning iPhone-Foto-Klassifizierung",
-    h1: "Fotos zuerst mit KI sortieren, dann sicher bereinigen.",
-    lead: "Eine große iPhone-Fotomediathek enthält nicht nur doppelte Bilder. Darin liegen auch Dokumente, Belege, Ausweise, Screenshots, Gruppenfotos und Erinnerungen. AI Cleaning hilft beim Sortieren, bevor Sie mögliche Löschkandidaten prüfen.",
+    h1: "Doppelte Fotos auf dem iPhone prüfen und zusammenführen.",
+    lead: "Beginnen Sie in Apple Fotos: Erkannte Duplikate lassen sich ohne zusätzliche App zusammenführen. Die folgenden Schritte helfen auch, wenn Duplikate fehlen oder der Speicher danach knapp bleibt. Wer mit KI Fotos sortieren möchte, kann anschließend AI Cleaning prüfen; dessen automatische Kategorien erfordern Pro.",
     primary: "AI Cleaning im deutschen App Store prüfen",
     secondary: "Zur Deutschland-Seite",
-    quickTitle: "Ein iPhone-Foto-Cleaner sollte Sortieren, Prüfen und Löschen trennen.",
-    quickLead: "AI Cleaning zeigt Kategorien und mögliche Bereinigungsgruppen als Entscheidungshilfe. Wichtige Bilder prüfen Sie zuerst; die endgültige Auswahl zum Löschen bleibt bei Ihnen.",
+    quickTitle: "Ohne zusätzliche App: Duplikate und Medien in Apple Fotos prüfen.",
+    quickLead: "Die Schritte beziehen sich auf Fotos in iOS 26; bei älteren Versionen können Bereiche anders heißen. Gehen Sie zunächst eine einzelne Gruppe durch, bevor Sie weitere Bilder auswählen.",
     quickItems: [
-      ["1. Fotos nach Inhalt sortieren", "Ordnen Sie Dokumente, Belege, Ausweise, Essen, Pflanzen, Tiere und Gruppenfotos zunächst ein. So können Sie wichtige Bilder leichter aus der Bereinigung ausschließen."],
-      ["2. Duplikate und ähnliche Bilder vergleichen", "Eine exakte Kopie und eine ähnliche Aufnahme sind nicht dasselbe. Vergleichen Sie Schärfe, Gesichtsausdruck, Bearbeitungsstand und lesbaren Text, bevor Sie eine Version behalten."],
-      ["3. Screenshots und große Medien prüfen", "Temporäre Screenshots, unscharfe Fotos und große Videos sind eigene Prüfschritte. Nach dem Löschen sollten Sie auch das Album ‚Zuletzt gelöscht‘ kontrollieren."]
+      ["1. Erkannte Duplikate öffnen", "Öffnen Sie Fotos und suchen Sie unter Sammlungen und Sonstige nach Duplikate. Öffnen Sie eine Gruppe und vergleichen Sie die Bilder. Nur geprüfte Gruppen zusammenführen; ähnliche Motive können unterschiedliche Erinnerungen sein."],
+      ["2. Fehlen die Duplikate?", "Die Erkennung braucht ein gesperrtes iPhone mit Stromversorgung. Je nach Mediathek kann sie mehrere Tage dauern. Eine fehlende Sammlung ist noch kein Grund, eine Cleaner-App zu kaufen."],
+      ["3. Screenshots und Videos getrennt prüfen", "Öffnen Sie unter Sammlungen die Medienarten und wählen Sie etwa Bildschirmfotos oder Videos. Öffnen Sie einzelne Dateien; Tickets und Belege können weiterhin wichtig sein. Wählen Sie erst danach entbehrliche Aufnahmen aus."],
+      ["4. iCloud vor dem Löschen berücksichtigen", "Wenn iCloud-Fotos aktiv ist, wird eine Löschung auch auf andere Geräte mit demselben Apple Account übertragen. Sichern Sie wichtige Originale unabhängig, bevor Sie Fotos entfernen."],
+      ["5. Zuletzt gelöscht kontrollieren", "Öffnen Sie unter Sammlungen und Sonstige den Bereich Zuletzt gelöscht. Dort können Sie versehentlich entfernte Bilder innerhalb von 30 Tagen wiederherstellen. Leeren Sie den Bereich nur nach Prüfung; endgültig gelöschte Bilder lassen sich dort nicht mehr zurückholen."]
     ],
     checksTitle: "Der sichere Umfang einer Foto-Bereinigung.",
     checksLead: "Synchronisierung, wichtige Dokumente und das Album ‚Zuletzt gelöscht‘ gehören zur Kontrolle. Ein Speicherwert allein sagt nicht, welches Bild entbehrlich ist.",
     checks: [
-      ["Fotos werden nicht automatisch gelöscht", "Kategorien und Kandidaten dienen der Orientierung. Sie öffnen die Gruppe, prüfen den Inhalt und entscheiden selbst, welche Fotos entfernt werden."],
-      ["Die Fotomediathek ist der Anwendungsbereich", "Die App wird nicht als Werkzeug zum Löschen geschützter iOS-Systemdaten oder zum Reinigen des Arbeitsspeichers angeboten. Fotoorganisation und Systemwartung sind unterschiedliche Aufgaben."],
-      ["Wichtige Bilder einzeln öffnen", "Dokumente, Tickets, Belege, Familienfotos und bearbeitete Aufnahmen nicht nur anhand einer Gruppe auswählen. Öffnen Sie das Original und prüfen Sie die Synchronisierung."],
-      ["Aktuelle Bedingungen im Store prüfen", "Preise, In-App-Käufe, iOS-Anforderung, Sprachen und Datenschutzangaben können sich ändern. Maßgeblich ist der aktuelle deutsche App-Store-Eintrag vor der Installation."]
+      ["Apple Fotos zuerst", "Für erkannte Duplikate, manuelle Auswahl und vorhandene Alben ist kein zusätzlicher Download nötig. Wenn diese Funktionen Ihre Aufgabe lösen, brauchen Sie keinen iPhone Foto Cleaner zu installieren."],
+      ["KI-Sortierung mit Pro", "AI Cleaning kann mit Pro neun Inhaltskategorien bilden. Diese Vorschläge ersetzen keine Einzelprüfung. Die automatische Kategorisierung ist nicht Teil des kostenlosen Downloads."],
+      ["Kostenloses Bereinigungskontingent", "Ohne Pro ist eine erfolgreiche Bereinigungsaktion über die berechtigten Werkzeuge hinweg möglich. Es ist kein tägliches Kontingent und keine Freigabe pro Bildschirm. Eine Aktion kann mehrere ausgewählte Objekte umfassen; weitere gesperrte Aktionen erfordern Pro."],
+      ["Grenzen der App", "Fotoorganisation entfernt keine geschützten iOS-Systemdaten und reinigt keinen RAM. Weder Apple Fotos noch eine Cleaner-App kann am Speicherwert erkennen, welche Erinnerung für Sie entbehrlich ist."]
     ],
     storeTitle: "Aktuelle Preise und Anforderungen vor der Installation prüfen.",
     storeLead: "Im deutschen App Store können Sie die aktuelle iOS-Anforderung, den Preis, mögliche In-App-Käufe, die Sprachliste und die Datenschutzangaben von AI Cleaning prüfen.",
     storeText: "Ein iPhone-Dienstprogramm, das Fotos auf dem Gerät klassifiziert und mögliche Prüfgruppen für die Mediathek zusammenstellt.",
     faqTitle: "Fragen vor dem Download.",
     faq: [
+      ["Warum fehlt Duplikate in Apple Fotos?", "Die Mediathek muss zunächst analysiert werden. Lassen Sie das iPhone gesperrt und am Strom. Die Suche kann je nach Umfang und Hintergrundaufgaben mehrere Tage dauern."],
+      ["Kann ich mit AI Cleaning kostenlos mit KI Fotos sortieren?", "Die neun automatischen Kategorien benötigen Pro. Der kostenlose Download ist keine Freischaltung der KI-Kategorisierung. Für eine erste manuelle Organisation können Sie die vorhandenen Funktionen von Apple Fotos verwenden."],
       ["Kann ein iPhone Foto Cleaner doppelte Fotos löschen?", "Er kann Duplikate und ähnliche Fotos als Prüfgruppen anzeigen. Sie sollten jede Gruppe vergleichen und die zu löschenden Fotos selbst auswählen."],
-      ["Lädt AI Cleaning meine Fotos auf einen Server hoch?", "Nach der aktuellen Produktbeschreibung erfolgt die Fotoanalyse auf dem iPhone; die Fotomediathek wird nicht hochgeladen. Prüfen Sie beim Installieren zusätzlich die aktuelle Datenschutzangabe im deutschen App Store."],
+      ["Lädt AI Cleaning meine Fotos auf einen Server hoch?", "Laut Entwicklerbeschreibung erfolgt die Analyse auf dem Gerät. Die Datenschutzangaben im deutschen App Store stammen vom Entwickler und sind nicht von Apple verifiziert. Eine eigene iCloud-Fotomediathek hat davon getrennte Synchronisierungseinstellungen."],
       ["Was ist der Unterschied zwischen Duplikaten und ähnlichen Fotos?", "Duplikate sind Kopien desselben Bildes. Ähnliche Fotos können verschiedene Aufnahmen einer Serie sein. Schärfe, Ausdruck, Bearbeitung und wichtige Details müssen vor dem Löschen verglichen werden."],
-      ["Warum wird der iPhone-Speicher nach dem Löschen nicht sofort frei?", "iOS bewahrt gelöschte Fotos zunächst im Album ‚Zuletzt gelöscht‘ auf. Wenn Sie Speicher freigeben möchten, prüfen und verwalten Sie dieses Album erst nach der inhaltlichen Kontrolle."],
+      ["Warum wird der iPhone-Speicher nach dem Löschen nicht sofort frei?", "Gelöschte Fotos bleiben normalerweise 30 Tage in „Zuletzt gelöscht“. Prüfen Sie dort zuerst, ob Sie etwas wiederherstellen möchten. Endgültiges Löschen beendet diese Wiederherstellungsmöglichkeit. Bei iCloud-Fotos betrifft die Löschung auch die anderen synchronisierten Geräte."],
       ["Welche iPhones unterstützt AI Cleaning?", "Nach den aktuellen Produktinformationen wird iOS 16.0 oder neuer benötigt. Kompatible Geräte, Version, Preis und Datenschutzangaben prüfen Sie vor dem Download im deutschen App Store."]
     ],
     relatedTitle: "Diesen Foto-Cleaner-Ratgeber in einer anderen Sprache lesen.",
@@ -169,7 +181,7 @@ const pages = [
       faqKicker: "Häufige Fragen",
       storeKicker: "Im App Store prüfen",
       storeLink: "Deutschen App Store öffnen",
-      updated: "Am 1. September 2026 aktualisiert",
+      updated: "Am 29. Oktober 2026 aktualisiert",
       author: "Autor",
       privacy: "Datenschutz",
       contact: "Kontakt"
@@ -299,6 +311,7 @@ const relatedGuides = [
 
 function render(page) {
   const url = `${origin}/${page.file}`;
+  const modifiedDate = page.modifiedDate ?? updatedDate;
   const article = {
     "@context": "https://schema.org",
     "@type": "Article",
@@ -309,7 +322,8 @@ function render(page) {
     articleSection: "Regional Guides",
     inLanguage: page.lang,
     datePublished: updatedDate,
-    dateModified: updatedDate,
+    dateModified: modifiedDate,
+    ...(page.sources ? { citation: page.sources.map(([, href]) => href) } : {}),
     author: developer,
     about: [appEntity(page)],
     publisher,
@@ -349,7 +363,7 @@ function render(page) {
     `<meta name="apple-itunes-app" content="app-id=${appId}, app-argument=${url}">`,
     `<link rel="canonical" href="${url}">`, alternateMarkup(),
     `<link rel="alternate" type="application/rss+xml" title="CrazyAIAgent RSS" href="${origin}/feed.xml"><link rel="alternate" type="application/atom+xml" title="CrazyAIAgent Atom" href="${origin}/atom.xml">`,
-    `<meta property="og:type" content="article"><meta property="og:locale" content="${page.locale}"><meta property="article:published_time" content="${updatedDate}"><meta property="article:modified_time" content="${updatedDate}">`,
+    `<meta property="og:type" content="article"><meta property="og:locale" content="${page.locale}"><meta property="article:published_time" content="${updatedDate}"><meta property="article:modified_time" content="${modifiedDate}">`,
     `<meta property="og:url" content="${url}"><meta property="og:title" content="${escapeHtml(page.ogTitle)}"><meta property="og:site_name" content="CrazyAIAgent"><meta property="og:description" content="${escapeHtml(page.ogDescription)}">`,
     `<meta property="og:image" content="${origin}/assets/og-ai-photo-cleaner-iphone.jpg"><meta property="og:image:secure_url" content="${origin}/assets/og-ai-photo-cleaner-iphone.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="iPhone photo cleaner with AI sorting">`,
     `<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="${escapeHtml(page.ogTitle)}"><meta name="twitter:description" content="${escapeHtml(page.ogDescription)}"><meta name="twitter:image" content="${origin}/assets/og-ai-photo-cleaner-iphone.jpg">`,
@@ -358,8 +372,8 @@ function render(page) {
   ].join("");
   const header = `<body class="localized-photo-cleaner-page"><header class="site-header" data-elevate><nav class="nav" aria-label="Primary"><a class="brand" href="${page.marketFile}" aria-label="CrazyAIAgent"><span class="brand-mark" aria-hidden="true">CA</span><span>CrazyAIAgent</span></a><div class="nav-links"><a href="${page.marketFile}">${page.countryName}</a><a href="guides.html">${page.navGuide}</a><a href="directory.html">${page.navDirectory}</a></div>${storeLink(page, "App Store", "nav-cta")}</nav></header>`;
   const decisionAction = page.decisionFile ? `<a class="button button-secondary" href="${page.decisionFile}">${escapeHtml(page.decisionLabel)}</a>` : "";
-  const hero = `<main class="page-main"><section class="page-hero"><div class="page-hero-copy"><nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="${page.marketFile}">${page.countryName}</a></li><li aria-current="page">${escapeHtml(page.breadcrumb)}</li></ol></nav><p class="eyebrow">${escapeHtml(page.eyebrow)}</p><h1>${escapeHtml(page.h1)}</h1><p>${escapeHtml(page.lead)}</p><p class="article-meta"><time datetime="${updatedDate}">${escapeHtml(page.ui.updated)}</time> · ${escapeHtml(page.ui.author)} <a href="about.html" rel="author">Bo Chen</a></p><div class="hero-actions">${storeLink(page, page.primary, "button button-primary")}<a class="button button-secondary" href="${page.marketFile}">${escapeHtml(page.secondary)}</a>${decisionAction}</div></div><div class="page-hero-media"><picture><source srcset="assets/ai-cleaning-screen.webp" type="image/webp"><img src="assets/ai-cleaning-screen.png" width="331" height="720" decoding="async" fetchpriority="high" alt="${escapeHtml(page.imageAlt ?? "AI Cleaning photo classification screen")}"></picture></div></section>`;
-  const quickSection = `<section class="section content-section"><div class="section-inner content-grid"><div><p class="section-kicker">${escapeHtml(page.ui.answerKicker)}</p><h2>${escapeHtml(page.quickTitle)}</h2><p>${escapeHtml(page.quickLead)}</p></div><div class="content-list">${listMarkup(page.quickItems)}</div></div></section>`;
+  const hero = `<main class="page-main"><section class="page-hero"><div class="page-hero-copy"><nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="${page.marketFile}">${page.countryName}</a></li><li aria-current="page">${escapeHtml(page.breadcrumb)}</li></ol></nav><p class="eyebrow">${escapeHtml(page.eyebrow)}</p><h1>${escapeHtml(page.h1)}</h1><p>${escapeHtml(page.lead)}</p><p class="article-meta"><time datetime="${modifiedDate}">${escapeHtml(page.ui.updated)}</time> · ${escapeHtml(page.ui.author)} <a href="about.html" rel="author">Bo Chen</a></p><div class="hero-actions">${page.taskId ? `<a class="button button-primary" href="#${page.taskId}">${escapeHtml(page.taskLabel)}</a>` : ""}${storeLink(page, page.primary, page.taskId ? "button button-secondary" : "button button-primary")}<a class="button button-secondary" href="${page.marketFile}">${escapeHtml(page.secondary)}</a>${decisionAction}</div></div><div class="page-hero-media"><picture><source srcset="assets/ai-cleaning-screen.webp" type="image/webp"><img src="assets/ai-cleaning-screen.png" width="331" height="720" decoding="async" fetchpriority="high" alt="${escapeHtml(page.imageAlt ?? "AI Cleaning photo classification screen")}"></picture></div></section>`;
+  const quickSection = `<section${page.taskId ? ` id="${page.taskId}"` : ""} class="section content-section"><div class="section-inner content-grid"><div><p class="section-kicker">${escapeHtml(page.ui.answerKicker)}</p><h2>${escapeHtml(page.quickTitle)}</h2><p>${escapeHtml(page.quickLead)}</p></div><div class="content-list">${listMarkup(page.quickItems)}${page.sources ? `<p>${page.sources.map(([label, href]) => `<a href="${href}">${escapeHtml(label)}</a>`).join(" · ")}</p>` : ""}</div></div></section>`;
   const checksSection = `<section class="section content-section alt-section"><div class="section-inner content-grid"><div><p class="section-kicker">${escapeHtml(page.ui.checksKicker)}</p><h2>${escapeHtml(page.checksTitle)}</h2><p>${escapeHtml(page.checksLead)}</p></div><div class="content-list">${listMarkup(page.checks)}</div></div></section>`;
   const faqSection = `<section class="section faq"><div class="section-inner"><div class="section-heading"><p class="section-kicker">${escapeHtml(page.ui.faqKicker)}</p><h2>${escapeHtml(page.faqTitle)}</h2></div><div class="faq-list">${page.faq.map(([question, answer], index) => `<details${index === 0 ? " open" : ""}><summary>${escapeHtml(question)}</summary><p>${escapeHtml(answer)}</p></details>`).join("")}</div></div></section>`;
   const relatedSection = `<section class="section content-section alt-section"><div class="section-inner"><div class="section-heading"><div><p class="section-kicker">${escapeHtml(page.relatedLabel)}</p><h2>${escapeHtml(page.relatedTitle)}</h2></div></div><p>${relatedMarkup}</p></div></section></main>`;

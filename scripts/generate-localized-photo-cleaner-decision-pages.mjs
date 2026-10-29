@@ -137,11 +137,14 @@ const pages = [
     lang: "de-DE",
     locale: "de_DE",
     storeCountry: "de",
-    title: "Beste iPhone Foto Cleaner | KI App richtig wählen",
-    description: "iPhone Foto Cleaner in Deutschland: AI Cleanings kostenloses Kontingent, Pro-Grenzen, Datenschutz und neue Live-Photo- und Serienbild-Werkzeuge.",
+    title: "iPhone Foto Cleaner: Apple Fotos oder AI Cleaning?",
+    modifiedDate: "2026-10-29",
+    taskId: "apple-fotos-oder-cleaner",
+    taskLabel: "Kostenlose und Pro-Funktionen vergleichen",
+    description: "Apple Fotos oder AI Cleaning? Vergleichen Sie kostenlose Duplikat-Funktionen, KI-Sortierung mit Pro, Datenschutz und Löschkontrolle auf dem iPhone.",
     keywords: ["beste iPhone Foto Cleaner", "iPhone Foto Cleaner Vergleich", "doppelte Fotos App", "KI Fotos sortieren", "iPhone Speicher bereinigen", "AI Cleaning"],
-    ogTitle: "Beste iPhone Foto Cleaner richtig auswählen",
-    ogDescription: "AI Cleanings kostenloses Bereinigungskontingent, Pro-Grenzen und neue Funktionen im deutschen iPhone-Foto-Cleaner-Ratgeber.",
+    ogTitle: "Apple Fotos oder AI Cleaning: Welche Funktionen brauchen Sie?",
+    ogDescription: "Kostenlose Apple-Fotos-Funktionen und AI Cleaning mit Pro nach Aufgabe vergleichen, bevor Sie eine zusätzliche App installieren.",
     breadcrumb: "Beste Foto-Cleaner wählen",
     countryName: "Deutschland",
     marketFile: "de-de.html",
@@ -151,19 +154,20 @@ const pages = [
     navDirectory: "Verzeichnis",
     eyebrow: "Deutschsprachiger Auswahlratgeber",
     imageAlt: "AI Cleaning zeigt Foto-Kategorien auf dem iPhone",
-    h1: "Der beste iPhone Foto Cleaner ist der, der vor dem Löschen Kontrolle lässt.",
-    lead: "Wer in Deutschland nach einem iPhone Foto Cleaner sucht, will meist Speicher freigeben, ohne wichtige Fotos zu verlieren. Ein guter Foto-Cleaner sollte nicht nur einen großen Löschen-Knopf anbieten. Entscheidend sind KI-Sortierung, klare Gruppen für Duplikate und ähnliche Bilder, eine verständliche Vorschau, Datenschutzangaben und die Möglichkeit, jede Entscheidung vor dem Löschen selbst zu treffen.",
+    h1: "Apple Fotos oder AI Cleaning: Welcher Foto-Cleaner passt zu Ihrer Aufgabe?",
+    lead: "Für erkannte Duplikate und manuelle Fotoauswahl reicht oft Apple Fotos. AI Cleaning ergänzt Prüfgruppen und mit Pro eine automatische Kategorisierung. Vergleichen Sie zuerst die benötigte Funktion und deren Kosten. Dieser Ratgeber stammt vom Entwickler von AI Cleaning; er ist kein unabhängiger App-Test.",
     primary: "AI Cleaning im deutschen App Store prüfen",
     secondary: "Foto-Cleaner-Ratgeber lesen",
     sections: [
       {
         kicker: "Kurzentscheidung",
-        title: "Wählen Sie nach Kontrollfluss, nicht nur nach versprochenem Speichergewinn.",
-        lead: "AI Cleaning ist dann eine passende Option, wenn Sie Ihre Fotomediathek zuerst verstehen und danach gezielt aufräumen möchten.",
+        title: "Kostenlos beginnen oder Pro wählen: die Unterschiede nach Aufgabe.",
+        lead: "Eine zusätzliche App lohnt sich nur, wenn sie einen konkreten Arbeitsschritt erleichtert. Prüfen Sie vor einer Zahlung, ob die integrierten Funktionen bereits ausreichen.",
         items: [
-          ["Voransicht vor Löschung", "Die App sollte Gruppen öffnen lassen, damit Sie Schärfe, Gesichter, Text, Bearbeitungen und Erinnerungswert prüfen können."],
-          ["KI-Sortierung", "Kategorien wie Dokumente, Belege, Ausweise, Essen, Pflanzen, Tiere und Gruppenfotos helfen, sensible Bilder aus einer Bereinigung herauszunehmen."],
-          ["Deutscher App Store", "Preise, In-App-Käufe, iOS-Anforderung, Sprachliste und Datenschutzangaben müssen direkt im deutschen App Store geprüft werden."]
+          ["Erkannte Duplikate: Apple Fotos", "Die integrierte Fotos-App kann erkannte Duplikate zusammenführen, ohne einen zusätzlichen Cleaner zu installieren. Prüfen Sie zuerst eine Gruppe. Fehlen die Duplikate, kann die Analyse noch laufen."],
+          ["Inhalte sortieren: manuell oder mit Pro", "Für manuelle Auswahl und Alben können Sie Apple Fotos verwenden. AI Cleanings neun automatische Inhaltskategorien erfordern Pro; der kostenlose Download schaltet sie nicht frei."],
+          ["Bereinigungen mit AI Cleaning", "Ohne Pro gilt eine erfolgreiche Bereinigungsaktion über die berechtigten Werkzeuge hinweg, nicht pro Bildschirm und nicht täglich. Eine Aktion kann mehrere ausgewählte Objekte umfassen. Weitere gesperrte Aktionen benötigen Pro."],
+          ["Datenschutz und Sprache", "Laut Entwickler wird die Analyse auf dem Gerät ausgeführt. Die Datenschutzangaben sind nicht von Apple verifiziert. Der deutsche Store-Eintrag listet Deutsch als App-Sprache; eine übersetzte Webseite allein belegt das nicht."]
         ]
       },
       {
@@ -210,11 +214,11 @@ const pages = [
     faq: [
       ["Was macht einen guten iPhone Foto Cleaner aus?", "Wichtig sind klare Prüfgruppen, eine zuverlässige Vorschau, getrennte Behandlung von Duplikaten und ähnlichen Fotos, transparente Datenschutzangaben und manuelle Kontrolle vor dem Löschen."],
       ["Was ist bei AI Cleaning kostenlos?", "Der Download ist kostenlos. Ohne Pro ist eine erfolgreiche Bereinigungsaktion über die berechtigten Werkzeuge hinweg möglich, nicht eine pro Bildschirm. Eine Aktion kann mehrere ausgewählte Objekte umfassen. Weitere gesperrte Bereinigungen und die neun KI-Autokategorien erfordern Pro. Den aktuellen Preis im deutschen App Store prüfen."],
-      ["Reicht Apples Duplikate-Funktion aus?", "Für exakte Duplikate kann sie ausreichen. Wer auch ähnliche Fotos, Screenshots, unscharfe Bilder und große Medien prüfen möchte, vergleicht zusätzliche Foto-Cleaner-Apps."],
+      ["Reicht Apples Duplikate-Funktion aus?", "Für erkannte Duplikate kann Apple Fotos ausreichen. Auch Screenshots und Videos können Sie dort manuell prüfen. Eine zusätzliche App kann andere Prüfgruppen anbieten; entscheiden Sie nach Vorschau, Kosten und Ihrem tatsächlichen Arbeitsaufwand."],
       ["Wo prüfe ich deutsche Preise und Kompatibilität?", "Im deutschen App Store. Dort stehen die aktuellen Preise, In-App-Käufe, iOS-Anforderungen, Spracheinträge und Datenschutzinformationen."],
       ["Ist ein Foto-Cleaner ein Systemreiniger?", "Nein. AI Cleaning ist für die Fotomediathek gedacht. Geschützte iOS-Systemdaten, RAM oder allgemeine Cache-Bereinigung sind nicht der versprochene Anwendungsbereich."]
     ],
-    ui: { updated: "Aktualisiert am 29. September 2026", storeLink: "Deutschen App Store öffnen", faqKicker: "FAQ", author: "Autor", privacy: "Datenschutz", contact: "Kontakt" }
+    ui: { updated: "Aktualisiert am 29. Oktober 2026", storeLink: "Deutschen App Store öffnen", faqKicker: "FAQ", author: "Autor", privacy: "Datenschutz", contact: "Kontakt" }
   },
   {
     file: "tr-tr-en-iyi-iphone-fotograf-temizleme.html",
@@ -365,6 +369,7 @@ function relatedMarkup(page) {
 
 function render(page) {
   const url = `${origin}/${page.file}`;
+  const modifiedDate = page.modifiedDate ?? updatedDate;
   const article = {
     "@context": "https://schema.org",
     "@type": "Article",
@@ -376,7 +381,7 @@ function render(page) {
     articleSection: "Localized Decision Guides",
     inLanguage: page.lang,
     datePublished: publishedDate,
-    dateModified: updatedDate,
+    dateModified: modifiedDate,
     author: developer,
     about: [appEntity(page)],
     publisher,
@@ -413,7 +418,7 @@ function render(page) {
     `<meta name="apple-itunes-app" content="app-id=${appId}, app-argument=${url}">`,
     `<link rel="canonical" href="${url}">`, alternateMarkup(),
     `<link rel="alternate" type="application/rss+xml" title="CrazyAIAgent RSS" href="${origin}/feed.xml"><link rel="alternate" type="application/atom+xml" title="CrazyAIAgent Atom" href="${origin}/atom.xml">`,
-    `<meta property="og:type" content="article"><meta property="og:locale" content="${page.locale}"><meta property="article:published_time" content="${publishedDate}"><meta property="article:modified_time" content="${updatedDate}">`,
+    `<meta property="og:type" content="article"><meta property="og:locale" content="${page.locale}"><meta property="article:published_time" content="${publishedDate}"><meta property="article:modified_time" content="${modifiedDate}">`,
     `<meta property="og:url" content="${url}"><meta property="og:title" content="${escapeHtml(page.ogTitle)}"><meta property="og:site_name" content="CrazyAIAgent"><meta property="og:description" content="${escapeHtml(page.ogDescription)}">`,
     `<meta property="og:image" content="${origin}/assets/og-ai-photo-cleaner-iphone.jpg"><meta property="og:image:secure_url" content="${origin}/assets/og-ai-photo-cleaner-iphone.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="${escapeHtml(page.imageAlt)}">`,
     `<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="${escapeHtml(page.ogTitle)}"><meta name="twitter:description" content="${escapeHtml(page.ogDescription)}"><meta name="twitter:image" content="${origin}/assets/og-ai-photo-cleaner-iphone.jpg">`,
@@ -421,8 +426,8 @@ function render(page) {
     jsonLd(article), jsonLd(faq), jsonLd(breadcrumb), "</head>"
   ].join("");
   const header = `<body class="localized-photo-cleaner-page"><header class="site-header" data-elevate><nav class="nav" aria-label="Primary"><a class="brand" href="${page.marketFile}" aria-label="CrazyAIAgent"><span class="brand-mark" aria-hidden="true">CA</span><span>CrazyAIAgent</span></a><div class="nav-links"><a href="${page.marketFile}">${escapeHtml(page.countryName)}</a><a href="guides.html">${escapeHtml(page.navGuide)}</a><a href="directory.html">${escapeHtml(page.navDirectory)}</a></div>${storeLink(page, "App Store", "nav-cta")}</nav></header>`;
-  const hero = `<main class="page-main"><section class="page-hero"><div class="page-hero-copy"><nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="${page.marketFile}">${escapeHtml(page.countryName)}</a></li><li aria-current="page">${escapeHtml(page.breadcrumb)}</li></ol></nav><p class="eyebrow">${escapeHtml(page.eyebrow)}</p><h1>${escapeHtml(page.h1)}</h1><p>${escapeHtml(page.lead)}</p><p class="article-meta"><time datetime="${updatedDate}">${escapeHtml(page.ui.updated)}</time> · ${escapeHtml(page.ui.author)} <a href="about.html" rel="author">Bo Chen</a></p><div class="hero-actions">${storeLink(page, page.primary, "button button-primary")}<a class="button button-secondary" href="${page.guideFile}">${escapeHtml(page.secondary)}</a></div></div><div class="page-hero-media"><picture><source srcset="assets/ai-cleaning-screen.webp" type="image/webp"><img src="assets/ai-cleaning-screen.png" width="331" height="720" decoding="async" fetchpriority="high" alt="${escapeHtml(page.imageAlt)}"></picture></div></section>`;
-  const sections = page.sections.map((section, index) => `<section class="section content-section${index % 2 === 1 ? " alt-section" : ""}"><div class="section-inner content-grid"><div><p class="section-kicker">${escapeHtml(section.kicker)}</p><h2>${escapeHtml(section.title)}</h2><p>${escapeHtml(section.lead)}</p></div><div class="content-list">${listMarkup(section.items)}</div></div></section>`).join("");
+  const hero = `<main class="page-main"><section class="page-hero"><div class="page-hero-copy"><nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="${page.marketFile}">${escapeHtml(page.countryName)}</a></li><li aria-current="page">${escapeHtml(page.breadcrumb)}</li></ol></nav><p class="eyebrow">${escapeHtml(page.eyebrow)}</p><h1>${escapeHtml(page.h1)}</h1><p>${escapeHtml(page.lead)}</p><p class="article-meta"><time datetime="${modifiedDate}">${escapeHtml(page.ui.updated)}</time> · ${escapeHtml(page.ui.author)} <a href="about.html" rel="author">Bo Chen</a></p><div class="hero-actions">${page.taskId ? `<a class="button button-primary" href="#${page.taskId}">${escapeHtml(page.taskLabel)}</a>` : ""}${storeLink(page, page.primary, page.taskId ? "button button-secondary" : "button button-primary")}<a class="button button-secondary" href="${page.guideFile}">${escapeHtml(page.secondary)}</a></div></div><div class="page-hero-media"><picture><source srcset="assets/ai-cleaning-screen.webp" type="image/webp"><img src="assets/ai-cleaning-screen.png" width="331" height="720" decoding="async" fetchpriority="high" alt="${escapeHtml(page.imageAlt)}"></picture></div></section>`;
+  const sections = page.sections.map((section, index) => `<section${page.taskId && index === 0 ? ` id="${page.taskId}"` : ""} class="section content-section${index % 2 === 1 ? " alt-section" : ""}"><div class="section-inner content-grid"><div><p class="section-kicker">${escapeHtml(section.kicker)}</p><h2>${escapeHtml(section.title)}</h2><p>${escapeHtml(section.lead)}</p></div><div class="content-list">${listMarkup(section.items)}</div></div></section>`).join("");
   const appleSources = page.applePhotos.sources.map(([label, href]) => `<p><a href="${href}">${escapeHtml(label)}</a></p>`).join("");
   const applePhotosSection = `<section class="section content-section alt-section" data-apple-photos-comparison><div class="section-inner content-grid"><div><p class="section-kicker">${escapeHtml(page.applePhotos.kicker)}</p><h2>${escapeHtml(page.applePhotos.title)}</h2><p>${escapeHtml(page.applePhotos.lead)}</p>${appleSources}</div><div class="content-list">${listMarkup(page.applePhotos.items)}<div><a class="store-link store-link-secondary" href="iphone-photo-cleaner-comparison.html">${escapeHtml(page.applePhotos.comparisonLabel)}</a></div></div></div></section>`;
   const storeSection = `<section class="section content-section alt-section"><div class="section-inner content-grid"><div><p class="section-kicker">App Store</p><h2>${escapeHtml(page.storeTitle)}</h2><p>${escapeHtml(page.storeLead)}</p></div><div class="content-list"><div><strong>AI Cleaning - Photo Cleaner</strong><p>${escapeHtml(page.description)}</p></div><div>${storeLink(page, page.ui.storeLink, "store-link")}</div></div></div></section>`;
