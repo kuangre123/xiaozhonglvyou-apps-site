@@ -21,9 +21,9 @@ test("sharing guide keeps six visible, linked steps and current Article dates", 
     assert.ok(html.includes(`href="#${id}"`));
     assert.ok(html.includes(`<strong>${index + 1}. ${step.name}</strong>`));
   }
-  assert.equal(nodes.find((node) => node["@type"] === "Article").dateModified, "2026-09-30");
-  assert.match(html, /article:modified_time" content="2026-09-30"/);
-  assert.match(html, /Updated <time datetime="2026-09-30">September 30, 2026<\/time>/);
+  assert.equal(nodes.find((node) => node["@type"] === "Article").dateModified, "2026-10-29");
+  assert.match(html, /article:modified_time" content="2026-10-29"/);
+  assert.match(html, /Updated <time datetime="2026-10-29">October 29, 2026<\/time>/);
 });
 
 test("meeting-specific sections cite official sources and remain discoverable", () => {

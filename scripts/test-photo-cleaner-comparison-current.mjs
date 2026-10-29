@@ -45,11 +45,11 @@ test("free photo-cleaner search snippet states the real free allowance consisten
   assert.ok(html.includes(`<meta name="description" content="${description}">`));
   assert.ok(html.includes(`<meta property="og:title" content="${title}">`));
   assert.ok(html.includes(`<meta name="twitter:title" content="${title}">`));
-  assert.ok(html.includes('article:modified_time" content="2026-10-03"'));
-  assert.ok(html.includes('Updated <time datetime="2026-10-03">October 3, 2026</time>'));
+  assert.ok(html.includes('article:modified_time" content="2026-10-29"'));
+  assert.ok(html.includes('Updated <time datetime="2026-10-29">October 29, 2026</time>'));
   assert.equal(article.headline, title);
   assert.equal(article.description, description);
-  assert.equal(article.dateModified, "2026-10-03");
+  assert.equal(article.dateModified, "2026-10-29");
   assert.match(html, /one successful in-app cleanup action across eligible tools/);
   assert.match(html, /the action may include multiple selected items/);
 });

@@ -7,6 +7,8 @@ import { gifmakerRelease, gifmakerCheckedDateLabel } from "./gifmaker-release-fa
 import { updateGifGuide, gifGuideBrowserUpdate } from "./gif-guide-browser-update.mjs";
 import { updateStorageGuide, storageOptimizeCard } from "./storage-guide-decision-update.mjs";
 import { updateTranslatorComparison } from "./translator-comparison-decision-update.mjs";
+import { updateMacPrivacyTask } from "./mac-privacy-task-update.mjs";
+import { updateFreeCleanerTask } from "./free-cleaner-task-update.mjs";
 import { menuTranslationGuideUpdate } from "./menu-translation-guide-content.mjs";
 
 const legacyShortcutsGifSection = [
@@ -1742,6 +1744,8 @@ async function updatePage(siteDir, page) {
   for (const replacement of page.replacements || []) {
     // The maintained comparison updater owns these current factual fields.
     if (currentTravelComparison && ["translator comparison hero summary", "translator comparison first-party research date and app name", "translator comparison published breadth and size rows", "translator comparison current system requirements"].includes(replacement.label)) continue;
+    // The task updater owns editorial dates, including already-published revisions.
+    if (page.file === "mac-screen-privacy-cn.html" && ["Mac privacy guide modified time", "Mac privacy guide publication date"].includes(replacement.label)) continue;
     html = replaceFromCandidates(
       html,
       [...replacement.from, replacement.to],
@@ -1766,6 +1770,8 @@ async function updatePage(siteDir, page) {
   if (page.file === "make-gif-on-iphone-guide.html") html = updateGifGuide(html);
   if (page.file === "iphone-storage-cleanup-guide.html") html = updateStorageGuide(html);
   if (page.file === "best-travel-translator-apps-iphone.html") html = updateTranslatorComparison(html);
+  if (["screen-sharing-privacy-guide.html", "mac-screen-privacy-cn.html"].includes(page.file)) html = updateMacPrivacyTask(html, page.file);
+  if (page.file === "best-iphone-photo-cleaner-app.html") html = updateFreeCleanerTask(html);
   if (html !== original) await writeFile(filePath, html, "utf8");
   return html !== original;
 }
