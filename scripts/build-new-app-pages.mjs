@@ -598,7 +598,7 @@ function render(page) {
 <script type="application/ld+json">${schema}</script>
 </head>
 <body>
-<header class="site-header" data-elevate><nav class="nav" aria-label="${ui.nav}"><a class="brand" href="/" aria-label="CrazyAIAgent home"><span class="brand-mark" aria-hidden="true">CA</span><span>CrazyAIAgent</span></a><div class="nav-links"><a href="apps.html">${ui.apps}</a><a href="guides.html">${ui.guides}</a><a href="support.html">${ui.support}</a></div></nav></header>
+<header class="site-header" data-elevate><nav class="nav" aria-label="${ui.nav}"><a class="brand" href="/" aria-label="CrazyAIAgent home"><img class="brand-mark" src="/assets/kuangre-ai-logo.png" width="212" height="148" alt="" aria-hidden="true"><span>CrazyAIAgent</span></a><div class="nav-links"><a href="apps.html">${ui.apps}</a><a href="guides.html">${ui.guides}</a><a href="support.html">${ui.support}</a></div></nav></header>
 <main class="new-app-page ${page.file.startsWith("lailemma") ? "health-app" : page.file.startsWith("inkstone") ? "notes-app" : "camera-app"}">
 <section class="page-hero new-app-intro"><div class="section-inner${isInkstone ? " notes-app-hero-inner" : ""}">${isInkstone ? '<div class="notes-app-hero-copy">' : ""}
 <nav class="breadcrumb" aria-label="${ui.breadcrumb}"><ol><li><a href="/">${ui.home}</a></li><li><a href="apps.html">${ui.apps}</a></li><li aria-current="page">${escapeHtml(page.appName)}</li></ol></nav>
