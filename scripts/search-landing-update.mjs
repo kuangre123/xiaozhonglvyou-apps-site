@@ -84,7 +84,11 @@ export function updateSearchLandingPage(html, file) {
     if (!hero.test(html)) throw new Error('Chinese homepage hero is missing');
     html = html.replace(hero, match => match + section);
   }
-  if (file === 'index.html') html = html.replace('Six focused apps for iPhone, Apple Watch, and Mac:', 'Nine focused apps for iPhone, Apple Watch, and Mac:');
+  if (file === 'index.html') {
+    html = html.replace('Six focused apps for iPhone, Apple Watch, and Mac:', 'Nine focused apps for iPhone, Apple Watch, and Mac:');
+    const verification = '<meta name="baidu-site-verification" content="codeva-GKW6piZX0j">';
+    if (!html.includes('name="baidu-site-verification"')) html = html.replace(/<head>/, '<head>' + verification);
+  }
   return html;
 }
 
