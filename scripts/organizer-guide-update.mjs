@@ -1,6 +1,7 @@
 import { readFile, writeFile } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import { articleUpdateDate } from './article-update-date.mjs';
+import { updateSearchLandingPage } from './search-landing-update.mjs';
 const file = 'ai-photo-organizer-guide.html';
 const origin = 'https://www.xiaozhonglvyou.com/';
 const description = 'Organize iPhone photos with Apple Photos or nine Pro AI categories. Follow five review steps, check free-use limits, and keep important photos before cleanup.';
@@ -36,7 +37,7 @@ export function updateOrganizerGuide(html) {
  html=html.replace('Animals, plants, food, restaurants, group photos, and daily-life scenes.','Animals, plants, food, restaurants, and group photos.');
  const updated=articleUpdateDate(html,'2026-10-29'); html=updated.html;
  const wordCount=html.match(/<main\b[^>]*>(.*?)<\/main>/)[1].replace(/<[^>]*>/g,' ').replace(/\s+/g,' ').trim().split(/\s+/).length;
- return html.replace(/(<script\b[^>]*type="application\/ld\+json"[^>]*>)(.*?)(<\/script>)/g,(_,open,json,close)=>{
+ html = html.replace(/(<script\b[^>]*type="application\/ld\+json"[^>]*>)(.*?)(<\/script>)/g,(_,open,json,close)=>{
   const node=JSON.parse(json);
   const visit=n=>{if(!n||typeof n!=='object')return;
    if(n['@type']==='Article'){n.description=description;n.dateModified=updated.date;n.wordCount=wordCount;n.citation=[...new Set([...(n.citation||[]),...sources])];}
@@ -46,6 +47,7 @@ export function updateOrganizerGuide(html) {
    Object.values(n).forEach(visit);
   };visit(node);return open+JSON.stringify(node)+close;
  });
+ return updateSearchLandingPage(html, file);
 }
 if(process.argv[1]===fileURLToPath(import.meta.url)){
  const target=new URL('../'+file,import.meta.url);const before=await readFile(target,'utf8');const after=updateOrganizerGuide(before);if(after!==before)await writeFile(target,after);console.log('Organizer guide updated: '+(after!==before));

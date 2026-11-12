@@ -8,6 +8,7 @@ import { updateGifGuide, gifGuideBrowserUpdate } from "./gif-guide-browser-updat
 import { updateStorageGuide, storageOptimizeCard } from "./storage-guide-decision-update.mjs";
 import { updateTranslatorComparison } from "./translator-comparison-decision-update.mjs";
 import { updateMacPrivacyTask } from "./mac-privacy-task-update.mjs";
+import { updateSearchLandingPage, landingPages } from "./search-landing-update.mjs";
 import { updateFreeCleanerTask } from "./free-cleaner-task-update.mjs";
 import { menuTranslationGuideUpdate } from "./menu-translation-guide-content.mjs";
 
@@ -1735,13 +1736,15 @@ async function updatePage(siteDir, page) {
   if (page.h1) {
     html = replaceFromCandidates(
       html,
-      page.h1,
+      [landingPages[page.file]?.heading, ...page.h1].filter(Boolean),
       (value) => `>${value}</h1>`,
       `${page.file} H1`
     );
   }
 
   for (const replacement of page.replacements || []) {
+    // The landing-page updater owns the current opening summary.
+    if (page.file === "screen-sharing-privacy-guide.html" && replacement.label === "built-in-first screen sharing summary") continue;
     // The maintained comparison updater owns these current factual fields.
     if (currentTravelComparison && ["translator comparison hero summary", "translator comparison first-party research date and app name", "translator comparison published breadth and size rows", "translator comparison current system requirements"].includes(replacement.label)) continue;
     // The task updater owns editorial dates, including already-published revisions.
@@ -1772,6 +1775,7 @@ async function updatePage(siteDir, page) {
   if (page.file === "best-travel-translator-apps-iphone.html") html = updateTranslatorComparison(html);
   if (["screen-sharing-privacy-guide.html", "mac-screen-privacy-cn.html"].includes(page.file)) html = updateMacPrivacyTask(html, page.file);
   if (page.file === "best-iphone-photo-cleaner-app.html") html = updateFreeCleanerTask(html);
+  html = updateSearchLandingPage(html, page.file);
   if (html !== original) await writeFile(filePath, html, "utf8");
   return html !== original;
 }

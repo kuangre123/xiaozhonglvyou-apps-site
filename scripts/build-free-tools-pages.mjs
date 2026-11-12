@@ -6,6 +6,7 @@ import { freeToolPages, freeToolArticles, freeToolFile, freeToolsPairs, freeTool
 import { renderImageToolWidget } from "./image-tool-widget.mjs";
 import { renderGifToolWidget } from "./gif-tool-widget.mjs";
 import { renderRideToolWidget } from "./ride-tool-widget.mjs";
+import { updateSearchLandingPage } from "./search-landing-update.mjs";
 
 const moduleFile = fileURLToPath(import.meta.url);
 const defaultSiteDir = path.dirname(path.dirname(moduleFile));
@@ -128,7 +129,7 @@ export async function buildFreeToolsPages({ siteDir = process.env.SITE_DIR ? pat
   const written = [];
   for (const config of [...freeToolPages, ...freeToolArticles]) {
     const file = freeToolFile(config);
-    await writeFile(path.join(siteDir, file), await renderPage(config, assets));
+    await writeFile(path.join(siteDir, file), updateSearchLandingPage(await renderPage(config, assets), file));
     written.push(file);
   }
   return written;

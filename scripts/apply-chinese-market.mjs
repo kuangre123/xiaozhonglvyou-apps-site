@@ -2,6 +2,7 @@
 
 import { readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
+import { updateSearchLandingPage } from "./search-landing-update.mjs";
 
 const siteDir = process.env.SITE_DIR
   ? path.resolve(process.cwd(), process.env.SITE_DIR)
@@ -191,7 +192,7 @@ function updateBody(html) {
 
 const filePath = path.join(siteDir, fileName);
 const original = await readFile(filePath, "utf8");
-const updated = updateBody(updateJsonLd(updateMetadata(original)));
+const updated = updateSearchLandingPage(updateBody(updateJsonLd(updateMetadata(original))), fileName);
 
 if (updated !== original) await writeFile(filePath, updated, "utf8");
 console.log(`Applied Chinese market content to ${fileName}; changed ${updated === original ? 0 : 1}.`);
