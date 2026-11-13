@@ -9,7 +9,7 @@ const copy = {
 
 export function renderRideToolWidget(locale = "en") {
   const zh = /^zh(?:-|$)/i.test(locale), t = copy[zh ? "zh" : "en"];
-  return `<section class="tool-widget" data-ride-tool aria-labelledby="ride-tool-heading">
+  return `<section class="tool-widget" id="ride-tool" data-ride-tool aria-labelledby="ride-tool-heading">
   <h2 id="ride-tool-heading">${t.title}</h2><p class="tool-privacy">${t.privacy}</p>
   <form class="tool-form" data-ride-form novalidate>
     <div class="tool-field-grid">

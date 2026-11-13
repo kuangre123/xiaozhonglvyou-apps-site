@@ -126,6 +126,8 @@
     event.preventDefault(); invalidate(); telemetry("tool_start");
     try {
       var mode = fields.mode.value;
+      // Invalid intermediate number input must not become an assumed zero stop.
+      if (fields.breaks.validity && fields.breaks.validity.badInput) invalid("number", "breaks");
       var result = calculate({ mode: mode, unit: "km", distance: mode === "distance" ? null : fromField("distance"), speed: mode === "speed" ? null : fromField("speed"), hours: fields.hours.value, minutes: fields.minutes.value, seconds: fields.seconds.value, breakMinutes: fields.breaks.value });
       var factor = activeUnit === "mi" ? MILE_KM : 1, unit = activeUnit === "mi" ? "mi" : "km", speedUnit = activeUnit === "mi" ? "mph" : "km/h";
       find("result-distance").textContent = displayNumber(result.distanceKm / factor) + " " + unit;
@@ -149,5 +151,10 @@
     canonical = { distance: null, speed: null }; invalidate(words.empty);
     (fields.mode.value === "distance" ? fields.speed : fields.distance).focus();
   });
+  // A tutorial may open a particular solve mode; numerical values stay user-entered.
+  if (root.location && typeof root.URLSearchParams === "function") {
+    var requestedMode = new root.URLSearchParams(root.location.search).get("mode");
+    if (["speed", "time", "distance"].indexOf(requestedMode) >= 0) fields.mode.value = requestedMode;
+  }
   updateMode(); updateUnits();
 })(typeof globalThis !== "undefined" ? globalThis : this);

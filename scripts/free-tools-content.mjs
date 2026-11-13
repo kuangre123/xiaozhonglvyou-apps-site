@@ -1,4 +1,5 @@
 // First-party tools and task guides. Keep claims aligned with the actual widgets.
+import { cyclingPlanningContent } from './cycling-planning-content.mjs';
 export const freeToolsDate = "2026-10-24";
 export const freeToolsOrigin = "https://www.xiaozhonglvyou.com";
 
@@ -153,6 +154,8 @@ freeToolArticles.push(
     section("多段骑行要先合并距离与时间", ["除非各段持续时间相同，否则不要直接对速度取算术平均。前 10 公里以 10 公里/小时骑行，需要 1 小时；后 10 公里以 20 公里/小时骑行，需要 0.5 小时。总距离 20 公里、总骑行时间 1.5 小时，均速约 13.33 公里/小时，并不是（10 + 20）÷ 2 = 15 公里/小时。", "骑行后对比记录时，要先核对时间定义。不同记录器的移动判定、自动暂停方式和全程时间口径可能不同，不能只比较一个均速数字。需要在 iPhone 上实际记录时，可查看下方 HappyRide 应用与自动记录教程；本页只计算你填写的数值。"])
   ] }
 );
+
+for (const item of freeToolArticles.filter(item => item.key === 'ridePlanning')) Object.assign(item, cyclingPlanningContent(item.locale, item.sections));
 
 export function freeToolFile(config) { return freeToolsPairs[config.key][config.locale]; }
 export const freeToolsRoutes = [...freeToolPages, ...freeToolArticles].map(freeToolFile);
