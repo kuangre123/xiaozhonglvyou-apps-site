@@ -311,10 +311,16 @@ let pendingForge = false; // 点了「造物」，等当前变形走完再进入
 let last = performance.now();
 // 录制成片时由录制器以固定步长驱动；这时 rAF 循环必须让开，否则会按真实时间再推进一遍影片
 let externalClock = false;
+let loopErrors = 0;
 function loop(now) {
   const dt = Math.min(0.05, (now - last) / 1000);
   last = now;
-  if (!externalClock) step(dt);
+  // 兜底：某一帧出错就跳过这一帧，绝不让整页画面冻住（音乐还在响、画面不动）
+  try {
+    if (!externalClock) step(dt);
+  } catch (err) {
+    if (loopErrors++ < 5) console.error('[星尘简史] 这一帧渲染出错，已跳过：', err);
+  }
   requestAnimationFrame(loop);
 }
 
@@ -339,7 +345,9 @@ function step(dt) {
       }
     }
     applyFrame(d, dt);
-    if (!forge.active) {
+    // 注意：forge.frame() 在「回到影片」的过渡结束时会把自己标成未激活，
+    // 但这一帧的 d 仍是造物模式的数据（shot 为 null），不能拿去更新影片字幕
+    if (!forge.active && d.shot) {
       if (d.index !== shotIndex) {
         shotIndex = d.index;
         ui.showShot(d.shot, d.index);
