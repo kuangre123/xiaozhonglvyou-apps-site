@@ -73,12 +73,26 @@ export class Forge {
     this.camR = 10.5;
     this.currentKey = null;
     this.#transition({ form: this.forms.get('nebula'), motion: NEBULA_MOTION, creationId: null }, 2.6);
-    this.ui.setForgeStatus(this.live ? '' : '');
+    // 静态部署（不能实时生成）：星尘先聚成原行星盘，3 秒后自动凝聚一件造物，让人一眼看出它在动
+    this.autoEntry = this.live ? null : this.#featured(film);
+    this.autoShowAt = this.autoEntry ? this.clock + 3.0 : null;
+    this.ui.setForgeStatus(this.live ? '' : '星尘正在聚成一团原行星盘……');
     this.#refreshList();
+  }
+
+  /** 静态部署自动展示哪一件：影片当前（或最近经过）的那件造物；还没到造物段时用地球 */
+  #featured(film) {
+    const shots = this.getShots().filter((s) => s.form === 'model');
+    if (!shots.length) return null;
+    const now = film.shot?.start ?? 0;
+    const past = shots.filter((s) => s.start <= now);
+    const s = past.length ? past[past.length - 1] : shots.find((x) => x.model === 'earth') || shots[0];
+    return { key: `model:${s.model}`, kind: 'builtin', id: s.model, label: s.name || s.title, prompt: s.prompt };
   }
 
   close() {
     if (!this.active || this.returning) return;
+    this.autoShowAt = null;
     const film = this.film;
     const filmCreation = film.shot.form === 'model' ? film.shot.model : null;
     const snapshot = this.#forgeCam(this.clock);
@@ -120,6 +134,10 @@ export class Forge {
   // ── 每帧 ────────────────────────────────────────────────
   frame(dt, clock) {
     this.clock = clock;
+    if (this.autoShowAt != null && clock >= this.autoShowAt && !this.returning) {
+      this.autoShowAt = null;
+      if (!this.currentKey) this.show(this.autoEntry);
+    }
     const wantR = this.b?.creationId ? 7.0 : 10.5;
     this.camR = this.camR == null ? wantR : this.camR + (wantR - this.camR) * (1 - Math.exp(-dt * 0.9));
     if (this.queue && clock - this.tStart >= this.dur) {
@@ -178,6 +196,7 @@ export class Forge {
   // ── 展示已有造物 ────────────────────────────────────────
   async show(entry) {
     if (!this.active || !entry) return;
+    this.autoShowAt = null; // 观众自己点了，就不再自动展示
     try {
       if (entry.kind === 'builtin') {
         this.currentKey = entry.key;

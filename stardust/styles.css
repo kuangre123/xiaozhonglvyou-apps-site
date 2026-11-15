@@ -570,6 +570,10 @@ button {
   line-height: 1.8;
 }
 
+.forge__form[hidden] {
+  display: none;
+}
+
 .forge__form {
   display: grid;
   gap: 12px;

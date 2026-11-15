@@ -273,12 +273,14 @@ export class UI {
 
   setForgeLive(live) {
     const e = this.el;
+    // 静态部署没有后端：输入框、风格和「凝聚」按钮都用不了，干脆不显示，免得看起来像坏了
+    e.forgeForm.hidden = !live;
     e.forgeInput.disabled = !live;
     e.forgeSubmit.disabled = !live;
     for (const c of e.forgeStyles.querySelectorAll('.chip')) c.disabled = !live;
     e.forgeLede.textContent = live
       ? '写下一样东西。Lux3D 把它生成出来，星尘随后凝聚成形。'
-      : '这里是静态部署，实时生成已关闭。下面是片中由 Lux3D 生成的全部造物——点一个，让星尘重新凝聚。';
+      : '片中每一件造物，都由 Aholo Lux3D 从一句话生成。点下面任意一件，看星尘重新凝聚成它。（写一句话实时生成，需要在本地运行。）';
     e.forgeShelfLabel.textContent = live ? '已有的造物' : '片中的造物';
   }
 
