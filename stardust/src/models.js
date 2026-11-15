@@ -272,7 +272,27 @@ export class Creation {
   }
 }
 
-export async function loadCreation(id, url) {
-  const gltf = await loader.loadAsync(url);
-  return new Creation(id, gltf.scene);
+/**
+ * 下载并解析一件造物。网络不稳时（比如从国内访问 GitHub Pages）请求可能一直挂着不返回，
+ * 所以每次下载都有超时，失败重试一次；仍然失败就抛错，由调用方把这件造物从时间线里跳过，
+ * 保证页面总能启动。
+ */
+export async function loadCreation(id, url, { timeoutMs = 20000, attempts = 2 } = {}) {
+  let lastErr;
+  for (let i = 0; i < attempts; i++) {
+    const ctrl = new AbortController();
+    const timer = setTimeout(() => ctrl.abort(), timeoutMs);
+    try {
+      const res = await fetch(url, { signal: ctrl.signal });
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      const buffer = await res.arrayBuffer();
+      clearTimeout(timer);
+      const gltf = await loader.parseAsync(buffer, url.replace(/[^/]*$/, ''));
+      return new Creation(id, gltf.scene);
+    } catch (err) {
+      clearTimeout(timer);
+      lastErr = err.name === 'AbortError' ? new Error(`下载超时（${timeoutMs / 1000} 秒）`) : err;
+    }
+  }
+  throw lastErr;
 }
