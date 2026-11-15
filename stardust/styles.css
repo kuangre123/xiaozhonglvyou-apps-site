@@ -1,0 +1,837 @@
+/* 《星尘简史》界面
+   画面是主角，界面是一圈很薄的「观测仪器」：
+   · 标题竖排（宋体）——这是一部「简史」，沿用史书的排法；
+   · 右侧一把时间尺，刻度是每个年代的真实时间；
+   · 强调色不是固定的：它跟着宇宙当时的光走（白热 → 余晖橙 → 黑暗紫 → 星光蓝 → …）。 */
+
+:root {
+  --void: #04050a;
+  --starlight: #eef2ff;
+  --dust: #9299ad;
+  --hair: rgba(238, 242, 255, 0.16);
+  --accent: #fff3df;
+  --danger: #ff9480;
+
+  --serif-zh: "Songti SC", "STSong", "Noto Serif CJK SC", "Source Han Serif SC", "SimSun", serif;
+  --serif-en: "Didot", "Bodoni 72", "Bodoni MT", "Hoefler Text", "Baskerville", Georgia, serif;
+  --sans: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans CJK SC", system-ui, sans-serif;
+  --mono: "SF Mono", ui-monospace, "JetBrains Mono", Menlo, Consolas, monospace;
+
+  --edge: 34px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+  background: var(--void);
+  color: var(--starlight);
+}
+
+body {
+  font-family: var(--sans);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+#stage {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  touch-action: none;
+  cursor: grab;
+}
+
+#stage:active {
+  cursor: grabbing;
+}
+
+button {
+  font: inherit;
+  color: inherit;
+}
+
+/* ── 按钮 ─────────────────────────────────────────────── */
+.btn {
+  appearance: none;
+  padding: 10px 14px;
+  border: 1px solid var(--hair);
+  border-radius: 2px;
+  background: rgba(4, 5, 10, 0.4);
+  color: var(--starlight);
+  font: 400 12px/1 var(--sans);
+  letter-spacing: 0.14em;
+  white-space: nowrap;
+  cursor: pointer;
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  transition: border-color 0.2s, background-color 0.2s, color 0.2s, opacity 0.2s;
+}
+
+.btn:hover {
+  border-color: rgba(238, 242, 255, 0.55);
+}
+
+.btn:focus-visible,
+.chip:focus-visible,
+.ruler__tick:focus-visible,
+.forge__list button:focus-visible {
+  outline: 1px solid var(--accent);
+  outline-offset: 3px;
+}
+
+.btn--primary {
+  border-color: transparent;
+  background: var(--accent);
+  color: #0a0b10;
+  font-weight: 600;
+  transition: background-color 0.9s, filter 0.2s, opacity 0.2s;
+}
+
+.btn--primary:hover {
+  border-color: transparent;
+  filter: brightness(1.12);
+}
+
+.btn:disabled {
+  cursor: progress;
+  opacity: 0.62;
+}
+
+/* ── 影片界面层 ───────────────────────────────────────── */
+.ui {
+  position: fixed;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.ui > * {
+  transition: opacity 0.9s ease;
+}
+
+.ui[data-state="intro"] > * {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.ui[data-state="forge"] .caption,
+.ui[data-state="forge"] .ruler,
+.ui[data-state="forge"] .controls,
+.ui[data-state="forge"] .readout {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.brand {
+  position: absolute;
+  top: 28px;
+  left: var(--edge);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.brand__zh {
+  font: 500 17px/1 var(--serif-zh);
+  letter-spacing: 0.44em;
+}
+
+.brand__en {
+  color: var(--dust);
+  font: italic 400 13px/1 var(--serif-en);
+  letter-spacing: 0.03em;
+}
+
+/* 读数：宇宙年龄与背景温度 */
+.readout {
+  position: absolute;
+  top: 26px;
+  right: var(--edge);
+  display: grid;
+  gap: 7px;
+  margin: 0;
+  font: 400 10.5px/1.2 var(--mono);
+}
+
+.readout__row {
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-end;
+  gap: 14px;
+}
+
+.readout dt {
+  color: var(--dust);
+  letter-spacing: 0.2em;
+}
+
+.readout dd {
+  min-width: 10.5em;
+  margin: 0;
+  color: var(--starlight);
+  font-size: 13px;
+  font-variant-numeric: tabular-nums;
+  text-align: right;
+}
+
+/* ── 字幕：竖排标题 + 正文 ─────────────────────────────── */
+.caption {
+  position: absolute;
+  left: var(--edge);
+  bottom: 34px;
+  display: flex;
+  align-items: flex-end;
+  gap: 30px;
+  max-width: min(780px, calc(100vw - 300px));
+}
+
+/* 亮场镜头（暴胀、夸克汤）下垫一层很淡的暗角，保证可读 */
+.caption::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: -90px -160px -60px -80px;
+  background: radial-gradient(ellipse at 30% 62%, rgba(4, 5, 10, 0.62), rgba(4, 5, 10, 0) 68%);
+}
+
+.caption__title {
+  flex: none;
+  max-height: 66vh;
+  margin: 0;
+  padding-left: 18px;
+  border-left: 1px solid var(--accent);
+  font: 400 clamp(42px, min(6vw, 9.2vh), 92px) / 1.02 var(--serif-zh);
+  letter-spacing: 0.14em;
+  text-shadow: 0 0 36px rgba(4, 5, 10, 0.75);
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  transition: border-color 0.9s;
+}
+
+.caption__body {
+  display: grid;
+  gap: 10px;
+  max-width: 31em;
+  padding-bottom: 4px;
+}
+
+.caption__body p {
+  margin: 0;
+}
+
+.caption__when {
+  color: var(--accent);
+  font: 400 12px/1.3 var(--mono);
+  letter-spacing: 0.16em;
+  transition: color 0.9s;
+}
+
+.caption__en {
+  color: rgba(238, 242, 255, 0.94);
+  font: italic 400 clamp(18px, 1.85vw, 26px) / 1.25 var(--serif-en);
+  letter-spacing: 0.01em;
+}
+
+.caption__line {
+  color: rgba(238, 242, 255, 0.82);
+  font-size: 15px;
+  line-height: 1.85;
+  text-shadow: 0 1px 16px rgba(4, 5, 10, 0.85);
+  text-wrap: pretty;
+}
+
+.caption__lux {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding-top: 6px;
+  color: var(--dust);
+  font: 400 10.5px/1.6 var(--mono);
+}
+
+.caption__lux[hidden],
+.caption__actions[hidden] {
+  display: none;
+}
+
+.lux__badge {
+  flex: none;
+  padding: 2px 7px;
+  border: 1px solid var(--accent);
+  border-radius: 2px;
+  color: var(--accent);
+  letter-spacing: 0.06em;
+  transition: color 0.9s, border-color 0.9s;
+}
+
+.lux__prompt {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+}
+
+.caption__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding-top: 10px;
+  pointer-events: auto;
+}
+
+/* 换镜头时的字幕切换：正文淡入，竖排标题自上而下「写」出来 */
+.caption__title,
+.caption__body {
+  transition: opacity 0.55s ease, transform 0.55s ease, clip-path 0.95s cubic-bezier(0.22, 0.7, 0.2, 1), border-color 0.9s;
+}
+
+.caption__title {
+  clip-path: inset(0 0 0 0);
+}
+
+.caption[data-swap="out"] .caption__title {
+  clip-path: inset(0 0 100% 0);
+  opacity: 0;
+  transition-duration: 0.3s;
+}
+
+.caption[data-swap="out"] .caption__body {
+  opacity: 0;
+  transform: translateY(8px);
+  transition-duration: 0.3s;
+}
+
+/* ── 时间尺 ───────────────────────────────────────────── */
+.ruler {
+  --progress: 0;
+  position: absolute;
+  top: 104px;
+  right: var(--edge);
+  bottom: 96px;
+  width: 190px;
+  pointer-events: auto;
+  touch-action: none;
+}
+
+.ruler__track {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 1px;
+  background: var(--hair);
+}
+
+.ruler__fill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: calc(var(--progress) * 100%);
+  background: var(--accent);
+  transition: background-color 0.9s;
+}
+
+.ruler__head {
+  position: absolute;
+  top: calc(var(--progress) * 100%);
+  left: 0;
+  width: 9px;
+  height: 9px;
+  background: var(--accent);
+  box-shadow: 0 0 14px var(--accent);
+  transform: translate(-50%, -50%) rotate(45deg);
+  transition: background-color 0.9s, box-shadow 0.9s;
+}
+
+.ruler__ticks {
+  position: absolute;
+  inset: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.ruler__tick {
+  --p: 0;
+  appearance: none;
+  position: absolute;
+  top: calc(var(--p) * 100%);
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 9px;
+  padding: 5px 0 5px 14px;
+  border: 0;
+  background: none;
+  color: var(--dust);
+  font: 400 10.5px/1 var(--mono);
+  white-space: nowrap;
+  cursor: pointer;
+  opacity: 0.62;
+  transform: translateY(-50%);
+  transition: opacity 0.25s, color 0.25s;
+}
+
+.ruler__tick::after {
+  content: "";
+  width: 9px;
+  height: 1px;
+  background: currentColor;
+  transition: width 0.3s;
+}
+
+.tick__name {
+  max-width: 0;
+  overflow: hidden;
+  font: 400 12px/1 var(--serif-zh);
+  letter-spacing: 0.1em;
+  opacity: 0;
+  transition: max-width 0.3s, opacity 0.3s;
+}
+
+.ruler__tick:hover,
+.ruler__tick:focus-visible {
+  color: var(--starlight);
+  opacity: 1;
+}
+
+.ruler__tick:hover .tick__name,
+.ruler__tick:focus-visible .tick__name,
+.ruler__tick[aria-current="true"] .tick__name {
+  max-width: 9em;
+  opacity: 1;
+}
+
+.ruler__tick[aria-current="true"] {
+  color: var(--accent);
+  opacity: 1;
+}
+
+.ruler__tick[aria-current="true"]::after {
+  width: 24px;
+}
+
+/* 每一幕的第一道刻度长一点，像尺子上的主刻度 */
+.ruler__tick[data-major]::after {
+  width: 16px;
+}
+
+.ruler__tick[data-major][aria-current="true"]::after {
+  width: 24px;
+}
+
+/* ── 控制 ─────────────────────────────────────────────── */
+.controls {
+  position: absolute;
+  right: var(--edge);
+  bottom: 30px;
+  display: flex;
+  gap: 8px;
+  pointer-events: auto;
+}
+
+/* ── 片头 ─────────────────────────────────────────────── */
+.intro {
+  position: fixed;
+  inset: 0;
+  z-index: 5;
+  display: grid;
+  grid-template-rows: 1fr minmax(120px, 22vh) 1fr;
+  justify-items: center;
+  padding: 24px;
+  background: radial-gradient(ellipse at center, rgba(4, 5, 10, 0) 0%, rgba(4, 5, 10, 0) 34%, rgba(4, 5, 10, 0.5) 100%);
+  text-align: center;
+  transition: opacity 1.4s ease, visibility 1.4s;
+}
+
+.intro.is-gone {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.intro__top {
+  grid-row: 1;
+  align-self: end;
+  display: grid;
+  gap: 18px;
+}
+
+.intro__bottom {
+  grid-row: 3;
+  align-self: start;
+  display: grid;
+  justify-items: center;
+  gap: 22px;
+}
+
+.intro__title {
+  margin: 0;
+  /* 末字的字距会让整行看起来偏左，用等量的左内边距找回视觉居中 */
+  padding-left: 0.36em;
+  font: 400 clamp(52px, 9.4vw, 132px) / 1 var(--serif-zh);
+  letter-spacing: 0.36em;
+}
+
+.intro__en {
+  margin: 0;
+  color: rgba(238, 242, 255, 0.78);
+  font: italic 400 clamp(18px, 2.3vw, 31px) / 1.1 var(--serif-en);
+  letter-spacing: 0.05em;
+}
+
+.intro__lede {
+  max-width: 34em;
+  margin: 0;
+  color: rgba(238, 242, 255, 0.8);
+  font-size: 15px;
+  line-height: 1.95;
+  text-wrap: balance;
+}
+
+.btn--begin {
+  padding: 15px 38px;
+  font-size: 14px;
+  letter-spacing: 0.42em;
+  text-indent: 0.42em;
+}
+
+.btn--begin:disabled {
+  letter-spacing: 0.16em;
+  text-indent: 0.16em;
+  font-weight: 400;
+  background: transparent;
+  border-color: var(--hair);
+  color: var(--dust);
+  font-family: var(--mono);
+  font-size: 12px;
+}
+
+.intro__hint {
+  margin: 0;
+  color: var(--dust);
+  font: 400 11px/1.6 var(--mono);
+  letter-spacing: 0.08em;
+}
+
+/* ── 造物面板 ─────────────────────────────────────────── */
+.forge {
+  position: fixed;
+  z-index: 6;
+  left: var(--edge);
+  bottom: 34px;
+  display: grid;
+  gap: 14px;
+  width: min(410px, calc(100vw - 2 * var(--edge)));
+  max-height: calc(100vh - 68px);
+  padding: 22px 22px 18px;
+  overflow: auto;
+  border: 1px solid var(--hair);
+  border-radius: 3px;
+  background: rgba(6, 8, 14, 0.74);
+  -webkit-backdrop-filter: blur(16px);
+  backdrop-filter: blur(16px);
+}
+
+.forge[hidden] {
+  display: none;
+}
+
+.forge__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.forge__title {
+  margin: 0;
+  font: 400 30px/1 var(--serif-zh);
+  letter-spacing: 0.3em;
+}
+
+.forge__lede {
+  margin: 0;
+  color: rgba(238, 242, 255, 0.8);
+  font-size: 13.5px;
+  line-height: 1.8;
+}
+
+.forge__form {
+  display: grid;
+  gap: 12px;
+}
+
+.forge__label {
+  margin: 0;
+  color: var(--dust);
+  font: 400 10.5px/1 var(--mono);
+  letter-spacing: 0.2em;
+}
+
+.forge__input {
+  width: 100%;
+  padding: 8px 0;
+  border: 0;
+  border-bottom: 1px solid rgba(238, 242, 255, 0.4);
+  border-radius: 0;
+  outline: none;
+  background: transparent;
+  color: var(--starlight);
+  font: 400 18px/1.4 var(--serif-zh);
+}
+
+.forge__input::placeholder {
+  color: rgba(146, 153, 173, 0.75);
+}
+
+.forge__input:focus {
+  border-bottom-color: var(--accent);
+}
+
+.forge__input:disabled {
+  opacity: 0.5;
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.chip,
+.forge__list button {
+  appearance: none;
+  padding: 6px 10px;
+  border: 1px solid var(--hair);
+  border-radius: 2px;
+  background: transparent;
+  color: var(--dust);
+  font: 400 12px/1.2 var(--sans);
+  cursor: pointer;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.chip:hover,
+.forge__list button:hover {
+  color: var(--starlight);
+  border-color: rgba(238, 242, 255, 0.5);
+}
+
+.chip[aria-checked="true"],
+.forge__list button[aria-current="true"] {
+  border-color: var(--accent);
+  color: var(--starlight);
+}
+
+.forge__status {
+  min-height: 1.7em;
+  margin: 0;
+  color: var(--accent);
+  font: 400 12px/1.7 var(--mono);
+}
+
+.forge__status[data-kind="error"] {
+  color: var(--danger);
+}
+
+.forge__shelf {
+  display: grid;
+  gap: 10px;
+  padding-top: 12px;
+  border-top: 1px solid var(--hair);
+}
+
+.forge__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  max-height: 118px;
+  margin: 0;
+  padding: 0 0 2px;
+  overflow: auto;
+  list-style: none;
+}
+
+.forge__list button {
+  max-width: 15em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* 右下角署名：片头、影片、造物模式下都在 */
+.credit {
+  position: fixed;
+  z-index: 8;
+  right: var(--edge);
+  bottom: 9px;
+  margin: 0;
+  color: var(--dust);
+  font: 400 11px/1 var(--mono);
+  letter-spacing: 0.14em;
+  opacity: 0.85;
+  pointer-events: none;
+}
+
+.noscript {
+  position: fixed;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  margin: 0;
+  font-family: var(--serif-zh);
+}
+
+/* ── 窄屏：标题改横排，时间尺改成底部的一条进度线 ─────────── */
+@media (max-width: 820px) {
+  :root {
+    --edge: 18px;
+  }
+
+  .brand {
+    top: 18px;
+  }
+
+  .brand__zh {
+    font-size: 15px;
+  }
+
+  .readout {
+    top: 16px;
+    gap: 5px;
+  }
+
+  .readout dt {
+    display: none;
+  }
+
+  .readout dd {
+    min-width: 0;
+    font-size: 12px;
+  }
+
+  .caption {
+    bottom: 108px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    max-width: calc(100vw - 2 * var(--edge));
+  }
+
+  .caption__title {
+    max-height: none;
+    padding: 0 0 0 12px;
+    font-size: clamp(30px, 9vw, 44px);
+    writing-mode: horizontal-tb;
+  }
+
+  .caption[data-swap="out"] .caption__title {
+    clip-path: inset(0 100% 0 0);
+  }
+
+  .caption__line {
+    font-size: 14px;
+    line-height: 1.75;
+  }
+
+  .ruler {
+    top: auto;
+    right: var(--edge);
+    bottom: 74px;
+    left: var(--edge);
+    width: auto;
+    height: 18px;
+  }
+
+  .ruler__track {
+    top: 50%;
+    right: 0;
+    bottom: auto;
+    left: 0;
+    width: auto;
+    height: 1px;
+  }
+
+  .ruler__fill {
+    width: calc(var(--progress) * 100%);
+    height: 1px;
+  }
+
+  .ruler__head {
+    top: 0;
+    left: calc(var(--progress) * 100%);
+  }
+
+  .ruler__tick {
+    top: 50%;
+    right: auto;
+    left: calc(var(--p) * 100%);
+    padding: 8px 0;
+    font-size: 0;
+    transform: translate(-50%, -50%);
+  }
+
+  .ruler__tick::after {
+    width: 1px !important;
+    height: 7px;
+  }
+
+  .tick__name {
+    display: none;
+  }
+
+  .controls {
+    right: var(--edge);
+    bottom: 18px;
+    left: var(--edge);
+    justify-content: space-between;
+  }
+
+  .controls .btn {
+    flex: 1;
+    padding: 11px 6px;
+    letter-spacing: 0.08em;
+  }
+
+  .intro__hint {
+    display: none;
+  }
+
+  .credit {
+    bottom: 3px;
+    font-size: 10px;
+  }
+
+  .forge {
+    bottom: 18px;
+  }
+}
+
+@media (max-height: 560px) {
+  .caption__line {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}

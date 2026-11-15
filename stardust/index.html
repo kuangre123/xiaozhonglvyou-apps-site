@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>星尘简史 · A Brief History of Stardust</title>
+  <meta name="description" content="从奇点到万物，138 亿年一镜到底。片中每一件造物都由 Aholo Lux3D 从一句话生成，再由同一批星尘凝聚成形。">
+  <meta name="theme-color" content="#04050a">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%2304050a'/%3E%3Ccircle cx='16' cy='16' r='3.2' fill='%23fff3df'/%3E%3Ccircle cx='16' cy='16' r='9' fill='none' stroke='%23fff3df' stroke-opacity='.35'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "./vendor/three/build/three.module.js",
+        "three/addons/": "./vendor/three/examples/jsm/"
+      }
+    }
+  </script>
+</head>
+<body>
+  <canvas id="stage" aria-label="宇宙演化的三维动画"></canvas>
+
+  <div class="ui" id="ui" data-state="intro">
+    <header class="brand">
+      <span class="brand__zh">星尘简史</span>
+      <span class="brand__en">A Brief History of Stardust</span>
+    </header>
+
+    <dl class="readout" aria-label="宇宙学读数">
+      <div class="readout__row">
+        <dt>宇宙年龄</dt>
+        <dd id="age">—</dd>
+      </div>
+      <div class="readout__row">
+        <dt>背景温度</dt>
+        <dd id="temp">—</dd>
+      </div>
+    </dl>
+
+    <section class="caption" id="caption" aria-live="polite">
+      <h1 class="caption__title" id="cap-title"></h1>
+      <div class="caption__body">
+        <p class="caption__when" id="cap-when"></p>
+        <p class="caption__en" id="cap-en"></p>
+        <p class="caption__line" id="cap-line"></p>
+        <p class="caption__lux" id="cap-lux" hidden>
+          <span class="lux__badge">Aholo Lux3D · 文生 3D</span>
+          <span class="lux__prompt" id="cap-prompt"></span>
+        </p>
+        <div class="caption__actions" id="cap-actions" hidden>
+          <button type="button" class="btn btn--primary" id="btn-finale-forge">让星尘凝聚成你想要的东西</button>
+          <button type="button" class="btn" id="btn-replay">从奇点重播</button>
+        </div>
+      </div>
+    </section>
+
+    <nav class="ruler" id="ruler" aria-label="时间尺：点击跳转到对应年代">
+      <div class="ruler__track" aria-hidden="true"><div class="ruler__fill" id="ruler-fill"></div><div class="ruler__head" id="ruler-head"></div></div>
+      <ol class="ruler__ticks" id="ruler-ticks"></ol>
+    </nav>
+
+    <div class="controls">
+      <button type="button" class="btn" id="btn-play" aria-pressed="true">暂停</button>
+      <button type="button" class="btn" id="btn-speed" aria-label="播放速度">1×</button>
+      <button type="button" class="btn" id="btn-sound" aria-pressed="true">声音 开</button>
+      <button type="button" class="btn btn--primary" id="btn-forge">造物</button>
+    </div>
+  </div>
+
+  <!-- 片头：标题在上，按钮在下，正中留给那个正在搏动的奇点 -->
+  <div class="intro" id="intro">
+    <div class="intro__top">
+      <h1 class="intro__title">星尘简史</h1>
+      <p class="intro__en">A Brief History of Stardust</p>
+    </div>
+    <div class="intro__bottom">
+      <p class="intro__lede">从奇点到万物，138 亿年，一镜到底。<br>片中每一件造物，都由 Aholo Lux3D 从一句话生成，再由同一批星尘凝聚成形。</p>
+      <button type="button" class="btn btn--primary btn--begin" id="btn-begin" disabled>正在唤醒星尘 0%</button>
+      <p class="intro__hint">空格 暂停　·　拖动 转动视角　·　滚轮 远近　·　← → 跳转年代</p>
+    </div>
+  </div>
+
+  <aside class="forge" id="forge" hidden aria-label="造物">
+    <div class="forge__head">
+      <h2 class="forge__title">造物</h2>
+      <button type="button" class="btn" id="btn-forge-close">回到影片</button>
+    </div>
+    <p class="forge__lede" id="forge-lede">写下一样东西。Lux3D 把它生成出来，星尘随后凝聚成形。</p>
+    <form class="forge__form" id="forge-form">
+      <label class="forge__label" for="forge-input">它是什么</label>
+      <input class="forge__input" id="forge-input" name="prompt" type="text" maxlength="200" autocomplete="off" placeholder="例如：一只蹲坐的青铜猫头鹰">
+      <div class="chips" role="radiogroup" aria-label="风格" id="forge-styles">
+        <button type="button" class="chip" role="radio" aria-checked="true" data-style="photorealistic">写实</button>
+        <button type="button" class="chip" role="radio" aria-checked="false" data-style="cartoon">卡通</button>
+        <button type="button" class="chip" role="radio" aria-checked="false" data-style="hand_painted">手绘</button>
+        <button type="button" class="chip" role="radio" aria-checked="false" data-style="fantasy">奇幻</button>
+        <button type="button" class="chip" role="radio" aria-checked="false" data-style="cyberpunk">赛博朋克</button>
+      </div>
+      <button type="submit" class="btn btn--primary" id="btn-forge-submit">凝聚</button>
+    </form>
+    <p class="forge__status" id="forge-status" role="status"></p>
+    <div class="forge__shelf">
+      <p class="forge__label" id="forge-shelf-label">已有的造物</p>
+      <ul class="forge__list" id="forge-list"></ul>
+    </div>
+  </aside>
+
+  <p class="credit">作者：狂热AI</p>
+  <noscript><p class="noscript">这部影片需要 JavaScript 与 WebGL 才能播放。</p></noscript>
+  <script type="module" src="src/main.js"></script>
+</body>
+</html>

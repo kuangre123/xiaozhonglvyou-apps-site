@@ -1,0 +1,128 @@
+[
+  {
+    "id": "asteroid",
+    "era": "solar",
+    "file": "asteroid.glb",
+    "bytes": 885532,
+    "prompt": "一颗不规则形状的岩石小行星，表面布满大小不一的陨石坑、裂缝与棱角，灰褐色粗糙岩石质感，单个完整物体，居中，纯色背景，无文字，无底座",
+    "taskId": 8003003,
+    "model": "G1-Turbo"
+  },
+  {
+    "id": "proto_earth",
+    "era": "solar",
+    "file": "proto_earth.glb",
+    "bytes": 557252,
+    "prompt": "一颗熔岩行星，完整球体，黑色火山岩地壳被发光的橙红色岩浆裂缝网络割裂，局部有岩浆海，单个完整物体，居中，纯色背景，无文字，无底座",
+    "taskId": 8003194,
+    "model": "G1-Turbo"
+  },
+  {
+    "id": "earth",
+    "era": "solar",
+    "file": "earth.glb",
+    "bytes": 636192,
+    "prompt": "地球，完整球体行星模型，深蓝色海洋，绿色与棕色的大陆，白色旋涡云层，极地冰盖，写实，单个完整物体，居中，纯色背景，无文字，无底座",
+    "taskId": 8003195,
+    "model": "G1-Turbo"
+  },
+  {
+    "id": "trilobite",
+    "era": "life",
+    "file": "trilobite.glb",
+    "bytes": 760240,
+    "prompt": "一只三叶虫，寒武纪远古节肢动物，椭圆形分节甲壳，清晰的头盾、胸节与尾盾，深褐色带光泽的外骨骼，俯视略侧，单个完整物体，居中，纯色背景，无文字，无底座",
+    "taskId": 8003193,
+    "model": "G1-Turbo"
+  },
+  {
+    "id": "ammonite",
+    "era": "life",
+    "file": "ammonite.glb",
+    "bytes": 858860,
+    "prompt": "一枚菊石，螺旋盘卷的远古贝壳，壳面有清晰放射肋纹，珍珠母光泽的米棕色，单个完整物体，居中，纯色背景，无文字，无底座",
+    "taskId": 8003298,
+    "model": "G1-Turbo"
+  },
+  {
+    "id": "trex",
+    "era": "life",
+    "file": "trex.glb",
+    "bytes": 900512,
+    "prompt": "一只霸王龙，全身站立行走姿态，粗壮后肢与长尾，张口露出牙齿，带鳞片纹理的橄榄绿与褐色皮肤，写实恐龙，单个完整物体，居中，纯色背景，无文字，无底座",
+    "taskId": 8003302,
+    "model": "G1-Turbo"
+  },
+  {
+    "id": "ding",
+    "era": "civilization",
+    "file": "ding.glb",
+    "bytes": 714836,
+    "prompt": "一尊商周青铜方鼎，四足双耳，器身饕餮纹浮雕，青绿色铜锈与暗金色铜质，博物馆文物，单个完整物体，居中，纯色背景，无文字，无底座",
+    "taskId": 8003309,
+    "model": "G1-Turbo"
+  },
+  {
+    "id": "telescope",
+    "era": "civilization",
+    "file": "telescope.glb",
+    "bytes": 958252,
+    "prompt": "一架古董黄铜天文折射望远镜，长镜筒斜指向上，架在结实的木质三脚架上，抛光黄铜与深色木材，单个完整物体，居中，纯色背景，无文字，无底座",
+    "taskId": 8003386,
+    "model": "G1-Turbo"
+  },
+  {
+    "id": "locomotive",
+    "era": "civilization",
+    "file": "locomotive.glb",
+    "bytes": 1356056,
+    "prompt": "一台十九世纪蒸汽机车火车头，黑色锅炉与烟囱，红色大车轮与连杆，黄铜装饰，单个完整物体，居中，纯色背景，无文字，无底座",
+    "taskId": 8003416,
+    "model": "G1-Turbo"
+  },
+  {
+    "id": "rocket",
+    "era": "civilization",
+    "file": "rocket.glb",
+    "bytes": 1026076,
+    "prompt": "一枚重型运载火箭，竖直姿态，白色箭体带黑色标识条纹，底部四个助推器与发动机喷口，顶部整流罩，单个完整物体，居中，纯色背景，无文字，无底座",
+    "taskId": 8003418,
+    "model": "G1-Turbo"
+  },
+  {
+    "id": "astronaut",
+    "era": "civilization",
+    "file": "astronaut.glb",
+    "bytes": 915916,
+    "prompt": "一名宇航员，身穿白色舱外宇航服，金色反光面罩头盔，背着生命维持背包，站立姿态全身，单个完整物体，居中，纯色背景，无文字，无底座",
+    "taskId": 8003501,
+    "model": "G1-Turbo"
+  },
+  {
+    "id": "jwst",
+    "era": "civilization",
+    "file": "jwst.glb",
+    "bytes": 1212992,
+    "prompt": "詹姆斯·韦伯空间望远镜，由金色六边形镜片拼成的大型主镜，下方是银紫色多层菱形遮阳板，单个完整物体，居中，纯色背景，无文字，无底座",
+    "taskId": 8003512,
+    "model": "G1-Turbo"
+  },
+  {
+    "id": "robot",
+    "era": "future",
+    "file": "robot.glb",
+    "bytes": 880572,
+    "prompt": "一个人形机器人，白色流线型外壳与黑色关节，头部是光滑的黑色面罩，站立姿态全身，未来工业设计，单个完整物体，居中，纯色背景，无文字，无底座",
+    "taskId": 8003529,
+    "model": "G1-Turbo"
+  },
+  {
+    "id": "starship",
+    "era": "future",
+    "file": "starship.glb",
+    "bytes": 998800,
+    "prompt": "一艘巨型星际飞船，修长的流线型银白色舰体，中段环绕着旋转的环形居住舱，尾部多台蓝色发光引擎，硬表面科幻设计，单个完整物体，居中，纯色背景，无文字，无底座",
+    "taskId": 8003554,
+    "model": "G1-Turbo"
+  }
+]
