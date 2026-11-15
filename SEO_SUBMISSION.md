@@ -308,3 +308,38 @@ The following actions require user accounts on each search engine's webmaster pl
 - URL: https://webmaster.yandex.com
 - Add site and verify
 - Submit `https://www.xiaozhonglvyou.com/sitemap-local.xml` and request recrawling for `tr-tr.html`, `tr-tr-photo-cleaner.html`, and `tr-tr-en-iyi-iphone-fotograf-temizleme.html`
+
+
+## International search update - 2026-11-15
+
+This release addresses France, Germany, Malaysia, Egypt, Japan, Sweden, Italy,
+Netherlands, United Kingdom, Poland and Spain. It adds local-language task answers
+to the existing hubs, a Dutch `nl-nl.html` catalog, and complete UK/Spain catalogs.
+The shared English Netherlands/Nordics route retains its URL; it now links to the
+Dutch and Swedish catalogs instead of embedding Swedish storefront sections.
+The Dutch route has reciprocal `nl-NL` alternates, canonical, visible navigation,
+FAQ and sitemap/search coverage. App interface language is separate from website
+language. Nine Apple listings in each of the eleven markets were checked on
+2026-11-15; new Netherlands/UK/Spain destinations are recorded in
+`scripts/international-store-facts.mjs`. Older visible metadata check dates on
+other pages retain their original meaning.
+
+| Markets | Search work in this release |
+| --- | --- |
+| All eleven | Static, crawlable local-language answers; Google/Bing crawler access; reciprocal language alternatives; updated main and local sitemap; existing automatic changed-URL IndexNow workflow. |
+| France | QwantBot remains allowed. Qwant documents discovery via links and sitemaps, accessible HTML, robots policy and quality evaluation before indexing. No separate Qwant submission receipt is claimed. |
+| Germany / France | Ecosia currently documents Bing, Google and EUSP as result providers, with EUSP available on Ecosia in France at the time checked. Provider choice varies; do not equate a Bing receipt with complete Ecosia coverage. |
+| Japan | LINE Yahoo states Yahoo! JAPAN uses Google's search engine. Preserve Japanese content, Google discovery and the existing Yahoo! JAPAN crawler policy. No independent Yahoo! JAPAN webmaster submission is claimed. |
+| Malaysia, Egypt, Sweden, Italy, Netherlands, UK, Poland, Spain | Google/Bing technical readiness and native-language task content. This release does not invent country-specific submission portals or claim country market-share figures. |
+
+Primary sources checked 2026-11-15:
+
+- Google localized version guidelines: https://developers.google.com/search/docs/specialty/international/localized-versions
+- Qwant indexing: https://help.qwant.com/hc/fr-fr/articles/49002658519569-Comment-Qwant-indexe-le-web
+- Ecosia providers: https://support.ecosia.org/article/579-search-results-providers
+- LINE Yahoo Google technology statement: https://privacy.lycorp.co.jp/ja/utilization/
+- IndexNow receipt semantics: https://www.indexnow.org/documentation
+
+IndexNow HTTP 200 indicates URL receipt. It does not establish indexing,
+rankings, impressions, clicks, downloads or sales. This release has no new
+post-publication country performance measurement.

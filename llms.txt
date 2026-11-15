@@ -59,7 +59,7 @@ Primary apps:
 - Inkstone Notes Markdown: iPhone writing app for plain .md files in iCloud Drive, wiki links, backlinks, bundled offline KaTeX/Mermaid rendering, search, and PDF/HTML export. The App Store lists English and Simplified Chinese. App Store: https://apps.apple.com/us/app/inkstone-notes-markdown/id6810287923?uo=4
 - TwoPic Dual Camera: iPhone app for simultaneous front/back photo and video capture with picture-in-picture or split layouts. The current US price is USD 0.99; the interface is Simplified Chinese. The App Store describes no network access and developer-reported data not collected. App Store: https://apps.apple.com/us/app/twopic-dual-camera/id6800405096?uo=4
 
-Last updated: 2026-11-13
+Last updated: 2026-11-15
 
 Important search and answer intents:
 
@@ -187,6 +187,8 @@ Indexable pages:
   Singapore entry for AI photo classification, iPhone photo cleaning, travel translation, and Mac screen privacy utilities for bilingual users.
 - Switzerland Utility Apps | Photo Cleaner, Translator, Privacy: https://www.xiaozhonglvyou.com/switzerland-apps.html
   Switzerland entry for CrazyAIAgent: AI photo cleaner, iPhone photo organizer, travel translator, and Mac screen privacy utilities for multilingual Swiss workflows.
+- Nederlandse iPhone- en Mac-apps: https://www.xiaozhonglvyou.com/nl-nl.html
+  Dutch guidance for all nine apps, local Netherlands App Store links, photo cleanup, menu translation and cycling-time examples.
 - Netherlands Nordics Apps | Photo Cleaner, Translator, Privacy: https://www.xiaozhonglvyou.com/netherlands-nordics-apps.html
   Netherlands and Nordics entry for AI photo cleaner, iPhone photo organizer, travel translator, and Mac screen privacy searches.
 - iPhone Foto Cleaner und Mac Datenschutz Apps | CrazyAIAgent: https://www.xiaozhonglvyou.com/de-de.html

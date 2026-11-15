@@ -1,5 +1,6 @@
 // Regional availability and destinations verified through Apple Lookup on 2026-10-23.
 // Store availability does not imply a localized website page or a particular app interface language.
+// Netherlands, UK and Spain destinations were additionally checked on 2026-11-15.
 export const portfolioMarketCheckedDate = "2026-10-23";
 
 export const portfolioMarketFacts = [
@@ -14,7 +15,10 @@ export const portfolioMarketFacts = [
       "se",
       "eg",
       "it",
-      "pl"
+      "pl",
+      "nl",
+      "gb",
+      "es"
     ],
     "storefrontUrls": {
       "fr": "https://apps.apple.com/fr/app/ai-cleaning-nettoyeur-photo/id6768019606?uo=4",
@@ -25,7 +29,10 @@ export const portfolioMarketFacts = [
       "se": "https://apps.apple.com/se/app/ai-cleaning-fotorensare/id6768019606?uo=4",
       "eg": "https://apps.apple.com/eg/app/ai-cleaning-photo-cleaner/id6768019606?uo=4",
       "it": "https://apps.apple.com/it/app/ai-cleaning-pulizia-foto/id6768019606?uo=4",
-      "pl": "https://apps.apple.com/pl/app/ai-cleaning-photo-cleaner/id6768019606?uo=4"
+      "pl": "https://apps.apple.com/pl/app/ai-cleaning-photo-cleaner/id6768019606?uo=4",
+      "nl": "https://apps.apple.com/nl/app/ai-cleaning-foto-opruimen/id6768019606?uo=4",
+      "gb": "https://apps.apple.com/gb/app/ai-cleaning-photo-cleaner/id6768019606?uo=4",
+      "es": "https://apps.apple.com/es/app/ai-cleaning-limpiador-fotos/id6768019606?uo=4"
     }
   },
   {
@@ -39,7 +46,10 @@ export const portfolioMarketFacts = [
       "se",
       "eg",
       "it",
-      "pl"
+      "pl",
+      "nl",
+      "gb",
+      "es"
     ],
     "storefrontUrls": {
       "fr": "https://apps.apple.com/fr/app/translation-specialist/id6755734543?uo=4",
@@ -50,7 +60,10 @@ export const portfolioMarketFacts = [
       "se": "https://apps.apple.com/se/app/translation-specialist/id6755734543?uo=4",
       "eg": "https://apps.apple.com/eg/app/translation-specialist-speak/id6755734543?uo=4",
       "it": "https://apps.apple.com/it/app/translation-specialist/id6755734543?uo=4",
-      "pl": "https://apps.apple.com/pl/app/translation-specialist-speak/id6755734543?uo=4"
+      "pl": "https://apps.apple.com/pl/app/translation-specialist-speak/id6755734543?uo=4",
+      "nl": "https://apps.apple.com/nl/app/translation-specialist/id6755734543?uo=4",
+      "gb": "https://apps.apple.com/gb/app/translation-specialist-speak/id6755734543?uo=4",
+      "es": "https://apps.apple.com/es/app/translation-specialist/id6755734543?uo=4"
     }
   },
   {
@@ -64,7 +77,10 @@ export const portfolioMarketFacts = [
       "se",
       "eg",
       "it",
-      "pl"
+      "pl",
+      "nl",
+      "gb",
+      "es"
     ],
     "storefrontUrls": {
       "fr": "https://apps.apple.com/fr/app/anti-spy-screen/id6761301764?mt=12&uo=4",
@@ -75,7 +91,10 @@ export const portfolioMarketFacts = [
       "se": "https://apps.apple.com/se/app/anti-spy-screen/id6761301764?mt=12&uo=4",
       "eg": "https://apps.apple.com/eg/app/anti-spy-screen/id6761301764?mt=12&uo=4",
       "it": "https://apps.apple.com/it/app/anti-spy-screen/id6761301764?mt=12&uo=4",
-      "pl": "https://apps.apple.com/pl/app/anti-spy-screen/id6761301764?mt=12&uo=4"
+      "pl": "https://apps.apple.com/pl/app/anti-spy-screen/id6761301764?mt=12&uo=4",
+      "nl": "https://apps.apple.com/nl/app/anti-spy-screen/id6761301764?mt=12&uo=4",
+      "gb": "https://apps.apple.com/gb/app/anti-spy-screen/id6761301764?mt=12&uo=4",
+      "es": "https://apps.apple.com/es/app/anti-spy-screen/id6761301764?mt=12&uo=4"
     }
   },
   {
@@ -89,7 +108,10 @@ export const portfolioMarketFacts = [
       "se",
       "eg",
       "it",
-      "pl"
+      "pl",
+      "nl",
+      "gb",
+      "es"
     ],
     "storefrontUrls": {
       "fr": "https://apps.apple.com/fr/app/anti-spy-screen-lite/id6766485393?mt=12&uo=4",
@@ -100,7 +122,10 @@ export const portfolioMarketFacts = [
       "se": "https://apps.apple.com/se/app/anti-spy-screen-lite/id6766485393?mt=12&uo=4",
       "eg": "https://apps.apple.com/eg/app/anti-spy-screen-lite/id6766485393?mt=12&uo=4",
       "it": "https://apps.apple.com/it/app/anti-spy-screen-lite/id6766485393?mt=12&uo=4",
-      "pl": "https://apps.apple.com/pl/app/anti-spy-screen-lite/id6766485393?mt=12&uo=4"
+      "pl": "https://apps.apple.com/pl/app/anti-spy-screen-lite/id6766485393?mt=12&uo=4",
+      "nl": "https://apps.apple.com/nl/app/anti-spy-screen-lite/id6766485393?mt=12&uo=4",
+      "gb": "https://apps.apple.com/gb/app/anti-spy-screen-lite/id6766485393?mt=12&uo=4",
+      "es": "https://apps.apple.com/es/app/anti-spy-screen-lite/id6766485393?mt=12&uo=4"
     }
   },
   {
@@ -114,7 +139,10 @@ export const portfolioMarketFacts = [
       "se",
       "eg",
       "it",
-      "pl"
+      "pl",
+      "nl",
+      "gb",
+      "es"
     ],
     "storefrontUrls": {
       "fr": "https://apps.apple.com/fr/app/gifmaker-gif-maker-editor/id6783559364?uo=4",
@@ -125,7 +153,10 @@ export const portfolioMarketFacts = [
       "se": "https://apps.apple.com/se/app/gifmaker-gif-maker-editor/id6783559364?uo=4",
       "eg": "https://apps.apple.com/eg/app/gifmaker-gif-maker-editor/id6783559364?uo=4",
       "it": "https://apps.apple.com/it/app/gifmaker-gif-maker-editor/id6783559364?uo=4",
-      "pl": "https://apps.apple.com/pl/app/gifmaker-gif-maker-editor/id6783559364?uo=4"
+      "pl": "https://apps.apple.com/pl/app/gifmaker-gif-maker-editor/id6783559364?uo=4",
+      "nl": "https://apps.apple.com/nl/app/gifmaker-gif-maker-editor/id6783559364?uo=4",
+      "gb": "https://apps.apple.com/gb/app/gifmaker-gif-maker-editor/id6783559364?uo=4",
+      "es": "https://apps.apple.com/es/app/gifmaker-crear-gif-y-memes/id6783559364?uo=4"
     }
   },
   {
@@ -139,7 +170,10 @@ export const portfolioMarketFacts = [
       "se",
       "eg",
       "it",
-      "pl"
+      "pl",
+      "nl",
+      "gb",
+      "es"
     ],
     "storefrontUrls": {
       "fr": "https://apps.apple.com/fr/app/happyride-suivi-v%C3%A9lo-auto/id6786365305?uo=4",
@@ -150,7 +184,10 @@ export const portfolioMarketFacts = [
       "se": "https://apps.apple.com/se/app/happyride-cykellogg/id6786365305?uo=4",
       "eg": "https://apps.apple.com/eg/app/happyride-auto-ride-tracker/id6786365305?uo=4",
       "it": "https://apps.apple.com/it/app/happyride-traccia-bici/id6786365305?uo=4",
-      "pl": "https://apps.apple.com/pl/app/happyride-auto-ride-tracker/id6786365305?uo=4"
+      "pl": "https://apps.apple.com/pl/app/happyride-auto-ride-tracker/id6786365305?uo=4",
+      "nl": "https://apps.apple.com/nl/app/happyride-auto-ride-tracker/id6786365305?uo=4",
+      "gb": "https://apps.apple.com/gb/app/happyride-auto-ride-tracker/id6786365305?uo=4",
+      "es": "https://apps.apple.com/es/app/happyride-auto-ride-tracker/id6786365305?uo=4"
     }
   },
   {
@@ -164,7 +201,10 @@ export const portfolioMarketFacts = [
       "se",
       "eg",
       "it",
-      "pl"
+      "pl",
+      "nl",
+      "gb",
+      "es"
     ],
     "storefrontUrls": {
       "fr": "https://apps.apple.com/fr/app/lele-health/id6775935474?uo=4",
@@ -175,7 +215,10 @@ export const portfolioMarketFacts = [
       "se": "https://apps.apple.com/se/app/lele-health/id6775935474?uo=4",
       "eg": "https://apps.apple.com/eg/app/lele-health/id6775935474?uo=4",
       "it": "https://apps.apple.com/it/app/lele-health/id6775935474?uo=4",
-      "pl": "https://apps.apple.com/pl/app/lele-health/id6775935474?uo=4"
+      "pl": "https://apps.apple.com/pl/app/lele-health/id6775935474?uo=4",
+      "nl": "https://apps.apple.com/nl/app/lele-health/id6775935474?uo=4",
+      "gb": "https://apps.apple.com/gb/app/lele-health/id6775935474?uo=4",
+      "es": "https://apps.apple.com/es/app/lele-health/id6775935474?uo=4"
     }
   },
   {
@@ -189,7 +232,10 @@ export const portfolioMarketFacts = [
       "se",
       "eg",
       "it",
-      "pl"
+      "pl",
+      "nl",
+      "gb",
+      "es"
     ],
     "storefrontUrls": {
       "fr": "https://apps.apple.com/fr/app/inkstone-notes-markdown/id6810287923?uo=4",
@@ -200,7 +246,10 @@ export const portfolioMarketFacts = [
       "se": "https://apps.apple.com/se/app/inkstone-notes-markdown/id6810287923?uo=4",
       "eg": "https://apps.apple.com/eg/app/inkstone-notes-markdown/id6810287923?uo=4",
       "it": "https://apps.apple.com/it/app/inkstone-notes-markdown/id6810287923?uo=4",
-      "pl": "https://apps.apple.com/pl/app/inkstone-notes-markdown/id6810287923?uo=4"
+      "pl": "https://apps.apple.com/pl/app/inkstone-notes-markdown/id6810287923?uo=4",
+      "nl": "https://apps.apple.com/nl/app/inkstone-notes-markdown/id6810287923?uo=4",
+      "gb": "https://apps.apple.com/gb/app/inkstone-notes-markdown/id6810287923?uo=4",
+      "es": "https://apps.apple.com/es/app/inkstone-notes-markdown/id6810287923?uo=4"
     }
   },
   {
@@ -214,7 +263,10 @@ export const portfolioMarketFacts = [
       "se",
       "eg",
       "it",
-      "pl"
+      "pl",
+      "nl",
+      "gb",
+      "es"
     ],
     "storefrontUrls": {
       "fr": "https://apps.apple.com/fr/app/twopic-dual-camera/id6800405096?uo=4",
@@ -225,7 +277,10 @@ export const portfolioMarketFacts = [
       "se": "https://apps.apple.com/se/app/twopic-dual-camera/id6800405096?uo=4",
       "eg": "https://apps.apple.com/eg/app/twopic-dual-camera/id6800405096?uo=4",
       "it": "https://apps.apple.com/it/app/twopic-dual-camera/id6800405096?uo=4",
-      "pl": "https://apps.apple.com/pl/app/twopic-dual-camera/id6800405096?uo=4"
+      "pl": "https://apps.apple.com/pl/app/twopic-dual-camera/id6800405096?uo=4",
+      "nl": "https://apps.apple.com/nl/app/twopic-dual-camera/id6800405096?uo=4",
+      "gb": "https://apps.apple.com/gb/app/twopic-dual-camera/id6800405096?uo=4",
+      "es": "https://apps.apple.com/es/app/twopic-dual-camera/id6800405096?uo=4"
     }
   }
 ];

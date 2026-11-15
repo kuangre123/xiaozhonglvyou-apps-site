@@ -299,7 +299,7 @@ const markets = [
 const regionalLinks = [
   ["United States", "us-apps.html"], ["United Kingdom", "uk-apps.html"],
   ["Deutschland", "de-de.html"], ["France", "fr-fr.html"], ["España", "es-es.html"],
-  ["Italia", "it-it.html"], ["日本", "ja-jp.html"], ["한국", "ko-kr.html"],
+  ["Italia", "it-it.html"], ["Nederlands · Nederland", "nl-nl.html"], ["日本", "ja-jp.html"], ["한국", "ko-kr.html"],
   ["简体中文", "zh-cn.html"], ["Русский", "ru-ru.html"], ["Čeština", "cs-cz.html"], ["Tiếng Việt", "vi-vn.html"],
   ["Türkçe", "tr-tr.html"], ["Brasil", "pt-br.html"], ["México", "es-mx.html"],
   ["Bahasa Melayu · Malaysia", "ms-my.html"], ["العربية · مصر", "ar-eg.html"], ["Polski · Polska", "pl-pl.html"], ["Svenska · Sverige", "sv-se.html"]
@@ -309,7 +309,7 @@ const globalAlternates = [
   ["en", "/"], ["en-US", "/us-apps.html"], ["en-GB", "/uk-apps.html"],
   ["en-CA", "/canada-australia-apps.html"], ["en-AU", "/canada-australia-apps.html"],
   ["en-SG", "/singapore-apps.html"], ["en-CH", "/switzerland-apps.html"],
-  ["en-NL", "/netherlands-nordics-apps.html"], ["en-SE", "/netherlands-nordics-apps.html"],
+  ["nl-NL", "/nl-nl.html"], ["en-NL", "/netherlands-nordics-apps.html"], ["en-SE", "/netherlands-nordics-apps.html"],
   ["en-DK", "/netherlands-nordics-apps.html"], ["en-NO", "/netherlands-nordics-apps.html"],
   ["en-FI", "/netherlands-nordics-apps.html"], ["de-DE", "/de-de.html"],
   ["fr-FR", "/fr-fr.html"], ["es-ES", "/es-es.html"], ["it-IT", "/it-it.html"],
@@ -330,7 +330,7 @@ const clusterFiles = [
   "singapore-apps.html", "switzerland-apps.html", "netherlands-nordics-apps.html",
   "de-de.html", "fr-fr.html", "es-es.html", "it-it.html", "ko-kr.html", "ja-jp.html",
   "ru-ru.html", "cs-cz.html", "vi-vn.html", "tr-tr.html", "pt-br.html", "es-mx.html",
-  "zh-cn.html", "zh-hant.html", "ms-my.html", "ar-eg.html", "pl-pl.html", "sv-se.html"
+  "zh-cn.html", "zh-hant.html", "ms-my.html", "ar-eg.html", "pl-pl.html", "sv-se.html", "nl-nl.html"
 ];
 
 function escapeHtml(value) {
@@ -384,7 +384,8 @@ function updateRegionsPage(html) {
     ["ms-my.html", "Bahasa Melayu · Malaysia", "Nine iPhone and Mac apps with Malay guidance and Malaysian storefront links."],
     ["ar-eg.html", "العربية · مصر", "Nine iPhone and Mac apps with Arabic guidance and Egyptian storefront links."],
     ["pl-pl.html", "Polski · Polska", "Nine iPhone and Mac apps with Polish guidance and Polish storefront links."],
-    ["sv-se.html", "Svenska · Sverige", "Nine iPhone and Mac apps with Swedish guidance and Swedish storefront links."]
+    ["sv-se.html", "Svenska · Sverige", "Nine iPhone and Mac apps with Swedish guidance and Swedish storefront links."],
+    ["nl-nl.html", "Nederlands · Nederland", "Nine iPhone and Mac apps with Dutch guidance and Netherlands storefront links."]
   ];
   let updated = html;
 
@@ -435,7 +436,8 @@ function render(market) {
     my: ["Navigasi utama", "Jejak halaman", "Aplikasi iPhone dan Mac CrazyAIAgent"],
     eg: ["التنقل الرئيسي", "مسار الصفحة", "تطبيقات CrazyAIAgent لآيفون وماك"],
     pl: ["Nawigacja główna", "Ścieżka strony", "Aplikacje CrazyAIAgent na iPhone’a i Maca"],
-    se: ["Huvudnavigering", "Sidans sökväg", "CrazyAIAgent-appar för iPhone och Mac"]
+    se: ["Huvudnavigering", "Sidans sökväg", "CrazyAIAgent-appar för iPhone och Mac"],
+    nl: ["Hoofdnavigatie", "Navigatiepad", "CrazyAIAgent-apps voor iPhone en Mac"]
   }[market.store];
   const webpage = {
     "@context": "https://schema.org", "@type": "WebPage", "@id": `${url}#page`,
