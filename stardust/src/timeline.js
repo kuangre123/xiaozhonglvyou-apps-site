@@ -442,18 +442,21 @@ const FINALE = {
   temp: 2.725,
   finale: true,
 };
+// 「造物」入口隐藏时，结尾不再邀请观众去造物
+const FINALE_LINE_FILM_ONLY = '你血液里的铁、骨骼里的钙，都来自一颗死去的恒星。138 亿年后，星尘抬起头，第一次看见了自己。';
 
 /**
  * @param available Map<modelId, manifest 条目>：只有成功加载的造物才进入时间线
+ * @param opts.forge 是否开放「造物」入口（决定结尾那句话）
  */
-export function buildTimeline(available) {
+export function buildTimeline(available, { forge = true } = {}) {
   const shots = [...EARLY];
   let k = 0;
   for (const c of CREATIONS) {
     if (!available.has(c.model)) continue;
     shots.push(creationShot(c, k++, available.get(c.model)));
   }
-  shots.push(FINALE);
+  shots.push(forge ? FINALE : { ...FINALE, line: FINALE_LINE_FILM_ONLY });
 
   let t = 0;
   for (const s of shots) {

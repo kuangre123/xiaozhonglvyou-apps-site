@@ -309,7 +309,15 @@ export class Forge {
     if (this.live) {
       try {
         const mine = await (await fetch('api/creations', { cache: 'no-store' })).json();
-        entries.unshift(...mine.map((c) => ({ key: `user:${c.id}`, kind: 'user', id: c.id, label: c.prompt, prompt: c.prompt, url: c.url })));
+        // 同一句话生成过好几次（比如两只「猫咪」）：按先后标上 · 2、· 3，免得看起来像重复
+        const seen = new Map();
+        const labels = new Map();
+        for (const c of [...mine].reverse()) {
+          const n = (seen.get(c.prompt) || 0) + 1;
+          seen.set(c.prompt, n);
+          labels.set(c.id, n > 1 ? `${c.prompt} · ${n}` : c.prompt);
+        }
+        entries.unshift(...mine.map((c) => ({ key: `user:${c.id}`, kind: 'user', id: c.id, label: labels.get(c.id), prompt: c.prompt, url: c.url })));
       } catch { /* 列表拿不到不影响使用 */ }
     }
     this.ui.setForgeList(entries, this.currentKey);

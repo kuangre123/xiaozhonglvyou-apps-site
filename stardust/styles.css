@@ -677,6 +677,12 @@ button {
   white-space: nowrap;
 }
 
+/* 「造物」入口暂时隐藏（代码保留，地址栏加 ?forge=1 打开） */
+html[data-forge="off"] #btn-forge,
+html[data-forge="off"] #btn-finale-forge {
+  display: none;
+}
+
 /* 右下角署名：片头、影片、造物模式下都在 */
 .credit {
   position: fixed;

@@ -19,6 +19,9 @@ import { Soundscape } from './audio.js';
 import { clamp, ease, lerp, smoothstep } from './util.js';
 
 const query = new URLSearchParams(location.search);
+// 「造物」入口：代码保留，默认不显示；地址栏加 ?forge=1 才打开
+const FORGE_ENTRY = query.has('forge');
+document.documentElement.dataset.forge = FORGE_ENTRY ? 'on' : 'off';
 const coarse = matchMedia('(pointer: coarse)').matches;
 const N = clamp(parseInt(query.get('n'), 10) || (coarse ? 70000 : 160000), 20000, 400000);
 
@@ -415,7 +418,7 @@ ui.on('replay', () => {
   setPlaying(true);
 });
 ui.on('forgeOpen', () => {
-  if (!started || forge.active || pendingForge) return;
+  if (!FORGE_ENTRY || !started || forge.active || pendingForge) return;
   pendingForge = true;
   ui.openForge();
 });
@@ -528,7 +531,7 @@ async function boot() {
     }),
   );
 
-  const built = buildTimeline(available);
+  const built = buildTimeline(available, { forge: FORGE_ENTRY });
   for (const shot of built.shots) {
     if (shot.form !== 'model') continue;
     forms.set(formKey(shot), field.createFormation(F.model(samples.get(shot.model), shot.tint)));
