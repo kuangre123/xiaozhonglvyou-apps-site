@@ -59,7 +59,7 @@ Primary apps:
 - Inkstone Notes Markdown: iPhone writing app for plain .md files in iCloud Drive, wiki links, backlinks, bundled offline KaTeX/Mermaid rendering, search, and PDF/HTML export. The App Store lists English and Simplified Chinese. App Store: https://apps.apple.com/us/app/inkstone-notes-markdown/id6810287923?uo=4
 - TwoPic Dual Camera: iPhone app for simultaneous front/back photo and video capture with picture-in-picture or split layouts. The current US price is USD 0.99; the interface is Simplified Chinese. The App Store describes no network access and developer-reported data not collected. App Store: https://apps.apple.com/us/app/twopic-dual-camera/id6800405096?uo=4
 
-Last updated: 2026-11-15
+Last updated: 2026-11-18
 
 Important search and answer intents:
 
@@ -200,7 +200,8 @@ Indexable pages:
 - Apps iPhone et Mac | Photo IA, Traduction, Confidentialite: https://www.xiaozhonglvyou.com/fr-fr.html
   Page France pour CrazyAIAgent : classement photo IA, nettoyeur photo iPhone, traducteur de voyage et confidentialite d'ecran Mac.
 - Nettoyeur photo iPhone | Classement photo IA et doublons: https://www.xiaozhonglvyou.com/nettoyeur-photo-iphone-fr.html
-  Guide francais pour nettoyer les photos iPhone : classer les photos avec l'IA, verifier les doublons, photos similaires, captures d'ecran, photos floues et gros medias avant suppression.
+  Guide français : fusionner les doublons dans Photos, attendre l’analyse, vérifier Photos iCloud et Supprimées récemment, puis comparer les neuf catégories IA avec Pro.
+
 - Apps iPhone y Mac en España | Limpiador de Fotos IA y Traductor: https://www.xiaozhonglvyou.com/es-es.html
   Entrada para España de CrazyAIAgent: clasificador de fotos con IA, limpiador de fotos iPhone, traductor de viaje y privacidad de pantalla para Mac.
 - App iPhone e Mac in Italia | Pulizia Foto IA, Traduzione, Privacy: https://www.xiaozhonglvyou.com/it-it.html

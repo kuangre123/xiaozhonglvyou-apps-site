@@ -6,7 +6,7 @@ export const internationalSearchMarkets = [
     title: "Trois questions avant d’installer une app.", intro: "Commencez par les réglages de l’iPhone, puis choisissez un outil si vous avez besoin de trier davantage de photos, de traduire un menu ou de préparer une sortie à vélo.",
     photoTitle: "Comment supprimer les photos en double sur iPhone ?",
     photo: ["Dans Photos, ouvrez la section Doublons lorsqu’elle est disponible et comparez les éléments avant de les fusionner.", "Distinguez les doublons exacts des prises similaires : une photo différente peut mériter d’être conservée.", "Pour examiner aussi les captures et les médias volumineux, ouvrez AI Cleaning et confirmez vous-même chaque sélection."],
-    photoLink: ["nettoyeur-photo-iphone-fr.html", "Lire le guide photo en français", "fr-FR"],
+    photoLink: ["nettoyeur-photo-iphone-fr.html#doublons-sans-app", "Lire les étapes dans Photos en français", "fr-FR"],
     menuTitle: "Comment traduire un menu avec l’iPhone ?", menu: ["Pour un menu papier, utilisez le mode caméra ; pour une photo déjà enregistrée, ouvrez-la depuis la photothèque dans le mode prévu.", "Choisissez la langue source et la langue cible. Photographiez le texte de face, avec assez de lumière.", "Comparez les prix, les quantités et les allergènes avec l’original ou demandez confirmation au restaurant."],
     menuLink: "Guide caméra et photo enregistrée", rideTitle: "Combien de temps pour faire 20 km à vélo ?",
     ride: "À une vitesse supposée de 20 km/h, comptez 60 minutes de déplacement. Avec 15 minutes de pause, prévoyez 75 minutes au total. Le vent, le relief et les arrêts peuvent modifier ce temps.",
