@@ -19,7 +19,11 @@ const strings = {
   }
 };
 export function renderGifToolWidget(locale = 'en') {
-  const s = strings[locale.startsWith('zh') ? 'zh' : 'en'];
+  const zh = locale.startsWith('zh');
+  const s = strings[zh ? 'zh' : 'en'];
+  const appPrompt = zh
+    ? `<div class="tool-convert-block" data-tool-convert><p><strong>需要把实况照片转 GIF、逐帧调速或加文字字幕？</strong> GIFmaker 支持在 iPhone 本地精细编辑与无水印导出。</p><div class="tool-convert-actions"><a class="button secondary" href="gif-maker-cn.html">查看 GIFmaker 应用</a><a href="best-gif-maker-apps-iphone.html" lang="en" hreflang="en">对比三款 GIF 应用</a></div></div>`
+    : `<div class="tool-convert-block" data-tool-convert><p><strong>Need Live Photo import, per-frame timing, captions, or boomerang on iPhone?</strong> GIFmaker edits on-device with no watermark ($0.99 upfront in the US store).</p><div class="tool-convert-actions"><a class="button secondary" href="gif-maker.html">Explore GIFmaker ($0.99)</a><a href="best-gif-maker-apps-iphone.html">Compare 3 iPhone GIF apps</a></div></div>`;
   return `<section class="tool-widget" id="gif-tool" aria-labelledby="gif-tool-heading" data-tool="gif-maker" data-gif-tool>
 <h2 id="gif-tool-heading">${s.title}</h2><p>${s.intro}</p>
 <form id="gif-tool-form">
@@ -37,7 +41,7 @@ export function renderGifToolWidget(locale = 'en') {
 <div class="tool-actions"><button class="button" type="submit" id="gif-tool-create">${s.create}</button><button class="button secondary" type="button" id="gif-tool-cancel" hidden>${s.cancel}</button><button class="button secondary" type="button" id="gif-tool-clear">${s.clear}</button></div>
 </form>
 <p class="tool-status" id="gif-tool-status" role="status" aria-live="polite">${s.ready}</p><progress id="gif-tool-progress" max="100" value="0" aria-label="${s.title}" hidden></progress>
-<section id="gif-tool-result" class="tool-result" aria-labelledby="gif-tool-result-heading" hidden><h3 id="gif-tool-result-heading">${s.result}</h3><div id="gif-tool-preview" data-preview-alt="${s.preview}"></div><p id="gif-tool-summary"></p><a id="gif-tool-download" class="button" download="animation.gif">${s.download}</a></section>
+<section id="gif-tool-result" class="tool-result" aria-labelledby="gif-tool-result-heading" hidden><h3 id="gif-tool-result-heading">${s.result}</h3><div id="gif-tool-preview" data-preview-alt="${s.preview}"></div><p id="gif-tool-summary"></p><a id="gif-tool-download" class="button" download="animation.gif">${s.download}</a>${appPrompt}</section>
 <p class="tool-help">${s.limits}</p><p class="tool-help">${s.note}</p><p class="tool-help">${s.privacy}</p><noscript><p>${s.noscript}</p></noscript>
 </section>`;
 }

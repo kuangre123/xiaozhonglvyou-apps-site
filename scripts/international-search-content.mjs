@@ -63,9 +63,9 @@ export const internationalSearchMarkets = [
     photo: ["Öppna Dubbletter i Bilder om avsnittet finns, och jämför bilderna innan du slår ihop dem.", "Skilj identiska kopior från liknande bilder. En annan vinkel eller ett ansiktsuttryck kan vara värt att behålla.", "Använd AI Cleaning om du även vill granska skärmbilder och stora medier. Kontrollera urvalet och bekräfta raderingen själv."],
     photoLink: ["duplicate-photo-cleaner-guide.html", "Guide till dubbla och liknande bilder", "en"],
     menuTitle: "Hur översätter man en meny med iPhone?", menu: ["Använd kameran för en tryckt meny. Öppna en redan sparad bild via fotoväljaren i rätt läge.", "Välj källspråk och målspråk. Se till att texten är skarp och väl belyst.", "Jämför priser, mängder och allergener med originalet eller fråga restaurangen."],
-    menuLink: "Guide till kamera och sparade foton", rideTitle: "Hur lång tid tar det att cykla 20 km?",
-    ride: "Med en antagen fart på 20 km/h blir tiden i rörelse 60 minuter. Med 15 minuters paus blir den totala tiden 75 minuter. Vind, backar och trafik kan ändra den faktiska tiden.",
-    rideLink: "Beräkna tid inklusive pauser", more: "Alla appar för Sverige", storeLabel: "Svenska App Store"
+    menuLink: "Guide till kamera och sparade foton", rideTitle: "Cykeltid: hur lång tid tar det att cykla 10 eller 20 km?",
+    ride: "Vid en antagen medelfart på 20 km/h är cykeltiden i rörelse 30 minuter för 10 km och 60 minuter för 20 km. Lägger du till 15 minuters paus på 20 km blir totaltiden 75 minuter. Vind, backar och trafik kan ändra den verkliga cykeltiden.",
+    rideLink: "Beräkna cykeltid inklusive pauser", more: "Alla appar för Sverige", storeLabel: "Svenska App Store"
   },
   {
     file: "it-it.html", country: "it", lang: "it-IT", english: "in inglese",

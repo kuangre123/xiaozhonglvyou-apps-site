@@ -512,15 +512,15 @@ const pages = [
   },
   {
     file: "gif-maker.html",
-    title: "GIF Maker App for iPhone | Video &amp; Live Photo",
-    description: "GIFmaker turns videos, Live Photos, and pictures into GIFs on iPhone. Edit timing, captions, canvas, reverse, and boomerang on-device. US price: $0.99.",
-    keywords: "GIF maker app, GIF maker app for iPhone, iPhone GIF maker, video GIF maker for iPhone, GIF maker from photos, animated GIF maker, on-device GIF editor",
+    title: "GIF Maker &amp; Editor for iPhone: Video, Live Photo ($0.99)",
+    description: "Make and edit GIFs on iPhone from video, Live Photos, or pictures. Adjust per-frame timing, captions, reverse, and boomerang on-device. $0.99, no watermark.",
+    keywords: "GIF maker app, GIF editor for iPhone, GIF maker app for iPhone, iPhone GIF maker, video GIF maker for iPhone, GIF maker from photos, animated GIF maker, on-device GIF editor",
     modifiedDate: gifmakerRelease.checkedDate,
     modifiedDateLabel: gifmakerCheckedDateLabel(),
     webPage: {
       "@id": "https://www.xiaozhonglvyou.com/gif-maker.html#page",
-      name: "GIF Maker App for iPhone | Video & Live Photo",
-      description: "GIFmaker turns videos, Live Photos, and pictures into GIFs on iPhone. Edit timing, captions, canvas, reverse, and boomerang on-device. US price: $0.99.",
+      name: "GIF Maker & Editor for iPhone: Video, Live Photo ($0.99)",
+      description: "Make and edit GIFs on iPhone from video, Live Photos, or pictures. Adjust per-frame timing, captions, reverse, and boomerang on-device. $0.99, no watermark.",
       dateModified: gifmakerRelease.checkedDate
     },
     softwareApplication: {
@@ -559,7 +559,7 @@ const pages = [
       "Make GIFs from video and Live Photos on iPhone.",
       "Turn videos and Live Photos into GIFs on iPhone.",
       "Free GIF maker app for iPhone.",
-      "Turn videos and Live Photos into GIFs on iPhone."
+      "Make and edit GIFs on iPhone from video or Live Photos."
     ],
     replacements: [
       {
@@ -574,8 +574,11 @@ const pages = [
       },
       {
         label: "product hero summary",
-        from: ["<p class=\"hero-summary\">Edit frame timing, captions, canvas, reverse, and boomerang with live preview. Everything stays on-device.</p>"],
-        to: "<p class=\"hero-summary\">Turn videos, Live Photos, or pictures into GIFs. Edit timing, captions, canvas, reverse, and boomerang with on-device processing.</p>"
+        from: [
+          "<p class=\"hero-summary\">Edit frame timing, captions, canvas, reverse, and boomerang with live preview. Everything stays on-device.</p>",
+          "<p class=\"hero-summary\">Turn videos, Live Photos, or pictures into GIFs. Edit timing, captions, canvas, reverse, and boomerang with on-device processing.</p>"
+        ],
+        to: "<p class=\"hero-summary\">Turn videos, Live Photos, or pictures into GIFs — or edit frame timing, captions, canvas ratios, reverse, and boomerang on-device. US App Store price: $0.99 upfront, with no watermark.</p>"
       },
       {
         label: "product guide call to action",

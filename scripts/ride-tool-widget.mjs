@@ -9,6 +9,9 @@ const copy = {
 
 export function renderRideToolWidget(locale = "en") {
   const zh = /^zh(?:-|$)/i.test(locale), t = copy[zh ? "zh" : "en"];
+  const appPrompt = zh
+    ? `<div class="tool-convert-block" data-tool-convert><p><strong>不想每次手动算或忘点开始？</strong> HappyRide 可在 iPhone 后台自动识别骑行并记录 GPS 路线与均速（核心自动记录免费）。</p><div class="tool-convert-actions"><a class="btn btn-secondary" href="happyride-auto-ride-tracker-cn.html">查看快乐轻骑 App</a><a href="automatic-bike-ride-tracker-iphone.html" lang="en" hreflang="en">自动骑行记录指南</a></div></div>`
+    : `<div class="tool-convert-block" data-tool-convert><p><strong>Tired of manual math or forgetting to tap Start?</strong> HappyRide records qualifying iPhone bike rides and GPS routes automatically in the background (core tracking is free).</p><div class="tool-convert-actions"><a class="btn btn-secondary" href="happyride-auto-ride-tracker.html">Explore HappyRide free tracker</a><a href="automatic-bike-ride-tracker-iphone.html">How auto-tracking works</a></div></div>`;
   return `<section class="tool-widget" id="ride-tool" data-ride-tool aria-labelledby="ride-tool-heading">
   <h2 id="ride-tool-heading">${t.title}</h2><p class="tool-privacy">${t.privacy}</p>
   <form class="tool-form" data-ride-form novalidate>
@@ -32,7 +35,7 @@ export function renderRideToolWidget(locale = "en") {
   <p class="tool-status" data-ride-status role="status" aria-live="polite" aria-atomic="true">${t.status}</p><p class="tool-error" data-ride-error role="alert" hidden></p>
   <section class="tool-result" data-ride-result hidden aria-labelledby="ride-tool-result-heading"><h3 id="ride-tool-result-heading">${t.result}</h3><dl class="tool-metrics">
     <div><dt>${t.resultDistance}</dt><dd data-ride-result-distance></dd></div><div><dt>${t.resultMoving}</dt><dd data-ride-result-moving></dd></div><div><dt>${t.resultBreaks}</dt><dd data-ride-result-breaks></dd></div><div><dt>${t.resultElapsed}</dt><dd data-ride-result-elapsed></dd></div><div><dt>${t.resultSpeed}</dt><dd data-ride-result-speed></dd></div><div><dt>${t.resultOverall}</dt><dd data-ride-result-overall></dd></div>
-  </dl><p class="tool-help">${t.precision.replace(/</g, "&lt;")}</p></section>
+  </dl><p class="tool-help">${t.precision.replace(/</g, "&lt;")}</p>${appPrompt}</section>
   <p class="tool-privacy-note">${t.note}</p><noscript><p>${t.unavailable}</p></noscript>
 </section>`;
 }

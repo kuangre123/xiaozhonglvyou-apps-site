@@ -22,7 +22,11 @@ const copy = {
 };
 
 export function renderImageToolWidget(locale = "en") {
-  const t = copy[/^zh(?:-|$)/i.test(locale) ? "zh" : "en"];
+  const zh = /^zh(?:-|$)/i.test(locale);
+  const t = copy[zh ? "zh" : "en"];
+  const appPrompt = zh
+    ? `<div class="tool-convert-block" data-tool-convert><p><strong>需要整理整个 iPhone 相册？</strong> AI Cleaning 支持在设备端复查重复照片、相似连拍与大体积视频后再确认清理。</p><div class="tool-convert-actions"><a class="btn btn-secondary" href="iphone-photo-cleaner-cn.html">查看 AI Cleaning 介绍</a><a href="duplicate-photo-cleaner-cn.html">重复照片清理指南</a></div></div>`
+    : `<div class="tool-convert-block" data-tool-convert><p><strong>Cleaning up a whole iPhone photo library?</strong> AI Cleaning groups duplicates, similar shots, screenshots, and large videos for on-device review.</p><div class="tool-convert-actions"><a class="btn btn-secondary" href="iphone-photo-cleaner.html">Explore AI Cleaning</a><a href="best-iphone-photo-cleaner-app.html">See free cleanup limit</a></div></div>`;
   return `<section class="tool-widget" data-image-tool aria-labelledby="image-tool-heading">
   <h2 id="image-tool-heading">${t.title}</h2>
   <p class="tool-privacy">${t.privacy}</p>
@@ -46,7 +50,7 @@ export function renderImageToolWidget(locale = "en") {
   <p class="tool-error" data-image-error role="alert" hidden></p>
   <div class="tool-preview-grid">
     <figure class="tool-preview" data-image-source-panel hidden><figcaption>${t.source}</figcaption><div class="tool-preview-image" data-image-source data-preview-alt="${t.preview}"></div><dl class="tool-metrics"><div><dt>${t.inputSize}</dt><dd data-image-input-size></dd></div><div><dt>${t.dimensions}</dt><dd data-image-input-dimensions></dd></div></dl></figure>
-    <figure class="tool-preview" data-image-result-panel hidden><figcaption>${t.result}</figcaption><div class="tool-preview-image" data-image-result data-preview-alt="${t.resultPreview}"></div><dl class="tool-metrics"><div><dt>${t.outputSize}</dt><dd data-image-output-size></dd></div><div><dt>${t.dimensions}</dt><dd data-image-output-dimensions></dd></div><div><dt>${t.savings}</dt><dd data-image-savings></dd></div></dl><p class="tool-help" data-image-output-format></p><a class="btn btn-primary" data-image-download download>${t.download}</a></figure>
+    <figure class="tool-preview" data-image-result-panel hidden><figcaption>${t.result}</figcaption><div class="tool-preview-image" data-image-result data-preview-alt="${t.resultPreview}"></div><dl class="tool-metrics"><div><dt>${t.outputSize}</dt><dd data-image-output-size></dd></div><div><dt>${t.dimensions}</dt><dd data-image-output-dimensions></dd></div><div><dt>${t.savings}</dt><dd data-image-savings></dd></div></dl><p class="tool-help" data-image-output-format></p><a class="btn btn-primary" data-image-download download>${t.download}</a>${appPrompt}</figure>
   </div>
   <noscript><p>${t.unavailable}</p></noscript>
 </section>`;
