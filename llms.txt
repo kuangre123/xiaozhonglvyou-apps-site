@@ -4,28 +4,28 @@ CrazyAIAgent is the independent app portfolio of Bo Chen (listed as “bo chen�
 
 Canonical resources:
 
-- Home: https://www.xiaozhonglvyou.com/
-- Developer profile: https://www.xiaozhonglvyou.com/about.html
-- App Store developer page: https://apps.apple.com/us/developer/bo-chen/id1321915789?uo=4
-- Directory: https://www.xiaozhonglvyou.com/directory.html
-- Search: https://www.xiaozhonglvyou.com/search.html
-- Sitemap index: https://www.xiaozhonglvyou.com/sitemap-index.xml
-- Sitemap: https://www.xiaozhonglvyou.com/sitemap.xml
-- Global-focused sitemap: https://www.xiaozhonglvyou.com/sitemap-global.xml
-- Local-search-focused sitemap: https://www.xiaozhonglvyou.com/sitemap-local.xml
-- Article sitemap: https://www.xiaozhonglvyou.com/sitemap-articles.xml
-- China-focused sitemap: https://www.xiaozhonglvyou.com/sitemap-cn.xml
-- Text sitemap: https://www.xiaozhonglvyou.com/sitemap.txt
-- RSS feed: https://www.xiaozhonglvyou.com/feed.xml
-- Atom feed: https://www.xiaozhonglvyou.com/atom.xml
-- Search index: https://www.xiaozhonglvyou.com/search-index.json
-- Web app manifest: https://www.xiaozhonglvyou.com/manifest.webmanifest
-- Robots: https://www.xiaozhonglvyou.com/robots.txt
-- Apps hub: https://www.xiaozhonglvyou.com/apps.html
-- Guides hub: https://www.xiaozhonglvyou.com/guides.html
-- App review and media kit: https://www.xiaozhonglvyou.com/media-kit.html
-- Support: https://www.xiaozhonglvyou.com/support.html
-- Security: https://www.xiaozhonglvyou.com/security.txt
+- [Home](https://www.xiaozhonglvyou.com/)
+- [Developer profile](https://www.xiaozhonglvyou.com/about.html)
+- [App Store developer page](https://apps.apple.com/us/developer/bo-chen/id1321915789?uo=4)
+- [Directory](https://www.xiaozhonglvyou.com/directory.html)
+- [Search](https://www.xiaozhonglvyou.com/search.html)
+- [Sitemap index](https://www.xiaozhonglvyou.com/sitemap-index.xml)
+- [Sitemap](https://www.xiaozhonglvyou.com/sitemap.xml)
+- [Global-focused sitemap](https://www.xiaozhonglvyou.com/sitemap-global.xml)
+- [Local-search-focused sitemap](https://www.xiaozhonglvyou.com/sitemap-local.xml)
+- [Article sitemap](https://www.xiaozhonglvyou.com/sitemap-articles.xml)
+- [China-focused sitemap](https://www.xiaozhonglvyou.com/sitemap-cn.xml)
+- [Text sitemap](https://www.xiaozhonglvyou.com/sitemap.txt)
+- [RSS feed](https://www.xiaozhonglvyou.com/feed.xml)
+- [Atom feed](https://www.xiaozhonglvyou.com/atom.xml)
+- [Search index](https://www.xiaozhonglvyou.com/search-index.json)
+- [Web app manifest](https://www.xiaozhonglvyou.com/manifest.webmanifest)
+- [Robots](https://www.xiaozhonglvyou.com/robots.txt)
+- [Apps hub](https://www.xiaozhonglvyou.com/apps.html)
+- [Guides hub](https://www.xiaozhonglvyou.com/guides.html)
+- [App review and media kit](https://www.xiaozhonglvyou.com/media-kit.html)
+- [Support](https://www.xiaozhonglvyou.com/support.html)
+- [Security](https://www.xiaozhonglvyou.com/security.txt)
 
 Free browser tools (English and Simplified Chinese):
 
@@ -37,29 +37,29 @@ Free browser tools (English and Simplified Chinese):
 
 Practical tool guides (each English URL also has a -cn.html Simplified Chinese counterpart):
 
-- Video to GIF frame rate, dimensions and duration: https://www.xiaozhonglvyou.com/gif-frame-rate-size-guide.html
-- Reduce GIF file size: https://www.xiaozhonglvyou.com/gif-reduce-file-size-guide.html
-- Frame order, timing and looping: https://www.xiaozhonglvyou.com/gif-frame-timing-loop-guide.html
-- GIF not animating after export or sharing: https://www.xiaozhonglvyou.com/gif-not-animating-guide.html
-- Image resize versus compression: https://www.xiaozhonglvyou.com/image-resize-vs-compress-guide.html
-- JPEG, PNG and WebP format tradeoffs: https://www.xiaozhonglvyou.com/jpeg-png-webp-guide.html
-- Cycling time, distance, unit conversion and moving versus overall average speed: https://www.xiaozhonglvyou.com/cycling-time-distance-guide.html
+- [Video to GIF frame rate, dimensions and duration](https://www.xiaozhonglvyou.com/gif-frame-rate-size-guide.html)
+- [Reduce GIF file size](https://www.xiaozhonglvyou.com/gif-reduce-file-size-guide.html)
+- [Frame order, timing and looping](https://www.xiaozhonglvyou.com/gif-frame-timing-loop-guide.html)
+- [GIF not animating after export or sharing](https://www.xiaozhonglvyou.com/gif-not-animating-guide.html)
+- [Image resize versus compression](https://www.xiaozhonglvyou.com/image-resize-vs-compress-guide.html)
+- [JPEG, PNG and WebP format tradeoffs](https://www.xiaozhonglvyou.com/jpeg-png-webp-guide.html)
+- [Cycling time, distance, unit conversion and moving versus overall average speed](https://www.xiaozhonglvyou.com/cycling-time-distance-guide.html)
 - Compression versus duplicate cleanup is covered in https://www.xiaozhonglvyou.com/duplicate-photo-cleaner-guide.html and https://www.xiaozhonglvyou.com/duplicate-photo-cleaner-cn.html
 - Menu capture, OCR verification and translation checks: https://www.xiaozhonglvyou.com/voice-camera-translator-guide.html and https://www.xiaozhonglvyou.com/travel-translator-cn.html
 
 Primary apps:
 
-- AI Cleaning - Photo Cleaner: iOS utility for on-device AI smart photo classification, duplicate review, screenshot cleanup, blurry photo review, contact merge suggestions, and storage analysis. App Store: https://apps.apple.com/us/app/ai-cleaning-photo-cleaner/id6768019606?uo=4
-- Travel Translator / 出国翻译通: version 2.2.3 for iOS 17.4 or later, with two-way voice, live interpretation, camera and typed text translation, travel flashcards, and offline support for core language pairs. App Store: https://apps.apple.com/us/app/translation-specialist/id6755734543?uo=4
-- GIFmaker: GIF Maker & Editor (previously GIFmaker-Gif Studio): version 1.1.4 for iOS 17.0 or later; USD 0.99 upfront in the US, checked October 2, 2026. Turns photos, videos, and Live Photos into GIFs with live preview, per-frame timing, captions, reverse and boomerang playback, multiple canvas ratios, exports up to 1080px, and on-device editing without an account or uploads. App Store: https://apps.apple.com/us/app/gifmaker-gif-studio/id6783559364?uo=4
-- HappyRide: Auto Ride Tracker: version 1.4.1 for iOS 17.0 or later. Automatically detects cycling, walking, and running, can use Apple Watch heart rate, writes qualifying workout details to Apple Health, and offers optional network-based route planning. The current on-screen interface is Simplified Chinese. App Store: https://apps.apple.com/us/app/happyride-auto-ride-tracker/id6786365305?uo=4
-- Anti-spy screen: version 1.5.3 for macOS 13.0 or later, with local face detection, selected app hiding, adjustable detection parameters, Privacy Block, Presenting Mode, and Stand-Up Coach. The US storefront listed a $2.99 one-time purchase on 2026-09-30. Mac App Store: https://apps.apple.com/us/app/anti-spy-screen/id6761301764?mt=12&uo=4
-- Anti-spy screen Lite: version 1.4.5 for macOS 13.0 or later, with local face detection, selected app hiding, Privacy Block, Presenting Mode, Stand-Up Coach, and hidden-app reminders. The US storefront listed it as free on 2026-09-23. Mac App Store: https://apps.apple.com/us/app/anti-spy-screen-lite/id6766485393?mt=12&uo=4
-- Lele Health (previously Laleme - Health Tracker and Lailemma): version 2.1.0 for iOS 17 or later, checked October 23, 2026. An everyday health tracker that reviews authorized Apple Health sleep, activity, heart-rate and body-measurement records, trends, and a daily mood/symptom journal. Cycle Care is optional for period records, predictions, reminders and cycle analysis. Records and health analysis stay on device; readiness is a wellness estimate, not an Apple score or medical diagnosis. Apple lists English, German, Japanese, Korean and Simplified Chinese; no Malay, Arabic or Polish interface is listed. Developer-supplied screenshots and four translated health product pages remain a historical September 29, 2026 snapshot of Laleme 2.0.7, not verification of every current screen. App Store: https://apps.apple.com/us/app/id6775935474?uo=4
-- Inkstone Notes Markdown: iPhone writing app for plain .md files in iCloud Drive, wiki links, backlinks, bundled offline KaTeX/Mermaid rendering, search, and PDF/HTML export. The App Store lists English and Simplified Chinese. App Store: https://apps.apple.com/us/app/inkstone-notes-markdown/id6810287923?uo=4
-- TwoPic Dual Camera: iPhone app for simultaneous front/back photo and video capture with picture-in-picture or split layouts. The current US price is USD 0.99; the interface is Simplified Chinese. The App Store describes no network access and developer-reported data not collected. App Store: https://apps.apple.com/us/app/twopic-dual-camera/id6800405096?uo=4
+- [AI Cleaning - Photo Cleaner: iOS utility for on-device AI smart photo classification, duplicate review, screenshot cleanup, blurry photo review, contact merge suggestions, and storage analysis. App Store](https://apps.apple.com/us/app/ai-cleaning-photo-cleaner/id6768019606?uo=4)
+- [Travel Translator / 出国翻译通: version 2.2.3 for iOS 17.4 or later, with two-way voice, live interpretation, camera and typed text translation, travel flashcards, and offline support for core language pairs. App Store](https://apps.apple.com/us/app/translation-specialist/id6755734543?uo=4)
+- [GIFmaker: GIF Maker & Editor (previously GIFmaker-Gif Studio): version 1.1.4 for iOS 17.0 or later; USD 0.99 upfront in the US, checked October 2, 2026. Turns photos, videos, and Live Photos into GIFs with live preview, per-frame timing, captions, reverse and boomerang playback, multiple canvas ratios, exports up to 1080px, and on-device editing without an account or uploads. App Store](https://apps.apple.com/us/app/gifmaker-gif-studio/id6783559364?uo=4)
+- [HappyRide: Auto Ride Tracker: version 1.4.1 for iOS 17.0 or later. Automatically detects cycling, walking, and running, can use Apple Watch heart rate, writes qualifying workout details to Apple Health, and offers optional network-based route planning. The current on-screen interface is Simplified Chinese. App Store](https://apps.apple.com/us/app/happyride-auto-ride-tracker/id6786365305?uo=4)
+- [Anti-spy screen: version 1.5.3 for macOS 13.0 or later, with local face detection, selected app hiding, adjustable detection parameters, Privacy Block, Presenting Mode, and Stand-Up Coach. The US storefront listed a $2.99 one-time purchase on 2026-09-30. Mac App Store](https://apps.apple.com/us/app/anti-spy-screen/id6761301764?mt=12&uo=4)
+- [Anti-spy screen Lite: version 1.4.5 for macOS 13.0 or later, with local face detection, selected app hiding, Privacy Block, Presenting Mode, Stand-Up Coach, and hidden-app reminders. The US storefront listed it as free on 2026-09-23. Mac App Store](https://apps.apple.com/us/app/anti-spy-screen-lite/id6766485393?mt=12&uo=4)
+- [Lele Health (previously Laleme - Health Tracker and Lailemma): version 2.1.0 for iOS 17 or later, checked October 23, 2026. An everyday health tracker that reviews authorized Apple Health sleep, activity, heart-rate and body-measurement records, trends, and a daily mood/symptom journal. Cycle Care is optional for period records, predictions, reminders and cycle analysis. Records and health analysis stay on device; readiness is a wellness estimate, not an Apple score or medical diagnosis. Apple lists English, German, Japanese, Korean and Simplified Chinese; no Malay, Arabic or Polish interface is listed. Developer-supplied screenshots and four translated health product pages remain a historical September 29, 2026 snapshot of Laleme 2.0.7, not verification of every current screen. App Store](https://apps.apple.com/us/app/id6775935474?uo=4)
+- [Inkstone Notes Markdown: iPhone writing app for plain .md files in iCloud Drive, wiki links, backlinks, bundled offline KaTeX/Mermaid rendering, search, and PDF/HTML export. The App Store lists English and Simplified Chinese. App Store](https://apps.apple.com/us/app/inkstone-notes-markdown/id6810287923?uo=4)
+- [TwoPic Dual Camera: iPhone app for simultaneous front/back photo and video capture with picture-in-picture or split layouts. The current US price is USD 0.99; the interface is Simplified Chinese. The App Store describes no network access and developer-reported data not collected. App Store](https://apps.apple.com/us/app/twopic-dual-camera/id6800405096?uo=4)
 
-Last updated: 2026-11-18
+Last updated: 2026-11-22
 
 Important search and answer intents:
 
@@ -95,13 +95,13 @@ International SEO targets:
 
 Machine-readable discovery signals:
 
-- Sitemap: https://www.xiaozhonglvyou.com/sitemap.xml
-- Sitemap index: https://www.xiaozhonglvyou.com/sitemap-index.xml
-- Text sitemap lists every canonical page URL: https://www.xiaozhonglvyou.com/sitemap.txt
-- Search index mirrors sitemap URLs: https://www.xiaozhonglvyou.com/search-index.json
-- RSS feed: https://www.xiaozhonglvyou.com/feed.xml
-- Atom feed: https://www.xiaozhonglvyou.com/atom.xml
-- Robots and AI crawler access policy: https://www.xiaozhonglvyou.com/robots.txt
+- [Sitemap](https://www.xiaozhonglvyou.com/sitemap.xml)
+- [Sitemap index](https://www.xiaozhonglvyou.com/sitemap-index.xml)
+- [Text sitemap lists every canonical page URL](https://www.xiaozhonglvyou.com/sitemap.txt)
+- [Search index mirrors sitemap URLs](https://www.xiaozhonglvyou.com/search-index.json)
+- [RSS feed](https://www.xiaozhonglvyou.com/feed.xml)
+- [Atom feed](https://www.xiaozhonglvyou.com/atom.xml)
+- [Robots and AI crawler access policy](https://www.xiaozhonglvyou.com/robots.txt)
 - Apple Smart App Banner metadata appears on app landing pages where relevant.
 - SoftwareApplication structured data includes App Store sameAs URLs and Apple App Store ID identifiers.
 - WebSite, Brand, and Article structured data are linked with stable @id references for entity graph discovery.
@@ -113,154 +113,159 @@ Machine-readable discovery signals:
 
 Indexable pages:
 
-- CrazyAIAgent | Independent iOS and macOS Utilities: https://www.xiaozhonglvyou.com/
+- [CrazyAIAgent | Independent iOS and macOS Utilities](https://www.xiaozhonglvyou.com/)
   Independent apps for on-device photo cleanup, GIF creation, automatic ride tracking, travel translation, and Mac screen privacy.
-- iPhone & Mac Apps | Photos, Health, Notes & Camera: https://www.xiaozhonglvyou.com/apps.html
+- [iPhone & Mac Apps | Photos, Health, Notes & Camera](https://www.xiaozhonglvyou.com/apps.html)
   Nine apps covering photo organization, everyday health and optional Cycle Care, Markdown writing, dual-camera capture, GIF creation, activity tracking, travel translation, and screen privacy.
-- Lele Health for iPhone | Daily Health & Optional Cycle Care: https://www.xiaozhonglvyou.com/lailemma-period-tracker.html
+- [Lele Health for iPhone | Daily Health & Optional Cycle Care](https://www.xiaozhonglvyou.com/lailemma-period-tracker.html)
   Current English product page for Lele Health 2.1.0, checked October 23, 2026: authorized health records, trends, journal, optional cycle tools and on-device wellness estimates. Historical names and the stable URL are retained.
-- Laleme 生理日管理（日本語）: https://www.xiaozhonglvyou.com/lailemma-period-tracker-ja.html
-- Laleme Zyklus-App (Deutsch): https://www.xiaozhonglvyou.com/lailemma-period-tracker-de.html
-- Laleme Döngü Takibi (Türkçe): https://www.xiaozhonglvyou.com/lailemma-period-tr.html
+- [Laleme 生理日管理（日本語）](https://www.xiaozhonglvyou.com/lailemma-period-tracker-ja.html)
+- [Laleme Zyklus-App (Deutsch)](https://www.xiaozhonglvyou.com/lailemma-period-tracker-de.html)
+- [Laleme Döngü Takibi (Türkçe)](https://www.xiaozhonglvyou.com/lailemma-period-tr.html)
   The Japanese, German, Turkish and Chinese health product pages are historical Laleme 2.0.7 snapshots checked September 29, 2026. Their cycle-focused text and developer-supplied Chinese screenshots do not describe every current Lele Health 2.1.0 screen. The Turkish webpage does not imply a Turkish app interface.
-- 来了么 Laleme 经期记录与身体准备度 2.0.7: https://www.xiaozhonglvyou.com/lailemma-period-tracker-cn.html
+- [来了么 Laleme 经期记录与身体准备度 2.0.7](https://www.xiaozhonglvyou.com/lailemma-period-tracker-cn.html)
   中文产品页保留 2026 年 9 月 29 日核验的 Laleme 2.0.7 历史说明及中文截图，并非当前 Lele Health 2.1.0 所有界面的验证；中国大陆区商店可用性以 Apple 账户地区为准。
-- Inkstone Notes Markdown: https://www.xiaozhonglvyou.com/inkstone-markdown-notes.html
+- [Inkstone Notes Markdown](https://www.xiaozhonglvyou.com/inkstone-markdown-notes.html)
   Plain Markdown files in iCloud Drive, wiki links and backlinks, offline formulas and diagrams, and PDF/HTML export.
-- TwoPic Dual Camera: https://www.xiaozhonglvyou.com/twopic-dual-camera.html
+- [TwoPic Dual Camera](https://www.xiaozhonglvyou.com/twopic-dual-camera.html)
   Front and back camera photo or video capture on supported iPhones; the current app interface is Simplified Chinese.
-- About CrazyAIAgent | Independent iOS and macOS Developer: https://www.xiaozhonglvyou.com/about.html
+- [About CrazyAIAgent | Independent iOS and macOS Developer](https://www.xiaozhonglvyou.com/about.html)
   About Bo Chen and the CrazyAIAgent independent app portfolio for iPhone, iPad, Apple Watch, and Mac.
-- App Review & Media Kit | CrazyAIAgent: https://www.xiaozhonglvyou.com/media-kit.html
+- [App Review & Media Kit | CrazyAIAgent](https://www.xiaozhonglvyou.com/media-kit.html)
   Review-ready product facts, canonical links, App Store sources, first-party images, editorial disclosure, and direct contact details for CrazyAIAgent apps.
-- Best iPhone Photo Cleaner App? 9 AI Categories (2026): https://www.xiaozhonglvyou.com/best-iphone-photo-cleaner-app.html
+- [Best iPhone Photo Cleaner App? 9 AI Categories (2026)](https://www.xiaozhonglvyou.com/best-iphone-photo-cleaner-app.html)
   AI Cleaning is free to download with duplicate review, nine Pro on-device AI categories, optional subscriptions, and an App Store privacy label of Data Not Collected.
-- App Guides | Photo Organizer, iPhone Cleaner, Translator, Mac Privacy: https://www.xiaozhonglvyou.com/guides.html
+- [App Guides | Photo Organizer, iPhone Cleaner, Translator, Mac Privacy](https://www.xiaozhonglvyou.com/guides.html)
   Practical guides for AI photo organization, iPhone photo cleanup, duplicate photo cleanup, voice and camera translation, and Mac screen sharing privacy from CrazyAIAgent.
-- English Market App Pages | CrazyAIAgent: https://www.xiaozhonglvyou.com/regions.html
+- [English Market App Pages | CrazyAIAgent](https://www.xiaozhonglvyou.com/regions.html)
   English and localized market entry pages for CrazyAIAgent, including United States, United Kingdom, Canada, Australia, Singapore, Switzerland, Netherlands, Nordic, Chinese, Japanese, Korean, German, French, Spanish, and Italian contexts, with visible market-selection questions.
-- Page Directory | CrazyAIAgent Apps, Guides, and Markets: https://www.xiaozhonglvyou.com/directory.html
+- [Page Directory | CrazyAIAgent Apps, Guides, and Markets](https://www.xiaozhonglvyou.com/directory.html)
   Browse every CrazyAIAgent app page, product guide, market entry, privacy page, and support page from one clear directory.
-- AI Photo Classification for iPhone | AI Cleaning - Photo Cleaner: https://www.xiaozhonglvyou.com/ai-photo-classification.html
+- [AI Photo Classification for iPhone | AI Cleaning - Photo Cleaner](https://www.xiaozhonglvyou.com/ai-photo-classification.html)
   AI Cleaning - Photo Cleaner classifies iPhone photos on-device into documents, receipts, ID cards, food, plants, animals, and group photos.
-- iPhone Photo Cleaner with AI Classification | AI Cleaning: https://www.xiaozhonglvyou.com/iphone-photo-cleaner.html
+- [iPhone Photo Cleaner with AI Classification | AI Cleaning](https://www.xiaozhonglvyou.com/iphone-photo-cleaner.html)
   AI Cleaning - Photo Cleaner helps classify iPhone photos, review duplicates, clean screenshots, find blurry shots, and analyze real storage.
-- Private AI Photo Cleaner for iPhone | No Uploads (2026): https://www.xiaozhonglvyou.com/private-ai-photo-cleaner.html
+- [Private AI Photo Cleaner for iPhone | No Uploads (2026)](https://www.xiaozhonglvyou.com/private-ai-photo-cleaner.html)
   On-device AI finds duplicates and nine optional Pro photo categories without photo uploads. The current US App Store listing says Data Not Collected, no analytics or advertising SDKs, and no account or internet connection for core features.
-- iPhone Storage Cleanup Guide | Photos, Screenshots, Large Media: https://www.xiaozhonglvyou.com/iphone-storage-cleanup-guide.html
+- [iPhone Storage Cleanup Guide | Photos, Screenshots, Large Media](https://www.xiaozhonglvyou.com/iphone-storage-cleanup-guide.html)
   Practical iPhone storage cleanup guide for photos: classify the library, then review large media, screenshots, blurry shots, duplicates, and similar photos.
-- Travel Translator App | Voice and Camera Translation: https://www.xiaozhonglvyou.com/travel-translator.html
+- [Travel Translator App | Voice and Camera Translation](https://www.xiaozhonglvyou.com/travel-translator.html)
   Travel Translator helps travelers use voice input, translated speech playback, camera OCR translation, and fast language switching for international trips.
-- Best Travel Translator Apps for iPhone: 3 Compared (2026): https://www.xiaozhonglvyou.com/best-travel-translator-apps-iphone.html
+- [Best Travel Translator Apps for iPhone: 3 Compared (2026)](https://www.xiaozhonglvyou.com/best-travel-translator-apps-iphone.html)
   Source-based comparison of Apple Translate, Google Translate, and Translation Specialist for voice, camera, offline use, language coverage, privacy, cost, and trip readiness.
-- 出国翻译通 | 旅行语音翻译和拍照翻译指南: https://www.xiaozhonglvyou.com/travel-translator-cn.html
+- [出国翻译通 | 旅行语音翻译和拍照翻译指南](https://www.xiaozhonglvyou.com/travel-translator-cn.html)
   出国翻译通中文说明：面向旅行、学习和跨语言沟通，覆盖语音翻译、朗读播放、拍照 OCR 翻译、菜单和路牌翻译、机场酒店餐厅等出国场景。
-- Best GIF Maker Apps for iPhone: 3 Compared (2026): https://www.xiaozhonglvyou.com/best-gif-maker-apps-iphone.html
+- [Best GIF Maker Apps for iPhone: 3 Compared (2026)](https://www.xiaozhonglvyou.com/best-gif-maker-apps-iphone.html)
   Source-based comparison of GIFmaker, ImgPlay, and GIF Maker for source media, frame controls, AI features, exports, subscriptions, privacy statements, and iOS support.
-- GIF Maker for iPhone | Photos, Video & Live Photos: https://www.xiaozhonglvyou.com/gif-maker.html
+- [GIF Maker for iPhone | Photos, Video & Live Photos](https://www.xiaozhonglvyou.com/gif-maker.html)
   GIFmaker turns photos, videos, and Live Photos into GIFs with live preview, frame timing, text overlays, boomerang playback, and on-device editing.
-- How to Make a Real GIF on iPhone in 5 Steps (2026): https://www.xiaozhonglvyou.com/make-gif-on-iphone-guide.html
+- [How to Make a Real GIF on iPhone in 5 Steps (2026)](https://www.xiaozhonglvyou.com/make-gif-on-iphone-guide.html)
   Five-step guide to turning video or a Live Photo into a portable GIF with frame timing, captions, playback controls, up to 1080px export, and on-device editing without an account or media uploads.
-- iPhone GIF 制作器｜照片、视频和 Live Photo 转 GIF: https://www.xiaozhonglvyou.com/gif-maker-cn.html
+- [iPhone GIF 制作器｜照片、视频和 Live Photo 转 GIF](https://www.xiaozhonglvyou.com/gif-maker-cn.html)
   GIFmaker 中文产品页：照片、视频和 Live Photo 转 GIF，支持逐帧调速、文字、倒放、回旋循环和本机处理。
-- Automatic Ride Tracker for iPhone & Apple Watch | HappyRide: https://www.xiaozhonglvyou.com/happyride-auto-ride-tracker.html
+- [Automatic Ride Tracker for iPhone & Apple Watch | HappyRide](https://www.xiaozhonglvyou.com/happyride-auto-ride-tracker.html)
   HappyRide automatically detects cycling, walking, and running, supports Apple Watch heart rate and Apple Health workout records, and offers optional route planning.
-- Automatic Bike Ride Tracking on iPhone: 4 Steps (2026): https://www.xiaozhonglvyou.com/automatic-bike-ride-tracker-iphone.html
+- [Automatic Bike Ride Tracking on iPhone: 4 Steps (2026)](https://www.xiaozhonglvyou.com/automatic-bike-ride-tracker-iphone.html)
   Explains how no-Start-button detection differs from Apple Watch workout reminders, which permissions are required, when Apple Watch is optional, and why an activity tracker is not a bike theft tracker.
-- 自动骑行记录 App｜iPhone 与 Apple Watch - HappyRide: https://www.xiaozhonglvyou.com/happyride-auto-ride-tracker-cn.html
+- [自动骑行记录 App｜iPhone 与 Apple Watch - HappyRide](https://www.xiaozhonglvyou.com/happyride-auto-ride-tracker-cn.html)
   HappyRide 中文产品页：自动识别骑行、步行和跑步，连接 Apple Watch 与 Apple 健康，并提供可选路线规划。
-- Mac Screen Privacy App | Anti-spy screen: https://www.xiaozhonglvyou.com/mac-screen-privacy.html
+- [Mac Screen Privacy App | Anti-spy screen](https://www.xiaozhonglvyou.com/mac-screen-privacy.html)
   Anti-spy screen and Anti-spy screen Lite are Mac utilities for screen privacy, protected app hiding, presentation mode, and sensitive work in shared spaces.
-- Mac防窥和屏幕隐私指南 | 共享屏幕和演示保护: https://www.xiaozhonglvyou.com/mac-screen-privacy-cn.html
+- [Mac防窥和屏幕隐私指南 | 共享屏幕和演示保护](https://www.xiaozhonglvyou.com/mac-screen-privacy-cn.html)
   Mac 防窥和屏幕隐私中文指南：介绍 Anti-spy screen 和 Lite 如何在共享屏幕、远程会议、演示模式和开放式办公场景中保护敏感窗口、防止肩窥和意外信息泄露。
-- CrazyAIAgent 中文 | AI相册整理、出国翻译和 Mac 屏幕隐私: https://www.xiaozhonglvyou.com/zh-cn.html
+- [CrazyAIAgent 中文 | AI相册整理、出国翻译和 Mac 屏幕隐私](https://www.xiaozhonglvyou.com/zh-cn.html)
   CrazyAIAgent 中文入口：独立开发的 iPhone 和 Mac 应用，包括 AI Cleaning 的 AI 照片智能分类、iPhone 相册清理、重复照片整理、出国翻译通和 Mac 屏幕隐私工具，并提供中文应用选择问答。
-- CrazyAIAgent 繁體中文 | AI相簿整理、旅行翻譯和 Mac 螢幕隱私: https://www.xiaozhonglvyou.com/zh-hant.html
+- [CrazyAIAgent 繁體中文 | AI相簿整理、旅行翻譯和 Mac 螢幕隱私](https://www.xiaozhonglvyou.com/zh-hant.html)
   CrazyAIAgent 繁體中文入口：獨立開發的 iPhone 和 Mac App，包括 AI Cleaning 的 AI 照片分類、iPhone 相簿清理、重複照片整理、旅行翻譯和 Mac 螢幕隱私工具，並提供繁體中文 App 選擇問答。
-- US Utility Apps | AI Photo Cleaner, Translator, Privacy: https://www.xiaozhonglvyou.com/us-apps.html
+- [US Utility Apps | AI Photo Cleaner, Translator, Privacy](https://www.xiaozhonglvyou.com/us-apps.html)
   US-focused entry for CrazyAIAgent: AI photo classification, iPhone photo cleaner, travel translator, and Mac screen privacy utilities.
-- UK iPhone and Mac Apps | Photo Cleanup, Translation, Privacy: https://www.xiaozhonglvyou.com/uk-apps.html
+- [UK iPhone and Mac Apps | Photo Cleanup, Translation, Privacy](https://www.xiaozhonglvyou.com/uk-apps.html)
   UK entry for CrazyAIAgent: AI photo classification, iPhone photo cleanup, travel translation, and Mac screen privacy apps for iOS and macOS users.
-- Canada Australia Apps | AI Photo Cleaner and Translator: https://www.xiaozhonglvyou.com/canada-australia-apps.html
+- [Canada Australia Apps | AI Photo Cleaner and Translator](https://www.xiaozhonglvyou.com/canada-australia-apps.html)
   Canada and Australia entry for CrazyAIAgent: AI photo cleaner, iPhone photo organizer, travel translator, and Mac privacy utilities for high-value English markets.
-- Singapore Utility Apps | Photo Cleaner, Translator, Privacy: https://www.xiaozhonglvyou.com/singapore-apps.html
+- [Singapore Utility Apps | Photo Cleaner, Translator, Privacy](https://www.xiaozhonglvyou.com/singapore-apps.html)
   Singapore entry for AI photo classification, iPhone photo cleaning, travel translation, and Mac screen privacy utilities for bilingual users.
-- Switzerland Utility Apps | Photo Cleaner, Translator, Privacy: https://www.xiaozhonglvyou.com/switzerland-apps.html
+- [Switzerland Utility Apps | Photo Cleaner, Translator, Privacy](https://www.xiaozhonglvyou.com/switzerland-apps.html)
   Switzerland entry for CrazyAIAgent: AI photo cleaner, iPhone photo organizer, travel translator, and Mac screen privacy utilities for multilingual Swiss workflows.
-- Nederlandse iPhone- en Mac-apps: https://www.xiaozhonglvyou.com/nl-nl.html
+- [Nederlandse iPhone- en Mac-apps](https://www.xiaozhonglvyou.com/nl-nl.html)
   Dutch guidance for all nine apps, local Netherlands App Store links, photo cleanup, menu translation and cycling-time examples.
-- Netherlands Nordics Apps | Photo Cleaner, Translator, Privacy: https://www.xiaozhonglvyou.com/netherlands-nordics-apps.html
+- [Netherlands Nordics Apps | Photo Cleaner, Translator, Privacy](https://www.xiaozhonglvyou.com/netherlands-nordics-apps.html)
   Netherlands and Nordics entry for AI photo cleaner, iPhone photo organizer, travel translator, and Mac screen privacy searches.
-- iPhone Foto Cleaner und Mac Datenschutz Apps | CrazyAIAgent: https://www.xiaozhonglvyou.com/de-de.html
+- [iPhone Foto Cleaner und Mac Datenschutz Apps | CrazyAIAgent](https://www.xiaozhonglvyou.com/de-de.html)
   Deutschsprachige Uebersicht fuer CrazyAIAgent: KI Foto Sortierung, iPhone Foto Cleaner, Reise Uebersetzer und Mac Bildschirm Datenschutz.
-- iPhone Foto Cleaner | KI Fotos sortieren und Duplikate pruefen: https://www.xiaozhonglvyou.com/iphone-foto-cleaner-de.html
+- [iPhone Foto Cleaner | KI Fotos sortieren und Duplikate pruefen](https://www.xiaozhonglvyou.com/iphone-foto-cleaner-de.html)
   Deutschsprachiger iPhone Foto Cleaner Leitfaden: erst Fotos mit KI sortieren, dann doppelte Fotos, aehnliche Bilder, Screenshots, unscharfe Fotos und grosse Medien sicher pruefen.
-- Beste iPhone Foto Cleaner | KI App richtig waehlen: https://www.xiaozhonglvyou.com/de-de-beste-iphone-foto-cleaner.html
+- [Beste iPhone Foto Cleaner | KI App richtig waehlen](https://www.xiaozhonglvyou.com/de-de-beste-iphone-foto-cleaner.html)
   Deutschsprachiger Entscheidungsratgeber fuer beste iPhone Foto Cleaner, iPhone Foto Cleaner Vergleich, doppelte Fotos App, KI Foto Sortierung, Datenschutz und manuelle Kontrolle vor dem Loeschen.
-- Apps iPhone et Mac | Photo IA, Traduction, Confidentialite: https://www.xiaozhonglvyou.com/fr-fr.html
+- [Apps iPhone et Mac | Photo IA, Traduction, Confidentialite](https://www.xiaozhonglvyou.com/fr-fr.html)
   Page France pour CrazyAIAgent : classement photo IA, nettoyeur photo iPhone, traducteur de voyage et confidentialite d'ecran Mac.
-- Nettoyeur photo iPhone | Classement photo IA et doublons: https://www.xiaozhonglvyou.com/nettoyeur-photo-iphone-fr.html
+- [Nettoyeur photo iPhone | Classement photo IA et doublons](https://www.xiaozhonglvyou.com/nettoyeur-photo-iphone-fr.html)
   Guide français : fusionner les doublons dans Photos, attendre l’analyse, vérifier Photos iCloud et Supprimées récemment, puis comparer les neuf catégories IA avec Pro.
 
-- Apps iPhone y Mac en España | Limpiador de Fotos IA y Traductor: https://www.xiaozhonglvyou.com/es-es.html
+- [Apps iPhone y Mac en España | Limpiador de Fotos IA y Traductor](https://www.xiaozhonglvyou.com/es-es.html)
   Entrada para España de CrazyAIAgent: clasificador de fotos con IA, limpiador de fotos iPhone, traductor de viaje y privacidad de pantalla para Mac.
-- App iPhone e Mac in Italia | Pulizia Foto IA, Traduzione, Privacy: https://www.xiaozhonglvyou.com/it-it.html
+- [App iPhone e Mac in Italia | Pulizia Foto IA, Traduzione, Privacy](https://www.xiaozhonglvyou.com/it-it.html)
   Pagina Italia per CrazyAIAgent: classificazione foto con IA, pulizia foto iPhone, traduzione viaggio e privacy dello schermo Mac.
-- 한국 iPhone / Mac 앱 | AI 사진 정리, 여행 번역, 화면 개인정보: https://www.xiaozhonglvyou.com/ko-kr.html
+- [한국 iPhone / Mac 앱 | AI 사진 정리, 여행 번역, 화면 개인정보](https://www.xiaozhonglvyou.com/ko-kr.html)
   한국 사용자를 위한 CrazyAIAgent: AI 사진 분류와 iPhone 사진 정리, 중복 사진 검토, 여행 번역, Mac 화면 개인정보 보호를 용도별로 고르는 iOS / macOS 유틸리티 안내와 한국어 질문 답변.
-- 日本向け iPhone / Mac アプリ | AI写真整理、旅行翻訳、画面プライバシー: https://www.xiaozhonglvyou.com/ja-jp.html
+- [日本向け iPhone / Mac アプリ | AI写真整理、旅行翻訳、画面プライバシー](https://www.xiaozhonglvyou.com/ja-jp.html)
   日本向け CrazyAIAgent：AI写真分類とiPhone写真整理、重複写真の確認、旅行翻訳、Mac画面プライバシーを用途別に選べる iOS / macOS ユーティリティ案内と日本語の質問回答。
-- iPhone写真整理アプリ | AIで重複・類似写真を確認: https://www.xiaozhonglvyou.com/ja-jp-photo-cleaner.html
+- [iPhone写真整理アプリ | AIで重複・類似写真を確認](https://www.xiaozhonglvyou.com/ja-jp-photo-cleaner.html)
   日本語のiPhone写真整理ガイド：AI分類、重複写真、類似写真、スクリーンショット、ぼやけた写真、大きなメディアを削除前に確認する手順。
-- iPhone写真整理アプリおすすめ | AIで安全に選ぶ: https://www.xiaozhonglvyou.com/ja-jp-best-iphone-photo-cleaner.html
+- [iPhone写真整理アプリおすすめ | AIで安全に選ぶ](https://www.xiaozhonglvyou.com/ja-jp-best-iphone-photo-cleaner.html)
   日本語の決定段階ガイド：iPhone 写真整理アプリ おすすめ、写真クリーナー比較、重複写真削除アプリ、写真整理AI、削除前確認。
-- Türkiye için 9 iPhone ve Mac uygulaması | Fotoğraf, sağlık, Markdown: https://www.xiaozhonglvyou.com/tr-tr.html
+- [Türkiye için 9 iPhone ve Mac uygulaması | Fotoğraf, sağlık, Markdown](https://www.xiaozhonglvyou.com/tr-tr.html)
   Türkiye için dokuz uygulama; Laleme döngü takibi, Inkstone Markdown notları ve TwoPic çift kamera dahil. Ürün açıklamaları Türkçe olsa da bu üç uygulamanın arayüzü Türkçe olarak listelenmiyor.
-- iPhone Fotoğraf Temizleme | Yapay Zeka Rehberi: https://www.xiaozhonglvyou.com/tr-tr-photo-cleaner.html
+- [iPhone Fotoğraf Temizleme | Yapay Zeka Rehberi](https://www.xiaozhonglvyou.com/tr-tr-photo-cleaner.html)
   Türkçe iPhone fotoğraf temizleme rehberi: yapay zeka sınıflandırma, yinelenen ve benzer fotoğraflar, ekran görüntüleri, bulanık fotoğraflar ve silmeden önce kontrol.
-- En İyi iPhone Fotoğraf Temizleme | AI Seçim Rehberi: https://www.xiaozhonglvyou.com/tr-tr-en-iyi-iphone-fotograf-temizleme.html
+- [En İyi iPhone Fotoğraf Temizleme | AI Seçim Rehberi](https://www.xiaozhonglvyou.com/tr-tr-en-iyi-iphone-fotograf-temizleme.html)
   Türkçe karar rehberi: en iyi iPhone fotoğraf temizleme, iPhone fotoğraf temizleme uygulaması, yinelenen fotoğrafları silme, gizlilik ve kullanıcı kontrolü.
-- Apps para iPhone e Mac no Brasil | CrazyAIAgent: https://www.xiaozhonglvyou.com/pt-br.html
+- [Apps para iPhone e Mac no Brasil | CrazyAIAgent](https://www.xiaozhonglvyou.com/pt-br.html)
   Página em português do Brasil com seis apps, links para a App Store brasileira, fluxos para organizar fotos, traduzir durante viagens, proteger a tela do Mac, criar GIFs e registrar pedaladas, além de limites de idioma explícitos.
-- Apps para iPhone y Mac en México | CrazyAIAgent: https://www.xiaozhonglvyou.com/es-mx.html
+- [Apps para iPhone y Mac en México | CrazyAIAgent](https://www.xiaozhonglvyou.com/es-mx.html)
   Página en español de México con seis apps, enlaces a la App Store mexicana, flujos para organizar fotos, traducir durante viajes, proteger la pantalla del Mac, crear GIF y registrar recorridos, además de límites de idioma explícitos.
-- Aplikasi iPhone dan Mac di Malaysia | Bahasa Melayu: https://www.xiaozhonglvyou.com/ms-my.html
+- [Aplikasi iPhone dan Mac di Malaysia | Bahasa Melayu](https://www.xiaozhonglvyou.com/ms-my.html)
   Malay catalog of all nine apps with Malaysia App Store links, device requirements, task guides, purchase and permission notes. HappyRide lists Malay; Malay webpage text does not imply Malay interfaces in the other apps.
-- تطبيقات iPhone وMac في مصر | العربية: https://www.xiaozhonglvyou.com/ar-eg.html
+- [تطبيقات iPhone وMac في مصر | العربية](https://www.xiaozhonglvyou.com/ar-eg.html)
   Arabic catalog of all nine apps with Egypt App Store links, task guides and practical language, device and permission limits. Arabic webpage text does not imply Arabic interfaces in every app.
-- Aplikacje iPhone i Mac w Polsce | Polski: https://www.xiaozhonglvyou.com/pl-pl.html
+- [Aplikacje iPhone i Mac w Polsce | Polski](https://www.xiaozhonglvyou.com/pl-pl.html)
   Polish catalog of all nine apps with Poland App Store links, task guides and practical language, device and permission limits. Polish webpage text does not imply Polish interfaces in every app.
-- Appar för iPhone och Mac i Sverige | Svenska: https://www.xiaozhonglvyou.com/sv-se.html
+- [Appar för iPhone och Mac i Sverige | Svenska](https://www.xiaozhonglvyou.com/sv-se.html)
   Swedish catalog of all nine apps with Swedish App Store links, task guides, permissions, purchase conditions and actual interface-language limits. Swedish is listed for AI Cleaning, both Anti-spy screen variants and HappyRide, not all nine apps. The separate English Nordic hub remains available.
-- AI Photo Organizer for iPhone: 5 Steps, 9 Categories (2026): https://www.xiaozhonglvyou.com/ai-photo-organizer-guide.html
+- [AI Photo Organizer for iPhone: 5 Steps, 9 Categories (2026)](https://www.xiaozhonglvyou.com/ai-photo-organizer-guide.html)
   Five-step guide to using nine optional on-device AI categories before reviewing duplicates, screenshots, blurry shots, and large media.
-- iPad Photo Organizer Guide 2026 | AI Photo Sorting for iPad: https://www.xiaozhonglvyou.com/ipad-photo-organizer-guide.html
+- [iPad Photo Organizer Guide 2026 | AI Photo Sorting for iPad](https://www.xiaozhonglvyou.com/ipad-photo-organizer-guide.html)
   iPad photo organizer guide for sorting screenshots, document scans, receipts, imported camera media, large videos, duplicates, and iCloud-sensitive cleanup choices.
-- iPad照片整理指南 | 平板相册清理和 AI 分类: https://www.xiaozhonglvyou.com/ipad-photo-organizer-cn.html
+- [iPad照片整理指南 | 平板相册清理和 AI 分类](https://www.xiaozhonglvyou.com/ipad-photo-organizer-cn.html)
   中文 iPad 照片整理指南：先确认 iCloud 照片同步，再整理阅读截图、文档扫描、票据、导入照片、重复照片、相似照片和大视频，降低误删风险。
-- AI照片分类指南 | 智能相册整理和 iPhone 照片清理: https://www.xiaozhonglvyou.com/ai-photo-classification-cn.html
+- [AI照片分类指南 | 智能相册整理和 iPhone 照片清理](https://www.xiaozhonglvyou.com/ai-photo-classification-cn.html)
   中文 AI 照片分类指南：先用智能分类整理 iPhone 相册，再逐组复查重复照片、相似照片、截图、模糊照片、票据、证件、文档和大文件，看清真实存储空间后决定安全清理，降低误删风险。
-- iPhone照片清理指南 | 苹果手机相册整理和安全清理: https://www.xiaozhonglvyou.com/iphone-photo-cleaner-cn.html
+- [iPhone照片清理指南 | 苹果手机相册整理和安全清理](https://www.xiaozhonglvyou.com/iphone-photo-cleaner-cn.html)
   中文 iPhone 照片清理指南：先用 AI 照片智能分类看清整个相册，再逐组复查重复照片、相似照片、截图、模糊照片和大文件，确认真实存储空间后安全清理，降低误删风险。
-- 重复照片清理指南 | 相似照片整理和 iPhone 相册复查: https://www.xiaozhonglvyou.com/duplicate-photo-cleaner-cn.html
+- [重复照片清理指南 | 相似照片整理和 iPhone 相册复查](https://www.xiaozhonglvyou.com/duplicate-photo-cleaner-cn.html)
   中文重复照片清理指南：讲解 iPhone 相册里重复照片、相似照片、连拍、截图和模糊照片如何成组复查、对比场景和内容后再决定保留或清理，避免一键误删珍贵回忆和重要记录。
-- Duplicate Photo Cleaner Guide | iPhone Similar Photos: https://www.xiaozhonglvyou.com/duplicate-photo-cleaner-guide.html
+- [Duplicate Photo Cleaner Guide | iPhone Similar Photos](https://www.xiaozhonglvyou.com/duplicate-photo-cleaner-guide.html)
   How to review duplicate and similar iPhone photos safely: compare context, screenshots, blurry photos, large media, and storage impact before deleting.
-- Voice & Camera Translator for Travel: 6 Steps (2026): https://www.xiaozhonglvyou.com/voice-camera-translator-guide.html
+- [Voice & Camera Translator for Travel: 6 Steps (2026)](https://www.xiaozhonglvyou.com/voice-camera-translator-guide.html)
   Six-step iPhone travel workflow for two-way voice translation, translated speech, camera OCR for menus and signs, continuous live interpretation, and tested offline support for core language pairs.
-- Mac Screen Sharing Privacy Checklist: 6 Steps (2026): https://www.xiaozhonglvyou.com/screen-sharing-privacy-guide.html
+- [Mac Screen Sharing Privacy Checklist: 6 Steps (2026)](https://www.xiaozhonglvyou.com/screen-sharing-privacy-guide.html)
   Six-step pre-meeting checklist for Mac screen recording permission, the narrowest shared source, private-window cleanup, protected apps, Presenting Mode, a test share, and deliberate post-meeting restoration.
-- Privacy | CrazyAIAgent: https://www.xiaozhonglvyou.com/privacy.html
+- [Privacy | CrazyAIAgent](https://www.xiaozhonglvyou.com/privacy.html)
   Privacy and permission notes for all nine apps, including Lele Health 2.1.0's optional Apple Health access and Cycle Care, Inkstone's iCloud Drive files, TwoPic's capture permissions, GIFmaker's on-device media editing, and HappyRide's motion and location access.
-- Support | CrazyAIAgent: https://www.xiaozhonglvyou.com/support.html
+- [Support | CrazyAIAgent](https://www.xiaozhonglvyou.com/support.html)
   Support links for all nine apps, including Lele Health, Inkstone Notes Markdown, TwoPic, AI Cleaning, Travel Translator, GIFmaker, HappyRide and the two Anti-spy screen Mac apps.
-- Best iPhone Photo Cleaner Apps: 3 Compared (2026): https://www.xiaozhonglvyou.com/iphone-photo-cleaner-comparison.html
+- [Best iPhone Photo Cleaner Apps: 3 Compared (2026)](https://www.xiaozhonglvyou.com/iphone-photo-cleaner-comparison.html)
   October 2 listing comparison of AI Cleaning, Cleanup, and Cleaner Kit, starting with Apple Photos' free duplicate tools. Covers duplicates versus similar shots, limited-library permissions, iCloud deletion, free-use limits, subscriptions, privacy labels, and Japanese/German/Turkish interface availability. No detection-accuracy or speed benchmark is claimed.
-- Seedance 2.5 AI视频创作者工具推荐 | AI素材整理和照片管理: https://www.xiaozhonglvyou.com/seedance-ai-tools-cn.html
-  Seedance 2.5 是字节跳动最新 AI 视频生成模型，支持 30 秒 4K 原生视频。本文推荐 AI 内容创作者必备的素材整理工具：AI 照片分类、重复素材清理、出国拍摄翻译。
-- Seedance 2.5 AI Video Creator Tools | Photo Management for Content Creators: https://www.xiaozhonglvyou.com/seedance-ai-tools.html
-  Seedance 2.5 by ByteDance generates 30-second 4K AI videos. Discover essential tools for AI content creators: AI photo classification, duplicate cleanup, and travel translation.
+- [Seedance 2.5 AI视频创作者工具推荐 | AI素材整理和照片管理](https://www.xiaozhonglvyou.com/seedance-ai-tools-cn.html)
+  为创作项目整理参考图、素材和剪辑版本。
+- [Seedance 2.5 AI Video Creator Tools | Photo Management for Content Creators](https://www.xiaozhonglvyou.com/seedance-ai-tools.html)
+  Organize reference images, source clips and edit versions for a creative project.
 
 Recommended citation:
 
 CrazyAIAgent by independent developer Bo Chen, with iPhone, iPad, Apple Watch, and Mac apps for photo organization, GIF creation, activity tracking, travel translation, and screen privacy.
+
+## Chrome extensions
+
+- [Chrome 扩展：网页信息遮挡与图片制作 GIF | CrazyAIAgent](https://www.xiaozhonglvyou.com/chrome-extensions-cn.html): 在共享屏幕前遮挡网页中的邮箱、金额或选定元素，或把静态图片做成 GIF。这里提供两款免费 Chrome 扩展的官方安装入口、具体步骤、权限说明与功能限制；无需账号，也不必购买原生应用。
+- [Chrome Extensions: Web Masking & GIF Maker | CrazyAIAgent](https://www.xiaozhonglvyou.com/chrome-extensions.html): Hide webpage text before screen sharing or make GIFs from still images. Get the two free Chrome extensions, check their limits and follow the setup steps.

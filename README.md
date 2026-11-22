@@ -3,6 +3,13 @@
 Official website for [CrazyAIAgent iPhone, iPad, Apple Watch, and Mac apps](https://www.xiaozhonglvyou.com/),
 the independent portfolio of [App Store developer Bo Chen](https://apps.apple.com/us/developer/bo-chen/id1321915789?uo=4), spanning photo organization, cycle and health tracking, Markdown writing, dual-camera capture, activity tracking, travel translation, GIF creation, and screen privacy.
 
+## Browser tools and Chrome extensions
+
+- [Free browser tools](https://www.xiaozhonglvyou.com/tools.html) for resizing images, creating GIFs and calculating ride time.
+- [Chrome extensions](https://www.xiaozhonglvyou.com/chrome-extensions.html) · [中文使用指南](https://www.xiaozhonglvyou.com/chrome-extensions-cn.html). The guides explain when to use each extension and how to restore the original page or export a GIF.
+- [PrivacyGuard in Chrome Web Store](https://chromewebstore.google.com/detail/pcjkepmfbkfhkpcihebbboocnjinnadi) visually masks selected webpage text before presentations.
+- [GIFmaker in Chrome Web Store](https://chromewebstore.google.com/detail/opihemepgelanpffiecpodnceboehfcl) turns still PNG, JPG and WebP images into animated GIFs on your device.
+
 ## Products
 
 - [AI Cleaning - Photo Cleaner](https://www.xiaozhonglvyou.com/iphone-photo-cleaner.html) - classify and review iPhone photos before cleanup.
@@ -11,12 +18,12 @@ the independent portfolio of [App Store developer Bo Chen](https://apps.apple.co
 - [Anti-spy screen Lite](https://www.xiaozhonglvyou.com/mac-screen-privacy.html) - a lightweight Mac menu-bar utility for screen privacy.
 - [GIFmaker-Gif Studio](https://www.xiaozhonglvyou.com/gif-maker.html) - create GIFs from photos, videos, and Live Photos on iPhone.
 - [HappyRide: Auto Ride Tracker](https://www.xiaozhonglvyou.com/happyride-auto-ride-tracker.html) - automatically record cycling, walking, and running with Apple Watch and Apple Health support.
-- [Laleme - Health Tracker](https://www.xiaozhonglvyou.com/lailemma-period-tracker.html) - track cycles and symptoms; version 2.0.7 estimates Body Readiness on device from authorized health signals.
+- [Lele Health](https://www.xiaozhonglvyou.com/lailemma-period-tracker.html) - track cycles and symptoms, with optional on-device health insights.
 - [Inkstone Notes Markdown](https://www.xiaozhonglvyou.com/inkstone-markdown-notes.html) - write plain Markdown files in iCloud Drive with backlinks, offline formulas and diagrams, and export.
 - [TwoPic Dual Camera](https://www.xiaozhonglvyou.com/twopic-dual-camera.html) - capture the front and back iPhone cameras together in picture-in-picture or split layouts.
 
 Website guides are available in English, Simplified and Traditional Chinese, French, German, Japanese,
-Korean, Spanish, Italian, Portuguese, Russian, Turkish, Czech, and Vietnamese, plus regional English editions.
+Korean, Spanish, Italian, Portuguese, Russian, Turkish, Czech, Vietnamese, Malay, Arabic, Swedish, Dutch and Polish. Browse the [market directory](https://www.xiaozhonglvyou.com/regions.html) for local pages and regional English editions.
 
 Hosted with GitHub Pages from the `main` branch root.
 

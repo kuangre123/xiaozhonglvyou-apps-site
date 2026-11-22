@@ -1,5 +1,6 @@
 export function htmlWithoutResourceCacheVersions(html) {
-  return html.replace(
+  // A format-only change to the same brand artwork does not change a page's search content.
+  return html.replace(/(<img\b[^>]*class="brand-mark"[^>]*src="\/assets\/kuangre-ai-logo)\.(?:png|webp)"/g, '$1.png"').replace(
     /(<script\b[^>]*\ssrc=(["'])(?:\.\/|\/)?(?:analytics|script|search)\.js\?v=)[a-f0-9]{12}(\2[^>]*>)/gi,
     "$1CACHE_VERSION$3"
   ).replace(
