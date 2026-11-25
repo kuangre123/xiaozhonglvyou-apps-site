@@ -59,7 +59,7 @@ Primary apps:
 - [Inkstone Notes Markdown: iPhone writing app for plain .md files in iCloud Drive, wiki links, backlinks, bundled offline KaTeX/Mermaid rendering, search, and PDF/HTML export. The App Store lists English and Simplified Chinese. App Store](https://apps.apple.com/us/app/inkstone-notes-markdown/id6810287923?uo=4)
 - [TwoPic Dual Camera: iPhone app for simultaneous front/back photo and video capture with picture-in-picture or split layouts. The current US price is USD 0.99; the interface is Simplified Chinese. The App Store describes no network access and developer-reported data not collected. App Store](https://apps.apple.com/us/app/twopic-dual-camera/id6800405096?uo=4)
 
-Last updated: 2026-11-22
+Last updated: 2026-11-26
 
 Important search and answer intents:
 
@@ -269,3 +269,8 @@ CrazyAIAgent by independent developer Bo Chen, with iPhone, iPad, Apple Watch, a
 
 - [Chrome 扩展：网页信息遮挡与图片制作 GIF | CrazyAIAgent](https://www.xiaozhonglvyou.com/chrome-extensions-cn.html): 在共享屏幕前遮挡网页中的邮箱、金额或选定元素，或把静态图片做成 GIF。这里提供两款免费 Chrome 扩展的官方安装入口、具体步骤、权限说明与功能限制；无需账号，也不必购买原生应用。
 - [Chrome Extensions: Web Masking & GIF Maker | CrazyAIAgent](https://www.xiaozhonglvyou.com/chrome-extensions.html): Hide webpage text before screen sharing or make GIFs from still images. Get the two free Chrome extensions, check their limits and follow the setup steps.
+
+## Browser games
+
+- [国贸不打烊与星尘简史｜狂热AI 网页游戏](https://www.xiaozhonglvyou.com/web-games-cn.html): 喜欢 GTA 的城市兜风？在线玩《国贸不打烊》，骑摩托探索北京国贸、飞跳台、过火圈和打卡。打开《星尘简史》，沿时间尺看 138 亿年宇宙演化，从奇点、星系到地球和登月。
+- [Guomao Never Sleeps & Stardust | Browser Games](https://www.xiaozhonglvyou.com/web-games.html): Play Guomao Never Sleeps, a motorcycle game set in Beijing, or explore A Brief History of Stardust, an interactive 3D universe film.

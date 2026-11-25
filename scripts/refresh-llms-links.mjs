@@ -6,7 +6,7 @@ import { pathToFileURL } from 'node:url';
 const label = text => text.replaceAll('[', '\\[').replaceAll(']', '\\]');
 export function refreshLlmsLinks(text, index) {
   const pages = new Map(index.pages.map(page => [page.url, page]));
-  const lines = text.replace(/\n## Chrome extensions\n[\s\S]*?(?=\n## |$)/g, '').split('\n');
+  const lines = text.replace(/\n## (?:Chrome extensions|Browser games)\n[\s\S]*?(?=\n## |$)/g, '').split('\n');
   for (let i = 0; i < lines.length; i++) {
     const old = lines[i].match(/^- (.+): (https:\/\/\S+)$/);
     const markdown = lines[i].match(/^- \[(.+)\]\((https:\/\/\S+)\)(?::.*)?$/);
@@ -21,7 +21,9 @@ export function refreshLlmsLinks(text, index) {
     }
   }
   const section = '\n## Chrome extensions\n\n' + index.pages.filter(page => /^\/chrome-extensions(?:-cn)?\.html$/.test(page.path)).map(page => `- [${label(page.title)}](${page.url}): ${page.description}`).join('\n') + '\n';
-  return lines.join('\n').replace(/\n## Chrome extensions\n[\s\S]*?(?=\n## |$)/g, '').trimEnd() + '\n' + section;
+  const games = index.pages.filter(page => /^\/web-games(?:-cn)?\.html$/.test(page.path));
+  const gameSection = games.length ? '\n## Browser games\n\n' + games.map(page => `- [${label(page.title)}](${page.url}): ${page.description}`).join('\n') + '\n' : '';
+  return lines.join('\n').trimEnd() + '\n' + section + gameSection;
 }
 export async function refreshLlms(siteDir) {
   const file = path.join(siteDir, 'llms.txt');
