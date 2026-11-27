@@ -77,7 +77,8 @@ function appSection(config, kind) {
 }
 function faqSection(config) {
   const t = labels[config.locale];
-  return `<section class="section faq"><div class="section-inner"><div class="section-heading"><div><p class="section-kicker">${t.faq}</p><h2>${config.locale === "zh" ? "使用之前，先了解这些边界。" : "Know what the tool can and cannot do."}</h2></div></div><div class="faq-list">${config.faqs.map(([question, answer], index) => `<details${index === 0 ? " open" : ""}><summary>${escape(question)}</summary><p>${escape(answer)}</p></details>`).join("")}</div></div></section>`;
+  const heading = config.faqHeading || (config.locale === "zh" ? "使用之前，先了解这些边界。" : "Know what the tool can and cannot do.");
+  return `<section class="section faq"><div class="section-inner"><div class="section-heading"><div><p class="section-kicker">${t.faq}</p><h2>${escape(heading)}</h2></div></div><div class="faq-list">${config.faqs.map(([question, answer], index) => `<details${index === 0 ? " open" : ""}><summary>${escape(question)}</summary><p>${escape(answer)}</p></details>`).join("")}</div></div></section>`;
 }
 function toolExplanation(config) {
   const zh = config.locale === "zh";
@@ -95,7 +96,8 @@ function hubBody(config) {
 }
 function articleBody(config) {
   const t = labels[config.locale];
-  return `${hero(config, true)}<article class="tool-article-body">${config.sections.map((section, i) => `<section class="section content-section${i % 2 ? " alt-section" : ""}"${section.id ? ` id="${escape(section.id)}"` : ''}><div class="section-inner"><h2>${escape(section.heading)}</h2>${section.paragraphs.map((paragraph) => `<p>${escape(paragraph)}</p>`).join("")}${section.table ? exampleTable(section.table) : ''}${section.steps ? `<ol>${section.steps.map((step) => `<li>${escape(step)}</li>`).join("")}</ol>` : ""}</div></section>`).join("")}<section class="section content-section"><div class="section-inner"><h2>${t.source}</h2><ul>${config.sources.map((source) => `<li><a href="${source.href}">${escape(source[config.locale])}</a></li>`).join("")}</ul><p><a class="button button-primary" href="${articleToolLink(config)}">${escape(config.actionLabel || t.toolAction)}</a></p></div></section></article>${appSection(config, config.kind)}${relatedGuides(config, config.kind, config.key)}`;
+  const faqs = Array.isArray(config.faqs) && config.faqs.length ? faqSection(config) : "";
+  return `${hero(config, true)}<article class="tool-article-body">${config.sections.map((section, i) => `<section class="section content-section${i % 2 ? " alt-section" : ""}"${section.id ? ` id="${escape(section.id)}"` : ''}><div class="section-inner"><h2>${escape(section.heading)}</h2>${section.paragraphs.map((paragraph) => `<p>${escape(paragraph)}</p>`).join("")}${section.table ? exampleTable(section.table) : ''}${section.steps ? `<ol>${section.steps.map((step) => `<li>${escape(step)}</li>`).join("")}</ol>` : ""}</div></section>`).join("")}<section class="section content-section"><div class="section-inner"><h2>${t.source}</h2><ul>${config.sources.map((source) => `<li><a href="${source.href}">${escape(source[config.locale])}</a></li>`).join("")}</ul><p><a class="button button-primary" href="${articleToolLink(config)}">${escape(config.actionLabel || t.toolAction)}</a></p></div></section></article>${faqs}${appSection(config, config.kind)}${relatedGuides(config, config.kind, config.key)}`;
 }
 function schemas(config, isArticle) {
   const url = `${origin}/${freeToolFile(config)}`;
@@ -107,6 +109,9 @@ function schemas(config, isArticle) {
   if (isArticle) {
     page.mainEntity = { "@id": `${url}#article` };
     nodes.push({ "@type": "Article", "@id": `${url}#article`, headline: config.heading, description: config.description, image: `${origin}/assets/og-default.png`, inLanguage: language, datePublished: date.published, dateModified: date.modified, mainEntityOfPage: url, isPartOf: { "@id": `${origin}/#website` }, author, publisher, keywords: config.keywords, about: [{ "@type": "SoftwareApplication", name: config.kind === "ride" ? "HappyRide: Auto Ride Tracker" : config.kind === "gif" ? "GIFmaker-Gif Studio" : "AI Cleaning - Photo Cleaner", url: config.kind === "ride" ? "https://apps.apple.com/us/app/happyride-auto-ride-tracker/id6786365305?uo=4" : config.kind === "gif" ? "https://apps.apple.com/us/app/gifmaker-gif-studio/id6783559364?uo=4" : "https://apps.apple.com/us/app/ai-cleaning-photo-cleaner/id6768019606?uo=4" }] });
+    if (Array.isArray(config.faqs) && config.faqs.length) {
+      nodes.push({ "@type": "FAQPage", "@id": `${url}#faq`, mainEntity: config.faqs.map(([question, answer]) => ({ "@type": "Question", name: question, acceptedAnswer: { "@type": "Answer", text: answer } })) });
+    }
   } else if (config.key === "hub") {
     const keys = freeToolPages.filter((item) => item.locale === config.locale && item.key !== "hub").map((item) => item.key);
     nodes.push({ "@type": "ItemList", "@id": `${url}#tools`, name: labels[config.locale].tools, numberOfItems: keys.length, itemListElement: keys.map((key, index) => ({ "@type": "ListItem", position: index + 1, name: labels[config.locale][key], item: `${origin}/${freeToolsPairs[key][config.locale]}` })) });

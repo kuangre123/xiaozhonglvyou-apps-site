@@ -5,6 +5,7 @@ import { fileURLToPath } from "node:url";
 import { articleKeywordsByFile } from "./article-keyword-map.mjs";
 import { freeToolArticles, freeToolFile } from "./free-tools-content.mjs";
 import { gifmakerRelease } from "./gifmaker-release-facts.mjs";
+import { happyrideRelease } from "./happyride-release-facts.mjs";
 
 const scriptDir = path.dirname(fileURLToPath(import.meta.url));
 const siteDir = path.resolve(scriptDir, "..");
@@ -92,7 +93,8 @@ const products = new Map([
       image: `${origin}/assets/happyride-icon.png`,
       applicationCategory: "HealthApplication",
       operatingSystem: "iOS, watchOS",
-      softwareVersion: "1.4.1",
+      softwareVersion: happyrideRelease.version,
+      availableLanguage: happyrideRelease.languages,
       price: "0.00",
       priceCurrency: "USD"
     }

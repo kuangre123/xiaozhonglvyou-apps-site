@@ -109,6 +109,17 @@ const handleLinkActivation = (event) => {
       page_path: window.location.pathname,
       transport_type: "beacon"
     });
+    return;
+  }
+
+  if (anchor.dataset?.analyticsEvent === "web_game_click") {
+    trackAnalyticsEvent("web_game_click", {
+      game_id: anchor.dataset.gameId || "unknown",
+      link_url: anchor.href,
+      link_text: anchor.textContent.trim(),
+      page_path: window.location.pathname,
+      transport_type: "beacon"
+    });
   }
 };
 
